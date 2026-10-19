@@ -64,7 +64,7 @@ export function buildGraph(data) {
 
 export const neighbours = (n) => n.edges.map((e) => (e.a === n ? e.b : e.a));
 
-function kindWord(w) {
+export function kindWord(w) {
   if (w.kind === "project") return "project";
   if (/^E\d/.test(w.n)) return "Extra";
   return w.kind;

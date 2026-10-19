@@ -2,6 +2,7 @@
 // the new view and zooms to that view's home; keyword labels fade out, turn to their new
 // orientation, and fade back in. Drag with live physics only in Force.
 // Label modes: auto | all | off. Line modes: all | projects | hover.
+// Nodes with n.hidden set (by js/ui/filter.js) and their lines are not drawn.
 import { orientKeyword, orientWork, sizeHit, neighbours, VIEWS } from "./render.js";
 import { live } from "./layout-force.js";
 
@@ -67,9 +68,9 @@ export function createViews(graph, zoom) {
     const lit = new Set();
     for (const id of [state.hover, state.focus]) {
       const n = id && graph.byId.get(id);
-      if (!n) continue;
+      if (!n || n.hidden) continue;
       near.add(n);
-      for (const o of neighbours(n)) near.add(o);
+      for (const o of neighbours(n)) if (!o.hidden) near.add(o);
     }
     const autoOn = graph.k >= AUTO_K[state.view];
     for (const k of graph.kws) {
@@ -84,14 +85,17 @@ export function createViews(graph, zoom) {
       const isFocus = !!foc && (e.a === foc || e.b === foc);
       const isHover = !isFocus && !!hov && (e.a === hov || e.b === hov);
       const rest = state.lines === "all" || (state.lines === "projects" && e.project);
-      e.el.classList.toggle("is-focus", isFocus);
-      e.el.classList.toggle("is-hover", isHover);
-      e.el.classList.toggle("is-off", !(rest || isFocus || isHover));
-      if (isFocus || isHover) lit.add(e.el);
+      const gone = e.a.hidden || e.b.hidden;
+      e.el.classList.toggle("is-focus", isFocus && !gone);
+      e.el.classList.toggle("is-hover", isHover && !gone);
+      e.el.classList.toggle("is-off", gone || !(rest || isFocus || isHover));
+      if ((isFocus || isHover) && !gone) lit.add(e.el);
     }
     // Lit lines draw above the rest.
     for (const el of lit) el.parentNode.appendChild(el);
+    // Hidden by the filter: no mark, no lines, out of the tab order.
     for (const n of graph.nodes) {
+      n.el.classList.toggle("is-hidden", !!n.hidden);
       n.el.classList.toggle("is-focus", n.id === state.focus);
       n.el.classList.toggle("is-near", near.has(n) && n.id !== state.hover && n.id !== state.focus);
     }

@@ -40,6 +40,8 @@ export function setupZoom(graph, onZoom) {
     home,
     to: (t, ms = 0) => run((s) => zoom.transform(s, t), ms),
     by: (f, ms = 0) => run((s) => zoom.scaleBy(s, f), ms),
+    // Pans so the map point [x, y] sits at the centre, keeping the zoom.
+    centre: ([x, y], ms = 0) => run((s) => zoom.translateTo(s, x, y), ms),
     current: () => d3.zoomTransform(graph.svg),
   };
 }
