@@ -1,0 +1,63 @@
+/* Design tokens. The only place colours and fonts are defined.
+   Values match the taster folio PDF (see CLAUDE.md, Design tokens).
+   Fonts load from Google Fonts in each page head:
+   https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&family=IBM+Plex+Mono:wght@400;500;600&display=swap */
+
+:root {
+  /* Colour. White ground only. */
+  --paper: #ffffff;
+  --ink: #141414;
+  --ink-2: #5e5e5e;
+  --ink-3: #8a8a86;
+  --line: #e4e4e0;
+  --rule: #d9d9d6;
+  --tint: #f2f2ef;
+  --keyline: #cfcfcb;
+  /* Ultramarine only for numbers, the active view, selection, focus lines, topics, links, badges. */
+  --ultramarine: #2a2df5;
+  --blue-soft: #e9eafe;
+
+  /* Font families. Archivo for everything; Plex Mono only for numbers and caps labels. */
+  --font-sans: "Archivo", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+
+  /* Name: 800 30px -0.035em */
+  --name-weight: 800;
+  --name-size: 30px;
+  --name-tracking: -0.035em;
+
+  /* Display: 800 -0.03em, line-height .92 */
+  --display-weight: 800;
+  --display-tracking: -0.03em;
+  --display-leading: 0.92;
+
+  /* Title: 700 -0.025em */
+  --title-weight: 700;
+  --title-tracking: -0.025em;
+
+  /* Body: 16/1.5 at 50 to 60 characters */
+  --body-size: 16px;
+  --body-leading: 1.5;
+  --body-weight: 400;
+  --measure: 56ch;
+
+  /* Map labels: 11px */
+  --map-label-size: 11px;
+
+  /* Mono: 9.5 to 11px caps, tracked .05em */
+  --mono-size-sm: 9.5px;
+  --mono-size: 10px;
+  --mono-size-lg: 11px;
+  --mono-tracking: 0.05em;
+  --mono-weight: 500;
+
+  /* Shape: sharp corners, 1px rules, no shadows, no gradients. */
+  --radius: 0;
+  --rule-width: 1px;
+  --halo: 4px;
+
+  /* Icons: 18px in controls, 14px inline, stroke 1.75, square caps, miter joins. */
+  --icon-control: 18px;
+  --icon-inline: 14px;
+  --icon-stroke: 1.75;
+}
