@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Brylie Wilson</title>
 <meta name="description" content="Brylie Wilson. Designer, strategist and chronic over-thinker, systems thinker.">
+<script>document.documentElement.classList.add("js")</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,400..800;1,62..125,400..800&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
@@ -16,7 +17,6 @@
 <body>
 <main class="frame">
   <h1 class="sr-only">Brylie Wilson. Designer, strategist and chronic over-thinker, systems thinker.</h1>
-  <svg id="map" class="map" role="group" aria-label="Systems map: works and the keywords that connect them"></svg>
 
   <nav class="rail" aria-label="Map controls">
     <div class="rail-set" role="group" aria-label="View">
@@ -25,10 +25,35 @@
       <button class="cbtn" type="button" data-view="rings" aria-label="Rings" aria-pressed="false" data-tip="Rings" data-key="3"><svg class="ic" aria-hidden="true"><use href="/assets/icons.svg#target"/></svg></button>
     </div>
     <div class="rail-set">
-      <!-- TODO(phase 3): Search, Filter, Index and Surprise me join the rail. -->
+      <button class="cbtn" type="button" id="btn-search" aria-label="Search" aria-haspopup="dialog" aria-expanded="false" aria-controls="palette" data-tip="Search" data-key="/  ⌘K"><svg class="ic" aria-hidden="true"><use href="/assets/icons.svg#search"/></svg></button>
+      <button class="cbtn" type="button" id="btn-filter" aria-label="Filter" aria-expanded="false" aria-controls="pop-filter" data-tip="Filter" data-key="F"><svg class="ic" aria-hidden="true"><use href="/assets/icons.svg#sliders-horizontal"/></svg><span class="badge" id="filter-badge" aria-hidden="true" hidden></span></button>
       <button class="cbtn" type="button" id="btn-layers" aria-label="Labels &amp; lines" aria-expanded="false" aria-controls="pop-layers" data-tip="Labels &amp; lines" data-key="L"><svg class="ic" aria-hidden="true"><use href="/assets/icons.svg#layers"/></svg></button>
+      <button class="cbtn" type="button" id="btn-index" aria-label="Index" aria-expanded="false" aria-controls="pop-index" data-tip="Index" data-key="I"><svg class="ic" aria-hidden="true"><use href="/assets/icons.svg#list"/></svg></button>
+    </div>
+    <div class="rail-set">
+      <button class="cbtn" type="button" id="btn-surprise" aria-label="Surprise me" data-tip="Surprise me" data-key="R"><svg class="ic" aria-hidden="true"><use href="/assets/icons.svg#shuffle"/></svg></button>
     </div>
   </nav>
+
+  <div class="actives" id="actives" aria-label="Active filters" role="group" hidden></div>
+
+  <nav class="sitenav" aria-label="Site">
+    <button class="navlink js-only" type="button" id="btn-about" data-tip="About"><svg class="ic" aria-hidden="true"><use href="/assets/icons.svg#user"/></svg><span class="navtext">About</span></button>
+    <a class="navlink" id="link-folio" href="/assets/Wilson_Brylie_Taster-Folio_Final.pdf" target="_blank" rel="noopener" data-tip="Folio PDF"><svg class="ic" aria-hidden="true"><use href="/assets/icons.svg#file-down"/></svg><span class="navtext">Folio PDF</span></a>
+    <a class="navlink" id="btn-contact" href="mailto:brylie.j.w@gmail.com" data-tip="Contact" data-anchor="below"><svg class="ic" aria-hidden="true"><use href="/assets/icons.svg#mail"/></svg><span class="navtext">Contact</span></a>
+  </nav>
+
+  <p class="readout mono-label" id="readout" aria-hidden="true"></p>
+  <p class="sr-only" id="announce" role="status" aria-live="polite"></p>
+
+  <div class="zoomctl" role="group" aria-label="Zoom">
+    <button class="cbtn" type="button" id="zoom-in" aria-label="Zoom in" data-tip="Zoom in" data-key="+"><svg class="ic" aria-hidden="true"><use href="/assets/icons.svg#plus"/></svg></button>
+    <button class="cbtn" type="button" id="zoom-out" aria-label="Zoom out" data-tip="Zoom out" data-key="−"><svg class="ic" aria-hidden="true"><use href="/assets/icons.svg#minus"/></svg></button>
+    <button class="cbtn" type="button" id="zoom-fit" aria-label="Fit" data-tip="Fit" data-key="0"><svg class="ic" aria-hidden="true"><use href="/assets/icons.svg#scan"/></svg></button>
+    <button class="cbtn" type="button" id="btn-key" aria-label="Key" aria-expanded="false" aria-controls="pop-key" data-tip="Key" data-key="?" data-anchor="left"><svg class="ic" aria-hidden="true"><use href="/assets/icons.svg#info"/></svg></button>
+  </div>
+
+  <div class="pop pop-filter" id="pop-filter" role="dialog" aria-label="Filter" hidden></div>
 
   <div class="pop" id="pop-layers" role="dialog" aria-label="Labels &amp; lines" hidden>
     <fieldset class="seg">
@@ -45,14 +70,63 @@
     </fieldset>
   </div>
 
-  <div class="zoomctl" role="group" aria-label="Zoom">
-    <button class="cbtn" type="button" id="zoom-in" aria-label="Zoom in" data-tip="Zoom in" data-key="+"><svg class="ic" aria-hidden="true"><use href="/assets/icons.svg#plus"/></svg></button>
-    <button class="cbtn" type="button" id="zoom-out" aria-label="Zoom out" data-tip="Zoom out" data-key="−"><svg class="ic" aria-hidden="true"><use href="/assets/icons.svg#minus"/></svg></button>
-    <button class="cbtn" type="button" id="zoom-fit" aria-label="Fit" data-tip="Fit" data-key="0"><svg class="ic" aria-hidden="true"><use href="/assets/icons.svg#scan"/></svg></button>
+  <!-- Without JS the index is the page: it shows in the flow instead of as a popover. -->
+  <section class="pop pop-index" id="pop-index" aria-labelledby="index-title" hidden>
+    <header class="pop-head">
+      <h2 class="mono-label" id="index-title">Index</h2>
+      <p class="mono-label" id="index-count"></p>
+    </header>
+<!-- index:start (generated by scripts/build.mjs from data/nodes.json; do not edit) -->
+    <table class="ix">
+      <thead><tr><th scope="col">No.</th><th scope="col">Title</th><th scope="col">Year</th><th scope="col">Type</th></tr></thead>
+      <tbody>
+        <tr data-id="cypher" data-kind="project"><td class="ix-n">01</td><td class="ix-t"><span class="ix-title">CYPHER</span><span class="ix-sub">Magazine &amp; typographic style guide</span></td><td class="ix-y">2024</td><td class="ix-k"><svg class="ic" aria-hidden="true"><use href="/assets/icons.svg#book-open"/></svg>Project</td></tr>
+        <tr data-id="16-days-of-real-talk" data-kind="project"><td class="ix-n">02</td><td class="ix-t"><span class="ix-title">16 Days of Real Talk</span><span class="ix-sub">Conversation cards &amp; a campus campaign</span></td><td class="ix-y">2025</td><td class="ix-k"><svg class="ic" aria-hidden="true"><use href="/assets/icons.svg#book-open"/></svg>Project</td></tr>
+        <tr data-id="symbiosis" data-kind="project"><td class="ix-n">03</td><td class="ix-t"><span class="ix-title">Symbiosis</span><span class="ix-sub">Immersive installation concept for the Powerhouse Museum</span></td><td class="ix-y">2024</td><td class="ix-k"><svg class="ic" aria-hidden="true"><use href="/assets/icons.svg#book-open"/></svg>Project</td></tr>
+        <tr data-id="ibm-qt-hotels" data-kind="experiment"><td class="ix-n">E1</td><td class="ix-t"><span class="ix-title">IBM × QT Hotels</span><span class="ix-sub">Problem-defining workshop</span></td><td class="ix-y">2025</td><td class="ix-k"><svg class="ic" aria-hidden="true"><use href="/assets/icons.svg#flask-conical"/></svg>Extra</td></tr>
+        <tr data-id="collab" data-kind="experiment"><td class="ix-n">E2</td><td class="ix-t"><span class="ix-title">COLLAB</span><span class="ix-sub">Event identity &amp; stage concept</span></td><td class="ix-y">2025</td><td class="ix-k"><svg class="ic" aria-hidden="true"><use href="/assets/icons.svg#flask-conical"/></svg>Extra</td></tr>
+        <tr data-id="adhd-in-the-media" data-kind="experiment"><td class="ix-n">E3</td><td class="ix-t"><span class="ix-title">ADHD in the Media</span><span class="ix-sub">Research-led motion explainer</span></td><td class="ix-y">2024</td><td class="ix-k"><svg class="ic" aria-hidden="true"><use href="/assets/icons.svg#flask-conical"/></svg>Extra</td></tr>
+        <tr data-id="terms-of-practice" data-kind="experiment"><td class="ix-n">E4</td><td class="ix-t"><span class="ix-title">Terms of Practice</span><span class="ix-sub">Manifesto website for digital designers</span></td><td class="ix-y">2026</td><td class="ix-k"><svg class="ic" aria-hidden="true"><use href="/assets/icons.svg#flask-conical"/></svg>Extra</td></tr>
+        <tr data-id="audio-reactive-visual-exploration" data-kind="experiment"><td class="ix-n">E5</td><td class="ix-t"><span class="ix-title">Audio-reactive visual exploration</span></td><td class="ix-y">2026</td><td class="ix-k"><svg class="ic" aria-hidden="true"><use href="/assets/icons.svg#flask-conical"/></svg>Extra</td></tr>
+        <tr data-id="hand-tracking-bloom" data-kind="experiment"><td class="ix-n">03a</td><td class="ix-t"><span class="ix-title">Hand-tracking bloom</span></td><td class="ix-y">2024</td><td class="ix-k"><svg class="ic" aria-hidden="true"><use href="/assets/icons.svg#flask-conical"/></svg>Experiment</td></tr>
+        <tr data-id="trust-in-transition" data-kind="work"><td class="ix-n">05</td><td class="ix-t"><span class="ix-title">Trust in Transition</span></td><td class="ix-y">2025</td><td class="ix-k"><svg class="ic" aria-hidden="true"><use href="/assets/icons.svg#file"/></svg>Work</td></tr>
+        <tr data-id="sparkchange" data-kind="work"><td class="ix-n">06</td><td class="ix-t"><span class="ix-title">SparkChange</span></td><td class="ix-y">2025</td><td class="ix-k"><svg class="ic" aria-hidden="true"><use href="/assets/icons.svg#file"/></svg>Work</td></tr>
+        <tr data-id="stellar-map" data-kind="experiment"><td class="ix-n">07</td><td class="ix-t"><span class="ix-title">Stellar Map</span></td><td class="ix-y">2026</td><td class="ix-k"><svg class="ic" aria-hidden="true"><use href="/assets/icons.svg#flask-conical"/></svg>Experiment</td></tr>
+        <tr data-id="stellar-evolution" data-kind="work"><td class="ix-n">08</td><td class="ix-t"><span class="ix-title">Stellar Evolution</span></td><td class="ix-y">2024</td><td class="ix-k"><svg class="ic" aria-hidden="true"><use href="/assets/icons.svg#file"/></svg>Work</td></tr>
+        <tr data-id="contextlayer" data-kind="work"><td class="ix-n">09</td><td class="ix-t"><span class="ix-title">ContextLayer</span></td><td class="ix-y">2025</td><td class="ix-k"><svg class="ic" aria-hidden="true"><use href="/assets/icons.svg#file"/></svg>Work</td></tr>
+        <tr data-id="whats-your-excuse" data-kind="work"><td class="ix-n">10</td><td class="ix-t"><span class="ix-title">What’s your excuse?</span></td><td class="ix-y">2023</td><td class="ix-k"><svg class="ic" aria-hidden="true"><use href="/assets/icons.svg#file"/></svg>Work</td></tr>
+        <tr data-id="lbw-trust-gala" data-kind="client"><td class="ix-n">11</td><td class="ix-t"><span class="ix-title">LBW Trust 20th Anniversary Gala</span></td><td class="ix-y">2026</td><td class="ix-k"><svg class="ic" aria-hidden="true"><use href="/assets/icons.svg#briefcase"/></svg>Client</td></tr>
+        <tr data-id="ashham" data-kind="client"><td class="ix-n">12</td><td class="ix-t"><span class="ix-title">Ashham Agencies &amp; Ashham Advisory</span></td><td class="ix-y">2024</td><td class="ix-k"><svg class="ic" aria-hidden="true"><use href="/assets/icons.svg#briefcase"/></svg>Client</td></tr>
+        <tr data-id="ecosystem-engineers" data-kind="work"><td class="ix-n">13</td><td class="ix-t"><span class="ix-title">Ecosystem engineers</span></td><td class="ix-y">2024</td><td class="ix-k"><svg class="ic" aria-hidden="true"><use href="/assets/icons.svg#file"/></svg>Work</td></tr>
+        <tr data-id="cas-a" data-kind="work"><td class="ix-n">14</td><td class="ix-t"><span class="ix-title">Cas A</span></td><td class="ix-y">2024</td><td class="ix-k"><svg class="ic" aria-hidden="true"><use href="/assets/icons.svg#file"/></svg>Work</td></tr>
+        <tr data-id="nomad-homes" data-kind="work"><td class="ix-n">15</td><td class="ix-t"><span class="ix-title">Nomad Homes</span></td><td class="ix-y">2024</td><td class="ix-k"><svg class="ic" aria-hidden="true"><use href="/assets/icons.svg#file"/></svg>Work</td></tr>
+        <tr data-id="visual-essay-on-freedom" data-kind="work"><td class="ix-n">16</td><td class="ix-t"><span class="ix-title">Visual essay on freedom</span></td><td class="ix-y">2023</td><td class="ix-k"><svg class="ic" aria-hidden="true"><use href="/assets/icons.svg#file"/></svg>Work</td></tr>
+        <tr data-id="coded-web-folio" data-kind="experiment"><td class="ix-n">17</td><td class="ix-t"><span class="ix-title">Coded web folio</span></td><td class="ix-y">2023</td><td class="ix-k"><svg class="ic" aria-hidden="true"><use href="/assets/icons.svg#flask-conical"/></svg>Experiment</td></tr>
+        <tr data-id="photo-composites" data-kind="experiment"><td class="ix-n">18</td><td class="ix-t"><span class="ix-title">Photo composites</span></td><td class="ix-y"></td><td class="ix-k"><svg class="ic" aria-hidden="true"><use href="/assets/icons.svg#flask-conical"/></svg>Experiment</td></tr>
+        <tr data-id="cymatics" data-kind="work"><td class="ix-n">19</td><td class="ix-t"><span class="ix-title">Cymatics</span></td><td class="ix-y">2023</td><td class="ix-k"><svg class="ic" aria-hidden="true"><use href="/assets/icons.svg#file"/></svg>Work</td></tr>
+        <tr data-id="book-cover-series" data-kind="work"><td class="ix-n">20</td><td class="ix-t"><span class="ix-title">Book cover series</span></td><td class="ix-y">2023</td><td class="ix-k"><svg class="ic" aria-hidden="true"><use href="/assets/icons.svg#file"/></svg>Work</td></tr>
+        <tr data-id="expanded-networks-journal" data-kind="work"><td class="ix-n">21</td><td class="ix-t"><span class="ix-title">Expanded networks journal</span></td><td class="ix-y">2026</td><td class="ix-k"><svg class="ic" aria-hidden="true"><use href="/assets/icons.svg#file"/></svg>Work</td></tr>
+      </tbody>
+    </table>
+<!-- index:end -->
+  </section>
+
+  <div class="pop pop-key" id="pop-key" role="dialog" aria-label="Key" hidden></div>
+  <div class="pop pop-contact" id="pop-contact" role="dialog" aria-label="Contact" hidden></div>
+
+  <div class="palette" id="palette" role="dialog" aria-modal="true" aria-label="Search" hidden>
+    <div class="palette-box">
+      <label class="palette-field">
+        <svg class="ic" aria-hidden="true"><use href="/assets/icons.svg#search"/></svg>
+        <span class="sr-only">Search works, keywords and about</span>
+        <input id="palette-input" type="text" role="combobox" aria-expanded="true" aria-controls="palette-list" aria-autocomplete="list" autocomplete="off" spellcheck="false" placeholder="Search works, keywords, about">
+      </label>
+      <div class="palette-list" id="palette-list" role="listbox" aria-label="Results"></div>
+      <p class="palette-foot mono-label" aria-hidden="true"><span><kbd>↑</kbd><kbd>↓</kbd> Move</span><span><kbd>Enter</kbd> Open</span><span><kbd>Esc</kbd> Close</span></p>
+    </div>
   </div>
 
-  <!-- TODO(phase 3): the index table, so the page works without JS. -->
-  <noscript><p class="noscript"><a href="/assets/Wilson_Brylie_Taster-Folio_Final.pdf">Folio PDF</a></p></noscript>
+  <svg id="map" class="map" role="group" aria-label="Systems map: works and the keywords that connect them"></svg>
 </main>
 </body>
 </html>

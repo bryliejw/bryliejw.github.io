@@ -10,6 +10,16 @@ import { createViews } from "./map/views.js";
 import { bindRail } from "./ui/rail.js";
 import { bindLayers } from "./ui/layers.js";
 import { bindShortcuts } from "./ui/shortcuts.js";
+import { createFilter, bindFilterDrawer } from "./ui/filter.js";
+import { bindActives } from "./ui/actives.js";
+import { bindReadout } from "./ui/readout.js";
+import { bindIndex } from "./ui/index.js";
+import { bindKey } from "./ui/key.js";
+import { bindNav } from "./ui/nav.js";
+import { bindPalette } from "./ui/palette.js";
+
+const PDF = "/assets/Wilson_Brylie_Taster-Folio_Final.pdf";
+const reduced = window.matchMedia("(prefers-reduced-motion: reduce)");
 
 const FONTS = [
   "800 30px Archivo",
@@ -48,9 +58,34 @@ async function boot() {
   const zoom = setupZoom(graph, () => views?.paint());
   views = createViews(graph, zoom);
   bindNodes(graph, views);
-  bindRail(views);
+
+  // Focus a node from the interface (palette, index, Surprise me, About): light its lines,
+  // pan it to the centre and move keyboard focus to it.
+  // TODO(phase 4): open the grow card here, and the About panel for "me".
+  const select = (id) => {
+    const n = graph.byId.get(id);
+    if (!n || n.hidden) return;
+    views.set("focus", id);
+    zoom.centre([n.x, n.y], reduced.matches ? 0 : 400);
+    n.el.focus({ preventScroll: true });
+  };
+  const filter = createFilter(graph, views);
+  const actions = {
+    about: () => select("me"),
+    folio: () => window.open(PDF, "_blank", "noopener"),
+    contact: () => nav.contact(),
+  };
+  bindFilterDrawer(filter);
+  bindActives({ graph, views, filter });
+  bindReadout({ graph, views, filter });
+  bindIndex({ filter, select });
+  bindKey();
+  const nav = bindNav({ data, actions });
+  const palette = bindPalette({ graph, data, filter, select, actions });
+  bindRail({ views, select, graph });
   bindLayers(views);
-  bindShortcuts({ views, zoom });
+  bindShortcuts({ views, zoom, palette, select, graph });
+  filter.apply({ announce: false });
   document.getElementById("zoom-in").addEventListener("click", () => zoom.by(1.4, 250));
   document.getElementById("zoom-out").addEventListener("click", () => zoom.by(1 / 1.4, 250));
   document.getElementById("zoom-fit").addEventListener("click", () => zoom.to(views.home(), 400));
@@ -69,6 +104,7 @@ async function boot() {
     graph,
     views,
     zoom,
+    filter,
     edgePositions: () => Object.fromEntries(graph.works.map((w) => [w.id, w.pos.edge])),
   };
 }
