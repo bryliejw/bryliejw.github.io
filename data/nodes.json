@@ -1,0 +1,1596 @@
+{
+  "me": {
+    "name": "Brylie Wilson",
+    "tagline1": "Designer, strategist and chronic over-thinker",
+    "tagline2": "systems thinker",
+    "bio": [
+      "I’m in my element at the start of a project, working out what the problem actually is.",
+      "I research the whole system around a brief, including the people, culture, platforms, social context and politics involved, then translate it into a strategy and something people can see and use. That might be editorial, a campaign, an installation or a digital experience, whichever medium suits the concept best.",
+      "I’m drawn to small, values‑aligned teams, non‑profits, community organisations and civic tech, and to research‑led roles where I can keep asking who, what, where, why, and who’s missing.",
+      "Having too many tabs open is my specialty"
+    ],
+    "education": [
+      {
+        "title": "Bachelor of Design (Visual Communication)",
+        "org": "University of Technology Sydney",
+        "years": "2023–2026"
+      }
+    ],
+    "certification": {
+      "title": "IBM Enterprise Design Thinking Practitioner",
+      "org": "IBM",
+      "year": 2025,
+      "link": "https://www.credly.com/badges/d8601100-d8ed-445e-9cbc-0cb08019e05d",
+      "linkLabel": "VERIFY ON CREDLY",
+      "badge": "assets/img/ibm-edt-badge.webp"
+    },
+    "experience": [
+      {
+        "years": "2023–26",
+        "title": "Freelance designer",
+        "text": "The LBW Trust 20th Anniversary Gala identity, comms and event collateral (2026). Ashham Agencies and Ashham Advisory identity and marketing (2024)"
+      },
+      {
+        "years": "2025",
+        "title": "Asterisk Studios × WAGEC",
+        "text": "Live client campaign via UTS Shopfront. Research, positioning, project management, card typography and layout, landing page design and Webflow build, reels creative direction"
+      },
+      {
+        "years": "2025",
+        "title": "IBM × QT Hotels",
+        "text": "Group workshop. I designed the Miro board system and agenda, co‑facilitated the workshop and presented the playback"
+      },
+      {
+        "years": "2025",
+        "title": "Jack Morton × Figma COLLAB",
+        "text": "Brand experience brief, re‑brief and research"
+      },
+      {
+        "years": "2025",
+        "title": "ServiceRocket",
+        "text": "Technologies Reimagined systems mapping brief"
+      },
+      {
+        "years": "2024",
+        "title": "Powerhouse Museum",
+        "text": "Visualising Experience installation brief"
+      }
+    ],
+    "standpoint": {
+      "quote": "Neutral is a position that declines to be named.",
+      "source": "From my manifesto Terms of Practice (2026)",
+      "link": "https://bryliejw.github.io/terms-of-practice-manifesto/"
+    },
+    "tools": [
+      "InDesign",
+      "Illustrator",
+      "Photoshop",
+      "After Effects",
+      "Premiere Pro",
+      "Lightroom",
+      "Figma",
+      "Webflow",
+      "HTML/CSS/JS",
+      "p5.js & ml5",
+      "TouchDesigner",
+      "Miro",
+      "Notion",
+      "Claude",
+      "Perplexity"
+    ],
+    "contact": {
+      "email": "brylie.j.w@gmail.com",
+      "instagram": {
+        "label": "@byBrylie",
+        "url": "https://www.instagram.com/byBrylie"
+      },
+      "linkedin": {
+        "label": "linkedin.com/in/bryliewilson",
+        "url": "https://www.linkedin.com/in/bryliewilson/"
+      },
+      "website": {
+        "label": "bryliejw.github.io",
+        "url": "https://bryliejw.github.io/"
+      }
+    }
+  },
+  "works": [
+    {
+      "id": "cypher",
+      "slug": "cypher",
+      "n": "01",
+      "title": "CYPHER",
+      "sub": "Magazine & typographic style guide",
+      "year": 2024,
+      "size": "L",
+      "kind": "project",
+      "context": "Typography in Context, UTS",
+      "team": "Individual",
+      "partOf": null,
+      "link": null,
+      "keywords": [
+        "editorial-design",
+        "art-direction",
+        "magazine",
+        "style-guide",
+        "indesign",
+        "photoshop",
+        "procreate",
+        "visual-culture",
+        "cultural-resistance",
+        "urban-standardisation",
+        "equity",
+        "curiosity"
+      ],
+      "images": [],
+      "copy": {
+        "brief": "A uni assignment for Typography in Context: a magazine for visual communication designers, with masthead, covers and a style guide.",
+        "insight": "While organising my photographs into sections, I realised there was a cohesive colour scheme that heavily contrasted against the mundane urban landscape surrounding it.",
+        "pull": "Tags are acts of resistance to the increasing standardisation of urban environments.",
+        "response": "I colour-graded my photos and masked the backgrounds to enhance this contrast. One spot colour per spread gives the range of street art without clashing, on a grid deliberately broken in key moments, where imposed order coexists with graffiti.",
+        "role": "",
+        "credit": "Issue 5 cover artwork, which flows across the front and back cover. Made from my photographs and extended with Photoshop Generative Fill (Adobe Firefly). Graffiti belongs to its writers.",
+        "oneLine": ""
+      },
+      "steps": [
+        [
+          "ISSUE 5 · BACK COVER",
+          "The back cover continues the street scene from the front, with the masthead tag repeated in the orange spot colour above the issue blurb. The masthead is a chisel‑marker tag that changes every issue. For Issue 5 the E becomes an epsilon, the Greek numeral five."
+        ],
+        [
+          "STYLE GUIDE · 1.1 MASTHEAD · 3.2 LAYOUT · 4.1 BODY TEXT",
+          "I wrote a style guide that sets the rules for the masthead, type, grid and body text, so each issue can change its masthead and still read as CYPHER. Issue 5 is the reference for every rule."
+        ]
+      ],
+      "pos": {
+        "edge": null
+      }
+    },
+    {
+      "id": "16-days-of-real-talk",
+      "slug": "16-days-of-real-talk",
+      "n": "02",
+      "title": "16 Days of Real Talk",
+      "sub": "Conversation cards & a campus campaign",
+      "year": 2025,
+      "size": "L",
+      "kind": "project",
+      "context": "Socially Responsive Design, UTS · with WAGEC via UTS Shopfront",
+      "team": "Asterisk Studios, team of 6",
+      "partOf": null,
+      "link": null,
+      "keywords": [
+        "design-research",
+        "workshop-facilitation",
+        "editorial-design",
+        "web-design-build",
+        "design-strategy",
+        "conversation-cards",
+        "campus-campaign",
+        "landing-page",
+        "figma",
+        "miro",
+        "webflow",
+        "gender-based-violence-prevention",
+        "care",
+        "equity"
+      ],
+      "images": [],
+      "copy": {
+        "brief": "A live client project for Socially Responsive Design at UTS. The Women’s and Girls’ Emergency Centre (WAGEC) asked our studio to launch its We Need To Talk cards to university students during the 16 Days of Activism against gender-based violence.",
+        "insight": "",
+        "pull": "Almost half the students we surveyed had seen or experienced sexism at uni in the past year.",
+        "response": "We redesigned the deck as 30 pocket-sized cards, colour-coded by topic so students choose how deep to go. We used speech bubbles as the main device to show that not every opinion has to be fully formed to be part of the conversation.",
+        "role": "I worked on research and positioning, project management and the kickoff workshop, and designed and built the landing page in Webflow.",
+        "credit": "Printed cards. Card questions are by WAGEC. I set the card typography, shared the layout with Rachel, made the majority of the speech-bubble shapes and did the colours, textures and shadows. Teammates made the final artwork.",
+        "oneLine": ""
+      },
+      "steps": [
+        [
+          "OBSERVED · DECK TEST · W3",
+          "The original cards felt meaningful but too formal, large and academic, especially in a second language."
+        ],
+        [
+          "DECIDED",
+          "We made the cards smaller and type‑led, with clarity and readability as the priority."
+        ],
+        [
+          "TYPOGRAPHY · MINE",
+          "I set the card typography in Apercu Condensed and Work Sans, balancing clarity with warmth. I made the majority of the speech-bubble shapes and did the colours, textures and shadows. Teammates made the final artwork."
+        ],
+        [
+          "WEB · MINE",
+          "I designed the landing page, the campaign’s hub where students download the digital cards and find WAGEC resources. Ownership could not transfer, so WAGEC rebuilt it from my handover style guide and assets."
+        ],
+        [
+          "REELS · CREATIVE DIRECTION MINE",
+          "Student interviews paired with anonymous submissions, so students can take part safely."
+        ],
+        [
+          "POSTERS",
+          "By Angel, Helen, Seoyun & Nicole, using my type, shapes and textures. Campaign copy by Carmen, freelance copywriter."
+        ]
+      ],
+      "pos": {
+        "edge": null
+      }
+    },
+    {
+      "id": "symbiosis",
+      "slug": "symbiosis",
+      "n": "03",
+      "title": "Symbiosis",
+      "sub": "Immersive installation concept for the Powerhouse Museum",
+      "year": 2024,
+      "size": "L",
+      "kind": "project",
+      "context": "Visualising Experience, UTS · Powerhouse Museum brief",
+      "team": "Individual",
+      "partOf": null,
+      "link": null,
+      "keywords": [
+        "experience-design",
+        "design-research",
+        "prototyping",
+        "creative-code",
+        "installation-concept",
+        "prototype",
+        "procreate",
+        "illustrator",
+        "p5js-ml5",
+        "teachable-machine",
+        "more-than-human-design",
+        "museum-interpretation",
+        "curiosity",
+        "access"
+      ],
+      "images": [],
+      "copy": {
+        "brief": "A university assignment for Visualising Experience at UTS, working with the Powerhouse Museum collection: design an interactive digital experience for one object. I chose Christopher Dresser’s cast‑iron Garden Chair, 1870.",
+        "insight": "We see the chair as either a utilitarian object or a piece of art. Reading Dresser’s own books, I found that division reflects design for standardisation rather than an intrinsic truth, and that his ornament is built on botany and geometry.",
+        "pull": "Symbiosis is an immersive installation inspired by Dresser’s philosophy that true appreciation of beauty arises from contextual knowledge and understanding.",
+        "response": "It uses the Garden Chair to critique the arbitrary homogenisation of everyday objects. Visitors enter through mesh pathways with projections on the walls and floor, and symbols around the chair light up the principles hidden in its design.",
+        "role": "",
+        "credit": "FINAL VISUAL NARRATIVE · RENDERS & MODELS MY OWN",
+        "oneLine": ""
+      },
+      "steps": [
+        [
+          "01 CONCEPT DEVELOPMENT · RESEARCH",
+          "I read two of Dresser’s books entirely through and traced the chair in Procreate. My first mind map needed constant reorganising, so I pulled out the figures he references in each chapter and made an annotated mind map of these instead, which allowed me to visually see the connections between ideas and concepts."
+        ],
+        [
+          "DECIDED",
+          "I decided to use modern technologies to reimagine Dresser’s ornamental imagery and engage a contemporary audience with the relationship between science, nature and the arts, creating an ethereal atmosphere without overpowering the concept itself."
+        ],
+        [
+          "CHRISTOPHER DRESSER",
+          "“We have here not only a manifestation of the truth that a principle of order prevails in the development of plants, but also a revelation of the fact that plants are founded upon a geometric basis.” Set in my final render around the chair."
+        ],
+        [
+          "02 CONCEPT 01 · VR USER JOURNEY",
+          "My initial design was a VR experience where the user could ‘pick up’ a floral motif from the chair and examine it closer."
+        ],
+        [
+          "CREATIVE CODE · WEEKS 5–6",
+          "I coded this gesture in p5.js with ml5 hand tracking and my own Teachable Machine classifier."
+        ],
+        [
+          "DECIDED",
+          "The classifier needed still images while the animation ran on live video, so I used ml5 hand tracking alone."
+        ],
+        [
+          "WHAT IT TAUGHT ME",
+          "Removing unnecessary complexity can lead to better performance."
+        ],
+        [
+          "03 CONCEPT 02 · REFINEMENT",
+          "A headset keeps the experience to one person, and studio feedback was to focus on the experience, not the technology."
+        ],
+        [
+          "DESIGN CONCEPT 02",
+          "I moved to projection mapping inside sheer walls, with light projected onto fabric so groups explore together."
+        ],
+        [
+          "PROTOTYPE 1 · MATERIALS",
+          "After a wide range of material experimentation, I selected the gutter guard for its structural integrity but adapted my approach due to sharp edges."
+        ],
+        [
+          "04 TESTING · PROTOTYPES 1–3",
+          "Did the structure guide visitors through at least 2 pathways, in and out?"
+        ],
+        [
+          "PROTOTYPE 1 · SPATIAL EXPLORATION & NAVIGATION",
+          "A small-scale model to test how intuitive it is to navigate the pathways. I observed users without interference and recorded the paths they took to the centre."
+        ],
+        [
+          "PROTOTYPE 2 · INTERACTIVE LEARNING & CONCEPTUAL ENGAGEMENT",
+          "Tested whether the symbol interaction is intuitive and whether visitors can derive meaning independently. One user attempted to sit on the symbol, and two reached to touch it."
+        ],
+        [
+          "PROTOTYPE 3 · IMMERSIVE SENSORY EXPERIENCE",
+          "Assessed immersion through passive interaction with movement-tracked evolving projections and natural ambient sounds."
+        ],
+        [
+          "DECIDED · PROTOTYPE 2",
+          "Orientation was the primary requirement, with no ‘correct’ interaction."
+        ],
+        [
+          "WHAT IT TAUGHT ME",
+          "Prototype 2 taught me the necessity of clear interaction cues, and revealed how users interpret design elements in unexpected ways."
+        ],
+        [
+          "05 FINAL EXPERIENCE · WALKTHROUGH",
+          "I simulated tracking in testing by manually adjusting the projector, so the final concept uses automated motion tracking."
+        ],
+        [
+          "WHAT VISITORS TOOK AWAY · PROTOTYPE 3",
+          "Even without displaying the chair itself, the projections successfully conveyed the intended concepts."
+        ]
+      ],
+      "pos": {
+        "edge": null
+      }
+    },
+    {
+      "id": "ibm-qt-hotels",
+      "slug": "ibm-qt-hotels",
+      "n": "E1",
+      "title": "IBM × QT Hotels",
+      "sub": "Problem-defining workshop",
+      "year": 2025,
+      "size": "M",
+      "kind": "experiment",
+      "context": "Design Practice, UTS",
+      "team": "Team of 4",
+      "partOf": null,
+      "link": null,
+      "keywords": [
+        "workshop-facilitation",
+        "design-research",
+        "service-design",
+        "workshop",
+        "miro",
+        "ai-in-hospitality"
+      ],
+      "images": [],
+      "copy": {
+        "brief": "",
+        "insight": "",
+        "pull": "",
+        "response": "",
+        "role": "Team of 4. I designed the board system and agenda, co‑facilitated the workshop and presented the playback.",
+        "credit": "",
+        "oneLine": "An hour on Zoom and Miro with QT stakeholders, from front desk to CEO, to find where AI could help check-in."
+      },
+      "steps": [],
+      "pos": {
+        "edge": null
+      }
+    },
+    {
+      "id": "collab",
+      "slug": "collab",
+      "n": "E2",
+      "title": "COLLAB",
+      "sub": "Event identity & stage concept",
+      "year": 2025,
+      "size": "M",
+      "kind": "experiment",
+      "context": "Design Practice, UTS · Jack Morton brief for Figma",
+      "team": "",
+      "partOf": null,
+      "link": null,
+      "keywords": [
+        "campaign-identity",
+        "experience-design",
+        "event-identity"
+      ],
+      "images": [],
+      "copy": {
+        "brief": "Jack Morton brief for Figma’s COLLAB event.",
+        "insight": "",
+        "pull": "",
+        "response": "",
+        "role": "",
+        "credit": "",
+        "oneLine": "Play, Powered moves away from the high-tech look commonly associated with AI to show the childlike curiosity that emerges when AI handles the mundane routine tasks."
+      },
+      "steps": [],
+      "pos": {
+        "edge": null
+      }
+    },
+    {
+      "id": "adhd-in-the-media",
+      "slug": "adhd-in-the-media",
+      "n": "E3",
+      "title": "ADHD in the Media",
+      "sub": "Research-led motion explainer",
+      "year": 2024,
+      "size": "M",
+      "kind": "experiment",
+      "context": "Contexts of Visual Communication, UTS",
+      "team": "",
+      "partOf": null,
+      "link": null,
+      "keywords": [
+        "design-research",
+        "motion",
+        "video",
+        "psychology",
+        "health-equity"
+      ],
+      "images": [],
+      "copy": {
+        "brief": "",
+        "insight": "",
+        "pull": "",
+        "response": "",
+        "role": "",
+        "credit": "",
+        "oneLine": "A feminist explainer on gender bias in ADHD research and diagnosis."
+      },
+      "steps": [],
+      "pos": {
+        "edge": null
+      }
+    },
+    {
+      "id": "terms-of-practice",
+      "slug": "terms-of-practice",
+      "n": "E4",
+      "title": "Terms of Practice",
+      "sub": "Manifesto website for digital designers",
+      "year": 2026,
+      "size": "M",
+      "kind": "experiment",
+      "context": "Research Through Design, UTS",
+      "team": "",
+      "partOf": null,
+      "link": "https://bryliejw.github.io/terms-of-practice-manifesto/",
+      "keywords": [
+        "design-research",
+        "web-design-build",
+        "manifesto",
+        "website",
+        "claude-code",
+        "attention-economy",
+        "humane-technology",
+        "design-justice",
+        "transparency"
+      ],
+      "images": [],
+      "copy": {
+        "brief": "",
+        "insight": "",
+        "pull": "",
+        "response": "",
+        "role": "",
+        "credit": "I built my wireframe into the live site with AI.",
+        "oneLine": "A manifesto for digital experience designers entering an industry that speaks differently to the one that trained us."
+      },
+      "steps": [],
+      "pos": {
+        "edge": null
+      }
+    },
+    {
+      "id": "audio-reactive-visual-exploration",
+      "slug": "audio-reactive-visual-exploration",
+      "n": "E5",
+      "title": "Audio-reactive visual exploration",
+      "sub": "",
+      "year": 2026,
+      "size": "M",
+      "kind": "experiment",
+      "context": "Self-directed · Creative technology",
+      "team": "",
+      "partOf": null,
+      "link": null,
+      "keywords": [
+        "creative-code",
+        "prototyping",
+        "creative-technology",
+        "touchdesigner"
+      ],
+      "images": [],
+      "copy": {
+        "brief": "",
+        "insight": "",
+        "pull": "",
+        "response": "Audio in, noise and edge operators.",
+        "role": "",
+        "credit": "",
+        "oneLine": "Teaching myself TouchDesigner, building noise visuals that respond to sound in real time."
+      },
+      "steps": [],
+      "pos": {
+        "edge": null
+      }
+    },
+    {
+      "id": "hand-tracking-bloom",
+      "slug": "hand-tracking-bloom",
+      "n": "03a",
+      "title": "Hand-tracking bloom",
+      "sub": "",
+      "year": 2024,
+      "size": "S",
+      "kind": "experiment",
+      "context": "Visualising Experience, UTS",
+      "team": "",
+      "partOf": "symbiosis",
+      "link": null,
+      "keywords": [
+        "creative-code",
+        "p5js-ml5"
+      ],
+      "images": [],
+      "copy": {
+        "brief": "",
+        "insight": "",
+        "pull": "",
+        "response": "",
+        "role": "",
+        "credit": "",
+        "oneLine": ""
+      },
+      "steps": [],
+      "pos": {
+        "edge": null
+      }
+    },
+    {
+      "id": "trust-in-transition",
+      "slug": "trust-in-transition",
+      "n": "05",
+      "title": "Trust in Transition",
+      "sub": "",
+      "year": 2025,
+      "size": "S",
+      "kind": "work",
+      "context": "UX Design, UTS",
+      "team": "",
+      "partOf": null,
+      "link": null,
+      "keywords": [
+        "design-research",
+        "ux-ui",
+        "research-folio",
+        "energy-transition"
+      ],
+      "images": [],
+      "copy": {
+        "brief": "",
+        "insight": "",
+        "pull": "",
+        "response": "",
+        "role": "",
+        "credit": "",
+        "oneLine": ""
+      },
+      "steps": [],
+      "pos": {
+        "edge": null
+      }
+    },
+    {
+      "id": "sparkchange",
+      "slug": "sparkchange",
+      "n": "06",
+      "title": "SparkChange",
+      "sub": "",
+      "year": 2025,
+      "size": "S",
+      "kind": "work",
+      "context": "UX Design, UTS",
+      "team": "",
+      "partOf": null,
+      "link": null,
+      "keywords": [
+        "ux-ui",
+        "prototyping",
+        "prototype"
+      ],
+      "images": [],
+      "copy": {
+        "brief": "",
+        "insight": "",
+        "pull": "",
+        "response": "",
+        "role": "",
+        "credit": "",
+        "oneLine": ""
+      },
+      "steps": [],
+      "pos": {
+        "edge": null
+      }
+    },
+    {
+      "id": "stellar-map",
+      "slug": "stellar-map",
+      "n": "07",
+      "title": "Stellar Map",
+      "sub": "",
+      "year": 2026,
+      "size": "S",
+      "kind": "experiment",
+      "context": "VCEP, UTS",
+      "team": "",
+      "partOf": null,
+      "link": null,
+      "keywords": [
+        "creative-code",
+        "data-visualisation",
+        "website",
+        "spotify-api"
+      ],
+      "images": [],
+      "copy": {
+        "brief": "",
+        "insight": "",
+        "pull": "",
+        "response": "",
+        "role": "",
+        "credit": "",
+        "oneLine": ""
+      },
+      "steps": [],
+      "pos": {
+        "edge": null
+      }
+    },
+    {
+      "id": "stellar-evolution",
+      "slug": "stellar-evolution",
+      "n": "08",
+      "title": "Stellar Evolution",
+      "sub": "",
+      "year": 2024,
+      "size": "S",
+      "kind": "work",
+      "context": "Webmedia, UTS",
+      "team": "",
+      "partOf": null,
+      "link": null,
+      "keywords": [
+        "creative-code",
+        "data-visualisation",
+        "web-design-build",
+        "website"
+      ],
+      "images": [],
+      "copy": {
+        "brief": "",
+        "insight": "",
+        "pull": "",
+        "response": "",
+        "role": "",
+        "credit": "",
+        "oneLine": ""
+      },
+      "steps": [],
+      "pos": {
+        "edge": null
+      }
+    },
+    {
+      "id": "contextlayer",
+      "slug": "contextlayer",
+      "n": "09",
+      "title": "ContextLayer",
+      "sub": "",
+      "year": 2025,
+      "size": "S",
+      "kind": "work",
+      "context": "Technologies Reimagined, UTS · ServiceRocket brief",
+      "team": "",
+      "partOf": null,
+      "link": null,
+      "keywords": [
+        "systems-mapping",
+        "speculative-futures",
+        "systems-map",
+        "video"
+      ],
+      "images": [],
+      "copy": {
+        "brief": "",
+        "insight": "",
+        "pull": "",
+        "response": "",
+        "role": "",
+        "credit": "",
+        "oneLine": ""
+      },
+      "steps": [],
+      "pos": {
+        "edge": null
+      }
+    },
+    {
+      "id": "whats-your-excuse",
+      "slug": "whats-your-excuse",
+      "n": "10",
+      "title": "What’s your excuse?",
+      "sub": "",
+      "year": 2023,
+      "size": "S",
+      "kind": "work",
+      "context": "Politics of Image & Text, UTS",
+      "team": "",
+      "partOf": null,
+      "link": null,
+      "keywords": [
+        "editorial-design",
+        "zine-poster",
+        "climate"
+      ],
+      "images": [],
+      "copy": {
+        "brief": "",
+        "insight": "",
+        "pull": "",
+        "response": "",
+        "role": "",
+        "credit": "",
+        "oneLine": ""
+      },
+      "steps": [],
+      "pos": {
+        "edge": null
+      }
+    },
+    {
+      "id": "lbw-trust-gala",
+      "slug": "lbw-trust-gala",
+      "n": "11",
+      "title": "LBW Trust 20th Anniversary Gala",
+      "sub": "",
+      "year": 2026,
+      "size": "S",
+      "kind": "client",
+      "context": "Client · freelance",
+      "team": "",
+      "partOf": null,
+      "link": null,
+      "keywords": [
+        "campaign-identity",
+        "experience-design",
+        "identity-system",
+        "event-identity"
+      ],
+      "images": [],
+      "copy": {
+        "brief": "",
+        "insight": "",
+        "pull": "",
+        "response": "",
+        "role": "",
+        "credit": "",
+        "oneLine": ""
+      },
+      "steps": [],
+      "pos": {
+        "edge": null
+      }
+    },
+    {
+      "id": "ashham",
+      "slug": "ashham",
+      "n": "12",
+      "title": "Ashham Agencies & Ashham Advisory",
+      "sub": "",
+      "year": 2024,
+      "size": "S",
+      "kind": "client",
+      "context": "Client · freelance",
+      "team": "",
+      "partOf": null,
+      "link": null,
+      "keywords": [
+        "campaign-identity",
+        "identity-system"
+      ],
+      "images": [],
+      "copy": {
+        "brief": "",
+        "insight": "",
+        "pull": "",
+        "response": "",
+        "role": "",
+        "credit": "",
+        "oneLine": ""
+      },
+      "steps": [],
+      "pos": {
+        "edge": null
+      }
+    },
+    {
+      "id": "ecosystem-engineers",
+      "slug": "ecosystem-engineers",
+      "n": "13",
+      "title": "Ecosystem engineers",
+      "sub": "",
+      "year": 2024,
+      "size": "S",
+      "kind": "work",
+      "context": "Narrative, Form & Time, UTS",
+      "team": "",
+      "partOf": null,
+      "link": null,
+      "keywords": [
+        "motion",
+        "video"
+      ],
+      "images": [],
+      "copy": {
+        "brief": "",
+        "insight": "",
+        "pull": "",
+        "response": "",
+        "role": "",
+        "credit": "",
+        "oneLine": ""
+      },
+      "steps": [],
+      "pos": {
+        "edge": null
+      }
+    },
+    {
+      "id": "cas-a",
+      "slug": "cas-a",
+      "n": "14",
+      "title": "Cas A",
+      "sub": "",
+      "year": 2024,
+      "size": "S",
+      "kind": "work",
+      "context": "Narrative, Form & Time, UTS",
+      "team": "",
+      "partOf": null,
+      "link": null,
+      "keywords": [
+        "editorial-design",
+        "illustration"
+      ],
+      "images": [],
+      "copy": {
+        "brief": "",
+        "insight": "",
+        "pull": "",
+        "response": "",
+        "role": "",
+        "credit": "",
+        "oneLine": ""
+      },
+      "steps": [],
+      "pos": {
+        "edge": null
+      }
+    },
+    {
+      "id": "nomad-homes",
+      "slug": "nomad-homes",
+      "n": "15",
+      "title": "Nomad Homes",
+      "sub": "",
+      "year": 2024,
+      "size": "S",
+      "kind": "work",
+      "context": "Design Futuring, UTS · group",
+      "team": "",
+      "partOf": null,
+      "link": null,
+      "keywords": [
+        "speculative-futures",
+        "design-research"
+      ],
+      "images": [],
+      "copy": {
+        "brief": "",
+        "insight": "",
+        "pull": "",
+        "response": "",
+        "role": "",
+        "credit": "",
+        "oneLine": ""
+      },
+      "steps": [],
+      "pos": {
+        "edge": null
+      },
+      "todo": "TODO(brylie): group work, name your role and the team size."
+    },
+    {
+      "id": "visual-essay-on-freedom",
+      "slug": "visual-essay-on-freedom",
+      "n": "16",
+      "title": "Visual essay on freedom",
+      "sub": "",
+      "year": 2023,
+      "size": "S",
+      "kind": "work",
+      "context": "Critical Approaches to Visual Culture, UTS",
+      "team": "",
+      "partOf": null,
+      "link": null,
+      "keywords": [
+        "editorial-design",
+        "design-research",
+        "visual-essay"
+      ],
+      "images": [],
+      "copy": {
+        "brief": "",
+        "insight": "",
+        "pull": "",
+        "response": "",
+        "role": "",
+        "credit": "",
+        "oneLine": ""
+      },
+      "steps": [],
+      "pos": {
+        "edge": null
+      }
+    },
+    {
+      "id": "coded-web-folio",
+      "slug": "coded-web-folio",
+      "n": "17",
+      "title": "Coded web folio",
+      "sub": "",
+      "year": 2023,
+      "size": "S",
+      "kind": "experiment",
+      "context": "Politics of Image & Text, UTS",
+      "team": "",
+      "partOf": null,
+      "link": null,
+      "keywords": [
+        "creative-code",
+        "web-design-build",
+        "website"
+      ],
+      "images": [],
+      "copy": {
+        "brief": "",
+        "insight": "",
+        "pull": "",
+        "response": "",
+        "role": "",
+        "credit": "",
+        "oneLine": ""
+      },
+      "steps": [],
+      "pos": {
+        "edge": null
+      }
+    },
+    {
+      "id": "photo-composites",
+      "slug": "photo-composites",
+      "n": "18",
+      "title": "Photo composites",
+      "sub": "",
+      "year": null,
+      "size": "S",
+      "kind": "experiment",
+      "context": "Self-directed",
+      "team": "",
+      "partOf": null,
+      "link": null,
+      "keywords": [
+        "photography"
+      ],
+      "images": [],
+      "copy": {
+        "brief": "",
+        "insight": "",
+        "pull": "",
+        "response": "",
+        "role": "",
+        "credit": "",
+        "oneLine": ""
+      },
+      "steps": [],
+      "pos": {
+        "edge": null
+      },
+      "todo": "TODO(brylie): year unknown."
+    },
+    {
+      "id": "cymatics",
+      "slug": "cymatics",
+      "n": "19",
+      "title": "Cymatics",
+      "sub": "",
+      "year": 2023,
+      "size": "S",
+      "kind": "work",
+      "context": "Researching Design Histories, UTS",
+      "team": "",
+      "partOf": null,
+      "link": null,
+      "keywords": [
+        "design-research",
+        "data-visualisation",
+        "video"
+      ],
+      "images": [],
+      "copy": {
+        "brief": "",
+        "insight": "",
+        "pull": "",
+        "response": "",
+        "role": "",
+        "credit": "",
+        "oneLine": ""
+      },
+      "steps": [],
+      "pos": {
+        "edge": null
+      }
+    },
+    {
+      "id": "book-cover-series",
+      "slug": "book-cover-series",
+      "n": "20",
+      "title": "Book cover series",
+      "sub": "",
+      "year": 2023,
+      "size": "S",
+      "kind": "work",
+      "context": "UTS",
+      "team": "",
+      "partOf": null,
+      "link": null,
+      "keywords": [
+        "editorial-design"
+      ],
+      "images": [],
+      "copy": {
+        "brief": "",
+        "insight": "",
+        "pull": "",
+        "response": "",
+        "role": "",
+        "credit": "",
+        "oneLine": ""
+      },
+      "steps": [],
+      "pos": {
+        "edge": null
+      },
+      "todo": "TODO(brylie): subject to confirm."
+    },
+    {
+      "id": "expanded-networks-journal",
+      "slug": "expanded-networks-journal",
+      "n": "21",
+      "title": "Expanded networks journal",
+      "sub": "",
+      "year": 2026,
+      "size": "S",
+      "kind": "work",
+      "context": "VCEP, UTS",
+      "team": "",
+      "partOf": null,
+      "link": null,
+      "keywords": [
+        "photography",
+        "design-research"
+      ],
+      "images": [],
+      "copy": {
+        "brief": "",
+        "insight": "",
+        "pull": "",
+        "response": "",
+        "role": "",
+        "credit": "",
+        "oneLine": ""
+      },
+      "steps": [],
+      "pos": {
+        "edge": null
+      }
+    }
+  ],
+  "keywords": [
+    {
+      "id": "editorial-design",
+      "label": "Editorial design",
+      "type": "discipline",
+      "proposed": false
+    },
+    {
+      "id": "art-direction",
+      "label": "Art direction",
+      "type": "discipline",
+      "proposed": false
+    },
+    {
+      "id": "design-research",
+      "label": "Design research",
+      "type": "discipline",
+      "proposed": false
+    },
+    {
+      "id": "workshop-facilitation",
+      "label": "Workshop facilitation",
+      "type": "discipline",
+      "proposed": false
+    },
+    {
+      "id": "web-design-build",
+      "label": "Web design & build",
+      "type": "discipline",
+      "proposed": false
+    },
+    {
+      "id": "experience-design",
+      "label": "Experience design",
+      "type": "discipline",
+      "proposed": false
+    },
+    {
+      "id": "prototyping",
+      "label": "Prototyping",
+      "type": "discipline",
+      "proposed": false,
+      "related": [
+        "creative-technology"
+      ]
+    },
+    {
+      "id": "creative-code",
+      "label": "Creative code",
+      "type": "discipline",
+      "proposed": false
+    },
+    {
+      "id": "campaign-identity",
+      "label": "Campaign & identity",
+      "type": "discipline",
+      "proposed": false
+    },
+    {
+      "id": "motion",
+      "label": "Motion",
+      "type": "discipline",
+      "proposed": false
+    },
+    {
+      "id": "ux-ui",
+      "label": "UX/UI",
+      "type": "discipline",
+      "proposed": false
+    },
+    {
+      "id": "data-visualisation",
+      "label": "Data visualisation",
+      "type": "discipline",
+      "proposed": false
+    },
+    {
+      "id": "systems-mapping",
+      "label": "Systems mapping",
+      "type": "discipline",
+      "proposed": false
+    },
+    {
+      "id": "speculative-futures",
+      "label": "Speculative futures",
+      "type": "discipline",
+      "proposed": false
+    },
+    {
+      "id": "illustration",
+      "label": "Illustration",
+      "type": "discipline",
+      "proposed": false
+    },
+    {
+      "id": "photography",
+      "label": "Photography",
+      "type": "discipline",
+      "proposed": false
+    },
+    {
+      "id": "design-strategy",
+      "label": "Design strategy",
+      "type": "discipline",
+      "proposed": false
+    },
+    {
+      "id": "service-design",
+      "label": "Service design",
+      "type": "discipline",
+      "proposed": false
+    },
+    {
+      "id": "co-design",
+      "label": "Co-design",
+      "type": "discipline",
+      "proposed": false
+    },
+    {
+      "id": "critical-making",
+      "label": "Critical making",
+      "type": "discipline",
+      "proposed": false
+    },
+    {
+      "id": "creative-technology",
+      "label": "Creative technology",
+      "type": "discipline",
+      "proposed": false
+    },
+    {
+      "id": "information-design",
+      "label": "Information design",
+      "type": "discipline",
+      "proposed": false
+    },
+    {
+      "id": "transition-design",
+      "label": "Transition design",
+      "type": "discipline",
+      "proposed": false
+    },
+    {
+      "id": "systems-thinking",
+      "label": "Systems thinking",
+      "type": "discipline",
+      "proposed": false,
+      "related": [
+        "sociotechnical-systems",
+        "interdisciplinary",
+        "transition-design"
+      ]
+    },
+    {
+      "id": "magazine",
+      "label": "Magazine",
+      "type": "deliverable",
+      "proposed": false
+    },
+    {
+      "id": "style-guide",
+      "label": "Style guide",
+      "type": "deliverable",
+      "proposed": false
+    },
+    {
+      "id": "conversation-cards",
+      "label": "Conversation cards",
+      "type": "deliverable",
+      "proposed": false
+    },
+    {
+      "id": "campus-campaign",
+      "label": "Campus campaign",
+      "type": "deliverable",
+      "proposed": false
+    },
+    {
+      "id": "landing-page",
+      "label": "Landing page",
+      "type": "deliverable",
+      "proposed": false
+    },
+    {
+      "id": "installation-concept",
+      "label": "Installation concept",
+      "type": "deliverable",
+      "proposed": false
+    },
+    {
+      "id": "prototype",
+      "label": "Prototype",
+      "type": "deliverable",
+      "proposed": false
+    },
+    {
+      "id": "manifesto",
+      "label": "Manifesto",
+      "type": "deliverable",
+      "proposed": false
+    },
+    {
+      "id": "website",
+      "label": "Website",
+      "type": "deliverable",
+      "proposed": false
+    },
+    {
+      "id": "workshop",
+      "label": "Workshop",
+      "type": "deliverable",
+      "proposed": false
+    },
+    {
+      "id": "event-identity",
+      "label": "Event identity",
+      "type": "deliverable",
+      "proposed": false
+    },
+    {
+      "id": "video",
+      "label": "Video",
+      "type": "deliverable",
+      "proposed": false
+    },
+    {
+      "id": "research-folio",
+      "label": "Research folio",
+      "type": "deliverable",
+      "proposed": false
+    },
+    {
+      "id": "systems-map",
+      "label": "Systems map",
+      "type": "deliverable",
+      "proposed": false
+    },
+    {
+      "id": "zine-poster",
+      "label": "Zine & poster",
+      "type": "deliverable",
+      "proposed": false
+    },
+    {
+      "id": "identity-system",
+      "label": "Identity system",
+      "type": "deliverable",
+      "proposed": false
+    },
+    {
+      "id": "visual-essay",
+      "label": "Visual essay",
+      "type": "deliverable",
+      "proposed": false
+    },
+    {
+      "id": "indesign",
+      "label": "InDesign",
+      "type": "tool",
+      "proposed": false
+    },
+    {
+      "id": "photoshop",
+      "label": "Photoshop",
+      "type": "tool",
+      "proposed": false
+    },
+    {
+      "id": "procreate",
+      "label": "Procreate",
+      "type": "tool",
+      "proposed": false
+    },
+    {
+      "id": "figma",
+      "label": "Figma",
+      "type": "tool",
+      "proposed": false
+    },
+    {
+      "id": "miro",
+      "label": "Miro",
+      "type": "tool",
+      "proposed": false
+    },
+    {
+      "id": "webflow",
+      "label": "Webflow",
+      "type": "tool",
+      "proposed": false
+    },
+    {
+      "id": "illustrator",
+      "label": "Illustrator",
+      "type": "tool",
+      "proposed": false
+    },
+    {
+      "id": "p5js-ml5",
+      "label": "p5.js & ml5",
+      "type": "tool",
+      "proposed": false
+    },
+    {
+      "id": "teachable-machine",
+      "label": "Teachable Machine",
+      "type": "tool",
+      "proposed": false
+    },
+    {
+      "id": "claude-code",
+      "label": "Claude Code",
+      "type": "tool",
+      "proposed": false
+    },
+    {
+      "id": "touchdesigner",
+      "label": "TouchDesigner",
+      "type": "tool",
+      "proposed": false
+    },
+    {
+      "id": "spotify-api",
+      "label": "Spotify API",
+      "type": "tool",
+      "proposed": false
+    },
+    {
+      "id": "cultural-resistance",
+      "label": "Cultural resistance",
+      "type": "topic",
+      "proposed": false
+    },
+    {
+      "id": "urban-standardisation",
+      "label": "Urban standardisation",
+      "type": "topic",
+      "proposed": false
+    },
+    {
+      "id": "gender-based-violence-prevention",
+      "label": "Gender-based violence prevention",
+      "type": "topic",
+      "proposed": false
+    },
+    {
+      "id": "museum-interpretation",
+      "label": "Museum interpretation",
+      "type": "topic",
+      "proposed": false
+    },
+    {
+      "id": "ai-in-hospitality",
+      "label": "AI in hospitality",
+      "type": "topic",
+      "proposed": false
+    },
+    {
+      "id": "health-equity",
+      "label": "Health equity",
+      "type": "topic",
+      "proposed": false
+    },
+    {
+      "id": "energy-transition",
+      "label": "Energy transition",
+      "type": "topic",
+      "proposed": false
+    },
+    {
+      "id": "climate",
+      "label": "Climate",
+      "type": "topic",
+      "proposed": false
+    },
+    {
+      "id": "visual-culture",
+      "label": "Visual culture",
+      "type": "topic",
+      "proposed": false,
+      "related": [
+        "sociology"
+      ]
+    },
+    {
+      "id": "sociology",
+      "label": "Sociology",
+      "type": "topic",
+      "proposed": false,
+      "related": [
+        "psychology"
+      ]
+    },
+    {
+      "id": "psychology",
+      "label": "Psychology",
+      "type": "topic",
+      "proposed": false
+    },
+    {
+      "id": "attention-economy",
+      "label": "Attention economy",
+      "type": "topic",
+      "proposed": false
+    },
+    {
+      "id": "responsible-ai",
+      "label": "Responsible AI",
+      "type": "topic",
+      "proposed": false
+    },
+    {
+      "id": "sociotechnical-systems",
+      "label": "Sociotechnical systems",
+      "type": "topic",
+      "proposed": false
+    },
+    {
+      "id": "interdisciplinary",
+      "label": "Interdisciplinary",
+      "type": "topic",
+      "proposed": false
+    },
+    {
+      "id": "data-humanism",
+      "label": "Data humanism",
+      "type": "topic",
+      "proposed": false,
+      "related": [
+        "information-design"
+      ]
+    },
+    {
+      "id": "humane-technology",
+      "label": "Humane technology",
+      "type": "value",
+      "proposed": true,
+      "related": [
+        "responsible-ai",
+        "attention-economy"
+      ]
+    },
+    {
+      "id": "design-justice",
+      "label": "Design justice",
+      "type": "value",
+      "proposed": true,
+      "related": [
+        "co-design"
+      ]
+    },
+    {
+      "id": "more-than-human-design",
+      "label": "More-than-human design",
+      "type": "value",
+      "proposed": true,
+      "related": [
+        "critical-making"
+      ]
+    },
+    {
+      "id": "equity",
+      "label": "Equity",
+      "type": "value",
+      "proposed": true
+    },
+    {
+      "id": "curiosity",
+      "label": "Curiosity",
+      "type": "value",
+      "proposed": true
+    },
+    {
+      "id": "care",
+      "label": "Care",
+      "type": "value",
+      "proposed": true
+    },
+    {
+      "id": "access",
+      "label": "Access",
+      "type": "value",
+      "proposed": true
+    },
+    {
+      "id": "transparency",
+      "label": "Transparency",
+      "type": "value",
+      "proposed": true
+    }
+  ]
+}
