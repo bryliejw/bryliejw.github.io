@@ -143,7 +143,7 @@
         ]
       ],
       "pos": {
-        "edge": null
+        "edge": [240, -20]
       }
     },
     {
@@ -212,7 +212,7 @@
         ]
       ],
       "pos": {
-        "edge": null
+        "edge": [-140, 120]
       }
     },
     {
@@ -329,7 +329,7 @@
         ]
       ],
       "pos": {
-        "edge": null
+        "edge": [20, 140]
       }
     },
     {
@@ -365,7 +365,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": null
+        "edge": [-240, 260]
       }
     },
     {
@@ -398,7 +398,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": null
+        "edge": [-380, 200]
       }
     },
     {
@@ -433,7 +433,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": null
+        "edge": [-20, -80]
       }
     },
     {
@@ -472,7 +472,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": null
+        "edge": [180, -120]
       }
     },
     {
@@ -506,7 +506,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": null
+        "edge": [-420, 40]
       }
     },
     {
@@ -538,7 +538,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": null
+        "edge": [-420, 160]
       }
     },
     {
@@ -572,7 +572,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": null
+        "edge": [-40, -120]
       }
     },
     {
@@ -605,7 +605,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": null
+        "edge": [-280, 160]
       }
     },
     {
@@ -639,7 +639,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": null
+        "edge": [-320, 320]
       }
     },
     {
@@ -673,7 +673,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": null
+        "edge": [-380, 280]
       }
     },
     {
@@ -707,7 +707,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": null
+        "edge": [-40, 320]
       }
     },
     {
@@ -740,7 +740,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": null
+        "edge": [160, -220]
       }
     },
     {
@@ -774,7 +774,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": null
+        "edge": [-20, 280]
       }
     },
     {
@@ -806,7 +806,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": null
+        "edge": [60, 320]
       }
     },
     {
@@ -838,7 +838,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": null
+        "edge": [140, 180]
       }
     },
     {
@@ -870,7 +870,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": null
+        "edge": [-440, -320]
       }
     },
     {
@@ -902,7 +902,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": null
+        "edge": [-440, 0]
       },
       "todo": "TODO(brylie): group work, name your role and the team size."
     },
@@ -936,7 +936,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": null
+        "edge": [-260, -120]
       }
     },
     {
@@ -969,7 +969,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": null
+        "edge": [-220, 300]
       }
     },
     {
@@ -1000,7 +1000,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": null
+        "edge": [-440, -240]
       },
       "todo": "TODO(brylie): year unknown."
     },
@@ -1034,7 +1034,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": null
+        "edge": [-260, 120]
       }
     },
     {
@@ -1065,7 +1065,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": null
+        "edge": [-440, -280]
       },
       "todo": "TODO(brylie): subject to confirm."
     },
@@ -1098,7 +1098,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": null
+        "edge": [-440, -180]
       }
     }
   ],
