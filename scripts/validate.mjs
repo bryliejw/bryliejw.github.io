@@ -114,11 +114,16 @@ for (const [i, w] of works.entries()) {
   if (!Array.isArray(w.images)) fail(`${at}.images`, "must be an array");
   else for (const [j, img] of w.images.entries()) {
     const ia = `${at}.images[${j}]`;
-    if (!isObj(img)) { fail(ia, "must be { src, w, h, alt }"); continue; }
+    if (!isObj(img)) { fail(ia, "must be { src, thumb, w, h, alt, white }"); continue; }
     str(`${ia}.src`, img.src, { empty: false });
     if (!isNum(img.w) || !isNum(img.h)) fail(ia, "w and h must be numbers");
-    str(`${ia}.alt`, img.alt, { empty: false });
-    if (isStr(img.src) && !existsSync(join(root, img.src.replace(/^\//, "")))) fail(`${ia}.src`, `file not found: ${img.src}`);
+    // Alt text is Brylie's to write: empty is allowed here and listed by --empty.
+    str(`${ia}.alt`, img.alt);
+    if (img.white !== undefined && typeof img.white !== "boolean") fail(`${ia}.white`, "must be true or false");
+    for (const k of ["src", "thumb"]) {
+      if (k === "thumb" && img.thumb === undefined) continue;
+      if (isStr(img[k]) && !existsSync(join(root, img[k].replace(/^\//, "")))) fail(`${ia}.${k}`, `file not found: ${img[k]}`);
+    }
   }
   if (!isObj(w.copy)) fail(`${at}.copy`, "must be an object");
   else {
@@ -189,6 +194,9 @@ console.log(`  works     ${works.length} (${fmt(count(works, "size"))}; ${fmt(co
 console.log(`  keywords  ${keywords.length} (${fmt(count(keywords, "type"))}; ${keywords.filter((k) => k.proposed).length} proposed)`);
 console.log(`  edges     ${wk + partOf + toMe} derived (${wk} work to keyword, ${partOf} partOf, ${toMe} to me); ${pairs.size} keyword lines from p01`);
 console.log(`  ids       ${works.length + keywords.length} unique across works and keywords`);
+const images = works.flatMap((w) => w.images);
+const noAlt = images.filter((im) => !im.alt).length;
+console.log(`  images    ${images.length} (${images.filter((im) => im.white).length} white-ground)${noAlt ? `; ${noAlt} without alt text, see --empty` : ""}`);
 
 if (process.argv.includes("--empty")) {
   console.log("\nEmpty fields:");
@@ -197,6 +205,7 @@ if (process.argv.includes("--empty")) {
       ...["sub", "team"].filter((k) => !w[k]),
       ...(w.year === null ? ["year"] : []),
       ...(w.images.length ? [] : ["images"]),
+      ...w.images.flatMap((im, j) => (im.alt ? [] : [`images[${j}].alt`])),
       ...COPY.filter((k) => !w.copy[k]).map((k) => `copy.${k}`),
       ...(w.steps.length ? [] : ["steps"]),
       ...(w.pos.edge ? [] : ["pos.edge"]),

@@ -51,7 +51,7 @@ scripts/              validate.mjs, layout-edge.mjs, icons.mjs, images.mjs, buil
 ## Data model (data/nodes.json)
 
 - `me`: name, tagline1 "Designer, strategist and chronic over-thinker", tagline2 "systems thinker", bio paragraphs, education, certification (IBM Enterprise Design Thinking Practitioner, Credly https://www.credly.com/badges/d8601100-d8ed-445e-9cbc-0cb08019e05d), experience, standpoint, contact.
-- `works[]`: id, slug, n, title, sub, year|null, size L|M|S, kind project|experiment|work|client, context, team, partOf, link, keywords[], images[{src,w,h,alt}], copy{brief,insight,pull,response,role,credit,oneLine}, steps[[label,text]], pos{edge:[x,y]}.
+- `works[]`: id, slug, n, title, sub, year|null, size L|M|S, kind project|experiment|work|client, context, team, partOf, link, keywords[], images[{src,thumb,w,h,alt,white}] (written by images.mjs; white = white ground, gets the 1px keyline; alt is hers, never generated), copy{brief,insight,pull,response,role,credit,oneLine}, steps[[label,text]], pos{edge:[x,y]}.
 - `keywords[]`: id, label, type discipline|deliverable|tool|topic|value, proposed (values stay proposed until she confirms).
 - Ids are unique across works AND keywords. `validate.mjs` fails the build on a duplicate (photo, td and zine have collided before).
 - Edges are derived, never stored: work to keyword, work to partOf (dashed), size L works and Terms of Practice to `me`.

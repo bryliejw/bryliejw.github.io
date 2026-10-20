@@ -8,7 +8,7 @@
     "icons": "node scripts/icons.mjs",
     "layout": "node scripts/layout-edge.mjs",
     "images": "node scripts/images.mjs",
-    "build": "node scripts/build.mjs",
+    "build": "node scripts/images.mjs && node scripts/build.mjs",
     "check": "node scripts/check-overlaps.mjs && node scripts/check-ui.mjs && node scripts/check-open.mjs"
   },
   "devDependencies": {
