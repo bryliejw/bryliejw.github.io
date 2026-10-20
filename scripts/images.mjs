@@ -13,8 +13,13 @@
 // where white overrides the detection). Images without alt are listed at the end.
 // Works without a _src folder keep their images[] as it is. Generated files in
 // assets/img/<slug>/ that no longer have an original are removed.
+// data/selects.json, when it lists a work, picks and orders its images instead of the
+// whole folder: { "<work slug>": ["01-file.jpg", "<other slug>/02-file.jpg", ...] }. The
+// first is the map tile and the page hero. A name with a slash is read from that folder of
+// _src, so a work can use selects filed under another work. Folders in assets/img that no
+// longer belong to a work with images are removed.
 // Options: --force re-encodes every image even when its WebP files are newer.
-import { existsSync, mkdirSync, readdirSync, readFileSync, statSync, unlinkSync } from "node:fs";
+import { existsSync, mkdirSync, readdirSync, readFileSync, rmdirSync, statSync, unlinkSync } from "node:fs";
 import { extname, join, parse } from "node:path";
 import sharp from "sharp";
 import { root } from "./serve.mjs";
@@ -31,6 +36,9 @@ const WHITE_MIN = 236;
 const WHITE_SHARE = 0.92;
 
 const data = readData();
+const selectsFile = join(root, "data", "selects.json");
+const selects = existsSync(selectsFile) ? JSON.parse(readFileSync(selectsFile, "utf8")) : {};
+for (const slug of Object.keys(selects)) if (!data.works.some((w) => w.slug === slug)) throw new Error(`selects.json: no work with slug "${slug}"`);
 const name = (file) => parse(file).name.toLowerCase().normalize("NFKD").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "") || "image";
 const byName = (a, b) => a.localeCompare(b, "en", { numeric: true, sensitivity: "base" });
 const newer = (out, src) => existsSync(out) && statSync(out).mtimeMs >= statSync(src).mtimeMs;
@@ -61,11 +69,17 @@ async function encode(src, out, edge) {
 const missingAlt = [];
 let made = 0;
 let works = 0;
+const kept = new Set();
 for (const w of data.works) {
   const dir = join(root, "_src", w.slug);
-  if (!existsSync(dir)) continue;
+  const picked = selects[w.slug];
+  if (!picked && !existsSync(dir)) continue;
   works++;
-  const files = readdirSync(dir).filter((f) => INPUT.has(extname(f).toLowerCase()) && !f.startsWith(".")).sort(byName);
+  // Paths relative to _src: from selects.json, or every image in the work's folder.
+  const files = picked
+    ? picked.map((f) => (f.includes("/") ? f : `${w.slug}/${f}`))
+    : readdirSync(dir).filter((f) => INPUT.has(extname(f).toLowerCase()) && !f.startsWith(".")).sort(byName).map((f) => `${w.slug}/${f}`);
+  for (const f of files) if (!existsSync(join(root, "_src", f))) throw new Error(`selects.json: _src/${f} not found`);
   const sideFile = join(dir, "images.json");
   const side = existsSync(sideFile) ? JSON.parse(readFileSync(sideFile, "utf8")) : {};
   const outDir = join(root, "assets", "img", w.slug);
@@ -75,8 +89,9 @@ for (const w of data.works) {
   const keep = new Set();
   const images = [];
 
-  for (const f of files) {
-    const src = join(dir, f);
+  for (const rel of files) {
+    const src = join(root, "_src", rel);
+    const f = rel.split("/").pop();
     let base = name(f);
     // Two originals that slug the same (a.JPG and a.png) get -2, -3.
     const n = (used.get(base) ?? 0) + 1;
@@ -88,23 +103,34 @@ for (const w of data.works) {
     if (await encode(src, thumb, THUMB)) made++;
     keep.add(`${base}.webp`).add(`${base}-${THUMB}.webp`);
     const meta = await sharp(large).metadata();
-    const rel = `assets/img/${w.slug}/${base}.webp`;
-    const old = before.get(rel);
+    const webp = `assets/img/${w.slug}/${base}.webp`;
+    const old = before.get(webp);
     const s = side[f] ?? {};
     const alt = s.alt ?? old?.alt ?? "";
     const white = typeof s.white === "boolean" ? s.white : await isWhiteGround(src);
-    images.push({ src: rel, thumb: `assets/img/${w.slug}/${base}-${THUMB}.webp`, w: meta.width, h: meta.height, alt, white });
-    if (!alt) missingAlt.push(`${w.n} ${w.title}: _src/${w.slug}/${f}`);
+    images.push({ src: webp, thumb: `assets/img/${w.slug}/${base}-${THUMB}.webp`, w: meta.width, h: meta.height, alt, white });
+    if (!alt) missingAlt.push(`${w.n} ${w.title}: _src/${rel}`);
   }
 
   for (const f of readdirSync(outDir)) {
     if (f.endsWith(".webp") && !keep.has(f)) {
       unlinkSync(join(outDir, f));
-      console.log(`images: removed assets/img/${w.slug}/${f} (no original)`);
+      console.log(`images: removed assets/img/${w.slug}/${f} (not picked or no original)`);
     }
   }
   w.images = images;
   console.log(`images: ${w.n} ${w.title}: ${images.length} image${images.length === 1 ? "" : "s"}${images.some((i) => i.white) ? `, ${images.filter((i) => i.white).length} white-ground` : ""}`);
+}
+
+// Generated folders whose work is gone or has no images.
+for (const w of data.works) if (w.images.length) kept.add(w.slug);
+const imgRoot = join(root, "assets", "img");
+for (const d of readdirSync(imgRoot, { withFileTypes: true })) {
+  if (!d.isDirectory() || kept.has(d.name)) continue;
+  const dir = join(imgRoot, d.name);
+  for (const f of readdirSync(dir)) if (f.endsWith(".webp")) unlinkSync(join(dir, f));
+  if (!readdirSync(dir).length) rmdirSync(dir);
+  console.log(`images: removed assets/img/${d.name}/ (no work with images)`);
 }
 
 const changed = writeData(data);
