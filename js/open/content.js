@@ -91,9 +91,18 @@ export function stepsHTML(w) {
   return `<ol class="steps">${w.steps.map(([label, text]) => `<li><p class="mono-label st-label">${esc(label)}</p><p class="st-text">${esc(text)}</p></li>`).join("")}</ol>`;
 }
 
-export function imagesHTML(w, { lazy = true } = {}) {
+// One image: the 1600px file with the 600px thumb in srcset. White-ground images
+// get the 1px keyline (is-white).
+export function imgHTML(im, { cls = "img", sizes = "(max-width: 719px) 100vw, 420px", lazy = true } = {}) {
+  const set = im.thumb ? ` srcset="${esc(src(im.thumb))} ${THUMB_W(im)}w, ${esc(src(im.src))} ${im.w}w" sizes="${sizes}"` : "";
+  return `<figure class="${cls}${im.white ? " is-white" : ""}"><img src="${esc(src(im.src))}"${set} width="${im.w}" height="${im.h}" alt="${esc(im.alt)}"${lazy ? ' loading="lazy"' : ""}></figure>`;
+}
+// Width of the 600px thumb (600 on the long edge, aspect kept).
+const THUMB_W = (im) => Math.round(im.w * Math.min(1, 600 / Math.max(im.w, im.h)));
+
+export function imagesHTML(w, opts) {
   if (!w.images.length) return "";
-  return `<div class="imgs">${w.images.map((im) => `<figure class="img"><img src="${esc(src(im.src))}" width="${im.w}" height="${im.h}" alt="${esc(im.alt)}"${lazy ? ' loading="lazy"' : ""}></figure>`).join("")}</div>`;
+  return `<div class="imgs">${w.images.map((im) => imgHTML(im, opts)).join("")}</div>`;
 }
 
 // Works tied to a work: part of, its parts, and works that share keywords (most shared first).
@@ -156,11 +165,11 @@ export function pageHTML(w, ix) {
       </div>
     </div>
     <div class="wp-body">
-      ${hero ? `<figure class="wp-hero"><img src="${esc(src(hero.src))}" width="${hero.w}" height="${hero.h}" alt="${esc(hero.alt)}"></figure>` : ""}
+      ${hero ? imgHTML(hero, { cls: "wp-hero", sizes: "(max-width: 719px) 100vw, 55vw", lazy: false }) : ""}
       ${copyHTML(w, { h: 2 })}
     </div>
   </div>
-  ${w.images.length > 1 ? `<section class="wp-sec" aria-labelledby="wp-images"><h2 class="wp-h mono-label" id="wp-images">${icon("image")}Images</h2>${imagesHTML({ ...w, images: w.images.slice(1) })}</section>` : ""}
+  ${w.images.length > 1 ? `<section class="wp-sec" aria-labelledby="wp-images"><h2 class="wp-h mono-label" id="wp-images">${icon("image")}Images</h2>${imagesHTML({ ...w, images: w.images.slice(1) }, { sizes: "(max-width: 719px) 100vw, 50vw" })}</section>` : ""}
   ${w.steps.length ? `<section class="wp-sec" aria-labelledby="wp-process"><h2 class="wp-h mono-label" id="wp-process">${icon("workflow")}Process</h2>${stepsHTML(w)}</section>` : ""}
   <section class="wp-sec" aria-labelledby="wp-conn"><h2 class="wp-h mono-label" id="wp-conn">${icon("waypoints")}Connections</h2>${workConnections(w, ix)}</section>
   <nav class="wp-next" aria-label="Next">

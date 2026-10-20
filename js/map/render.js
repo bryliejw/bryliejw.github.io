@@ -135,13 +135,14 @@ function drawWork(n) {
   const w = n.data;
   const b = n.body;
   if (w.size === "L") {
-    el("rect", { class: "tile tile-l", x: -48, y: -48, width: 96, height: 96 }, b);
     const img = w.images[0];
+    el("rect", { class: `tile tile-l${img ? " has-img" : ""}`, x: -48, y: -48, width: 96, height: 96 }, b);
     if (img) {
+      // The 600px thumb fills the tile; white-ground images keep the 1px keyline.
       const clip = `clip-${w.id}`;
       el("rect", { x: -48, y: -48, width: 96, height: 96 }, el("clipPath", { id: clip }, b));
-      el("image", { href: img.src, x: -48, y: -48, width: 96, height: 96, preserveAspectRatio: "xMidYMid slice", "clip-path": `url(#${clip})` }, b);
-      el("rect", { class: "tile-key", x: -48, y: -48, width: 96, height: 96 }, b);
+      el("image", { href: `/${img.thumb ?? img.src}`.replace(/^\/+/, "/"), x: -48, y: -48, width: 96, height: 96, preserveAspectRatio: "xMidYMid slice", "clip-path": `url(#${clip})` }, b);
+      if (img.white) el("rect", { class: "tile-key", x: -48, y: -48, width: 96, height: 96 }, b);
     }
     el("rect", { class: "chip", x: -48, y: -48, width: 26, height: 17 }, b);
     text(b, w.n, { class: "chip-n", x: -35, y: -36.2, "text-anchor": "middle" });

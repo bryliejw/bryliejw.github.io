@@ -151,7 +151,8 @@ try {
     expect(s.layer === "panel" && s.id === "symbiosis" && s.url.endsWith("#symbiosis") && s.depth === 2, `${view}: node click with panel: ${JSON.stringify(s)}`);
     expect((await nodeBox(page, "symbiosis")).visible, `${view}: symbiosis hidden behind the panel`);
     const tabs = await page.evaluate(() => [...document.querySelectorAll(".panel [role='tab']")].map((t) => `${t.textContent}${t.disabled ? "-" : ""}`).join(","));
-    expect(tabs === "Overview,Images-,Process,Connections", `${view}: tabs ${tabs}`);
+    const imgs = await page.evaluate(() => window.__map.graph.byId.get("symbiosis").data.images.length);
+    expect(tabs === `Overview,Images${imgs ? "" : "-"},Process,Connections`, `${view}: tabs ${tabs} with ${imgs} images`);
     await page.click(".panel [data-tab='process']");
     const steps = await page.evaluate(() => document.querySelectorAll(".panel .steps li").length);
     expect(steps === 18, `${view}: Process tab shows ${steps} steps`);

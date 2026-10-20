@@ -310,6 +310,7 @@ html:not(.js) .pop-index[hidden] { display: block; position: static; width: auto
 /* Works */
 .tile-l { fill: var(--tint); stroke: var(--keyline); stroke-width: 1; vector-effect: non-scaling-stroke; }
 .tile-key { fill: none; stroke: var(--keyline); stroke-width: 1; vector-effect: non-scaling-stroke; }
+.tile-l.has-img { stroke: none; }
 .chip { fill: var(--ultramarine); }
 .chip-n { font-family: var(--font-mono); font-size: 10px; font-weight: 600; fill: var(--paper); letter-spacing: var(--mono-tracking); }
 .tile-m { fill: var(--paper); stroke: var(--ink); stroke-width: 1; vector-effect: non-scaling-stroke; }
@@ -465,7 +466,9 @@ a.tbtn { color: var(--ink); text-decoration: none; }
 .st-text { margin: 0; font-size: 14.5px; line-height: 1.5; max-width: var(--measure); }
 .imgs { display: grid; gap: 12px; }
 .img { margin: 0; }
-.img img { display: block; width: 100%; height: auto; }
+.img img { display: block; width: auto; max-width: 100%; max-height: 72vh; height: auto; }
+/* White-ground images get the 1px keyline; others sit edge to edge. */
+.is-white img, img.is-white { border: var(--rule-width) solid var(--keyline); }
 .wlist { list-style: none; margin: 0; padding: 0; }
 .wlist a {
   display: grid; grid-template-columns: 36px 1fr auto; gap: 10px; align-items: baseline;
@@ -520,7 +523,7 @@ a.tbtn { color: var(--ink); text-decoration: none; }
 .wp-body .cp p { font-size: var(--body-size); }
 .wp-body .cp-pull { margin: 4px 0 20px; font-size: clamp(22px, 2.4vw, 30px); max-width: 26ch; line-height: 1.18; letter-spacing: -0.02em; }
 .wp-hero { margin: 0 0 24px; }
-.wp-hero img { display: block; width: 100%; height: auto; }
+.wp-hero img, .wp .img img { display: block; width: auto; max-width: 100%; max-height: 82vh; height: auto; }
 .wp-sec { padding: 36px 0 40px; border-bottom: var(--rule-width) solid var(--rule); }
 .wp-h { display: flex; align-items: center; gap: 8px; margin: 0 0 20px; color: var(--ink); }
 .wp-h .ic { width: var(--icon-inline); height: var(--icon-inline); }

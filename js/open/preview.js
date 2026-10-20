@@ -23,7 +23,7 @@ export function createPreview({ graph, views, isOpen, edge }) {
     const img = w.images[0];
     return [
       `<p class="pv-meta mono-label">${icon(KIND_ICON[w.kind])}<span class="pv-n">${esc(w.n)}</span>${[kindLabel(w), w.year].filter(Boolean).join(" · ")}</p>`,
-      img ? `<img class="pv-img" src="${esc(src(img.src))}" alt="" width="${img.w}" height="${img.h}">` : "",
+      img ? `<img class="pv-img${img.white ? " is-white" : ""}" src="${esc(src(img.thumb ?? img.src))}" alt="" width="${img.w}" height="${img.h}">` : "",
       `<p class="pv-title">${esc(w.title)}</p>`,
       w.sub ? `<p class="pv-sub">${esc(w.sub)}</p>` : "",
     ].join("");
