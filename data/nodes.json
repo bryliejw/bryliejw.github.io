@@ -140,6 +140,14 @@
           "white": false
         },
         {
+          "src": "assets/img/cypher/06-all-9-10-mid.webp",
+          "thumb": "assets/img/cypher/06-all-9-10-mid-600.webp",
+          "w": 1600,
+          "h": 1076,
+          "alt": "",
+          "white": false
+        },
+        {
           "src": "assets/img/cypher/03-all-1-2.webp",
           "thumb": "assets/img/cypher/03-all-1-2-600.webp",
           "w": 1600,
@@ -164,14 +172,6 @@
           "white": false
         },
         {
-          "src": "assets/img/cypher/06-all-9-10-mid.webp",
-          "thumb": "assets/img/cypher/06-all-9-10-mid-600.webp",
-          "w": 1600,
-          "h": 1076,
-          "alt": "",
-          "white": false
-        },
-        {
           "src": "assets/img/cypher/07-1-final-1-p002.webp",
           "thumb": "assets/img/cypher/07-1-final-1-p002-600.webp",
           "w": 1200,
@@ -188,34 +188,10 @@
           "white": true
         },
         {
-          "src": "assets/img/cypher/09-1-final-1-p014.webp",
-          "thumb": "assets/img/cypher/09-1-final-1-p014-600.webp",
-          "w": 1200,
-          "h": 1600,
-          "alt": "",
-          "white": false
-        },
-        {
-          "src": "assets/img/cypher/10-1-final-1-p016.webp",
-          "thumb": "assets/img/cypher/10-1-final-1-p016-600.webp",
-          "w": 1200,
-          "h": 1600,
-          "alt": "",
-          "white": false
-        },
-        {
           "src": "assets/img/cypher/11-finals-sg-t2-p001.webp",
           "thumb": "assets/img/cypher/11-finals-sg-t2-p001-600.webp",
           "w": 1200,
           "h": 1600,
-          "alt": "",
-          "white": false
-        },
-        {
-          "src": "assets/img/cypher/12-cypher-font-aic-thumb.webp",
-          "thumb": "assets/img/cypher/12-cypher-font-aic-thumb-600.webp",
-          "w": 512,
-          "h": 354,
           "alt": "",
           "white": false
         },
@@ -234,22 +210,6 @@
           "h": 1600,
           "alt": "",
           "white": false
-        },
-        {
-          "src": "assets/img/cypher/15-img-4325.webp",
-          "thumb": "assets/img/cypher/15-img-4325-600.webp",
-          "w": 1421,
-          "h": 582,
-          "alt": "",
-          "white": true
-        },
-        {
-          "src": "assets/img/cypher/16-img-4327.webp",
-          "thumb": "assets/img/cypher/16-img-4327-600.webp",
-          "w": 929,
-          "h": 376,
-          "alt": "",
-          "white": true
         },
         {
           "src": "assets/img/cypher/17-masthead-asset-1.webp",
@@ -280,7 +240,7 @@
         ]
       ],
       "pos": {
-        "edge": [240, 20]
+        "edge": [240, -20]
       }
     },
     {
@@ -322,14 +282,6 @@
           "white": false
         },
         {
-          "src": "assets/img/16-days-of-real-talk/02-belly-band-assets-logo-front.webp",
-          "thumb": "assets/img/16-days-of-real-talk/02-belly-band-assets-logo-front-600.webp",
-          "w": 591,
-          "h": 933,
-          "alt": "",
-          "white": true
-        },
-        {
           "src": "assets/img/16-days-of-real-talk/03-do-you-think-your-online-experience-would-be-dif.webp",
           "thumb": "assets/img/16-days-of-real-talk/03-do-you-think-your-online-experience-would-be-dif-600.webp",
           "w": 900,
@@ -366,54 +318,6 @@
           "thumb": "assets/img/16-days-of-real-talk/07-footage-y2-600.webp",
           "w": 627,
           "h": 448,
-          "alt": "",
-          "white": false
-        },
-        {
-          "src": "assets/img/16-days-of-real-talk/08-posters-still-campus-poster-1-cymk.webp",
-          "thumb": "assets/img/16-days-of-real-talk/08-posters-still-campus-poster-1-cymk-600.webp",
-          "w": 1131,
-          "h": 1600,
-          "alt": "",
-          "white": false
-        },
-        {
-          "src": "assets/img/16-days-of-real-talk/09-posters-still-campus-poster-2-cymk.webp",
-          "thumb": "assets/img/16-days-of-real-talk/09-posters-still-campus-poster-2-cymk-600.webp",
-          "w": 1131,
-          "h": 1600,
-          "alt": "",
-          "white": false
-        },
-        {
-          "src": "assets/img/16-days-of-real-talk/10-posters-still-general-poster-1.webp",
-          "thumb": "assets/img/16-days-of-real-talk/10-posters-still-general-poster-1-600.webp",
-          "w": 1131,
-          "h": 1600,
-          "alt": "",
-          "white": false
-        },
-        {
-          "src": "assets/img/16-days-of-real-talk/11-posters-still-general-poster-2.webp",
-          "thumb": "assets/img/16-days-of-real-talk/11-posters-still-general-poster-2-600.webp",
-          "w": 1131,
-          "h": 1600,
-          "alt": "",
-          "white": false
-        },
-        {
-          "src": "assets/img/16-days-of-real-talk/12-posters-still-sharehouse-poster-1-cymk.webp",
-          "thumb": "assets/img/16-days-of-real-talk/12-posters-still-sharehouse-poster-1-cymk-600.webp",
-          "w": 1131,
-          "h": 1600,
-          "alt": "",
-          "white": false
-        },
-        {
-          "src": "assets/img/16-days-of-real-talk/13-social-media-tiles-wagec-image2-t01.webp",
-          "thumb": "assets/img/16-days-of-real-talk/13-social-media-tiles-wagec-image2-t01-600.webp",
-          "w": 1440,
-          "h": 1080,
           "alt": "",
           "white": false
         }
@@ -454,7 +358,7 @@
         ]
       ],
       "pos": {
-        "edge": [-240, 0]
+        "edge": [-140, 120]
       }
     },
     {
@@ -488,16 +392,16 @@
       ],
       "images": [
         {
-          "src": "assets/img/symbiosis/01-final-files-frameframe-1.webp",
-          "thumb": "assets/img/symbiosis/01-final-files-frameframe-1-600.webp",
+          "src": "assets/img/symbiosis/02-final-files-frameframe-3.webp",
+          "thumb": "assets/img/symbiosis/02-final-files-frameframe-3-600.webp",
           "w": 1080,
           "h": 1080,
           "alt": "",
           "white": false
         },
         {
-          "src": "assets/img/symbiosis/02-final-files-frameframe-3.webp",
-          "thumb": "assets/img/symbiosis/02-final-files-frameframe-3-600.webp",
+          "src": "assets/img/symbiosis/01-final-files-frameframe-1.webp",
+          "thumb": "assets/img/symbiosis/01-final-files-frameframe-1-600.webp",
           "w": 1080,
           "h": 1080,
           "alt": "",
@@ -552,14 +456,6 @@
           "white": false
         },
         {
-          "src": "assets/img/symbiosis/09-canva-exports-visexp-t3-instagram-tile-1080.webp",
-          "thumb": "assets/img/symbiosis/09-canva-exports-visexp-t3-instagram-tile-1080-600.webp",
-          "w": 1080,
-          "h": 1080,
-          "alt": "",
-          "white": true
-        },
-        {
           "src": "assets/img/symbiosis/10-symbiosis-mesh-model-photo-perspective-dagwolp.webp",
           "thumb": "assets/img/symbiosis/10-symbiosis-mesh-model-photo-perspective-dagwolp-600.webp",
           "w": 1400,
@@ -568,74 +464,10 @@
           "white": true
         },
         {
-          "src": "assets/img/symbiosis/11-img-3954.webp",
-          "thumb": "assets/img/symbiosis/11-img-3954-600.webp",
-          "w": 1600,
-          "h": 1200,
-          "alt": "",
-          "white": false
-        },
-        {
-          "src": "assets/img/symbiosis/12-img-3993.webp",
-          "thumb": "assets/img/symbiosis/12-img-3993-600.webp",
-          "w": 1600,
-          "h": 1200,
-          "alt": "",
-          "white": false
-        },
-        {
           "src": "assets/img/symbiosis/13-img-3999.webp",
           "thumb": "assets/img/symbiosis/13-img-3999-600.webp",
           "w": 1600,
           "h": 1200,
-          "alt": "",
-          "white": false
-        },
-        {
-          "src": "assets/img/symbiosis/14-img-4013.webp",
-          "thumb": "assets/img/symbiosis/14-img-4013-600.webp",
-          "w": 1600,
-          "h": 1200,
-          "alt": "",
-          "white": false
-        },
-        {
-          "src": "assets/img/symbiosis/15-untitled-1-1-aic-2024-10-thumb.webp",
-          "thumb": "assets/img/symbiosis/15-untitled-1-1-aic-2024-10-thumb-600.webp",
-          "w": 512,
-          "h": 512,
-          "alt": "",
-          "white": false
-        },
-        {
-          "src": "assets/img/symbiosis/16-24794808-visual-narrative-2-p001.webp",
-          "thumb": "assets/img/symbiosis/16-24794808-visual-narrative-2-p001-600.webp",
-          "w": 566,
-          "h": 1600,
-          "alt": "",
-          "white": false
-        },
-        {
-          "src": "assets/img/symbiosis/17-at1-24794808-proces-folio-p002.webp",
-          "thumb": "assets/img/symbiosis/17-at1-24794808-proces-folio-p002-600.webp",
-          "w": 1600,
-          "h": 1080,
-          "alt": "",
-          "white": false
-        },
-        {
-          "src": "assets/img/symbiosis/18-at1-24794808-proces-folio-p003.webp",
-          "thumb": "assets/img/symbiosis/18-at1-24794808-proces-folio-p003-600.webp",
-          "w": 1600,
-          "h": 1080,
-          "alt": "",
-          "white": false
-        },
-        {
-          "src": "assets/img/symbiosis/19-at1-24794808-proces-folio-p004.webp",
-          "thumb": "assets/img/symbiosis/19-at1-24794808-proces-folio-p004-600.webp",
-          "w": 1600,
-          "h": 1080,
           "alt": "",
           "white": false
         },
@@ -662,6 +494,14 @@
           "h": 1131,
           "alt": "",
           "white": true
+        },
+        {
+          "src": "assets/img/symbiosis/17-at1-24794808-proces-folio-p002.webp",
+          "thumb": "assets/img/symbiosis/17-at1-24794808-proces-folio-p002-600.webp",
+          "w": 1600,
+          "h": 1080,
+          "alt": "",
+          "white": false
         }
       ],
       "copy": {
@@ -748,7 +588,7 @@
         ]
       ],
       "pos": {
-        "edge": [-60, 120]
+        "edge": [20, 120]
       }
     },
     {
@@ -782,46 +622,6 @@
           "white": false
         },
         {
-          "src": "assets/img/ibm-x-qt-hotels/02-qt-research-presentation-slide01-cover.webp",
-          "thumb": "assets/img/ibm-x-qt-hotels/02-qt-research-presentation-slide01-cover-600.webp",
-          "w": 1456,
-          "h": 819,
-          "alt": "",
-          "white": false
-        },
-        {
-          "src": "assets/img/ibm-x-qt-hotels/03-qt-research-presentation-slide02-re-brief.webp",
-          "thumb": "assets/img/ibm-x-qt-hotels/03-qt-research-presentation-slide02-re-brief-600.webp",
-          "w": 1456,
-          "h": 819,
-          "alt": "",
-          "white": false
-        },
-        {
-          "src": "assets/img/ibm-x-qt-hotels/04-qt-research-presentation-slide06-opportunities.webp",
-          "thumb": "assets/img/ibm-x-qt-hotels/04-qt-research-presentation-slide06-opportunities-600.webp",
-          "w": 1456,
-          "h": 819,
-          "alt": "",
-          "white": true
-        },
-        {
-          "src": "assets/img/ibm-x-qt-hotels/05-qt-research-presentation-slide07-opportunities.webp",
-          "thumb": "assets/img/ibm-x-qt-hotels/05-qt-research-presentation-slide07-opportunities-600.webp",
-          "w": 1456,
-          "h": 819,
-          "alt": "",
-          "white": true
-        },
-        {
-          "src": "assets/img/ibm-x-qt-hotels/06-qt-research-presentation-slide10-ai-research-bo.webp",
-          "thumb": "assets/img/ibm-x-qt-hotels/06-qt-research-presentation-slide10-ai-research-bo-600.webp",
-          "w": 1456,
-          "h": 819,
-          "alt": "",
-          "white": false
-        },
-        {
           "src": "assets/img/ibm-x-qt-hotels/07-workshop-board-as-is-scenario-mapping.webp",
           "thumb": "assets/img/ibm-x-qt-hotels/07-workshop-board-as-is-scenario-mapping-600.webp",
           "w": 1568,
@@ -846,24 +646,16 @@
           "white": true
         },
         {
+          "src": "assets/img/ibm-x-qt-hotels/03-qt-research-presentation-slide02-re-brief.webp",
+          "thumb": "assets/img/ibm-x-qt-hotels/03-qt-research-presentation-slide02-re-brief-600.webp",
+          "w": 1456,
+          "h": 819,
+          "alt": "",
+          "white": false
+        },
+        {
           "src": "assets/img/ibm-x-qt-hotels/10-qt-industry.webp",
           "thumb": "assets/img/ibm-x-qt-hotels/10-qt-industry-600.webp",
-          "w": 1600,
-          "h": 1217,
-          "alt": "",
-          "white": true
-        },
-        {
-          "src": "assets/img/ibm-x-qt-hotels/11-qt-qt.webp",
-          "thumb": "assets/img/ibm-x-qt-hotels/11-qt-qt-600.webp",
-          "w": 1600,
-          "h": 1217,
-          "alt": "",
-          "white": true
-        },
-        {
-          "src": "assets/img/ibm-x-qt-hotels/12-qt-booking.webp",
-          "thumb": "assets/img/ibm-x-qt-hotels/12-qt-booking-600.webp",
           "w": 1600,
           "h": 1217,
           "alt": "",
@@ -881,7 +673,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": [-320, 140]
+        "edge": [-240, 260]
       }
     },
     {
@@ -904,10 +696,10 @@
       ],
       "images": [
         {
-          "src": "assets/img/collab/01-final-inflated.webp",
-          "thumb": "assets/img/collab/01-final-inflated-600.webp",
-          "w": 1293,
-          "h": 230,
+          "src": "assets/img/collab/12-renders-frontv1.webp",
+          "thumb": "assets/img/collab/12-renders-frontv1-600.webp",
+          "w": 1600,
+          "h": 1199,
           "alt": "",
           "white": false
         },
@@ -920,58 +712,18 @@
           "white": true
         },
         {
-          "src": "assets/img/collab/03-final-shape-1.webp",
-          "thumb": "assets/img/collab/03-final-shape-1-600.webp",
-          "w": 362,
-          "h": 362,
-          "alt": "",
-          "white": true
-        },
-        {
-          "src": "assets/img/collab/04-final-shape-2.webp",
-          "thumb": "assets/img/collab/04-final-shape-2-600.webp",
-          "w": 356,
-          "h": 371,
-          "alt": "",
-          "white": false
-        },
-        {
-          "src": "assets/img/collab/05-final-shape-3.webp",
-          "thumb": "assets/img/collab/05-final-shape-3-600.webp",
-          "w": 501,
-          "h": 485,
-          "alt": "",
-          "white": false
-        },
-        {
-          "src": "assets/img/collab/06-letters-asset-56.webp",
-          "thumb": "assets/img/collab/06-letters-asset-56-600.webp",
-          "w": 174,
-          "h": 229,
-          "alt": "",
-          "white": false
-        },
-        {
-          "src": "assets/img/collab/07-letters-asset-59.webp",
-          "thumb": "assets/img/collab/07-letters-asset-59-600.webp",
-          "w": 186,
+          "src": "assets/img/collab/01-final-inflated.webp",
+          "thumb": "assets/img/collab/01-final-inflated-600.webp",
+          "w": 1293,
           "h": 230,
           "alt": "",
           "white": false
         },
         {
-          "src": "assets/img/collab/08-letters-asset-61.webp",
-          "thumb": "assets/img/collab/08-letters-asset-61-600.webp",
-          "w": 207,
-          "h": 229,
-          "alt": "",
-          "white": false
-        },
-        {
-          "src": "assets/img/collab/09-jenga-jenga-front.webp",
-          "thumb": "assets/img/collab/09-jenga-jenga-front-600.webp",
-          "w": 1440,
-          "h": 834,
+          "src": "assets/img/collab/16-img-5041.webp",
+          "thumb": "assets/img/collab/16-img-5041-600.webp",
+          "w": 1600,
+          "h": 1066,
           "alt": "",
           "white": false
         },
@@ -992,30 +744,6 @@
           "white": false
         },
         {
-          "src": "assets/img/collab/12-renders-frontv1.webp",
-          "thumb": "assets/img/collab/12-renders-frontv1-600.webp",
-          "w": 1600,
-          "h": 1199,
-          "alt": "",
-          "white": false
-        },
-        {
-          "src": "assets/img/collab/13-stage-front-render.webp",
-          "thumb": "assets/img/collab/13-stage-front-render-600.webp",
-          "w": 1024,
-          "h": 576,
-          "alt": "",
-          "white": false
-        },
-        {
-          "src": "assets/img/collab/14-activation-figma-collab-activation-3-1440x875.webp",
-          "thumb": "assets/img/collab/14-activation-figma-collab-activation-3-1440x875-600.webp",
-          "w": 1600,
-          "h": 926,
-          "alt": "",
-          "white": false
-        },
-        {
           "src": "assets/img/collab/15-figma-collab-identity-territory-pink-and-black.webp",
           "thumb": "assets/img/collab/15-figma-collab-identity-territory-pink-and-black-600.webp",
           "w": 1600,
@@ -1024,10 +752,10 @@
           "white": false
         },
         {
-          "src": "assets/img/collab/16-img-5041.webp",
-          "thumb": "assets/img/collab/16-img-5041-600.webp",
-          "w": 1600,
-          "h": 1066,
+          "src": "assets/img/collab/09-jenga-jenga-front.webp",
+          "thumb": "assets/img/collab/09-jenga-jenga-front-600.webp",
+          "w": 1440,
+          "h": 834,
           "alt": "",
           "white": false
         },
@@ -1040,10 +768,18 @@
           "white": false
         },
         {
-          "src": "assets/img/collab/18-all-old-collab-block-letter-view-vectors-1.webp",
-          "thumb": "assets/img/collab/18-all-old-collab-block-letter-view-vectors-1-600.webp",
-          "w": 1202,
-          "h": 870,
+          "src": "assets/img/collab/03-final-shape-1.webp",
+          "thumb": "assets/img/collab/03-final-shape-1-600.webp",
+          "w": 362,
+          "h": 362,
+          "alt": "",
+          "white": true
+        },
+        {
+          "src": "assets/img/collab/05-final-shape-3.webp",
+          "thumb": "assets/img/collab/05-final-shape-3-600.webp",
+          "w": 501,
+          "h": 485,
           "alt": "",
           "white": false
         }
@@ -1059,7 +795,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": [-300, 240]
+        "edge": [-380, 200]
       }
     },
     {
@@ -1092,48 +828,8 @@
           "white": false
         },
         {
-          "src": "assets/img/adhd-in-the-media/02-task-3-slides-final-v1-p002.webp",
-          "thumb": "assets/img/adhd-in-the-media/02-task-3-slides-final-v1-p002-600.webp",
-          "w": 1600,
-          "h": 900,
-          "alt": "",
-          "white": false
-        },
-        {
-          "src": "assets/img/adhd-in-the-media/03-task-3-slides-final-v1-p004.webp",
-          "thumb": "assets/img/adhd-in-the-media/03-task-3-slides-final-v1-p004-600.webp",
-          "w": 1600,
-          "h": 900,
-          "alt": "",
-          "white": true
-        },
-        {
-          "src": "assets/img/adhd-in-the-media/04-task-3-slides-final-v1-p006.webp",
-          "thumb": "assets/img/adhd-in-the-media/04-task-3-slides-final-v1-p006-600.webp",
-          "w": 1600,
-          "h": 900,
-          "alt": "",
-          "white": false
-        },
-        {
           "src": "assets/img/adhd-in-the-media/05-task-3-slides-final-v1-p008.webp",
           "thumb": "assets/img/adhd-in-the-media/05-task-3-slides-final-v1-p008-600.webp",
-          "w": 1600,
-          "h": 900,
-          "alt": "",
-          "white": false
-        },
-        {
-          "src": "assets/img/adhd-in-the-media/06-task-3-slides-final-v1-p009.webp",
-          "thumb": "assets/img/adhd-in-the-media/06-task-3-slides-final-v1-p009-600.webp",
-          "w": 1600,
-          "h": 900,
-          "alt": "",
-          "white": false
-        },
-        {
-          "src": "assets/img/adhd-in-the-media/07-task-3-slides-final-v1-p010.webp",
-          "thumb": "assets/img/adhd-in-the-media/07-task-3-slides-final-v1-p010-600.webp",
           "w": 1600,
           "h": 900,
           "alt": "",
@@ -1156,12 +852,28 @@
           "white": false
         },
         {
-          "src": "assets/img/adhd-in-the-media/10-ps-exp-artboard-5.webp",
-          "thumb": "assets/img/adhd-in-the-media/10-ps-exp-artboard-5-600.webp",
+          "src": "assets/img/adhd-in-the-media/02-task-3-slides-final-v1-p002.webp",
+          "thumb": "assets/img/adhd-in-the-media/02-task-3-slides-final-v1-p002-600.webp",
           "w": 1600,
           "h": 900,
           "alt": "",
-          "white": true
+          "white": false
+        },
+        {
+          "src": "assets/img/adhd-in-the-media/06-task-3-slides-final-v1-p009.webp",
+          "thumb": "assets/img/adhd-in-the-media/06-task-3-slides-final-v1-p009-600.webp",
+          "w": 1600,
+          "h": 900,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/adhd-in-the-media/07-task-3-slides-final-v1-p010.webp",
+          "thumb": "assets/img/adhd-in-the-media/07-task-3-slides-final-v1-p010-600.webp",
+          "w": 1600,
+          "h": 900,
+          "alt": "",
+          "white": false
         },
         {
           "src": "assets/img/adhd-in-the-media/11-ps-exp-artboard-9.webp",
@@ -1199,7 +911,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": [-20, -80]
+        "edge": [160, 120]
       }
     },
     {
@@ -1236,14 +948,6 @@
           "white": false
         },
         {
-          "src": "assets/img/terms-of-practice/02-web-sites-terms-of-practice-manifesto-index.webp",
-          "thumb": "assets/img/terms-of-practice/02-web-sites-terms-of-practice-manifesto-index-600.webp",
-          "w": 739,
-          "h": 1600,
-          "alt": "",
-          "white": false
-        },
-        {
           "src": "assets/img/terms-of-practice/03-web-sites-terms-of-practice-manifesto-manifes.webp",
           "thumb": "assets/img/terms-of-practice/03-web-sites-terms-of-practice-manifesto-manifes-600.webp",
           "w": 1600,
@@ -1252,18 +956,10 @@
           "white": false
         },
         {
-          "src": "assets/img/terms-of-practice/04-web-sites-terms-of-practice-manifesto-manifes.webp",
-          "thumb": "assets/img/terms-of-practice/04-web-sites-terms-of-practice-manifesto-manifes-600.webp",
+          "src": "assets/img/terms-of-practice/02-web-sites-terms-of-practice-manifesto-index.webp",
+          "thumb": "assets/img/terms-of-practice/02-web-sites-terms-of-practice-manifesto-index-600.webp",
           "w": 739,
           "h": 1600,
-          "alt": "",
-          "white": false
-        },
-        {
-          "src": "assets/img/terms-of-practice/05-web-sites-terms-of-practice-manifesto-manifes.webp",
-          "thumb": "assets/img/terms-of-practice/05-web-sites-terms-of-practice-manifesto-manifes-600.webp",
-          "w": 1600,
-          "h": 1000,
           "alt": "",
           "white": false
         },
@@ -1284,32 +980,16 @@
           "white": false
         },
         {
-          "src": "assets/img/terms-of-practice/08-submitted-wilson-brylie-87012-task1-portfolio.webp",
-          "thumb": "assets/img/terms-of-practice/08-submitted-wilson-brylie-87012-task1-portfolio-600.webp",
+          "src": "assets/img/terms-of-practice/05-web-sites-terms-of-practice-manifesto-manifes.webp",
+          "thumb": "assets/img/terms-of-practice/05-web-sites-terms-of-practice-manifesto-manifes-600.webp",
           "w": 1600,
-          "h": 1132,
+          "h": 1000,
           "alt": "",
           "white": false
         },
         {
           "src": "assets/img/terms-of-practice/09-submitted-wilson-brylie-87012-task1-portfolio.webp",
           "thumb": "assets/img/terms-of-practice/09-submitted-wilson-brylie-87012-task1-portfolio-600.webp",
-          "w": 1600,
-          "h": 1132,
-          "alt": "",
-          "white": false
-        },
-        {
-          "src": "assets/img/terms-of-practice/10-export-wilson-brylie-87012-task1-portfolio-alt.webp",
-          "thumb": "assets/img/terms-of-practice/10-export-wilson-brylie-87012-task1-portfolio-alt-600.webp",
-          "w": 1600,
-          "h": 1131,
-          "alt": "",
-          "white": false
-        },
-        {
-          "src": "assets/img/terms-of-practice/11-submitted-wilson-brylie-87012-task1-portfolio.webp",
-          "thumb": "assets/img/terms-of-practice/11-submitted-wilson-brylie-87012-task1-portfolio-600.webp",
           "w": 1600,
           "h": 1132,
           "alt": "",
@@ -1344,30 +1024,6 @@
           "thumb": "assets/img/terms-of-practice/15-img-7418-600.webp",
           "w": 1600,
           "h": 1200,
-          "alt": "",
-          "white": false
-        },
-        {
-          "src": "assets/img/terms-of-practice/16-web-sites-creative-responses-index-desktop.webp",
-          "thumb": "assets/img/terms-of-practice/16-web-sites-creative-responses-index-desktop-600.webp",
-          "w": 1600,
-          "h": 1000,
-          "alt": "",
-          "white": true
-        },
-        {
-          "src": "assets/img/terms-of-practice/17-web-creative-responses-pages-found-time-des.webp",
-          "thumb": "assets/img/terms-of-practice/17-web-creative-responses-pages-found-time-des-600.webp",
-          "w": 1600,
-          "h": 1000,
-          "alt": "",
-          "white": true
-        },
-        {
-          "src": "assets/img/terms-of-practice/18-web-creative-responses-pages-periodisation-m.webp",
-          "thumb": "assets/img/terms-of-practice/18-web-creative-responses-pages-periodisation-m-600.webp",
-          "w": 1600,
-          "h": 1000,
           "alt": "",
           "white": false
         }
@@ -1413,30 +1069,6 @@
           "h": 900,
           "alt": "",
           "white": false
-        },
-        {
-          "src": "assets/img/audio-reactive-visual-exploration/02-acoustics-wikiwand-files-oh-no-girl-spectrogr.webp",
-          "thumb": "assets/img/audio-reactive-visual-exploration/02-acoustics-wikiwand-files-oh-no-girl-spectrogr-600.webp",
-          "w": 500,
-          "h": 332,
-          "alt": "",
-          "white": false
-        },
-        {
-          "src": "assets/img/audio-reactive-visual-exploration/03-acoustics-wikiwand-files-lindsay-s-wheel-of-a.webp",
-          "thumb": "assets/img/audio-reactive-visual-exploration/03-acoustics-wikiwand-files-lindsay-s-wheel-of-a-600.webp",
-          "w": 500,
-          "h": 498,
-          "alt": "",
-          "white": true
-        },
-        {
-          "src": "assets/img/audio-reactive-visual-exploration/04-research-em-spectrum-properties-edit-svg.webp",
-          "thumb": "assets/img/audio-reactive-visual-exploration/04-research-em-spectrum-properties-edit-svg-600.webp",
-          "w": 1200,
-          "h": 712,
-          "alt": "",
-          "white": false
         }
       ],
       "copy": {
@@ -1450,7 +1082,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": [-420, 300]
+        "edge": [-420, 40]
       }
     },
     {
@@ -1470,7 +1102,24 @@
         "creative-code",
         "p5js-ml5"
       ],
-      "images": [],
+      "images": [
+        {
+          "src": "assets/img/hand-tracking-bloom/02-anim-frames-pt-anim0018.webp",
+          "thumb": "assets/img/hand-tracking-bloom/02-anim-frames-pt-anim0018-600.webp",
+          "w": 1600,
+          "h": 1453,
+          "alt": "",
+          "white": true
+        },
+        {
+          "src": "assets/img/hand-tracking-bloom/01-anim-frames-pt-anim0009.webp",
+          "thumb": "assets/img/hand-tracking-bloom/01-anim-frames-pt-anim0009-600.webp",
+          "w": 1600,
+          "h": 1453,
+          "alt": "",
+          "white": true
+        }
+      ],
       "copy": {
         "brief": "",
         "insight": "",
@@ -1482,7 +1131,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": [-420, -40]
+        "edge": [-400, 120]
       }
     },
     {
@@ -1521,28 +1170,12 @@
           "white": false
         },
         {
-          "src": "assets/img/wagec-reverse-brief/03-problem-rna-theory-of-change-final-4000px.webp",
-          "thumb": "assets/img/wagec-reverse-brief/03-problem-rna-theory-of-change-final-4000px-600.webp",
-          "w": 1600,
-          "h": 1131,
-          "alt": "",
-          "white": false
-        },
-        {
           "src": "assets/img/wagec-reverse-brief/04-finals-livia-wagec-strategy-p028.webp",
           "thumb": "assets/img/wagec-reverse-brief/04-finals-livia-wagec-strategy-p028-600.webp",
           "w": 1600,
           "h": 900,
           "alt": "",
           "white": false
-        },
-        {
-          "src": "assets/img/wagec-reverse-brief/05-finals-livia-wagec-strategy-p006.webp",
-          "thumb": "assets/img/wagec-reverse-brief/05-finals-livia-wagec-strategy-p006-600.webp",
-          "w": 1600,
-          "h": 900,
-          "alt": "",
-          "white": true
         }
       ],
       "copy": {
@@ -1556,101 +1189,9 @@
       },
       "steps": [],
       "pos": {
-        "edge": [-280, -180]
+        "edge": [-240, -140]
       },
       "todo": "TODO(brylie): group work, name your role and the team size."
-    },
-    {
-      "id": "ar-vr-experiments",
-      "slug": "ar-vr-experiments",
-      "n": "03b",
-      "title": "AR/VR experiments",
-      "sub": "Experiments folio",
-      "year": 2024,
-      "size": "S",
-      "kind": "experiment",
-      "context": "Visualising Experience, UTS",
-      "team": "Group",
-      "partOf": "symbiosis",
-      "link": null,
-      "keywords": [
-        "creative-technology",
-        "prototyping",
-        "experience-design",
-        "3d"
-      ],
-      "images": [
-        {
-          "src": "assets/img/ar-vr-experiments/01-anim-frames-pt-anim0009.webp",
-          "thumb": "assets/img/ar-vr-experiments/01-anim-frames-pt-anim0009-600.webp",
-          "w": 1600,
-          "h": 1453,
-          "alt": "",
-          "white": true
-        },
-        {
-          "src": "assets/img/ar-vr-experiments/02-anim-frames-pt-anim0018.webp",
-          "thumb": "assets/img/ar-vr-experiments/02-anim-frames-pt-anim0018-600.webp",
-          "w": 1600,
-          "h": 1453,
-          "alt": "",
-          "white": true
-        },
-        {
-          "src": "assets/img/ar-vr-experiments/03-assets-aerial-view-green-coniferous-forest-pine.webp",
-          "thumb": "assets/img/ar-vr-experiments/03-assets-aerial-view-green-coniferous-forest-pine-600.webp",
-          "w": 1450,
-          "h": 1600,
-          "alt": "",
-          "white": false
-        },
-        {
-          "src": "assets/img/ar-vr-experiments/04-assets-beautiful-forest-landscape.webp",
-          "thumb": "assets/img/ar-vr-experiments/04-assets-beautiful-forest-landscape-600.webp",
-          "w": 1600,
-          "h": 800,
-          "alt": "",
-          "white": false
-        },
-        {
-          "src": "assets/img/ar-vr-experiments/05-assets-christopher-dresser-garden-armchair-mod.webp",
-          "thumb": "assets/img/ar-vr-experiments/05-assets-christopher-dresser-garden-armchair-mod-600.webp",
-          "w": 1500,
-          "h": 1500,
-          "alt": "",
-          "white": false
-        },
-        {
-          "src": "assets/img/ar-vr-experiments/06-02-figma-prototyping-clipped-01.webp",
-          "thumb": "assets/img/ar-vr-experiments/06-02-figma-prototyping-clipped-01-600.webp",
-          "w": 414,
-          "h": 896,
-          "alt": "",
-          "white": false
-        },
-        {
-          "src": "assets/img/ar-vr-experiments/07-02-figma-prototyping-recording-gif.webp",
-          "thumb": "assets/img/ar-vr-experiments/07-02-figma-prototyping-recording-gif-600.webp",
-          "w": 236,
-          "h": 430,
-          "alt": "",
-          "white": false
-        }
-      ],
-      "copy": {
-        "brief": "",
-        "insight": "",
-        "pull": "",
-        "response": "",
-        "role": "",
-        "credit": "",
-        "oneLine": ""
-      },
-      "steps": [],
-      "pos": {
-        "edge": [-320, 200]
-      },
-      "todo": "TODO(brylie): group work, name your role and the team size. TODO(brylie): seed note says the VR scene uses stock imagery."
     },
     {
       "id": "trust-in-transition",
@@ -1673,12 +1214,28 @@
       ],
       "images": [
         {
+          "src": "assets/img/trust-in-transition/03-06-personas-final-persona.webp",
+          "thumb": "assets/img/trust-in-transition/03-06-personas-final-persona-600.webp",
+          "w": 1027,
+          "h": 1600,
+          "alt": "",
+          "white": true
+        },
+        {
           "src": "assets/img/trust-in-transition/01-04-flow-chart-final-flow.webp",
           "thumb": "assets/img/trust-in-transition/01-04-flow-chart-final-flow-600.webp",
           "w": 1600,
           "h": 1406,
           "alt": "",
           "white": false
+        },
+        {
+          "src": "assets/img/trust-in-transition/07-02-lit-review-final-litrev-opt.webp",
+          "thumb": "assets/img/trust-in-transition/07-02-lit-review-final-litrev-opt-600.webp",
+          "w": 1600,
+          "h": 1585,
+          "alt": "",
+          "white": true
         },
         {
           "src": "assets/img/trust-in-transition/02-05-validating-final-vali.webp",
@@ -1689,42 +1246,10 @@
           "white": true
         },
         {
-          "src": "assets/img/trust-in-transition/03-06-personas-final-persona.webp",
-          "thumb": "assets/img/trust-in-transition/03-06-personas-final-persona-600.webp",
-          "w": 1027,
-          "h": 1600,
-          "alt": "",
-          "white": true
-        },
-        {
-          "src": "assets/img/trust-in-transition/04-misc-double-diamond.webp",
-          "thumb": "assets/img/trust-in-transition/04-misc-double-diamond-600.webp",
-          "w": 936,
-          "h": 453,
-          "alt": "",
-          "white": false
-        },
-        {
           "src": "assets/img/trust-in-transition/05-misc-semester-overview.webp",
           "thumb": "assets/img/trust-in-transition/05-misc-semester-overview-600.webp",
           "w": 1600,
           "h": 886,
-          "alt": "",
-          "white": true
-        },
-        {
-          "src": "assets/img/trust-in-transition/06-misc-semester-overview-p001.webp",
-          "thumb": "assets/img/trust-in-transition/06-misc-semester-overview-p001-600.webp",
-          "w": 1600,
-          "h": 900,
-          "alt": "",
-          "white": false
-        },
-        {
-          "src": "assets/img/trust-in-transition/07-02-lit-review-final-litrev-opt.webp",
-          "thumb": "assets/img/trust-in-transition/07-02-lit-review-final-litrev-opt-600.webp",
-          "w": 1600,
-          "h": 1585,
           "alt": "",
           "white": true
         }
@@ -1740,7 +1265,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": [-40, -160]
+        "edge": [-40, -140]
       }
     },
     {
@@ -1763,18 +1288,18 @@
       ],
       "images": [
         {
-          "src": "assets/img/sparkchange/01-workmark-asset-33x.webp",
-          "thumb": "assets/img/sparkchange/01-workmark-asset-33x-600.webp",
-          "w": 1600,
-          "h": 372,
-          "alt": "",
-          "white": true
-        },
-        {
           "src": "assets/img/sparkchange/02-sc-v1-asset-23x.webp",
           "thumb": "assets/img/sparkchange/02-sc-v1-asset-23x-600.webp",
           "w": 687,
           "h": 883,
+          "alt": "",
+          "white": true
+        },
+        {
+          "src": "assets/img/sparkchange/01-workmark-asset-33x.webp",
+          "thumb": "assets/img/sparkchange/01-workmark-asset-33x-600.webp",
+          "w": 1600,
+          "h": 372,
           "alt": "",
           "white": true
         },
@@ -1801,14 +1326,6 @@
           "h": 1600,
           "alt": "",
           "white": false
-        },
-        {
-          "src": "assets/img/sparkchange/06-proto-1-page-3-customizable-infographics.webp",
-          "thumb": "assets/img/sparkchange/06-proto-1-page-3-customizable-infographics-600.webp",
-          "w": 408,
-          "h": 1600,
-          "alt": "",
-          "white": false
         }
       ],
       "copy": {
@@ -1822,7 +1339,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": [-380, 100]
+        "edge": [-280, 160]
       }
     },
     {
@@ -1854,16 +1371,8 @@
           "white": false
         },
         {
-          "src": "assets/img/stellar-map/02-stellar-a.webp",
-          "thumb": "assets/img/stellar-map/02-stellar-a-600.webp",
-          "w": 1600,
-          "h": 1000,
-          "alt": "",
-          "white": false
-        },
-        {
-          "src": "assets/img/stellar-map/03-stellar-g.webp",
-          "thumb": "assets/img/stellar-map/03-stellar-g-600.webp",
+          "src": "assets/img/stellar-map/07-web-stellar-network-playlists-desktop.webp",
+          "thumb": "assets/img/stellar-map/07-web-stellar-network-playlists-desktop-600.webp",
           "w": 1600,
           "h": 1000,
           "alt": "",
@@ -1878,24 +1387,8 @@
           "white": false
         },
         {
-          "src": "assets/img/stellar-map/05-web-stellar-network-colour-valence-desktop.webp",
-          "thumb": "assets/img/stellar-map/05-web-stellar-network-colour-valence-desktop-600.webp",
-          "w": 1600,
-          "h": 1000,
-          "alt": "",
-          "white": false
-        },
-        {
-          "src": "assets/img/stellar-map/06-web-stellar-network-genres-desktop.webp",
-          "thumb": "assets/img/stellar-map/06-web-stellar-network-genres-desktop-600.webp",
-          "w": 1600,
-          "h": 1000,
-          "alt": "",
-          "white": false
-        },
-        {
-          "src": "assets/img/stellar-map/07-web-stellar-network-playlists-desktop.webp",
-          "thumb": "assets/img/stellar-map/07-web-stellar-network-playlists-desktop-600.webp",
+          "src": "assets/img/stellar-map/03-stellar-g.webp",
+          "thumb": "assets/img/stellar-map/03-stellar-g-600.webp",
           "w": 1600,
           "h": 1000,
           "alt": "",
@@ -1913,7 +1406,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": [-400, 260]
+        "edge": [-320, 320]
       },
       "todo": "TODO(brylie): Perplexity Computer credit line"
     },
@@ -1954,22 +1447,6 @@
           "white": false
         },
         {
-          "src": "assets/img/stellar-evolution/03-web-a2-lindadement-bryliewilson-24794808-stell.webp",
-          "thumb": "assets/img/stellar-evolution/03-web-a2-lindadement-bryliewilson-24794808-stell-600.webp",
-          "w": 739,
-          "h": 1600,
-          "alt": "",
-          "white": false
-        },
-        {
-          "src": "assets/img/stellar-evolution/04-web-exercises-css-grid-layout-index-desktop.webp",
-          "thumb": "assets/img/stellar-evolution/04-web-exercises-css-grid-layout-index-desktop-600.webp",
-          "w": 1600,
-          "h": 1000,
-          "alt": "",
-          "white": false
-        },
-        {
           "src": "assets/img/stellar-evolution/05-web-exercises-js-canvas-stars-page1-desktop.webp",
           "thumb": "assets/img/stellar-evolution/05-web-exercises-js-canvas-stars-page1-desktop-600.webp",
           "w": 1600,
@@ -1978,10 +1455,10 @@
           "white": false
         },
         {
-          "src": "assets/img/stellar-evolution/06-web-exercises-responsive-layout-index-deskto.webp",
-          "thumb": "assets/img/stellar-evolution/06-web-exercises-responsive-layout-index-deskto-600.webp",
-          "w": 1600,
-          "h": 1000,
+          "src": "assets/img/stellar-evolution/03-web-a2-lindadement-bryliewilson-24794808-stell.webp",
+          "thumb": "assets/img/stellar-evolution/03-web-a2-lindadement-bryliewilson-24794808-stell-600.webp",
+          "w": 739,
+          "h": 1600,
           "alt": "",
           "white": false
         }
@@ -1997,50 +1474,16 @@
       },
       "steps": [],
       "pos": {
-        "edge": [-440, 220]
+        "edge": [-380, 260]
       },
       "todo": "TODO(brylie): seed note says the site uses stock imagery; screenshots only."
-    },
-    {
-      "id": "contextlayer",
-      "slug": "contextlayer",
-      "n": "09",
-      "title": "ContextLayer",
-      "sub": "",
-      "year": 2025,
-      "size": "S",
-      "kind": "work",
-      "context": "Technologies Reimagined, UTS · ServiceRocket brief",
-      "team": "",
-      "partOf": null,
-      "link": null,
-      "keywords": [
-        "systems-mapping",
-        "speculative-futures",
-        "systems-map",
-        "video"
-      ],
-      "images": [],
-      "copy": {
-        "brief": "",
-        "insight": "",
-        "pull": "",
-        "response": "",
-        "role": "",
-        "credit": "",
-        "oneLine": ""
-      },
-      "steps": [],
-      "pos": {
-        "edge": [-40, 300]
-      }
     },
     {
       "id": "whats-your-excuse",
       "slug": "whats-your-excuse",
       "n": "10",
       "title": "What’s your excuse?",
-      "sub": "",
+      "sub": "Poster & zine",
       "year": 2023,
       "size": "S",
       "kind": "work",
@@ -2051,9 +1494,68 @@
       "keywords": [
         "editorial-design",
         "zine-poster",
-        "climate"
+        "climate",
+        "print",
+        "typography"
       ],
-      "images": [],
+      "images": [
+        {
+          "src": "assets/img/whats-your-excuse/04-flame-poster-and-zine-artboard-1.webp",
+          "thumb": "assets/img/whats-your-excuse/04-flame-poster-and-zine-artboard-1-600.webp",
+          "w": 1078,
+          "h": 1600,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/whats-your-excuse/08-flame-poster-and-zine-zine-mock.webp",
+          "thumb": "assets/img/whats-your-excuse/08-flame-poster-and-zine-zine-mock-600.webp",
+          "w": 1202,
+          "h": 1600,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/whats-your-excuse/07-flame-poster-and-zine-poster-situ.webp",
+          "thumb": "assets/img/whats-your-excuse/07-flame-poster-and-zine-poster-situ-600.webp",
+          "w": 1391,
+          "h": 1600,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/whats-your-excuse/01-flame-poster-and-zine-2.webp",
+          "thumb": "assets/img/whats-your-excuse/01-flame-poster-and-zine-2-600.webp",
+          "w": 1078,
+          "h": 1600,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/whats-your-excuse/02-flame-poster-and-zine-5.webp",
+          "thumb": "assets/img/whats-your-excuse/02-flame-poster-and-zine-5-600.webp",
+          "w": 1078,
+          "h": 1600,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/whats-your-excuse/03-flame-poster-and-zine-7.webp",
+          "thumb": "assets/img/whats-your-excuse/03-flame-poster-and-zine-7-600.webp",
+          "w": 1078,
+          "h": 1600,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/whats-your-excuse/06-flame-poster-and-zine-poster.webp",
+          "thumb": "assets/img/whats-your-excuse/06-flame-poster-and-zine-poster-600.webp",
+          "w": 1131,
+          "h": 1600,
+          "alt": "",
+          "white": false
+        }
+      ],
       "copy": {
         "brief": "",
         "insight": "",
@@ -2065,73 +1567,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": [160, -240]
-      }
-    },
-    {
-      "id": "lbw-trust-gala",
-      "slug": "lbw-trust-gala",
-      "n": "11",
-      "title": "LBW Trust 20th Anniversary Gala",
-      "sub": "Event identity & collateral",
-      "year": 2026,
-      "size": "S",
-      "kind": "client",
-      "context": "Client · freelance",
-      "team": "",
-      "partOf": null,
-      "link": null,
-      "keywords": [
-        "campaign-identity",
-        "experience-design",
-        "identity-system",
-        "event-identity"
-      ],
-      "images": [],
-      "copy": {
-        "brief": "",
-        "insight": "",
-        "pull": "",
-        "response": "",
-        "role": "",
-        "credit": "",
-        "oneLine": ""
-      },
-      "steps": [],
-      "pos": {
-        "edge": [-40, 260]
-      }
-    },
-    {
-      "id": "ashham",
-      "slug": "ashham",
-      "n": "12",
-      "title": "Ashham Agencies & Ashham Advisory",
-      "sub": "",
-      "year": 2024,
-      "size": "S",
-      "kind": "client",
-      "context": "Client · freelance",
-      "team": "",
-      "partOf": null,
-      "link": null,
-      "keywords": [
-        "campaign-identity",
-        "identity-system"
-      ],
-      "images": [],
-      "copy": {
-        "brief": "",
-        "insight": "",
-        "pull": "",
-        "response": "",
-        "role": "",
-        "credit": "",
-        "oneLine": ""
-      },
-      "steps": [],
-      "pos": {
-        "edge": [60, 320]
+        "edge": [80, 260]
       }
     },
     {
@@ -2177,30 +1613,6 @@
           "white": false
         },
         {
-          "src": "assets/img/ecosystem-engineers/04-ae-vids-glass-without-jelly-t01.webp",
-          "thumb": "assets/img/ecosystem-engineers/04-ae-vids-glass-without-jelly-t01-600.webp",
-          "w": 1600,
-          "h": 900,
-          "alt": "",
-          "white": false
-        },
-        {
-          "src": "assets/img/ecosystem-engineers/05-ae-vids-lots-of-jellies-bg-t01.webp",
-          "thumb": "assets/img/ecosystem-engineers/05-ae-vids-lots-of-jellies-bg-t01-600.webp",
-          "w": 1600,
-          "h": 875,
-          "alt": "",
-          "white": false
-        },
-        {
-          "src": "assets/img/ecosystem-engineers/06-ae-vids-penguins-mp4-comp-1-t02.webp",
-          "thumb": "assets/img/ecosystem-engineers/06-ae-vids-penguins-mp4-comp-1-t02-600.webp",
-          "w": 1600,
-          "h": 900,
-          "alt": "",
-          "white": false
-        },
-        {
           "src": "assets/img/ecosystem-engineers/07-ae-vids-seaweed-small-fish-mov-comp-1-t01.webp",
           "thumb": "assets/img/ecosystem-engineers/07-ae-vids-seaweed-small-fish-mov-comp-1-t01-600.webp",
           "w": 1597,
@@ -2209,10 +1621,10 @@
           "white": false
         },
         {
-          "src": "assets/img/ecosystem-engineers/08-ae-vids-glass-bg-t02.webp",
-          "thumb": "assets/img/ecosystem-engineers/08-ae-vids-glass-bg-t02-600.webp",
+          "src": "assets/img/ecosystem-engineers/04-ae-vids-glass-without-jelly-t01.webp",
+          "thumb": "assets/img/ecosystem-engineers/04-ae-vids-glass-without-jelly-t01-600.webp",
           "w": 1600,
-          "h": 901,
+          "h": 900,
           "alt": "",
           "white": false
         }
@@ -2228,7 +1640,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": [60, 220]
+        "edge": [-40, 320]
       }
     },
     {
@@ -2258,14 +1670,6 @@
           "white": false
         },
         {
-          "src": "assets/img/cas-a-graphic-narrative/02-img-3699-1.webp",
-          "thumb": "assets/img/cas-a-graphic-narrative/02-img-3699-1-600.webp",
-          "w": 1181,
-          "h": 873,
-          "alt": "",
-          "white": false
-        },
-        {
           "src": "assets/img/cas-a-graphic-narrative/03-img-3699-2.webp",
           "thumb": "assets/img/cas-a-graphic-narrative/03-img-3699-2-600.webp",
           "w": 1181,
@@ -2282,12 +1686,12 @@
           "white": false
         },
         {
-          "src": "assets/img/cas-a-graphic-narrative/05-tc-gn-24794808-wilson-brylie-srint2-tc-gn-24794.webp",
-          "thumb": "assets/img/cas-a-graphic-narrative/05-tc-gn-24794808-wilson-brylie-srint2-tc-gn-24794-600.webp",
-          "w": 1600,
-          "h": 1132,
+          "src": "assets/img/cas-a-graphic-narrative/02-img-3699-1.webp",
+          "thumb": "assets/img/cas-a-graphic-narrative/02-img-3699-1-600.webp",
+          "w": 1181,
+          "h": 873,
           "alt": "",
-          "white": true
+          "white": false
         },
         {
           "src": "assets/img/cas-a-graphic-narrative/06-img-3699.webp",
@@ -2298,12 +1702,12 @@
           "white": false
         },
         {
-          "src": "assets/img/cas-a-graphic-narrative/07-img-3713.webp",
-          "thumb": "assets/img/cas-a-graphic-narrative/07-img-3713-600.webp",
-          "w": 498,
-          "h": 1600,
+          "src": "assets/img/cas-a-graphic-narrative/05-tc-gn-24794808-wilson-brylie-srint2-tc-gn-24794.webp",
+          "thumb": "assets/img/cas-a-graphic-narrative/05-tc-gn-24794808-wilson-brylie-srint2-tc-gn-24794-600.webp",
+          "w": 1600,
+          "h": 1132,
           "alt": "",
-          "white": false
+          "white": true
         }
       ],
       "copy": {
@@ -2317,7 +1721,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": [-440, -300]
+        "edge": [-440, -160]
       }
     },
     {
@@ -2339,30 +1743,6 @@
       ],
       "images": [
         {
-          "src": "assets/img/nomad-homes/01-canva-exports-dfut-t2-nomad-homes-df-presentati.webp",
-          "thumb": "assets/img/nomad-homes/01-canva-exports-dfut-t2-nomad-homes-df-presentati-600.webp",
-          "w": 1600,
-          "h": 900,
-          "alt": "",
-          "white": true
-        },
-        {
-          "src": "assets/img/nomad-homes/02-canva-exports-dfut-t2-nomad-homes-df-presentati.webp",
-          "thumb": "assets/img/nomad-homes/02-canva-exports-dfut-t2-nomad-homes-df-presentati-600.webp",
-          "w": 1600,
-          "h": 900,
-          "alt": "",
-          "white": false
-        },
-        {
-          "src": "assets/img/nomad-homes/03-canva-exports-dfut-t2-nomad-homes-df-presentati.webp",
-          "thumb": "assets/img/nomad-homes/03-canva-exports-dfut-t2-nomad-homes-df-presentati-600.webp",
-          "w": 1600,
-          "h": 900,
-          "alt": "",
-          "white": true
-        },
-        {
           "src": "assets/img/nomad-homes/04-canva-exports-dfut-t2-nomad-homes-df-presentati.webp",
           "thumb": "assets/img/nomad-homes/04-canva-exports-dfut-t2-nomad-homes-df-presentati-600.webp",
           "w": 1600,
@@ -2371,16 +1751,8 @@
           "white": false
         },
         {
-          "src": "assets/img/nomad-homes/05-canva-exports-dfut-t2-nomad-homes-df-presentati.webp",
-          "thumb": "assets/img/nomad-homes/05-canva-exports-dfut-t2-nomad-homes-df-presentati-600.webp",
-          "w": 1600,
-          "h": 900,
-          "alt": "",
-          "white": true
-        },
-        {
-          "src": "assets/img/nomad-homes/06-canva-exports-dfut-t2-nomad-homes-df-presentati.webp",
-          "thumb": "assets/img/nomad-homes/06-canva-exports-dfut-t2-nomad-homes-df-presentati-600.webp",
+          "src": "assets/img/nomad-homes/02-canva-exports-dfut-t2-nomad-homes-df-presentati.webp",
+          "thumb": "assets/img/nomad-homes/02-canva-exports-dfut-t2-nomad-homes-df-presentati-600.webp",
           "w": 1600,
           "h": 900,
           "alt": "",
@@ -2401,6 +1773,30 @@
           "h": 900,
           "alt": "",
           "white": false
+        },
+        {
+          "src": "assets/img/nomad-homes/06-canva-exports-dfut-t2-nomad-homes-df-presentati.webp",
+          "thumb": "assets/img/nomad-homes/06-canva-exports-dfut-t2-nomad-homes-df-presentati-600.webp",
+          "w": 1600,
+          "h": 900,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/nomad-homes/03-canva-exports-dfut-t2-nomad-homes-df-presentati.webp",
+          "thumb": "assets/img/nomad-homes/03-canva-exports-dfut-t2-nomad-homes-df-presentati-600.webp",
+          "w": 1600,
+          "h": 900,
+          "alt": "",
+          "white": true
+        },
+        {
+          "src": "assets/img/nomad-homes/01-canva-exports-dfut-t2-nomad-homes-df-presentati.webp",
+          "thumb": "assets/img/nomad-homes/01-canva-exports-dfut-t2-nomad-homes-df-presentati-600.webp",
+          "w": 1600,
+          "h": 900,
+          "alt": "",
+          "white": true
         }
       ],
       "copy": {
@@ -2414,42 +1810,9 @@
       },
       "steps": [],
       "pos": {
-        "edge": [-440, 40]
+        "edge": [-440, -240]
       },
       "todo": "TODO(brylie): group work, name your role and the team size."
-    },
-    {
-      "id": "visual-essay-on-freedom",
-      "slug": "visual-essay-on-freedom",
-      "n": "16",
-      "title": "Visual essay on freedom",
-      "sub": "",
-      "year": 2023,
-      "size": "S",
-      "kind": "work",
-      "context": "Critical Approaches to Visual Culture, UTS",
-      "team": "",
-      "partOf": null,
-      "link": null,
-      "keywords": [
-        "editorial-design",
-        "design-research",
-        "visual-essay"
-      ],
-      "images": [],
-      "copy": {
-        "brief": "",
-        "insight": "",
-        "pull": "",
-        "response": "",
-        "role": "",
-        "credit": "",
-        "oneLine": ""
-      },
-      "steps": [],
-      "pos": {
-        "edge": [-260, -100]
-      }
     },
     {
       "id": "coded-web-folio",
@@ -2493,14 +1856,6 @@
           "h": 1600,
           "alt": "",
           "white": false
-        },
-        {
-          "src": "assets/img/politics-of-image-and-text/04-experiments-img-9472.webp",
-          "thumb": "assets/img/politics-of-image-and-text/04-experiments-img-9472-600.webp",
-          "w": 1153,
-          "h": 1600,
-          "alt": "",
-          "white": true
         }
       ],
       "copy": {
@@ -2514,7 +1869,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": [-160, 300]
+        "edge": [-220, 300]
       }
     },
     {
@@ -2535,14 +1890,6 @@
       ],
       "images": [
         {
-          "src": "assets/img/falcon-composite/01-puddle-v1.webp",
-          "thumb": "assets/img/falcon-composite/01-puddle-v1-600.webp",
-          "w": 1169,
-          "h": 1559,
-          "alt": "",
-          "white": false
-        },
-        {
           "src": "assets/img/falcon-composite/02-falcon-composite-square-dag-nnpqosm.webp",
           "thumb": "assets/img/falcon-composite/02-falcon-composite-square-dag-nnpqosm-600.webp",
           "w": 359,
@@ -2551,17 +1898,17 @@
           "white": false
         },
         {
-          "src": "assets/img/falcon-composite/03-car-img-3564.webp",
-          "thumb": "assets/img/falcon-composite/03-car-img-3564-600.webp",
-          "w": 1248,
-          "h": 1560,
+          "src": "assets/img/falcon-composite/01-puddle-v1.webp",
+          "thumb": "assets/img/falcon-composite/01-puddle-v1-600.webp",
+          "w": 1169,
+          "h": 1559,
           "alt": "",
           "white": false
         },
         {
-          "src": "assets/img/falcon-composite/04-car-img-3576.webp",
-          "thumb": "assets/img/falcon-composite/04-car-img-3576-600.webp",
-          "w": 1170,
+          "src": "assets/img/falcon-composite/03-car-img-3564.webp",
+          "thumb": "assets/img/falcon-composite/03-car-img-3564-600.webp",
+          "w": 1248,
           "h": 1560,
           "alt": "",
           "white": false
@@ -2578,7 +1925,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": [-440, -120]
+        "edge": [-440, 80]
       },
       "todo": "TODO(brylie): year unknown."
     },
@@ -2602,30 +1949,6 @@
       ],
       "images": [
         {
-          "src": "assets/img/cymatics/01-rdh-cymatics-presentation-t01.webp",
-          "thumb": "assets/img/cymatics/01-rdh-cymatics-presentation-t01-600.webp",
-          "w": 1600,
-          "h": 900,
-          "alt": "",
-          "white": false
-        },
-        {
-          "src": "assets/img/cymatics/02-rdh-cymatics-presentation-t02.webp",
-          "thumb": "assets/img/cymatics/02-rdh-cymatics-presentation-t02-600.webp",
-          "w": 1600,
-          "h": 900,
-          "alt": "",
-          "white": false
-        },
-        {
-          "src": "assets/img/cymatics/03-rdh-cymatics-presentation-t03.webp",
-          "thumb": "assets/img/cymatics/03-rdh-cymatics-presentation-t03-600.webp",
-          "w": 1600,
-          "h": 900,
-          "alt": "",
-          "white": false
-        },
-        {
           "src": "assets/img/cymatics/04-rdh-cymatics-presentation-t04.webp",
           "thumb": "assets/img/cymatics/04-rdh-cymatics-presentation-t04-600.webp",
           "w": 1600,
@@ -2636,6 +1959,22 @@
         {
           "src": "assets/img/cymatics/05-rdh-presentation-dafymoc0ok0-p02.webp",
           "thumb": "assets/img/cymatics/05-rdh-presentation-dafymoc0ok0-p02-600.webp",
+          "w": 1600,
+          "h": 900,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/cymatics/01-rdh-cymatics-presentation-t01.webp",
+          "thumb": "assets/img/cymatics/01-rdh-cymatics-presentation-t01-600.webp",
+          "w": 1600,
+          "h": 900,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/cymatics/02-rdh-cymatics-presentation-t02.webp",
+          "thumb": "assets/img/cymatics/02-rdh-cymatics-presentation-t02-600.webp",
           "w": 1600,
           "h": 900,
           "alt": "",
@@ -2653,7 +1992,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": [-180, 180]
+        "edge": [-260, 120]
       }
     },
     {
@@ -2673,14 +2012,6 @@
         "editorial-design"
       ],
       "images": [
-        {
-          "src": "assets/img/book-cover-series/01-ssvp-final-imgs9.webp",
-          "thumb": "assets/img/book-cover-series/01-ssvp-final-imgs9-600.webp",
-          "w": 1600,
-          "h": 1600,
-          "alt": "",
-          "white": true
-        },
         {
           "src": "assets/img/book-cover-series/02-wilson-brylie-booksw12-p001.webp",
           "thumb": "assets/img/book-cover-series/02-wilson-brylie-booksw12-p001-600.webp",
@@ -2706,20 +2037,12 @@
           "white": true
         },
         {
-          "src": "assets/img/book-cover-series/05-a6-aic-thumb.webp",
-          "thumb": "assets/img/book-cover-series/05-a6-aic-thumb-600.webp",
-          "w": 512,
-          "h": 442,
+          "src": "assets/img/book-cover-series/01-ssvp-final-imgs9.webp",
+          "thumb": "assets/img/book-cover-series/01-ssvp-final-imgs9-600.webp",
+          "w": 1600,
+          "h": 1600,
           "alt": "",
-          "white": false
-        },
-        {
-          "src": "assets/img/book-cover-series/06-text-aic-thumb.webp",
-          "thumb": "assets/img/book-cover-series/06-text-aic-thumb-600.webp",
-          "w": 434,
-          "h": 600,
-          "alt": "",
-          "white": false
+          "white": true
         }
       ],
       "copy": {
@@ -2733,41 +2056,9 @@
       },
       "steps": [],
       "pos": {
-        "edge": [-440, -220]
+        "edge": [-440, -40]
       },
       "todo": "TODO(brylie): subject to confirm."
-    },
-    {
-      "id": "expanded-networks-journal",
-      "slug": "expanded-networks-journal",
-      "n": "21",
-      "title": "Expanded networks journal",
-      "sub": "",
-      "year": 2026,
-      "size": "S",
-      "kind": "work",
-      "context": "VCEP, UTS",
-      "team": "",
-      "partOf": null,
-      "link": null,
-      "keywords": [
-        "photography",
-        "design-research"
-      ],
-      "images": [],
-      "copy": {
-        "brief": "",
-        "insight": "",
-        "pull": "",
-        "response": "",
-        "role": "",
-        "credit": "",
-        "oneLine": ""
-      },
-      "steps": [],
-      "pos": {
-        "edge": [-440, -80]
-      }
     },
     {
       "id": "sprint-3-motion",
@@ -2788,18 +2079,18 @@
       ],
       "images": [
         {
-          "src": "assets/img/sprint-3-motion/01-01-material-render-test-10009.webp",
-          "thumb": "assets/img/sprint-3-motion/01-01-material-render-test-10009-600.webp",
-          "w": 1600,
-          "h": 900,
-          "alt": "",
-          "white": false
-        },
-        {
           "src": "assets/img/sprint-3-motion/02-v1-05.webp",
           "thumb": "assets/img/sprint-3-motion/02-v1-05-600.webp",
           "w": 1600,
           "h": 897,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/sprint-3-motion/06-nfat-motion-sprint-3-gc-md-24794808-wilson-bryl.webp",
+          "thumb": "assets/img/sprint-3-motion/06-nfat-motion-sprint-3-gc-md-24794808-wilson-bryl-600.webp",
+          "w": 1600,
+          "h": 900,
           "alt": "",
           "white": false
         },
@@ -2812,24 +2103,8 @@
           "white": false
         },
         {
-          "src": "assets/img/sprint-3-motion/04-in-blob-2-mesh-948240-model-2-transmittance.webp",
-          "thumb": "assets/img/sprint-3-motion/04-in-blob-2-mesh-948240-model-2-transmittance-600.webp",
-          "w": 1600,
-          "h": 1600,
-          "alt": "",
-          "white": false
-        },
-        {
-          "src": "assets/img/sprint-3-motion/05-slow-mesh-948321-model-3-metallicroughness.webp",
-          "thumb": "assets/img/sprint-3-motion/05-slow-mesh-948321-model-3-metallicroughness-600.webp",
-          "w": 1600,
-          "h": 1600,
-          "alt": "",
-          "white": false
-        },
-        {
-          "src": "assets/img/sprint-3-motion/06-nfat-motion-sprint-3-gc-md-24794808-wilson-bryl.webp",
-          "thumb": "assets/img/sprint-3-motion/06-nfat-motion-sprint-3-gc-md-24794808-wilson-bryl-600.webp",
+          "src": "assets/img/sprint-3-motion/01-01-material-render-test-10009.webp",
+          "thumb": "assets/img/sprint-3-motion/01-01-material-render-test-10009-600.webp",
           "w": 1600,
           "h": 900,
           "alt": "",
@@ -2847,7 +2122,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": [60, 180]
+        "edge": [100, 320]
       }
     },
     {
@@ -2870,49 +2145,9 @@
       ],
       "images": [
         {
-          "src": "assets/img/materials-and-process/01-2-img-8939-ue.webp",
-          "thumb": "assets/img/materials-and-process/01-2-img-8939-ue-600.webp",
-          "w": 1200,
-          "h": 1600,
-          "alt": "",
-          "white": false
-        },
-        {
-          "src": "assets/img/materials-and-process/02-2-img-8985.webp",
-          "thumb": "assets/img/materials-and-process/02-2-img-8985-600.webp",
-          "w": 1200,
-          "h": 1600,
-          "alt": "",
-          "white": false
-        },
-        {
-          "src": "assets/img/materials-and-process/03-3-img-8896-jpg.webp",
-          "thumb": "assets/img/materials-and-process/03-3-img-8896-jpg-600.webp",
-          "w": 1200,
-          "h": 1600,
-          "alt": "",
-          "white": false
-        },
-        {
-          "src": "assets/img/materials-and-process/04-4-img-8922.webp",
-          "thumb": "assets/img/materials-and-process/04-4-img-8922-600.webp",
-          "w": 1600,
-          "h": 1538,
-          "alt": "",
-          "white": false
-        },
-        {
-          "src": "assets/img/materials-and-process/05-4-img-8957.webp",
-          "thumb": "assets/img/materials-and-process/05-4-img-8957-600.webp",
-          "w": 1200,
-          "h": 1600,
-          "alt": "",
-          "white": false
-        },
-        {
-          "src": "assets/img/materials-and-process/06-5-img-9001.webp",
-          "thumb": "assets/img/materials-and-process/06-5-img-9001-600.webp",
-          "w": 1200,
+          "src": "assets/img/materials-and-process/08-gradmap-artboard-5.webp",
+          "thumb": "assets/img/materials-and-process/08-gradmap-artboard-5-600.webp",
+          "w": 900,
           "h": 1600,
           "alt": "",
           "white": false
@@ -2920,14 +2155,6 @@
         {
           "src": "assets/img/materials-and-process/07-gradmap-artboard-1.webp",
           "thumb": "assets/img/materials-and-process/07-gradmap-artboard-1-600.webp",
-          "w": 900,
-          "h": 1600,
-          "alt": "",
-          "white": false
-        },
-        {
-          "src": "assets/img/materials-and-process/08-gradmap-artboard-5.webp",
-          "thumb": "assets/img/materials-and-process/08-gradmap-artboard-5-600.webp",
           "w": 900,
           "h": 1600,
           "alt": "",
@@ -2942,107 +2169,33 @@
           "white": false
         },
         {
-          "src": "assets/img/materials-and-process/10-insta-story-5.webp",
-          "thumb": "assets/img/materials-and-process/10-insta-story-5-600.webp",
-          "w": 750,
-          "h": 1334,
-          "alt": "",
-          "white": false
-        }
-      ],
-      "copy": {
-        "brief": "",
-        "insight": "",
-        "pull": "",
-        "response": "",
-        "role": "",
-        "credit": "",
-        "oneLine": ""
-      },
-      "steps": [],
-      "pos": {
-        "edge": [-440, 0]
-      }
-    },
-    {
-      "id": "flame-poster-and-zine",
-      "slug": "flame-poster-and-zine",
-      "n": "24",
-      "title": "Flame",
-      "sub": "Poster & zine",
-      "year": 2023,
-      "size": "S",
-      "kind": "work",
-      "context": "UTS",
-      "team": "",
-      "partOf": null,
-      "link": null,
-      "keywords": [
-        "print",
-        "typography",
-        "editorial-design"
-      ],
-      "images": [
-        {
-          "src": "assets/img/flame-poster-and-zine/01-flame-poster-and-zine-2.webp",
-          "thumb": "assets/img/flame-poster-and-zine/01-flame-poster-and-zine-2-600.webp",
-          "w": 1078,
+          "src": "assets/img/materials-and-process/01-2-img-8939-ue.webp",
+          "thumb": "assets/img/materials-and-process/01-2-img-8939-ue-600.webp",
+          "w": 1200,
           "h": 1600,
           "alt": "",
           "white": false
         },
         {
-          "src": "assets/img/flame-poster-and-zine/02-flame-poster-and-zine-5.webp",
-          "thumb": "assets/img/flame-poster-and-zine/02-flame-poster-and-zine-5-600.webp",
-          "w": 1078,
+          "src": "assets/img/materials-and-process/04-4-img-8922.webp",
+          "thumb": "assets/img/materials-and-process/04-4-img-8922-600.webp",
+          "w": 1600,
+          "h": 1538,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/materials-and-process/06-5-img-9001.webp",
+          "thumb": "assets/img/materials-and-process/06-5-img-9001-600.webp",
+          "w": 1200,
           "h": 1600,
           "alt": "",
           "white": false
         },
         {
-          "src": "assets/img/flame-poster-and-zine/03-flame-poster-and-zine-7.webp",
-          "thumb": "assets/img/flame-poster-and-zine/03-flame-poster-and-zine-7-600.webp",
-          "w": 1078,
-          "h": 1600,
-          "alt": "",
-          "white": false
-        },
-        {
-          "src": "assets/img/flame-poster-and-zine/04-flame-poster-and-zine-artboard-1.webp",
-          "thumb": "assets/img/flame-poster-and-zine/04-flame-poster-and-zine-artboard-1-600.webp",
-          "w": 1078,
-          "h": 1600,
-          "alt": "",
-          "white": false
-        },
-        {
-          "src": "assets/img/flame-poster-and-zine/05-flame-poster-and-zine-cover.webp",
-          "thumb": "assets/img/flame-poster-and-zine/05-flame-poster-and-zine-cover-600.webp",
-          "w": 1077,
-          "h": 1600,
-          "alt": "",
-          "white": false
-        },
-        {
-          "src": "assets/img/flame-poster-and-zine/06-flame-poster-and-zine-poster.webp",
-          "thumb": "assets/img/flame-poster-and-zine/06-flame-poster-and-zine-poster-600.webp",
-          "w": 1131,
-          "h": 1600,
-          "alt": "",
-          "white": false
-        },
-        {
-          "src": "assets/img/flame-poster-and-zine/07-flame-poster-and-zine-poster-situ.webp",
-          "thumb": "assets/img/flame-poster-and-zine/07-flame-poster-and-zine-poster-situ-600.webp",
-          "w": 1391,
-          "h": 1600,
-          "alt": "",
-          "white": false
-        },
-        {
-          "src": "assets/img/flame-poster-and-zine/08-flame-poster-and-zine-zine-mock.webp",
-          "thumb": "assets/img/flame-poster-and-zine/08-flame-poster-and-zine-zine-mock-600.webp",
-          "w": 1202,
+          "src": "assets/img/materials-and-process/03-3-img-8896-jpg.webp",
+          "thumb": "assets/img/materials-and-process/03-3-img-8896-jpg-600.webp",
+          "w": 1200,
           "h": 1600,
           "alt": "",
           "white": false
@@ -3059,7 +2212,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": [-340, 60]
+        "edge": [-440, 160]
       }
     },
     {
@@ -3083,14 +2236,6 @@
         {
           "src": "assets/img/futura-motion-graphic/01-futura-animation-futura-motion-graphics-t02.webp",
           "thumb": "assets/img/futura-motion-graphic/01-futura-animation-futura-motion-graphics-t02-600.webp",
-          "w": 1024,
-          "h": 576,
-          "alt": "",
-          "white": false
-        },
-        {
-          "src": "assets/img/futura-motion-graphic/02-futura-animation-futura-motion-graphics-t01.webp",
-          "thumb": "assets/img/futura-motion-graphic/02-futura-animation-futura-motion-graphics-t01-600.webp",
           "w": 1024,
           "h": 576,
           "alt": "",
@@ -3132,7 +2277,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": [-440, 180]
+        "edge": [-440, 320]
       }
     },
     {
@@ -3180,7 +2325,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": [-440, -160]
+        "edge": [-320, 80]
       }
     },
     {
@@ -3241,14 +2386,6 @@
           "h": 1081,
           "alt": "",
           "white": false
-        },
-        {
-          "src": "assets/img/ux-ui-visual-guide/06-ux-ui-guide-1-screenshot-2023-11-19-at-11-06-5.webp",
-          "thumb": "assets/img/ux-ui-visual-guide/06-ux-ui-guide-1-screenshot-2023-11-19-at-11-06-5-600.webp",
-          "w": 496,
-          "h": 516,
-          "alt": "",
-          "white": false
         }
       ],
       "copy": {
@@ -3262,7 +2399,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": [-260, -140]
+        "edge": [-260, 0]
       }
     },
     {
@@ -3290,14 +2427,6 @@
           "h": 1600,
           "alt": "",
           "white": false
-        },
-        {
-          "src": "assets/img/trilogy-book-cover/02-trilogy-cover-aic-thumb.webp",
-          "thumb": "assets/img/trilogy-book-cover/02-trilogy-cover-aic-thumb-600.webp",
-          "w": 512,
-          "h": 518,
-          "alt": "",
-          "white": false
         }
       ],
       "copy": {
@@ -3311,7 +2440,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": [-440, -260]
+        "edge": [-440, -120]
       }
     },
     {
@@ -3340,14 +2469,6 @@
           "white": false
         },
         {
-          "src": "assets/img/personal-event-pieces/02-final-gofishin-cards-p003.webp",
-          "thumb": "assets/img/personal-event-pieces/02-final-gofishin-cards-p003-600.webp",
-          "w": 1600,
-          "h": 1132,
-          "alt": "",
-          "white": false
-        },
-        {
           "src": "assets/img/personal-event-pieces/03-final-gofishin-cards-p005.webp",
           "thumb": "assets/img/personal-event-pieces/03-final-gofishin-cards-p005-600.webp",
           "w": 1600,
@@ -3356,10 +2477,10 @@
           "white": false
         },
         {
-          "src": "assets/img/personal-event-pieces/04-final-gofishin-cards-p013.webp",
-          "thumb": "assets/img/personal-event-pieces/04-final-gofishin-cards-p013-600.webp",
-          "w": 1600,
-          "h": 1132,
+          "src": "assets/img/personal-event-pieces/07-mums-60th-back-in-1964-poster-v2-p001.webp",
+          "thumb": "assets/img/personal-event-pieces/07-mums-60th-back-in-1964-poster-v2-p001-600.webp",
+          "w": 1145,
+          "h": 1600,
           "alt": "",
           "white": false
         },
@@ -3367,22 +2488,6 @@
           "src": "assets/img/personal-event-pieces/05-back-in-1964-poster-v1-dagaeg6pica-p01.webp",
           "thumb": "assets/img/personal-event-pieces/05-back-in-1964-poster-v1-dagaeg6pica-p01-600.webp",
           "w": 1132,
-          "h": 1600,
-          "alt": "",
-          "white": false
-        },
-        {
-          "src": "assets/img/personal-event-pieces/06-mums-60th-back-in-1964-poster-v1-copy-p001.webp",
-          "thumb": "assets/img/personal-event-pieces/06-mums-60th-back-in-1964-poster-v1-copy-p001-600.webp",
-          "w": 1138,
-          "h": 1600,
-          "alt": "",
-          "white": false
-        },
-        {
-          "src": "assets/img/personal-event-pieces/07-mums-60th-back-in-1964-poster-v2-p001.webp",
-          "thumb": "assets/img/personal-event-pieces/07-mums-60th-back-in-1964-poster-v2-p001-600.webp",
-          "w": 1145,
           "h": 1600,
           "alt": "",
           "white": false
@@ -3399,41 +2504,8 @@
       },
       "steps": [],
       "pos": {
-        "edge": [300, 280]
-      }
-    },
-    {
-      "id": "secure-books",
-      "slug": "secure-books",
-      "n": "30",
-      "title": "Secure Books",
-      "sub": "Brand identity & website",
-      "year": 2024,
-      "size": "S",
-      "kind": "client",
-      "context": "Client · in progress",
-      "team": "",
-      "partOf": null,
-      "link": null,
-      "keywords": [
-        "identity-system",
-        "website"
-      ],
-      "images": [],
-      "copy": {
-        "brief": "",
-        "insight": "",
-        "pull": "",
-        "response": "",
-        "role": "",
-        "credit": "",
-        "oneLine": ""
-      },
-      "steps": [],
-      "pos": {
         "edge": [300, 320]
-      },
-      "todo": "TODO(brylie): client sign-off needed before images go in this public repo"
+      }
     }
   ],
   "keywords": [
@@ -3509,12 +2581,6 @@
     {
       "id": "data-visualisation",
       "label": "Data visualisation",
-      "type": "discipline",
-      "proposed": false
-    },
-    {
-      "id": "systems-mapping",
-      "label": "Systems mapping",
       "type": "discipline",
       "proposed": false
     },
@@ -3668,26 +2734,8 @@
       "proposed": false
     },
     {
-      "id": "systems-map",
-      "label": "Systems map",
-      "type": "deliverable",
-      "proposed": false
-    },
-    {
       "id": "zine-poster",
       "label": "Zine & poster",
-      "type": "deliverable",
-      "proposed": false
-    },
-    {
-      "id": "identity-system",
-      "label": "Identity system",
-      "type": "deliverable",
-      "proposed": false
-    },
-    {
-      "id": "visual-essay",
-      "label": "Visual essay",
       "type": "deliverable",
       "proposed": false
     },
