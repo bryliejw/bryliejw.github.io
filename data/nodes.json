@@ -122,7 +122,144 @@
         "equity",
         "curiosity"
       ],
-      "images": [],
+      "images": [
+        {
+          "src": "assets/img/cypher/01-all-0-cover.webp",
+          "thumb": "assets/img/cypher/01-all-0-cover-600.webp",
+          "w": 1186,
+          "h": 1600,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/cypher/02-all-21-back-cover.webp",
+          "thumb": "assets/img/cypher/02-all-21-back-cover-600.webp",
+          "w": 1159,
+          "h": 1600,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/cypher/03-all-1-2.webp",
+          "thumb": "assets/img/cypher/03-all-1-2-600.webp",
+          "w": 1600,
+          "h": 1076,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/cypher/04-all-17-in2-18.webp",
+          "thumb": "assets/img/cypher/04-all-17-in2-18-600.webp",
+          "w": 1600,
+          "h": 1075,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/cypher/05-all-19-20.webp",
+          "thumb": "assets/img/cypher/05-all-19-20-600.webp",
+          "w": 1600,
+          "h": 1076,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/cypher/06-all-9-10-mid.webp",
+          "thumb": "assets/img/cypher/06-all-9-10-mid-600.webp",
+          "w": 1600,
+          "h": 1076,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/cypher/07-1-final-1-p002.webp",
+          "thumb": "assets/img/cypher/07-1-final-1-p002-600.webp",
+          "w": 1200,
+          "h": 1600,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/cypher/08-1-final-1-p005.webp",
+          "thumb": "assets/img/cypher/08-1-final-1-p005-600.webp",
+          "w": 1200,
+          "h": 1600,
+          "alt": "",
+          "white": true
+        },
+        {
+          "src": "assets/img/cypher/09-1-final-1-p014.webp",
+          "thumb": "assets/img/cypher/09-1-final-1-p014-600.webp",
+          "w": 1200,
+          "h": 1600,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/cypher/10-1-final-1-p016.webp",
+          "thumb": "assets/img/cypher/10-1-final-1-p016-600.webp",
+          "w": 1200,
+          "h": 1600,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/cypher/11-finals-sg-t2-p001.webp",
+          "thumb": "assets/img/cypher/11-finals-sg-t2-p001-600.webp",
+          "w": 1200,
+          "h": 1600,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/cypher/12-cypher-font-aic-thumb.webp",
+          "thumb": "assets/img/cypher/12-cypher-font-aic-thumb-600.webp",
+          "w": 512,
+          "h": 354,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/cypher/13-final-docs-wilsonbrylie-covergrid-p001.webp",
+          "thumb": "assets/img/cypher/13-final-docs-wilsonbrylie-covergrid-p001-600.webp",
+          "w": 1132,
+          "h": 1600,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/cypher/14-mag-cover-pdf-mag-covers-grid-01-p001.webp",
+          "thumb": "assets/img/cypher/14-mag-cover-pdf-mag-covers-grid-01-p001-600.webp",
+          "w": 1132,
+          "h": 1600,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/cypher/15-img-4325.webp",
+          "thumb": "assets/img/cypher/15-img-4325-600.webp",
+          "w": 1421,
+          "h": 582,
+          "alt": "",
+          "white": true
+        },
+        {
+          "src": "assets/img/cypher/16-img-4327.webp",
+          "thumb": "assets/img/cypher/16-img-4327-600.webp",
+          "w": 929,
+          "h": 376,
+          "alt": "",
+          "white": true
+        },
+        {
+          "src": "assets/img/cypher/17-masthead-asset-1.webp",
+          "thumb": "assets/img/cypher/17-masthead-asset-1-600.webp",
+          "w": 718,
+          "h": 281,
+          "alt": "",
+          "white": false
+        }
+      ],
       "copy": {
         "brief": "A uni assignment for Typography in Context: a magazine for visual communication designers, with masthead, covers and a style guide.",
         "insight": "While organising my photographs into sections, I realised there was a cohesive colour scheme that heavily contrasted against the mundane urban landscape surrounding it.",
@@ -143,7 +280,7 @@
         ]
       ],
       "pos": {
-        "edge": [240, -20]
+        "edge": [240, 20]
       }
     },
     {
@@ -175,7 +312,112 @@
         "care",
         "equity"
       ],
-      "images": [],
+      "images": [
+        {
+          "src": "assets/img/16-days-of-real-talk/01-web-wagec-image-2.webp",
+          "thumb": "assets/img/16-days-of-real-talk/01-web-wagec-image-2-600.webp",
+          "w": 1500,
+          "h": 1125,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/16-days-of-real-talk/02-belly-band-assets-logo-front.webp",
+          "thumb": "assets/img/16-days-of-real-talk/02-belly-band-assets-logo-front-600.webp",
+          "w": 591,
+          "h": 933,
+          "alt": "",
+          "white": true
+        },
+        {
+          "src": "assets/img/16-days-of-real-talk/03-do-you-think-your-online-experience-would-be-dif.webp",
+          "thumb": "assets/img/16-days-of-real-talk/03-do-you-think-your-online-experience-would-be-dif-600.webp",
+          "w": 900,
+          "h": 1600,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/16-days-of-real-talk/04-footage-ap.webp",
+          "thumb": "assets/img/16-days-of-real-talk/04-footage-ap-600.webp",
+          "w": 627,
+          "h": 448,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/16-days-of-real-talk/05-footage-card.webp",
+          "thumb": "assets/img/16-days-of-real-talk/05-footage-card-600.webp",
+          "w": 627,
+          "h": 448,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/16-days-of-real-talk/06-footage-p3.webp",
+          "thumb": "assets/img/16-days-of-real-talk/06-footage-p3-600.webp",
+          "w": 627,
+          "h": 448,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/16-days-of-real-talk/07-footage-y2.webp",
+          "thumb": "assets/img/16-days-of-real-talk/07-footage-y2-600.webp",
+          "w": 627,
+          "h": 448,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/16-days-of-real-talk/08-posters-still-campus-poster-1-cymk.webp",
+          "thumb": "assets/img/16-days-of-real-talk/08-posters-still-campus-poster-1-cymk-600.webp",
+          "w": 1131,
+          "h": 1600,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/16-days-of-real-talk/09-posters-still-campus-poster-2-cymk.webp",
+          "thumb": "assets/img/16-days-of-real-talk/09-posters-still-campus-poster-2-cymk-600.webp",
+          "w": 1131,
+          "h": 1600,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/16-days-of-real-talk/10-posters-still-general-poster-1.webp",
+          "thumb": "assets/img/16-days-of-real-talk/10-posters-still-general-poster-1-600.webp",
+          "w": 1131,
+          "h": 1600,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/16-days-of-real-talk/11-posters-still-general-poster-2.webp",
+          "thumb": "assets/img/16-days-of-real-talk/11-posters-still-general-poster-2-600.webp",
+          "w": 1131,
+          "h": 1600,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/16-days-of-real-talk/12-posters-still-sharehouse-poster-1-cymk.webp",
+          "thumb": "assets/img/16-days-of-real-talk/12-posters-still-sharehouse-poster-1-cymk-600.webp",
+          "w": 1131,
+          "h": 1600,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/16-days-of-real-talk/13-social-media-tiles-wagec-image2-t01.webp",
+          "thumb": "assets/img/16-days-of-real-talk/13-social-media-tiles-wagec-image2-t01-600.webp",
+          "w": 1440,
+          "h": 1080,
+          "alt": "",
+          "white": false
+        }
+      ],
       "copy": {
         "brief": "A live client project for Socially Responsive Design at UTS. The Women’s and Girls’ Emergency Centre (WAGEC) asked our studio to launch its We Need To Talk cards to university students during the 16 Days of Activism against gender-based violence.",
         "insight": "",
@@ -212,7 +454,7 @@
         ]
       ],
       "pos": {
-        "edge": [-140, 120]
+        "edge": [-240, 0]
       }
     },
     {
@@ -244,7 +486,184 @@
         "curiosity",
         "access"
       ],
-      "images": [],
+      "images": [
+        {
+          "src": "assets/img/symbiosis/01-final-files-frameframe-1.webp",
+          "thumb": "assets/img/symbiosis/01-final-files-frameframe-1-600.webp",
+          "w": 1080,
+          "h": 1080,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/symbiosis/02-final-files-frameframe-3.webp",
+          "thumb": "assets/img/symbiosis/02-final-files-frameframe-3-600.webp",
+          "w": 1080,
+          "h": 1080,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/symbiosis/03-final-files-frameframe-5.webp",
+          "thumb": "assets/img/symbiosis/03-final-files-frameframe-5-600.webp",
+          "w": 1080,
+          "h": 1080,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/symbiosis/04-final-files-frame-imgs-frame-2-p001.webp",
+          "thumb": "assets/img/symbiosis/04-final-files-frame-imgs-frame-2-p001-600.webp",
+          "w": 1600,
+          "h": 1600,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/symbiosis/05-final-files-frame-imgs-frame-4-p001.webp",
+          "thumb": "assets/img/symbiosis/05-final-files-frame-imgs-frame-4-p001-600.webp",
+          "w": 1600,
+          "h": 1600,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/symbiosis/06-final-files-frame-imgs-frame-6-p001.webp",
+          "thumb": "assets/img/symbiosis/06-final-files-frame-imgs-frame-6-p001-600.webp",
+          "w": 1600,
+          "h": 1600,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/symbiosis/07-bryliewilson-instagrampost-ve-at3-tile3-proto-1.webp",
+          "thumb": "assets/img/symbiosis/07-bryliewilson-instagrampost-ve-at3-tile3-proto-1-600.webp",
+          "w": 896,
+          "h": 855,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/symbiosis/08-bryliewilson-instagrampost-ve-at3-tile5-proto-2.webp",
+          "thumb": "assets/img/symbiosis/08-bryliewilson-instagrampost-ve-at3-tile5-proto-2-600.webp",
+          "w": 896,
+          "h": 855,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/symbiosis/09-canva-exports-visexp-t3-instagram-tile-1080.webp",
+          "thumb": "assets/img/symbiosis/09-canva-exports-visexp-t3-instagram-tile-1080-600.webp",
+          "w": 1080,
+          "h": 1080,
+          "alt": "",
+          "white": true
+        },
+        {
+          "src": "assets/img/symbiosis/10-symbiosis-mesh-model-photo-perspective-dagwolp.webp",
+          "thumb": "assets/img/symbiosis/10-symbiosis-mesh-model-photo-perspective-dagwolp-600.webp",
+          "w": 1400,
+          "h": 1080,
+          "alt": "",
+          "white": true
+        },
+        {
+          "src": "assets/img/symbiosis/11-img-3954.webp",
+          "thumb": "assets/img/symbiosis/11-img-3954-600.webp",
+          "w": 1600,
+          "h": 1200,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/symbiosis/12-img-3993.webp",
+          "thumb": "assets/img/symbiosis/12-img-3993-600.webp",
+          "w": 1600,
+          "h": 1200,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/symbiosis/13-img-3999.webp",
+          "thumb": "assets/img/symbiosis/13-img-3999-600.webp",
+          "w": 1600,
+          "h": 1200,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/symbiosis/14-img-4013.webp",
+          "thumb": "assets/img/symbiosis/14-img-4013-600.webp",
+          "w": 1600,
+          "h": 1200,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/symbiosis/15-untitled-1-1-aic-2024-10-thumb.webp",
+          "thumb": "assets/img/symbiosis/15-untitled-1-1-aic-2024-10-thumb-600.webp",
+          "w": 512,
+          "h": 512,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/symbiosis/16-24794808-visual-narrative-2-p001.webp",
+          "thumb": "assets/img/symbiosis/16-24794808-visual-narrative-2-p001-600.webp",
+          "w": 566,
+          "h": 1600,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/symbiosis/17-at1-24794808-proces-folio-p002.webp",
+          "thumb": "assets/img/symbiosis/17-at1-24794808-proces-folio-p002-600.webp",
+          "w": 1600,
+          "h": 1080,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/symbiosis/18-at1-24794808-proces-folio-p003.webp",
+          "thumb": "assets/img/symbiosis/18-at1-24794808-proces-folio-p003-600.webp",
+          "w": 1600,
+          "h": 1080,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/symbiosis/19-at1-24794808-proces-folio-p004.webp",
+          "thumb": "assets/img/symbiosis/19-at1-24794808-proces-folio-p004-600.webp",
+          "w": 1600,
+          "h": 1080,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/symbiosis/20-at1-24794808-proces-folio-p008.webp",
+          "thumb": "assets/img/symbiosis/20-at1-24794808-proces-folio-p008-600.webp",
+          "w": 1600,
+          "h": 1080,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/symbiosis/21-iteration-concept-development-refinement-p001.webp",
+          "thumb": "assets/img/symbiosis/21-iteration-concept-development-refinement-p001-600.webp",
+          "w": 1600,
+          "h": 1131,
+          "alt": "",
+          "white": true
+        },
+        {
+          "src": "assets/img/symbiosis/22-iteration-concept-development-refinement-p002.webp",
+          "thumb": "assets/img/symbiosis/22-iteration-concept-development-refinement-p002-600.webp",
+          "w": 1600,
+          "h": 1131,
+          "alt": "",
+          "white": true
+        }
+      ],
       "copy": {
         "brief": "A university assignment for Visualising Experience at UTS, working with the Powerhouse Museum collection: design an interactive digital experience for one object. I chose Christopher Dresser’s cast‑iron Garden Chair, 1870.",
         "insight": "We see the chair as either a utilitarian object or a piece of art. Reading Dresser’s own books, I found that division reflects design for standardisation rather than an intrinsic truth, and that his ornament is built on botany and geometry.",
@@ -329,7 +748,7 @@
         ]
       ],
       "pos": {
-        "edge": [20, 140]
+        "edge": [-60, 120]
       }
     },
     {
@@ -353,7 +772,104 @@
         "miro",
         "ai-in-hospitality"
       ],
-      "images": [],
+      "images": [
+        {
+          "src": "assets/img/ibm-x-qt-hotels/01-final-qt-x-ibm-workshop-title.webp",
+          "thumb": "assets/img/ibm-x-qt-hotels/01-final-qt-x-ibm-workshop-title-600.webp",
+          "w": 1600,
+          "h": 900,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/ibm-x-qt-hotels/02-qt-research-presentation-slide01-cover.webp",
+          "thumb": "assets/img/ibm-x-qt-hotels/02-qt-research-presentation-slide01-cover-600.webp",
+          "w": 1456,
+          "h": 819,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/ibm-x-qt-hotels/03-qt-research-presentation-slide02-re-brief.webp",
+          "thumb": "assets/img/ibm-x-qt-hotels/03-qt-research-presentation-slide02-re-brief-600.webp",
+          "w": 1456,
+          "h": 819,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/ibm-x-qt-hotels/04-qt-research-presentation-slide06-opportunities.webp",
+          "thumb": "assets/img/ibm-x-qt-hotels/04-qt-research-presentation-slide06-opportunities-600.webp",
+          "w": 1456,
+          "h": 819,
+          "alt": "",
+          "white": true
+        },
+        {
+          "src": "assets/img/ibm-x-qt-hotels/05-qt-research-presentation-slide07-opportunities.webp",
+          "thumb": "assets/img/ibm-x-qt-hotels/05-qt-research-presentation-slide07-opportunities-600.webp",
+          "w": 1456,
+          "h": 819,
+          "alt": "",
+          "white": true
+        },
+        {
+          "src": "assets/img/ibm-x-qt-hotels/06-qt-research-presentation-slide10-ai-research-bo.webp",
+          "thumb": "assets/img/ibm-x-qt-hotels/06-qt-research-presentation-slide10-ai-research-bo-600.webp",
+          "w": 1456,
+          "h": 819,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/ibm-x-qt-hotels/07-workshop-board-as-is-scenario-mapping.webp",
+          "thumb": "assets/img/ibm-x-qt-hotels/07-workshop-board-as-is-scenario-mapping-600.webp",
+          "w": 1568,
+          "h": 733,
+          "alt": "",
+          "white": true
+        },
+        {
+          "src": "assets/img/ibm-x-qt-hotels/08-workshop-board-icebreakers.webp",
+          "thumb": "assets/img/ibm-x-qt-hotels/08-workshop-board-icebreakers-600.webp",
+          "w": 1431,
+          "h": 840,
+          "alt": "",
+          "white": true
+        },
+        {
+          "src": "assets/img/ibm-x-qt-hotels/09-workshop-board-prioritisation-grid.webp",
+          "thumb": "assets/img/ibm-x-qt-hotels/09-workshop-board-prioritisation-grid-600.webp",
+          "w": 1491,
+          "h": 812,
+          "alt": "",
+          "white": true
+        },
+        {
+          "src": "assets/img/ibm-x-qt-hotels/10-qt-industry.webp",
+          "thumb": "assets/img/ibm-x-qt-hotels/10-qt-industry-600.webp",
+          "w": 1600,
+          "h": 1217,
+          "alt": "",
+          "white": true
+        },
+        {
+          "src": "assets/img/ibm-x-qt-hotels/11-qt-qt.webp",
+          "thumb": "assets/img/ibm-x-qt-hotels/11-qt-qt-600.webp",
+          "w": 1600,
+          "h": 1217,
+          "alt": "",
+          "white": true
+        },
+        {
+          "src": "assets/img/ibm-x-qt-hotels/12-qt-booking.webp",
+          "thumb": "assets/img/ibm-x-qt-hotels/12-qt-booking-600.webp",
+          "w": 1600,
+          "h": 1217,
+          "alt": "",
+          "white": true
+        }
+      ],
       "copy": {
         "brief": "",
         "insight": "",
@@ -365,7 +881,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": [-240, 260]
+        "edge": [-320, 140]
       }
     },
     {
@@ -386,7 +902,152 @@
         "experience-design",
         "event-identity"
       ],
-      "images": [],
+      "images": [
+        {
+          "src": "assets/img/collab/01-final-inflated.webp",
+          "thumb": "assets/img/collab/01-final-inflated-600.webp",
+          "w": 1293,
+          "h": 230,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/collab/02-final-identity-collab-falling-1-2304x1271.webp",
+          "thumb": "assets/img/collab/02-final-identity-collab-falling-1-2304x1271-600.webp",
+          "w": 1600,
+          "h": 854,
+          "alt": "",
+          "white": true
+        },
+        {
+          "src": "assets/img/collab/03-final-shape-1.webp",
+          "thumb": "assets/img/collab/03-final-shape-1-600.webp",
+          "w": 362,
+          "h": 362,
+          "alt": "",
+          "white": true
+        },
+        {
+          "src": "assets/img/collab/04-final-shape-2.webp",
+          "thumb": "assets/img/collab/04-final-shape-2-600.webp",
+          "w": 356,
+          "h": 371,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/collab/05-final-shape-3.webp",
+          "thumb": "assets/img/collab/05-final-shape-3-600.webp",
+          "w": 501,
+          "h": 485,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/collab/06-letters-asset-56.webp",
+          "thumb": "assets/img/collab/06-letters-asset-56-600.webp",
+          "w": 174,
+          "h": 229,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/collab/07-letters-asset-59.webp",
+          "thumb": "assets/img/collab/07-letters-asset-59-600.webp",
+          "w": 186,
+          "h": 230,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/collab/08-letters-asset-61.webp",
+          "thumb": "assets/img/collab/08-letters-asset-61-600.webp",
+          "w": 207,
+          "h": 229,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/collab/09-jenga-jenga-front.webp",
+          "thumb": "assets/img/collab/09-jenga-jenga-front-600.webp",
+          "w": 1440,
+          "h": 834,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/collab/10-mocks-maneken-boattote01.webp",
+          "thumb": "assets/img/collab/10-mocks-maneken-boattote01-600.webp",
+          "w": 1600,
+          "h": 1066,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/collab/11-mocks-maneken-boattote02.webp",
+          "thumb": "assets/img/collab/11-mocks-maneken-boattote02-600.webp",
+          "w": 1600,
+          "h": 1066,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/collab/12-renders-frontv1.webp",
+          "thumb": "assets/img/collab/12-renders-frontv1-600.webp",
+          "w": 1600,
+          "h": 1199,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/collab/13-stage-front-render.webp",
+          "thumb": "assets/img/collab/13-stage-front-render-600.webp",
+          "w": 1024,
+          "h": 576,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/collab/14-activation-figma-collab-activation-3-1440x875.webp",
+          "thumb": "assets/img/collab/14-activation-figma-collab-activation-3-1440x875-600.webp",
+          "w": 1600,
+          "h": 926,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/collab/15-figma-collab-identity-territory-pink-and-black.webp",
+          "thumb": "assets/img/collab/15-figma-collab-identity-territory-pink-and-black-600.webp",
+          "w": 1600,
+          "h": 900,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/collab/16-img-5041.webp",
+          "thumb": "assets/img/collab/16-img-5041-600.webp",
+          "w": 1600,
+          "h": 1066,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/collab/17-img-5076.webp",
+          "thumb": "assets/img/collab/17-img-5076-600.webp",
+          "w": 1254,
+          "h": 1600,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/collab/18-all-old-collab-block-letter-view-vectors-1.webp",
+          "thumb": "assets/img/collab/18-all-old-collab-block-letter-view-vectors-1-600.webp",
+          "w": 1202,
+          "h": 870,
+          "alt": "",
+          "white": false
+        }
+      ],
       "copy": {
         "brief": "Jack Morton brief for Figma’s COLLAB event.",
         "insight": "",
@@ -398,7 +1059,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": [-380, 200]
+        "edge": [-300, 240]
       }
     },
     {
@@ -421,7 +1082,112 @@
         "psychology",
         "health-equity"
       ],
-      "images": [],
+      "images": [
+        {
+          "src": "assets/img/adhd-in-the-media/01-style-frames-v1-express-thumb.webp",
+          "thumb": "assets/img/adhd-in-the-media/01-style-frames-v1-express-thumb-600.webp",
+          "w": 600,
+          "h": 337,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/adhd-in-the-media/02-task-3-slides-final-v1-p002.webp",
+          "thumb": "assets/img/adhd-in-the-media/02-task-3-slides-final-v1-p002-600.webp",
+          "w": 1600,
+          "h": 900,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/adhd-in-the-media/03-task-3-slides-final-v1-p004.webp",
+          "thumb": "assets/img/adhd-in-the-media/03-task-3-slides-final-v1-p004-600.webp",
+          "w": 1600,
+          "h": 900,
+          "alt": "",
+          "white": true
+        },
+        {
+          "src": "assets/img/adhd-in-the-media/04-task-3-slides-final-v1-p006.webp",
+          "thumb": "assets/img/adhd-in-the-media/04-task-3-slides-final-v1-p006-600.webp",
+          "w": 1600,
+          "h": 900,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/adhd-in-the-media/05-task-3-slides-final-v1-p008.webp",
+          "thumb": "assets/img/adhd-in-the-media/05-task-3-slides-final-v1-p008-600.webp",
+          "w": 1600,
+          "h": 900,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/adhd-in-the-media/06-task-3-slides-final-v1-p009.webp",
+          "thumb": "assets/img/adhd-in-the-media/06-task-3-slides-final-v1-p009-600.webp",
+          "w": 1600,
+          "h": 900,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/adhd-in-the-media/07-task-3-slides-final-v1-p010.webp",
+          "thumb": "assets/img/adhd-in-the-media/07-task-3-slides-final-v1-p010-600.webp",
+          "w": 1600,
+          "h": 900,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/adhd-in-the-media/08-task-3-slides-final-v1-p018.webp",
+          "thumb": "assets/img/adhd-in-the-media/08-task-3-slides-final-v1-p018-600.webp",
+          "w": 1600,
+          "h": 900,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/adhd-in-the-media/09-task-3-slides-final-v1-p020.webp",
+          "thumb": "assets/img/adhd-in-the-media/09-task-3-slides-final-v1-p020-600.webp",
+          "w": 1600,
+          "h": 900,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/adhd-in-the-media/10-ps-exp-artboard-5.webp",
+          "thumb": "assets/img/adhd-in-the-media/10-ps-exp-artboard-5-600.webp",
+          "w": 1600,
+          "h": 900,
+          "alt": "",
+          "white": true
+        },
+        {
+          "src": "assets/img/adhd-in-the-media/11-ps-exp-artboard-9.webp",
+          "thumb": "assets/img/adhd-in-the-media/11-ps-exp-artboard-9-600.webp",
+          "w": 1600,
+          "h": 900,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/adhd-in-the-media/12-ps-exp-artboard-1-p007.webp",
+          "thumb": "assets/img/adhd-in-the-media/12-ps-exp-artboard-1-p007-600.webp",
+          "w": 1600,
+          "h": 901,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/adhd-in-the-media/13-ps-exp-artboard-1-p008.webp",
+          "thumb": "assets/img/adhd-in-the-media/13-ps-exp-artboard-1-p008-600.webp",
+          "w": 1600,
+          "h": 901,
+          "alt": "",
+          "white": false
+        }
+      ],
       "copy": {
         "brief": "",
         "insight": "",
@@ -460,7 +1226,152 @@
         "design-justice",
         "transparency"
       ],
-      "images": [],
+      "images": [
+        {
+          "src": "assets/img/terms-of-practice/01-web-sites-terms-of-practice-manifesto-index.webp",
+          "thumb": "assets/img/terms-of-practice/01-web-sites-terms-of-practice-manifesto-index-600.webp",
+          "w": 1600,
+          "h": 1000,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/terms-of-practice/02-web-sites-terms-of-practice-manifesto-index.webp",
+          "thumb": "assets/img/terms-of-practice/02-web-sites-terms-of-practice-manifesto-index-600.webp",
+          "w": 739,
+          "h": 1600,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/terms-of-practice/03-web-sites-terms-of-practice-manifesto-manifes.webp",
+          "thumb": "assets/img/terms-of-practice/03-web-sites-terms-of-practice-manifesto-manifes-600.webp",
+          "w": 1600,
+          "h": 1000,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/terms-of-practice/04-web-sites-terms-of-practice-manifesto-manifes.webp",
+          "thumb": "assets/img/terms-of-practice/04-web-sites-terms-of-practice-manifesto-manifes-600.webp",
+          "w": 739,
+          "h": 1600,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/terms-of-practice/05-web-sites-terms-of-practice-manifesto-manifes.webp",
+          "thumb": "assets/img/terms-of-practice/05-web-sites-terms-of-practice-manifesto-manifes-600.webp",
+          "w": 1600,
+          "h": 1000,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/terms-of-practice/06-web-sites-terms-of-practice-manifesto-manifes.webp",
+          "thumb": "assets/img/terms-of-practice/06-web-sites-terms-of-practice-manifesto-manifes-600.webp",
+          "w": 1600,
+          "h": 1000,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/terms-of-practice/07-web-sites-terms-of-practice-manifesto-manifes.webp",
+          "thumb": "assets/img/terms-of-practice/07-web-sites-terms-of-practice-manifesto-manifes-600.webp",
+          "w": 1600,
+          "h": 1000,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/terms-of-practice/08-submitted-wilson-brylie-87012-task1-portfolio.webp",
+          "thumb": "assets/img/terms-of-practice/08-submitted-wilson-brylie-87012-task1-portfolio-600.webp",
+          "w": 1600,
+          "h": 1132,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/terms-of-practice/09-submitted-wilson-brylie-87012-task1-portfolio.webp",
+          "thumb": "assets/img/terms-of-practice/09-submitted-wilson-brylie-87012-task1-portfolio-600.webp",
+          "w": 1600,
+          "h": 1132,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/terms-of-practice/10-export-wilson-brylie-87012-task1-portfolio-alt.webp",
+          "thumb": "assets/img/terms-of-practice/10-export-wilson-brylie-87012-task1-portfolio-alt-600.webp",
+          "w": 1600,
+          "h": 1131,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/terms-of-practice/11-submitted-wilson-brylie-87012-task1-portfolio.webp",
+          "thumb": "assets/img/terms-of-practice/11-submitted-wilson-brylie-87012-task1-portfolio-600.webp",
+          "w": 1600,
+          "h": 1132,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/terms-of-practice/12-finals-final-braindump-map-p001.webp",
+          "thumb": "assets/img/terms-of-practice/12-finals-final-braindump-map-p001-600.webp",
+          "w": 1132,
+          "h": 1600,
+          "alt": "",
+          "white": true
+        },
+        {
+          "src": "assets/img/terms-of-practice/13-img-7643.webp",
+          "thumb": "assets/img/terms-of-practice/13-img-7643-600.webp",
+          "w": 1122,
+          "h": 1600,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/terms-of-practice/14-img-9704.webp",
+          "thumb": "assets/img/terms-of-practice/14-img-9704-600.webp",
+          "w": 1062,
+          "h": 1600,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/terms-of-practice/15-img-7418.webp",
+          "thumb": "assets/img/terms-of-practice/15-img-7418-600.webp",
+          "w": 1600,
+          "h": 1200,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/terms-of-practice/16-web-sites-creative-responses-index-desktop.webp",
+          "thumb": "assets/img/terms-of-practice/16-web-sites-creative-responses-index-desktop-600.webp",
+          "w": 1600,
+          "h": 1000,
+          "alt": "",
+          "white": true
+        },
+        {
+          "src": "assets/img/terms-of-practice/17-web-creative-responses-pages-found-time-des.webp",
+          "thumb": "assets/img/terms-of-practice/17-web-creative-responses-pages-found-time-des-600.webp",
+          "w": 1600,
+          "h": 1000,
+          "alt": "",
+          "white": true
+        },
+        {
+          "src": "assets/img/terms-of-practice/18-web-creative-responses-pages-periodisation-m.webp",
+          "thumb": "assets/img/terms-of-practice/18-web-creative-responses-pages-periodisation-m-600.webp",
+          "w": 1600,
+          "h": 1000,
+          "alt": "",
+          "white": false
+        }
+      ],
       "copy": {
         "brief": "",
         "insight": "",
@@ -494,7 +1405,40 @@
         "creative-technology",
         "touchdesigner"
       ],
-      "images": [],
+      "images": [
+        {
+          "src": "assets/img/audio-reactive-visual-exploration/01-deftones-noise-network-capture.webp",
+          "thumb": "assets/img/audio-reactive-visual-exploration/01-deftones-noise-network-capture-600.webp",
+          "w": 1600,
+          "h": 900,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/audio-reactive-visual-exploration/02-acoustics-wikiwand-files-oh-no-girl-spectrogr.webp",
+          "thumb": "assets/img/audio-reactive-visual-exploration/02-acoustics-wikiwand-files-oh-no-girl-spectrogr-600.webp",
+          "w": 500,
+          "h": 332,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/audio-reactive-visual-exploration/03-acoustics-wikiwand-files-lindsay-s-wheel-of-a.webp",
+          "thumb": "assets/img/audio-reactive-visual-exploration/03-acoustics-wikiwand-files-lindsay-s-wheel-of-a-600.webp",
+          "w": 500,
+          "h": 498,
+          "alt": "",
+          "white": true
+        },
+        {
+          "src": "assets/img/audio-reactive-visual-exploration/04-research-em-spectrum-properties-edit-svg.webp",
+          "thumb": "assets/img/audio-reactive-visual-exploration/04-research-em-spectrum-properties-edit-svg-600.webp",
+          "w": 1200,
+          "h": 712,
+          "alt": "",
+          "white": false
+        }
+      ],
       "copy": {
         "brief": "",
         "insight": "",
@@ -506,7 +1450,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": [-420, 40]
+        "edge": [-420, 300]
       }
     },
     {
@@ -538,7 +1482,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": [-420, 160]
+        "edge": [-420, -40]
       }
     },
     {
@@ -559,7 +1503,48 @@
         "design-strategy",
         "gender-based-violence-prevention"
       ],
-      "images": [],
+      "images": [
+        {
+          "src": "assets/img/wagec-reverse-brief/01-finals-livia-wagec-strategy-p001.webp",
+          "thumb": "assets/img/wagec-reverse-brief/01-finals-livia-wagec-strategy-p001-600.webp",
+          "w": 1600,
+          "h": 900,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/wagec-reverse-brief/02-finals-livia-wagec-strategy-p004.webp",
+          "thumb": "assets/img/wagec-reverse-brief/02-finals-livia-wagec-strategy-p004-600.webp",
+          "w": 1600,
+          "h": 900,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/wagec-reverse-brief/03-problem-rna-theory-of-change-final-4000px.webp",
+          "thumb": "assets/img/wagec-reverse-brief/03-problem-rna-theory-of-change-final-4000px-600.webp",
+          "w": 1600,
+          "h": 1131,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/wagec-reverse-brief/04-finals-livia-wagec-strategy-p028.webp",
+          "thumb": "assets/img/wagec-reverse-brief/04-finals-livia-wagec-strategy-p028-600.webp",
+          "w": 1600,
+          "h": 900,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/wagec-reverse-brief/05-finals-livia-wagec-strategy-p006.webp",
+          "thumb": "assets/img/wagec-reverse-brief/05-finals-livia-wagec-strategy-p006-600.webp",
+          "w": 1600,
+          "h": 900,
+          "alt": "",
+          "white": true
+        }
+      ],
       "copy": {
         "brief": "",
         "insight": "",
@@ -571,7 +1556,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": null
+        "edge": [-280, -180]
       },
       "todo": "TODO(brylie): group work, name your role and the team size."
     },
@@ -594,7 +1579,64 @@
         "experience-design",
         "3d"
       ],
-      "images": [],
+      "images": [
+        {
+          "src": "assets/img/ar-vr-experiments/01-anim-frames-pt-anim0009.webp",
+          "thumb": "assets/img/ar-vr-experiments/01-anim-frames-pt-anim0009-600.webp",
+          "w": 1600,
+          "h": 1453,
+          "alt": "",
+          "white": true
+        },
+        {
+          "src": "assets/img/ar-vr-experiments/02-anim-frames-pt-anim0018.webp",
+          "thumb": "assets/img/ar-vr-experiments/02-anim-frames-pt-anim0018-600.webp",
+          "w": 1600,
+          "h": 1453,
+          "alt": "",
+          "white": true
+        },
+        {
+          "src": "assets/img/ar-vr-experiments/03-assets-aerial-view-green-coniferous-forest-pine.webp",
+          "thumb": "assets/img/ar-vr-experiments/03-assets-aerial-view-green-coniferous-forest-pine-600.webp",
+          "w": 1450,
+          "h": 1600,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/ar-vr-experiments/04-assets-beautiful-forest-landscape.webp",
+          "thumb": "assets/img/ar-vr-experiments/04-assets-beautiful-forest-landscape-600.webp",
+          "w": 1600,
+          "h": 800,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/ar-vr-experiments/05-assets-christopher-dresser-garden-armchair-mod.webp",
+          "thumb": "assets/img/ar-vr-experiments/05-assets-christopher-dresser-garden-armchair-mod-600.webp",
+          "w": 1500,
+          "h": 1500,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/ar-vr-experiments/06-02-figma-prototyping-clipped-01.webp",
+          "thumb": "assets/img/ar-vr-experiments/06-02-figma-prototyping-clipped-01-600.webp",
+          "w": 414,
+          "h": 896,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/ar-vr-experiments/07-02-figma-prototyping-recording-gif.webp",
+          "thumb": "assets/img/ar-vr-experiments/07-02-figma-prototyping-recording-gif-600.webp",
+          "w": 236,
+          "h": 430,
+          "alt": "",
+          "white": false
+        }
+      ],
       "copy": {
         "brief": "",
         "insight": "",
@@ -606,7 +1648,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": null
+        "edge": [-320, 200]
       },
       "todo": "TODO(brylie): group work, name your role and the team size. TODO(brylie): seed note says the VR scene uses stock imagery."
     },
@@ -629,7 +1671,64 @@
         "research-folio",
         "energy-transition"
       ],
-      "images": [],
+      "images": [
+        {
+          "src": "assets/img/trust-in-transition/01-04-flow-chart-final-flow.webp",
+          "thumb": "assets/img/trust-in-transition/01-04-flow-chart-final-flow-600.webp",
+          "w": 1600,
+          "h": 1406,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/trust-in-transition/02-05-validating-final-vali.webp",
+          "thumb": "assets/img/trust-in-transition/02-05-validating-final-vali-600.webp",
+          "w": 1600,
+          "h": 1529,
+          "alt": "",
+          "white": true
+        },
+        {
+          "src": "assets/img/trust-in-transition/03-06-personas-final-persona.webp",
+          "thumb": "assets/img/trust-in-transition/03-06-personas-final-persona-600.webp",
+          "w": 1027,
+          "h": 1600,
+          "alt": "",
+          "white": true
+        },
+        {
+          "src": "assets/img/trust-in-transition/04-misc-double-diamond.webp",
+          "thumb": "assets/img/trust-in-transition/04-misc-double-diamond-600.webp",
+          "w": 936,
+          "h": 453,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/trust-in-transition/05-misc-semester-overview.webp",
+          "thumb": "assets/img/trust-in-transition/05-misc-semester-overview-600.webp",
+          "w": 1600,
+          "h": 886,
+          "alt": "",
+          "white": true
+        },
+        {
+          "src": "assets/img/trust-in-transition/06-misc-semester-overview-p001.webp",
+          "thumb": "assets/img/trust-in-transition/06-misc-semester-overview-p001-600.webp",
+          "w": 1600,
+          "h": 900,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/trust-in-transition/07-02-lit-review-final-litrev-opt.webp",
+          "thumb": "assets/img/trust-in-transition/07-02-lit-review-final-litrev-opt-600.webp",
+          "w": 1600,
+          "h": 1585,
+          "alt": "",
+          "white": true
+        }
+      ],
       "copy": {
         "brief": "",
         "insight": "",
@@ -641,7 +1740,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": [-40, -120]
+        "edge": [-40, -160]
       }
     },
     {
@@ -662,7 +1761,56 @@
         "prototyping",
         "prototype"
       ],
-      "images": [],
+      "images": [
+        {
+          "src": "assets/img/sparkchange/01-workmark-asset-33x.webp",
+          "thumb": "assets/img/sparkchange/01-workmark-asset-33x-600.webp",
+          "w": 1600,
+          "h": 372,
+          "alt": "",
+          "white": true
+        },
+        {
+          "src": "assets/img/sparkchange/02-sc-v1-asset-23x.webp",
+          "thumb": "assets/img/sparkchange/02-sc-v1-asset-23x-600.webp",
+          "w": 687,
+          "h": 883,
+          "alt": "",
+          "white": true
+        },
+        {
+          "src": "assets/img/sparkchange/03-design-img-5277-large.webp",
+          "thumb": "assets/img/sparkchange/03-design-img-5277-large-600.webp",
+          "w": 1155,
+          "h": 1280,
+          "alt": "",
+          "white": true
+        },
+        {
+          "src": "assets/img/sparkchange/04-proto-1-page-1-community-initiatives.webp",
+          "thumb": "assets/img/sparkchange/04-proto-1-page-1-community-initiatives-600.webp",
+          "w": 195,
+          "h": 1600,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/sparkchange/05-proto-1-page-2-customize-shareable-infographics.webp",
+          "thumb": "assets/img/sparkchange/05-proto-1-page-2-customize-shareable-infographics-600.webp",
+          "w": 334,
+          "h": 1600,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/sparkchange/06-proto-1-page-3-customizable-infographics.webp",
+          "thumb": "assets/img/sparkchange/06-proto-1-page-3-customizable-infographics-600.webp",
+          "w": 408,
+          "h": 1600,
+          "alt": "",
+          "white": false
+        }
+      ],
       "copy": {
         "brief": "",
         "insight": "",
@@ -674,7 +1822,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": [-280, 160]
+        "edge": [-380, 100]
       }
     },
     {
@@ -696,7 +1844,64 @@
         "website",
         "spotify-api"
       ],
-      "images": [],
+      "images": [
+        {
+          "src": "assets/img/stellar-map/01-stellar1.webp",
+          "thumb": "assets/img/stellar-map/01-stellar1-600.webp",
+          "w": 1600,
+          "h": 1000,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/stellar-map/02-stellar-a.webp",
+          "thumb": "assets/img/stellar-map/02-stellar-a-600.webp",
+          "w": 1600,
+          "h": 1000,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/stellar-map/03-stellar-g.webp",
+          "thumb": "assets/img/stellar-map/03-stellar-g-600.webp",
+          "w": 1600,
+          "h": 1000,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/stellar-map/04-web-stellar-network-colour-energy-desktop.webp",
+          "thumb": "assets/img/stellar-map/04-web-stellar-network-colour-energy-desktop-600.webp",
+          "w": 1600,
+          "h": 1000,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/stellar-map/05-web-stellar-network-colour-valence-desktop.webp",
+          "thumb": "assets/img/stellar-map/05-web-stellar-network-colour-valence-desktop-600.webp",
+          "w": 1600,
+          "h": 1000,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/stellar-map/06-web-stellar-network-genres-desktop.webp",
+          "thumb": "assets/img/stellar-map/06-web-stellar-network-genres-desktop-600.webp",
+          "w": 1600,
+          "h": 1000,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/stellar-map/07-web-stellar-network-playlists-desktop.webp",
+          "thumb": "assets/img/stellar-map/07-web-stellar-network-playlists-desktop-600.webp",
+          "w": 1600,
+          "h": 1000,
+          "alt": "",
+          "white": false
+        }
+      ],
       "copy": {
         "brief": "",
         "insight": "",
@@ -708,7 +1913,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": [-320, 320]
+        "edge": [-400, 260]
       },
       "todo": "TODO(brylie): Perplexity Computer credit line"
     },
@@ -731,7 +1936,56 @@
         "web-design-build",
         "website"
       ],
-      "images": [],
+      "images": [
+        {
+          "src": "assets/img/stellar-evolution/01-web-a2-lindadement-bryliewilson-24794808-stell.webp",
+          "thumb": "assets/img/stellar-evolution/01-web-a2-lindadement-bryliewilson-24794808-stell-600.webp",
+          "w": 1600,
+          "h": 1000,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/stellar-evolution/02-web-a2-lindadement-bryliewilson-24794808-stell.webp",
+          "thumb": "assets/img/stellar-evolution/02-web-a2-lindadement-bryliewilson-24794808-stell-600.webp",
+          "w": 1600,
+          "h": 1000,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/stellar-evolution/03-web-a2-lindadement-bryliewilson-24794808-stell.webp",
+          "thumb": "assets/img/stellar-evolution/03-web-a2-lindadement-bryliewilson-24794808-stell-600.webp",
+          "w": 739,
+          "h": 1600,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/stellar-evolution/04-web-exercises-css-grid-layout-index-desktop.webp",
+          "thumb": "assets/img/stellar-evolution/04-web-exercises-css-grid-layout-index-desktop-600.webp",
+          "w": 1600,
+          "h": 1000,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/stellar-evolution/05-web-exercises-js-canvas-stars-page1-desktop.webp",
+          "thumb": "assets/img/stellar-evolution/05-web-exercises-js-canvas-stars-page1-desktop-600.webp",
+          "w": 1600,
+          "h": 1000,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/stellar-evolution/06-web-exercises-responsive-layout-index-deskto.webp",
+          "thumb": "assets/img/stellar-evolution/06-web-exercises-responsive-layout-index-deskto-600.webp",
+          "w": 1600,
+          "h": 1000,
+          "alt": "",
+          "white": false
+        }
+      ],
       "copy": {
         "brief": "",
         "insight": "",
@@ -743,7 +1997,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": [-380, 280]
+        "edge": [-440, 220]
       },
       "todo": "TODO(brylie): seed note says the site uses stock imagery; screenshots only."
     },
@@ -778,7 +2032,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": [-40, 320]
+        "edge": [-40, 300]
       }
     },
     {
@@ -811,7 +2065,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": [160, -220]
+        "edge": [160, -240]
       }
     },
     {
@@ -845,7 +2099,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": [-20, 280]
+        "edge": [-40, 260]
       }
     },
     {
@@ -897,7 +2151,72 @@
         "motion",
         "video"
       ],
-      "images": [],
+      "images": [
+        {
+          "src": "assets/img/ecosystem-engineers/01-ae-clips-text-01-t03.webp",
+          "thumb": "assets/img/ecosystem-engineers/01-ae-clips-text-01-t03-600.webp",
+          "w": 1600,
+          "h": 900,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/ecosystem-engineers/02-ae-vids-anemone-t01.webp",
+          "thumb": "assets/img/ecosystem-engineers/02-ae-vids-anemone-t01-600.webp",
+          "w": 1600,
+          "h": 894,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/ecosystem-engineers/03-ae-vids-elegant-mysteries-t01.webp",
+          "thumb": "assets/img/ecosystem-engineers/03-ae-vids-elegant-mysteries-t01-600.webp",
+          "w": 1600,
+          "h": 900,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/ecosystem-engineers/04-ae-vids-glass-without-jelly-t01.webp",
+          "thumb": "assets/img/ecosystem-engineers/04-ae-vids-glass-without-jelly-t01-600.webp",
+          "w": 1600,
+          "h": 900,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/ecosystem-engineers/05-ae-vids-lots-of-jellies-bg-t01.webp",
+          "thumb": "assets/img/ecosystem-engineers/05-ae-vids-lots-of-jellies-bg-t01-600.webp",
+          "w": 1600,
+          "h": 875,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/ecosystem-engineers/06-ae-vids-penguins-mp4-comp-1-t02.webp",
+          "thumb": "assets/img/ecosystem-engineers/06-ae-vids-penguins-mp4-comp-1-t02-600.webp",
+          "w": 1600,
+          "h": 900,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/ecosystem-engineers/07-ae-vids-seaweed-small-fish-mov-comp-1-t01.webp",
+          "thumb": "assets/img/ecosystem-engineers/07-ae-vids-seaweed-small-fish-mov-comp-1-t01-600.webp",
+          "w": 1597,
+          "h": 1600,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/ecosystem-engineers/08-ae-vids-glass-bg-t02.webp",
+          "thumb": "assets/img/ecosystem-engineers/08-ae-vids-glass-bg-t02-600.webp",
+          "w": 1600,
+          "h": 901,
+          "alt": "",
+          "white": false
+        }
+      ],
       "copy": {
         "brief": "",
         "insight": "",
@@ -909,7 +2228,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": [140, 180]
+        "edge": [60, 220]
       }
     },
     {
@@ -929,7 +2248,64 @@
         "editorial-design",
         "illustration"
       ],
-      "images": [],
+      "images": [
+        {
+          "src": "assets/img/cas-a-graphic-narrative/01-img-3685.webp",
+          "thumb": "assets/img/cas-a-graphic-narrative/01-img-3685-600.webp",
+          "w": 1600,
+          "h": 1347,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/cas-a-graphic-narrative/02-img-3699-1.webp",
+          "thumb": "assets/img/cas-a-graphic-narrative/02-img-3699-1-600.webp",
+          "w": 1181,
+          "h": 873,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/cas-a-graphic-narrative/03-img-3699-2.webp",
+          "thumb": "assets/img/cas-a-graphic-narrative/03-img-3699-2-600.webp",
+          "w": 1181,
+          "h": 1033,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/cas-a-graphic-narrative/04-img-3699-3.webp",
+          "thumb": "assets/img/cas-a-graphic-narrative/04-img-3699-3-600.webp",
+          "w": 1181,
+          "h": 816,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/cas-a-graphic-narrative/05-tc-gn-24794808-wilson-brylie-srint2-tc-gn-24794.webp",
+          "thumb": "assets/img/cas-a-graphic-narrative/05-tc-gn-24794808-wilson-brylie-srint2-tc-gn-24794-600.webp",
+          "w": 1600,
+          "h": 1132,
+          "alt": "",
+          "white": true
+        },
+        {
+          "src": "assets/img/cas-a-graphic-narrative/06-img-3699.webp",
+          "thumb": "assets/img/cas-a-graphic-narrative/06-img-3699-600.webp",
+          "w": 1181,
+          "h": 855,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/cas-a-graphic-narrative/07-img-3713.webp",
+          "thumb": "assets/img/cas-a-graphic-narrative/07-img-3713-600.webp",
+          "w": 498,
+          "h": 1600,
+          "alt": "",
+          "white": false
+        }
+      ],
       "copy": {
         "brief": "",
         "insight": "",
@@ -941,7 +2317,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": [-440, -320]
+        "edge": [-440, -300]
       }
     },
     {
@@ -961,7 +2337,72 @@
         "speculative-futures",
         "design-research"
       ],
-      "images": [],
+      "images": [
+        {
+          "src": "assets/img/nomad-homes/01-canva-exports-dfut-t2-nomad-homes-df-presentati.webp",
+          "thumb": "assets/img/nomad-homes/01-canva-exports-dfut-t2-nomad-homes-df-presentati-600.webp",
+          "w": 1600,
+          "h": 900,
+          "alt": "",
+          "white": true
+        },
+        {
+          "src": "assets/img/nomad-homes/02-canva-exports-dfut-t2-nomad-homes-df-presentati.webp",
+          "thumb": "assets/img/nomad-homes/02-canva-exports-dfut-t2-nomad-homes-df-presentati-600.webp",
+          "w": 1600,
+          "h": 900,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/nomad-homes/03-canva-exports-dfut-t2-nomad-homes-df-presentati.webp",
+          "thumb": "assets/img/nomad-homes/03-canva-exports-dfut-t2-nomad-homes-df-presentati-600.webp",
+          "w": 1600,
+          "h": 900,
+          "alt": "",
+          "white": true
+        },
+        {
+          "src": "assets/img/nomad-homes/04-canva-exports-dfut-t2-nomad-homes-df-presentati.webp",
+          "thumb": "assets/img/nomad-homes/04-canva-exports-dfut-t2-nomad-homes-df-presentati-600.webp",
+          "w": 1600,
+          "h": 900,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/nomad-homes/05-canva-exports-dfut-t2-nomad-homes-df-presentati.webp",
+          "thumb": "assets/img/nomad-homes/05-canva-exports-dfut-t2-nomad-homes-df-presentati-600.webp",
+          "w": 1600,
+          "h": 900,
+          "alt": "",
+          "white": true
+        },
+        {
+          "src": "assets/img/nomad-homes/06-canva-exports-dfut-t2-nomad-homes-df-presentati.webp",
+          "thumb": "assets/img/nomad-homes/06-canva-exports-dfut-t2-nomad-homes-df-presentati-600.webp",
+          "w": 1600,
+          "h": 900,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/nomad-homes/07-canva-exports-dfut-t2-nomad-homes-df-presentati.webp",
+          "thumb": "assets/img/nomad-homes/07-canva-exports-dfut-t2-nomad-homes-df-presentati-600.webp",
+          "w": 1600,
+          "h": 900,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/nomad-homes/08-canva-exports-dfut-t2-nomad-homes-df-presentati.webp",
+          "thumb": "assets/img/nomad-homes/08-canva-exports-dfut-t2-nomad-homes-df-presentati-600.webp",
+          "w": 1600,
+          "h": 900,
+          "alt": "",
+          "white": false
+        }
+      ],
       "copy": {
         "brief": "",
         "insight": "",
@@ -973,7 +2414,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": [-440, 0]
+        "edge": [-440, 40]
       },
       "todo": "TODO(brylie): group work, name your role and the team size."
     },
@@ -1007,7 +2448,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": [-260, -120]
+        "edge": [-260, -100]
       }
     },
     {
@@ -1028,7 +2469,40 @@
         "web-design-build",
         "website"
       ],
-      "images": [],
+      "images": [
+        {
+          "src": "assets/img/politics-of-image-and-text/01-web-web-code-folio-website-index-mobile.webp",
+          "thumb": "assets/img/politics-of-image-and-text/01-web-web-code-folio-website-index-mobile-600.webp",
+          "w": 739,
+          "h": 1600,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/politics-of-image-and-text/02-experiments-img-2447.webp",
+          "thumb": "assets/img/politics-of-image-and-text/02-experiments-img-2447-600.webp",
+          "w": 1077,
+          "h": 1600,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/politics-of-image-and-text/03-experiments-img-9471.webp",
+          "thumb": "assets/img/politics-of-image-and-text/03-experiments-img-9471-600.webp",
+          "w": 1166,
+          "h": 1600,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/politics-of-image-and-text/04-experiments-img-9472.webp",
+          "thumb": "assets/img/politics-of-image-and-text/04-experiments-img-9472-600.webp",
+          "w": 1153,
+          "h": 1600,
+          "alt": "",
+          "white": true
+        }
+      ],
       "copy": {
         "brief": "",
         "insight": "",
@@ -1040,7 +2514,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": [-220, 300]
+        "edge": [-160, 300]
       }
     },
     {
@@ -1059,7 +2533,40 @@
       "keywords": [
         "photography"
       ],
-      "images": [],
+      "images": [
+        {
+          "src": "assets/img/falcon-composite/01-puddle-v1.webp",
+          "thumb": "assets/img/falcon-composite/01-puddle-v1-600.webp",
+          "w": 1169,
+          "h": 1559,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/falcon-composite/02-falcon-composite-square-dag-nnpqosm.webp",
+          "thumb": "assets/img/falcon-composite/02-falcon-composite-square-dag-nnpqosm-600.webp",
+          "w": 359,
+          "h": 359,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/falcon-composite/03-car-img-3564.webp",
+          "thumb": "assets/img/falcon-composite/03-car-img-3564-600.webp",
+          "w": 1248,
+          "h": 1560,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/falcon-composite/04-car-img-3576.webp",
+          "thumb": "assets/img/falcon-composite/04-car-img-3576-600.webp",
+          "w": 1170,
+          "h": 1560,
+          "alt": "",
+          "white": false
+        }
+      ],
       "copy": {
         "brief": "",
         "insight": "",
@@ -1071,7 +2578,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": [-440, -240]
+        "edge": [-440, -120]
       },
       "todo": "TODO(brylie): year unknown."
     },
@@ -1093,7 +2600,48 @@
         "data-visualisation",
         "video"
       ],
-      "images": [],
+      "images": [
+        {
+          "src": "assets/img/cymatics/01-rdh-cymatics-presentation-t01.webp",
+          "thumb": "assets/img/cymatics/01-rdh-cymatics-presentation-t01-600.webp",
+          "w": 1600,
+          "h": 900,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/cymatics/02-rdh-cymatics-presentation-t02.webp",
+          "thumb": "assets/img/cymatics/02-rdh-cymatics-presentation-t02-600.webp",
+          "w": 1600,
+          "h": 900,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/cymatics/03-rdh-cymatics-presentation-t03.webp",
+          "thumb": "assets/img/cymatics/03-rdh-cymatics-presentation-t03-600.webp",
+          "w": 1600,
+          "h": 900,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/cymatics/04-rdh-cymatics-presentation-t04.webp",
+          "thumb": "assets/img/cymatics/04-rdh-cymatics-presentation-t04-600.webp",
+          "w": 1600,
+          "h": 900,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/cymatics/05-rdh-presentation-dafymoc0ok0-p02.webp",
+          "thumb": "assets/img/cymatics/05-rdh-presentation-dafymoc0ok0-p02-600.webp",
+          "w": 1600,
+          "h": 900,
+          "alt": "",
+          "white": false
+        }
+      ],
       "copy": {
         "brief": "",
         "insight": "",
@@ -1105,7 +2653,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": [-260, 120]
+        "edge": [-180, 180]
       }
     },
     {
@@ -1124,7 +2672,56 @@
       "keywords": [
         "editorial-design"
       ],
-      "images": [],
+      "images": [
+        {
+          "src": "assets/img/book-cover-series/01-ssvp-final-imgs9.webp",
+          "thumb": "assets/img/book-cover-series/01-ssvp-final-imgs9-600.webp",
+          "w": 1600,
+          "h": 1600,
+          "alt": "",
+          "white": true
+        },
+        {
+          "src": "assets/img/book-cover-series/02-wilson-brylie-booksw12-p001.webp",
+          "thumb": "assets/img/book-cover-series/02-wilson-brylie-booksw12-p001-600.webp",
+          "w": 1600,
+          "h": 1132,
+          "alt": "",
+          "white": true
+        },
+        {
+          "src": "assets/img/book-cover-series/03-wilson-brylie-booksw12-p003.webp",
+          "thumb": "assets/img/book-cover-series/03-wilson-brylie-booksw12-p003-600.webp",
+          "w": 1600,
+          "h": 1132,
+          "alt": "",
+          "white": true
+        },
+        {
+          "src": "assets/img/book-cover-series/04-wilson-brylie-booksw12-p005.webp",
+          "thumb": "assets/img/book-cover-series/04-wilson-brylie-booksw12-p005-600.webp",
+          "w": 1600,
+          "h": 1132,
+          "alt": "",
+          "white": true
+        },
+        {
+          "src": "assets/img/book-cover-series/05-a6-aic-thumb.webp",
+          "thumb": "assets/img/book-cover-series/05-a6-aic-thumb-600.webp",
+          "w": 512,
+          "h": 442,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/book-cover-series/06-text-aic-thumb.webp",
+          "thumb": "assets/img/book-cover-series/06-text-aic-thumb-600.webp",
+          "w": 434,
+          "h": 600,
+          "alt": "",
+          "white": false
+        }
+      ],
       "copy": {
         "brief": "",
         "insight": "",
@@ -1136,7 +2733,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": [-440, -280]
+        "edge": [-440, -220]
       },
       "todo": "TODO(brylie): subject to confirm."
     },
@@ -1169,7 +2766,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": [-440, -180]
+        "edge": [-440, -80]
       }
     },
     {
@@ -1189,7 +2786,56 @@
         "motion",
         "3d"
       ],
-      "images": [],
+      "images": [
+        {
+          "src": "assets/img/sprint-3-motion/01-01-material-render-test-10009.webp",
+          "thumb": "assets/img/sprint-3-motion/01-01-material-render-test-10009-600.webp",
+          "w": 1600,
+          "h": 900,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/sprint-3-motion/02-v1-05.webp",
+          "thumb": "assets/img/sprint-3-motion/02-v1-05-600.webp",
+          "w": 1600,
+          "h": 897,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/sprint-3-motion/03-v2-02.webp",
+          "thumb": "assets/img/sprint-3-motion/03-v2-02-600.webp",
+          "w": 1600,
+          "h": 896,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/sprint-3-motion/04-in-blob-2-mesh-948240-model-2-transmittance.webp",
+          "thumb": "assets/img/sprint-3-motion/04-in-blob-2-mesh-948240-model-2-transmittance-600.webp",
+          "w": 1600,
+          "h": 1600,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/sprint-3-motion/05-slow-mesh-948321-model-3-metallicroughness.webp",
+          "thumb": "assets/img/sprint-3-motion/05-slow-mesh-948321-model-3-metallicroughness-600.webp",
+          "w": 1600,
+          "h": 1600,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/sprint-3-motion/06-nfat-motion-sprint-3-gc-md-24794808-wilson-bryl.webp",
+          "thumb": "assets/img/sprint-3-motion/06-nfat-motion-sprint-3-gc-md-24794808-wilson-bryl-600.webp",
+          "w": 1600,
+          "h": 900,
+          "alt": "",
+          "white": false
+        }
+      ],
       "copy": {
         "brief": "",
         "insight": "",
@@ -1201,7 +2847,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": null
+        "edge": [60, 180]
       }
     },
     {
@@ -1222,7 +2868,88 @@
         "typography",
         "editorial-design"
       ],
-      "images": [],
+      "images": [
+        {
+          "src": "assets/img/materials-and-process/01-2-img-8939-ue.webp",
+          "thumb": "assets/img/materials-and-process/01-2-img-8939-ue-600.webp",
+          "w": 1200,
+          "h": 1600,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/materials-and-process/02-2-img-8985.webp",
+          "thumb": "assets/img/materials-and-process/02-2-img-8985-600.webp",
+          "w": 1200,
+          "h": 1600,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/materials-and-process/03-3-img-8896-jpg.webp",
+          "thumb": "assets/img/materials-and-process/03-3-img-8896-jpg-600.webp",
+          "w": 1200,
+          "h": 1600,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/materials-and-process/04-4-img-8922.webp",
+          "thumb": "assets/img/materials-and-process/04-4-img-8922-600.webp",
+          "w": 1600,
+          "h": 1538,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/materials-and-process/05-4-img-8957.webp",
+          "thumb": "assets/img/materials-and-process/05-4-img-8957-600.webp",
+          "w": 1200,
+          "h": 1600,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/materials-and-process/06-5-img-9001.webp",
+          "thumb": "assets/img/materials-and-process/06-5-img-9001-600.webp",
+          "w": 1200,
+          "h": 1600,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/materials-and-process/07-gradmap-artboard-1.webp",
+          "thumb": "assets/img/materials-and-process/07-gradmap-artboard-1-600.webp",
+          "w": 900,
+          "h": 1600,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/materials-and-process/08-gradmap-artboard-5.webp",
+          "thumb": "assets/img/materials-and-process/08-gradmap-artboard-5-600.webp",
+          "w": 900,
+          "h": 1600,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/materials-and-process/09-gradmap-artboard-9.webp",
+          "thumb": "assets/img/materials-and-process/09-gradmap-artboard-9-600.webp",
+          "w": 900,
+          "h": 1600,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/materials-and-process/10-insta-story-5.webp",
+          "thumb": "assets/img/materials-and-process/10-insta-story-5-600.webp",
+          "w": 750,
+          "h": 1334,
+          "alt": "",
+          "white": false
+        }
+      ],
       "copy": {
         "brief": "",
         "insight": "",
@@ -1234,7 +2961,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": null
+        "edge": [-440, 0]
       }
     },
     {
@@ -1255,7 +2982,72 @@
         "typography",
         "editorial-design"
       ],
-      "images": [],
+      "images": [
+        {
+          "src": "assets/img/flame-poster-and-zine/01-flame-poster-and-zine-2.webp",
+          "thumb": "assets/img/flame-poster-and-zine/01-flame-poster-and-zine-2-600.webp",
+          "w": 1078,
+          "h": 1600,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/flame-poster-and-zine/02-flame-poster-and-zine-5.webp",
+          "thumb": "assets/img/flame-poster-and-zine/02-flame-poster-and-zine-5-600.webp",
+          "w": 1078,
+          "h": 1600,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/flame-poster-and-zine/03-flame-poster-and-zine-7.webp",
+          "thumb": "assets/img/flame-poster-and-zine/03-flame-poster-and-zine-7-600.webp",
+          "w": 1078,
+          "h": 1600,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/flame-poster-and-zine/04-flame-poster-and-zine-artboard-1.webp",
+          "thumb": "assets/img/flame-poster-and-zine/04-flame-poster-and-zine-artboard-1-600.webp",
+          "w": 1078,
+          "h": 1600,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/flame-poster-and-zine/05-flame-poster-and-zine-cover.webp",
+          "thumb": "assets/img/flame-poster-and-zine/05-flame-poster-and-zine-cover-600.webp",
+          "w": 1077,
+          "h": 1600,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/flame-poster-and-zine/06-flame-poster-and-zine-poster.webp",
+          "thumb": "assets/img/flame-poster-and-zine/06-flame-poster-and-zine-poster-600.webp",
+          "w": 1131,
+          "h": 1600,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/flame-poster-and-zine/07-flame-poster-and-zine-poster-situ.webp",
+          "thumb": "assets/img/flame-poster-and-zine/07-flame-poster-and-zine-poster-situ-600.webp",
+          "w": 1391,
+          "h": 1600,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/flame-poster-and-zine/08-flame-poster-and-zine-zine-mock.webp",
+          "thumb": "assets/img/flame-poster-and-zine/08-flame-poster-and-zine-zine-mock-600.webp",
+          "w": 1202,
+          "h": 1600,
+          "alt": "",
+          "white": false
+        }
+      ],
       "copy": {
         "brief": "",
         "insight": "",
@@ -1267,7 +3059,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": null
+        "edge": [-340, 60]
       }
     },
     {
@@ -1287,7 +3079,48 @@
         "motion",
         "typography"
       ],
-      "images": [],
+      "images": [
+        {
+          "src": "assets/img/futura-motion-graphic/01-futura-animation-futura-motion-graphics-t02.webp",
+          "thumb": "assets/img/futura-motion-graphic/01-futura-animation-futura-motion-graphics-t02-600.webp",
+          "w": 1024,
+          "h": 576,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/futura-motion-graphic/02-futura-animation-futura-motion-graphics-t01.webp",
+          "thumb": "assets/img/futura-motion-graphic/02-futura-animation-futura-motion-graphics-t01-600.webp",
+          "w": 1024,
+          "h": 576,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/futura-motion-graphic/03-futura-animation-futura-storyboards-p001.webp",
+          "thumb": "assets/img/futura-motion-graphic/03-futura-animation-futura-storyboards-p001-600.webp",
+          "w": 1600,
+          "h": 1132,
+          "alt": "",
+          "white": true
+        },
+        {
+          "src": "assets/img/futura-motion-graphic/04-img-2848.webp",
+          "thumb": "assets/img/futura-motion-graphic/04-img-2848-600.webp",
+          "w": 1600,
+          "h": 1098,
+          "alt": "",
+          "white": true
+        },
+        {
+          "src": "assets/img/futura-motion-graphic/05-img-2854.webp",
+          "thumb": "assets/img/futura-motion-graphic/05-img-2854-600.webp",
+          "w": 1600,
+          "h": 1131,
+          "alt": "",
+          "white": true
+        }
+      ],
       "copy": {
         "brief": "",
         "insight": "",
@@ -1299,7 +3132,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": null
+        "edge": [-440, 180]
       }
     },
     {
@@ -1318,7 +3151,24 @@
       "keywords": [
         "photography"
       ],
-      "images": [],
+      "images": [
+        {
+          "src": "assets/img/allegorical-portrait/01-final-portrait.webp",
+          "thumb": "assets/img/allegorical-portrait/01-final-portrait-600.webp",
+          "w": 1066,
+          "h": 1600,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/allegorical-portrait/02-img-2236-enhanced-nr.webp",
+          "thumb": "assets/img/allegorical-portrait/02-img-2236-enhanced-nr-600.webp",
+          "w": 1600,
+          "h": 1558,
+          "alt": "",
+          "white": false
+        }
+      ],
       "copy": {
         "brief": "",
         "insight": "",
@@ -1330,7 +3180,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": null
+        "edge": [-440, -160]
       }
     },
     {
@@ -1351,7 +3201,56 @@
         "ux-ui",
         "social-content"
       ],
-      "images": [],
+      "images": [
+        {
+          "src": "assets/img/ux-ui-visual-guide/01-ux-ui-guide-1-cover.webp",
+          "thumb": "assets/img/ux-ui-visual-guide/01-ux-ui-guide-1-cover-600.webp",
+          "w": 1024,
+          "h": 724,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/ux-ui-visual-guide/02-ttd-ui-ux-guide-carousel-03.webp",
+          "thumb": "assets/img/ux-ui-visual-guide/02-ttd-ui-ux-guide-carousel-03-600.webp",
+          "w": 1600,
+          "h": 1600,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/ux-ui-visual-guide/03-ttd-ui-ux-guide-carousel-04.webp",
+          "thumb": "assets/img/ux-ui-visual-guide/03-ttd-ui-ux-guide-carousel-04-600.webp",
+          "w": 1600,
+          "h": 1600,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/ux-ui-visual-guide/04-1-artboard-4.webp",
+          "thumb": "assets/img/ux-ui-visual-guide/04-1-artboard-4-600.webp",
+          "w": 1080,
+          "h": 1080,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/ux-ui-visual-guide/05-2-artboard-4-1.webp",
+          "thumb": "assets/img/ux-ui-visual-guide/05-2-artboard-4-1-600.webp",
+          "w": 1080,
+          "h": 1081,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/ux-ui-visual-guide/06-ux-ui-guide-1-screenshot-2023-11-19-at-11-06-5.webp",
+          "thumb": "assets/img/ux-ui-visual-guide/06-ux-ui-guide-1-screenshot-2023-11-19-at-11-06-5-600.webp",
+          "w": 496,
+          "h": 516,
+          "alt": "",
+          "white": false
+        }
+      ],
       "copy": {
         "brief": "",
         "insight": "",
@@ -1363,7 +3262,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": null
+        "edge": [-260, -140]
       }
     },
     {
@@ -1383,7 +3282,24 @@
         "editorial-design",
         "illustration"
       ],
-      "images": [],
+      "images": [
+        {
+          "src": "assets/img/trilogy-book-cover/01-experiments-trilogy-final-copy.webp",
+          "thumb": "assets/img/trilogy-book-cover/01-experiments-trilogy-final-copy-600.webp",
+          "w": 1600,
+          "h": 1600,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/trilogy-book-cover/02-trilogy-cover-aic-thumb.webp",
+          "thumb": "assets/img/trilogy-book-cover/02-trilogy-cover-aic-thumb-600.webp",
+          "w": 512,
+          "h": 518,
+          "alt": "",
+          "white": false
+        }
+      ],
       "copy": {
         "brief": "",
         "insight": "",
@@ -1395,7 +3311,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": null
+        "edge": [-440, -260]
       }
     },
     {
@@ -1414,7 +3330,64 @@
       "keywords": [
         "print"
       ],
-      "images": [],
+      "images": [
+        {
+          "src": "assets/img/personal-event-pieces/01-final-gofishin-cards-p001.webp",
+          "thumb": "assets/img/personal-event-pieces/01-final-gofishin-cards-p001-600.webp",
+          "w": 1600,
+          "h": 1132,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/personal-event-pieces/02-final-gofishin-cards-p003.webp",
+          "thumb": "assets/img/personal-event-pieces/02-final-gofishin-cards-p003-600.webp",
+          "w": 1600,
+          "h": 1132,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/personal-event-pieces/03-final-gofishin-cards-p005.webp",
+          "thumb": "assets/img/personal-event-pieces/03-final-gofishin-cards-p005-600.webp",
+          "w": 1600,
+          "h": 1132,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/personal-event-pieces/04-final-gofishin-cards-p013.webp",
+          "thumb": "assets/img/personal-event-pieces/04-final-gofishin-cards-p013-600.webp",
+          "w": 1600,
+          "h": 1132,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/personal-event-pieces/05-back-in-1964-poster-v1-dagaeg6pica-p01.webp",
+          "thumb": "assets/img/personal-event-pieces/05-back-in-1964-poster-v1-dagaeg6pica-p01-600.webp",
+          "w": 1132,
+          "h": 1600,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/personal-event-pieces/06-mums-60th-back-in-1964-poster-v1-copy-p001.webp",
+          "thumb": "assets/img/personal-event-pieces/06-mums-60th-back-in-1964-poster-v1-copy-p001-600.webp",
+          "w": 1138,
+          "h": 1600,
+          "alt": "",
+          "white": false
+        },
+        {
+          "src": "assets/img/personal-event-pieces/07-mums-60th-back-in-1964-poster-v2-p001.webp",
+          "thumb": "assets/img/personal-event-pieces/07-mums-60th-back-in-1964-poster-v2-p001-600.webp",
+          "w": 1145,
+          "h": 1600,
+          "alt": "",
+          "white": false
+        }
+      ],
       "copy": {
         "brief": "",
         "insight": "",
@@ -1426,7 +3399,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": null
+        "edge": [300, 280]
       }
     },
     {
@@ -1458,7 +3431,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": null
+        "edge": [300, 320]
       },
       "todo": "TODO(brylie): client sign-off needed before images go in this public repo"
     }

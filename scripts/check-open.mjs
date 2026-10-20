@@ -13,6 +13,7 @@ import { mkdirSync } from "node:fs";
 import { join, resolve } from "node:path";
 import { chromium } from "playwright";
 import { serve } from "./serve.mjs";
+import { readData } from "./data.mjs";
 
 const shotsAt = process.argv.indexOf("--shots");
 const shots = shotsAt > 0 ? resolve(process.argv[shotsAt + 1]) : null;
@@ -308,7 +309,7 @@ try {
       rows: [...document.querySelectorAll("#pop-index tbody tr")].filter((tr) => tr.offsetParent).length,
       pages: [...document.querySelectorAll("#pop-index a.ix-open")].map((a) => a.getAttribute("href")),
     }));
-    expect(ix.rows === 26 && ix.pages.join() === "/work/cypher/,/work/16-days-of-real-talk/,/work/symbiosis/", `index without JS: ${JSON.stringify(ix)}`);
+    expect(ix.rows === readData().works.length && ix.pages.join() === "/work/cypher/,/work/16-days-of-real-talk/,/work/symbiosis/", `index without JS: ${JSON.stringify(ix)}`);
     await ctx.close();
   }
 
