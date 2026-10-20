@@ -3,7 +3,7 @@
 // - Tab reaches every control with a visible 2px ultramarine focus ring
 // - each shortcut opens its layer, only one layer is open at a time, Esc and a map click close
 // - the drawer, chips, filter badge, index, readout and map group labels agree on counts
-// - the search palette works by keyboard, and picking a hidden work shows it again
+// - the search palette works by keyboard, and picking a hidden work shows it again and opens its card
 // - no console errors
 // Exits 1 on any failure. Options: --shots <dir> saves the drawer, palette and key.
 import { mkdirSync } from "node:fs";
@@ -98,9 +98,12 @@ try {
   await press("0", 550);
   const k2 = await page.evaluate(() => window.__map.graph.k);
   expect(k1 > k0 * 1.3 && Math.abs(k2 - k0) < 0.01, `zoom shortcuts: ${k0} then ${k1} then ${k2}`);
-  await press("r");
-  const surprise = await page.evaluate(() => ({ f: window.__map.views.state.focus, a: document.activeElement.dataset?.id }));
-  expect(surprise.f && surprise.f === surprise.a, `R: focus ${surprise.f}, keyboard on ${surprise.a}`);
+  await press("r", 500);
+  const surprise = await page.evaluate(() => ({ f: window.__map.views.state.focus, card: window.__map.flow.state, inCard: !!document.activeElement.closest(".card") }));
+  expect(surprise.f && surprise.card.layer === "card" && surprise.card.id === surprise.f && surprise.inCard, `R: focus ${surprise.f}, card ${JSON.stringify(surprise.card)}, keyboard in card ${surprise.inCard}`);
+  await press("Escape");
+  const back = await page.evaluate(() => ({ layer: window.__map.flow.state.layer, on: document.activeElement.dataset?.id, f: window.__map.views.state.focus }));
+  expect(!back.layer && back.on === back.f, `Esc: card not closed to its node (${JSON.stringify(back)})`);
   await press("Escape");
   expect(!(await page.evaluate(() => window.__map.views.state.focus)), "Esc: focus not cleared");
 
@@ -138,10 +141,11 @@ try {
   await press("Enter", 500);
   const picked = await page.evaluate(() => ({
     focus: window.__map.views.state.focus,
-    on: document.activeElement.dataset?.id,
+    card: window.__map.flow.state.id,
+    inCard: !!document.activeElement.closest(".card"),
     hidden: window.__map.graph.byId.get("collab").hidden,
   }));
-  expect(picked.focus === "collab" && picked.on === "collab" && !picked.hidden, `palette pick of a hidden work: ${JSON.stringify(picked)}`);
+  expect(picked.focus === "collab" && picked.card === "collab" && picked.inCard && !picked.hidden, `palette pick of a hidden work: ${JSON.stringify(picked)}`);
   await agree("after re-showing a work");
   await press("/");
   await page.keyboard.type("sy");
