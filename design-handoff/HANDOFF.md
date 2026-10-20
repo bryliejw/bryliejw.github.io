@@ -4,13 +4,13 @@ Prepared 20 Oct 2026 from the Web Folio Lab (claude.ai artifact, private) and Br
 
 ## What is in this folder
 
-| Path | What it is |
-| --- | --- |
-| `HANDOFF.md` | This brief. Wins over anything in `CLAUDE.md` about design, layout or the old systems map. |
-| `lab.html` | The Lab, a single self-contained page. Open it in a browser (`npx serve design-handoff` or any static server). Every option is live and clickable. Section 09 is the site to build. Rating buttons will say "Not saved in this view"; ignore them. |
-| `img/` | Assets the Lab uses: drawing cutouts (`d-*.webp`), photo cutouts (`cut-*.webp`), bloom frames (`bloom/a00–a17.webp`), Prototype 3 test clip (`v-sq.mp4` + poster), Lab thumbnails. |
-| `story/index.html` + `story/media/` | The Symbiosis process story page (presented at the Week 12 pin-up). Becomes `work/symbiosis/`. |
-| `picks.json` | Brylie's ratings per Lab option: stars 0–3, verdict keep/replace, notes. Read it; it explains every decision below. |
+| Path                                | What it is                                                                                                                                                                                                                                         |
+| ----------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `HANDOFF.md`                        | This brief. Wins over anything in `CLAUDE.md` about design, layout or the old systems map.                                                                                                                                                         |
+| `lab.html`                          | The Lab, a single self-contained page. Open it in a browser (`npx serve design-handoff` or any static server). Every option is live and clickable. Section 09 is the site to build. Rating buttons will say "Not saved in this view"; ignore them. |
+| `img/`                              | Assets the Lab uses: drawing cutouts (`d-*.webp`), photo cutouts (`cut-*.webp`), bloom frames (`bloom/a00–a17.webp`), Prototype 3 test clip (`v-sq.mp4` + poster), Lab thumbnails.                                                                 |
+| `story/index.html` + `story/media/` | The Symbiosis process story page (presented at the Week 12 pin-up). Becomes `work/symbiosis/`.                                                                                                                                                     |
+| `picks.json`                        | Brylie's ratings per Lab option: stars 0–3, verdict keep/replace, notes. Read it; it explains every decision below.                                                                                                                                |
 
 How to find a component in `lab.html`: search for its option id, e.g. `id:'h-maplist'`. Each option is `opt({sec, id, name, src, why, cls, frame, html(), init(f)})` with its CSS in the `<style>` block under a matching comment. Shared helpers (`mapList`, `netLayout`, `ringsHTML`, `burst`, `lean`, `loop`, `onScreen`) are plain functions near the option that first uses them. The assembled site is `id:'x-site'`.
 
@@ -18,18 +18,18 @@ How to find a component in `lab.html`: search for its option id, e.g. `id:'h-map
 
 Rebuild `x-site` as the real site, full viewport, not inside a frame. Same pages, same behaviour, production quality.
 
-| Page / piece | Lab option ids | Rating | Notes |
-| --- | --- | --- | --- |
-| Home: Map · Rings · List switch | `h-maplist` (uses `h-orbit`, `h-rings`, list network) | F 2★, rings keep 2★, split 2★ | Brylie's note: she liked the list beside a network map from the first iteration (`h-split`). List view = list of works left, dark field network right; hover a work to light its fields and lines; click a field to filter the list. Default view: Map. |
-| Persistent nav | `n-pill2` | 2★ | Floating dark pill: Home, Work (count), Index drawer, About, Contact. Hides on scroll down, returns on scroll up. Index opens a drawer of every work. |
-| Work index | `w-table2` | 3★ (also `w-table` 3★) | The highest-rated piece. Grouped Selected projects / Extras, thumbnail per row, sortable No / Title / Year, field filter chips with counts, rows expand in place (pull line + images), Table/Grid switch. In the site, row title links to the case page. |
-| Case page opener | `c-meta` | spacing liked | Back link + "Case 03 / 08" counter, very large title, subtitle, one ruled row of Year / Context / Team / Field, then images. Keep this spacing. |
-| Case page end | `m-marquee` + `f-next` | 2★ each | Fields marquee band (that work's fields), then the blue next-project band that stretches on hover. |
-| About | `a-map` + `m-name` | 2★ each | Visual bio with grouped keywords that light the works they connect to; CV in ruled columns with the IBM badge in blue. Name uses the letter-by-letter width lean (`lean()` helper). |
-| Contact | `x-site` contact page, `burst()` | from `f-mail` | Giant selectable email, copy button that throws field chips (`burst`), LinkedIn / Instagram / Terms of Practice links. |
-| Cursor | `m-cursor` | 2★ | Blue "View" disc over work images only. Hidden on touch. |
-| Page transition | `m-reveal` | 2★ | Blue circle grows from the click point, page swaps, overlay fades. |
-| Symbiosis extra | `m-bloom` | 2★ | Bloom scrub (her p5.js frames) as a small moment on the Symbiosis case page or story. Optional, ask Brylie where. |
+| Page / piece                    | Lab option ids                                        | Rating                        | Notes                                                                                                                                                                                                                                                    |
+| ------------------------------- | ----------------------------------------------------- | ----------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Home: Map · Rings · List switch | `h-maplist` (uses `h-orbit`, `h-rings`, list network) | F 2★, rings keep 2★, split 2★ | Brylie's note: she liked the list beside a network map from the first iteration (`h-split`). List view = list of works left, dark field network right; hover a work to light its fields and lines; click a field to filter the list. Default view: Map.  |
+| Persistent nav                  | `n-pill2`                                             | 2★                            | Floating dark pill: Home, Work (count), Index drawer, About, Contact. Hides on scroll down, returns on scroll up. Index opens a drawer of every work.                                                                                                    |
+| Work index                      | `w-table2`                                            | 3★ (also `w-table` 3★)        | The highest-rated piece. Grouped Selected projects / Extras, thumbnail per row, sortable No / Title / Year, field filter chips with counts, rows expand in place (pull line + images), Table/Grid switch. In the site, row title links to the case page. |
+| Case page opener                | `c-meta`                                              | spacing liked                 | Back link + "Case 03 / 08" counter, very large title, subtitle, one ruled row of Year / Context / Team / Field, then images. Keep this spacing.                                                                                                          |
+| Case page end                   | `m-marquee` + `f-next`                                | 2★ each                       | Fields marquee band (that work's fields), then the blue next-project band that stretches on hover.                                                                                                                                                       |
+| About                           | `a-map` + `m-name`                                    | 2★ each                       | Visual bio with grouped keywords that light the works they connect to; CV in ruled columns with the IBM badge in blue. Name uses the letter-by-letter width lean (`lean()` helper).                                                                      |
+| Contact                         | `x-site` contact page, `burst()`                      | from `f-mail`                 | Giant selectable email, copy button that throws field chips (`burst`), LinkedIn / Instagram / Terms of Practice links.                                                                                                                                   |
+| Cursor                          | `m-cursor`                                            | 2★                            | Blue "View" disc over work images only. Hidden on touch.                                                                                                                                                                                                 |
+| Page transition                 | `m-reveal`                                            | 2★                            | Blue circle grows from the click point, page swaps, overlay fades.                                                                                                                                                                                       |
+| Symbiosis extra                 | `m-bloom`                                             | 2★                            | Bloom scrub (her p5.js frames) as a small moment on the Symbiosis case page or story. Optional, ask Brylie where.                                                                                                                                        |
 
 ## Keep in reserve (rated, not in v1)
 
