@@ -334,7 +334,7 @@
     },
     {
       "id": "ibm-qt-hotels",
-      "slug": "ibm-qt-hotels",
+      "slug": "ibm-x-qt-hotels",
       "n": "E1",
       "title": "IBM × QT Hotels",
       "sub": "Problem-defining workshop",
@@ -542,11 +542,80 @@
       }
     },
     {
+      "id": "wagec-reverse-brief",
+      "slug": "wagec-reverse-brief",
+      "n": "02a",
+      "title": "WAGEC reverse brief & strategy",
+      "sub": "Research & strategy",
+      "year": 2025,
+      "size": "S",
+      "kind": "work",
+      "context": "Socially Responsive Design, UTS",
+      "team": "Group",
+      "partOf": "16-days-of-real-talk",
+      "link": null,
+      "keywords": [
+        "design-research",
+        "design-strategy",
+        "gender-based-violence-prevention"
+      ],
+      "images": [],
+      "copy": {
+        "brief": "",
+        "insight": "",
+        "pull": "",
+        "response": "",
+        "role": "",
+        "credit": "",
+        "oneLine": ""
+      },
+      "steps": [],
+      "pos": {
+        "edge": null
+      },
+      "todo": "TODO(brylie): group work, name your role and the team size."
+    },
+    {
+      "id": "ar-vr-experiments",
+      "slug": "ar-vr-experiments",
+      "n": "03b",
+      "title": "AR/VR experiments",
+      "sub": "Experiments folio",
+      "year": 2024,
+      "size": "S",
+      "kind": "experiment",
+      "context": "Visualising Experience, UTS",
+      "team": "Group",
+      "partOf": "symbiosis",
+      "link": null,
+      "keywords": [
+        "creative-technology",
+        "prototyping",
+        "experience-design",
+        "3d"
+      ],
+      "images": [],
+      "copy": {
+        "brief": "",
+        "insight": "",
+        "pull": "",
+        "response": "",
+        "role": "",
+        "credit": "",
+        "oneLine": ""
+      },
+      "steps": [],
+      "pos": {
+        "edge": null
+      },
+      "todo": "TODO(brylie): group work, name your role and the team size. TODO(brylie): seed note says the VR scene uses stock imagery."
+    },
+    {
       "id": "trust-in-transition",
       "slug": "trust-in-transition",
       "n": "05",
       "title": "Trust in Transition",
-      "sub": "",
+      "sub": "Energy transition research folio",
       "year": 2025,
       "size": "S",
       "kind": "work",
@@ -580,7 +649,7 @@
       "slug": "sparkchange",
       "n": "06",
       "title": "SparkChange",
-      "sub": "",
+      "sub": "Concept & prototype",
       "year": 2025,
       "size": "S",
       "kind": "work",
@@ -613,7 +682,7 @@
       "slug": "stellar-map",
       "n": "07",
       "title": "Stellar Map",
-      "sub": "",
+      "sub": "Spotify playlist constellations",
       "year": 2026,
       "size": "S",
       "kind": "experiment",
@@ -640,14 +709,15 @@
       "steps": [],
       "pos": {
         "edge": [-320, 320]
-      }
+      },
+      "todo": "TODO(brylie): Perplexity Computer credit line"
     },
     {
       "id": "stellar-evolution",
       "slug": "stellar-evolution",
       "n": "08",
       "title": "Stellar Evolution",
-      "sub": "",
+      "sub": "Website",
       "year": 2024,
       "size": "S",
       "kind": "work",
@@ -674,7 +744,8 @@
       "steps": [],
       "pos": {
         "edge": [-380, 280]
-      }
+      },
+      "todo": "TODO(brylie): seed note says the site uses stock imagery; screenshots only."
     },
     {
       "id": "contextlayer",
@@ -748,7 +819,7 @@
       "slug": "lbw-trust-gala",
       "n": "11",
       "title": "LBW Trust 20th Anniversary Gala",
-      "sub": "",
+      "sub": "Event identity & collateral",
       "year": 2026,
       "size": "S",
       "kind": "client",
@@ -814,7 +885,7 @@
       "slug": "ecosystem-engineers",
       "n": "13",
       "title": "Ecosystem engineers",
-      "sub": "",
+      "sub": "Sprint 1 video",
       "year": 2024,
       "size": "S",
       "kind": "work",
@@ -843,10 +914,10 @@
     },
     {
       "id": "cas-a",
-      "slug": "cas-a",
+      "slug": "cas-a-graphic-narrative",
       "n": "14",
       "title": "Cas A",
-      "sub": "",
+      "sub": "Sprint 2 graphic narrative",
       "year": 2024,
       "size": "S",
       "kind": "work",
@@ -878,7 +949,7 @@
       "slug": "nomad-homes",
       "n": "15",
       "title": "Nomad Homes",
-      "sub": "",
+      "sub": "Prototyping future worlds",
       "year": 2024,
       "size": "S",
       "kind": "work",
@@ -941,10 +1012,10 @@
     },
     {
       "id": "coded-web-folio",
-      "slug": "coded-web-folio",
+      "slug": "politics-of-image-and-text",
       "n": "17",
       "title": "Coded web folio",
-      "sub": "",
+      "sub": "Web piece",
       "year": 2023,
       "size": "S",
       "kind": "experiment",
@@ -974,7 +1045,7 @@
     },
     {
       "id": "photo-composites",
-      "slug": "photo-composites",
+      "slug": "falcon-composite",
       "n": "18",
       "title": "Photo composites",
       "sub": "",
@@ -1009,7 +1080,7 @@
       "slug": "cymatics",
       "n": "19",
       "title": "Cymatics",
-      "sub": "",
+      "sub": "Research project",
       "year": 2023,
       "size": "S",
       "kind": "work",
@@ -1042,7 +1113,7 @@
       "slug": "book-cover-series",
       "n": "20",
       "title": "Book cover series",
-      "sub": "",
+      "sub": "Visual system",
       "year": 2023,
       "size": "S",
       "kind": "work",
@@ -1100,6 +1171,296 @@
       "pos": {
         "edge": [-440, -180]
       }
+    },
+    {
+      "id": "sprint-3-motion",
+      "slug": "sprint-3-motion",
+      "n": "22",
+      "title": "Sprint 3 motion",
+      "sub": "3D & simulation",
+      "year": 2024,
+      "size": "S",
+      "kind": "experiment",
+      "context": "Narrative, Form & Time, UTS",
+      "team": "",
+      "partOf": null,
+      "link": null,
+      "keywords": [
+        "motion",
+        "3d"
+      ],
+      "images": [],
+      "copy": {
+        "brief": "",
+        "insight": "",
+        "pull": "",
+        "response": "",
+        "role": "",
+        "credit": "",
+        "oneLine": ""
+      },
+      "steps": [],
+      "pos": {
+        "edge": null
+      }
+    },
+    {
+      "id": "materials-and-process",
+      "slug": "materials-and-process",
+      "n": "23",
+      "title": "Materials & Process",
+      "sub": "Photography, collage, grid & type",
+      "year": 2023,
+      "size": "S",
+      "kind": "work",
+      "context": "Politics of Image & Text, UTS",
+      "team": "",
+      "partOf": null,
+      "link": null,
+      "keywords": [
+        "photography",
+        "typography",
+        "editorial-design"
+      ],
+      "images": [],
+      "copy": {
+        "brief": "",
+        "insight": "",
+        "pull": "",
+        "response": "",
+        "role": "",
+        "credit": "",
+        "oneLine": ""
+      },
+      "steps": [],
+      "pos": {
+        "edge": null
+      }
+    },
+    {
+      "id": "flame-poster-and-zine",
+      "slug": "flame-poster-and-zine",
+      "n": "24",
+      "title": "Flame",
+      "sub": "Poster & zine",
+      "year": 2023,
+      "size": "S",
+      "kind": "work",
+      "context": "UTS",
+      "team": "",
+      "partOf": null,
+      "link": null,
+      "keywords": [
+        "print",
+        "typography",
+        "editorial-design"
+      ],
+      "images": [],
+      "copy": {
+        "brief": "",
+        "insight": "",
+        "pull": "",
+        "response": "",
+        "role": "",
+        "credit": "",
+        "oneLine": ""
+      },
+      "steps": [],
+      "pos": {
+        "edge": null
+      }
+    },
+    {
+      "id": "futura-motion-graphic",
+      "slug": "futura-motion-graphic",
+      "n": "25",
+      "title": "Futura",
+      "sub": "Motion graphic",
+      "year": 2023,
+      "size": "S",
+      "kind": "work",
+      "context": "UTS",
+      "team": "",
+      "partOf": null,
+      "link": null,
+      "keywords": [
+        "motion",
+        "typography"
+      ],
+      "images": [],
+      "copy": {
+        "brief": "",
+        "insight": "",
+        "pull": "",
+        "response": "",
+        "role": "",
+        "credit": "",
+        "oneLine": ""
+      },
+      "steps": [],
+      "pos": {
+        "edge": null
+      }
+    },
+    {
+      "id": "allegorical-portrait",
+      "slug": "allegorical-portrait",
+      "n": "26",
+      "title": "Allegorical portrait",
+      "sub": "Photography",
+      "year": 2023,
+      "size": "S",
+      "kind": "work",
+      "context": "UTS",
+      "team": "",
+      "partOf": null,
+      "link": null,
+      "keywords": [
+        "photography"
+      ],
+      "images": [],
+      "copy": {
+        "brief": "",
+        "insight": "",
+        "pull": "",
+        "response": "",
+        "role": "",
+        "credit": "",
+        "oneLine": ""
+      },
+      "steps": [],
+      "pos": {
+        "edge": null
+      }
+    },
+    {
+      "id": "ux-ui-visual-guide",
+      "slug": "ux-ui-visual-guide",
+      "n": "27",
+      "title": "UX/UI Visual Guide",
+      "sub": "Zine & carousel",
+      "year": 2023,
+      "size": "S",
+      "kind": "work",
+      "context": "Thinking Through Design, UTS",
+      "team": "",
+      "partOf": null,
+      "link": null,
+      "keywords": [
+        "editorial-design",
+        "ux-ui",
+        "social-content"
+      ],
+      "images": [],
+      "copy": {
+        "brief": "",
+        "insight": "",
+        "pull": "",
+        "response": "",
+        "role": "",
+        "credit": "",
+        "oneLine": ""
+      },
+      "steps": [],
+      "pos": {
+        "edge": null
+      }
+    },
+    {
+      "id": "trilogy-book-cover",
+      "slug": "trilogy-book-cover",
+      "n": "28",
+      "title": "Trilogy",
+      "sub": "Book cover experiment",
+      "year": null,
+      "size": "S",
+      "kind": "experiment",
+      "context": "Self-directed",
+      "team": "",
+      "partOf": null,
+      "link": null,
+      "keywords": [
+        "editorial-design",
+        "illustration"
+      ],
+      "images": [],
+      "copy": {
+        "brief": "",
+        "insight": "",
+        "pull": "",
+        "response": "",
+        "role": "",
+        "credit": "",
+        "oneLine": ""
+      },
+      "steps": [],
+      "pos": {
+        "edge": null
+      }
+    },
+    {
+      "id": "personal-event-pieces",
+      "slug": "personal-event-pieces",
+      "n": "29",
+      "title": "Event pieces",
+      "sub": "Cards & invitations",
+      "year": 2023,
+      "size": "S",
+      "kind": "work",
+      "context": "Self-directed",
+      "team": "",
+      "partOf": null,
+      "link": null,
+      "keywords": [
+        "print"
+      ],
+      "images": [],
+      "copy": {
+        "brief": "",
+        "insight": "",
+        "pull": "",
+        "response": "",
+        "role": "",
+        "credit": "",
+        "oneLine": ""
+      },
+      "steps": [],
+      "pos": {
+        "edge": null
+      }
+    },
+    {
+      "id": "secure-books",
+      "slug": "secure-books",
+      "n": "30",
+      "title": "Secure Books",
+      "sub": "Brand identity & website",
+      "year": 2024,
+      "size": "S",
+      "kind": "client",
+      "context": "Client · in progress",
+      "team": "",
+      "partOf": null,
+      "link": null,
+      "keywords": [
+        "identity-system",
+        "website"
+      ],
+      "images": [],
+      "copy": {
+        "brief": "",
+        "insight": "",
+        "pull": "",
+        "response": "",
+        "role": "",
+        "credit": "",
+        "oneLine": ""
+      },
+      "steps": [],
+      "pos": {
+        "edge": null
+      },
+      "todo": "TODO(brylie): client sign-off needed before images go in this public repo"
     }
   ],
   "keywords": [
@@ -1590,6 +1951,30 @@
       "id": "transparency",
       "label": "Transparency",
       "type": "value",
+      "proposed": true
+    },
+    {
+      "id": "3d",
+      "label": "3D",
+      "type": "deliverable",
+      "proposed": true
+    },
+    {
+      "id": "typography",
+      "label": "Typography",
+      "type": "discipline",
+      "proposed": true
+    },
+    {
+      "id": "print",
+      "label": "Print",
+      "type": "deliverable",
+      "proposed": true
+    },
+    {
+      "id": "social-content",
+      "label": "Social content",
+      "type": "deliverable",
       "proposed": true
     }
   ]
