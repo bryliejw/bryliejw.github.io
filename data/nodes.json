@@ -1,0 +1,5014 @@
+{
+ "_meta": {
+  "note": "Seeded 20 Oct 2026 from the portfolio scrape so design can continue. PDF works keep the verbatim copy and keyword links from the v0 site (p01 of the Final PDF). Everything marked proposed (keyword types, web-only keywords, seeded images) is unconfirmed until Brylie reviews it in the Work Scrape Picker. Empty alt, caption and copy fields are left empty on purpose.",
+  "picker": "https://claude.ai/artifact/SJm37QX2uvX8iwtXyJxKA5",
+  "scrape": "PORTFOLIO ARCHIVE/05_PORTFOLIO-BUILD/Website/_scrape/<archive id>/ (img, COPY.md, manifest.json)"
+ },
+ "me": {
+  "name": "Brylie Wilson",
+  "tagline1": "Designer, strategist and chronic over-thinker",
+  "tagline2": "systems thinker",
+  "lede": "I’m in my element at the start of a project, working out what the problem actually is.",
+  "bio": [
+   "I research the whole system around a brief, including the people, culture, platforms, social context and politics involved, then translate it into a strategy and something people can see and use. That might be editorial, a campaign, an installation or a digital experience, whichever medium suits the concept best.",
+   "I’m drawn to small, values-aligned teams, non-profits, community organisations and civic tech, and to research-led roles where I can keep asking who, what, where, why, and who’s missing."
+  ],
+  "aside": "Having too many tabs open is my specialty",
+  "standpoint": {
+   "quote": "Neutral is a position that declines to be named.",
+   "source": "Terms of Practice (2026)",
+   "link": "https://bryliejw.github.io/terms-of-practice-manifesto/"
+  },
+  "education": [
+   {
+    "title": "Bachelor of Design (Visual Communication)",
+    "org": "University of Technology Sydney",
+    "years": "2023–2026"
+   }
+  ],
+  "certification": {
+   "title": "IBM Enterprise Design Thinking Practitioner",
+   "org": "IBM",
+   "year": 2025,
+   "link": "https://www.credly.com/badges/d8601100-d8ed-445e-9cbc-0cb08019e05d",
+   "badge": "assets/img/ibm-edt-badge.webp"
+  },
+  "experience": [
+   {
+    "years": "2023–26",
+    "title": "Freelance designer",
+    "text": "The LBW Trust 20th Anniversary Gala identity, comms and event collateral (2026). Ashham Agencies and Ashham Advisory identity and marketing (2024)"
+   },
+   {
+    "years": "2025",
+    "title": "Asterisk Studios × WAGEC",
+    "text": "Live client campaign via UTS Shopfront. Research, positioning, project management, card typography and layout, landing page design and Webflow build, reels creative direction"
+   },
+   {
+    "years": "2025",
+    "title": "IBM × QT Hotels",
+    "text": "Group workshop. I designed the Miro board system and agenda, co-facilitated the workshop and presented the playback"
+   },
+   {
+    "years": "2025",
+    "title": "Jack Morton × Figma COLLAB",
+    "text": "Brand experience brief, re-brief and research"
+   },
+   {
+    "years": "2025",
+    "title": "ServiceRocket",
+    "text": "Technologies Reimagined systems mapping brief"
+   },
+   {
+    "years": "2024",
+    "title": "Powerhouse Museum",
+    "text": "Visualising Experience installation brief"
+   }
+  ],
+  "tools": [
+   "InDesign",
+   "Illustrator",
+   "Photoshop",
+   "After Effects",
+   "Premiere Pro",
+   "Lightroom",
+   "Figma",
+   "Webflow",
+   "HTML/CSS/JS",
+   "p5.js & ml5",
+   "TouchDesigner",
+   "Miro",
+   "Notion",
+   "Claude",
+   "Perplexity"
+  ],
+  "contact": {
+   "email": "brylie.j.w@gmail.com",
+   "instagram": {
+    "handle": "@byBrylie",
+    "url": "https://www.instagram.com/byBrylie"
+   },
+   "linkedin": "https://www.linkedin.com/in/bryliewilson/",
+   "site": "https://bryliejw.github.io/",
+   "termsOfPractice": "https://bryliejw.github.io/terms-of-practice-manifesto/"
+  }
+ },
+ "works": [
+  {
+   "id": "cypher",
+   "slug": "cypher",
+   "n": "01",
+   "title": "CYPHER",
+   "sub": "Magazine & typographic style guide",
+   "year": 2024,
+   "size": "L",
+   "kind": "project",
+   "context": "2024 · Individual · UTS",
+   "team": "",
+   "partOf": "",
+   "link": "",
+   "inPdf": true,
+   "archive": "",
+   "labels": [
+    "Editorial design",
+    "Image manipulation",
+    "Typography",
+    "Art direction"
+   ],
+   "tools": "INDESIGN / PHOTOSHOP / PROCREATE / PHOTODOCUMENTATION",
+   "keywords": [
+    "cultural-resistance",
+    "visual-culture",
+    "editorial-design"
+   ],
+   "keywordsProposed": false,
+   "images": [
+    {
+     "src": "assets/img/cypher-1.webp",
+     "w": 1400,
+     "h": 941,
+     "alt": "CYPHER Issue 5 cover artwork: colour-graded street photograph with graffiti in orange and blue",
+     "caption": "Issue 5 cover artwork, which flows across the front and back cover. Made from my photographs and extended with Photoshop Generative Fill (Adobe Firefly). Graffiti belongs to its writers.",
+     "from": "v0 site (PDF selection)"
+    },
+    {
+     "src": "assets/img/cypher-2.webp",
+     "w": 1400,
+     "h": 941,
+     "alt": "CYPHER magazine spread with a spray-painted headline",
+     "caption": "",
+     "from": "v0 site (PDF selection)"
+    },
+    {
+     "src": "assets/img/cypher-3.webp",
+     "w": 689,
+     "h": 463,
+     "alt": "CYPHER magazine spread with headings drawn as tags",
+     "caption": "",
+     "from": "v0 site (PDF selection)"
+    },
+    {
+     "src": "assets/img/cypher/01.webp",
+     "thumb": "assets/img/cypher/01-600.webp",
+     "orig": "_src/cypher/01-All__0-COVER.jpg",
+     "w": 1186,
+     "h": 1600,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U24-TIC-T3_Magazine-and-style-guide/04_Final/Task 3/FINALS/Spread Mocks/All/0 COVER.png",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/cypher/02.webp",
+     "thumb": "assets/img/cypher/02-600.webp",
+     "orig": "_src/cypher/02-All__21-BACK-COVER.jpg",
+     "w": 1159,
+     "h": 1600,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U24-TIC-T3_Magazine-and-style-guide/04_Final/Task 3/FINALS/Spread Mocks/All/21 BACK COVER.png",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/cypher/03.webp",
+     "thumb": "assets/img/cypher/03-600.webp",
+     "orig": "_src/cypher/03-All__1-2.jpg",
+     "w": 1600,
+     "h": 1076,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U24-TIC-T3_Magazine-and-style-guide/04_Final/Task 3/FINALS/Spread Mocks/All/1-2.png",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/cypher/04.webp",
+     "thumb": "assets/img/cypher/04-600.webp",
+     "orig": "_src/cypher/04-All__17-in2-18.jpg",
+     "w": 1600,
+     "h": 1075,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U24-TIC-T3_Magazine-and-style-guide/04_Final/Task 3/FINALS/Spread Mocks/All/17-in2-18.png",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/cypher/05.webp",
+     "thumb": "assets/img/cypher/05-600.webp",
+     "orig": "_src/cypher/05-All__19-20.jpg",
+     "w": 1600,
+     "h": 1076,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U24-TIC-T3_Magazine-and-style-guide/04_Final/Task 3/FINALS/Spread Mocks/All/19-20.png",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/cypher/06.webp",
+     "thumb": "assets/img/cypher/06-600.webp",
+     "orig": "_src/cypher/06-All__9-10-mid.jpg",
+     "w": 1600,
+     "h": 1076,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U24-TIC-T3_Magazine-and-style-guide/04_Final/Task 3/FINALS/Spread Mocks/All/9-10 mid.png",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/cypher/07.webp",
+     "thumb": "assets/img/cypher/07-600.webp",
+     "orig": "_src/cypher/07-1__Final-1__p002.jpg",
+     "w": 1200,
+     "h": 1600,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U24-TIC-T3_Magazine-and-style-guide/04_Final/Task 3/Process/Edited Pages/2:12/1/Final 1.pdf",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/cypher/08.webp",
+     "thumb": "assets/img/cypher/08-600.webp",
+     "orig": "_src/cypher/08-1__Final-1__p005.jpg",
+     "w": 1200,
+     "h": 1600,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U24-TIC-T3_Magazine-and-style-guide/04_Final/Task 3/Process/Edited Pages/2:12/1/Final 1.pdf",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/cypher/09.webp",
+     "thumb": "assets/img/cypher/09-600.webp",
+     "orig": "_src/cypher/09-1__Final-1__p014.jpg",
+     "w": 1200,
+     "h": 1600,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U24-TIC-T3_Magazine-and-style-guide/04_Final/Task 3/Process/Edited Pages/2:12/1/Final 1.pdf",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/cypher/10.webp",
+     "thumb": "assets/img/cypher/10-600.webp",
+     "orig": "_src/cypher/10-1__Final-1__p016.jpg",
+     "w": 1200,
+     "h": 1600,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U24-TIC-T3_Magazine-and-style-guide/04_Final/Task 3/Process/Edited Pages/2:12/1/Final 1.pdf",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/cypher/11.webp",
+     "thumb": "assets/img/cypher/11-600.webp",
+     "orig": "_src/cypher/11-FINALS__SG-T2__p001.jpg",
+     "w": 1200,
+     "h": 1600,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U24-TIC-T3_Magazine-and-style-guide/04_Final/Task 3/FINALS/SG T2.pdf",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/cypher/12.webp",
+     "thumb": "assets/img/cypher/12-600.webp",
+     "orig": "_src/cypher/12-Cypher-Font_aic__thumb.jpg",
+     "w": 512,
+     "h": 354,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "05_PORTFOLIO-BUILD/Website/_scrape/_connectors/adobe/U24-TIC-T3/Cypher-Font_aic__thumb.png",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/cypher/13.webp",
+     "thumb": "assets/img/cypher/13-600.webp",
+     "orig": "_src/cypher/13-Final-Docs__WilsonBrylie_CoverGrid__p001.jpg",
+     "w": 1132,
+     "h": 1600,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U24-TIC-T2_Magazine-masthead-and-covers/04_Final/Task 2/Final Docs/WilsonBrylie_CoverGrid.pdf",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/cypher/14.webp",
+     "thumb": "assets/img/cypher/14-600.webp",
+     "orig": "_src/cypher/14-Mag-Cover-pdf__Mag-Covers-Grid_01__p001.jpg",
+     "w": 1132,
+     "h": 1600,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U24-TIC-T2_Magazine-masthead-and-covers/04_Final/Task 2/Process/Covers/Final Covers/Mag Cover pdf/Mag Covers Grid_01.pdf",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/cypher/15.webp",
+     "thumb": "assets/img/cypher/15-600.webp",
+     "orig": "_src/cypher/15-IMG_4325.jpg",
+     "w": 1421,
+     "h": 582,
+     "alt": "",
+     "caption": "",
+     "whiteGround": true,
+     "from": "05_PORTFOLIO-BUILD/Website/_scrape/_connectors/photos/Year-2_Type-in-Context_Process_Mastheads/IMG_4325.jpeg",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/cypher/16.webp",
+     "thumb": "assets/img/cypher/16-600.webp",
+     "orig": "_src/cypher/16-IMG_4327.jpg",
+     "w": 929,
+     "h": 376,
+     "alt": "",
+     "caption": "",
+     "whiteGround": true,
+     "from": "05_PORTFOLIO-BUILD/Website/_scrape/_connectors/photos/Year-2_Type-in-Context_Process_Mastheads/IMG_4327.jpeg",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/cypher/17.webp",
+     "thumb": "assets/img/cypher/17-600.webp",
+     "orig": "_src/cypher/17-Masthead__Asset-1.jpg",
+     "w": 718,
+     "h": 281,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U24-TIC-T2_Magazine-masthead-and-covers/02_Process/Task 2/Process/Masthead/Asset 1.png",
+     "proposed": true
+    }
+   ],
+   "copy": {
+    "brief": "A uni assignment for Typography in Context: a magazine for visual communication designers, with masthead, covers and a style guide.",
+    "insight": "While organising my photographs into sections, I realised there was a cohesive colour scheme that heavily contrasted against the mundane urban landscape surrounding it.",
+    "pull": "Tags are acts of resistance to the increasing standardisation of urban environments.",
+    "response": "I colour-graded my photos and masked the backgrounds to enhance this contrast. One spot colour per spread gives the range of street art without clashing, on a grid deliberately broken in key moments, where imposed order coexists with graffiti.",
+    "role": "",
+    "credit": "",
+    "oneLine": ""
+   },
+   "steps": [],
+   "pos": {
+    "v0": [
+     236,
+     168
+    ]
+   }
+  },
+  {
+   "id": "days",
+   "slug": "16-days-of-real-talk",
+   "n": "02",
+   "title": "16 Days of Real Talk",
+   "sub": "Conversation cards & a campus campaign",
+   "year": 2025,
+   "size": "L",
+   "kind": "project",
+   "context": "2025 · Asterisk Studios, team of 6 · With WAGEC via UTS Shopfront",
+   "team": "",
+   "partOf": "",
+   "link": "",
+   "inPdf": true,
+   "archive": "",
+   "labels": [
+    "Design research",
+    "Workshop facilitation",
+    "Typography",
+    "Web design & build"
+   ],
+   "tools": "FIGMA / MIRO / WEBFLOW / SURVEYS",
+   "keywords": [
+    "design-research",
+    "design-strategy",
+    "gender-based-violence-prevention"
+   ],
+   "keywordsProposed": false,
+   "images": [
+    {
+     "src": "assets/img/16-days-1.webp",
+     "w": 1400,
+     "h": 1050,
+     "alt": "We Need To Talk conversation cards with speech-bubble questions",
+     "caption": "Printed cards. Card questions are by WAGEC. I set the card typography, shared the layout with Rachel, made the majority of the speech-bubble shapes and did the colours, textures and shadows. Teammates made the final artwork.",
+     "from": "v0 site (PDF selection)"
+    },
+    {
+     "src": "assets/img/16-days-2.webp",
+     "w": 1091,
+     "h": 779,
+     "alt": "Yellow conversation card with a speech-bubble question",
+     "caption": "",
+     "from": "v0 site (PDF selection)"
+    },
+    {
+     "src": "assets/img/16-days-3.webp",
+     "w": 1038,
+     "h": 787,
+     "alt": "Campaign landing page",
+     "caption": "LANDING PAGE · BUILT IN WEBFLOW",
+     "from": "v0 site (PDF selection)"
+    },
+    {
+     "src": "assets/img/16-days-of-real-talk/01.webp",
+     "thumb": "assets/img/16-days-of-real-talk/01-600.webp",
+     "orig": "_src/16-days-of-real-talk/01-Web__WAGEC_Image-2.jpg",
+     "w": 1500,
+     "h": 1125,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U25-SRD-T2_16-Days-of-Real-Talk/04_Final/FINAL FINAL/Canvas Sub/Livia_WAGEC_SocialMedia/Web/WAGEC_Image 2.jpg",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/16-days-of-real-talk/02.webp",
+     "thumb": "assets/img/16-days-of-real-talk/02-600.webp",
+     "orig": "_src/16-days-of-real-talk/02-Belly-Band-Assets__logo_front.jpg",
+     "w": 591,
+     "h": 933,
+     "alt": "",
+     "caption": "",
+     "whiteGround": true,
+     "from": "01_UNI/U25-SRD-T2_16-Days-of-Real-Talk/04_Final/FINAL/Final_Deliverables/_Final Deliverables/WNTT/PACKAGING/Belly Band Assets/logo_front.PNG",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/16-days-of-real-talk/03.webp",
+     "thumb": "assets/img/16-days-of-real-talk/03-600.webp",
+     "orig": "_src/16-days-of-real-talk/03-Do-you-think-your-online-experience-would-be-dif.jpg",
+     "w": 900,
+     "h": 1600,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U25-SRD-T2_16-Days-of-Real-Talk/04_Final/FINAL/Final_Deliverables/_Final Deliverables/SOCIAL REELS/ANONYMOUS/Do you think your online experience would be diffe/Do you think your online experience would be diffe-Cover.jpg",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/16-days-of-real-talk/04.webp",
+     "thumb": "assets/img/16-days-of-real-talk/04-600.webp",
+     "orig": "_src/16-days-of-real-talk/04-Footage-__ap.jpg",
+     "w": 627,
+     "h": 448,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U25-SRD-T2_16-Days-of-Real-Talk/04_Final/FINAL/Final_Deliverables/_Final Deliverables/SOCIAL REELS/MOTION GRAPHICS/Working/AE_Card Flip folder/(Footage)/ap.png",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/16-days-of-real-talk/05.webp",
+     "thumb": "assets/img/16-days-of-real-talk/05-600.webp",
+     "orig": "_src/16-days-of-real-talk/05-Footage-__card.jpg",
+     "w": 627,
+     "h": 448,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U25-SRD-T2_16-Days-of-Real-Talk/04_Final/FINAL/Final_Deliverables/_Final Deliverables/SOCIAL REELS/MOTION GRAPHICS/Working/AE_Card Flip folder/(Footage)/card.png",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/16-days-of-real-talk/06.webp",
+     "thumb": "assets/img/16-days-of-real-talk/06-600.webp",
+     "orig": "_src/16-days-of-real-talk/06-Footage-__p3.jpg",
+     "w": 627,
+     "h": 448,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U25-SRD-T2_16-Days-of-Real-Talk/04_Final/FINAL/Final_Deliverables/_Final Deliverables/SOCIAL REELS/MOTION GRAPHICS/Working/AE_Card Flip folder/(Footage)/p3.png",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/16-days-of-real-talk/07.webp",
+     "thumb": "assets/img/16-days-of-real-talk/07-600.webp",
+     "orig": "_src/16-days-of-real-talk/07-Footage-__y2.jpg",
+     "w": 627,
+     "h": 448,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U25-SRD-T2_16-Days-of-Real-Talk/04_Final/FINAL/Final_Deliverables/_Final Deliverables/SOCIAL REELS/MOTION GRAPHICS/Working/AE_Card Flip folder/(Footage)/y2.png",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/16-days-of-real-talk/08.webp",
+     "thumb": "assets/img/16-days-of-real-talk/08-600.webp",
+     "orig": "_src/16-days-of-real-talk/08-POSTERS-STILL__Campus-Poster-1_cymk.jpg",
+     "w": 1131,
+     "h": 1600,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U25-SRD-T2_16-Days-of-Real-Talk/04_Final/FINAL/Final_Deliverables/_Final Deliverables/POSTERS STILL/Campus Poster 1_cymk.jpg",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/16-days-of-real-talk/09.webp",
+     "thumb": "assets/img/16-days-of-real-talk/09-600.webp",
+     "orig": "_src/16-days-of-real-talk/09-POSTERS-STILL__Campus-Poster-2_cymk.jpg",
+     "w": 1131,
+     "h": 1600,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U25-SRD-T2_16-Days-of-Real-Talk/04_Final/FINAL/Final_Deliverables/_Final Deliverables/POSTERS STILL/Campus Poster 2_cymk.jpg",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/16-days-of-real-talk/10.webp",
+     "thumb": "assets/img/16-days-of-real-talk/10-600.webp",
+     "orig": "_src/16-days-of-real-talk/10-POSTERS-STILL__General-Poster-1.jpg",
+     "w": 1131,
+     "h": 1600,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U25-SRD-T2_16-Days-of-Real-Talk/04_Final/FINAL/Final_Deliverables/_Final Deliverables/POSTERS STILL/General Poster 1.jpg",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/16-days-of-real-talk/11.webp",
+     "thumb": "assets/img/16-days-of-real-talk/11-600.webp",
+     "orig": "_src/16-days-of-real-talk/11-POSTERS-STILL__General-Poster-2.jpg",
+     "w": 1131,
+     "h": 1600,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U25-SRD-T2_16-Days-of-Real-Talk/04_Final/FINAL/Final_Deliverables/_Final Deliverables/POSTERS STILL/General Poster 2.jpg",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/16-days-of-real-talk/12.webp",
+     "thumb": "assets/img/16-days-of-real-talk/12-600.webp",
+     "orig": "_src/16-days-of-real-talk/12-POSTERS-STILL__Sharehouse-Poster-1_cymk.jpg",
+     "w": 1131,
+     "h": 1600,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U25-SRD-T2_16-Days-of-Real-Talk/04_Final/FINAL/Final_Deliverables/_Final Deliverables/POSTERS STILL/Sharehouse Poster 1_cymk.jpg",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/16-days-of-real-talk/13.webp",
+     "thumb": "assets/img/16-days-of-real-talk/13-600.webp",
+     "orig": "_src/16-days-of-real-talk/13-Social-Media-Tiles__WAGEC_Image2__t01.jpg",
+     "w": 1440,
+     "h": 1080,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U25-SRD-T2_16-Days-of-Real-Talk/04_Final/FINAL FINAL/Canvas Sub/Livia_WAGEC_SocialMedia/Social Media Tiles/WAGEC_Image2.mp4",
+     "proposed": true
+    }
+   ],
+   "copy": {
+    "brief": "A live client project for Socially Responsive Design at UTS. The Women’s and Girls’ Emergency Centre (WAGEC) asked our studio to launch its We Need To Talk cards to university students during the 16 Days of Activism against gender-based violence.",
+    "insight": "",
+    "pull": "Almost half the students we surveyed had seen or experienced sexism at uni in the past year.",
+    "response": "We redesigned the deck as 30 pocket-sized cards, colour-coded by topic so students choose how deep to go. We used speech bubbles as the main device to show that not every opinion has to be fully formed to be part of the conversation. I worked on research and positioning, project management and the kickoff workshop, and designed and built the landing page in Webflow.",
+    "role": "",
+    "credit": "",
+    "oneLine": ""
+   },
+   "steps": [],
+   "pos": {
+    "v0": [
+     770,
+     664
+    ]
+   }
+  },
+  {
+   "id": "symbiosis",
+   "slug": "symbiosis",
+   "n": "03",
+   "title": "Symbiosis",
+   "sub": "Immersive installation concept for the Powerhouse Museum",
+   "year": 2024,
+   "size": "L",
+   "kind": "project",
+   "context": "2024 · Individual · 87009 Visualising Experience, UTS",
+   "team": "",
+   "partOf": "",
+   "link": "",
+   "inPdf": true,
+   "archive": "",
+   "labels": [
+    "Experience design",
+    "Design research",
+    "Prototyping",
+    "Creative code"
+   ],
+   "tools": "PROCREATE / ILLUSTRATOR / P5.JS & ML5 / TEACHABLE MACHINE / WIZARD OF OZ TESTING",
+   "keywords": [
+    "experience-design",
+    "museum-interpretation",
+    "more-than-human-design"
+   ],
+   "keywordsProposed": false,
+   "images": [
+    {
+     "src": "assets/img/symbiosis-1.webp",
+     "w": 1226,
+     "h": 1400,
+     "alt": "Render of the Symbiosis installation: green projections on mesh pathways around the chair",
+     "caption": "FINAL VISUAL NARRATIVE · RENDERS & MODELS MY OWN",
+     "from": "v0 site (PDF selection)"
+    },
+    {
+     "src": "assets/img/symbiosis-2.webp",
+     "w": 615,
+     "h": 434,
+     "alt": "Line drawings of Christopher Dresser’s cast-iron Garden Chair and its ornament",
+     "caption": "CHAIR TRACED IN PROCREATE",
+     "from": "v0 site (PDF selection)"
+    },
+    {
+     "src": "assets/img/symbiosis-3.webp",
+     "w": 1050,
+     "h": 1400,
+     "alt": "Small-scale gutter guard maze prototype with a figure",
+     "caption": "PROTOTYPE 1 · GUTTER GUARD & BLUE-TACK FIGURE",
+     "from": "v0 site (PDF selection)"
+    },
+    {
+     "src": "assets/img/symbiosis/01.webp",
+     "thumb": "assets/img/symbiosis/01-600.webp",
+     "orig": "_src/symbiosis/01-Final-Files__FrameFrame-1.jpg",
+     "w": 1080,
+     "h": 1080,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U24-VisExp-T3_Prototype-and-process-folio/04_Final/AT3/Insta/Final Files/FrameFrame-1.png",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/symbiosis/02.webp",
+     "thumb": "assets/img/symbiosis/02-600.webp",
+     "orig": "_src/symbiosis/02-Final-Files__FrameFrame-3.jpg",
+     "w": 1080,
+     "h": 1080,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U24-VisExp-T3_Prototype-and-process-folio/04_Final/AT3/Insta/Final Files/FrameFrame-3.png",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/symbiosis/03.webp",
+     "thumb": "assets/img/symbiosis/03-600.webp",
+     "orig": "_src/symbiosis/03-Final-Files__FrameFrame-5.jpg",
+     "w": 1080,
+     "h": 1080,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U24-VisExp-T3_Prototype-and-process-folio/04_Final/AT3/Insta/Final Files/FrameFrame-5.png",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/symbiosis/04.webp",
+     "thumb": "assets/img/symbiosis/04-600.webp",
+     "orig": "_src/symbiosis/04-Final-Files__Frame-Imgs-Frame-2__p001.jpg",
+     "w": 1600,
+     "h": 1600,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U24-VisExp-T3_Prototype-and-process-folio/04_Final/AT3/Insta/Final Files/Frame Imgs Frame 2.pdf",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/symbiosis/05.webp",
+     "thumb": "assets/img/symbiosis/05-600.webp",
+     "orig": "_src/symbiosis/05-Final-Files__Frame-Imgs-Frame-4__p001.jpg",
+     "w": 1600,
+     "h": 1600,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U24-VisExp-T3_Prototype-and-process-folio/04_Final/AT3/Insta/Final Files/Frame Imgs Frame 4.pdf",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/symbiosis/06.webp",
+     "thumb": "assets/img/symbiosis/06-600.webp",
+     "orig": "_src/symbiosis/06-Final-Files__Frame-Imgs-Frame-6__p001.jpg",
+     "w": 1600,
+     "h": 1600,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U24-VisExp-T3_Prototype-and-process-folio/04_Final/AT3/Insta/Final Files/Frame Imgs Frame 6.pdf",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/symbiosis/07.webp",
+     "thumb": "assets/img/symbiosis/07-600.webp",
+     "orig": "_src/symbiosis/07-bryliewilson_instagrampost_VE_AT3__tile3_Proto-1.jpg",
+     "w": 896,
+     "h": 855,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "05_PORTFOLIO-BUILD/Website/_scrape/_connectors/figma/U24-VisExp-T3/bryliewilson_instagrampost_VE_AT3__tile3_Proto-1-spatial-exploration.png",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/symbiosis/08.webp",
+     "thumb": "assets/img/symbiosis/08-600.webp",
+     "orig": "_src/symbiosis/08-bryliewilson_instagrampost_VE_AT3__tile5_Proto-2.jpg",
+     "w": 896,
+     "h": 855,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "05_PORTFOLIO-BUILD/Website/_scrape/_connectors/figma/U24-VisExp-T3/bryliewilson_instagrampost_VE_AT3__tile5_Proto-2-video-still_person.png",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/symbiosis/09.webp",
+     "thumb": "assets/img/symbiosis/09-600.webp",
+     "orig": "_src/symbiosis/09-canva-exports__VisExp-T3_Instagram-tile_1080.jpg",
+     "w": 1080,
+     "h": 1080,
+     "alt": "",
+     "caption": "",
+     "whiteGround": true,
+     "from": "01_UNI/U24-VisExp-T3_Prototype-and-process-folio/04_Final/canva-exports/VisExp-T3_Instagram-tile_1080.png",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/symbiosis/10.webp",
+     "thumb": "assets/img/symbiosis/10-600.webp",
+     "orig": "_src/symbiosis/10-Symbiosis_mesh_model_photo_-perspective-_DAGWOlP.jpg",
+     "w": 1400,
+     "h": 1080,
+     "alt": "",
+     "caption": "",
+     "whiteGround": true,
+     "from": "05_PORTFOLIO-BUILD/Website/_scrape/_connectors/canva/U24-VisExp-T3/Symbiosis_mesh_model_photo_(perspective)_DAGWOlPRVFI.png",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/symbiosis/11.webp",
+     "thumb": "assets/img/symbiosis/11-600.webp",
+     "orig": "_src/symbiosis/11-IMG_3954.jpg",
+     "w": 1600,
+     "h": 1200,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "05_PORTFOLIO-BUILD/Website/_scrape/_connectors/photos/Year-2_Vis-Exp_Exhibition-Design_My-images/IMG_3954.jpeg",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/symbiosis/12.webp",
+     "thumb": "assets/img/symbiosis/12-600.webp",
+     "orig": "_src/symbiosis/12-IMG_3993.jpg",
+     "w": 1600,
+     "h": 1200,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "05_PORTFOLIO-BUILD/Website/_scrape/_connectors/photos/Year-2_Vis-Exp_Exhibition-Design_My-images/IMG_3993.jpeg",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/symbiosis/13.webp",
+     "thumb": "assets/img/symbiosis/13-600.webp",
+     "orig": "_src/symbiosis/13-IMG_3999.jpg",
+     "w": 1600,
+     "h": 1200,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "05_PORTFOLIO-BUILD/Website/_scrape/_connectors/photos/Year-2_Vis-Exp_Edited/IMG_3999.jpeg",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/symbiosis/14.webp",
+     "thumb": "assets/img/symbiosis/14-600.webp",
+     "orig": "_src/symbiosis/14-IMG_4013.jpg",
+     "w": 1600,
+     "h": 1200,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "05_PORTFOLIO-BUILD/Website/_scrape/_connectors/photos/Year-2_Vis-Exp_Exhibition-Design_My-images/IMG_4013.jpeg",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/symbiosis/15.webp",
+     "thumb": "assets/img/symbiosis/15-600.webp",
+     "orig": "_src/symbiosis/15-Untitled-1-1_aic_2024-10__thumb.jpg",
+     "w": 512,
+     "h": 512,
+     "alt": "",
+     "caption": "",
+     "whiteGround": true,
+     "from": "05_PORTFOLIO-BUILD/Website/_scrape/_connectors/adobe/U24-VisExp-T3/Untitled-1-1_aic_2024-10__thumb.png",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/symbiosis/16.webp",
+     "thumb": "assets/img/symbiosis/16-600.webp",
+     "orig": "_src/symbiosis/16-24794808-visual-narrative-2__p001.jpg",
+     "w": 566,
+     "h": 1600,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U24-VisExp-T1_Design-concept-and-research-folio/04_Final/24794808-visual-narrative 2.pdf",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/symbiosis/17.webp",
+     "thumb": "assets/img/symbiosis/17-600.webp",
+     "orig": "_src/symbiosis/17-AT1__24794808-proces-folio__p002.jpg",
+     "w": 1600,
+     "h": 1080,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U24-VisExp-T1_Design-concept-and-research-folio/04_Final/AT1/24794808-proces-folio.pdf",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/symbiosis/18.webp",
+     "thumb": "assets/img/symbiosis/18-600.webp",
+     "orig": "_src/symbiosis/18-AT1__24794808-proces-folio__p003.jpg",
+     "w": 1600,
+     "h": 1080,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U24-VisExp-T1_Design-concept-and-research-folio/04_Final/AT1/24794808-proces-folio.pdf",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/symbiosis/19.webp",
+     "thumb": "assets/img/symbiosis/19-600.webp",
+     "orig": "_src/symbiosis/19-AT1__24794808-proces-folio__p004.jpg",
+     "w": 1600,
+     "h": 1080,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U24-VisExp-T1_Design-concept-and-research-folio/04_Final/AT1/24794808-proces-folio.pdf",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/symbiosis/20.webp",
+     "thumb": "assets/img/symbiosis/20-600.webp",
+     "orig": "_src/symbiosis/20-AT1__24794808-proces-folio__p008.jpg",
+     "w": 1600,
+     "h": 1080,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U24-VisExp-T1_Design-concept-and-research-folio/04_Final/AT1/24794808-proces-folio.pdf",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/symbiosis/21.webp",
+     "thumb": "assets/img/symbiosis/21-600.webp",
+     "orig": "_src/symbiosis/21-Iteration__Concept-Development-Refinement__p001.jpg",
+     "w": 1600,
+     "h": 1131,
+     "alt": "",
+     "caption": "",
+     "whiteGround": true,
+     "from": "01_UNI/U24-VisExp-T1_Design-concept-and-research-folio/02_Process/AT1/02 Process/Iteration/Concept Development & Refinement.pdf",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/symbiosis/22.webp",
+     "thumb": "assets/img/symbiosis/22-600.webp",
+     "orig": "_src/symbiosis/22-Iteration__Concept-Development-Refinement__p002.jpg",
+     "w": 1600,
+     "h": 1131,
+     "alt": "",
+     "caption": "",
+     "whiteGround": true,
+     "from": "01_UNI/U24-VisExp-T1_Design-concept-and-research-folio/02_Process/AT1/02 Process/Iteration/Concept Development & Refinement.pdf",
+     "proposed": true
+    }
+   ],
+   "copy": {
+    "brief": "A university assignment for Visualising Experience at UTS, working with the Powerhouse Museum collection: design an interactive digital experience for one object. I chose Christopher Dresser’s cast-iron Garden Chair, 1870.",
+    "insight": "We see the chair as either a utilitarian object or a piece of art. Reading Dresser’s own books, I found that division reflects design for standardisation rather than an intrinsic truth, and that his ornament is built on botany and geometry.",
+    "pull": "Symbiosis is an immersive installation inspired by Dresser’s philosophy that true appreciation of beauty arises from contextual knowledge and understanding.",
+    "response": "It uses the Garden Chair to critique the arbitrary homogenisation of everyday objects. Visitors enter through mesh pathways with projections on the walls and floor, and symbols around the chair light up the principles hidden in its design.",
+    "role": "",
+    "credit": "",
+    "oneLine": ""
+   },
+   "steps": [],
+   "pos": {
+    "v0": [
+     262,
+     612
+    ]
+   }
+  },
+  {
+   "id": "ibmqt",
+   "slug": "ibm-x-qt-hotels",
+   "n": "E1",
+   "title": "IBM × QT Hotels",
+   "sub": "Problem-defining workshop",
+   "year": 2025,
+   "size": "M",
+   "kind": "experiment",
+   "context": "",
+   "team": "",
+   "partOf": "",
+   "link": "",
+   "inPdf": true,
+   "archive": "",
+   "labels": [
+    "Industry brief",
+    "Design Practice, UTS"
+   ],
+   "tools": "MIRO",
+   "keywords": [
+    "service-design",
+    "workshop-facilitation"
+   ],
+   "keywordsProposed": false,
+   "images": [
+    {
+     "src": "assets/img/e1-ibm-qt.webp",
+     "w": 717,
+     "h": 317,
+     "alt": "Miro board from the IBM × QT Hotels workshop",
+     "caption": "",
+     "from": "v0 site (PDF selection)"
+    },
+    {
+     "src": "assets/img/ibm-x-qt-hotels/01.webp",
+     "thumb": "assets/img/ibm-x-qt-hotels/01-600.webp",
+     "orig": "_src/ibm-x-qt-hotels/01-Final__QT-x-IBM-Workshop---Title.jpg",
+     "w": 1600,
+     "h": 900,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U25-DP-B_QT-x-IBM-Design-Thinking-Workshop/04_Final/B_IBM/Final/QT x IBM Workshop - Title.jpg",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/ibm-x-qt-hotels/02.webp",
+     "thumb": "assets/img/ibm-x-qt-hotels/02-600.webp",
+     "orig": "_src/ibm-x-qt-hotels/02-QT-Research-Presentation__slide01_cover.jpg",
+     "w": 1456,
+     "h": 819,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "05_PORTFOLIO-BUILD/Website/_scrape/_connectors/figma/U25-DP-B/QT-Research-Presentation__slide01_cover.png",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/ibm-x-qt-hotels/03.webp",
+     "thumb": "assets/img/ibm-x-qt-hotels/03-600.webp",
+     "orig": "_src/ibm-x-qt-hotels/03-QT-Research-Presentation__slide02_re-brief.jpg",
+     "w": 1456,
+     "h": 819,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "05_PORTFOLIO-BUILD/Website/_scrape/_connectors/figma/U25-DP-B/QT-Research-Presentation__slide02_re-brief.png",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/ibm-x-qt-hotels/04.webp",
+     "thumb": "assets/img/ibm-x-qt-hotels/04-600.webp",
+     "orig": "_src/ibm-x-qt-hotels/04-QT-Research-Presentation__slide06_opportunities.jpg",
+     "w": 1456,
+     "h": 819,
+     "alt": "",
+     "caption": "",
+     "whiteGround": true,
+     "from": "05_PORTFOLIO-BUILD/Website/_scrape/_connectors/figma/U25-DP-B/QT-Research-Presentation__slide06_opportunities-booking.png",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/ibm-x-qt-hotels/05.webp",
+     "thumb": "assets/img/ibm-x-qt-hotels/05-600.webp",
+     "orig": "_src/ibm-x-qt-hotels/05-QT-Research-Presentation__slide07_opportunities.jpg",
+     "w": 1456,
+     "h": 819,
+     "alt": "",
+     "caption": "",
+     "whiteGround": true,
+     "from": "05_PORTFOLIO-BUILD/Website/_scrape/_connectors/figma/U25-DP-B/QT-Research-Presentation__slide07_opportunities-stay.png",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/ibm-x-qt-hotels/06.webp",
+     "thumb": "assets/img/ibm-x-qt-hotels/06-600.webp",
+     "orig": "_src/ibm-x-qt-hotels/06-QT-Research-Presentation__slide10_AI-research-bo.jpg",
+     "w": 1456,
+     "h": 819,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "05_PORTFOLIO-BUILD/Website/_scrape/_connectors/figma/U25-DP-B/QT-Research-Presentation__slide10_AI-research-board.png",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/ibm-x-qt-hotels/07.webp",
+     "thumb": "assets/img/ibm-x-qt-hotels/07-600.webp",
+     "orig": "_src/ibm-x-qt-hotels/07-Workshop-board__As-is-Scenario-Mapping.jpg",
+     "w": 1568,
+     "h": 733,
+     "alt": "",
+     "caption": "",
+     "whiteGround": true,
+     "from": "05_PORTFOLIO-BUILD/Website/_scrape/_connectors/figma/U25-DP-B/Workshop-board__As-is-Scenario-Mapping.png",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/ibm-x-qt-hotels/08.webp",
+     "thumb": "assets/img/ibm-x-qt-hotels/08-600.webp",
+     "orig": "_src/ibm-x-qt-hotels/08-Workshop-board__Icebreakers.jpg",
+     "w": 1431,
+     "h": 840,
+     "alt": "",
+     "caption": "",
+     "whiteGround": true,
+     "from": "05_PORTFOLIO-BUILD/Website/_scrape/_connectors/figma/U25-DP-B/Workshop-board__Icebreakers.png",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/ibm-x-qt-hotels/09.webp",
+     "thumb": "assets/img/ibm-x-qt-hotels/09-600.webp",
+     "orig": "_src/ibm-x-qt-hotels/09-Workshop-board__Prioritisation-Grid.jpg",
+     "w": 1491,
+     "h": 812,
+     "alt": "",
+     "caption": "",
+     "whiteGround": true,
+     "from": "05_PORTFOLIO-BUILD/Website/_scrape/_connectors/figma/U25-DP-B/Workshop-board__Prioritisation-Grid.png",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/ibm-x-qt-hotels/10.webp",
+     "thumb": "assets/img/ibm-x-qt-hotels/10-600.webp",
+     "orig": "_src/ibm-x-qt-hotels/10-QT__Industry.jpg",
+     "w": 1600,
+     "h": 1217,
+     "alt": "",
+     "caption": "",
+     "whiteGround": true,
+     "from": "01_UNI/U25-DP-B_QT-x-IBM-Design-Thinking-Workshop/02_Process/B_IBM/QT/Industry.png",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/ibm-x-qt-hotels/11.webp",
+     "thumb": "assets/img/ibm-x-qt-hotels/11-600.webp",
+     "orig": "_src/ibm-x-qt-hotels/11-QT__QT.jpg",
+     "w": 1600,
+     "h": 1217,
+     "alt": "",
+     "caption": "",
+     "whiteGround": true,
+     "from": "01_UNI/U25-DP-B_QT-x-IBM-Design-Thinking-Workshop/02_Process/B_IBM/QT/QT.png",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/ibm-x-qt-hotels/12.webp",
+     "thumb": "assets/img/ibm-x-qt-hotels/12-600.webp",
+     "orig": "_src/ibm-x-qt-hotels/12-QT__booking.jpg",
+     "w": 1600,
+     "h": 1217,
+     "alt": "",
+     "caption": "",
+     "whiteGround": true,
+     "from": "01_UNI/U25-DP-B_QT-x-IBM-Design-Thinking-Workshop/02_Process/B_IBM/QT/booking.png",
+     "proposed": true
+    }
+   ],
+   "copy": {
+    "brief": "",
+    "insight": "",
+    "pull": "",
+    "response": "",
+    "role": "Team of 4. I designed the board system and agenda, co-facilitated the workshop and presented the playback.",
+    "credit": "",
+    "oneLine": "An hour on Zoom and Miro with QT stakeholders, from front desk to CEO, to find where AI could help check-in."
+   },
+   "steps": [],
+   "pos": {
+    "v0": [
+     900,
+     540
+    ]
+   }
+  },
+  {
+   "id": "collab",
+   "slug": "collab",
+   "n": "E2",
+   "title": "COLLAB",
+   "sub": "Event identity & stage concept",
+   "year": 2025,
+   "size": "M",
+   "kind": "experiment",
+   "context": "",
+   "team": "",
+   "partOf": "",
+   "link": "",
+   "inPdf": true,
+   "archive": "",
+   "labels": [
+    "Jack Morton × Figma",
+    "Industry brief",
+    "Design Practice, UTS"
+   ],
+   "tools": "",
+   "keywords": [],
+   "keywordsProposed": false,
+   "images": [
+    {
+     "src": "assets/img/e2-collab.webp",
+     "w": 1091,
+     "h": 817,
+     "alt": "3D render of a COLLAB stage concept with stacked coloured blocks",
+     "caption": "",
+     "from": "v0 site (PDF selection)"
+    },
+    {
+     "src": "assets/img/collab/01.webp",
+     "thumb": "assets/img/collab/01-600.webp",
+     "orig": "_src/collab/01-FINAL__Inflated.jpg",
+     "w": 1293,
+     "h": 230,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U25-DP-A_Brand-Experiential-Design/04_Final/A_Brand Exp/Exp/Puffy/FINAL/Inflated.png",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/collab/02.webp",
+     "thumb": "assets/img/collab/02-600.webp",
+     "orig": "_src/collab/02-FINAL-Identity__Collab-Falling-1-2304x1271.jpg",
+     "w": 1600,
+     "h": 854,
+     "alt": "",
+     "caption": "",
+     "whiteGround": true,
+     "from": "01_UNI/U25-DP-A_Brand-Experiential-Design/04_Final/A_Brand Exp/FINAL Identity/Collab Falling@1-2304x1271.jpg",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/collab/03.webp",
+     "thumb": "assets/img/collab/03-600.webp",
+     "orig": "_src/collab/03-FINAL__Shape-1.jpg",
+     "w": 362,
+     "h": 362,
+     "alt": "",
+     "caption": "",
+     "whiteGround": true,
+     "from": "01_UNI/U25-DP-A_Brand-Experiential-Design/04_Final/A_Brand Exp/Exp/Puffy/FINAL/Shape 1.png",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/collab/04.webp",
+     "thumb": "assets/img/collab/04-600.webp",
+     "orig": "_src/collab/04-FINAL__Shape-2.jpg",
+     "w": 356,
+     "h": 371,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U25-DP-A_Brand-Experiential-Design/04_Final/A_Brand Exp/Exp/Puffy/FINAL/Shape 2.png",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/collab/05.webp",
+     "thumb": "assets/img/collab/05-600.webp",
+     "orig": "_src/collab/05-FINAL__Shape-3.jpg",
+     "w": 501,
+     "h": 485,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U25-DP-A_Brand-Experiential-Design/04_Final/A_Brand Exp/Exp/Puffy/FINAL/Shape 3.png",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/collab/06.webp",
+     "thumb": "assets/img/collab/06-600.webp",
+     "orig": "_src/collab/06-Letters__Asset-56.jpg",
+     "w": 174,
+     "h": 229,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U25-DP-A_Brand-Experiential-Design/04_Final/A_Brand Exp/Exp/Puffy/FINAL/Letters/Asset 56.png",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/collab/07.webp",
+     "thumb": "assets/img/collab/07-600.webp",
+     "orig": "_src/collab/07-Letters__Asset-59.jpg",
+     "w": 186,
+     "h": 230,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U25-DP-A_Brand-Experiential-Design/04_Final/A_Brand Exp/Exp/Puffy/FINAL/Letters/Asset 59.png",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/collab/08.webp",
+     "thumb": "assets/img/collab/08-600.webp",
+     "orig": "_src/collab/08-Letters__Asset-61.jpg",
+     "w": 207,
+     "h": 229,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U25-DP-A_Brand-Experiential-Design/04_Final/A_Brand Exp/Exp/Puffy/FINAL/Letters/Asset 61.png",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/collab/09.webp",
+     "thumb": "assets/img/collab/09-600.webp",
+     "orig": "_src/collab/09-Jenga__Jenga_Front.jpg",
+     "w": 1440,
+     "h": 834,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U25-DP-A_Brand-Experiential-Design/04_Final/A_Brand Exp/FINALS/Jenga/Jenga_Front.jpg",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/collab/10.webp",
+     "thumb": "assets/img/collab/10-600.webp",
+     "orig": "_src/collab/10-Mocks__maneken-BoatTote01.jpg",
+     "w": 1600,
+     "h": 1066,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U25-DP-A_Brand-Experiential-Design/04_Final/A_Brand Exp/FINALS/Mocks/maneken-BoatTote01.png",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/collab/11.webp",
+     "thumb": "assets/img/collab/11-600.webp",
+     "orig": "_src/collab/11-Mocks__maneken-BoatTote02.jpg",
+     "w": 1600,
+     "h": 1066,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U25-DP-A_Brand-Experiential-Design/04_Final/A_Brand Exp/FINALS/Mocks/maneken-BoatTote02.png",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/collab/12.webp",
+     "thumb": "assets/img/collab/12-600.webp",
+     "orig": "_src/collab/12-Renders__FrontV1.jpg",
+     "w": 1600,
+     "h": 1199,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U25-DP-A_Brand-Experiential-Design/04_Final/A_Brand Exp/FINALS/Stage/Renders/FrontV1.png",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/collab/13.webp",
+     "thumb": "assets/img/collab/13-600.webp",
+     "orig": "_src/collab/13-Stage__Front-Render.jpg",
+     "w": 1024,
+     "h": 576,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U25-DP-A_Brand-Experiential-Design/04_Final/A_Brand Exp/FINALS/Stage/Front Render.png",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/collab/14.webp",
+     "thumb": "assets/img/collab/14-600.webp",
+     "orig": "_src/collab/14-Activation__Figma_COLLAB_Activation-3-1440x875.jpg",
+     "w": 1600,
+     "h": 926,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U25-DP-A_Brand-Experiential-Design/04_Final/A_Brand Exp/FINALS/Activation/Figma_COLLAB_Activation@3-1440x875.png",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/collab/15.webp",
+     "thumb": "assets/img/collab/15-600.webp",
+     "orig": "_src/collab/15-Figma_Collab_Identity_Territory_-Pink_and_Black.jpg",
+     "w": 1600,
+     "h": 900,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "05_PORTFOLIO-BUILD/Website/_scrape/_connectors/canva/U25-DP-A/Figma_Collab_Identity_Territory_(Pink_and_Black_Brand_Strategy_Presentation)_DAGgPr3wAaA_p07.png",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/collab/16.webp",
+     "thumb": "assets/img/collab/16-600.webp",
+     "orig": "_src/collab/16-IMG_5041.jpg",
+     "w": 1600,
+     "h": 1066,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "05_PORTFOLIO-BUILD/Website/_scrape/_connectors/photos/Design-Practice-A_Assets/IMG_5041.jpeg",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/collab/17.webp",
+     "thumb": "assets/img/collab/17-600.webp",
+     "orig": "_src/collab/17-IMG_5076.jpg",
+     "w": 1254,
+     "h": 1600,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "05_PORTFOLIO-BUILD/Website/_scrape/_connectors/photos/Design-Practice-A_Overall/IMG_5076.jpeg",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/collab/18.webp",
+     "thumb": "assets/img/collab/18-600.webp",
+     "orig": "_src/collab/18-All---old__Collab-Block-Letter-View-Vectors_1.jpg",
+     "w": 1202,
+     "h": 870,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U25-DP-A_Brand-Experiential-Design/02_Process/A_Brand Exp/Exp/3D Letter Views/All - old/Collab Block Letter View Vectors_1.png",
+     "proposed": true
+    }
+   ],
+   "copy": {
+    "brief": "",
+    "insight": "",
+    "pull": "",
+    "response": "",
+    "role": "",
+    "credit": "Jack Morton brief for Figma’s COLLAB event.",
+    "oneLine": "Play, Powered moves away from the high-tech look commonly associated with AI to show the childlike curiosity that emerges when AI handles the mundane routine tasks."
+   },
+   "steps": [],
+   "pos": {
+    "v0": [
+     940,
+     98
+    ]
+   }
+  },
+  {
+   "id": "adhd",
+   "slug": "adhd-in-the-media",
+   "n": "E3",
+   "title": "ADHD in the Media",
+   "sub": "Research-led motion explainer",
+   "year": 2024,
+   "size": "M",
+   "kind": "experiment",
+   "context": "",
+   "team": "",
+   "partOf": "",
+   "link": "",
+   "inPdf": true,
+   "archive": "",
+   "labels": [
+    "Contexts of Visual Communication, UTS",
+    "Studio brief"
+   ],
+   "tools": "STOP-MOTION COLLAGE",
+   "keywords": [
+    "psychology",
+    "health-equity"
+   ],
+   "keywordsProposed": false,
+   "images": [
+    {
+     "src": "assets/img/e3-adhd.webp",
+     "w": 717,
+     "h": 403,
+     "alt": "Stop-motion collage frame of newspaper headlines about ADHD",
+     "caption": "",
+     "from": "v0 site (PDF selection)"
+    },
+    {
+     "src": "assets/img/adhd-in-the-media/01.webp",
+     "thumb": "assets/img/adhd-in-the-media/01-600.webp",
+     "orig": "_src/adhd-in-the-media/01-Style-frames-V1_express__thumb.jpg",
+     "w": 600,
+     "h": 337,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "05_PORTFOLIO-BUILD/Website/_scrape/_connectors/adobe/U24-COVC-T3/Style-frames-V1_express__thumb.png",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/adhd-in-the-media/02.webp",
+     "thumb": "assets/img/adhd-in-the-media/02-600.webp",
+     "orig": "_src/adhd-in-the-media/02-Task-3__Slides-Final-V1__p002.jpg",
+     "w": 1600,
+     "h": 900,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U24-COVC-T3_Gender-and-ADHD-Health-Data-Film/04_Final/Task 3/Slides Final V1.pdf",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/adhd-in-the-media/03.webp",
+     "thumb": "assets/img/adhd-in-the-media/03-600.webp",
+     "orig": "_src/adhd-in-the-media/03-Task-3__Slides-Final-V1__p004.jpg",
+     "w": 1600,
+     "h": 900,
+     "alt": "",
+     "caption": "",
+     "whiteGround": true,
+     "from": "01_UNI/U24-COVC-T3_Gender-and-ADHD-Health-Data-Film/04_Final/Task 3/Slides Final V1.pdf",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/adhd-in-the-media/04.webp",
+     "thumb": "assets/img/adhd-in-the-media/04-600.webp",
+     "orig": "_src/adhd-in-the-media/04-Task-3__Slides-Final-V1__p006.jpg",
+     "w": 1600,
+     "h": 900,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U24-COVC-T3_Gender-and-ADHD-Health-Data-Film/04_Final/Task 3/Slides Final V1.pdf",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/adhd-in-the-media/05.webp",
+     "thumb": "assets/img/adhd-in-the-media/05-600.webp",
+     "orig": "_src/adhd-in-the-media/05-Task-3__Slides-Final-V1__p008.jpg",
+     "w": 1600,
+     "h": 900,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U24-COVC-T3_Gender-and-ADHD-Health-Data-Film/04_Final/Task 3/Slides Final V1.pdf",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/adhd-in-the-media/06.webp",
+     "thumb": "assets/img/adhd-in-the-media/06-600.webp",
+     "orig": "_src/adhd-in-the-media/06-Task-3__Slides-Final-V1__p009.jpg",
+     "w": 1600,
+     "h": 900,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U24-COVC-T3_Gender-and-ADHD-Health-Data-Film/04_Final/Task 3/Slides Final V1.pdf",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/adhd-in-the-media/07.webp",
+     "thumb": "assets/img/adhd-in-the-media/07-600.webp",
+     "orig": "_src/adhd-in-the-media/07-Task-3__Slides-Final-V1__p010.jpg",
+     "w": 1600,
+     "h": 900,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U24-COVC-T3_Gender-and-ADHD-Health-Data-Film/04_Final/Task 3/Slides Final V1.pdf",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/adhd-in-the-media/08.webp",
+     "thumb": "assets/img/adhd-in-the-media/08-600.webp",
+     "orig": "_src/adhd-in-the-media/08-Task-3__Slides-Final-V1__p018.jpg",
+     "w": 1600,
+     "h": 900,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U24-COVC-T3_Gender-and-ADHD-Health-Data-Film/04_Final/Task 3/Slides Final V1.pdf",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/adhd-in-the-media/09.webp",
+     "thumb": "assets/img/adhd-in-the-media/09-600.webp",
+     "orig": "_src/adhd-in-the-media/09-Task-3__Slides-Final-V1__p020.jpg",
+     "w": 1600,
+     "h": 900,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U24-COVC-T3_Gender-and-ADHD-Health-Data-Film/04_Final/Task 3/Slides Final V1.pdf",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/adhd-in-the-media/10.webp",
+     "thumb": "assets/img/adhd-in-the-media/10-600.webp",
+     "orig": "_src/adhd-in-the-media/10-ps-exp__Artboard-5.jpg",
+     "w": 1600,
+     "h": 900,
+     "alt": "",
+     "caption": "",
+     "whiteGround": true,
+     "from": "01_UNI/U24-COVC-T3_Gender-and-ADHD-Health-Data-Film/02_Process/Task 3/Development/Style Frames 1/ps exp/Artboard 5#.png",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/adhd-in-the-media/11.webp",
+     "thumb": "assets/img/adhd-in-the-media/11-600.webp",
+     "orig": "_src/adhd-in-the-media/11-ps-exp__Artboard-9.jpg",
+     "w": 1600,
+     "h": 900,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U24-COVC-T3_Gender-and-ADHD-Health-Data-Film/02_Process/Task 3/Development/Style Frames 1/ps exp/Artboard 9#.png",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/adhd-in-the-media/12.webp",
+     "thumb": "assets/img/adhd-in-the-media/12-600.webp",
+     "orig": "_src/adhd-in-the-media/12-ps-exp__Artboard-1__p007.jpg",
+     "w": 1600,
+     "h": 901,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U24-COVC-T3_Gender-and-ADHD-Health-Data-Film/02_Process/Task 3/Development/Style Frames 1/ps exp/Artboard 1#.pdf",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/adhd-in-the-media/13.webp",
+     "thumb": "assets/img/adhd-in-the-media/13-600.webp",
+     "orig": "_src/adhd-in-the-media/13-ps-exp__Artboard-1__p008.jpg",
+     "w": 1600,
+     "h": 901,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U24-COVC-T3_Gender-and-ADHD-Health-Data-Film/02_Process/Task 3/Development/Style Frames 1/ps exp/Artboard 1#.pdf",
+     "proposed": true
+    }
+   ],
+   "copy": {
+    "brief": "",
+    "insight": "",
+    "pull": "",
+    "response": "",
+    "role": "",
+    "credit": "",
+    "oneLine": "A feminist explainer on gender bias in ADHD research and diagnosis."
+   },
+   "steps": [],
+   "pos": {
+    "v0": [
+     128,
+     452
+    ]
+   }
+  },
+  {
+   "id": "terms",
+   "slug": "terms-of-practice",
+   "n": "E4",
+   "title": "Terms of Practice",
+   "sub": "Manifesto website for digital designers",
+   "year": 2026,
+   "size": "M",
+   "kind": "experiment",
+   "context": "",
+   "team": "",
+   "partOf": "",
+   "link": "https://bryliejw.github.io/terms-of-practice-manifesto/",
+   "inPdf": true,
+   "archive": "",
+   "labels": [
+    "Research Through Design, UTS",
+    "Studio brief"
+   ],
+   "tools": "CLAUDE CODE",
+   "keywords": [
+    "humane-technology",
+    "design-justice",
+    "attention-economy"
+   ],
+   "keywordsProposed": false,
+   "images": [
+    {
+     "src": "assets/img/e4-terms.webp",
+     "w": 1091,
+     "h": 681,
+     "alt": "Terms of Practice manifesto website home page",
+     "caption": "",
+     "from": "v0 site (PDF selection)"
+    },
+    {
+     "src": "assets/img/terms-of-practice/01.webp",
+     "thumb": "assets/img/terms-of-practice/01-600.webp",
+     "orig": "_src/terms-of-practice/01-web__Sites__terms-of-practice-manifesto__index.jpg",
+     "w": 1600,
+     "h": 1000,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "05_PORTFOLIO-BUILD/Website/_scrape/_connectors/web/U26-RTD-T1/web__Sites__terms-of-practice-manifesto__index__desktop.jpg",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/terms-of-practice/02.webp",
+     "thumb": "assets/img/terms-of-practice/02-600.webp",
+     "orig": "_src/terms-of-practice/02-web__Sites__terms-of-practice-manifesto__index.jpg",
+     "w": 739,
+     "h": 1600,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "05_PORTFOLIO-BUILD/Website/_scrape/_connectors/web/U26-RTD-T1/web__Sites__terms-of-practice-manifesto__index__mobile.jpg",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/terms-of-practice/03.webp",
+     "thumb": "assets/img/terms-of-practice/03-600.webp",
+     "orig": "_src/terms-of-practice/03-web__Sites__terms-of-practice-manifesto__manifes.jpg",
+     "w": 1600,
+     "h": 1000,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "05_PORTFOLIO-BUILD/Website/_scrape/_connectors/web/U26-RTD-T1/web__Sites__terms-of-practice-manifesto__manifesto__desktop.jpg",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/terms-of-practice/04.webp",
+     "thumb": "assets/img/terms-of-practice/04-600.webp",
+     "orig": "_src/terms-of-practice/04-web__Sites__terms-of-practice-manifesto__manifes.jpg",
+     "w": 739,
+     "h": 1600,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "05_PORTFOLIO-BUILD/Website/_scrape/_connectors/web/U26-RTD-T1/web__Sites__terms-of-practice-manifesto__manifesto__mobile.jpg",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/terms-of-practice/05.webp",
+     "thumb": "assets/img/terms-of-practice/05-600.webp",
+     "orig": "_src/terms-of-practice/05-web__Sites__terms-of-practice-manifesto__manifes.jpg",
+     "w": 1600,
+     "h": 1000,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "05_PORTFOLIO-BUILD/Website/_scrape/_connectors/web/U26-RTD-T1/web__Sites__terms-of-practice-manifesto__manifesto__scroll1.jpg",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/terms-of-practice/06.webp",
+     "thumb": "assets/img/terms-of-practice/06-600.webp",
+     "orig": "_src/terms-of-practice/06-web__Sites__terms-of-practice-manifesto__manifes.jpg",
+     "w": 1600,
+     "h": 1000,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "05_PORTFOLIO-BUILD/Website/_scrape/_connectors/web/U26-RTD-T1/web__Sites__terms-of-practice-manifesto__manifesto__scroll2.jpg",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/terms-of-practice/07.webp",
+     "thumb": "assets/img/terms-of-practice/07-600.webp",
+     "orig": "_src/terms-of-practice/07-web__Sites__terms-of-practice-manifesto__manifes.jpg",
+     "w": 1600,
+     "h": 1000,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "05_PORTFOLIO-BUILD/Website/_scrape/_connectors/web/U26-RTD-T1/web__Sites__terms-of-practice-manifesto__manifesto__scroll3.jpg",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/terms-of-practice/08.webp",
+     "thumb": "assets/img/terms-of-practice/08-600.webp",
+     "orig": "_src/terms-of-practice/08-Submitted__Wilson_Brylie_87012_Task1_Portfolio.jpg",
+     "w": 1600,
+     "h": 1132,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U26-RTD-T1_Terms-of-Practice-Manifesto/04_Final/Task 1/Submitted/Wilson_Brylie_87012_Task1_Portfolio.pdf",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/terms-of-practice/09.webp",
+     "thumb": "assets/img/terms-of-practice/09-600.webp",
+     "orig": "_src/terms-of-practice/09-Submitted__Wilson_Brylie_87012_Task1_Portfolio.jpg",
+     "w": 1600,
+     "h": 1132,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U26-RTD-T1_Terms-of-Practice-Manifesto/04_Final/Task 1/Submitted/Wilson_Brylie_87012_Task1_Portfolio.pdf",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/terms-of-practice/10.webp",
+     "thumb": "assets/img/terms-of-practice/10-600.webp",
+     "orig": "_src/terms-of-practice/10-export__Wilson_Brylie_87012_Task1_Portfolio-alt.jpg",
+     "w": 1600,
+     "h": 1131,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U26-RTD-T1_Terms-of-Practice-Manifesto/04_Final/Task 1/Source/export/Wilson_Brylie_87012_Task1_Portfolio (alt export - NOT submitted).pdf",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/terms-of-practice/11.webp",
+     "thumb": "assets/img/terms-of-practice/11-600.webp",
+     "orig": "_src/terms-of-practice/11-Submitted__Wilson_Brylie_87012_Task1_Portfolio.jpg",
+     "w": 1600,
+     "h": 1132,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U26-RTD-T1_Terms-of-Practice-Manifesto/04_Final/Task 1/Submitted/Wilson_Brylie_87012_Task1_Portfolio.pdf",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/terms-of-practice/12.webp",
+     "thumb": "assets/img/terms-of-practice/12-600.webp",
+     "orig": "_src/terms-of-practice/12-FINALS__Final_braindump_map__p001.jpg",
+     "w": 1132,
+     "h": 1600,
+     "alt": "",
+     "caption": "",
+     "whiteGround": true,
+     "from": "01_UNI/U26-RTD-T1_Terms-of-Practice-Manifesto/04_Final/Task 1/Process/FINALS/Final_braindump_map.pdf",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/terms-of-practice/13.webp",
+     "thumb": "assets/img/terms-of-practice/13-600.webp",
+     "orig": "_src/terms-of-practice/13-IMG_7643.jpg",
+     "w": 1122,
+     "h": 1600,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "05_PORTFOLIO-BUILD/Website/_scrape/_connectors/photos/RTD_photos/IMG_7643.jpeg",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/terms-of-practice/14.webp",
+     "thumb": "assets/img/terms-of-practice/14-600.webp",
+     "orig": "_src/terms-of-practice/14-IMG_9704.jpg",
+     "w": 1062,
+     "h": 1600,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "05_PORTFOLIO-BUILD/Website/_scrape/_connectors/photos/search_Terms-of-Practice_workshop-and-process/IMG_9704.jpeg",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/terms-of-practice/15.webp",
+     "thumb": "assets/img/terms-of-practice/15-600.webp",
+     "orig": "_src/terms-of-practice/15-IMG_7418.jpg",
+     "w": 1600,
+     "h": 1200,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "05_PORTFOLIO-BUILD/Website/_scrape/_connectors/photos/search_Terms-of-Practice_workshop-and-process/IMG_7418.jpeg",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/terms-of-practice/16.webp",
+     "thumb": "assets/img/terms-of-practice/16-600.webp",
+     "orig": "_src/terms-of-practice/16-web__Sites___Creative-Responses__index__desktop.jpg",
+     "w": 1600,
+     "h": 1000,
+     "alt": "",
+     "caption": "",
+     "whiteGround": true,
+     "from": "05_PORTFOLIO-BUILD/Website/_scrape/_connectors/web/U26-RTD-T1/web__Sites___Creative-Responses__index__desktop.jpg",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/terms-of-practice/17.webp",
+     "thumb": "assets/img/terms-of-practice/17-600.webp",
+     "orig": "_src/terms-of-practice/17-web___Creative-Responses__pages__found-time__des.jpg",
+     "w": 1600,
+     "h": 1000,
+     "alt": "",
+     "caption": "",
+     "whiteGround": true,
+     "from": "05_PORTFOLIO-BUILD/Website/_scrape/_connectors/web/U26-RTD-T1/web___Creative-Responses__pages__found-time__desktop.jpg",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/terms-of-practice/18.webp",
+     "thumb": "assets/img/terms-of-practice/18-600.webp",
+     "orig": "_src/terms-of-practice/18-web___Creative-Responses__pages__periodisation-m.jpg",
+     "w": 1600,
+     "h": 1000,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "05_PORTFOLIO-BUILD/Website/_scrape/_connectors/web/U26-RTD-T1/web___Creative-Responses__pages__periodisation-machine__desktop.jpg",
+     "proposed": true
+    }
+   ],
+   "copy": {
+    "brief": "",
+    "insight": "",
+    "pull": "",
+    "response": "",
+    "role": "",
+    "credit": "I built my wireframe into the live site with AI.",
+    "oneLine": "A manifesto for digital experience designers entering an industry that speaks differently to the one that trained us."
+   },
+   "steps": [],
+   "pos": {
+    "v0": [
+     560,
+     152
+    ]
+   }
+  },
+  {
+   "id": "audio",
+   "slug": "audio-reactive-visual-exploration",
+   "n": "E5",
+   "title": "Audio-reactive visual exploration",
+   "sub": "Creative technology",
+   "year": 2026,
+   "size": "M",
+   "kind": "experiment",
+   "context": "",
+   "team": "",
+   "partOf": "",
+   "link": "",
+   "inPdf": true,
+   "archive": "",
+   "labels": [
+    "Self-directed"
+   ],
+   "tools": "TOUCHDESIGNER",
+   "keywords": [
+    "prototyping",
+    "creative-technology"
+   ],
+   "keywordsProposed": false,
+   "images": [
+    {
+     "src": "assets/img/e5-audio.webp",
+     "w": 717,
+     "h": 403,
+     "alt": "TouchDesigner network with noise visuals",
+     "caption": "",
+     "from": "v0 site (PDF selection)"
+    },
+    {
+     "src": "assets/img/audio-reactive-visual-exploration/01.webp",
+     "thumb": "assets/img/audio-reactive-visual-exploration/01-600.webp",
+     "orig": "_src/audio-reactive-visual-exploration/01-Deftones-Noise_network_capture.jpg",
+     "w": 1600,
+     "h": 900,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "03_SELF-DIRECTED/P-TD_TouchDesigner-experiments/05_Portfolio/Deftones-Noise_network_capture.png",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/audio-reactive-visual-exploration/02.webp",
+     "thumb": "assets/img/audio-reactive-visual-exploration/02-600.webp",
+     "orig": "_src/audio-reactive-visual-exploration/02-Acoustics---Wikiwand_files__Oh_No_Girl_Spectrogr.jpg",
+     "w": 500,
+     "h": 332,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U26-VCEP-AT1_Expanded-Networks-Journal/02_Process/Research/Acoustics - Wikiwand_files/Oh_No_Girl_Spectrogram_2(1).jpg",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/audio-reactive-visual-exploration/03.webp",
+     "thumb": "assets/img/audio-reactive-visual-exploration/03-600.webp",
+     "orig": "_src/audio-reactive-visual-exploration/03-Acoustics---Wikiwand_files__Lindsay-s_Wheel_of_A.jpg",
+     "w": 500,
+     "h": 498,
+     "alt": "",
+     "caption": "",
+     "whiteGround": true,
+     "from": "01_UNI/U26-VCEP-AT1_Expanded-Networks-Journal/02_Process/Research/Acoustics - Wikiwand_files/Lindsay's_Wheel_of_Acoustics(1).svg.png",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/audio-reactive-visual-exploration/04.webp",
+     "thumb": "assets/img/audio-reactive-visual-exploration/04-600.webp",
+     "orig": "_src/audio-reactive-visual-exploration/04-Research__EM_Spectrum_Properties_edit.svg.jpg",
+     "w": 1200,
+     "h": 712,
+     "alt": "",
+     "caption": "",
+     "whiteGround": true,
+     "from": "01_UNI/U26-VCEP-AT1_Expanded-Networks-Journal/02_Process/Research/EM_Spectrum_Properties_edit.svg.png",
+     "proposed": true
+    }
+   ],
+   "copy": {
+    "brief": "",
+    "insight": "",
+    "pull": "",
+    "response": "",
+    "role": "",
+    "credit": "Audio in, noise and edge operators.",
+    "oneLine": "Teaching myself TouchDesigner, building noise visuals that respond to sound in real time."
+   },
+   "steps": [],
+   "pos": {
+    "v0": [
+     470,
+     526
+    ]
+   }
+  },
+  {
+   "id": "stellar-map",
+   "slug": "stellar-map",
+   "n": "",
+   "title": "Stellar Map",
+   "sub": "Spotify playlist constellations",
+   "year": 2026,
+   "size": "S",
+   "kind": "experiment",
+   "context": "Uni · VCEP",
+   "team": "",
+   "partOf": "",
+   "link": "",
+   "inPdf": false,
+   "archive": "U26-VCEP-AT2",
+   "labels": [],
+   "tools": "",
+   "keywords": [
+    "creative-technology",
+    "data-humanism",
+    "information-design",
+    "web-design",
+    "perplexity"
+   ],
+   "keywordsProposed": true,
+   "images": [
+    {
+     "src": "assets/img/stellar-map/01.webp",
+     "thumb": "assets/img/stellar-map/01-600.webp",
+     "orig": "_src/stellar-map/01-stellar1.jpg",
+     "w": 1600,
+     "h": 1000,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U26-VCEP-AT2_Stellar-Map/05_Portfolio/stellar1.png",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/stellar-map/02.webp",
+     "thumb": "assets/img/stellar-map/02-600.webp",
+     "orig": "_src/stellar-map/02-stellar_a.jpg",
+     "w": 1600,
+     "h": 1000,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U26-VCEP-AT2_Stellar-Map/05_Portfolio/stellar_a.png",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/stellar-map/03.webp",
+     "thumb": "assets/img/stellar-map/03-600.webp",
+     "orig": "_src/stellar-map/03-stellar_g.jpg",
+     "w": 1600,
+     "h": 1000,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U26-VCEP-AT2_Stellar-Map/05_Portfolio/stellar_g.png",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/stellar-map/04.webp",
+     "thumb": "assets/img/stellar-map/04-600.webp",
+     "orig": "_src/stellar-map/04-web__Stellar-Network__colour-energy__desktop.jpg",
+     "w": 1600,
+     "h": 1000,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "05_PORTFOLIO-BUILD/Website/_scrape/_connectors/web/U26-VCEP-AT2/web__Stellar-Network__colour-energy__desktop.jpg",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/stellar-map/05.webp",
+     "thumb": "assets/img/stellar-map/05-600.webp",
+     "orig": "_src/stellar-map/05-web__Stellar-Network__colour-valence__desktop.jpg",
+     "w": 1600,
+     "h": 1000,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "05_PORTFOLIO-BUILD/Website/_scrape/_connectors/web/U26-VCEP-AT2/web__Stellar-Network__colour-valence__desktop.jpg",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/stellar-map/06.webp",
+     "thumb": "assets/img/stellar-map/06-600.webp",
+     "orig": "_src/stellar-map/06-web__Stellar-Network__genres__desktop.jpg",
+     "w": 1600,
+     "h": 1000,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "05_PORTFOLIO-BUILD/Website/_scrape/_connectors/web/U26-VCEP-AT2/web__Stellar-Network__genres__desktop.jpg",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/stellar-map/07.webp",
+     "thumb": "assets/img/stellar-map/07-600.webp",
+     "orig": "_src/stellar-map/07-web__Stellar-Network__playlists__desktop.jpg",
+     "w": 1600,
+     "h": 1000,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "05_PORTFOLIO-BUILD/Website/_scrape/_connectors/web/U26-VCEP-AT2/web__Stellar-Network__playlists__desktop.jpg",
+     "proposed": true
+    }
+   ],
+   "copy": {
+    "brief": "",
+    "insight": "",
+    "pull": "",
+    "response": "",
+    "role": "",
+    "credit": "TODO(brylie): Perplexity Computer credit line",
+    "oneLine": ""
+   },
+   "steps": [],
+   "pos": {}
+  },
+  {
+   "id": "stellar-evolution",
+   "slug": "stellar-evolution",
+   "n": "",
+   "title": "Stellar Evolution",
+   "sub": "Website",
+   "year": 2024,
+   "size": "S",
+   "kind": "work",
+   "context": "Uni · Webmedia",
+   "team": "",
+   "partOf": "",
+   "link": "",
+   "inPdf": false,
+   "archive": "U24-WEB-T1-2",
+   "labels": [],
+   "tools": "",
+   "keywords": [
+    "creative-technology",
+    "web-design",
+    "information-design"
+   ],
+   "keywordsProposed": true,
+   "images": [
+    {
+     "src": "assets/img/stellar-evolution/01.webp",
+     "thumb": "assets/img/stellar-evolution/01-600.webp",
+     "orig": "_src/stellar-evolution/01-web__A2_LindaDement_BrylieWilson_24794808__stell.jpg",
+     "w": 1600,
+     "h": 1000,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "05_PORTFOLIO-BUILD/Website/_scrape/_connectors/web/U24-WEB-T1-2/web__A2_LindaDement_BrylieWilson_24794808__stellar_evolution__index__desktop.jpg",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/stellar-evolution/02.webp",
+     "thumb": "assets/img/stellar-evolution/02-600.webp",
+     "orig": "_src/stellar-evolution/02-web__A2_LindaDement_BrylieWilson_24794808__stell.jpg",
+     "w": 1600,
+     "h": 1000,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "05_PORTFOLIO-BUILD/Website/_scrape/_connectors/web/U24-WEB-T1-2/web__A2_LindaDement_BrylieWilson_24794808__stellar_evolution__stellar_evolution__desktop.jpg",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/stellar-evolution/03.webp",
+     "thumb": "assets/img/stellar-evolution/03-600.webp",
+     "orig": "_src/stellar-evolution/03-web__A2_LindaDement_BrylieWilson_24794808__stell.jpg",
+     "w": 739,
+     "h": 1600,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "05_PORTFOLIO-BUILD/Website/_scrape/_connectors/web/U24-WEB-T1-2/web__A2_LindaDement_BrylieWilson_24794808__stellar_evolution__stellar_evolution__mobile.jpg",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/stellar-evolution/04.webp",
+     "thumb": "assets/img/stellar-evolution/04-600.webp",
+     "orig": "_src/stellar-evolution/04-web__exercises__css_grid_layout__index__desktop.jpg",
+     "w": 1600,
+     "h": 1000,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "05_PORTFOLIO-BUILD/Website/_scrape/_connectors/web/U24-WEB-T1-2/web__exercises__css_grid_layout__index__desktop.jpg",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/stellar-evolution/05.webp",
+     "thumb": "assets/img/stellar-evolution/05-600.webp",
+     "orig": "_src/stellar-evolution/05-web__exercises__js_canvas_stars__page1__desktop.jpg",
+     "w": 1600,
+     "h": 1000,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "05_PORTFOLIO-BUILD/Website/_scrape/_connectors/web/U24-WEB-T1-2/web__exercises__js_canvas_stars__page1__desktop.jpg",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/stellar-evolution/06.webp",
+     "thumb": "assets/img/stellar-evolution/06-600.webp",
+     "orig": "_src/stellar-evolution/06-web__exercises__responsive_layout__index__deskto.jpg",
+     "w": 1600,
+     "h": 1000,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "05_PORTFOLIO-BUILD/Website/_scrape/_connectors/web/U24-WEB-T1-2/web__exercises__responsive_layout__index__desktop.jpg",
+     "proposed": true
+    }
+   ],
+   "copy": {
+    "brief": "",
+    "insight": "",
+    "pull": "",
+    "response": "",
+    "role": "",
+    "credit": "",
+    "oneLine": ""
+   },
+   "steps": [],
+   "pos": {},
+   "note": "Site uses stock imagery; screenshots only"
+  },
+  {
+   "id": "sparkchange",
+   "slug": "sparkchange",
+   "n": "",
+   "title": "SparkChange",
+   "sub": "Concept & prototype",
+   "year": 2025,
+   "size": "S",
+   "kind": "work",
+   "context": "Uni · UX",
+   "team": "",
+   "partOf": "",
+   "link": "",
+   "inPdf": false,
+   "archive": "U25-UX-T2",
+   "labels": [],
+   "tools": "",
+   "keywords": [
+    "energy-transition",
+    "ux-ui-design",
+    "prototyping",
+    "brand-identity"
+   ],
+   "keywordsProposed": true,
+   "images": [
+    {
+     "src": "assets/img/sparkchange/01.webp",
+     "thumb": "assets/img/sparkchange/01-600.webp",
+     "orig": "_src/sparkchange/01-Workmark__Asset-33x.jpg",
+     "w": 1600,
+     "h": 372,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U25-UX-T2_SparkChange-Concept-and-Prototype/02_Process/Task 2/Design/Workmark/Asset 33x.png",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/sparkchange/02.webp",
+     "thumb": "assets/img/sparkchange/02-600.webp",
+     "orig": "_src/sparkchange/02-SC_V1__Asset-23x.jpg",
+     "w": 687,
+     "h": 883,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U25-UX-T2_SparkChange-Concept-and-Prototype/02_Process/Task 2/Design/Logo/SC_V1/Asset 23x.png",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/sparkchange/03.webp",
+     "thumb": "assets/img/sparkchange/03-600.webp",
+     "orig": "_src/sparkchange/03-Design__IMG_5277-Large.jpg",
+     "w": 1155,
+     "h": 1280,
+     "alt": "",
+     "caption": "",
+     "whiteGround": true,
+     "from": "01_UNI/U25-UX-T2_SparkChange-Concept-and-Prototype/02_Process/Task 2/Design/IMG_5277 Large.png",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/sparkchange/04.webp",
+     "thumb": "assets/img/sparkchange/04-600.webp",
+     "orig": "_src/sparkchange/04-Proto-1__Page-1_community-initiatives.jpg",
+     "w": 195,
+     "h": 1600,
+     "alt": "",
+     "caption": "",
+     "whiteGround": true,
+     "from": "05_PORTFOLIO-BUILD/Website/_scrape/_connectors/figma/U25-UX-T2/Proto-1__Page-1_community-initiatives.png",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/sparkchange/05.webp",
+     "thumb": "assets/img/sparkchange/05-600.webp",
+     "orig": "_src/sparkchange/05-Proto-1__Page-2_customize-shareable-infographics.jpg",
+     "w": 334,
+     "h": 1600,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "05_PORTFOLIO-BUILD/Website/_scrape/_connectors/figma/U25-UX-T2/Proto-1__Page-2_customize-shareable-infographics.png",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/sparkchange/06.webp",
+     "thumb": "assets/img/sparkchange/06-600.webp",
+     "orig": "_src/sparkchange/06-Proto-1__Page-3_customizable-infographics.jpg",
+     "w": 408,
+     "h": 1600,
+     "alt": "",
+     "caption": "",
+     "whiteGround": true,
+     "from": "05_PORTFOLIO-BUILD/Website/_scrape/_connectors/figma/U25-UX-T2/Proto-1__Page-3_customizable-infographics.png",
+     "proposed": true
+    }
+   ],
+   "copy": {
+    "brief": "",
+    "insight": "",
+    "pull": "",
+    "response": "",
+    "role": "",
+    "credit": "",
+    "oneLine": ""
+   },
+   "steps": [],
+   "pos": {}
+  },
+  {
+   "id": "trust-in-transition",
+   "slug": "trust-in-transition",
+   "n": "",
+   "title": "Trust in Transition",
+   "sub": "Energy transition research folio",
+   "year": 2025,
+   "size": "S",
+   "kind": "work",
+   "context": "Uni · UX",
+   "team": "",
+   "partOf": "",
+   "link": "",
+   "inPdf": false,
+   "archive": "U25-UX-T1",
+   "labels": [],
+   "tools": "",
+   "keywords": [
+    "energy-transition",
+    "design-research",
+    "information-design",
+    "transition-design"
+   ],
+   "keywordsProposed": true,
+   "images": [
+    {
+     "src": "assets/img/trust-in-transition/01.webp",
+     "thumb": "assets/img/trust-in-transition/01-600.webp",
+     "orig": "_src/trust-in-transition/01-04-Flow-Chart__FINAL_Flow.jpg",
+     "w": 1600,
+     "h": 1406,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U25-UX-T1_Energy-Transition-Research-Folio/04_Final/Task 1/Methods/04 Flow Chart/FINAL_Flow.png",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/trust-in-transition/02.webp",
+     "thumb": "assets/img/trust-in-transition/02-600.webp",
+     "orig": "_src/trust-in-transition/02-05-validating__FINAL_Vali.jpg",
+     "w": 1600,
+     "h": 1529,
+     "alt": "",
+     "caption": "",
+     "whiteGround": true,
+     "from": "01_UNI/U25-UX-T1_Energy-Transition-Research-Folio/04_Final/Task 1/Methods/05 validating/FINAL_Vali.png",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/trust-in-transition/03.webp",
+     "thumb": "assets/img/trust-in-transition/03-600.webp",
+     "orig": "_src/trust-in-transition/03-06-Personas__FINAL_Persona.jpg",
+     "w": 1027,
+     "h": 1600,
+     "alt": "",
+     "caption": "",
+     "whiteGround": true,
+     "from": "01_UNI/U25-UX-T1_Energy-Transition-Research-Folio/04_Final/Task 1/Methods/06 Personas/FINAL_Persona.png",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/trust-in-transition/04.webp",
+     "thumb": "assets/img/trust-in-transition/04-600.webp",
+     "orig": "_src/trust-in-transition/04-MISC__Double_Diamond.jpg",
+     "w": 936,
+     "h": 453,
+     "alt": "",
+     "caption": "",
+     "whiteGround": true,
+     "from": "01_UNI/U25-UX-T1_Energy-Transition-Research-Folio/02_Process/MISC/Double_Diamond.png",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/trust-in-transition/05.webp",
+     "thumb": "assets/img/trust-in-transition/05-600.webp",
+     "orig": "_src/trust-in-transition/05-MISC__Semester-Overview.jpg",
+     "w": 1600,
+     "h": 886,
+     "alt": "",
+     "caption": "",
+     "whiteGround": true,
+     "from": "01_UNI/U25-UX-T1_Energy-Transition-Research-Folio/02_Process/MISC/Semester Overview.png",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/trust-in-transition/06.webp",
+     "thumb": "assets/img/trust-in-transition/06-600.webp",
+     "orig": "_src/trust-in-transition/06-MISC__Semester-Overview__p001.jpg",
+     "w": 1600,
+     "h": 900,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U25-UX-T1_Energy-Transition-Research-Folio/02_Process/MISC/Semester Overview.pdf",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/trust-in-transition/07.webp",
+     "thumb": "assets/img/trust-in-transition/07-600.webp",
+     "orig": "_src/trust-in-transition/07-02-Lit-Review__FINAL_LitRev_Opt.jpg",
+     "w": 1600,
+     "h": 1585,
+     "alt": "",
+     "caption": "",
+     "whiteGround": true,
+     "from": "01_UNI/U25-UX-T1_Energy-Transition-Research-Folio/04_Final/Task 1/Methods/02 Lit Review/FINAL_LitRev_Opt.png",
+     "proposed": true
+    }
+   ],
+   "copy": {
+    "brief": "",
+    "insight": "",
+    "pull": "",
+    "response": "",
+    "role": "",
+    "credit": "",
+    "oneLine": ""
+   },
+   "steps": [],
+   "pos": {}
+  },
+  {
+   "id": "wagec-strategy",
+   "slug": "wagec-reverse-brief",
+   "n": "",
+   "title": "WAGEC reverse brief & strategy",
+   "sub": "Research & strategy",
+   "year": 2025,
+   "size": "S",
+   "kind": "work",
+   "context": "Uni · SRD",
+   "team": "Group",
+   "partOf": "days",
+   "link": "",
+   "inPdf": false,
+   "archive": "U25-SRD-T1",
+   "labels": [],
+   "tools": "",
+   "keywords": [
+    "design-research",
+    "design-strategy",
+    "gender-based-violence-prevention"
+   ],
+   "keywordsProposed": true,
+   "images": [
+    {
+     "src": "assets/img/wagec-reverse-brief/01.webp",
+     "thumb": "assets/img/wagec-reverse-brief/01-600.webp",
+     "orig": "_src/wagec-reverse-brief/01-Finals__Livia_WAGEC_Strategy__p001.jpg",
+     "w": 1600,
+     "h": 900,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U25-SRD-T1_WAGEC-Reverse-Brief-and-Strategy/04_Final/AT1/Finals/Livia_WAGEC_Strategy.pdf",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/wagec-reverse-brief/02.webp",
+     "thumb": "assets/img/wagec-reverse-brief/02-600.webp",
+     "orig": "_src/wagec-reverse-brief/02-Finals__Livia_WAGEC_Strategy__p004.jpg",
+     "w": 1600,
+     "h": 900,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U25-SRD-T1_WAGEC-Reverse-Brief-and-Strategy/04_Final/AT1/Finals/Livia_WAGEC_Strategy.pdf",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/wagec-reverse-brief/03.webp",
+     "thumb": "assets/img/wagec-reverse-brief/03-600.webp",
+     "orig": "_src/wagec-reverse-brief/03-Problem__rna-theory-of-change-final-4000px.jpg",
+     "w": 1600,
+     "h": 1131,
+     "alt": "",
+     "caption": "",
+     "whiteGround": true,
+     "from": "01_UNI/U25-SRD-T1_WAGEC-Reverse-Brief-and-Strategy/04_Final/AT1/Research/Problem/rna-theory-of-change-final-4000px.jpg",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/wagec-reverse-brief/04.webp",
+     "thumb": "assets/img/wagec-reverse-brief/04-600.webp",
+     "orig": "_src/wagec-reverse-brief/04-Finals__Livia_WAGEC_Strategy__p028.jpg",
+     "w": 1600,
+     "h": 900,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U25-SRD-T1_WAGEC-Reverse-Brief-and-Strategy/04_Final/AT1/Finals/Livia_WAGEC_Strategy.pdf",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/wagec-reverse-brief/05.webp",
+     "thumb": "assets/img/wagec-reverse-brief/05-600.webp",
+     "orig": "_src/wagec-reverse-brief/05-Finals__Livia_WAGEC_Strategy__p006.jpg",
+     "w": 1600,
+     "h": 900,
+     "alt": "",
+     "caption": "",
+     "whiteGround": true,
+     "from": "01_UNI/U25-SRD-T1_WAGEC-Reverse-Brief-and-Strategy/04_Final/AT1/Finals/Livia_WAGEC_Strategy.pdf",
+     "proposed": true
+    }
+   ],
+   "copy": {
+    "brief": "",
+    "insight": "",
+    "pull": "",
+    "response": "",
+    "role": "",
+    "credit": "",
+    "oneLine": ""
+   },
+   "steps": [],
+   "pos": {}
+  },
+  {
+   "id": "ar-vr-experiments",
+   "slug": "ar-vr-experiments",
+   "n": "",
+   "title": "AR/VR experiments",
+   "sub": "Experiments folio",
+   "year": 2024,
+   "size": "S",
+   "kind": "experiment",
+   "context": "Uni",
+   "team": "Group",
+   "partOf": "symbiosis",
+   "link": "",
+   "inPdf": false,
+   "archive": "U24-VisExp-T2",
+   "labels": [],
+   "tools": "",
+   "keywords": [
+    "creative-technology",
+    "prototyping",
+    "experience-design",
+    "3d"
+   ],
+   "keywordsProposed": true,
+   "images": [
+    {
+     "src": "assets/img/ar-vr-experiments/01.webp",
+     "thumb": "assets/img/ar-vr-experiments/01-600.webp",
+     "orig": "_src/ar-vr-experiments/01-anim-frames__PT_anim0009.jpg",
+     "w": 1600,
+     "h": 1453,
+     "alt": "",
+     "caption": "",
+     "whiteGround": true,
+     "from": "01_UNI/U24-VisExp-T2_Experiments-folio/02_Process/AT2/Experiments/03 - Machine Learning/anim frames/PT_anim0009.png",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/ar-vr-experiments/02.webp",
+     "thumb": "assets/img/ar-vr-experiments/02-600.webp",
+     "orig": "_src/ar-vr-experiments/02-anim-frames__PT_anim0018.jpg",
+     "w": 1600,
+     "h": 1453,
+     "alt": "",
+     "caption": "",
+     "whiteGround": true,
+     "from": "01_UNI/U24-VisExp-T2_Experiments-folio/02_Process/AT2/Experiments/03 - Machine Learning/anim frames/PT_anim0018.png",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/ar-vr-experiments/03.webp",
+     "thumb": "assets/img/ar-vr-experiments/03-600.webp",
+     "orig": "_src/ar-vr-experiments/03-assets__aerial-view-green-coniferous-forest-pine.jpg",
+     "w": 1450,
+     "h": 1600,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U24-VisExp-T2_Experiments-folio/02_Process/AT2/Experiments/01 - VR & AR/A-frame/ve-base-vr/assets/aerial-view-green-coniferous-forest-pines-woods-la-2023-11-27-04-52-48-utc.jpg",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/ar-vr-experiments/04.webp",
+     "thumb": "assets/img/ar-vr-experiments/04-600.webp",
+     "orig": "_src/ar-vr-experiments/04-assets__beautiful-forest-landscape.jpg",
+     "w": 1600,
+     "h": 800,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U24-VisExp-T2_Experiments-folio/02_Process/AT2/Experiments/01 - VR & AR/A-frame/assets/beautiful-forest-landscape.jpg",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/ar-vr-experiments/05.webp",
+     "thumb": "assets/img/ar-vr-experiments/05-600.webp",
+     "orig": "_src/ar-vr-experiments/05-assets__christopher-dresser-garden-armchair--mod.jpg",
+     "w": 1500,
+     "h": 1500,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U24-VisExp-T2_Experiments-folio/02_Process/AT2/Experiments/01 - VR & AR/A-frame/assets/christopher-dresser-garden-armchair--mod-45BHC.jpeg",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/ar-vr-experiments/06.webp",
+     "thumb": "assets/img/ar-vr-experiments/06-600.webp",
+     "orig": "_src/ar-vr-experiments/06-02---Figma-Prototyping__Clipped-01.jpg",
+     "w": 414,
+     "h": 896,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U24-VisExp-T2_Experiments-folio/02_Process/AT2/Experiments/02 - Figma & Prototyping/Clipped 01.png",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/ar-vr-experiments/07.webp",
+     "thumb": "assets/img/ar-vr-experiments/07-600.webp",
+     "orig": "_src/ar-vr-experiments/07-02---Figma-Prototyping__Recording-gif.jpg",
+     "w": 236,
+     "h": 430,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U24-VisExp-T2_Experiments-folio/02_Process/AT2/Experiments/02 - Figma & Prototyping/Recording gif.gif",
+     "proposed": true
+    }
+   ],
+   "copy": {
+    "brief": "",
+    "insight": "",
+    "pull": "",
+    "response": "",
+    "role": "",
+    "credit": "",
+    "oneLine": ""
+   },
+   "steps": [],
+   "pos": {},
+   "note": "VR scene uses stock imagery"
+  },
+  {
+   "id": "ecosystem-engineers",
+   "slug": "ecosystem-engineers",
+   "n": "",
+   "title": "Ecosystem engineers",
+   "sub": "Sprint 1 video",
+   "year": 2024,
+   "size": "S",
+   "kind": "work",
+   "context": "Uni · Narrative, Form & Time",
+   "team": "",
+   "partOf": "",
+   "link": "",
+   "inPdf": false,
+   "archive": "U24-NFAT-S1",
+   "labels": [],
+   "tools": "",
+   "keywords": [
+    "video",
+    "motion-design",
+    "more-than-human-design"
+   ],
+   "keywordsProposed": true,
+   "images": [
+    {
+     "src": "assets/img/ecosystem-engineers/01.webp",
+     "thumb": "assets/img/ecosystem-engineers/01-600.webp",
+     "orig": "_src/ecosystem-engineers/01-AE-Clips__Text-01__t03.jpg",
+     "w": 1600,
+     "h": 900,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U24-NFAT-S1_Sprint-1-Video-Ecosystem-Engineers/04_Final/Sprint 1/Final Docs/AE Clips/Text 01.mov",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/ecosystem-engineers/02.webp",
+     "thumb": "assets/img/ecosystem-engineers/02-600.webp",
+     "orig": "_src/ecosystem-engineers/02-AE-Vids__-Anemone__t01.jpg",
+     "w": 1600,
+     "h": 894,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U24-NFAT-S1_Sprint-1-Video-Ecosystem-Engineers/04_Final/Sprint 1/Final Docs/AE Vids/ Anemone.mp4",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/ecosystem-engineers/03.webp",
+     "thumb": "assets/img/ecosystem-engineers/03-600.webp",
+     "orig": "_src/ecosystem-engineers/03-AE-Vids__-Elegant-mysteries__t01.jpg",
+     "w": 1600,
+     "h": 900,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U24-NFAT-S1_Sprint-1-Video-Ecosystem-Engineers/04_Final/Sprint 1/Final Docs/AE Vids/ Elegant mysteries.mp4",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/ecosystem-engineers/04.webp",
+     "thumb": "assets/img/ecosystem-engineers/04-600.webp",
+     "orig": "_src/ecosystem-engineers/04-AE-Vids__-Glass-without-jelly__t01.jpg",
+     "w": 1600,
+     "h": 900,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U24-NFAT-S1_Sprint-1-Video-Ecosystem-Engineers/04_Final/Sprint 1/Final Docs/AE Vids/ Glass without jelly.mp4",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/ecosystem-engineers/05.webp",
+     "thumb": "assets/img/ecosystem-engineers/05-600.webp",
+     "orig": "_src/ecosystem-engineers/05-AE-Vids__-Lots-of-Jellies-bg__t01.jpg",
+     "w": 1600,
+     "h": 875,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U24-NFAT-S1_Sprint-1-Video-Ecosystem-Engineers/04_Final/Sprint 1/Final Docs/AE Vids/ Lots of Jellies bg.mp4",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/ecosystem-engineers/06.webp",
+     "thumb": "assets/img/ecosystem-engineers/06-600.webp",
+     "orig": "_src/ecosystem-engineers/06-AE-Vids__-Penguins.MP4-Comp-1__t02.jpg",
+     "w": 1600,
+     "h": 900,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U24-NFAT-S1_Sprint-1-Video-Ecosystem-Engineers/04_Final/Sprint 1/Final Docs/AE Vids/ Penguins.MP4 Comp 1.mp4",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/ecosystem-engineers/07.webp",
+     "thumb": "assets/img/ecosystem-engineers/07-600.webp",
+     "orig": "_src/ecosystem-engineers/07-AE-Vids__-Seaweed-small-fish.MOV-Comp-1__t01.jpg",
+     "w": 1597,
+     "h": 1600,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U24-NFAT-S1_Sprint-1-Video-Ecosystem-Engineers/04_Final/Sprint 1/Final Docs/AE Vids/ Seaweed & small fish.MOV Comp 1.mp4",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/ecosystem-engineers/08.webp",
+     "thumb": "assets/img/ecosystem-engineers/08-600.webp",
+     "orig": "_src/ecosystem-engineers/08-AE-Vids__-glass-bg__t02.jpg",
+     "w": 1600,
+     "h": 901,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U24-NFAT-S1_Sprint-1-Video-Ecosystem-Engineers/04_Final/Sprint 1/Final Docs/AE Vids/ glass (bg).mp4",
+     "proposed": true
+    }
+   ],
+   "copy": {
+    "brief": "",
+    "insight": "",
+    "pull": "",
+    "response": "",
+    "role": "",
+    "credit": "",
+    "oneLine": ""
+   },
+   "steps": [],
+   "pos": {}
+  },
+  {
+   "id": "cas-a",
+   "slug": "cas-a-graphic-narrative",
+   "n": "",
+   "title": "Cas A",
+   "sub": "Sprint 2 graphic narrative",
+   "year": 2024,
+   "size": "S",
+   "kind": "work",
+   "context": "Uni · Narrative, Form & Time",
+   "team": "",
+   "partOf": "",
+   "link": "",
+   "inPdf": false,
+   "archive": "U24-NFAT-S2",
+   "labels": [],
+   "tools": "",
+   "keywords": [
+    "illustration",
+    "editorial-design"
+   ],
+   "keywordsProposed": true,
+   "images": [
+    {
+     "src": "assets/img/cas-a-graphic-narrative/01.webp",
+     "thumb": "assets/img/cas-a-graphic-narrative/01-600.webp",
+     "orig": "_src/cas-a-graphic-narrative/01-IMG_3685.jpg",
+     "w": 1600,
+     "h": 1347,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "05_PORTFOLIO-BUILD/Website/_scrape/_connectors/photos/Year-2_SEM-1_Sprint-2-Graphic-Narrative_Process/IMG_3685.jpeg",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/cas-a-graphic-narrative/02.webp",
+     "thumb": "assets/img/cas-a-graphic-narrative/02-600.webp",
+     "orig": "_src/cas-a-graphic-narrative/02-IMG_3699-1.jpg",
+     "w": 1181,
+     "h": 873,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "05_PORTFOLIO-BUILD/Website/_scrape/_connectors/photos/Year-2_SEM-1_Sprint-2-Graphic-Narrative_Process/IMG_3699 (1).jpeg",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/cas-a-graphic-narrative/03.webp",
+     "thumb": "assets/img/cas-a-graphic-narrative/03-600.webp",
+     "orig": "_src/cas-a-graphic-narrative/03-IMG_3699-2.jpg",
+     "w": 1181,
+     "h": 1033,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "05_PORTFOLIO-BUILD/Website/_scrape/_connectors/photos/Year-2_SEM-1_Sprint-2-Graphic-Narrative_Process/IMG_3699 (2).jpeg",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/cas-a-graphic-narrative/04.webp",
+     "thumb": "assets/img/cas-a-graphic-narrative/04-600.webp",
+     "orig": "_src/cas-a-graphic-narrative/04-IMG_3699-3.jpg",
+     "w": 1181,
+     "h": 816,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "05_PORTFOLIO-BUILD/Website/_scrape/_connectors/photos/Year-2_SEM-1_Sprint-2-Graphic-Narrative_Process/IMG_3699 (3).jpeg",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/cas-a-graphic-narrative/05.webp",
+     "thumb": "assets/img/cas-a-graphic-narrative/05-600.webp",
+     "orig": "_src/cas-a-graphic-narrative/05-tc_gn_24794808_Wilson_Brylie_Srint2__tc_gn_24794.jpg",
+     "w": 1600,
+     "h": 1132,
+     "alt": "",
+     "caption": "",
+     "whiteGround": true,
+     "from": "01_UNI/U24-NFAT-S2_Sprint-2-Graphic-Narrative/04_Final/Sprint 2/tc_gn_24794808_Wilson_Brylie_Srint2/tc_gn_24794808_Wilson_Brylie_Sprint2_Process.pdf",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/cas-a-graphic-narrative/06.webp",
+     "thumb": "assets/img/cas-a-graphic-narrative/06-600.webp",
+     "orig": "_src/cas-a-graphic-narrative/06-IMG_3699.jpg",
+     "w": 1181,
+     "h": 855,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "05_PORTFOLIO-BUILD/Website/_scrape/_connectors/photos/Year-2_SEM-1_Sprint-2-Graphic-Narrative_Process/IMG_3699.jpeg",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/cas-a-graphic-narrative/07.webp",
+     "thumb": "assets/img/cas-a-graphic-narrative/07-600.webp",
+     "orig": "_src/cas-a-graphic-narrative/07-IMG_3713.jpg",
+     "w": 498,
+     "h": 1600,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "05_PORTFOLIO-BUILD/Website/_scrape/_connectors/photos/Year-2_SEM-1_Sprint-2-Graphic-Narrative_Process/IMG_3713.jpeg",
+     "proposed": true
+    }
+   ],
+   "copy": {
+    "brief": "",
+    "insight": "",
+    "pull": "",
+    "response": "",
+    "role": "",
+    "credit": "",
+    "oneLine": ""
+   },
+   "steps": [],
+   "pos": {}
+  },
+  {
+   "id": "sprint-3-motion",
+   "slug": "sprint-3-motion",
+   "n": "",
+   "title": "Sprint 3 motion",
+   "sub": "3D & simulation",
+   "year": 2024,
+   "size": "S",
+   "kind": "experiment",
+   "context": "Uni · Narrative, Form & Time",
+   "team": "",
+   "partOf": "",
+   "link": "",
+   "inPdf": false,
+   "archive": "U24-NFAT-S3",
+   "labels": [],
+   "tools": "",
+   "keywords": [
+    "motion-design",
+    "3d"
+   ],
+   "keywordsProposed": true,
+   "images": [
+    {
+     "src": "assets/img/sprint-3-motion/01.webp",
+     "thumb": "assets/img/sprint-3-motion/01-600.webp",
+     "orig": "_src/sprint-3-motion/01-01__material-render-test-10009.jpg",
+     "w": 1600,
+     "h": 900,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U24-NFAT-S3_Sprint-3-Motion/04_Final/Sprint 3/NFAT Motion Sprint 3/01/Process/FINAL SS/Blender Anim/01/material render test 10009.png",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/sprint-3-motion/02.webp",
+     "thumb": "assets/img/sprint-3-motion/02-600.webp",
+     "orig": "_src/sprint-3-motion/02-V1__05.jpg",
+     "w": 1600,
+     "h": 897,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U24-NFAT-S3_Sprint-3-Motion/04_Final/Sprint 3/NFAT Motion Sprint 3/01/Process/FINAL SS/V1/05.jpeg",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/sprint-3-motion/03.webp",
+     "thumb": "assets/img/sprint-3-motion/03-600.webp",
+     "orig": "_src/sprint-3-motion/03-V2__02.jpg",
+     "w": 1600,
+     "h": 896,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U24-NFAT-S3_Sprint-3-Motion/04_Final/Sprint 3/NFAT Motion Sprint 3/01/Process/FINAL SS/V2/02.jpeg",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/sprint-3-motion/04.webp",
+     "thumb": "assets/img/sprint-3-motion/04-600.webp",
+     "orig": "_src/sprint-3-motion/04-in-blob-2-Mesh-948240__model_2_transmittance.jpg",
+     "w": 1600,
+     "h": 1600,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U24-NFAT-S3_Sprint-3-Motion/04_Final/Sprint 3/NFAT Motion Sprint 3/FINAL WIP/in blob 2-Mesh 948240/model_2_transmittance.png",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/sprint-3-motion/05.webp",
+     "thumb": "assets/img/sprint-3-motion/05-600.webp",
+     "orig": "_src/sprint-3-motion/05-slow-Mesh-948321__model_3_metallicRoughness.jpg",
+     "w": 1600,
+     "h": 1600,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U24-NFAT-S3_Sprint-3-Motion/04_Final/Sprint 3/NFAT Motion Sprint 3/FINAL WIP/slow-Mesh 948321/model_3_metallicRoughness.png",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/sprint-3-motion/06.webp",
+     "thumb": "assets/img/sprint-3-motion/06-600.webp",
+     "orig": "_src/sprint-3-motion/06-NFAT-Motion-Sprint-3__gc_md_24794808_Wilson_Bryl.jpg",
+     "w": 1600,
+     "h": 900,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U24-NFAT-S3_Sprint-3-Motion/04_Final/Sprint 3/NFAT Motion Sprint 3/gc_md_24794808_Wilson_Brylie_Sprint3.mov",
+     "proposed": true
+    }
+   ],
+   "copy": {
+    "brief": "",
+    "insight": "",
+    "pull": "",
+    "response": "",
+    "role": "",
+    "credit": "",
+    "oneLine": ""
+   },
+   "steps": [],
+   "pos": {}
+  },
+  {
+   "id": "materials-process",
+   "slug": "materials-and-process",
+   "n": "",
+   "title": "Materials & Process",
+   "sub": "Photography, collage, grid & type",
+   "year": 2023,
+   "size": "S",
+   "kind": "work",
+   "context": "Uni · Politics of Image & Text",
+   "team": "",
+   "partOf": "",
+   "link": "",
+   "inPdf": false,
+   "archive": "U23-POIT-T2",
+   "labels": [],
+   "tools": "",
+   "keywords": [
+    "photography",
+    "typography",
+    "editorial-design"
+   ],
+   "keywordsProposed": true,
+   "images": [
+    {
+     "src": "assets/img/materials-and-process/01.webp",
+     "thumb": "assets/img/materials-and-process/01-600.webp",
+     "orig": "_src/materials-and-process/01-2__IMG_8939-ue.jpg",
+     "w": 1200,
+     "h": 1600,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U23-POIT-T2_Materials-and-Process-Folio/04_Final/Task 2/Photography/Images/Final Images/Experiments/2/IMG_8939 ue.HEIC",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/materials-and-process/02.webp",
+     "thumb": "assets/img/materials-and-process/02-600.webp",
+     "orig": "_src/materials-and-process/02-2__IMG_8985.jpg",
+     "w": 1200,
+     "h": 1600,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U23-POIT-T2_Materials-and-Process-Folio/04_Final/Task 2/Photography/Images/Final Images/Experiments/2/IMG_8985.HEIC",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/materials-and-process/03.webp",
+     "thumb": "assets/img/materials-and-process/03-600.webp",
+     "orig": "_src/materials-and-process/03-3__IMG_8896_jpg.jpg",
+     "w": 1200,
+     "h": 1600,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U23-POIT-T2_Materials-and-Process-Folio/04_Final/Task 2/Photography/Images/Final Images/Experiments/3/IMG_8896_jpg.jpg",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/materials-and-process/04.webp",
+     "thumb": "assets/img/materials-and-process/04-600.webp",
+     "orig": "_src/materials-and-process/04-4__IMG_8922.jpg",
+     "w": 1600,
+     "h": 1538,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U23-POIT-T2_Materials-and-Process-Folio/04_Final/Task 2/Photography/Images/Final Images/Experiments/4/IMG_8922.jpg",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/materials-and-process/05.webp",
+     "thumb": "assets/img/materials-and-process/05-600.webp",
+     "orig": "_src/materials-and-process/05-4__IMG_8957.jpg",
+     "w": 1200,
+     "h": 1600,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U23-POIT-T2_Materials-and-Process-Folio/04_Final/Task 2/Photography/Images/Final Images/Experiments/4/IMG_8957.jpg",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/materials-and-process/06.webp",
+     "thumb": "assets/img/materials-and-process/06-600.webp",
+     "orig": "_src/materials-and-process/06-5__IMG_9001.jpg",
+     "w": 1200,
+     "h": 1600,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U23-POIT-T2_Materials-and-Process-Folio/04_Final/Task 2/Photography/Images/Final Images/Experiments/5/IMG_9001.jpg",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/materials-and-process/07.webp",
+     "thumb": "assets/img/materials-and-process/07-600.webp",
+     "orig": "_src/materials-and-process/07-Gradmap__Artboard-1.jpg",
+     "w": 900,
+     "h": 1600,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U23-POIT-T2_Materials-and-Process-Folio/04_Final/POIT/insta stories/Gradmap/Artboard 1.png",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/materials-and-process/08.webp",
+     "thumb": "assets/img/materials-and-process/08-600.webp",
+     "orig": "_src/materials-and-process/08-Gradmap__Artboard-5.jpg",
+     "w": 900,
+     "h": 1600,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U23-POIT-T2_Materials-and-Process-Folio/04_Final/POIT/insta stories/Gradmap/Artboard 5.png",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/materials-and-process/09.webp",
+     "thumb": "assets/img/materials-and-process/09-600.webp",
+     "orig": "_src/materials-and-process/09-Gradmap__Artboard-9.jpg",
+     "w": 900,
+     "h": 1600,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U23-POIT-T2_Materials-and-Process-Folio/04_Final/POIT/insta stories/Gradmap/Artboard 9.png",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/materials-and-process/10.webp",
+     "thumb": "assets/img/materials-and-process/10-600.webp",
+     "orig": "_src/materials-and-process/10-Insta-Story__5.jpg",
+     "w": 750,
+     "h": 1334,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U23-POIT-T2_Materials-and-Process-Folio/04_Final/Task 2/Grid and type/FINAL/Photos/Insta Story/5.jpg",
+     "proposed": true
+    }
+   ],
+   "copy": {
+    "brief": "",
+    "insight": "",
+    "pull": "",
+    "response": "",
+    "role": "",
+    "credit": "",
+    "oneLine": ""
+   },
+   "steps": [],
+   "pos": {}
+  },
+  {
+   "id": "flame",
+   "slug": "flame-poster-and-zine",
+   "n": "",
+   "title": "Flame",
+   "sub": "Poster & zine",
+   "year": 2023,
+   "size": "S",
+   "kind": "work",
+   "context": "Uni",
+   "team": "",
+   "partOf": "",
+   "link": "",
+   "inPdf": false,
+   "archive": "U23-EOIT-01",
+   "labels": [],
+   "tools": "",
+   "keywords": [
+    "print",
+    "typography",
+    "editorial-design"
+   ],
+   "keywordsProposed": true,
+   "images": [
+    {
+     "src": "assets/img/flame-poster-and-zine/01.webp",
+     "thumb": "assets/img/flame-poster-and-zine/01-600.webp",
+     "orig": "_src/flame-poster-and-zine/01-Flame-Poster-and-Zine__2.jpg",
+     "w": 1078,
+     "h": 1600,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U23-EOIT-01_Flame-poster-and-zine/04_Final/Flame Poster and Zine/2.jpg",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/flame-poster-and-zine/02.webp",
+     "thumb": "assets/img/flame-poster-and-zine/02-600.webp",
+     "orig": "_src/flame-poster-and-zine/02-Flame-Poster-and-Zine__5.jpg",
+     "w": 1078,
+     "h": 1600,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U23-EOIT-01_Flame-poster-and-zine/04_Final/Flame Poster and Zine/5.jpg",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/flame-poster-and-zine/03.webp",
+     "thumb": "assets/img/flame-poster-and-zine/03-600.webp",
+     "orig": "_src/flame-poster-and-zine/03-Flame-Poster-and-Zine__7.jpg",
+     "w": 1078,
+     "h": 1600,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U23-EOIT-01_Flame-poster-and-zine/04_Final/Flame Poster and Zine/7.jpg",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/flame-poster-and-zine/04.webp",
+     "thumb": "assets/img/flame-poster-and-zine/04-600.webp",
+     "orig": "_src/flame-poster-and-zine/04-Flame-Poster-and-Zine__Artboard-1.jpg",
+     "w": 1078,
+     "h": 1600,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U23-EOIT-01_Flame-poster-and-zine/04_Final/Flame Poster and Zine/Artboard 1.jpg",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/flame-poster-and-zine/05.webp",
+     "thumb": "assets/img/flame-poster-and-zine/05-600.webp",
+     "orig": "_src/flame-poster-and-zine/05-Flame-Poster-and-Zine__Cover.jpg",
+     "w": 1077,
+     "h": 1600,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U23-EOIT-01_Flame-poster-and-zine/04_Final/Flame Poster and Zine/Cover.jpg",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/flame-poster-and-zine/06.webp",
+     "thumb": "assets/img/flame-poster-and-zine/06-600.webp",
+     "orig": "_src/flame-poster-and-zine/06-Flame-Poster-and-Zine__Poster.jpg",
+     "w": 1131,
+     "h": 1600,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U23-EOIT-01_Flame-poster-and-zine/04_Final/Flame Poster and Zine/Poster.jpg",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/flame-poster-and-zine/07.webp",
+     "thumb": "assets/img/flame-poster-and-zine/07-600.webp",
+     "orig": "_src/flame-poster-and-zine/07-Flame-Poster-and-Zine__poster-situ.jpg",
+     "w": 1391,
+     "h": 1600,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U23-EOIT-01_Flame-poster-and-zine/04_Final/Flame Poster and Zine/poster situ.jpg",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/flame-poster-and-zine/08.webp",
+     "thumb": "assets/img/flame-poster-and-zine/08-600.webp",
+     "orig": "_src/flame-poster-and-zine/08-Flame-Poster-and-Zine__Zine-Mock.jpg",
+     "w": 1202,
+     "h": 1600,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U23-EOIT-01_Flame-poster-and-zine/05_Portfolio/Flame Poster and Zine/Zine Mock.jpg",
+     "proposed": true
+    }
+   ],
+   "copy": {
+    "brief": "",
+    "insight": "",
+    "pull": "",
+    "response": "",
+    "role": "",
+    "credit": "",
+    "oneLine": ""
+   },
+   "steps": [],
+   "pos": {}
+  },
+  {
+   "id": "futura",
+   "slug": "futura-motion-graphic",
+   "n": "",
+   "title": "Futura",
+   "sub": "Motion graphic",
+   "year": 2023,
+   "size": "S",
+   "kind": "work",
+   "context": "Uni",
+   "team": "",
+   "partOf": "",
+   "link": "",
+   "inPdf": false,
+   "archive": "U23-EOIT-02",
+   "labels": [],
+   "tools": "",
+   "keywords": [
+    "motion-design",
+    "typography"
+   ],
+   "keywordsProposed": true,
+   "images": [
+    {
+     "src": "assets/img/futura-motion-graphic/01.webp",
+     "thumb": "assets/img/futura-motion-graphic/01-600.webp",
+     "orig": "_src/futura-motion-graphic/01-Futura-Animation__Futura-Motion-Graphics__t02.jpg",
+     "w": 1024,
+     "h": 576,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U23-EOIT-02_Futura-motion-graphic/04_Final/Futura Animation/Futura Motion Graphics.mp4",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/futura-motion-graphic/02.webp",
+     "thumb": "assets/img/futura-motion-graphic/02-600.webp",
+     "orig": "_src/futura-motion-graphic/02-Futura-Animation__Futura-Motion-Graphics__t01.jpg",
+     "w": 1024,
+     "h": 576,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U23-EOIT-02_Futura-motion-graphic/04_Final/Futura Animation/Futura Motion Graphics.mp4",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/futura-motion-graphic/03.webp",
+     "thumb": "assets/img/futura-motion-graphic/03-600.webp",
+     "orig": "_src/futura-motion-graphic/03-Futura-Animation__Futura-Storyboards__p001.jpg",
+     "w": 1600,
+     "h": 1132,
+     "alt": "",
+     "caption": "",
+     "whiteGround": true,
+     "from": "01_UNI/U23-EOIT-02_Futura-motion-graphic/04_Final/Futura Animation/Futura Storyboards.pdf",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/futura-motion-graphic/04.webp",
+     "thumb": "assets/img/futura-motion-graphic/04-600.webp",
+     "orig": "_src/futura-motion-graphic/04-IMG_2848.jpg",
+     "w": 1600,
+     "h": 1098,
+     "alt": "",
+     "caption": "",
+     "whiteGround": true,
+     "from": "05_PORTFOLIO-BUILD/Website/_scrape/_connectors/photos/search_Futura_specimen/IMG_2848.jpeg",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/futura-motion-graphic/05.webp",
+     "thumb": "assets/img/futura-motion-graphic/05-600.webp",
+     "orig": "_src/futura-motion-graphic/05-IMG_2854.jpg",
+     "w": 1600,
+     "h": 1131,
+     "alt": "",
+     "caption": "",
+     "whiteGround": true,
+     "from": "05_PORTFOLIO-BUILD/Website/_scrape/_connectors/photos/search_Futura_specimen/IMG_2854.jpeg",
+     "proposed": true
+    }
+   ],
+   "copy": {
+    "brief": "",
+    "insight": "",
+    "pull": "",
+    "response": "",
+    "role": "",
+    "credit": "",
+    "oneLine": ""
+   },
+   "steps": [],
+   "pos": {}
+  },
+  {
+   "id": "allegorical-portrait",
+   "slug": "allegorical-portrait",
+   "n": "",
+   "title": "Allegorical portrait",
+   "sub": "Photography",
+   "year": 2023,
+   "size": "S",
+   "kind": "work",
+   "context": "Uni",
+   "team": "",
+   "partOf": "",
+   "link": "",
+   "inPdf": false,
+   "archive": "U23-EOIT-03",
+   "labels": [],
+   "tools": "",
+   "keywords": [
+    "photography"
+   ],
+   "keywordsProposed": true,
+   "images": [
+    {
+     "src": "assets/img/allegorical-portrait/01.webp",
+     "thumb": "assets/img/allegorical-portrait/01-600.webp",
+     "orig": "_src/allegorical-portrait/01-Final-Portrait.jpg",
+     "w": 1066,
+     "h": 1600,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U23-EOIT-03_Allegorical-portrait/04_Final/Final Portrait.jpg",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/allegorical-portrait/02.webp",
+     "thumb": "assets/img/allegorical-portrait/02-600.webp",
+     "orig": "_src/allegorical-portrait/02-IMG_2236-Enhanced-NR.jpg",
+     "w": 1600,
+     "h": 1558,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U23-EOIT-03_Allegorical-portrait/04_Final/IMG_2236-Enhanced-NR.jpg",
+     "proposed": true
+    }
+   ],
+   "copy": {
+    "brief": "",
+    "insight": "",
+    "pull": "",
+    "response": "",
+    "role": "",
+    "credit": "",
+    "oneLine": ""
+   },
+   "steps": [],
+   "pos": {}
+  },
+  {
+   "id": "book-covers",
+   "slug": "book-cover-series",
+   "n": "",
+   "title": "Book cover series",
+   "sub": "Visual system",
+   "year": 2023,
+   "size": "S",
+   "kind": "work",
+   "context": "Uni",
+   "team": "",
+   "partOf": "",
+   "link": "",
+   "inPdf": false,
+   "archive": "U23-SSVP-T2",
+   "labels": [],
+   "tools": "",
+   "keywords": [
+    "editorial-design",
+    "typography",
+    "systems-thinking"
+   ],
+   "keywordsProposed": true,
+   "images": [
+    {
+     "src": "assets/img/book-cover-series/01.webp",
+     "thumb": "assets/img/book-cover-series/01-600.webp",
+     "orig": "_src/book-cover-series/01-SSVP__Final-imgs9.jpg",
+     "w": 1600,
+     "h": 1600,
+     "alt": "",
+     "caption": "",
+     "whiteGround": true,
+     "from": "01_UNI/U23-SSVP-T2_Book-cover-series/04_Final/SSVP/Final imgs9.jpg",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/book-cover-series/02.webp",
+     "thumb": "assets/img/book-cover-series/02-600.webp",
+     "orig": "_src/book-cover-series/02-wilson_brylie_booksw12__p001.jpg",
+     "w": 1600,
+     "h": 1132,
+     "alt": "",
+     "caption": "",
+     "whiteGround": true,
+     "from": "01_UNI/U23-SSVP-T2_Book-cover-series/04_Final/wilson_brylie_booksw12.pdf",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/book-cover-series/03.webp",
+     "thumb": "assets/img/book-cover-series/03-600.webp",
+     "orig": "_src/book-cover-series/03-wilson_brylie_booksw12__p003.jpg",
+     "w": 1600,
+     "h": 1132,
+     "alt": "",
+     "caption": "",
+     "whiteGround": true,
+     "from": "01_UNI/U23-SSVP-T2_Book-cover-series/04_Final/wilson_brylie_booksw12.pdf",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/book-cover-series/04.webp",
+     "thumb": "assets/img/book-cover-series/04-600.webp",
+     "orig": "_src/book-cover-series/04-wilson_brylie_booksw12__p005.jpg",
+     "w": 1600,
+     "h": 1132,
+     "alt": "",
+     "caption": "",
+     "whiteGround": true,
+     "from": "01_UNI/U23-SSVP-T2_Book-cover-series/04_Final/wilson_brylie_booksw12.pdf",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/book-cover-series/05.webp",
+     "thumb": "assets/img/book-cover-series/05-600.webp",
+     "orig": "_src/book-cover-series/05-A6_aic__thumb.jpg",
+     "w": 512,
+     "h": 442,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "05_PORTFOLIO-BUILD/Website/_scrape/_connectors/adobe/U23-SSVP-T2/A6_aic__thumb.png",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/book-cover-series/06.webp",
+     "thumb": "assets/img/book-cover-series/06-600.webp",
+     "orig": "_src/book-cover-series/06-text_aic__thumb.jpg",
+     "w": 434,
+     "h": 600,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "05_PORTFOLIO-BUILD/Website/_scrape/_connectors/adobe/U23-SSVP-T2/text_aic__thumb.png",
+     "proposed": true
+    }
+   ],
+   "copy": {
+    "brief": "",
+    "insight": "",
+    "pull": "",
+    "response": "",
+    "role": "",
+    "credit": "",
+    "oneLine": ""
+   },
+   "steps": [],
+   "pos": {}
+  },
+  {
+   "id": "ux-ui-guide",
+   "slug": "ux-ui-visual-guide",
+   "n": "",
+   "title": "UX/UI Visual Guide",
+   "sub": "Zine & carousel",
+   "year": 2023,
+   "size": "S",
+   "kind": "work",
+   "context": "Uni · Thinking Through Design",
+   "team": "",
+   "partOf": "",
+   "link": "",
+   "inPdf": false,
+   "archive": "U23-TTD-A2",
+   "labels": [],
+   "tools": "",
+   "keywords": [
+    "editorial-design",
+    "ux-ui-design",
+    "social-content"
+   ],
+   "keywordsProposed": true,
+   "images": [
+    {
+     "src": "assets/img/ux-ui-visual-guide/01.webp",
+     "thumb": "assets/img/ux-ui-visual-guide/01-600.webp",
+     "orig": "_src/ux-ui-visual-guide/01-UX-UI-Guide-1-__Cover.jpg",
+     "w": 1024,
+     "h": 724,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U23-TTD-A2_UX-UI-Visual-Guide/04_Final/TTD/UX UI Guide (1)/Cover.jpg",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/ux-ui-visual-guide/02.webp",
+     "thumb": "assets/img/ux-ui-visual-guide/02-600.webp",
+     "orig": "_src/ux-ui-visual-guide/02-TTD__UI-UX-Guide-Carousel_03.jpg",
+     "w": 1600,
+     "h": 1600,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U23-TTD-A2_UX-UI-Visual-Guide/04_Final/TTD/UI:UX Guide Carousel_03.jpg",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/ux-ui-visual-guide/03.webp",
+     "thumb": "assets/img/ux-ui-visual-guide/03-600.webp",
+     "orig": "_src/ux-ui-visual-guide/03-TTD__UI-UX-Guide-Carousel_04.jpg",
+     "w": 1600,
+     "h": 1600,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U23-TTD-A2_UX-UI-Visual-Guide/04_Final/TTD/UI:UX Guide Carousel_04.jpg",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/ux-ui-visual-guide/04.webp",
+     "thumb": "assets/img/ux-ui-visual-guide/04-600.webp",
+     "orig": "_src/ux-ui-visual-guide/04-1__Artboard-4.jpg",
+     "w": 1080,
+     "h": 1080,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U23-TTD-A2_UX-UI-Visual-Guide/04_Final/TTD/1/Artboard 4.png",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/ux-ui-visual-guide/05.webp",
+     "thumb": "assets/img/ux-ui-visual-guide/05-600.webp",
+     "orig": "_src/ux-ui-visual-guide/05-2__Artboard-4_1.jpg",
+     "w": 1080,
+     "h": 1081,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U23-TTD-A2_UX-UI-Visual-Guide/04_Final/TTD/2/Artboard 4_1.png",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/ux-ui-visual-guide/06.webp",
+     "thumb": "assets/img/ux-ui-visual-guide/06-600.webp",
+     "orig": "_src/ux-ui-visual-guide/06-UX-UI-Guide-1-__Screenshot-2023-11-19-at-11.06.5.jpg",
+     "w": 496,
+     "h": 516,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U23-TTD-A2_UX-UI-Visual-Guide/04_Final/TTD/UX UI Guide (1)/Screenshot 2023-11-19 at 11.06.51 pm.png",
+     "proposed": true
+    }
+   ],
+   "copy": {
+    "brief": "",
+    "insight": "",
+    "pull": "",
+    "response": "",
+    "role": "",
+    "credit": "",
+    "oneLine": ""
+   },
+   "steps": [],
+   "pos": {}
+  },
+  {
+   "id": "cymatics",
+   "slug": "cymatics",
+   "n": "",
+   "title": "Cymatics",
+   "sub": "Research project",
+   "year": 2023,
+   "size": "S",
+   "kind": "work",
+   "context": "Uni",
+   "team": "",
+   "partOf": "",
+   "link": "",
+   "inPdf": false,
+   "archive": "U23-RDH-T2",
+   "labels": [],
+   "tools": "",
+   "keywords": [
+    "design-research",
+    "information-design",
+    "video"
+   ],
+   "keywordsProposed": true,
+   "images": [
+    {
+     "src": "assets/img/cymatics/01.webp",
+     "thumb": "assets/img/cymatics/01-600.webp",
+     "orig": "_src/cymatics/01-RDH__Cymatics-Presentation__t01.jpg",
+     "w": 1600,
+     "h": 900,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U23-RDH-T2_Cymatics-research-project/04_Final/RDH/Cymatics Presentation.mp4",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/cymatics/02.webp",
+     "thumb": "assets/img/cymatics/02-600.webp",
+     "orig": "_src/cymatics/02-RDH__Cymatics-Presentation__t02.jpg",
+     "w": 1600,
+     "h": 900,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U23-RDH-T2_Cymatics-research-project/04_Final/RDH/Cymatics Presentation.mp4",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/cymatics/03.webp",
+     "thumb": "assets/img/cymatics/03-600.webp",
+     "orig": "_src/cymatics/03-RDH__Cymatics-Presentation__t03.jpg",
+     "w": 1600,
+     "h": 900,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U23-RDH-T2_Cymatics-research-project/04_Final/RDH/Cymatics Presentation.mp4",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/cymatics/04.webp",
+     "thumb": "assets/img/cymatics/04-600.webp",
+     "orig": "_src/cymatics/04-RDH__Cymatics-Presentation__t04.jpg",
+     "w": 1600,
+     "h": 900,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U23-RDH-T2_Cymatics-research-project/04_Final/RDH/Cymatics Presentation.mp4",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/cymatics/05.webp",
+     "thumb": "assets/img/cymatics/05-600.webp",
+     "orig": "_src/cymatics/05-RDH_Presentation_DAFymOc0oK0_p02.jpg",
+     "w": 1600,
+     "h": 900,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "05_PORTFOLIO-BUILD/Website/_scrape/_connectors/canva/U23-RDH-T2/RDH_Presentation_DAFymOc0oK0_p02.png",
+     "proposed": true
+    }
+   ],
+   "copy": {
+    "brief": "",
+    "insight": "",
+    "pull": "",
+    "response": "",
+    "role": "",
+    "credit": "",
+    "oneLine": ""
+   },
+   "steps": [],
+   "pos": {}
+  },
+  {
+   "id": "nomad-homes",
+   "slug": "nomad-homes",
+   "n": "",
+   "title": "Nomad Homes",
+   "sub": "Prototyping future worlds",
+   "year": 2024,
+   "size": "S",
+   "kind": "work",
+   "context": "Uni · Design Futuring",
+   "team": "Group",
+   "partOf": "",
+   "link": "",
+   "inPdf": false,
+   "archive": "U24-DFUT-T2",
+   "labels": [],
+   "tools": "",
+   "keywords": [
+    "design-futures",
+    "transition-design",
+    "illustration"
+   ],
+   "keywordsProposed": true,
+   "images": [
+    {
+     "src": "assets/img/nomad-homes/01.webp",
+     "thumb": "assets/img/nomad-homes/01-600.webp",
+     "orig": "_src/nomad-homes/01-canva-exports__DFUT-T2_Nomad-Homes_DF-presentati.jpg",
+     "w": 1600,
+     "h": 900,
+     "alt": "",
+     "caption": "",
+     "whiteGround": true,
+     "from": "01_UNI/U24-DFUT-T2_Nomad-Homes/04_Final/canva-exports/DFUT-T2_Nomad-Homes_DF-presentation.pdf",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/nomad-homes/02.webp",
+     "thumb": "assets/img/nomad-homes/02-600.webp",
+     "orig": "_src/nomad-homes/02-canva-exports__DFUT-T2_Nomad-Homes_DF-presentati.jpg",
+     "w": 1600,
+     "h": 900,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U24-DFUT-T2_Nomad-Homes/04_Final/canva-exports/DFUT-T2_Nomad-Homes_DF-presentation.pdf",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/nomad-homes/03.webp",
+     "thumb": "assets/img/nomad-homes/03-600.webp",
+     "orig": "_src/nomad-homes/03-canva-exports__DFUT-T2_Nomad-Homes_DF-presentati.jpg",
+     "w": 1600,
+     "h": 900,
+     "alt": "",
+     "caption": "",
+     "whiteGround": true,
+     "from": "01_UNI/U24-DFUT-T2_Nomad-Homes/04_Final/canva-exports/DFUT-T2_Nomad-Homes_DF-presentation.pdf",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/nomad-homes/04.webp",
+     "thumb": "assets/img/nomad-homes/04-600.webp",
+     "orig": "_src/nomad-homes/04-canva-exports__DFUT-T2_Nomad-Homes_DF-presentati.jpg",
+     "w": 1600,
+     "h": 900,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U24-DFUT-T2_Nomad-Homes/04_Final/canva-exports/DFUT-T2_Nomad-Homes_DF-presentation.pdf",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/nomad-homes/05.webp",
+     "thumb": "assets/img/nomad-homes/05-600.webp",
+     "orig": "_src/nomad-homes/05-canva-exports__DFUT-T2_Nomad-Homes_DF-presentati.jpg",
+     "w": 1600,
+     "h": 900,
+     "alt": "",
+     "caption": "",
+     "whiteGround": true,
+     "from": "01_UNI/U24-DFUT-T2_Nomad-Homes/04_Final/canva-exports/DFUT-T2_Nomad-Homes_DF-presentation.pdf",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/nomad-homes/06.webp",
+     "thumb": "assets/img/nomad-homes/06-600.webp",
+     "orig": "_src/nomad-homes/06-canva-exports__DFUT-T2_Nomad-Homes_DF-presentati.jpg",
+     "w": 1600,
+     "h": 900,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U24-DFUT-T2_Nomad-Homes/04_Final/canva-exports/DFUT-T2_Nomad-Homes_DF-presentation.pdf",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/nomad-homes/07.webp",
+     "thumb": "assets/img/nomad-homes/07-600.webp",
+     "orig": "_src/nomad-homes/07-canva-exports__DFUT-T2_Nomad-Homes_DF-presentati.jpg",
+     "w": 1600,
+     "h": 900,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U24-DFUT-T2_Nomad-Homes/04_Final/canva-exports/DFUT-T2_Nomad-Homes_DF-presentation.pdf",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/nomad-homes/08.webp",
+     "thumb": "assets/img/nomad-homes/08-600.webp",
+     "orig": "_src/nomad-homes/08-canva-exports__DFUT-T2_Nomad-Homes_DF-presentati.jpg",
+     "w": 1600,
+     "h": 900,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U24-DFUT-T2_Nomad-Homes/04_Final/canva-exports/DFUT-T2_Nomad-Homes_DF-presentation.pdf",
+     "proposed": true
+    }
+   ],
+   "copy": {
+    "brief": "",
+    "insight": "",
+    "pull": "",
+    "response": "",
+    "role": "",
+    "credit": "",
+    "oneLine": ""
+   },
+   "steps": [],
+   "pos": {}
+  },
+  {
+   "id": "politics-image-text",
+   "slug": "politics-of-image-and-text",
+   "n": "",
+   "title": "Politics of Image & Text",
+   "sub": "Web piece",
+   "year": 2023,
+   "size": "S",
+   "kind": "experiment",
+   "context": "Uni · Politics of Image & Text",
+   "team": "",
+   "partOf": "",
+   "link": "",
+   "inPdf": false,
+   "archive": "U23-POIT-T3",
+   "labels": [],
+   "tools": "",
+   "keywords": [
+    "creative-technology",
+    "web-design",
+    "typography"
+   ],
+   "keywordsProposed": true,
+   "images": [
+    {
+     "src": "assets/img/politics-of-image-and-text/01.webp",
+     "thumb": "assets/img/politics-of-image-and-text/01-600.webp",
+     "orig": "_src/politics-of-image-and-text/01-web__web_code__Folio-Website__index__mobile.jpg",
+     "w": 739,
+     "h": 1600,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "05_PORTFOLIO-BUILD/Website/_scrape/_connectors/web/U23-POIT-T3/web__web_code__Folio-Website__index__mobile.jpg",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/politics-of-image-and-text/02.webp",
+     "thumb": "assets/img/politics-of-image-and-text/02-600.webp",
+     "orig": "_src/politics-of-image-and-text/02-Experiments__IMG_2447.jpg",
+     "w": 1077,
+     "h": 1600,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U23-POIT-T3_Politics-of-Image-and-Text-Web/02_Process/Task 3/Experiments/IMG_2447.png",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/politics-of-image-and-text/03.webp",
+     "thumb": "assets/img/politics-of-image-and-text/03-600.webp",
+     "orig": "_src/politics-of-image-and-text/03-Experiments__IMG_9471.jpg",
+     "w": 1166,
+     "h": 1600,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "01_UNI/U23-POIT-T3_Politics-of-Image-and-Text-Web/02_Process/Task 3/Experiments/IMG_9471.JPG",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/politics-of-image-and-text/04.webp",
+     "thumb": "assets/img/politics-of-image-and-text/04-600.webp",
+     "orig": "_src/politics-of-image-and-text/04-Experiments__IMG_9472.jpg",
+     "w": 1153,
+     "h": 1600,
+     "alt": "",
+     "caption": "",
+     "whiteGround": true,
+     "from": "01_UNI/U23-POIT-T3_Politics-of-Image-and-Text-Web/02_Process/Task 3/Experiments/IMG_9472.JPG",
+     "proposed": true
+    }
+   ],
+   "copy": {
+    "brief": "",
+    "insight": "",
+    "pull": "",
+    "response": "",
+    "role": "",
+    "credit": "",
+    "oneLine": ""
+   },
+   "steps": [],
+   "pos": {}
+  },
+  {
+   "id": "falcon",
+   "slug": "falcon-composite",
+   "n": "",
+   "title": "Falcon",
+   "sub": "Photo composite",
+   "year": null,
+   "size": "S",
+   "kind": "experiment",
+   "context": "Personal",
+   "team": "",
+   "partOf": "",
+   "link": "",
+   "inPdf": false,
+   "archive": "P-PHOTO",
+   "labels": [],
+   "tools": "",
+   "keywords": [
+    "photography"
+   ],
+   "keywordsProposed": true,
+   "images": [
+    {
+     "src": "assets/img/falcon-composite/01.webp",
+     "thumb": "assets/img/falcon-composite/01-600.webp",
+     "orig": "_src/falcon-composite/01-puddle_V1.jpg",
+     "w": 1169,
+     "h": 1559,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "03_SELF-DIRECTED/P-PHOTO_Photo-composites/04_Final/puddle_V1.png",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/falcon-composite/02.webp",
+     "thumb": "assets/img/falcon-composite/02-600.webp",
+     "orig": "_src/falcon-composite/02-Falcon_composite_-square-_DAG-NnPQOsM.jpg",
+     "w": 359,
+     "h": 359,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "05_PORTFOLIO-BUILD/Website/_scrape/_connectors/canva/P-PHOTO/Falcon_composite_(square)_DAG-NnPQOsM.png",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/falcon-composite/03.webp",
+     "thumb": "assets/img/falcon-composite/03-600.webp",
+     "orig": "_src/falcon-composite/03-Car__IMG_3564.jpg",
+     "w": 1248,
+     "h": 1560,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "03_SELF-DIRECTED/P-PHOTO_Photo-composites/02_Process/Car/IMG_3564.JPG",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/falcon-composite/04.webp",
+     "thumb": "assets/img/falcon-composite/04-600.webp",
+     "orig": "_src/falcon-composite/04-Car__IMG_3576.jpg",
+     "w": 1170,
+     "h": 1560,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "03_SELF-DIRECTED/P-PHOTO_Photo-composites/02_Process/Car/IMG_3576.JPG",
+     "proposed": true
+    }
+   ],
+   "copy": {
+    "brief": "",
+    "insight": "",
+    "pull": "",
+    "response": "",
+    "role": "",
+    "credit": "",
+    "oneLine": ""
+   },
+   "steps": [],
+   "pos": {}
+  },
+  {
+   "id": "trilogy",
+   "slug": "trilogy-book-cover",
+   "n": "",
+   "title": "Trilogy",
+   "sub": "Book cover experiment",
+   "year": null,
+   "size": "S",
+   "kind": "experiment",
+   "context": "Personal",
+   "team": "",
+   "partOf": "",
+   "link": "",
+   "inPdf": false,
+   "archive": "P-TRILOGY",
+   "labels": [],
+   "tools": "",
+   "keywords": [
+    "editorial-design",
+    "illustration"
+   ],
+   "keywordsProposed": true,
+   "images": [
+    {
+     "src": "assets/img/trilogy-book-cover/01.webp",
+     "thumb": "assets/img/trilogy-book-cover/01-600.webp",
+     "orig": "_src/trilogy-book-cover/01-Experiments__trilogy-final-copy.jpg",
+     "w": 1600,
+     "h": 1600,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "03_SELF-DIRECTED/P-TRILOGY_Trilogy-book-cover-experiment/04_Final/Experiments/trilogy final copy.png",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/trilogy-book-cover/02.webp",
+     "thumb": "assets/img/trilogy-book-cover/02-600.webp",
+     "orig": "_src/trilogy-book-cover/02-Trilogy-Cover_aic__thumb.jpg",
+     "w": 512,
+     "h": 518,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "05_PORTFOLIO-BUILD/Website/_scrape/_connectors/adobe/P-TRILOGY/Trilogy-Cover_aic__thumb.png",
+     "proposed": true
+    }
+   ],
+   "copy": {
+    "brief": "",
+    "insight": "",
+    "pull": "",
+    "response": "",
+    "role": "",
+    "credit": "",
+    "oneLine": ""
+   },
+   "steps": [],
+   "pos": {}
+  },
+  {
+   "id": "event-pieces",
+   "slug": "personal-event-pieces",
+   "n": "",
+   "title": "Event pieces",
+   "sub": "Cards & invitations",
+   "year": 2023,
+   "size": "S",
+   "kind": "work",
+   "context": "Personal",
+   "team": "",
+   "partOf": "",
+   "link": "",
+   "inPdf": false,
+   "archive": "P-EVENTS",
+   "labels": [],
+   "tools": "",
+   "keywords": [
+    "print"
+   ],
+   "keywordsProposed": true,
+   "images": [
+    {
+     "src": "assets/img/personal-event-pieces/01.webp",
+     "thumb": "assets/img/personal-event-pieces/01-600.webp",
+     "orig": "_src/personal-event-pieces/01-FINAL_GoFishin_Cards__p001.jpg",
+     "w": 1600,
+     "h": 1132,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "03_SELF-DIRECTED/P-EVENTS_Personal-Event-Pieces/04_Final/FINAL_GoFishin_Cards.pdf",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/personal-event-pieces/02.webp",
+     "thumb": "assets/img/personal-event-pieces/02-600.webp",
+     "orig": "_src/personal-event-pieces/02-FINAL_GoFishin_Cards__p003.jpg",
+     "w": 1600,
+     "h": 1132,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "03_SELF-DIRECTED/P-EVENTS_Personal-Event-Pieces/04_Final/FINAL_GoFishin_Cards.pdf",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/personal-event-pieces/03.webp",
+     "thumb": "assets/img/personal-event-pieces/03-600.webp",
+     "orig": "_src/personal-event-pieces/03-FINAL_GoFishin_Cards__p005.jpg",
+     "w": 1600,
+     "h": 1132,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "03_SELF-DIRECTED/P-EVENTS_Personal-Event-Pieces/04_Final/FINAL_GoFishin_Cards.pdf",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/personal-event-pieces/04.webp",
+     "thumb": "assets/img/personal-event-pieces/04-600.webp",
+     "orig": "_src/personal-event-pieces/04-FINAL_GoFishin_Cards__p013.jpg",
+     "w": 1600,
+     "h": 1132,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "03_SELF-DIRECTED/P-EVENTS_Personal-Event-Pieces/04_Final/FINAL_GoFishin_Cards.pdf",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/personal-event-pieces/05.webp",
+     "thumb": "assets/img/personal-event-pieces/05-600.webp",
+     "orig": "_src/personal-event-pieces/05-Back_in_1964_Poster_V1_DAGaeG6picA_p01.jpg",
+     "w": 1132,
+     "h": 1600,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "05_PORTFOLIO-BUILD/Website/_scrape/_connectors/canva/P-EVENTS/Back_in_1964_Poster_V1_DAGaeG6picA_p01.png",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/personal-event-pieces/06.webp",
+     "thumb": "assets/img/personal-event-pieces/06-600.webp",
+     "orig": "_src/personal-event-pieces/06-mums-60th__Back-in-1964-Poster-V1-copy__p001.jpg",
+     "w": 1138,
+     "h": 1600,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "03_SELF-DIRECTED/P-EVENTS_Personal-Event-Pieces/02_Process/mums 60th/Back in 1964 Poster V1 copy.pdf",
+     "proposed": true
+    },
+    {
+     "src": "assets/img/personal-event-pieces/07.webp",
+     "thumb": "assets/img/personal-event-pieces/07-600.webp",
+     "orig": "_src/personal-event-pieces/07-mums-60th__Back-in-1964-Poster-V2__p001.jpg",
+     "w": 1145,
+     "h": 1600,
+     "alt": "",
+     "caption": "",
+     "whiteGround": false,
+     "from": "03_SELF-DIRECTED/P-EVENTS_Personal-Event-Pieces/02_Process/mums 60th/Back in 1964 Poster V2.pdf",
+     "proposed": true
+    }
+   ],
+   "copy": {
+    "brief": "",
+    "insight": "",
+    "pull": "",
+    "response": "",
+    "role": "",
+    "credit": "",
+    "oneLine": ""
+   },
+   "steps": [],
+   "pos": {}
+  },
+  {
+   "id": "lbw20",
+   "slug": "lbw20",
+   "n": "",
+   "title": "LBW Trust 20th Anniversary Dinner",
+   "sub": "Event identity & collateral",
+   "year": 2026,
+   "size": "S",
+   "kind": "client",
+   "context": "Client · LBW Trust",
+   "team": "",
+   "partOf": "",
+   "link": "",
+   "inPdf": false,
+   "archive": "C26-LBW-20",
+   "labels": [],
+   "tools": "",
+   "keywords": [
+    "brand-identity",
+    "print",
+    "experience-design",
+    "systems-thinking"
+   ],
+   "keywordsProposed": true,
+   "images": [],
+   "copy": {
+    "brief": "",
+    "insight": "",
+    "pull": "",
+    "response": "",
+    "role": "",
+    "credit": "",
+    "oneLine": ""
+   },
+   "steps": [],
+   "pos": {},
+   "permission": "TODO(brylie): client sign-off needed before images go in this public repo"
+  },
+  {
+   "id": "ashham-advisory",
+   "slug": "ashham-advisory",
+   "n": "",
+   "title": "Ashham Advisory",
+   "sub": "Identity & business card",
+   "year": 2024,
+   "size": "S",
+   "kind": "client",
+   "context": "Client",
+   "team": "",
+   "partOf": "",
+   "link": "",
+   "inPdf": false,
+   "archive": "C24-ASH-AD",
+   "labels": [],
+   "tools": "",
+   "keywords": [
+    "brand-identity",
+    "print"
+   ],
+   "keywordsProposed": true,
+   "images": [],
+   "copy": {
+    "brief": "",
+    "insight": "",
+    "pull": "",
+    "response": "",
+    "role": "",
+    "credit": "",
+    "oneLine": ""
+   },
+   "steps": [],
+   "pos": {},
+   "permission": "TODO(brylie): client sign-off needed before images go in this public repo"
+  },
+  {
+   "id": "ashham-agencies",
+   "slug": "ashham-agencies",
+   "n": "",
+   "title": "Ashham Agencies",
+   "sub": "Identity, email signatures & marketing",
+   "year": 2024,
+   "size": "S",
+   "kind": "client",
+   "context": "Client",
+   "team": "",
+   "partOf": "",
+   "link": "",
+   "inPdf": false,
+   "archive": "C24-ASH-AG",
+   "labels": [],
+   "tools": "",
+   "keywords": [
+    "brand-identity",
+    "campaign"
+   ],
+   "keywordsProposed": true,
+   "images": [],
+   "copy": {
+    "brief": "",
+    "insight": "",
+    "pull": "",
+    "response": "",
+    "role": "",
+    "credit": "",
+    "oneLine": ""
+   },
+   "steps": [],
+   "pos": {},
+   "permission": "TODO(brylie): client sign-off needed before images go in this public repo"
+  },
+  {
+   "id": "secure-books",
+   "slug": "secure-books",
+   "n": "",
+   "title": "Secure Books",
+   "sub": "Brand identity & website",
+   "year": 2024,
+   "size": "S",
+   "kind": "client",
+   "context": "Client · in progress",
+   "team": "",
+   "partOf": "",
+   "link": "",
+   "inPdf": false,
+   "archive": "C24-SB",
+   "labels": [],
+   "tools": "",
+   "keywords": [
+    "brand-identity",
+    "web-design"
+   ],
+   "keywordsProposed": true,
+   "images": [],
+   "copy": {
+    "brief": "",
+    "insight": "",
+    "pull": "",
+    "response": "",
+    "role": "",
+    "credit": "",
+    "oneLine": ""
+   },
+   "steps": [],
+   "pos": {},
+   "permission": "TODO(brylie): client sign-off needed before images go in this public repo"
+  }
+ ],
+ "keywords": [
+  {
+   "id": "humane-technology",
+   "label": "Humane technology",
+   "tier": 1,
+   "pos": {
+    "v0": [
+     720,
+     74
+    ]
+   },
+   "type": "value",
+   "source": "p01",
+   "proposed": true,
+   "used": true
+  },
+  {
+   "id": "design-justice",
+   "label": "Design justice",
+   "tier": 1,
+   "pos": {
+    "v0": [
+     452,
+     242
+    ]
+   },
+   "type": "value",
+   "source": "p01",
+   "proposed": true,
+   "used": true
+  },
+  {
+   "id": "more-than-human-design",
+   "label": "More-than-human design",
+   "tier": 1,
+   "pos": {
+    "v0": [
+     330,
+     724
+    ]
+   },
+   "type": "value",
+   "source": "p01",
+   "proposed": true,
+   "used": true
+  },
+  {
+   "id": "cultural-resistance",
+   "label": "Cultural resistance",
+   "tier": 3,
+   "pos": {
+    "v0": [
+     330,
+     84
+    ]
+   },
+   "type": "topic",
+   "source": "p01",
+   "proposed": true,
+   "used": true
+  },
+  {
+   "id": "visual-culture",
+   "label": "Visual culture",
+   "tier": 2,
+   "pos": {
+    "v0": [
+     116,
+     214
+    ]
+   },
+   "type": "discipline",
+   "source": "p01",
+   "proposed": true,
+   "used": true
+  },
+  {
+   "id": "editorial-design",
+   "label": "Editorial design",
+   "tier": 3,
+   "pos": {
+    "v0": [
+     300,
+     262
+    ]
+   },
+   "type": "discipline",
+   "source": "p01",
+   "proposed": true,
+   "used": true
+  },
+  {
+   "id": "sociology",
+   "label": "Sociology",
+   "tier": 2,
+   "pos": {
+    "v0": [
+     44,
+     300
+    ]
+   },
+   "type": "discipline",
+   "source": "p01",
+   "proposed": true,
+   "used": false
+  },
+  {
+   "id": "psychology",
+   "label": "Psychology",
+   "tier": 2,
+   "pos": {
+    "v0": [
+     64,
+     382
+    ]
+   },
+   "type": "discipline",
+   "source": "p01",
+   "proposed": true,
+   "used": true
+  },
+  {
+   "id": "health-equity",
+   "label": "Health equity",
+   "tier": 3,
+   "pos": {
+    "v0": [
+     44,
+     530
+    ]
+   },
+   "type": "topic",
+   "source": "p01",
+   "proposed": true,
+   "used": true
+  },
+  {
+   "id": "attention-economy",
+   "label": "Attention economy",
+   "tier": 2,
+   "pos": {
+    "v0": [
+     872,
+     200
+    ]
+   },
+   "type": "topic",
+   "source": "p01",
+   "proposed": true,
+   "used": true
+  },
+  {
+   "id": "responsible-ai",
+   "label": "Responsible AI",
+   "tier": 2,
+   "pos": {
+    "v0": [
+     792,
+     272
+    ]
+   },
+   "type": "topic",
+   "source": "p01",
+   "proposed": true,
+   "used": false
+  },
+  {
+   "id": "co-design",
+   "label": "Co-design",
+   "tier": 2,
+   "pos": {
+    "v0": [
+     508,
+     306
+    ]
+   },
+   "type": "discipline",
+   "source": "p01",
+   "proposed": true,
+   "used": false
+  },
+  {
+   "id": "systems-thinking",
+   "label": "Systems thinking",
+   "tier": 1,
+   "pos": {
+    "v0": [
+     900,
+     362
+    ]
+   },
+   "type": "discipline",
+   "source": "p01",
+   "proposed": true,
+   "used": true
+  },
+  {
+   "id": "sociotechnical-systems",
+   "label": "Sociotechnical systems",
+   "tier": 2,
+   "pos": {
+    "v0": [
+     1000,
+     282
+    ]
+   },
+   "type": "topic",
+   "source": "p01",
+   "proposed": true,
+   "used": false
+  },
+  {
+   "id": "interdisciplinary",
+   "label": "Interdisciplinary",
+   "tier": 2,
+   "pos": {
+    "v0": [
+     1060,
+     424
+    ]
+   },
+   "type": "discipline",
+   "source": "p01",
+   "proposed": true,
+   "used": false
+  },
+  {
+   "id": "transition-design",
+   "label": "Transition design",
+   "tier": 2,
+   "pos": {
+    "v0": [
+     960,
+     448
+    ]
+   },
+   "type": "discipline",
+   "source": "p01",
+   "proposed": true,
+   "used": true
+  },
+  {
+   "id": "energy-transition",
+   "label": "Energy transition",
+   "tier": 3,
+   "pos": {
+    "v0": [
+     1110,
+     330
+    ]
+   },
+   "type": "topic",
+   "source": "p01",
+   "proposed": true,
+   "used": true
+  },
+  {
+   "id": "data-humanism",
+   "label": "Data humanism",
+   "tier": 2,
+   "pos": {
+    "v0": [
+     330,
+     346
+    ]
+   },
+   "type": "discipline",
+   "source": "p01",
+   "proposed": true,
+   "used": true
+  },
+  {
+   "id": "information-design",
+   "label": "Information design",
+   "tier": 2,
+   "pos": {
+    "v0": [
+     252,
+     412
+    ]
+   },
+   "type": "discipline",
+   "source": "p01",
+   "proposed": true,
+   "used": true
+  },
+  {
+   "id": "prototyping",
+   "label": "Prototyping",
+   "tier": 3,
+   "pos": {
+    "v0": [
+     392,
+     470
+    ]
+   },
+   "type": "discipline",
+   "source": "p01",
+   "proposed": true,
+   "used": true
+  },
+  {
+   "id": "creative-technology",
+   "label": "Creative technology",
+   "tier": 2,
+   "pos": {
+    "v0": [
+     700,
+     482
+    ]
+   },
+   "type": "discipline",
+   "source": "p01",
+   "proposed": true,
+   "used": true
+  },
+  {
+   "id": "service-design",
+   "label": "Service design",
+   "tier": 2,
+   "pos": {
+    "v0": [
+     1080,
+     462
+    ]
+   },
+   "type": "discipline",
+   "source": "p01",
+   "proposed": true,
+   "used": true
+  },
+  {
+   "id": "workshop-facilitation",
+   "label": "Workshop facilitation",
+   "tier": 3,
+   "pos": {
+    "v0": [
+     1040,
+     586
+    ]
+   },
+   "type": "discipline",
+   "source": "p01",
+   "proposed": true,
+   "used": true
+  },
+  {
+   "id": "experience-design",
+   "label": "Experience design",
+   "tier": 1,
+   "pos": {
+    "v0": [
+     150,
+     576
+    ]
+   },
+   "type": "discipline",
+   "source": "p01",
+   "proposed": true,
+   "used": true
+  },
+  {
+   "id": "museum-interpretation",
+   "label": "Museum interpretation",
+   "tier": 3,
+   "pos": {
+    "v0": [
+     96,
+     690
+    ]
+   },
+   "type": "discipline",
+   "source": "p01",
+   "proposed": true,
+   "used": true
+  },
+  {
+   "id": "critical-making",
+   "label": "Critical making",
+   "tier": 2,
+   "pos": {
+    "v0": [
+     520,
+     700
+    ]
+   },
+   "type": "discipline",
+   "source": "p01",
+   "proposed": true,
+   "used": false
+  },
+  {
+   "id": "design-research",
+   "label": "Design research",
+   "tier": 1,
+   "pos": {
+    "v0": [
+     620,
+     640
+    ]
+   },
+   "type": "discipline",
+   "source": "p01",
+   "proposed": true,
+   "used": true
+  },
+  {
+   "id": "design-strategy",
+   "label": "Design strategy",
+   "tier": 1,
+   "pos": {
+    "v0": [
+     1060,
+     700
+    ]
+   },
+   "type": "discipline",
+   "source": "p01",
+   "proposed": true,
+   "used": true
+  },
+  {
+   "id": "gender-based-violence-prevention",
+   "label": "Gender-based violence prevention",
+   "tier": 3,
+   "pos": {
+    "v0": [
+     800,
+     742
+    ]
+   },
+   "type": "topic",
+   "source": "p01",
+   "proposed": true,
+   "used": true
+  },
+  {
+   "id": "web-design",
+   "label": "Web design",
+   "type": "deliverable",
+   "tier": 3,
+   "source": "seed",
+   "proposed": true,
+   "used": true
+  },
+  {
+   "id": "ux-ui-design",
+   "label": "UX/UI design",
+   "type": "discipline",
+   "tier": 3,
+   "source": "seed",
+   "proposed": true,
+   "used": true
+  },
+  {
+   "id": "brand-identity",
+   "label": "Brand identity",
+   "type": "deliverable",
+   "tier": 3,
+   "source": "seed",
+   "proposed": true,
+   "used": true
+  },
+  {
+   "id": "3d",
+   "label": "3D",
+   "type": "deliverable",
+   "tier": 3,
+   "source": "seed",
+   "proposed": true,
+   "used": true
+  },
+  {
+   "id": "video",
+   "label": "Video",
+   "type": "deliverable",
+   "tier": 3,
+   "source": "seed",
+   "proposed": true,
+   "used": true
+  },
+  {
+   "id": "motion-design",
+   "label": "Motion design",
+   "type": "deliverable",
+   "tier": 3,
+   "source": "seed",
+   "proposed": true,
+   "used": true
+  },
+  {
+   "id": "illustration",
+   "label": "Illustration",
+   "type": "discipline",
+   "tier": 3,
+   "source": "seed",
+   "proposed": true,
+   "used": true
+  },
+  {
+   "id": "photography",
+   "label": "Photography",
+   "type": "discipline",
+   "tier": 3,
+   "source": "seed",
+   "proposed": true,
+   "used": true
+  },
+  {
+   "id": "typography",
+   "label": "Typography",
+   "type": "discipline",
+   "tier": 3,
+   "source": "seed",
+   "proposed": true,
+   "used": true
+  },
+  {
+   "id": "print",
+   "label": "Print",
+   "type": "deliverable",
+   "tier": 3,
+   "source": "seed",
+   "proposed": true,
+   "used": true
+  },
+  {
+   "id": "social-content",
+   "label": "Social content",
+   "type": "deliverable",
+   "tier": 3,
+   "source": "seed",
+   "proposed": true,
+   "used": true
+  },
+  {
+   "id": "design-futures",
+   "label": "Design futures",
+   "type": "discipline",
+   "tier": 3,
+   "source": "seed",
+   "proposed": true,
+   "used": true
+  },
+  {
+   "id": "campaign",
+   "label": "Campaign",
+   "type": "deliverable",
+   "tier": 3,
+   "source": "seed",
+   "proposed": true,
+   "used": true
+  },
+  {
+   "id": "perplexity",
+   "label": "Perplexity",
+   "type": "tool",
+   "tier": 3,
+   "source": "seed",
+   "proposed": true,
+   "used": true
+  }
+ ],
+ "keywordLinks": [
+  [
+   "humane-technology",
+   "responsible-ai"
+  ],
+  [
+   "humane-technology",
+   "attention-economy"
+  ],
+  [
+   "design-justice",
+   "co-design"
+  ],
+  [
+   "more-than-human-design",
+   "critical-making"
+  ],
+  [
+   "visual-culture",
+   "sociology"
+  ],
+  [
+   "sociology",
+   "psychology"
+  ],
+  [
+   "systems-thinking",
+   "sociotechnical-systems"
+  ],
+  [
+   "systems-thinking",
+   "interdisciplinary"
+  ],
+  [
+   "systems-thinking",
+   "transition-design"
+  ],
+  [
+   "data-humanism",
+   "information-design"
+  ],
+  [
+   "prototyping",
+   "creative-technology"
+  ]
+ ]
+}
