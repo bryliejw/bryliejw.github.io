@@ -1,6 +1,7 @@
 // Index: the table of works generated into index.html by scripts/build.mjs.
 // Without JS it is the page; here it becomes a popover from the rail. Rows follow the
-// filter, and picking a row focuses that work on the map.
+// filter, and picking a row opens that work's card on the map. PDF project titles are
+// links to their pages; a plain click opens the card, a modified click follows the link.
 import { closeLayer } from "./rail.js";
 
 export function bindIndex({ filter, select }) {
@@ -8,12 +9,17 @@ export function bindIndex({ filter, select }) {
   const rows = [...document.querySelectorAll("#pop-index tbody tr")];
   for (const tr of rows) {
     const cell = tr.querySelector(".ix-t");
-    const btn = document.createElement("button");
-    btn.type = "button";
-    btn.className = "ix-open";
-    btn.append(...cell.childNodes);
-    cell.append(btn);
-    btn.addEventListener("click", () => {
+    let btn = cell.querySelector(".ix-open");
+    if (!btn) {
+      btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "ix-open";
+      btn.append(...cell.childNodes);
+      cell.append(btn);
+    }
+    btn.addEventListener("click", (e) => {
+      if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+      e.preventDefault();
       closeLayer();
       select(tr.dataset.id);
     });
