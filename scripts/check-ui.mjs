@@ -232,7 +232,7 @@ async function agree(tag) {
       shownKws,
       drawer: num(document.querySelector(".pop-showing").textContent),
       index: num(document.getElementById("index-count").textContent),
-      indexRows: [...document.querySelectorAll("#pop-index tbody tr")].filter((tr) => !tr.hidden).length,
+      indexRows: [...document.querySelectorAll("#pop-index tbody tr[data-id]")].filter((tr) => !tr.hidden).length,
       readoutWorks: num(readout.split("·")[1]),
       readoutKws: num(readout.split("·")[2]),
       workRows: rows.filter((r) => r.work && r.on).reduce((s, r) => s + r.n, 0),

@@ -586,9 +586,11 @@ a.tbtn { color: var(--ink); text-decoration: none; }
 .card-img { margin: 0 0 10px; }
 .card-img img { display: block; width: 100%; height: auto; }
 .card-img.is-white img { outline: 1px solid var(--keyline); outline-offset: -1px; }
-.card[data-level="L"] { width: 360px; }
-.card[data-level="M"] { width: 330px; }
-.card[data-level="S"] { width: 300px; }
+@media (min-width: 720px) {
+  .card[data-level="L"] { width: 360px; }
+  .card[data-level="M"] { width: 330px; }
+  .card[data-level="S"] { width: 300px; }
+}
 .card[data-level="S"] .card-title { font-size: 19px; }
 .strip { display: grid; gap: 4px; margin: 0 0 10px; }
 .strip.n1 { grid-template-columns: 1fr; }

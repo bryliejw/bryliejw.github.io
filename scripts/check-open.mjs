@@ -118,7 +118,7 @@ try {
     expect(s.layer === "card" && s.id === "cypher" && s.card && s.focus === "cypher" && s.depth === 1, `${view}: click: ${JSON.stringify(s)}`);
     expect(await page.evaluate(() => document.querySelector(".preview").hidden), `${view}: preview still showing over the card`);
     const cardText = await page.evaluate(() => document.querySelector(".card").textContent);
-    expect(["CYPHER", "Expand", "Full page", "Editorial design", "A uni assignment"].every((t) => cardText.includes(t)), `${view}: card content: ${cardText.slice(0, 200)}`);
+    expect(["CYPHER", "Expand", "Full page", "Editorial design", "A magazine issue"].every((t) => cardText.includes(t)), `${view}: card content: ${cardText.slice(0, 200)}`);
     const rowsLed = await page.evaluate(() => [...document.querySelectorAll(".card .lrow")].every((r) => r.querySelector("dt svg.ic") && !r.querySelector("dd .lk:not(a)")));
     expect(rowsLed, `${view}: card label rows not led by an icon with links`);
     await besideNode(page, "cypher", `${view} card`);
@@ -306,7 +306,7 @@ try {
     }
     await page.goto(server.url);
     const ix = await page.evaluate(() => ({
-      rows: [...document.querySelectorAll("#pop-index tbody tr")].filter((tr) => tr.offsetParent).length,
+      rows: [...document.querySelectorAll("#pop-index tbody tr[data-id]")].filter((tr) => tr.offsetParent).length,
       pages: [...document.querySelectorAll("#pop-index a.ix-open")].map((a) => a.getAttribute("href")),
     }));
     expect(ix.rows === readData().works.length && ix.pages.join() === "/work/cypher/,/work/16-days-of-real-talk/,/work/symbiosis/", `index without JS: ${JSON.stringify(ix)}`);

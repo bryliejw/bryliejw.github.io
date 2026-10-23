@@ -81,7 +81,7 @@ export function render(svg, graph) {
   const linesG = el("g", { class: "m-lines", "aria-hidden": "true" }, zoomG);
   const nodesG = el("g", { class: "m-nodes" }, zoomG);
 
-  graph.rings = [180, 320, 430, 545].map((r) => el("circle", { r, class: "m-ring" }, deco));
+  graph.rings = [215, 335, 450, 565].map((r) => el("circle", { r, class: "m-ring" }, deco));
 
   for (const g of graph.groups) {
     g.el = el("g", { class: `m-group grp-${g.type}` }, deco);

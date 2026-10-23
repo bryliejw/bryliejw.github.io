@@ -1,9 +1,9 @@
 // Rings layout, computed at load and deterministic. Name at the centre, PDF projects on
-// r 180, Extras on r 320, smaller works on r 430, keywords on r 545 in typed arcs with rotated labels.
+// r 215, Extras on r 335, smaller works on r 450, keywords on r 565 in typed arcs with rotated labels.
 // Group labels sit in the gap before their arc, set along the circle.
 import { separate } from "./layout-force.js";
 
-export const R = { L: 180, M: 320, S: 430, K: 545 };
+export const R = { L: 215, M: 335, S: 450, K: 565 };
 const GAP = 5; // empty keyword slots before each arc, for its group label
 const ITER = 4;
 const TAU = Math.PI * 2;
@@ -69,7 +69,7 @@ export function layoutRings(graph) {
     if (!ws.length) continue;
     const r = R[size];
     const target = ws.map((w) => [w, workAngle(w)]).sort((a, b) => a[1] - b[1] || 0);
-    const gap = { L: Math.PI / 4, M: Math.PI / 4, S: (TAU / ws.length) * 0.9 }[size];
+    const gap = { L: (TAU / ws.length) * 0.8, M: (TAU / ws.length) * 0.7, S: (TAU / ws.length) * 0.9 }[size];
     const spread = spreadAngles(target.map((t) => t[1]), gap);
     target.forEach(([w, _], i) => {
       const a = spread[i];

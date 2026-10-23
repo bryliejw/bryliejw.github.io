@@ -53,11 +53,15 @@ export function layoutEdge(graph, { recompute = false } = {}) {
 
 function geometry(graph, groups) {
   const maxW = (types) => Math.max(...types.flatMap((t) => groups.get(t).kws.map((k) => k.labelW)));
+  // When the bottom strip's labels would not fit in one row, alternate them over two rows.
+  const tools = groups.get(SIDES.bottom[0]);
+  const stagger = tools.kws.reduce((s, k) => s + k.labelW + 18, 0) > W - 2 * M - tools.size.w - 28;
   const topTick = -H / 2 + M + 9 + 8;
-  const bottomTick = H / 2 - M - 3 - 16;
+  const bottomTick = H / 2 - M - 3 - 16 - (stagger ? 13 : 0);
   const leftTick = -W / 2 + M + maxW(SIDES.left) + 9;
   const rightTick = W / 2 - M - maxW(SIDES.right) - 9;
   return {
+    stagger,
     topTick,
     bottomTick,
     leftTick,
@@ -98,6 +102,15 @@ function placeStrips(geo, groups) {
     g.pos.edge = { x: -W / 2 + M, y: baseline, rot: 0 };
     const x0 = -W / 2 + M + g.size.w + 28;
     const x1 = W / 2 - M;
+    if (side === "bottom" && geo.stagger) {
+      // Equal steps, labels alternating between two rows.
+      const step = (x1 - x0) / g.order.length;
+      g.order.forEach((k, i) => {
+        k.pos.edge = [x0 + step * (i + 0.5), tick];
+        k.lab.edge = i % 2 ? { ...KW_SPEC.bottom, y: KW_SPEC.bottom.y + 13 } : KW_SPEC.bottom;
+      });
+      continue;
+    }
     const total = g.order.reduce((s, k) => s + k.labelW, 0);
     const gap = (x1 - x0 - total) / g.order.length;
     let x = x0 + gap / 2;
