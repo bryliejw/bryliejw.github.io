@@ -1,4 +1,4 @@
-// Readout, bottom-left in mono caps: view, works and keywords showing, zoom.
+// Readout, bottom-left in mono caps: view, works and keywords showing, zoom (100% = fitted).
 // Filter results are also announced to screen readers through a polite live region.
 const VIEW_NAME = { edge: "Edge map", force: "Force", rings: "Rings" };
 
@@ -13,7 +13,7 @@ export function bindReadout({ graph, views, filter }) {
       VIEW_NAME[views.state.view],
       `${c.works.shown} of ${c.works.total} works`,
       `${c.kws.shown} of ${c.kws.total} keywords`,
-      `${Math.round(graph.k * 100)}%`,
+      `${Math.round(views.rel() * 100)}%`,
     ].join("  ·  ");
     if (text !== last) out.textContent = last = text;
   }

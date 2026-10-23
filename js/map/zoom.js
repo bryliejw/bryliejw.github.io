@@ -4,7 +4,9 @@
 import { W, H } from "./render.js";
 
 const d3 = window.d3;
-const INSET = { x: 76, top: 56, bottom: 56 };
+// Phones: the rail is a bottom bar, so the sides need little room and the bottom more.
+const phone = window.matchMedia("(max-width: 719px)");
+const insets = () => (phone.matches ? { x: 16, top: 64, bottom: 112 } : { x: 76, top: 64, bottom: 60 });
 
 export function setupZoom(graph, onZoom) {
   const svg = d3.select(graph.svg);
@@ -29,6 +31,7 @@ export function setupZoom(graph, onZoom) {
 
   // Home transform for a content box { x0, y0, x1, y1 } in map units.
   function home(b) {
+    const INSET = insets();
     const rect = graph.svg.getBoundingClientRect();
     const s = Math.min(rect.width / W, rect.height / H) || 1; // CSS px per map unit at k = 1
     const visW = rect.width / s;
@@ -62,6 +65,7 @@ export function setupZoom(graph, onZoom) {
     },
     // Width over height of the area the map can use, clear of the controls and the panel.
     aspect() {
+      const INSET = insets();
       const rect = graph.svg.getBoundingClientRect();
       const w = Math.max(200, rect.width - 2 * INSET.x - right);
       const h = Math.max(200, rect.height - INSET.top - INSET.bottom);

@@ -131,19 +131,30 @@ ${more ? `<button type="button" class="tbtn pg-more" data-act="gallery">${icon("
   }
 
   function parts(n) {
-    const bar = (head) => `<div class="panel-bar">${head}<span class="panel-bar-acts"><button type="button" class="cbtn" data-act="widen" aria-label="Widen the panel" data-tip="Widen" data-key="">${icon("chevrons-left")}</button><button type="button" class="cbtn card-x" data-act="close" aria-label="Close" data-tip="Close" data-key="Esc">${icon("x")}</button></span></div>`;
+    // Sticky bar: number or type, meta, and the title once the title block scrolls away;
+    // previous and next work, widen, close.
+    const bar = (lead, meta, title, steps = "") => `<div class="panel-bar">${lead}<div class="panel-bar-id"><p class="card-meta mono-label">${meta}</p><p class="panel-bar-t" aria-hidden="true">${title}</p></div><span class="panel-bar-acts">${steps}<button type="button" class="cbtn" data-act="widen" aria-label="Widen the panel" data-tip="Widen" data-key="">${icon(wide ? "chevrons-right" : "chevrons-left")}</button><button type="button" class="cbtn card-x" data-act="close" aria-label="Close" data-tip="Close" data-key="Esc">${icon("x")}</button></span></div>`;
+    const stepBtns = (w) => {
+      const list = graph.works.filter((o) => !o.hidden);
+      if (list.length < 2) return "";
+      const i = list.findIndex((o) => o.id === w.id);
+      const prev = list[(i - 1 + list.length) % list.length].data;
+      const next = list[(i + 1) % list.length].data;
+      return `<button type="button" class="cbtn" data-act="prev" aria-label="Previous work: ${esc(prev.title)}" data-tip="${esc(prev.title)}" data-key="[">${icon("chevron-left")}</button><button type="button" class="cbtn" data-act="next" aria-label="Next work: ${esc(next.title)}" data-tip="${esc(next.title)}" data-key="]">${icon("chevron-right")}</button><span class="sep-v" aria-hidden="true"></span>`;
+    };
     if (n.role === "work") {
       const w = n.data;
       const hero = w.images[0];
       return {
-        bar: bar(`${w.size === "S" ? `<span class="card-ic">${icon(KIND_ICON[w.kind])}</span>` : numBlock(w, "card-num")}<p class="card-meta mono-label">${[kindLabel(w), w.year].filter(Boolean).join(" · ")}</p>`),
+        bar: bar(w.size === "S" ? `<span class="card-ic">${icon(KIND_ICON[w.kind])}</span>` : numBlock(w, "card-num"), esc([kindLabel(w), w.year].filter(Boolean).join(" · ")), esc(w.title), stepBtns(w)),
         hero: hero ? imgHTML(hero, { cls: "panel-hero", sizes: `${width}px`, lazy: false }) : "",
         title: esc(w.title),
         sub: [w.sub ? `<p class="card-sub">${esc(w.sub)}</p>` : "", `<p class="panel-meta">${metaHTML(w)}</p>`].join(""),
         acts: [
-          hasPage(w) ? `<button type="button" class="tbtn" data-act="page">${icon("maximize-2")}Full page</button>` : "",
+          hasPage(w) ? `<button type="button" class="tbtn tbtn-primary" data-act="page">${icon("maximize-2")}Full page</button>` : "",
           w.link ? `<a class="tbtn" href="${esc(w.link)}" target="_blank" rel="noopener">${icon("arrow-up-right")}Live site</a>` : "",
         ].join(""),
+        counts: { process: w.steps?.length || 0, connections: w.keywords.length },
         tabs: {
           overview: copyHTML(w) + factsHTML(w, ix, { compact: true }) + gallery(w, 0),
           process: process(w),
@@ -155,7 +166,7 @@ ${more ? `<button type="button" class="tbtn pg-more" data-act="gallery">${icon("
       const k = n.data;
       const works = ix.usedBy.get(k.id);
       return {
-        bar: bar(`<span class="card-ic">${icon(typeIcon(k.type))}</span><p class="card-meta mono-label">${esc(typeName(k.type))}${works.length ? ` · ${works.length} work${works.length === 1 ? "" : "s"}` : ""}</p>`),
+        bar: bar(`<span class="card-ic">${icon(typeIcon(k.type))}</span>`, `${esc(typeName(k.type))}${works.length ? ` · ${works.length} work${works.length === 1 ? "" : "s"}` : ""}`, esc(k.label)),
         hero: "",
         title: `<span class="t-${k.type}">${esc(k.label)}</span>`,
         sub: "",
@@ -166,7 +177,7 @@ ${more ? `<button type="button" class="tbtn pg-more" data-act="gallery">${icon("
     const me = n.data;
     const cut = me.tagline1.lastIndexOf(" and ") + 5;
     return {
-      bar: bar(`<span class="card-ic">${icon("user")}</span><p class="card-meta mono-label">About</p>`),
+      bar: bar(`<span class="card-ic">${icon("user")}</span>`, "About", esc(me.name)),
       hero: "",
       title: esc(me.name),
       sub: `<p class="card-sub">${esc(me.tagline1.slice(0, cut))}<s>${esc(me.tagline1.slice(cut))}</s> <mark>${esc(me.tagline2)}</mark></p>`,
@@ -182,7 +193,8 @@ ${more ? `<button type="button" class="tbtn pg-more" data-act="gallery">${icon("
     const tabBtn = (key) => {
       const [label, ic] = TABS[key];
       const empty = !p.tabs[key];
-      return `<button type="button" role="tab" class="tab" id="tab-${key}" data-tab="${key}" aria-controls="panel-body" aria-selected="${key === tab}" tabindex="${key === tab ? 0 : -1}"${empty ? " disabled" : ""}>${icon(ic)}<span>${label}</span></button>`;
+      const n = p.counts?.[key];
+      return `<button type="button" role="tab" class="tab" id="tab-${key}" data-tab="${key}" aria-controls="panel-body" aria-selected="${key === tab}" tabindex="${key === tab ? 0 : -1}"${empty ? " disabled" : ""}>${icon(ic)}<span>${label}</span>${n ? `<span class="tab-n" aria-hidden="true">${n}</span>` : ""}</button>`;
     };
     box.innerHTML = `<div class="panel-grip" role="separator" aria-orientation="vertical" aria-label="Resize the panel" tabindex="0" title="Drag to resize"></div>
 <div class="panel-scroll">
@@ -197,6 +209,13 @@ ${p.hero}
 </div>`;
     box.dataset.role = n.role;
     setWidth(width, { notify: false });
+    // Once the title scrolls under the bar, the bar shows it.
+    const sc = box.querySelector(".panel-scroll");
+    const t = box.querySelector(".panel-title");
+    const bh = box.querySelector(".panel-bar").offsetHeight;
+    const stuck = () => box.classList.toggle("is-scrolled", sc.scrollTop > t.offsetTop + t.offsetHeight - bh);
+    sc.addEventListener("scroll", stuck, { passive: true });
+    stuck();
   }
 
   function select(key, { focus = false } = {}) {
@@ -227,6 +246,7 @@ ${p.hero}
       return;
     }
     if (act === "widen") return setWidth(wide ? PANEL_W : maxW());
+    if (act === "prev" || act === "next") return on.step(act === "next" ? 1 : -1);
     if (act) on[act]();
   });
 
@@ -276,6 +296,8 @@ ${p.hero}
       return width;
     },
     show(n, { focus = true } = {}) {
+      // A fresh panel, or a different kind of node, starts on Overview.
+      if (box.hidden || node?.role !== n.role) tab = "overview";
       if (node !== n || box.hidden) {
         node = n;
         render(n);

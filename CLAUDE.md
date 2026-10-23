@@ -69,7 +69,10 @@ scripts/              validate.mjs, layout-edge.mjs, icons.mjs, images.mjs, buil
 - Fonts (Google Fonts): Anybody (display: name, titles, numbers; variable width 50..150, weights to 900), Instrument Sans (text and map labels), Geist Mono (caps labels, numbers). Families live in `css/tokens.css` only (`--font-display`, `--font-sans`, `--font-mono`).
 - Colours: paper #FFFFFF, ink #0B0C10, ink-deep #16181F, ink-2 #5C606B, ink-3 #9DA1AC, line and rule #DADCE2, tint #EEEFF2, ultramarine #2A2DF5, blue-light #AAACFF (on ink and blue), blue-soft #E4E5FF. White ground; dark elements are ink.
 - Type: name Anybody 900 34px, width 82; display Anybody 900, line-height .82 to .86, tracking −.03em, width 86 at rest and stretched (130 to 135) on hover for page titles, panel titles and the next band; titles Anybody 800 width 88; body Instrument Sans 16/1.5 at 50 to 60 characters; map labels 11px; mono Geist Mono 10 to 11.5px caps tracked .06em.
-- Shape: sharp corners, 1 to 2px rules, no shadows, no gradients, no card outlines on pages. Floating controls (rail, zoom, site nav) are ink blocks with white icons and mono caps labels; active and hover states in ultramarine.
+- Type scale and spacing are tokens (`--fs-label` 10.5 mono caps, `--fs-num` 11.5 mono numbers, `--fs-xs` 12, `--fs-sm` 13, `--fs-ui` 14, `--fs-body` 15 panel reading, 16 page body, `--fs-h3` 20, `--fs-h2` 28, `--fs-h1` 44; spacing `--sp-1..12` on a 4px base; `--inset` 16 (12 on phones); `--ctl` 36 in a 40 block, `--ctl-sm` 32; 40/44 on coarse pointers). Use them, not raw numbers.
+- Text wrapping: headings and titles `text-wrap: balance`, paragraphs `pretty`, long words break; hyphens only in narrow reading columns; tagline marks and struck words never split.
+- States: ink controls hover to ink-hover with a blue-light icon, press to ultramarine-press, selected view ultramarine, open popover inverted to paper; paper controls hover tint, press line grey, selected ultramarine, disabled ink-3; links underline on hover; focus always a 2px ultramarine ring. Tooltips on ink after 450ms hover, at once on focus, none on touch.
+- Shape: sharp corners, 1 to 2px rules, no shadows, no gradients, no card outlines on pages. Floating controls (rail, zoom, site nav) are ink blocks with white icons and mono caps labels; the selected view in ultramarine (see States).
 - Ultramarine for numbers, the active view, selection, focus lines, topics, links, chips, the next-project band and the view cursor.
 - Full page: back link, "Case 0n / 03" counter, very large title, subtitle, one ruled row (Year, Context, Team, Field, Tools), lead image on tint, pull line with a 4px ultramarine rule, Brief / Insight / Response columns, role, credit and materials, images, process, connections, a two-band fields marquee (ink and ultramarine), then the blue next band. Motion respects prefers-reduced-motion.
 - View cursor: a 72px ultramarine "View" disc over work tiles and images (pointer devices only); clicking an image opens it full size on ink.
@@ -99,11 +102,11 @@ scripts/              validate.mjs, layout-edge.mjs, icons.mjs, images.mjs, buil
 - Left rail, top-left: three view buttons (active = ultramarine fill), divider, Search, Filter (badge with number of hidden groups), Labels & lines, Index, divider, Surprise me.
 - Top-right site nav: About, Folio PDF, Contact (icon + mono caps text on ink; icons only under 760px).
 - Top-left beside the rail: active filter chips (focused node in ultramarine, hidden groups in ink, each with ×, plus Clear all).
-- Bottom-left: readout in mono caps. Bottom-right: zoom in, zoom out, Fit, Key.
-- Popovers are anchored to their control; only one open at a time; Esc or a map click closes.
-- Filter drawer: Work (switch rows with icon, label, count), Keywords (same), Year chips, "x of y works showing", Reset.
+- Bottom-left: readout in mono caps (zoom shown as % of the fitted view; hidden when the panel leaves little map). Bottom-right: zoom in, zoom out, Fit, Key.
+- Popovers are anchored to their control; only one open at a time; Esc, a map click or the close button closes. Each has a title bar (or its own head) and a close button that comes last in the DOM. Under 720px they are bottom sheets above the bar.
+- Filter drawer: Work (switch rows with icon, label, count; groups with no works at all are left out), Keywords (same), Year chips, "x of y works showing", Reset.
 - Labels & lines popover: Labels Auto / All / Off; Lines Auto / All / Projects / On hover. Defaults Auto and Auto (Auto lines: all in Force, projects in Rings, on hover in Edge map).
-- Search palette (/ or Cmd+K): grouped results Work, Keywords, About, each with its icon and a mono meta; arrow keys and Enter; picking a hidden work re-shows it.
+- Search palette (/ or Cmd+K): over a scrim (click it to close); grouped results Work (with thumbnails), Keywords, About, each with a mono meta; arrow keys and Enter; picking a hidden work re-shows it.
 - Key popover: node shapes, keyword icons, shortcuts.
 
 ## Map
@@ -121,21 +124,21 @@ scripts/              validate.mjs, layout-edge.mjs, icons.mjs, images.mjs, buil
 Each level shows a different amount. The words carry S works; L works get the most images and a full page.
 
 1. Hover or focus: preview. L 300px: meta, image, title, subtitle, one line, up to four more thumbnails. M 260px: meta, image, title, subtitle, one line, up to three more thumbnails. S 300px info card: 56px thumb with meta, title and subtitle, then facts (context, team, tools, materials, part of) and tags as plain words.
-2. Click: grow card beside the node, follows it through pan, zoom and view changes until dragged by its header; then it stays where it was dropped for every node until docked (pin-off button). Resizable from the corner on both axes; content reflows by container queries. L and M: number block, title, subtitle, lead image with a thumbnail row that swaps the lead (counter), one paragraph, keyword rows led by type icons as plain text links; Expand, Full page (L only), Live site when linked. S: kind icon, title, subtitle, a strip of up to 4 images, one line, facts, tags; Expand. Keywords and the name (About) also Expand.
-3. Expand: side panel, 460px default, resizable by its grip (380px to 72vw) and widened with the chevrons; the map refits beside it with the selected node visible and its lines in ultramarine. One scroll column: sticky bar (number or kind, meta, widen, close), hero image, title block and actions, sticky tabs. Overview: copy (brief, insight, response, role, credit), facts, gallery of 6 with "Show all N". Process: steps with their process images inline (or process figures with captions). Connections: a mini map of the node and its neighbours from current positions, keyword tree by type with counts, related works by shared keywords. Clicking any node or label while open updates the panel.
+2. Click: grow card beside the node (kept clear of the rail and the site nav), follows it through pan, zoom and view changes until dragged by its header; then it stays where it was dropped for every node until docked (pin-off button). Resizable from the corner on both axes; content reflows by container queries. L and M: number block, title, subtitle, lead image with a thumbnail row that swaps the lead (counter), one paragraph, keyword rows led by type icons as plain text links; Expand (primary), Full page (L only), Live site when linked, previous and next. S: kind icon, title, subtitle, a strip of up to 4 images, one line, facts, tags; Expand. Keywords and the name (About) also Expand.
+3. Expand: side panel, 460px default (a fresh panel, or a different kind of node, opens on Overview), resizable by its grip (380px to 72vw) and widened with the chevrons; the map refits beside it with the selected node visible and its lines in ultramarine. One scroll column: sticky bar (number or kind, meta, and the title once the title block scrolls under it; previous and next work, widen, close), hero image, title block and actions, sticky tabs (underline for the selected tab, counts for Process and Connections). Overview: copy (brief, insight, response, role, credit), facts, gallery of 6 with "Show all N". Process: steps with their process images inline (or process figures with captions). Connections: a mini map of the node and its neighbours from current positions, keyword tree by type with counts, related works by shared keywords. Clicking any node or label while open updates the panel.
 4. Full page (CYPHER, 16 Days of Real Talk, Symbiosis): clip-path circle reveal from the node to /work/<slug>/ in the PDF opener layout; Back returns to the panel.
 
 - Esc closes the top layer: palette, popover, page, panel or card, focus.
 
 ## Shortcuts
 
-1 2 3 views · / or Cmd+K search · F filter · L labels & lines · I index · R surprise · + − 0 zoom · ? key · Esc close. Ignore keys while typing in an input.
+1 2 3 views · / or Cmd+K search · F filter · L labels & lines · I index · R surprise · + − 0 zoom · [ ] previous and next work (card or panel, index order, showing works only) · ? key · Esc close. Ignore keys while typing in an input.
 
 ## Accessibility and performance
 
 - Every node focusable (me, L, M, S, keywords), Enter or Space opens, aria-label like "03 Symbiosis, 2024, project". 2px ultramarine focus ring. AA contrast.
 - prefers-reduced-motion: no animation, no live physics.
-- Under 720px: keyword groups as an accordion above the index, bottom tab bar (map, list, sliders-horizontal, user), card and panel as full-screen sheets.
+- Under 720px: the rail is a bottom bar (views, search, filter, labels and lines, index, surprise), popovers are bottom sheets, zoom keeps Fit and Key (pinch to zoom), the readout steps aside, card and panel are full-screen sheets with previous and next. Under 1024px filter chips leave room for the site nav; under 760px the site nav and key go compact.
 - Lighthouse performance and accessibility at least 90; 60fps with 90 nodes.
 
 ## Checks before every commit

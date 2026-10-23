@@ -22,7 +22,7 @@ export function createCard({ graph, ix, edge, on }) {
 
   const track = follow(box, () => (node && !node.hidden && !pinned ? node : null), { gap: 14, prefer: "right", edge });
 
-  const btn = (act, ic, text, extra = "") => `<button type="button" class="tbtn" data-act="${act}"${extra}>${icon(ic)}${text}</button>`;
+  const btn = (act, ic, text, primary = false) => `<button type="button" class="tbtn${primary ? " tbtn-primary" : ""}" data-act="${act}">${icon(ic)}${text}</button>`;
 
   // Lead image with a scrolling row of every image; a thumbnail swaps into the lead.
   function gallery(w) {
@@ -40,7 +40,7 @@ export function createCard({ graph, ix, edge, on }) {
     let sub = "";
     let media = "";
     let info = "";
-    let acts = btn("expand", "panel-right-open", "Expand");
+    let acts = btn("expand", "panel-right-open", "Expand", true);
     if (n.role === "work") {
       const w = n.data;
       box.dataset.level = w.size;
@@ -59,6 +59,7 @@ export function createCard({ graph, ix, edge, on }) {
         if (hasPage(w)) acts += btn("page", "maximize-2", "Full page");
       }
       if (w.link) acts += `<a class="tbtn" href="${esc(w.link)}" target="_blank" rel="noopener">${icon("arrow-up-right")}Live site</a>`;
+      if (graph.works.filter((o) => !o.hidden).length > 1) acts += `<span class="card-steps"><button type="button" class="cbtn" data-act="prev" aria-label="Previous work" data-tip="Previous" data-key="[">${icon("chevron-left")}</button><button type="button" class="cbtn" data-act="next" aria-label="Next work" data-tip="Next" data-key="]">${icon("chevron-right")}</button></span>`;
     } else if (n.role === "kw") {
       delete box.dataset.level;
       const works = ix.usedBy.get(n.id);
@@ -102,6 +103,7 @@ ${acts ? `<footer class="card-acts">${acts}</footer>` : ""}`;
     }
     const act = e.target.closest("[data-act]")?.dataset.act;
     if (act === "dock") return dockCard();
+    if (act === "prev" || act === "next") return on.step(act === "next" ? 1 : -1);
     if (act) on[act]();
   });
 

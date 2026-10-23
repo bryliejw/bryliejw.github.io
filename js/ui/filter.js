@@ -116,7 +116,7 @@ export function bindFilterDrawer(filter) {
     const input = h("input", { type: "checkbox", role: "switch", class: "sw-input", checked: true, onchange: () => filter.toggle(key) });
     const count = h("span", { class: "sw-count" });
     const label = h("label", { class: "sw-row" }, icon(ic), h("span", { class: "sw-label" }, name), count, input, h("span", { class: "sw", "aria-hidden": "true" }));
-    rows.set(key, { input, count });
+    rows.set(key, { input, count, label });
     return label;
   };
   const yearBtns = filter.years.map((y) =>
@@ -132,8 +132,14 @@ export function bindFilterDrawer(filter) {
     h("footer", { class: "pop-foot" }, showing, reset),
   );
 
+  // A group with nothing in it at all (no client work is published) is left out.
+  const c0 = filter.counts();
+  for (const [key, { label }] of rows) {
+    const [kind, v] = key.split(":");
+    if (!(kind === "work" ? c0.byKind[v] : c0.byType[v])) label.hidden = true;
+  }
   filter.onChange((c) => {
-    for (const [key, { input, count }] of rows) {
+    for (const [key, { input, count, label }] of rows) {
       const [kind, v] = key.split(":");
       input.checked = !filter.isHidden(key);
       count.textContent = kind === "work" ? c.byKind[v] : c.byType[v];

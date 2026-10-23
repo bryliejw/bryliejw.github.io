@@ -14,8 +14,11 @@
   --rule: #dadce2;
   --tint: #eeeff2;
   --keyline: #dadce2;
+  --ink-hover: #262933; /* hover on ink controls */
   /* Ultramarine only for numbers, the active view, selection, focus lines, topics, links, badges. */
   --ultramarine: #2a2df5;
+  --ultramarine-press: #1d20c2;
+  --scrim: rgb(11 12 16 / 0.28);
   --blue-soft: #e4e5ff;
   --blue-light: #aaacff;
 
@@ -58,6 +61,45 @@
   --mono-size-lg: 11.5px;
   --mono-tracking: 0.06em;
   --mono-weight: 600;
+
+  /* Type scale (UI). Mono for labels and numbers only; two mono sizes. */
+  --fs-label: 10.5px;  /* mono caps labels */
+  --fs-num: 11.5px;    /* mono numbers */
+  --fs-xs: 12px;       /* captions, credits */
+  --fs-sm: 13px;       /* secondary text, facts, tags */
+  --fs-ui: 14px;       /* controls, card text, lists */
+  --fs-body: 15px;     /* panel reading text */
+  --fs-lead: 19px;     /* pull lines in cards */
+  --fs-h3: 20px;       /* preview titles */
+  --fs-h2: 28px;       /* card titles */
+  --fs-h1: 44px;       /* panel titles */
+  --lh-tight: 1.1;
+  --lh-snug: 1.3;
+  --lh-text: 1.5;
+  --lh-read: 1.58;
+
+  /* Spacing: 4px base. */
+  --sp-1: 4px;
+  --sp-2: 8px;
+  --sp-3: 12px;
+  --sp-4: 16px;
+  --sp-5: 20px;
+  --sp-6: 24px;
+  --sp-8: 32px;
+  --sp-10: 40px;
+  --sp-12: 48px;
+  --inset: 16px;       /* floating controls from the viewport edge */
+  --ctl: 36px;         /* button inside an ink control block (block = ctl + 4px) */
+  --ctl-block: 40px;
+  --ctl-sm: 32px;      /* text buttons, segmented controls */
+  --chrome-top: 64px;  /* clear of the top controls */
+  --chrome-left: 72px; /* clear of the rail */
+
+  /* Motion */
+  --dur-fast: 120ms;
+  --dur: 200ms;
+  --dur-slow: 320ms;
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
 
   /* Shape: sharp corners, 1px rules, no shadows, no gradients. */
   --radius: 0;

@@ -26,6 +26,7 @@ export const SHORTCUTS = [
   [["I"], "Index"],
   [["R"], "Surprise me"],
   [["+", "−", "0"], "Zoom in, out, fit"],
+  [["[", "]"], "Previous, next work"],
   [["?"], "Key"],
   [["Esc"], "Close"],
 ];

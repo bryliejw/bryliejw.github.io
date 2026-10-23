@@ -1,5 +1,5 @@
 import { VIEWS } from "../map/render.js";
-// Keyboard shortcuts (CLAUDE.md, Shortcuts). Keys are ignored while typing in an input,
+// Keyboard shortcuts (CLAUDE.md, Shortcuts). [ and ] step to the previous or next work in the card or panel. Keys are ignored while typing in an input,
 // except Esc and Cmd+K. Esc closes the top layer: the palette or a popover, then the page,
 // panel or card, then focus. While the full page covers the map, only Esc works.
 import { closeLayer, surprise, togglePopover } from "./rail.js";
@@ -28,6 +28,9 @@ export function bindShortcuts({ views, zoom, palette, select, graph, flow }) {
     else if (k === "+" || k === "=") zoom.by(1.4, 250);
     else if (k === "-" || k === "_") zoom.by(1 / 1.4, 250);
     else if (k === "0") zoom.to(views.home(), 400);
+    else if (k === "[" || k === "]") {
+      if (!flow.step(k === "]" ? 1 : -1)) return;
+    }
     else if (k === "Escape") {
       if (!closeLayer({ restore: true }) && !flow.escape()) {
         if (!views.state.focus) return;

@@ -4,6 +4,7 @@
 // or "above" (the preview: over the node, flipping below). edge(): CSS px covered on the
 // right of the viewport, by the side panel.
 const clamp = (v, lo, hi) => Math.max(lo, Math.min(v, hi));
+const CHROME = { left: 72, top: 64 };
 
 export function follow(box, target, { gap = 12, prefer = "right", edge = () => 0 } = {}) {
   let raf = 0;
@@ -29,14 +30,15 @@ export function follow(box, target, { gap = 12, prefer = "right", edge = () => 0
       x = clamp(r.left, 8, vw - w - 8);
       y = clamp(y, 8, vh - h - 8);
     } else {
+      // Clear of the rail on the left and the site nav on top.
       side = "right";
       x = r.right + gap;
       if (x + w > vw - 16) {
         side = "left";
         x = r.left - gap - w;
       }
-      x = clamp(x, 16, vw - w - 16);
-      y = clamp(r.top, 16, vh - h - 16);
+      x = clamp(x, CHROME.left, vw - w - 16);
+      y = clamp(r.top, CHROME.top, vh - h - 16);
     }
     box.style.left = `${Math.round(x)}px`;
     box.style.top = `${Math.round(y)}px`;

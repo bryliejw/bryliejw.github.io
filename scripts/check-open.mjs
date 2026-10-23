@@ -151,7 +151,7 @@ try {
     s = await state(page);
     expect(s.layer === "panel" && s.id === "symbiosis" && s.url.endsWith("#symbiosis") && s.depth === 2, `${view}: node click with panel: ${JSON.stringify(s)}`);
     expect((await nodeBox(page, "symbiosis")).visible, `${view}: symbiosis hidden behind the panel`);
-    const tabs = await page.evaluate(() => [...document.querySelectorAll(".panel [role='tab']")].map((t) => `${t.textContent}${t.disabled ? "-" : ""}`).join(","));
+    const tabs = await page.evaluate(() => [...document.querySelectorAll(".panel [role='tab']")].map((t) => `${t.querySelector("span").textContent}${t.disabled ? "-" : ""}`).join(","));
     expect(tabs === "Overview,Process,Connections", `${view}: tabs ${tabs}`);
     await page.click(".panel [data-tab='process']");
     const steps = await page.evaluate(() => document.querySelectorAll(".panel .steps li").length);

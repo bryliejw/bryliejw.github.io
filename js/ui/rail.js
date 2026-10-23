@@ -35,6 +35,11 @@ const firstFocusable = (el, sel = "input:checked, input, button, a[href], [tabin
 // left (bottom-right controls, bottom edges aligned) or below (top-right site nav).
 // Kept inside the viewport.
 function place(pop, btn) {
+  // Phones: a bottom sheet, laid out in CSS.
+  if (window.matchMedia("(max-width: 719px)").matches) {
+    for (const k of ["left", "top", "maxHeight"]) pop.style[k] = "";
+    return;
+  }
   const r = btn.getBoundingClientRect();
   const side = btn.dataset.anchor ?? "right";
   pop.style.maxHeight = "";
@@ -60,9 +65,30 @@ function place(pop, btn) {
   pop.style.maxHeight = `${vh - top - 16}px`;
 }
 
+// Every popover gets a title bar (unless it has its own head) and a close button. The
+// close button comes last in the DOM, so the first control inside still takes focus.
+function chrome(pop) {
+  if (!pop.querySelector(":scope > .pop-head, :scope > .pop-bar")) {
+    const bar = document.createElement("div");
+    bar.className = "pop-bar";
+    bar.innerHTML = `<p class="pop-bar-t mono-label">${pop.getAttribute("aria-label") ?? ""}</p>`;
+    pop.prepend(bar);
+  }
+  if (!pop.querySelector(":scope > .pop-x")) {
+    const x = document.createElement("button");
+    x.type = "button";
+    x.className = "cbtn pop-x";
+    x.setAttribute("aria-label", "Close");
+    x.innerHTML = `<svg class="ic" aria-hidden="true"><use href="/assets/icons.svg#x"/></svg>`;
+    x.addEventListener("click", () => closeLayer({ restore: true }));
+    pop.append(x);
+  }
+}
+
 export function togglePopover(btn) {
   const pop = document.getElementById(btn.getAttribute("aria-controls"));
   if (isOpen(pop)) return closeLayer({ restore: true });
+  chrome(pop);
   showLayer(pop, btn);
   place(pop, btn);
 }

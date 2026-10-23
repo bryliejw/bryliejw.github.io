@@ -169,6 +169,7 @@ function createFlow({ graph, data, views, zoom, filter, refit }) {
     back: () => close(),
     next: (id) => go("page", id, "replace"),
     link: (id) => open(id),
+    step: (dir) => step(dir),
   };
   const preview = createPreview({ graph, views, ix, isOpen: (id) => !!cur.layer && cur.id === id, edge: () => (cur.layer === "panel" ? panelW() : 0) });
   const card = createCard({ graph, ix, edge: () => 0, on });
@@ -288,6 +289,17 @@ function createFlow({ graph, data, views, zoom, filter, refit }) {
   function expand() {
     if (cur.layer === "card") go("panel", cur.id, "push");
   }
+  // Previous or next work (index order, showing works only) in the card or panel.
+  function step(dir) {
+    const n = cur.id && graph.byId.get(cur.id);
+    if (!n || n.role !== "work" || (cur.layer !== "card" && cur.layer !== "panel")) return false;
+    const list = graph.works.filter((w) => !w.hidden);
+    const to = list[(list.indexOf(n) + dir + list.length) % list.length];
+    if (!to || to === n) return false;
+    if (cur.layer === "card" && !narrow.matches) zoom.centre([to.x, to.y], reduced.matches ? 0 : 400);
+    go(cur.layer, to.id, "replace");
+    return true;
+  }
   // The panel straight from the map (About).
   function openPanel(id) {
     if (cur.layer === "panel" || cur.layer === "page") go("panel", id, "replace");
@@ -359,6 +371,7 @@ function createFlow({ graph, data, views, zoom, filter, refit }) {
     open,
     panel: openPanel,
     close,
+    step,
     inset,
     get state() {
       return { ...cur };

@@ -5,6 +5,7 @@ import { GROUPS, kindWord } from "../map/render.js";
 import { WORK_GROUPS } from "./filter.js";
 import { closeLayer, isOpen, showLayer } from "./rail.js";
 import { h, icon } from "./dom.js";
+import { src } from "../open/content.js";
 
 export function bindPalette({ graph, data, filter, select, actions }) {
   const box = document.getElementById("palette");
@@ -18,6 +19,7 @@ export function bindPalette({ graph, data, filter, select, actions }) {
       group: "Work",
       icon: WORK_GROUPS.find((g) => g.kind === w.data.kind).icon,
       n: w.data.n,
+      thumb: w.data.images[0] ? src(w.data.images[0].thumb ?? w.data.images[0].src) : null,
       label: w.data.title,
       meta: () => [w.data.year, kindWord(w.data), w.hidden && "hidden"].filter(Boolean).join(" · "),
       text: [w.data.n, w.data.title, w.data.sub, w.data.year].join(" "),
@@ -74,7 +76,7 @@ export function bindPalette({ graph, data, filter, select, actions }) {
       list.append(
         h("div", { role: "group", "aria-labelledby": head.id }, head, its.map((it) =>
           h("div", { role: "option", id: it.id, class: "pal-opt", "aria-selected": "false", onpointermove: () => setActive(shown.indexOf(it)), onclick: () => pick(it) },
-            icon(it.icon),
+            it.thumb ? h("img", { class: "pal-thumb", src: it.thumb, alt: "", loading: "lazy" }) : icon(it.icon),
             it.n ? h("span", { class: "pal-n" }, it.n) : null,
             h("span", { class: "pal-label" }, it.label),
             h("span", { class: "pal-meta mono-label" }, it.meta()),
@@ -123,6 +125,10 @@ export function bindPalette({ graph, data, filter, select, actions }) {
     }
   });
   btn.addEventListener("click", () => toggle());
+  // A click on the scrim closes the palette.
+  box.addEventListener("pointerdown", (e) => {
+    if (e.target === box) closeLayer({ restore: true });
+  });
 
   function open() {
     input.value = "";

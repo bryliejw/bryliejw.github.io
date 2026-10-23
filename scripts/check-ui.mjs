@@ -114,7 +114,7 @@ try {
   await press("f");
   await press("Tab"); // first switch is focused on open: move to Extras / experiments
   await press("Space");
-  for (let i = 0; i < 4; i++) await press("Tab"); // Works, Clients, Disciplines, Deliverables
+  for (let i = 0; i < 3; i++) await press("Tab"); // Works, Disciplines, Deliverables (no client work, so no Clients row)
   await press("Space");
   const year = page.locator(".ychip", { hasText: "2024" });
   await year.focus();
