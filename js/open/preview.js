@@ -15,6 +15,7 @@ export function createPreview({ graph, views, isOpen, edge, ix }) {
 
   function content(n) {
     delete box.dataset.level;
+    box.dataset.kw = n.role === "kw" ? n.type : "";
     if (n.role === "me") return `<p class="pv-meta mono-label">${icon("user")}About</p><p class="pv-title">${esc(n.data.name)}</p>`;
     if (n.role === "kw") {
       const works = n.edges.filter((e) => e.type === "kw").length;

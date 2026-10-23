@@ -93,6 +93,19 @@ export function layoutForce(graph, { aspect = 1.6 } = {}) {
     d.y /= f;
   }
   separate(items, PASSES);
+  // Separation pushes the layout taller; stretch it back out to the area's width.
+  for (let k = 0; k < 3; k++) {
+    const bx = items.map((d) => d.x + d.fp.x);
+    const bx1 = items.map((d) => d.x + d.fp.x + d.fp.w);
+    const by = items.map((d) => d.y + d.fp.y);
+    const by1 = items.map((d) => d.y + d.fp.y + d.fp.h);
+    const a1 = (Math.max(...bx1) - Math.min(...bx)) / Math.max(1, Math.max(...by1) - Math.min(...by));
+    const want = Math.max(0.5, Math.min(3, aspect)) * 1.06;
+    if (a1 >= want * 0.97) break;
+    const g = Math.min(1.35, want / a1);
+    for (const d of items) if (!d.fixed) d.x *= g;
+    separate(items, 80);
+  }
   for (const d of items) {
     d.n.pos.force = [Math.round(d.x * 10) / 10, Math.round(d.y * 10) / 10];
     if (d.n.role === "work") d.n.lab.force = 1;

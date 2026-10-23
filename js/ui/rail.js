@@ -79,6 +79,8 @@ function chrome(pop) {
     x.type = "button";
     x.className = "cbtn pop-x";
     x.setAttribute("aria-label", "Close");
+    x.dataset.tip = "Close";
+    x.dataset.key = "Esc";
     x.innerHTML = `<svg class="ic" aria-hidden="true"><use href="/assets/icons.svg#x"/></svg>`;
     x.addEventListener("click", () => closeLayer({ restore: true }));
     pop.append(x);

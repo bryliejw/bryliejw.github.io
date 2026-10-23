@@ -1,0 +1,95 @@
+{
+  "_about": "Presentation only, no copy. frames: the shape of a work's tile on the map (book, cards, torn, arch, browser, screen; any other work is a plain tile in its cover image's proportions). showcases: the interactive piece shown first in a project's panel and page. Labels are interface words. Derived images come from scripts/derive.mjs.",
+  "frames": {
+    "cypher": {
+      "shape": "book",
+      "src": "assets/img/cypher/book/front.webp",
+      "aspect": 0.741
+    },
+    "16-days-of-real-talk": {
+      "shape": "cards",
+      "aspect": 1.405,
+      "cards": [
+        "assets/img/16-days-of-real-talk/cards/card-22.webp",
+        "assets/img/16-days-of-real-talk/cards/card-11.webp",
+        "assets/img/16-days-of-real-talk/cards/card-30.webp"
+      ]
+    },
+    "adhd-in-the-media": {
+      "shape": "torn"
+    },
+    "symbiosis": {
+      "shape": "arch",
+      "aspect": 0.8
+    },
+    "terms-of-practice": {
+      "shape": "browser"
+    },
+    "ibm-qt-hotels": {
+      "shape": "screen"
+    },
+    "collab": {
+      "shape": "screen"
+    },
+    "audio-reactive-visual-exploration": {
+      "shape": "screen"
+    }
+  },
+  "showcases": {
+    "cypher": {
+      "type": "flipbook",
+      "books": [
+        {
+          "label": "Magazine",
+          "front": "assets/img/cypher/book/front.webp",
+          "back": "assets/img/cypher/book/back.webp",
+          "spreads": [
+            "assets/img/cypher/book/s01-02.webp",
+            "assets/img/cypher/book/s09-10.webp",
+            "assets/img/cypher/book/s-egd.webp",
+            "assets/img/cypher/book/s17-18.webp",
+            "assets/img/cypher/book/s19-20.webp"
+          ],
+          "aspect": 1.487
+        },
+        {
+          "label": "Style guide",
+          "front": "assets/img/cypher/book/sg-cover.webp",
+          "spreads": [
+            "assets/img/cypher/book/sg-00-01.webp",
+            "assets/img/cypher/book/sg-04-05.webp",
+            "assets/img/cypher/book/sg-16-17.webp"
+          ],
+          "aspect": 1.395
+        }
+      ]
+    },
+    "16-days-of-real-talk": {
+      "type": "deck",
+      "cards": "assets/img/16-days-of-real-talk/cards/card-{nn}.webp",
+      "count": 30,
+      "reels": [
+        {
+          "src": "assets/media/16-days-of-real-talk/reel-1.mp4",
+          "poster": "assets/media/16-days-of-real-talk/reel-1.webp",
+          "label": "What is a major relationship red and green flag"
+        },
+        {
+          "src": "assets/media/16-days-of-real-talk/reel-2.mp4",
+          "poster": "assets/media/16-days-of-real-talk/reel-2.webp",
+          "label": "What's an unpopular opinion you hold"
+        },
+        {
+          "src": "assets/media/16-days-of-real-talk/reel-3.mp4",
+          "poster": "assets/media/16-days-of-real-talk/reel-3.webp",
+          "label": "What gender roles did you notice growing up"
+        },
+        {
+          "src": "assets/media/16-days-of-real-talk/reel-4.mp4",
+          "poster": "assets/media/16-days-of-real-talk/reel-4.webp",
+          "label": "Have you ever felt unsafe on campus"
+        }
+      ]
+    }
+  }
+}

@@ -2,6 +2,7 @@
 // node to the page, set from the same markup as the generated /work/<slug>/ page
 // (pageHTML in content.js). Back shrinks it to the node and returns to the panel.
 // While it shows, the map frame is inert.
+import { mountShowcases } from "./showcase.js";
 import { pageHTML } from "./content.js";
 
 const MS = 650;
@@ -52,6 +53,7 @@ export function createPage({ ix, on }) {
       const fresh = layer.hidden;
       if (work !== w || fresh) {
         layer.innerHTML = pageHTML(w, ix);
+        mountShowcases(layer);
         layer.scrollTop = 0;
       }
       work = w;

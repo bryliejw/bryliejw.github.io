@@ -68,11 +68,11 @@
   --fs-xs: 12px;       /* captions, credits */
   --fs-sm: 13px;       /* secondary text, facts, tags */
   --fs-ui: 14px;       /* controls, card text, lists */
-  --fs-body: 15px;     /* panel reading text */
+  --fs-body: 16px;     /* panel reading text */
   --fs-lead: 19px;     /* pull lines in cards */
-  --fs-h3: 20px;       /* preview titles */
-  --fs-h2: 28px;       /* card titles */
-  --fs-h1: 44px;       /* panel titles */
+  --fs-h3: 22px;       /* preview titles */
+  --fs-h2: 32px;       /* card titles */
+  --fs-h1: 52px;       /* panel titles */
   --lh-tight: 1.1;
   --lh-snug: 1.3;
   --lh-text: 1.5;
@@ -94,6 +94,11 @@
   --ctl-sm: 32px;      /* text buttons, segmented controls */
   --chrome-top: 64px;  /* clear of the top controls */
   --chrome-left: 72px; /* clear of the rail */
+
+  /* Elevation: floating surfaces lift off the map with shadow, not outlines. */
+  --shadow-1: 0 1px 2px rgb(11 12 16 / 0.06), 0 6px 18px -6px rgb(11 12 16 / 0.18);
+  --shadow-2: 0 2px 6px rgb(11 12 16 / 0.08), 0 22px 48px -14px rgb(11 12 16 / 0.32);
+  --shadow-panel: -18px 0 40px -22px rgb(11 12 16 / 0.35);
 
   /* Motion */
   --dur-fast: 120ms;

@@ -5,6 +5,8 @@
 
 export const W = 1200;
 export const H = 780;
+import { drawFrame, TILE } from "./frames.js";
+export { TILE };
 const NS = "http://www.w3.org/2000/svg";
 const SPRITE = "/assets/icons.svg";
 
@@ -37,9 +39,9 @@ function text(parent, str, attrs) {
 }
 
 // Nodes and derived edges. Edges are never stored in data (CLAUDE.md, Data model).
-export function buildGraph(data) {
+export function buildGraph(data, showcase = {}) {
   const me = { id: "me", role: "me", data: data.me };
-  const works = data.works.map((w) => ({ id: w.id, role: "work", size: w.size, data: w }));
+  const works = data.works.map((w) => ({ id: w.id, role: "work", size: w.size, data: w, frame: showcase.frames?.[w.id] ?? null }));
   const kws = data.keywords.map((k) => ({ id: k.id, role: "kw", type: k.type, data: k }));
   const nodes = [me, ...works, ...kws];
   const byId = new Map(nodes.map((n) => [n.id, n]));
@@ -135,50 +137,47 @@ function drawMe(n) {
   n.tag3 = text(n.body, d.tagline2, { class: "me-tag me-marked", y: 34 });
 }
 
-// Tile sizes by level: L hero project, M extra, S smaller work.
-export const TILE = { L: 124, M: 72, S: 42 };
-
-// An image tile centred on the node. The 600px thumb fills it (cover crop on the map only);
-// white-ground images keep the 1px keyline.
-function imageTile(b, w, s) {
-  const h = s / 2;
-  const img = w.images[0];
-  el("rect", { class: `tile tile-${w.size.toLowerCase()}${img ? " has-img" : ""}`, x: -h, y: -h, width: s, height: s }, b);
-  if (!img) return;
-  const clip = `clip-${w.id}`;
-  el("rect", { x: -h, y: -h, width: s, height: s }, el("clipPath", { id: clip }, b));
-  el("image", { href: `/${img.thumb ?? img.src}`.replace(/^\/+/, "/"), x: -h, y: -h, width: s, height: s, preserveAspectRatio: "xMidYMid slice", "clip-path": `url(#${clip})`, class: "tile-img" }, b);
-  el("rect", { class: `tile-key${img.white ? " is-white" : ""}`, x: -h, y: -h, width: s, height: s }, b);
-}
-
 function drawWork(n) {
   const w = n.data;
   const b = n.body;
-  const s = TILE[w.size];
-  const h = s / 2;
-  imageTile(b, w, s);
+  // The frame sets the tile's size and shape (frames.js); labels sit off its edges.
+  const t = drawFrame(b, n, n.frame);
+  n.tile = t;
+  const hx = t.w / 2;
+  const hy = t.h / 2;
   if (w.size === "L") {
-    el("rect", { class: "chip", x: -h, y: -h, width: 28, height: 18 }, b);
-    text(b, w.n, { class: "chip-n", x: -h + 14, y: -h + 12.6, "text-anchor": "middle" });
+    el("rect", { class: "chip", x: -hx, y: -hy, width: 28, height: 18 }, b);
+    text(b, w.n, { class: "chip-n", x: -hx + 14, y: -hy + 12.6, "text-anchor": "middle" });
     n.wl = el("g", { class: "wl wl-l" }, b);
-    n.title = text(n.wl, w.title, { class: "w-title-l halo", x: -h, y: h + 19 });
-    n.meta = text(n.wl, metaLine(w), { class: "w-meta halo", x: -h, y: h + 34 });
+    n.title = text(n.wl, w.title, { class: "w-title-l halo", x: -hx, y: hy + 21 });
+    n.meta = text(n.wl, metaLine(w), { class: "w-meta halo", x: -hx, y: hy + 36 });
   } else if (w.size === "M") {
-    el("rect", { class: "chip chip-m", x: -h, y: -h, width: 24, height: 15 }, b);
-    text(b, w.n, { class: "chip-n chip-n-m", x: -h + 12, y: -h + 10.8, "text-anchor": "middle" });
+    el("rect", { class: "chip chip-m", x: -hx, y: -hy, width: 24, height: 15 }, b);
+    text(b, w.n, { class: "chip-n chip-n-m", x: -hx + 12, y: -hy + 10.8, "text-anchor": "middle" });
     n.wl = el("g", { class: "wl" }, b);
-    n.title = text(n.wl, w.title, { class: "w-title-m halo", x: h + 9, y: -4 });
-    n.meta = text(n.wl, metaLine(w), { class: "w-meta halo", x: h + 9, y: 11 });
+    n.title = text(n.wl, w.title, { class: "w-title-m halo", x: hx + 9, y: -4 });
+    n.meta = text(n.wl, metaLine(w), { class: "w-meta halo", x: hx + 9, y: 11 });
   } else {
     // Kind mark in the corner: filled for work, outlined for experiment, dotted for client.
-    el("rect", { class: `sq sq-${w.kind}`, x: h - 7, y: h - 7, width: 7, height: 7 }, b);
+    el("rect", { class: `sq sq-${w.kind}`, x: hx - 7, y: hy - 7, width: 7, height: 7 }, b);
     n.wl = el("g", { class: "wl" }, b);
-    n.title = text(n.wl, w.title, { class: "w-title-s halo", x: h + 7, y: 3.8 });
+    n.title = text(n.wl, w.title, { class: "w-title-s halo", x: hx + 7, y: 3.8 });
   }
 }
 
+// Keyword marks by type, sized by how many works use them: disciplines are the largest ink
+// squares, topics blue dots, values a heart, deliverables small outlined squares, tools a
+// faint dot (tools matter least: their labels wait for a close zoom or a hover).
+const KW_MARK = { discipline: [8, 13], deliverable: [6, 8], topic: [7, 11], value: [10, 13], tool: [4, 4] };
 function drawKeyword(n) {
-  el("rect", { class: `tick tick-${n.type}`, x: -3, y: -3, width: 6, height: 6 }, n.body);
+  const uses = n.edges.filter((e) => e.type === "kw").length;
+  const [lo, hi] = KW_MARK[n.type];
+  const s = Math.round(lo + (hi - lo) * Math.min(1, Math.sqrt(Math.max(0, uses - 1) / 8)));
+  n.r = s / 2;
+  const h = s / 2;
+  if (n.type === "topic" || n.type === "tool") el("circle", { class: `tick tick-${n.type}`, r: h }, n.body);
+  else if (n.type === "value") el("use", { class: `tick tick-value`, href: `${SPRITE}#heart`, x: -h, y: -h, width: s, height: s }, n.body);
+  else el("rect", { class: `tick tick-${n.type}`, x: -h, y: -h, width: s, height: s }, n.body);
   n.labG = el("g", { class: "lab" }, n.body);
   const str = n.type === "tool" ? n.data.label.toUpperCase() : n.data.label;
   n.label = text(n.labG, str, { class: `kw-label kw-${n.type} halo` });
@@ -210,8 +209,12 @@ const box = (b) => ({ x: b.x, y: b.y, w: b.width, h: b.height });
 export function orientKeyword(n, spec) {
   const mono = n.type === "tool";
   n.label.setAttribute("text-anchor", spec.anchor);
-  n.label.setAttribute("x", spec.x);
-  n.label.setAttribute("y", spec.y + (spec.baseline ? (mono ? 3.3 : 3.8) : 0));
+  // Labels clear the mark, whatever its size.
+  const grow = (n.r ?? 3) - 3;
+  const dx = spec.anchor === "end" ? -grow : spec.anchor === "start" ? grow : 0;
+  const dy = spec.anchor === "middle" ? (spec.y < 0 ? -grow : grow) : 0;
+  n.label.setAttribute("x", spec.x + dx);
+  n.label.setAttribute("y", spec.y + dy + (spec.baseline ? (mono ? 3.3 : 3.8) : 0));
   n.labG.setAttribute("transform", spec.rot ? `rotate(${spec.rot})` : "");
   // Counter-scaling origin for the label (see .kw-label in site.css).
   n.label.dataset.o = spec.anchor === "end" ? "e" : spec.anchor === "middle" ? (spec.y < 0 ? "t" : "b") : "s";
@@ -222,7 +225,7 @@ export function orientKeyword(n, spec) {
 // Label side for M and S works: 1 to the right of the mark (default), -1 to the left.
 export function orientWork(n, side = 1) {
   if (n.size === "L" || n.side === side) return;
-  const s = TILE[n.size] / 2 + (n.size === "M" ? 9 : 7);
+  const s = n.tile.w / 2 + (n.size === "M" ? 9 : 7);
   for (const t of [n.title, n.meta].filter(Boolean)) {
     t.setAttribute("text-anchor", side < 0 ? "end" : "start");
     t.setAttribute("x", side * s);
@@ -296,7 +299,4 @@ export function sizeHit(n, tileOnly = false) {
   set(n.hit, 2);
   set(n.ring, 4);
 }
-const tileBox = (n) => {
-  const h = TILE[n.size] / 2;
-  return { x: -h, y: -h, width: 2 * h, height: 2 * h };
-};
+const tileBox = (n) => ({ x: n.tile.x, y: n.tile.y, width: n.tile.w, height: n.tile.h });

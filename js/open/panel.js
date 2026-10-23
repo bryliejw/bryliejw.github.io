@@ -1,21 +1,21 @@
-// Side panel (Expand). Scrolls as one column: a sticky bar (number or type, meta, widen,
-// close), the lead image, the title block, sticky tabs, then the tab. Works: Overview
-// (pull line, Brief / Insight / Response, role, credit, facts, then a gallery that opens
-// to every image), Process (steps with the process images set among them), Connections
-// (a mini map of the work's place in the network, its keywords as a tree with how many
-// other works share each, related works with thumbnails). Drag the left edge, or use
-// Widen, to resize; the map refits to the space left.
+// Side panel (Expand). Scrolls as one column: a sticky bar (number or type, meta, the title
+// once it scrolls away, previous and next, widen, close), the images (a carousel of every
+// image but the process ones), the title block, sticky tabs, then the tab. Works: Overview
+// (the showcase when the project has one, Brief / Insight / pull line / Response / Role,
+// credit, facts), Process (steps with the process images among them), Connections (the
+// node's own network, switchable to a tree, then related works). Every node opens on
+// Overview at the top. Drag the left edge, or use Widen, to resize; the map refits.
 import {
   esc, icon, src, numBlock, metaHTML, copyHTML, stepsHTML, keywordOverview, keywordConnections,
   meOverview, meExperience, meWorks, workRows, rows, section, kindLabel, typeName, typeIcon, hasPage, factsHTML,
-  imgHTML, kwLink, relatedWorks, workLink, KIND_ICON,
+  imgHTML, kwLink, relatedWorks, workLink, KIND_ICON, carouselHTML, carouselImages, showcaseHTML, processHTML, SPRITE,
 } from "./content.js";
+import { mountShowcases } from "./showcase.js";
 import { GROUPS } from "../map/render.js";
 
 export const PANEL_W = 460;
 const MIN_W = 380;
 const maxW = () => Math.max(MIN_W, Math.min(1100, Math.round(window.innerWidth * 0.72)));
-const GALLERY_N = 6;
 
 const TABS = {
   overview: ["Overview", "file-text"],
@@ -53,65 +53,61 @@ export function createPanel({ ix, graph, on, onResize = () => {} }) {
     if (notify) onResize(width);
   };
 
-  // ---- Overview ----------------------------------------------------------------------
-  function gallery(w, skip) {
-    const ims = w.images.filter((im, i) => i !== skip && im.use !== "process");
-    if (!ims.length) return "";
-    const more = ims.length > GALLERY_N;
-    return `<section class="sec pg" data-open="false"><h3 class="sec-title mono-label">${icon("images")}Images <span class="pg-n">${ims.length}</span></h3>
-<div class="pg-grid">${ims.map((im, i) => `<figure class="img pg-it${im.white ? " is-white" : ""}"${i >= GALLERY_N ? " data-extra" : ""}><img src="${esc(src(im.thumb ?? im.src))}" data-full="${esc(src(im.src))}" width="${im.w}" height="${im.h}" alt="${esc(im.alt)}" loading="lazy"></figure>`).join("")}</div>
-${more ? `<button type="button" class="tbtn pg-more" data-act="gallery">${icon("chevron-down")}<span>Show all ${ims.length} images</span></button>` : ""}</section>`;
-  }
-
-  // ---- Process -----------------------------------------------------------------------
-  function process(w) {
-    const pics = w.images.filter((im) => im.use === "process");
-    if (!w.steps.length && !pics.length) return "";
-    const fig = (im) => `<figure class="img ps-img${im.white ? " is-white" : ""}"><img src="${esc(src(im.thumb ?? im.src))}" data-full="${esc(src(im.src))}" width="${im.w}" height="${im.h}" alt="${esc(im.alt)}" loading="lazy"><figcaption>${esc(im.alt)}</figcaption></figure>`;
-    if (!w.steps.length) return `<div class="ps">${pics.map(fig).join("")}</div>`;
-    // Process images sit among the steps, spread evenly through them.
-    const at = new Map();
-    pics.forEach((im, i) => {
-      const k = Math.min(w.steps.length - 1, Math.round(((i + 1) * w.steps.length) / (pics.length + 1)) - 1);
-      at.set(Math.max(0, k), [...(at.get(Math.max(0, k)) ?? []), im]);
-    });
-    return `<ol class="steps ps-steps">${w.steps.map(([label, text], i) => `<li><p class="mono-label st-label">${esc(label)}</p><p class="st-text">${esc(text)}</p>${(at.get(i) ?? []).map(fig).join("")}</li>`).join("")}</ol>`;
-  }
-
   // ---- Connections -------------------------------------------------------------------
-  // Mini map: every node at its place in the current view; this node, its lines and its
-  // neighbours lifted. Click a mark to go there.
-  function minimap(n) {
-    const ns = graph.nodes.filter((o) => !o.hidden);
-    const xs = ns.map((o) => o.x);
-    const ys = ns.map((o) => o.y);
-    const x0 = Math.min(...xs) - 30;
-    const y0 = Math.min(...ys) - 30;
-    const w = Math.max(...xs) + 30 - x0;
-    const h = Math.max(...ys) + 30 - y0;
-    const near = new Set([n, ...n.edges.map((e) => (e.a === n ? e.b : e.a))]);
-    const lines = graph.edges
-      .filter((e) => !e.a.hidden && !e.b.hidden)
-      .map((e) => {
-        const on = e.a === n || e.b === n;
-        return `<line x1="${e.a.x}" y1="${e.a.y}" x2="${e.b.x}" y2="${e.b.y}" class="mm-l${on ? " is-on" : ""}"/>`;
-      });
-    lines.sort((a, b) => a.includes("is-on") - b.includes("is-on"));
+  // The node's own network: only the node and what it connects to, around it by type.
+  // Works show as image thumbnails, keywords as their map marks. Hover lifts a line, click
+  // opens that node. A switch shows the same connections as a tree.
+  function ego(n, treeHTML) {
+    const TYPE_ORDER = ["me", "work", "discipline", "deliverable", "topic", "value", "tool"];
+    const kindOf = (o) => (o.role === "kw" ? o.type : o.role);
+    const ns = [...new Set(n.edges.map((e) => (e.a === n ? e.b : e.a)))].filter((o) => !o.hidden);
+    ns.sort((a, b) => TYPE_ORDER.indexOf(kindOf(a)) - TYPE_ORDER.indexOf(kindOf(b)) || label(a).localeCompare(label(b)));
+    if (!ns.length) return treeHTML ? section("Connections", treeHTML) : "";
+    const R = ns.length > 16 ? 150 : 128;
+    const W2 = R + 175;
+    const H2 = R + 46;
+    const start = -Math.PI / 2;
+    const pos = ns.map((o, i) => {
+      const a = start + (i / ns.length) * Math.PI * 2;
+      return { o, a, x: Math.cos(a) * R, y: Math.sin(a) * R };
+    });
     const mark = (o) => {
-      const cls = `mm-n mm-${o.role}${o.role === "kw" ? ` mm-${o.type}` : ""}${o === n ? " is-me" : near.has(o) ? " is-near" : ""}`;
-      const label = o.role === "work" ? `${o.data.n} ${o.data.title}` : o.role === "kw" ? o.data.label : o.data.name;
-      const s = o.role === "work" ? { L: 26, M: 17, S: 11 }[o.size] : o.role === "me" ? 14 : 7;
-      const shape = o.role === "kw" ? `<circle r="${s / 2}"/>` : `<rect x="${-s / 2}" y="${-s / 2}" width="${s}" height="${s}"/>`;
-      return `<g class="${cls}" transform="translate(${o.x},${o.y})" data-node="${esc(o.id)}" role="link" tabindex="-1"><title>${esc(label)}</title>${shape}</g>`;
+      if (o.role === "work") {
+        const im = o.data.images[0];
+        const s = { L: 30, M: 24, S: 18 }[o.size];
+        return im ? `<image href="${esc(src(im.thumb ?? im.src))}" x="${-s / 2}" y="${-s / 2}" width="${s}" height="${s}" preserveAspectRatio="xMidYMid slice"/><rect class="eg-key" x="${-s / 2}" y="${-s / 2}" width="${s}" height="${s}"/>` : `<rect class="eg-key" x="-8" y="-8" width="16" height="16"/>`;
+      }
+      if (o.role === "me") return `<rect class="eg-me" x="-7" y="-7" width="14" height="14"/>`;
+      if (o.type === "topic" || o.type === "tool") return `<circle class="eg-${o.type}" r="${o.type === "tool" ? 3 : 5}"/>`;
+      if (o.type === "value") return `<use class="eg-value" href="${SPRITE}#heart" x="-6" y="-6" width="12" height="12"/>`;
+      return `<rect class="eg-${o.type}" x="-5" y="-5" width="10" height="10"/>`;
     };
-    const order = [...ns].sort((a, b) => near.has(a) - near.has(b) || (a === n) - (b === n));
-    return `<figure class="mm"><svg viewBox="${x0} ${y0} ${w} ${h}" role="img" aria-label="Where ${esc(n.role === "work" ? n.data.title : n.data.label ?? n.data.name)} sits in the network">${lines.join("")}${order.map(mark).join("")}</svg>
-<figcaption class="mono-label">${near.size - 1} connections · ${{ force: "Force", rings: "Rings", edge: "Edge map" }[graph.svg.dataset.view] ?? ""} view</figcaption></figure>`;
+    const lines = pos.map(({ o, x, y }) => `<line class="eg-l" data-to="${esc(o.id)}" x1="0" y1="0" x2="${x.toFixed(1)}" y2="${y.toFixed(1)}"/>`).join("");
+    const nodes = pos.map(({ o, a, x, y }) => {
+      const right = Math.cos(a) > 0.15;
+      const left = Math.cos(a) < -0.15;
+      const off = (o.role === "work" ? { L: 21, M: 18, S: 15 }[o.size] : 11);
+      const tx = right ? off : left ? -off : 0;
+      const ty = !right && !left ? (Math.sin(a) < 0 ? -off - 2 : off + 9) : 4;
+      const anchor = right ? "start" : left ? "end" : "middle";
+      const t = o.role === "work" ? `${o.data.n} ${o.data.title}` : label(o);
+      return `<g class="eg-n eg-${kindOf(o)}-n" transform="translate(${x.toFixed(1)},${y.toFixed(1)})" data-node="${esc(o.id)}" data-eg="${esc(o.id)}" role="link" tabindex="0" aria-label="${esc(t)}">${mark(o)}<text x="${tx}" y="${ty}" text-anchor="${anchor}">${esc(t.length > 26 ? `${t.slice(0, 24)}…` : t)}</text></g>`;
+    }).join("");
+    const centre = n.role === "work" ? n.data.images[0] : null;
+    const cmark = centre ? `<image href="${esc(src(centre.thumb ?? centre.src))}" x="-26" y="-26" width="52" height="52" preserveAspectRatio="xMidYMid slice"/><rect class="eg-ckey" x="-26" y="-26" width="52" height="52"/>` : `<rect class="eg-c" x="-9" y="-9" width="18" height="18"/>`;
+    const svg = `<svg class="eg-svg" viewBox="${-W2} ${-H2} ${W2 * 2} ${H2 * 2}" role="img" aria-label="${ns.length} connections">${lines}<g class="eg-centre">${cmark}</g>${nodes}</svg>`;
+    return `<section class="ego" data-mode="network">
+<div class="ego-head"><h3 class="ego-t mono-label">${icon("waypoints")}Connections <span>${ns.length}</span></h3><div class="ego-tabs" role="tablist" aria-label="Show as"><button type="button" role="tab" data-ego="network" aria-selected="true">Network</button><button type="button" role="tab" data-ego="tree" aria-selected="false">Tree</button></div></div>
+<div class="ego-net">${svg}</div>
+<div class="ego-tree">${treeHTML}</div>
+</section>`;
   }
+  const label = (o) => (o.role === "work" ? o.data.title : o.role === "kw" ? o.data.label : o.data.name);
 
   // Keywords as a tree under the work, grouped by type, each with the number of other works.
   function tree(w) {
-    const kws = w.keywords.map((id) => ix.kw.get(id)).filter(Boolean);
+    // Tools are listed in the facts, so the tree leaves them out.
+    const kws = w.keywords.map((id) => ix.kw.get(id)).filter((k) => k && k.type !== "tool");
     const groups = GROUPS.map((g) => ({ g, ks: kws.filter((k) => k.type === g.type) })).filter((x) => x.ks.length);
     if (!groups.length) return "";
     const count = (k) => ix.usedBy.get(k.id).filter((o) => o.id !== w.id).length;
@@ -147,18 +143,18 @@ ${more ? `<button type="button" class="tbtn pg-more" data-act="gallery">${icon("
       const hero = w.images[0];
       return {
         bar: bar(w.size === "S" ? `<span class="card-ic">${icon(KIND_ICON[w.kind])}</span>` : numBlock(w, "card-num"), esc([kindLabel(w), w.year].filter(Boolean).join(" · ")), esc(w.title), stepBtns(w)),
-        hero: hero ? imgHTML(hero, { cls: "panel-hero", sizes: `${width}px`, lazy: false }) : "",
+        hero: carouselHTML(carouselImages(w), { cls: "panel-hero", sizes: `${width}px`, label: w.title }),
         title: esc(w.title),
-        sub: [w.sub ? `<p class="card-sub">${esc(w.sub)}</p>` : "", `<p class="panel-meta">${metaHTML(w)}</p>`].join(""),
+        sub: [w.sub ? `<p class="card-sub">${esc(w.sub)}</p>` : "", `<p class="panel-meta">${[esc(w.team), esc(w.context)].filter(Boolean).join("<br>")}</p>`].join(""),
         acts: [
           hasPage(w) ? `<button type="button" class="tbtn tbtn-primary" data-act="page">${icon("maximize-2")}Full page</button>` : "",
           w.link ? `<a class="tbtn" href="${esc(w.link)}" target="_blank" rel="noopener">${icon("arrow-up-right")}Live site</a>` : "",
         ].join(""),
         counts: { process: w.steps?.length || 0, connections: w.keywords.length },
         tabs: {
-          overview: copyHTML(w) + factsHTML(w, ix, { compact: true }) + gallery(w, 0),
-          process: process(w),
-          connections: section("In the network", minimap(n)) + section("Keywords", tree(w)) + related(w),
+          overview: showcaseHTML(w, ix.data.showcase?.showcases?.[w.id]) + copyHTML(w) + factsHTML(w, ix, { compact: true }),
+          process: processHTML(w),
+          connections: ego(n, tree(w)) + related(w),
         },
       };
     }
@@ -171,7 +167,7 @@ ${more ? `<button type="button" class="tbtn pg-more" data-act="gallery">${icon("
         title: `<span class="t-${k.type}">${esc(k.label)}</span>`,
         sub: "",
         acts: "",
-        tabs: { overview: keywordOverview(k, ix), connections: section("In the network", minimap(n)) + keywordConnections(k, ix) },
+        tabs: { overview: keywordOverview(k, ix), connections: ego(n, keywordConnections(k, ix)) },
       };
     }
     const me = n.data;
@@ -182,7 +178,7 @@ ${more ? `<button type="button" class="tbtn pg-more" data-act="gallery">${icon("
       title: esc(me.name),
       sub: `<p class="card-sub">${esc(me.tagline1.slice(0, cut))}<s>${esc(me.tagline1.slice(cut))}</s> <mark>${esc(me.tagline2)}</mark></p>`,
       acts: "",
-      tabs: { overview: meOverview(me), experience: meExperience(me), connections: section(null, rows(workRows(meWorks(ix)))) },
+      tabs: { overview: meOverview(me), experience: meExperience(me), connections: ego(n, section(null, rows(workRows(meWorks(ix))))) },
     };
   }
 
@@ -207,7 +203,9 @@ ${p.hero}
 <div class="tabs" role="tablist" aria-label="Sections">${keys.map(tabBtn).join("")}</div>
 <div class="panel-body" id="panel-body" role="tabpanel" aria-labelledby="tab-${tab}" tabindex="0">${p.tabs[tab]}</div>
 </div>`;
+    mountShowcases(box);
     box.dataset.role = n.role;
+    box.dataset.kw = n.role === "kw" ? n.type : "";
     setWidth(width, { notify: false });
     // Once the title scrolls under the bar, the bar shows it.
     const sc = box.querySelector(".panel-scroll");
@@ -235,23 +233,37 @@ ${p.hero}
       e.preventDefault();
       return on.link(link.dataset.node);
     }
+    const eg = e.target.closest("[data-ego]");
+    if (eg) {
+      const sec = eg.closest(".ego");
+      sec.dataset.mode = eg.dataset.ego;
+      for (const b of sec.querySelectorAll("[data-ego]")) b.setAttribute("aria-selected", b === eg);
+      return;
+    }
     const t = e.target.closest("[data-tab]");
     if (t && !t.disabled) return select(t.dataset.tab, { focus: true });
     const act = e.target.closest("[data-act]")?.dataset.act;
-    if (act === "gallery") {
-      const g = e.target.closest(".pg");
-      const open = g.dataset.open !== "true";
-      g.dataset.open = open;
-      e.target.closest("button").querySelector("span").textContent = open ? "Show fewer" : `Show all ${g.querySelectorAll(".pg-it").length} images`;
-      return;
-    }
     if (act === "widen") return setWidth(wide ? PANEL_W : maxW());
     if (act === "prev" || act === "next") return on.step(act === "next" ? 1 : -1);
     if (act) on[act]();
   });
 
+  // The network: hovering or focusing a node lifts its line.
+  const lift = (e) => {
+    const g = e.target.closest?.("[data-eg]");
+    for (const l of box.querySelectorAll(".eg-l.is-on")) l.classList.remove("is-on");
+    box.querySelector(".ego-net")?.classList.toggle("has-on", !!g);
+    if (g) box.querySelector(`.eg-l[data-to="${CSS.escape(g.dataset.eg)}"]`)?.classList.add("is-on");
+  };
+  box.addEventListener("pointerover", lift);
+  box.addEventListener("focusin", lift);
+
   // Arrow keys, Home and End move along the enabled tabs; arrows on the edge resize.
   box.addEventListener("keydown", (e) => {
+    if (e.target.matches?.("[data-eg]") && (e.key === "Enter" || e.key === " ")) {
+      e.preventDefault();
+      return on.link(e.target.dataset.eg);
+    }
     if (e.target.matches(".panel-grip") && (e.key === "ArrowLeft" || e.key === "ArrowRight")) {
       e.preventDefault();
       return setWidth(width + (e.key === "ArrowLeft" ? 40 : -40));
@@ -296,8 +308,8 @@ ${p.hero}
       return width;
     },
     show(n, { focus = true } = {}) {
-      // A fresh panel, or a different kind of node, starts on Overview.
-      if (box.hidden || node?.role !== n.role) tab = "overview";
+      // Every node opens on Overview, at the top.
+      if (box.hidden || node !== n) tab = "overview";
       if (node !== n || box.hidden) {
         node = n;
         render(n);

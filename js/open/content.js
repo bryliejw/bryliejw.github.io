@@ -144,6 +144,24 @@ export function stepsHTML(w) {
   return `<ol class="steps">${w.steps.map(([label, text]) => `<li><p class="mono-label st-label">${esc(label)}</p><p class="st-text">${esc(text)}</p></li>`).join("")}</ol>`;
 }
 
+// Process: steps with the process images set among them (spread evenly through the
+// steps), or the process images with their descriptions when there are no steps.
+export function processHTML(w, { cls = "" } = {}) {
+  const pics = w.images.filter((im) => im.use === "process");
+  if (!w.steps.length && !pics.length) return "";
+  const fig = (im) => `<figure class="img ps-img${im.white ? " is-white" : ""}"><img src="${esc(src(im.thumb ?? im.src))}" data-full="${esc(src(im.src))}" width="${im.w}" height="${im.h}" alt="${esc(im.alt)}" loading="lazy"><figcaption>${esc(im.alt)}</figcaption></figure>`;
+  if (!w.steps.length) return `<div class="ps ${cls}" data-set>${pics.map(fig).join("")}</div>`;
+  const at = new Map();
+  pics.forEach((im, i) => {
+    const k = Math.max(0, Math.min(w.steps.length - 1, Math.round(((i + 1) * w.steps.length) / (pics.length + 1)) - 1));
+    at.set(k, [...(at.get(k) ?? []), im]);
+  });
+  return `<ol class="steps ps-steps ${cls}" data-set>${w.steps.map(([label, text], i) => {
+    const figs = (at.get(i) ?? []).map(fig).join("");
+    return `<li class="${figs ? "has-img" : ""}"><div class="st-copy"><p class="mono-label st-label">${/^\d/.test(label) ? "" : `<span class="st-n">${String(i + 1).padStart(2, "0")}</span>`}${esc(label)}</p><p class="st-text">${esc(text)}</p></div>${figs ? `<div class="st-figs">${figs}</div>` : ""}</li>`;
+  }).join("")}</ol>`;
+}
+
 // One image: the 1600px file with the 600px thumb in srcset. White-ground images
 // get the 1px keyline (is-white).
 export function imgHTML(im, { cls = "img", sizes = "(max-width: 719px) 100vw, 420px", lazy = true } = {}) {
@@ -155,7 +173,7 @@ const THUMB_W = (im) => Math.round(im.w * Math.min(1, 600 / Math.max(im.w, im.h)
 
 export function imagesHTML(w, opts) {
   if (!w.images.length) return "";
-  return `<div class="imgs">${w.images.map((im) => imgHTML(im, opts)).join("")}</div>`;
+  return `<div class="imgs" data-set>${w.images.map((im) => imgHTML(im, opts)).join("")}</div>`;
 }
 
 // Works tied to a work: part of, its parts, and works that share keywords (most shared first).
@@ -171,16 +189,17 @@ export function relatedWorks(w, ix) {
   return { part, parts, shared };
 }
 
-export function workConnections(w, ix) {
+export function workConnections(w, ix, { types = null } = {}) {
   const { part, parts, shared } = relatedWorks(w, ix);
+  const ids = types ? w.keywords.filter((id) => types.includes(ix.kw.get(id)?.type)) : w.keywords;
   const tie = [
     part.length ? `<div class="lrow"><dt class="mono-label">Part of</dt><dd>${part.map(workLink).join(" ")}</dd></div>` : "",
     parts.length ? `<div class="lrow"><dt class="mono-label">Parts</dt><dd>${parts.map(workLink).join(" ")}</dd></div>` : "",
   ].join("");
   return [
-    section("Keywords", rows(keywordRows(w.keywords, ix))),
+    section(types ? null : "Keywords", rows(keywordRows(ids, ix))),
     section(null, rows(tie, "lrows-ties")),
-    shared.length ? section("Shares keywords with", rows(workRows(shared))) : "",
+    shared.length ? section("Shares the most keywords with", rows(workRows(shared.slice(0, 8)))) : "",
   ].join("");
 }
 
@@ -204,7 +223,11 @@ export function pageHTML(w, ix) {
   const field = kws("discipline").map(kwLink).join('<span class="sep"> · </span>');
   const tools = (w.tools ?? []).map(esc).join('<span class="sep"> · </span>');
   const block = (label, text) => (text ? `<div class="cp"><h2 class="cp-label">${label}</h2><p>${esc(text)}</p></div>` : "");
-  const fields = [...kws("topic"), ...kws("discipline"), ...kws("deliverable"), ...kws("value")].map((k) => k.label);
+  // Each keyword type shows once: disciplines and tools in the ruled row, topics and values
+  // in the marquee, deliverables with the connections.
+  const fields = [...kws("topic"), ...kws("value")].map((k) => k.label);
+  const sc = ix.data.showcase?.showcases?.[w.id];
+  const gallery = w.images.filter((im, i) => i > 0 && im.use !== "process");
   const band = (cls) => `<div class="wp-mq ${cls}"><div class="wp-mq-t">${[0, 1].map(() => `<span>${fields.map(esc).join("</span><span>")}</span>`).join("")}</div></div>`;
   const [n1, ...rest] = next;
   return `<article class="wp" aria-labelledby="wp-title">
@@ -222,13 +245,14 @@ export function pageHTML(w, ix) {
     ${w.sub ? `<p class="wp-sub">${esc(w.sub)}</p>` : ""}
     <dl class="wp-md">${md("Year", w.year != null ? `<b>${w.year}</b>` : "")}${md("Context", esc(w.context))}${md("Team", esc(w.team))}${md("Field", field)}${md("Tools", tools)}</dl>
   </div>
-  ${hero ? imgHTML(hero, { cls: "wp-hero", sizes: "100vw", lazy: false }) : ""}
+  ${hero ? `<div data-set>${imgHTML(hero, { cls: "wp-hero", sizes: "100vw", lazy: false })}</div>` : ""}
+  ${sc ? `<section class="wp-sc" aria-label="Showcase">${showcaseHTML(w, sc)}</section>` : ""}
   ${c.pull ? `<p class="wp-pull">${esc(c.pull)}</p>` : c.oneLine ? `<p class="wp-pull">${esc(c.oneLine)}</p>` : ""}
   <div class="wp-bir">${block("Brief", c.brief)}${block("Insight", c.insight)}${block("Response", c.response)}</div>
   ${c.role || c.credit || (w.materials ?? []).length ? `<div class="wp-credit">${block("Role", c.role)}${c.credit ? `<p class="cp-credit">${esc(c.credit)}</p>` : ""}${(w.materials ?? []).length ? `<p class="wp-mats"><span class="mono-label">Materials</span> ${w.materials.map(esc).join('<span class="sep"> · </span>')}</p>` : ""}</div>` : ""}
-  ${w.images.length > 1 ? `<section class="wp-sec" aria-labelledby="wp-images"><h2 class="wp-h mono-label" id="wp-images">${icon("image")}Images</h2>${imagesHTML({ ...w, images: w.images.slice(1) }, { sizes: "(max-width: 719px) 100vw, 50vw" })}</section>` : ""}
-  ${w.steps.length ? `<section class="wp-sec" aria-labelledby="wp-process"><h2 class="wp-h mono-label" id="wp-process">${icon("workflow")}Process</h2>${stepsHTML(w)}</section>` : ""}
-  <section class="wp-sec" aria-labelledby="wp-conn"><h2 class="wp-h mono-label" id="wp-conn">${icon("waypoints")}Connections</h2>${workConnections(w, ix)}</section>
+  ${gallery.length ? `<section class="wp-sec" aria-labelledby="wp-images"><h2 class="wp-h mono-label" id="wp-images">${icon("image")}Images <span class="wp-hn">${gallery.length}</span></h2>${imagesHTML({ ...w, images: gallery }, { sizes: "(max-width: 719px) 100vw, 50vw" })}</section>` : ""}
+  ${w.steps.length || w.images.some((im) => im.use === "process") ? `<section class="wp-sec" aria-labelledby="wp-process"><h2 class="wp-h mono-label" id="wp-process">${icon("workflow")}Process</h2>${processHTML(w, { cls: "wp-ps" })}</section>` : ""}
+  <section class="wp-sec" aria-labelledby="wp-conn"><h2 class="wp-h mono-label" id="wp-conn">${icon("waypoints")}Connections</h2>${workConnections(w, ix, { types: ["deliverable"] })}</section>
   ${fields.length ? `<div class="wp-mqs" aria-hidden="true">${band("a")}${band("b")}</div>` : ""}
   <nav class="wp-next" aria-label="Next">
     ${n1 ? `<a class="wp-nextlink wp-nextband" href="${pageHref(n1)}" data-page="${esc(n1.id)}"><span class="mono-label">Next case · ${esc(n1.n)}</span><b>${esc(n1.title)}</b>${n1.sub ? `<span class="wp-nexts">${esc(n1.sub)}</span>` : ""}</a>` : ""}
@@ -281,4 +305,47 @@ export function meExperience(me) {
   const cer = `<div class="cert">${cert.badge ? `<img src="${esc(src(cert.badge))}" width="56" height="56" alt="">` : ""}<p><b>${esc(cert.title)}</b><br>${esc(cert.org)}${cert.year ? ` · ${cert.year}` : ""}<br>${cert.link ? `<a class="lk mono-label" href="${esc(cert.link)}" target="_blank" rel="noopener">${esc(cert.linkLabel || cert.link)}${icon("arrow-up-right")}</a>` : ""}</p></div>`;
   const tools = me.tools?.length ? `<p class="tools">${me.tools.map(esc).join(" · ")}</p>` : "";
   return [section("Experience", xp), section("Education", edu), section("Certification", cer), section("Tools", tools)].join("");
+}
+
+// Images above the title: every image except the process ones, in one scrolling strip
+// with arrows on hover and a counter. Process images live with the process.
+export const carouselImages = (w) => w.images.filter((im) => im.use !== "process");
+export function carouselHTML(ims, { cls = "", sizes = "(max-width: 719px) 100vw, 460px", label = "Images" } = {}) {
+  if (!ims.length) return "";
+  const one = ims.length === 1;
+  const fig = (im, i) => {
+    const set = im.thumb ? ` srcset="${esc(src(im.thumb))} ${THUMB_W(im)}w, ${esc(src(im.src))} ${im.w}w" sizes="${sizes}"` : "";
+    return `<figure class="car-it${im.white ? " is-white" : ""}"><img src="${esc(src(im.src))}"${set} data-full="${esc(src(im.src))}" width="${im.w}" height="${im.h}" alt="${esc(im.alt)}"${i ? ' loading="lazy"' : ""} draggable="false"></figure>`;
+  };
+  return `<div class="car${cls ? ` ${cls}` : ""}" data-set>
+<div class="car-track" tabindex="0" role="region" aria-roledescription="carousel" aria-label="${esc(label)}, ${ims.length} image${one ? "" : "s"}">${ims.map(fig).join("")}</div>
+${one ? "" : `<button type="button" class="car-btn car-prev" data-car="-1" aria-label="Previous image" data-tip="Previous" data-key="←">${icon("chevron-left")}</button><button type="button" class="car-btn car-next" data-car="1" aria-label="Next image" data-tip="Next" data-key="→">${icon("chevron-right")}</button><p class="car-count mono-label" aria-hidden="true"><span data-car-i>1</span> / ${ims.length}</p>`}
+</div>`;
+}
+
+// The interactive piece for a project (data/showcase.json): a flipbook or a card deck
+// with its reels. Markup here; behaviour in js/open/showcase.js.
+export function showcaseHTML(w, sc) {
+  if (!sc) return "";
+  if (sc.type === "flipbook") {
+    const books = sc.books.map((b, i) => `<button type="button" role="tab" class="sc-tab" data-book="${i}" aria-selected="${!i}">${esc(b.label)}</button>`).join("");
+    return `<section class="sc sc-flip" data-showcase="flipbook" data-books="${esc(JSON.stringify(sc.books))}">
+<div class="sc-head"><p class="sc-t mono-label">${icon("book-open")}Flip through</p><div class="sc-tabs" role="tablist" aria-label="Books">${books}</div></div>
+<div class="fb-stage"><div class="fb" tabindex="0" role="group" aria-roledescription="flipbook"></div></div>
+<div class="sc-ctl"><button type="button" class="cbtn sc-btn" data-fb="-1" aria-label="Previous page">${icon("chevron-left")}</button><p class="fb-count mono-label" aria-live="polite"></p><button type="button" class="cbtn sc-btn" data-fb="1" aria-label="Next page">${icon("chevron-right")}</button></div>
+</section>`;
+  }
+  if (sc.type === "deck") {
+    const n = sc.count;
+    const card = (i) => src(sc.cards.replace("{nn}", String(i).padStart(2, "0")));
+    const cards = Array.from({ length: n }, (_, i) => `<img class="dk-card" src="${esc(card(i + 1))}" alt="" draggable="false" loading="${i < 4 ? "eager" : "lazy"}">`).join("");
+    const reels = (sc.reels ?? []).map((r) => `<figure class="reel"><video src="${esc(src(r.src))}" poster="${esc(src(r.poster))}" muted loop playsinline preload="none" aria-label="${esc(r.label)}"></video><figcaption>${esc(r.label)}</figcaption></figure>`).join("");
+    return `<section class="sc sc-deck" data-showcase="deck">
+<div class="sc-head"><p class="sc-t mono-label">${icon("shuffle")}Draw a card</p><p class="dk-count mono-label"><span data-dk-i>1</span> / ${n}</p></div>
+<div class="dk-stage"><div class="dk" tabindex="0" role="button" aria-label="Draw the next card">${cards}</div></div>
+<div class="sc-ctl"><button type="button" class="tbtn tbtn-primary" data-dk="draw">${icon("arrow-right")}Next card</button><button type="button" class="tbtn" data-dk="shuffle">${icon("shuffle")}Shuffle</button></div>
+${reels ? `<div class="reels" data-set>${reels}</div>` : ""}
+</section>`;
+  }
+  return "";
 }

@@ -9,6 +9,7 @@ import { root } from "./serve.mjs";
 import { indexData, pageHTML, pageHref, hasPage, esc, icon, kindLabel, KIND_ICON } from "../js/open/content.js";
 
 const data = JSON.parse(readFileSync(join(root, "data", "nodes.json"), "utf8"));
+data.showcase = JSON.parse(readFileSync(join(root, "data", "showcase.json"), "utf8"));
 const ix = indexData(data);
 const SITE = "https://bryliejw.github.io";
 
@@ -68,6 +69,14 @@ ${w.sub ? `<meta name="description" content="${esc(w.sub)}">\n` : ""}<link rel="
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anybody:wdth,wght@50..150,300..900&family=Geist+Mono:wght@400..600&family=Instrument+Sans:ital,wdth,wght@0,75..100,400..700;1,75..100,400..700&display=swap">
 <link rel="stylesheet" href="/css/tokens.css">
 <link rel="stylesheet" href="/css/site.css">
+<script>document.documentElement.classList.add("js")</script>
+<script type="module">
+import { bindCarousels, mountShowcases } from "/js/open/showcase.js";
+import { bindCursor } from "/js/ui/cursor.js";
+bindCarousels();
+bindCursor();
+mountShowcases(document);
+</script>
 </head>`;
 
 for (const w of ix.projects) {

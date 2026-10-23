@@ -32,6 +32,7 @@ import { createPreview } from "./open/preview.js";
 import { createCard } from "./open/grow.js";
 import { createPanel } from "./open/panel.js";
 import { createPage } from "./open/page.js";
+import { bindCarousels } from "./open/showcase.js";
 
 const reduced = window.matchMedia("(prefers-reduced-motion: reduce)");
 const narrow = window.matchMedia("(max-width: 719px)"); // card and panel are full-screen sheets
@@ -50,8 +51,9 @@ const FONTS = [
 async function boot() {
   const params = new URLSearchParams(location.search);
   const hash = decodeURIComponent(location.hash.slice(1));
-  const data = await (await fetch("/data/nodes.json")).json();
-  const graph = buildGraph(data);
+  const [data, showcase] = await Promise.all(["/data/nodes.json", "/data/showcase.json"].map(async (u) => (await fetch(u)).json()));
+  data.showcase = showcase;
+  const graph = buildGraph(data, showcase);
   const svg = document.getElementById("map");
   render(svg, graph);
 
@@ -63,8 +65,9 @@ async function boot() {
   // Force and Edge pack by image: Extras and smaller works keep their labels for hover and zoom,
   // so their footprint is the tile with a margin; projects keep their title.
   for (const n of graph.works) {
-    const h = TILE[n.size] / 2 + (n.size === "S" ? 10 : 14);
-    n.fp.force = n.size === "L" ? n.fpSide[1] : { x: -h, y: -h, w: 2 * h, h: 2 * h };
+    const m = n.size === "S" ? 10 : 14;
+    const t = n.tile;
+    n.fp.force = n.size === "L" ? n.fpSide[1] : { x: t.x - m, y: t.y - m, w: t.w + 2 * m, h: t.h + 2 * m };
     n.fpPack = n.fp.force; // Edge packs the same way
 
   }
@@ -117,6 +120,7 @@ async function boot() {
   bindIndex({ filter, select: flow.select });
   bindKey();
   bindCursor();
+  bindCarousels();
   const nav = bindNav({ data, actions });
   const palette = bindPalette({ graph, data, filter, select: flow.select, actions });
   bindRail({ views, select: flow.select, graph });

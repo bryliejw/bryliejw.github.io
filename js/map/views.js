@@ -11,13 +11,16 @@ const MS = 750;
 // Auto label thresholds, as zoom relative to the view's home (1 = fitted). Keyword labels
 // in Edge always show (the edges are the index); work titles appear as you zoom in, by level.
 const KW_K = { force: 1.45, rings: 1.25, edge: 0 };
+// Keyword types reveal in order of weight: disciplines first, tools last.
+const KW_TYPE_K = { discipline: 0.85, topic: 0.95, value: 0.95, deliverable: 1.15, tool: 1.6 };
 const WORK_K = { L: 0, M: 1.2, S: 1.55 };
 const META_K = 1.2; // L and M "year · subtitle"
 // Lines by view when the mode is Auto: all in Force, projects in Rings, on hover in Edge.
 const LINES = { force: "all", rings: "projects", edge: "hover" };
 // Label counter-scale exponent: at twice the fitted zoom a label is 2^(1-LZ) its fitted size.
 const LZ = 0.75;
-const PRIORITY = { L: 0, M: 1, S: 2 };
+const PRIORITY = { L: 0, M: 1, S: 3 };
+const KW_RANK = { discipline: 2, topic: 4, value: 4, deliverable: 5, tool: 6 };
 const reduced = window.matchMedia("(prefers-reduced-motion: reduce)");
 
 export function createViews(graph, zoom) {
@@ -97,8 +100,8 @@ export function createViews(graph, zoom) {
     for (const n of graph.nodes) {
       if (n.hidden) continue;
       if (n.role === "work") {
-        const h = TILE[n.size] / 2;
-        obst.push({ n, x0: n.x - h, y0: n.y - h, x1: n.x + h, y1: n.y + h });
+        const t = n.tile;
+        obst.push({ n, x0: n.x + t.x, y0: n.y + t.y, x1: n.x + t.x + t.w, y1: n.y + t.y + t.h });
       } else if (n.role === "kw") obst.push({ n, x0: n.x - 3, y0: n.y - 3, x1: n.x + 3, y1: n.y + 3 });
       else {
         const f = n.fp[state.view];
@@ -144,7 +147,7 @@ export function createViews(graph, zoom) {
       else v.on = false;
     }
   }
-  const rank = (n) => (n.role === "work" ? PRIORITY[n.size] : 3);
+  const rank = (n) => (n.role === "work" ? PRIORITY[n.size] : KW_RANK[n.type]);
 
   // Visibility of labels and lines, from the modes, zoom, hover and focus. While a node is
   // hovered or focused, everything not connected to it steps back.
@@ -162,10 +165,10 @@ export function createViews(graph, zoom) {
     // than just making them bigger (see .wl and .kw-label in site.css).
     const lz = z > 1 ? Math.pow(z, -LZ) : 1;
     graph.svg.style.setProperty("--lz", lz.toFixed(3));
-    const kwOn = z >= KW_K[state.view] - 1e-6;
+    const kwOn = (k) => state.view === "edge" || z >= KW_K[state.view] * KW_TYPE_K[k.type] - 1e-6;
     const want = new Map();
     for (const k of graph.kws) {
-      let on = state.labels === "all" || (state.labels === "auto" && (kwOn || near.has(k)));
+      let on = state.labels === "all" || (state.labels === "auto" && (kwOn(k) || near.has(k)));
       if (state.labels === "off") on = k.id === state.hover || k.id === state.focus;
       if (state.moving) on = false;
       want.set(k, { on, meta: false });
