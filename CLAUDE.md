@@ -2,6 +2,10 @@
 
 Brylie Wilson's portfolio site. The whole site is one systems map with her name at the centre. Projects from her PDF taster folio are large nodes; smaller works sit around them; disciplines, deliverables, tools, topics and values are keyword nodes that connect them. Read this file before every task.
 
+## Direction change (20 Oct 2026)
+
+`design-handoff/HANDOFF.md` is the current design brief. It supersedes the Structure, Design tokens, Icons, Page layout, Map, Open flow and Shortcuts sections below, which describe the earlier systems-map build. Hard rules, Content facts and Data model still apply. Update this file to match once Brylie confirms the phase 1 plan.
+
 ## Hard rules
 
 - Live URL is https://bryliejw.github.io/ and is printed in a submitted PDF. Never rename the repo or break the root URL.

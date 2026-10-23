@@ -1,0 +1,205 @@
+{
+ "a-map": {
+  "stars": 2,
+  "verdict": null,
+  "note": "",
+  "aspects": {}
+ },
+ "a-state": {
+  "stars": 1,
+  "verdict": null,
+  "note": "",
+  "aspects": {}
+ },
+ "c-bir": {
+  "stars": 0,
+  "verdict": "replace",
+  "note": "",
+  "aspects": {}
+ },
+ "c-meta": {
+  "stars": 0,
+  "verdict": null,
+  "note": "",
+  "aspects": {
+   "spacing": {
+    "c": "",
+    "v": "like"
+   }
+  }
+ },
+ "f-mail": {
+  "stars": 1,
+  "verdict": null,
+  "note": "",
+  "aspects": {}
+ },
+ "f-next": {
+  "stars": 2,
+  "verdict": null,
+  "note": "",
+  "aspects": {}
+ },
+ "h-field": {
+  "stars": 2,
+  "verdict": null,
+  "note": "",
+  "aspects": {}
+ },
+ "h-flood": {
+  "stars": 0,
+  "verdict": "replace",
+  "note": "",
+  "aspects": {}
+ },
+ "h-maplist": {
+  "stars": 2,
+  "verdict": null,
+  "note": "i liked the list network map that was made in the og page iteration",
+  "aspects": {}
+ },
+ "h-orbit": {
+  "stars": 2,
+  "verdict": null,
+  "note": "",
+  "aspects": {}
+ },
+ "h-play": {
+  "stars": 2,
+  "verdict": null,
+  "note": "maybe for other things",
+  "aspects": {}
+ },
+ "h-rings": {
+  "stars": 2,
+  "verdict": "keep",
+  "note": "",
+  "aspects": {}
+ },
+ "h-split": {
+  "stars": 2,
+  "verdict": "keep",
+  "note": "use as alt view (list view)",
+  "aspects": {}
+ },
+ "h-type": {
+  "stars": 1,
+  "verdict": null,
+  "note": "",
+  "aspects": {}
+ },
+ "h-wall": {
+  "stars": 2,
+  "verdict": null,
+  "note": "",
+  "aspects": {}
+ },
+ "m-bloom": {
+  "stars": 2,
+  "verdict": null,
+  "note": "",
+  "aspects": {}
+ },
+ "m-cursor": {
+  "stars": 2,
+  "verdict": null,
+  "note": "",
+  "aspects": {}
+ },
+ "m-marquee": {
+  "stars": 2,
+  "verdict": null,
+  "note": "",
+  "aspects": {}
+ },
+ "m-name": {
+  "stars": 2,
+  "verdict": null,
+  "note": "",
+  "aspects": {}
+ },
+ "m-reveal": {
+  "stars": 2,
+  "verdict": null,
+  "note": "",
+  "aspects": {}
+ },
+ "m-stamp": {
+  "stars": 0,
+  "verdict": "replace",
+  "note": "",
+  "aspects": {}
+ },
+ "m-stretch": {
+  "stars": 0,
+  "verdict": "replace",
+  "note": "",
+  "aspects": {}
+ },
+ "m-trail": {
+  "stars": 1,
+  "verdict": null,
+  "note": "",
+  "aspects": {}
+ },
+ "n-corner": {
+  "stars": 0,
+  "verdict": "replace",
+  "note": "",
+  "aspects": {}
+ },
+ "n-dock": {
+  "stars": 0,
+  "verdict": "replace",
+  "note": "",
+  "aspects": {}
+ },
+ "n-menu": {
+  "stars": 1,
+  "verdict": null,
+  "note": "",
+  "aspects": {}
+ },
+ "n-pill": {
+  "stars": 2,
+  "verdict": null,
+  "note": "",
+  "aspects": {}
+ },
+ "n-pill2": {
+  "stars": 2,
+  "verdict": null,
+  "note": "",
+  "aspects": {}
+ },
+ "n-progress": {
+  "stars": 0,
+  "verdict": "replace",
+  "note": "",
+  "aspects": {}
+ },
+ "t-c": {
+  "stars": 0,
+  "verdict": "replace",
+  "note": "",
+  "aspects": {}
+ },
+ "w-table": {
+  "stars": 3,
+  "verdict": null,
+  "note": "",
+  "aspects": {}
+ },
+ "w-table2": {
+  "stars": 3,
+  "verdict": null,
+  "note": "",
+  "aspects": {}
+ },
+ "w-tier": {
+  "stars": 1,
+  "verdict": null,
+  "note": "",
+  "aspects": {}
+ }
+}

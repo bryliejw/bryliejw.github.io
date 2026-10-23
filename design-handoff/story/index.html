@@ -1,0 +1,961 @@
+<title>Symbiosis Process Story</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anybody:wdth,wght@50..150,300..900&family=Geist+Mono:wght@400..600&family=Instrument+Sans:wdth,wght@75..100,400..700&display=swap">
+<style>
+/* Layout: one journey in 8 chapters, alternating paper (thinking, drawing, making) and ink (light, testing).
+   Her drawings and models are cut out and layered with text boxes; detail sits behind pins and expanders.
+   Ultramarine only for structure, state and the decisions that moved the project. */
+:root{
+  --ink:#0A0B0E; --ink-2:#14161C; --ink-3:#1F222B;
+  --paper:#F0F1F4; --paper-2:#E3E5EB; --paper-3:#D0D3DB;
+  --blue:#2A2DF5; --blue-lt:#A9ABFF; --blue-tint:#E3E4FF;
+  --on-ink:#EEF0F4; --on-ink-2:#9DA1AD; --on-paper:#0A0B0E; --on-paper-2:#555966;
+  --display:"Anybody","Arial Narrow",system-ui,sans-serif;
+  --body:"Instrument Sans","Helvetica Neue",Arial,system-ui,sans-serif;
+  --mono:"Geist Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;
+  --rail:76px; --max:1320px;
+  --s1:12px; --s2:24px; --s3:48px; --s4:88px; --s5:clamp(96px,11vw,168px);
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{background:var(--ink);color:var(--on-ink);font:400 17px/1.6 var(--body);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--ink)}
+a{color:inherit}
+img,video,canvas{display:block;max-width:100%;height:auto}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--blue-lt);outline-offset:3px}
+.paper :focus-visible{outline-color:var(--blue)}
+p{margin:0}
+
+/* ---------- grounds + rhythm ---------- */
+.ch{position:relative;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:var(--s5)}
+.ink{background:var(--ink);color:var(--on-ink);color-scheme:dark}
+.ink2{background:var(--ink-2);color:var(--on-ink);color-scheme:dark}
+.paper{background:var(--paper);color:var(--on-paper);color-scheme:light}
+.blueg{background:var(--blue);color:#fff;color-scheme:dark}
+.wrap{max-width:var(--max);margin-inline:auto;display:grid;gap:var(--s4)}
+@media (min-width:1100px){.ch{padding-left:calc(var(--rail) + 48px)}}
+
+/* ---------- type scale: 11.5 label / 17 body / 21 lede / 30 h3 / display ---------- */
+.lab{font:500 11.5px/1.4 var(--mono);letter-spacing:.08em;text-transform:uppercase}
+.mute{color:var(--on-ink-2)} .paper .mute{color:var(--on-paper-2)}
+.eyebrow{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.num{display:inline-grid;place-items:center;min-width:30px;height:24px;padding:0 6px;background:var(--blue);color:#fff;font:600 12px/1 var(--mono)}
+h1,h2,h3{margin:0;font-family:var(--display);text-wrap:balance}
+h2{font-weight:820;font-size:clamp(48px,8.4vw,132px);line-height:.86;letter-spacing:-.028em;font-variation-settings:"wdth" 62}
+h3{font-weight:760;font-size:clamp(24px,2.4vw,32px);line-height:1.04;letter-spacing:-.012em;font-variation-settings:"wdth" 86}
+.lede{font-size:clamp(19px,1.6vw,22px);line-height:1.45;max-width:34em}
+.chhead{display:grid;gap:var(--s2);max-width:60em}
+.quote{font-family:var(--display);font-weight:640;font-size:clamp(28px,3.4vw,50px);line-height:1.05;letter-spacing:-.015em;font-variation-settings:"wdth" 80;text-wrap:balance;margin:0}
+.voice{font-family:var(--mono);font-size:13.5px;line-height:1.55}
+figure{margin:0;display:grid;gap:10px;min-width:0}
+figcaption{font:500 11.5px/1.45 var(--mono);letter-spacing:.04em;color:var(--on-ink-2)}
+.paper figcaption{color:var(--on-paper-2)}
+.chip{display:inline-flex;align-items:center;gap:6px;background:var(--blue);color:#fff;font:600 11px/1 var(--mono);letter-spacing:.06em;text-transform:uppercase;padding:7px 9px 6px;text-decoration:none}
+.chip.lt{background:var(--blue-tint);color:var(--blue)}
+.ink .chip.lt,.ink2 .chip.lt{background:var(--ink-3);color:var(--blue-lt)}
+.zoom{cursor:zoom-in}
+.split{display:grid;gap:var(--s3);align-items:start}
+@media (min-width:900px){.split{grid-template-columns:5fr 7fr}.split.rev{grid-template-columns:7fr 5fr}.split.even{grid-template-columns:1fr 1fr}}
+.split>*{min-width:0}
+
+/* ---------- text boxes, pins, expanders ---------- */
+.tbox{background:#fff;color:var(--on-paper);padding:clamp(18px,2vw,28px);display:grid;gap:14px;max-width:520px;position:relative;z-index:4}
+.ink .tbox,.ink2 .tbox{background:var(--ink-3);color:var(--on-ink)}
+.tbox.blue{background:var(--blue);color:#fff}
+.more{all:unset;cursor:pointer;display:inline-flex;align-items:center;gap:8px;font:600 11.5px/1 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--blue)}
+.ink .more,.ink2 .more{color:var(--blue-lt)}
+.more::before{content:"+";display:inline-grid;place-items:center;width:20px;height:20px;background:currentColor;color:var(--paper);font:700 14px/1 var(--mono);transition:transform .25s}
+.ink .more::before,.ink2 .more::before{color:var(--ink)}
+.more[aria-expanded="true"]::before{transform:rotate(45deg)}
+.more:focus-visible{outline:2px solid currentColor;outline-offset:3px}
+.reveal-body{display:grid;grid-template-rows:0fr;transition:grid-template-rows .45s cubic-bezier(.2,.7,.2,1)}
+.reveal-body>div{overflow:hidden;min-height:0;display:grid;gap:14px}
+.reveal-body.open{grid-template-rows:1fr}
+.pinwrap{position:relative}
+.pin{position:absolute;transform:translate(-50%,-50%);width:36px;height:36px;display:grid;place-items:center;background:var(--blue);color:#fff;border:0;font:700 13px/1 var(--mono);cursor:pointer;z-index:5;animation:ping 2.8s infinite}
+.pin[aria-expanded="true"]{background:#fff;color:var(--blue);animation:none;box-shadow:0 0 0 2px var(--blue)}
+@keyframes ping{0%{box-shadow:0 0 0 0 rgba(42,45,245,.5)}70%{box-shadow:0 0 0 14px rgba(42,45,245,0)}100%{box-shadow:0 0 0 0 rgba(42,45,245,0)}}
+.pop{position:absolute;z-index:6;width:min(320px,80%);background:var(--on-paper);color:var(--paper);padding:16px 18px;font-size:15px;line-height:1.45;opacity:0;transform:translateY(6px);pointer-events:none;transition:opacity .25s,transform .25s}
+.pop.on{opacity:1;transform:none;pointer-events:auto}
+.pop .lab{color:var(--blue-lt);display:block;margin-bottom:6px}
+@media (prefers-reduced-motion:reduce){.pin{animation:none}.reveal-body{transition:none}}
+@media (max-width:700px){.pop{position:relative;left:auto!important;right:auto!important;top:auto!important;width:auto;display:none;margin-top:10px;transform:none}.pop.on{display:block}}
+
+/* ---------- cutouts + layering ---------- */
+.cut{filter:drop-shadow(0 20px 26px rgba(10,11,14,.22))}
+.ink .cut,.ink2 .cut{filter:drop-shadow(0 18px 30px rgba(0,0,0,.6))}
+.float{animation:bob 8s ease-in-out infinite}
+.float.b{animation-duration:10s;animation-delay:-3s}
+.float.c{animation-duration:12s;animation-delay:-6s}
+@keyframes bob{0%,100%{translate:0 0;rotate:0deg}50%{translate:0 -10px;rotate:-1.2deg}}
+@media (prefers-reduced-motion:reduce){.float{animation:none}}
+.stack{position:relative}
+@media (min-width:900px){.stack{height:var(--h,720px)}.stack>.l{position:absolute}}
+@media (max-width:899px){
+  .stack{display:grid;gap:18px}
+  .stack>.l{position:relative;left:auto!important;right:auto!important;top:auto!important;bottom:auto!important;width:auto!important;max-width:100%}
+  .stack>.l.hide-s{display:none}
+}
+
+/* ---------- top bar + rail ---------- */
+.top{position:fixed;top:env(safe-area-inset-top,0px);left:0;right:0;z-index:50;display:flex;align-items:center;gap:16px;padding:12px max(16px,env(safe-area-inset-right,0px)) 12px max(16px,env(safe-area-inset-left,0px));background:color-mix(in srgb,var(--ink) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--ink-3);transition:background .3s,color .3s,border-color .3s}
+.top.onpaper{background:color-mix(in srgb,var(--paper) 94%,transparent);color:var(--on-paper);border-color:var(--paper-3)}
+.top .me{font:800 15px/1 var(--display);font-variation-settings:"wdth" 100;text-decoration:none}
+.top .where{font:500 11.5px/1 var(--mono);letter-spacing:.07em;text-transform:uppercase;opacity:.8;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0;flex:1}
+.top .where b{color:var(--blue-lt);font-weight:600}
+.top.onpaper .where b{color:var(--blue)}
+.tbtn{display:inline-flex;align-items:center;gap:7px;background:none;border:1.5px solid currentColor;padding:7px 10px 6px;font:600 11.5px/1 var(--mono);letter-spacing:.06em;text-transform:uppercase;cursor:pointer;white-space:nowrap}
+.tbtn[aria-pressed="true"]{background:var(--blue);border-color:var(--blue);color:#fff}
+.tbtn svg{width:14px;height:14px}
+.prog{position:absolute;left:0;bottom:-1px;height:2px;background:var(--blue);width:0}
+@media (max-width:640px){.tbtn .t{display:none}.top .me span{display:none}}
+.rail{position:fixed;left:max(0px,env(safe-area-inset-left,0px));top:0;bottom:0;width:var(--rail);z-index:40;display:none;flex-direction:column;justify-content:center;gap:2px;padding-top:56px}
+@media (min-width:1100px){.rail{display:flex}}
+.rail a{position:relative;display:grid;justify-items:center;gap:3px;padding:7px 0;text-decoration:none;color:var(--on-ink-2);transition:color .2s}
+.rail a b{font:600 12px/1 var(--mono)}
+.rail a i{font:500 9px/1 var(--mono);font-style:normal;letter-spacing:.04em;text-transform:uppercase;opacity:.75}
+.rail.onpaper a{color:var(--on-paper-2)}
+.rail a::before{content:"";position:absolute;left:0;top:6px;bottom:6px;width:3px;background:transparent;transition:background .2s}
+.rail a.on{color:var(--on-ink)} .rail.onpaper a.on{color:var(--on-paper)}
+.rail a.on::before{background:var(--blue)}
+.rail a .tip{position:absolute;left:calc(100% - 8px);top:50%;transform:translate(-4px,-50%);white-space:nowrap;background:var(--blue);color:#fff;font:600 11px/1 var(--mono);letter-spacing:.06em;text-transform:uppercase;padding:7px 9px;opacity:0;pointer-events:none;transition:.18s}
+.rail a:hover .tip,.rail a:focus-visible .tip{opacity:1;transform:translate(0,-50%)}
+
+/* ---------- hero ---------- */
+.hero{position:relative;min-height:min(960px,100svh);display:grid;align-content:end;padding:110px max(16px,env(safe-area-inset-right,0px)) clamp(36px,5vw,64px) max(16px,env(safe-area-inset-left,0px));overflow:hidden;background:var(--ink)}
+@media (min-width:1100px){.hero{padding-left:calc(var(--rail) + 48px)}}
+.hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.55}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,11,14,.55) 0%,rgba(10,11,14,0) 35%,rgba(10,11,14,.15) 55%,var(--ink) 100%)}
+.hero .wrap{position:relative;z-index:2;gap:28px;width:100%}
+.hero h1{font-weight:850;font-size:clamp(60px,14vw,250px);line-height:.8;letter-spacing:-.035em;font-variation-settings:"wdth" 125;margin-left:-.04em;white-space:nowrap;animation:grow 2.4s cubic-bezier(.2,.7,.1,1) both}
+@keyframes grow{from{font-variation-settings:"wdth" 50;letter-spacing:-.06em;opacity:.25}to{font-variation-settings:"wdth" 125;letter-spacing:-.035em;opacity:1}}
+@media (prefers-reduced-motion:reduce){.hero h1{animation:none}}
+.hero .sub{font:600 clamp(20px,2.2vw,30px)/1.15 var(--display);font-variation-settings:"wdth" 90;max-width:22em}
+.metarow{display:flex;flex-wrap:wrap;gap:12px 36px;border-top:1px solid rgba(238,240,244,.25);padding-top:14px;margin:0}
+.metarow div{display:grid;gap:6px}
+.metarow dt{font:500 11px/1 var(--mono);letter-spacing:.07em;text-transform:uppercase;color:var(--on-ink-2)}
+.metarow dd{margin:0;font-weight:600;font-size:15px}
+.scrollcue{position:absolute;right:max(16px,env(safe-area-inset-right,0px));bottom:clamp(36px,5vw,64px);z-index:3;font:500 11px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--on-ink-2);display:flex;gap:10px;align-items:center}
+.scrollcue i{width:1.5px;height:44px;background:linear-gradient(var(--blue-lt),transparent);animation:cue 2.2s ease-in-out infinite;transform-origin:top}
+@keyframes cue{0%{transform:scaleY(0)}60%{transform:scaleY(1)}100%{transform:scaleY(1);opacity:0}}
+@media (prefers-reduced-motion:reduce){.scrollcue i{animation:none}}
+@media (max-width:700px){.scrollcue{display:none}}
+
+/* ---------- brief ---------- */
+.bir{display:grid;gap:2px;grid-template-columns:repeat(auto-fit,minmax(min(100%,290px),1fr))}
+.bir>div{background:var(--ink-2);padding:clamp(20px,2.4vw,32px);display:grid;gap:14px;align-content:start}
+.bir>div:nth-child(3){background:var(--blue);color:#fff}
+.bir .k{font:600 12px/1 var(--mono);letter-spacing:.07em;text-transform:uppercase;color:var(--blue-lt)}
+.bir>div:nth-child(3) .k{color:#fff;opacity:.8}
+.prompt{border-left:3px solid var(--blue);padding:4px 0 4px 18px;max-width:46em}
+
+/* ---------- research ---------- */
+.reveal span{transition:color .35s}
+.reveal span.lit{color:var(--blue)}
+.motifs{position:relative;height:clamp(320px,34vw,440px)}
+.motifs img{position:absolute}
+@media (max-width:899px){.motifs{height:auto;display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:center}.motifs img{position:static;max-width:42%!important}}
+
+/* ---------- flow (task flow redrawn) ---------- */
+.flow{display:grid;gap:30px;position:relative;font-size:14.5px;line-height:1.4;--ln:var(--on-paper-2)}
+.fr{display:grid;gap:20px;position:relative}
+.fr.one{grid-template-columns:minmax(0,1fr);justify-items:center}
+.fr.two{grid-template-columns:1fr 1fr}
+.fr+.fr::before{content:"";position:absolute;left:50%;top:-30px;height:30px;width:1.5px;background:var(--ln);transform-origin:top;transition:transform .45s var(--d,0s)}
+.fr.two::after{content:"";position:absolute;left:25%;right:25%;top:-12px;height:1.5px;background:var(--ln);transform-origin:center;transition:transform .45s var(--d,0s)}
+.fn{position:relative;background:#fff;padding:12px 14px;max-width:330px;width:100%;display:grid;gap:4px;justify-self:center;transition:opacity .45s var(--d,0s),transform .45s var(--d,0s)}
+.fr.two .fn::before{content:"";position:absolute;left:50%;top:-12px;height:12px;width:1.5px;background:var(--ln)}
+.fn b{font:600 10.5px/1.2 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--on-paper-2)}
+.fn.hot2{background:var(--blue);color:#fff}
+.fn.hot2 b{color:#fff;opacity:.85}
+.flow.armed .fn{opacity:0;transform:translateY(8px)}
+.flow.armed .fr+.fr::before{transform:scaleY(0)} .flow.armed .fr.two::after{transform:scaleX(0)}
+
+/* ---------- p5 bloom ---------- */
+.bloom{display:grid;gap:var(--s3);align-items:center}
+@media (min-width:900px){.bloom{grid-template-columns:6fr 5fr}}
+.p5box{position:relative;aspect-ratio:1;max-width:600px;width:100%;justify-self:center;background:radial-gradient(circle at 50% 50%,#1C1E28 0%,var(--ink) 70%);touch-action:none;user-select:none;-webkit-user-select:none;cursor:pointer}
+.p5box canvas{position:absolute;inset:0;width:100%!important;height:100%!important}
+.p5box .state{position:absolute;left:14px;top:14px;display:flex;gap:4px;z-index:2}
+.p5box .state span{font:600 10.5px/1 var(--mono);letter-spacing:.06em;text-transform:uppercase;padding:7px 9px 6px;background:var(--ink-3);color:var(--on-ink-2)}
+.p5box .state span.on{background:var(--blue);color:#fff}
+.p5box .hint{position:absolute;left:0;right:0;bottom:14px;text-align:center;font:500 11px/1 var(--mono);letter-spacing:.07em;text-transform:uppercase;color:var(--on-ink-2);z-index:2}
+.p5box .fallback{position:absolute;inset:12%;width:76%;height:auto;opacity:.9}
+.tabs{display:flex;gap:2px;flex-wrap:wrap}
+.tabs button{all:unset;cursor:pointer;flex:1 1 0;min-width:84px;padding:11px 12px;background:var(--ink-2);font:600 11.5px/1 var(--mono);letter-spacing:.05em;text-transform:uppercase;position:relative;overflow:hidden}
+.tabs button[aria-selected="true"]{background:var(--blue);color:#fff}
+.tabs button .bar{position:absolute;left:0;bottom:0;height:2px;background:#fff;width:0}
+.tabs button .bar.run{animation:fill 6s linear forwards}
+@keyframes fill{to{width:100%}}
+.tabs button:focus-visible{outline:2px solid var(--blue-lt)}
+.tabpanel{min-height:150px;display:grid;gap:12px;align-content:start}
+pre.code{margin:0;background:var(--ink-2);padding:16px 18px;font:400 12.5px/1.55 var(--mono);color:#C9CCD6;overflow-x:auto}
+pre.code .c{color:#7E8394} pre.code .k{color:var(--blue-lt)}
+
+/* ---------- narrative pan ---------- */
+.pan{position:relative;height:280vh}
+.pan .stage{position:sticky;top:0;height:100svh;overflow:hidden;display:grid}
+.pan .inner{max-width:var(--max);margin-inline:auto;width:100%;display:grid;gap:clamp(24px,4vw,64px);align-items:center}
+@media (min-width:900px){.pan .inner{grid-template-columns:5fr 6fr}}
+.pan .win{height:min(84svh,820px);overflow:hidden;position:relative;background:var(--ink)}
+.pan .win img{width:100%;will-change:transform}
+.pan .lines{display:grid;gap:22px}
+.pan .lines p{font-size:clamp(18px,1.6vw,22px);line-height:1.4;opacity:.28;transition:opacity .4s}
+.pan .lines p.on{opacity:1}
+@media (max-width:899px){.pan{height:auto}.pan .stage{position:static;height:auto;padding-block:24px}.pan .win{height:70svh}.pan .lines p{opacity:1}}
+
+/* ---------- board ---------- */
+.board{position:relative;height:clamp(460px,48vw,600px);background:var(--paper-2);overflow:hidden;container-type:inline-size}
+.note{position:absolute;background:#9EE0A8;color:#10301A;font:500 clamp(9px,1.6cqi,13px)/1.2 var(--body);padding:.6em .7em;box-shadow:0 2px 0 rgba(0,0,0,.08);transition:left .9s cubic-bezier(.6,0,.2,1),top .9s cubic-bezier(.6,0,.2,1),transform .9s cubic-bezier(.6,0,.2,1),width .9s;width:15%;display:grid;place-items:center;text-align:center;min-height:2.6em}
+.note.big{font-weight:600;font-size:clamp(10px,1.9cqi,16px);min-height:3.2em}
+@media (prefers-reduced-motion:reduce){.note{transition:none}}
+@media (max-width:700px){.board{height:auto;display:flex;flex-wrap:wrap;gap:4px;padding:10px;align-content:start}.note{position:static!important;width:auto!important;transform:none!important;flex:1 1 40%}}
+.aspects{display:grid;gap:2px;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr))}
+.aspects a{display:grid;gap:8px;padding:18px 20px;background:var(--on-paper);color:var(--paper);text-decoration:none;transition:background .2s}
+.aspects a:hover{background:var(--blue)}
+.aspects a b{font:800 clamp(20px,2vw,26px)/1 var(--display);font-variation-settings:"wdth" 78}
+.aspects a span{font:600 11px/1 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--blue-lt)}
+
+/* ---------- materials ---------- */
+.p1head{position:relative;display:grid;gap:24px}
+@media (min-width:900px){.p1head{grid-template-columns:7fr 4fr;align-items:end}.p1head .arches{margin-block:-60px -40px;max-height:620px;width:auto;justify-self:end}}
+.p1head .arches{max-height:420px;width:auto;justify-self:center}
+.mats{overflow:clip;display:grid;gap:2px;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr))}
+.mats .m{background:var(--paper-2);padding:22px;display:grid;gap:14px;align-content:start;position:relative}
+.mats .m.kept{background:var(--blue);color:#fff}
+.mats .pic{height:220px;display:grid;place-items:center}
+.mats .pic img{max-height:220px;width:auto;max-width:100%;transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+.mats .m:hover .pic img{transform:translateY(-8px) rotate(-3deg) scale(1.04)}
+.mats dl{margin:0;display:grid;grid-template-columns:48px 1fr;gap:8px 12px;font-size:15px}
+.mats dd{margin:0}
+.mats dt{font:600 11px/1.5 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--on-paper-2)}
+.mats .kept dt{color:#fff;opacity:.75}
+.mats .row{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.stamp{font:700 12px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;padding:8px 10px;box-shadow:inset 0 0 0 2px currentColor;transform:rotate(-6deg);transition:transform .5s cubic-bezier(.3,1.6,.5,1) var(--d,0s),opacity .3s var(--d,0s)}
+.kept .stamp{background:#fff;color:var(--blue);box-shadow:none}
+.mats.armed .stamp{transform:rotate(-6deg) scale(2.4);opacity:0}
+.aim{display:grid;gap:2px}
+.aim>div{padding:22px;background:var(--paper-2);display:grid;gap:10px;align-content:start}
+.aim>div:last-child{background:var(--on-paper);color:var(--paper)}
+.aim s{text-decoration-thickness:2px;text-decoration-color:var(--blue)}
+.spinfig{justify-items:center}
+.spinfig img{max-height:560px;width:auto;will-change:transform}
+
+/* ---------- transcript + findings ---------- */
+.talk{display:grid;gap:var(--s3);align-items:start}
+@media (min-width:900px){.talk{grid-template-columns:6fr 5fr}.talk .vidstick{position:sticky;top:90px}}
+.transcript{list-style:none;margin:0;padding:0;display:grid}
+.transcript li{padding:11px 0 11px 18px;border-left:2px solid var(--ink-3);font-family:var(--mono);font-size:14px;line-height:1.5;color:var(--on-ink-2);transition:color .3s,border-color .3s}
+.transcript li.hi{color:var(--on-ink);border-left-color:var(--blue)}
+.finds{display:grid;gap:2px;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr))}
+.fd{all:unset;cursor:pointer;background:var(--ink-2);padding:20px;display:grid;gap:10px;align-content:start;position:relative}
+.fd .t{font:800 22px/1 var(--display);font-variation-settings:"wdth" 78}
+.fd .o{font-size:15.5px}
+.fd .i{display:grid;grid-template-rows:0fr;transition:grid-template-rows .4s;color:var(--blue-lt);font-weight:600;font-size:15px}
+.fd .i>span{overflow:hidden}
+.fd[aria-expanded="true"] .i{grid-template-rows:1fr}
+.fd .k{font:600 10.5px/1 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--blue-lt)}
+.fd .k::after{content:" +"}
+.fd[aria-expanded="true"] .k::after{content:" ×"}
+.fd:focus-visible{outline:2px solid var(--blue-lt)}
+
+/* ---------- symbol demo + traced testers ---------- */
+.demo{display:grid;gap:2px;background:var(--ink-3)}
+@media (min-width:900px){.demo{grid-template-columns:4fr 8fr}}
+.demo .floor{background:var(--ink);padding:28px;display:grid;gap:18px;align-content:center;justify-items:center;position:relative;min-height:340px}
+.demo .proj{background:#000;position:relative;display:grid}
+.demo .proj video{width:100%;height:100%;object-fit:cover;opacity:.3;filter:grayscale(1);transition:opacity 1s,filter 1s}
+.demo.active .proj video{opacity:1;filter:none}
+.sym{all:unset;cursor:pointer;width:min(220px,60vw);aspect-ratio:1;display:grid;place-items:center;position:relative}
+.sym svg{width:100%;height:100%;overflow:visible}
+.sym .halo{transform-origin:50% 50%;animation:breathe 2.8s ease-in-out infinite}
+@keyframes breathe{50%{opacity:.25;transform:scale(1.06)}}
+.demo.active .sym .halo{animation:none;opacity:1}
+@media (prefers-reduced-motion:reduce){.sym .halo{animation:none}}
+.demo .state{display:flex;gap:6px;flex-wrap:wrap;justify-content:center}
+.demo .state span{font:600 11px/1 var(--mono);letter-spacing:.06em;text-transform:uppercase;padding:7px 9px 6px;background:var(--ink-3);color:var(--on-ink-2)}
+.demo .state span.on{background:var(--blue);color:#fff}
+.demo .line{position:absolute;top:50%;right:-2px;height:2px;width:0;background:var(--blue-lt);transition:width .9s cubic-bezier(.3,.7,.2,1);box-shadow:0 0 12px var(--blue-lt)}
+.demo.active .line{width:calc(50% - 110px)}
+@media (max-width:899px){.demo .line{display:none}}
+.scene{display:grid;gap:10px}
+.stagebox{position:relative;aspect-ratio:4/3;background:var(--ink);overflow:hidden}
+.traced,.photos{position:absolute;inset:0;transition:opacity .5s}
+.photos{display:grid;grid-template-columns:1fr 1fr;gap:2px;opacity:0}
+.photos img{width:100%;height:100%;object-fit:cover}
+.scene.ph .photos{opacity:1} .scene.ph .traced{opacity:0}
+.flr{position:absolute;left:10%;bottom:9%;height:16%;width:80%}
+.sil{position:absolute;bottom:14%;display:block;background:var(--blue-lt);-webkit-mask:var(--m) center bottom/contain no-repeat;mask:var(--m) center bottom/contain no-repeat}
+.sil.s1{left:22%;width:15%;height:72%}
+.sil.s2{left:47%;width:24%;height:34%;background:#fff;opacity:.9}
+
+/* ---------- P3 ---------- */
+.xfade{position:relative;aspect-ratio:1006/566;overflow:hidden;background:#0d1a10}
+.xfade img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 1.4s}
+.xfade img.on{opacity:1}
+.xfade .ticks{position:absolute;left:12px;bottom:12px;display:flex;gap:4px;z-index:2}
+.xfade .ticks i{width:28px;height:3px;background:rgba(255,255,255,.35)}
+.xfade .ticks i.on{background:#fff}
+.obs{display:grid;gap:2px}
+.obs>div{background:var(--ink-2);padding:18px 20px;display:grid;gap:6px}
+
+/* ---------- pivot ---------- */
+.pivot{display:grid;gap:2px;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr))}
+.pivot>div{background:rgba(255,255,255,.1);padding:clamp(20px,2.4vw,32px);display:grid;gap:12px;align-content:start}
+.pivot>div.out{background:#fff;color:var(--on-paper)}
+
+/* ---------- final walkthrough ---------- */
+.walk{display:grid;gap:var(--s3);align-items:start}
+@media (min-width:1000px){.walk{grid-template-columns:6fr 5fr}}
+.walk .view{display:grid;gap:16px}
+.walk .view img{aspect-ratio:1;object-fit:cover;width:100%}
+.wtabs{display:flex;gap:2px;flex-wrap:wrap}
+.wtabs button{all:unset;cursor:pointer;flex:1 1 0;min-width:110px;padding:12px 14px;background:var(--ink-2);font:700 13px/1 var(--mono);letter-spacing:.05em;text-transform:uppercase;display:flex;gap:10px;align-items:center}
+.wtabs button b{color:var(--blue-lt)}
+.wtabs button[aria-selected="true"]{background:var(--blue);color:#fff}
+.wtabs button[aria-selected="true"] b{color:#fff}
+.wtabs button:focus-visible{outline:2px solid var(--blue-lt)}
+#walkMap .pin{width:40px;height:40px;font-size:14px;animation:none}
+
+/* ---------- credits ---------- */
+.credits{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));border-top:2px solid var(--on-paper)}
+.credits>div{padding:16px 20px 16px 0;border-bottom:1px solid var(--paper-3);display:grid;gap:6px;align-content:start}
+.next{display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap;text-decoration:none;padding-top:28px;border-top:2px solid currentColor}
+.next .big{font:850 clamp(48px,9vw,140px)/.85 var(--display);letter-spacing:-.03em;font-variation-settings:"wdth" 120;transition:color .25s,font-variation-settings .6s}
+.next:hover .big{color:var(--blue);font-variation-settings:"wdth" 150}
+footer.prov{padding:40px max(16px,env(safe-area-inset-right,0px)) 56px max(16px,env(safe-area-inset-left,0px));background:var(--paper-2);color:var(--on-paper-2);font-size:13px;line-height:1.55}
+@media (min-width:1100px){footer.prov{padding-left:calc(var(--rail) + 48px)}}
+footer.prov .wrap{gap:14px}
+footer.prov ul{margin:0;padding-left:18px;display:grid;gap:4px;max-width:70em}
+
+/* ---------- lightbox / present / review ---------- */
+.lb{position:fixed;inset:0;z-index:90;background:rgba(6,7,9,.94);display:grid;grid-template-rows:1fr auto;padding:max(56px,env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) max(16px,env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px))}
+.lb img{max-width:100%;max-height:100%;margin:auto;object-fit:contain;min-height:0;background:var(--paper)}
+.lb .cap{color:var(--on-ink-2);font:500 12px/1.5 var(--mono);padding-top:12px;text-align:center}
+.lb .x{position:absolute;top:max(14px,env(safe-area-inset-top,0px));right:max(16px,env(safe-area-inset-right,0px));color:#fff}
+.timer{position:fixed;right:max(16px,env(safe-area-inset-right,0px));bottom:max(16px,env(safe-area-inset-bottom,0px));z-index:55;background:var(--blue);color:#fff;font:600 22px/1 var(--mono);padding:12px 14px;display:none;gap:10px;align-items:center;font-variant-numeric:tabular-nums}
+.timer small{font:500 10.5px/1.2 var(--mono);letter-spacing:.06em;text-transform:uppercase;opacity:.8;max-width:9em}
+body.presenting .timer{display:flex}
+.timer.over{background:#fff;color:var(--blue)}
+.keyhint{position:fixed;left:50%;bottom:max(16px,env(safe-area-inset-bottom,0px));transform:translateX(-50%);z-index:55;background:var(--ink-3);color:var(--on-ink);font:500 11.5px/1 var(--mono);letter-spacing:.05em;padding:10px 12px;display:none}
+body.presenting .keyhint{display:block;animation:fadeout 4s forwards}
+@keyframes fadeout{0%,70%{opacity:1}100%{opacity:0}}
+.rv{display:none}
+body.reviewing .rv{display:grid}
+.rv{gap:10px;padding:14px 16px;background:var(--blue-tint);color:var(--on-paper);margin-top:var(--s3);max-width:var(--max);margin-inline:auto;width:100%;position:relative}
+.rv .hd{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.rv .nm{font:600 11.5px/1.2 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--blue)}
+.rv .stars{display:flex;gap:2px}
+.rv .stars button{all:unset;cursor:pointer;font-size:20px;line-height:1;color:#B9BBD6;padding:2px}
+.rv .stars button.on{color:var(--blue)}
+.rv .seg{display:flex;gap:2px}
+.rv .seg button{all:unset;cursor:pointer;font:600 11.5px/1 var(--mono);letter-spacing:.05em;text-transform:uppercase;padding:8px 10px;background:#fff;color:var(--on-paper)}
+.rv .seg button.on.k{background:var(--blue);color:#fff}
+.rv .seg button.on.r{background:var(--on-paper);color:#fff}
+.rv .asps{display:flex;flex-wrap:wrap;gap:4px}
+.rv .asps button{all:unset;cursor:pointer;font:600 11px/1 var(--mono);letter-spacing:.04em;padding:7px 8px;background:#fff;color:var(--on-paper)}
+.rv .asps button.like{background:var(--blue);color:#fff}
+.rv .asps button.dislike{background:var(--on-paper);color:#fff;text-decoration:line-through}
+.rv textarea,.rv input{width:100%;font:400 14px/1.4 var(--body);padding:9px 10px;border:0;background:#fff;color:var(--on-paper);resize:vertical}
+.rv .st{font:500 11px/1 var(--mono);color:var(--on-paper-2)}
+.rv button:focus-visible,.rv textarea:focus-visible,.rv input:focus-visible{outline:2px solid var(--blue)}
+</style>
+
+<header class="top" id="top">
+  <a class="me" href="https://bryliejw.github.io/" target="_blank" rel="noopener">Brylie Wilson<span> · Work</span></a>
+  <span class="where" id="where"><b>03</b> Symbiosis</span>
+  <button class="tbtn" id="presentBtn" type="button" aria-pressed="false" title="Present: arrow keys step through, 2:30 timer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"><path d="M3 4h18v12H3zM8 20h8M12 16v4"/></svg><span class="t">Present</span></button>
+  <button class="tbtn" id="reviewBtn" type="button" aria-pressed="false" hidden title="Keep or replace, stars, notes and aspect chips per section"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"><path d="M12 3l2.8 5.8 6.2.9-4.5 4.4 1.1 6.2L12 17.4 6.4 20.3l1.1-6.2L3 9.7l6.2-.9z"/></svg><span class="t">Review</span></button>
+  <i class="prog" id="prog"></i>
+</header>
+<nav class="rail" id="rail" aria-label="Chapters"></nav>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="intro" data-chapter="00" data-name="Symbiosis" data-review="hero" data-review-name="Opener">
+  <video src="media/v-p3.mp4" poster="media/v-p3-poster.jpg" autoplay muted loop playsinline aria-hidden="true"></video>
+  <div class="wrap">
+    <div class="eyebrow"><span class="num">03</span><span class="lab mute">Process story</span></div>
+    <h1>Symbiosis</h1>
+    <p class="sub">Immersive installation concept for the Powerhouse Museum</p>
+    <dl class="metarow">
+      <div><dt>Year</dt><dd>2024</dd></div>
+      <div><dt>Context</dt><dd>Visualising Experience, UTS</dd></div>
+      <div><dt>Team</dt><dd>Individual</dd></div>
+      <div><dt>Studio leader</dt><dd>Monica Monin</dd></div>
+      <div><dt>Fields</dt><dd>Experience design · Museum interpretation</dd></div>
+    </dl>
+  </div>
+  <span class="scrollcue" aria-hidden="true">Scroll<i></i></span>
+</section>
+
+<!-- ===== BRIEF ===== -->
+<section class="ch ink" id="brief" data-chapter="00" data-name="Brief" data-review="brief" data-review-name="Brief">
+  <div class="wrap" style="gap:var(--s3)">
+    <p class="prompt lede"><span class="lab mute" style="display:block;margin-bottom:8px">Brief prompt · Powerhouse Museum collection</span>How can a visitor’s understanding, interpretation or appreciation of this object be enhanced or enlivened through interaction with digital technologies?</p>
+    <div class="bir">
+      <div><span class="k">Brief</span><p>A university assignment: design an interactive digital experience for one object. I chose Christopher Dresser’s cast-iron Garden Chair, 1870.</p></div>
+      <div><span class="k">Insight</span><p>We see the chair as either a utilitarian object or a piece of art, a division that reflects design for standardisation rather than an intrinsic truth.</p></div>
+      <div><span class="k">Response</span><p>An immersive installation inspired by his philosophy that true appreciation of beauty arises from contextual knowledge and understanding.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 01 RESEARCH ===== -->
+<section class="ch paper" id="research" data-chapter="01" data-name="Research" data-review="research" data-review-name="01 Research">
+  <div class="wrap">
+    <div class="chhead">
+      <div class="eyebrow"><span class="num">01</span><span class="lab">Research · Reading Dresser · Aug</span></div>
+      <h2 class="reveal" id="reveal" aria-label="Pleasure is derived from that which is understood.">Pleasure is derived from that which is understood.</h2>
+      <p class="lab mute">Christopher Dresser, The Art of Decorative Design, 1862</p>
+    </div>
+    <div class="stack" style="--h:720px">
+      <img class="l hide-s" data-par="-.06" src="media/d-panel.webp" width="810" height="852" alt="" aria-hidden="true" style="left:0;top:0;width:33%;opacity:.5">
+      <img class="l zoom" data-par=".05" src="media/d-chair.webp" width="648" height="878" alt="My line drawing of the Garden Chair, front view" style="left:35%;top:10px;width:29%">
+      <img class="l zoom" data-par="-.03" src="media/d-side.webp" width="667" height="843" alt="My line drawing of the Garden Chair, side view" style="right:0;top:80px;width:28%">
+      <div class="l tbox" style="left:0;bottom:0;width:min(470px,40%)">
+        <span class="lab" style="color:var(--blue)">Tracing the chair, reading the books</span>
+        <p>Once I started reading Dresser’s publications, I pulled out the figures he references in each chapter and made an annotated mind map of these, which allowed me to visually see the connections between ideas and concepts.</p>
+        <p>I read The Art of Decorative Design (1862) and The Principles of Decorative Design (1873) entirely through.</p>
+        <button class="more" type="button" aria-expanded="false" aria-controls="mm">My first mind map</button>
+        <div class="reveal-body" id="mm"><div><p class="mute" style="font-size:15px">My first mind map of the chair’s context kept growing and needed constant reorganising.</p><img class="zoom" src="media/d-mindmap.webp" width="1519" height="1074" alt="My initial hand-drawn research mind map" loading="lazy"></div></div>
+      </div>
+    </div>
+    <div style="display:grid;gap:var(--s2)">
+      <span class="lab">Redrawing his ornament, motif by motif</span>
+      <div class="motifs" aria-label="Ornament redraws with my annotations">
+        <img class="float zoom" data-par="-.08" src="media/d-star.webp" width="528" height="481" alt="Redrawn star flower, annotated alternation and hexagonal symmetry" style="left:2%;top:4%;width:23%">
+        <img class="float b zoom" data-par=".06" src="media/d-palm.webp" width="292" height="520" alt="Redrawn palmette" style="left:29%;top:0;width:12%">
+        <img class="float c zoom" data-par="-.04" src="media/d-arrow.webp" width="785" height="487" alt="Redrawn arrowhead and curves motif, annotated" style="left:46%;top:12%;width:32%">
+        <img class="float b zoom" data-par=".09" src="media/d-dodec.webp" width="321" height="224" alt="Redrawn dodecagonal rosette, annotated" style="left:83%;top:2%;width:15%">
+        <img class="float zoom" data-par="-.05" src="media/d-rep.webp" width="341" height="229" alt="Redrawn repetition motif, annotated" style="left:82%;top:58%;width:16%">
+        <img class="float c zoom" data-par=".04" src="media/d-curl.webp" width="110" height="300" alt="Redrawn curl" style="left:40%;top:52%;width:5%">
+      </div>
+    </div>
+    <div class="pinwrap" style="max-width:1100px;width:100%;justify-self:center">
+      <img src="media/d-conceptmap.webp" width="1600" height="1002" alt="My hand-drawn concept map" loading="lazy">
+      <button class="pin" type="button" style="left:42%;top:78%" aria-expanded="false" data-pop="p-key" aria-label="Key idea">1</button>
+      <div class="pop" id="p-key" style="left:46%;top:50%"><span class="lab">Key idea</span>If visitors learn and appreciate Dresser’s principles on the way, they will recognise the same beauty when they see the chair.</div>
+      <button class="pin" type="button" style="left:58%;top:40%" aria-expanded="false" data-pop="p-hmw" aria-label="How might we">2</button>
+      <div class="pop" id="p-hmw" style="left:60%;top:6%"><span class="lab">How might we</span>Reimagine Dresser’s ornamental imagery to engage and educate the contemporary audience on the intersections between science, nature and the arts?</div>
+    </div>
+  </div>
+  <div class="rv-slot"></div>
+</section>
+
+<!-- ===== 02 CONCEPT 01 ===== -->
+<section class="ch paper" id="concept1" data-chapter="02" data-name="Concept 01 · VR" data-review="concept1" data-review-name="02 Concept 01 · VR" style="padding-top:0">
+  <div class="wrap">
+    <div class="chhead">
+      <div class="eyebrow"><span class="num">02</span><span class="lab">Concept 01 · VR · Aug to Sep</span></div>
+      <h2>Pick up the ornament</h2>
+      <p class="lede">My initial design was a Virtual Reality experience where the user could ‘pick up’ one of the floral motifs from the chair and examine it closer.</p>
+    </div>
+    <div class="split" style="align-items:center">
+      <div style="display:grid;gap:14px">
+        <span class="lab">Task flow · 27 Aug</span>
+        <p class="lede">The first task flow already split between a headset and a room.</p>
+        <p class="mute" style="font-size:15px">The projection-mapping branch is the one that became concept 02.</p>
+      </div>
+      <div class="flow anim" id="flow" aria-label="User task flow map, redrawn">
+        <div class="fr one"><div class="fn">Person stands in front of the object for about 3 seconds, so it doesn’t activate for people walking by</div></div>
+        <div class="fr two"><div class="fn"><b>VR</b>Cameras scan and create the environment</div><div class="fn hot2"><b>Projection mapping</b>A sensor senses the person standing</div></div>
+        <div class="fr one"><div class="fn">User chooses a learning goal</div></div>
+        <div class="fr two"><div class="fn"><b>Ornamental motifs</b>Ornaments come to life: flowers bloom, leaves sway, vines grow</div><div class="fn"><b>Principles of ornament</b>An animation for each principle</div></div>
+        <div class="fr one"><div class="fn">Information is projected beside the focus, with a way to exit, pick another motif or go back</div></div>
+      </div>
+    </div>
+    <div class="pinwrap" style="max-width:980px;width:100%;justify-self:center">
+      <img class="zoom" src="media/d-vrboard.webp" width="1600" height="1600" alt="Design concept 01 board: VR plan around the chair, primary point of view, and a flower pinned to an open hand" loading="lazy">
+      <button class="pin" type="button" style="left:26%;top:27%" aria-expanded="false" data-pop="v1" aria-label="Point of view">1</button>
+      <div class="pop" id="v1" style="left:30%;top:30%"><span class="lab">Point of view</span>Empty patches of vegetation where the person can walk around the chair.</div>
+      <button class="pin" type="button" style="left:50%;top:76%" aria-expanded="false" data-pop="v2" aria-label="Chair">2</button>
+      <div class="pop" id="v2" style="left:8%;top:52%"><span class="lab">Chair</span>Animations trigger on entry with a 2 second delay, then pulse in size and light to incentivise interaction.</div>
+      <button class="pin" type="button" style="left:79%;top:78%" aria-expanded="false" data-pop="v3" aria-label="Hand">3</button>
+      <div class="pop" id="v3" style="right:2%;top:46%"><span class="lab">Hand</span>The flower is pinned to the open hand. A closed hand makes it shrink and glow, opening it makes it bloom and grow.</div>
+    </div>
+  </div>
+  <div class="rv-slot"></div>
+</section>
+
+<!-- ===== creative code ===== -->
+<section class="ch ink" id="code" data-chapter="02" data-name="Creative code" data-review="code" data-review-name="02 Creative code">
+  <div class="wrap" style="gap:var(--s3)">
+    <div class="eyebrow"><span class="num">02</span><span class="lab mute">Creative code · p5.js · 18 to 22 Sep</span></div>
+    <div class="bloom">
+      <div class="p5box" id="p5box" tabindex="0" role="button" aria-label="Bloom sketch. Press and hold to open the hand.">
+        <img class="fallback" src="media/c-bloom.webp" width="1600" height="1453" alt="" aria-hidden="true">
+        <div class="state"><span id="hClosed" class="on">Closed</span><span id="hOpen">Open</span></div>
+        <span class="hint">Press and hold to open the hand</span>
+      </div>
+      <div style="display:grid;gap:var(--s2)">
+        <h3>Bloom on an open hand</h3>
+        <div class="tabs" role="tablist" id="codeTabs">
+          <button role="tab" aria-selected="true" data-i="0">Aim<i class="bar"></i></button>
+          <button role="tab" aria-selected="false" data-i="1">Dataset<i class="bar"></i></button>
+          <button role="tab" aria-selected="false" data-i="2">Conflict<i class="bar"></i></button>
+          <button role="tab" aria-selected="false" data-i="3">Decided<i class="bar"></i></button>
+        </div>
+        <div class="tabpanel" role="tabpanel" id="codePanel" aria-live="polite"></div>
+        <button class="more" type="button" aria-expanded="false" aria-controls="codeMore">Hand-tracking test and code</button>
+        <div class="reveal-body" id="codeMore"><div>
+          <video class="lazyv" src="media/v-hand.mp4" poster="media/v-hand-poster.jpg" muted loop playsinline controls width="800" height="600" aria-label="Hand-tracking test: an orange flower blooms on each open hand"></video>
+<pre class="code"><span class="c">// integrated_sketch.js, drawFlower()</span>
+<span class="k">if</span> (handState === <span class="k">"open"</span>) {
+  <span class="c">// Animate the flower blooming</span>
+  scaleFactor = min(scaleFactor + 0.01, 1.5);
+} <span class="k">else</span> {
+  <span class="c">// Animate the flower closing</span>
+  scaleFactor = max(scaleFactor - 0.01, 0.5);
+}
+<span class="k">let</span> img = images[floor(currentFrame)];
+image(img, width / 2 - imgWidth / 2, height / 2 - imgHeight / 2, imgWidth, imgHeight);
+currentFrame = (currentFrame + 0.5) % numFrames;</pre>
+          <p class="mute" style="font-size:14px">The sketch runs the same frames and logic, with a press standing in for the open hand.</p>
+        </div></div>
+      </div>
+    </div>
+    <p class="quote" style="max-width:24em">Removing unnecessary complexity can lead to better performance whilst improving the accuracy and interactivity of the final experience.</p>
+  </div>
+  <div class="rv-slot"></div>
+</section>
+
+<!-- ===== 03 CONCEPT 02 ===== -->
+<section class="ch paper" id="concept2" data-chapter="03" data-name="Concept 02 · Projection" data-review="concept2" data-review-name="03 Concept 02">
+  <div class="wrap">
+    <div class="chhead">
+      <div class="eyebrow"><span class="num">03</span><span class="lab">Concept 02 · Projection · Sep</span></div>
+      <h2>From headset to room</h2>
+    </div>
+    <div class="stack" style="--h:800px">
+      <img class="l zoom" data-par=".04" src="media/d-concept2.webp" width="1500" height="1487" alt="My design concept 02 sketch: light projections onto translucent fabric, the chair at the centre of circular designs, multiple paths" style="right:0;top:0;width:56%">
+      <figure class="l" data-par="-.08" style="left:2%;top:0;width:40%"><img src="media/d-focus.webp" width="711" height="86" alt="My handwritten note: focus on experience, not technology" loading="lazy"><figcaption>From my concept goals page</figcaption></figure>
+      <div class="l tbox" style="left:0;top:120px;width:min(460px,40%)">
+        <p class="lede" style="font-size:20px">A headset keeps the experience to one person, and studio feedback was to focus on the experience, not the technology.</p>
+        <p>I moved to projection mapping inside sheer walls, with light projected onto fabric so groups explore together.</p>
+      </div>
+      <img class="l cut float zoom" data-par="-.1" src="media/cut-fab-b.webp" width="1500" height="1006" alt="Sheer fabric model with small ferns, cut out" style="left:4%;bottom:0;width:38%">
+    </div>
+  </div>
+</section>
+<section class="ink pan" id="narrative" data-chapter="03" data-name="Visual narrative" data-review="narrative" data-review-name="03 Visual narrative">
+  <div class="stage ch" style="padding-block:0">
+    <div class="inner">
+      <div class="win"><img id="panImg" src="media/narrative.webp" width="836" height="2400" alt="Illustrated visual narrative of a visitor moving through green-lit curved pathways toward the chair" loading="lazy"></div>
+      <div>
+        <div class="eyebrow" style="margin-bottom:24px"><span class="num">03</span><span class="lab mute">Visual narrative · 21 Sep</span></div>
+        <div class="lines" id="panLines">
+          <p class="on">Visitors can enter the installation from multiple pathways, where light projections transform the walls and floor into dynamic canvases.</p>
+          <p>The illustrations evolve as viewers move through the exhibition, immersing and engaging them as active participants.</p>
+          <p>A botanical form generates on the floor under each person’s footstep, and the projections intensify upon approaching the chair.</p>
+          <p>Interactive symbols that encircle the seat illuminate a specific aspect of the design.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="ch paper" id="aspects" data-chapter="03" data-name="What to test" data-review="aspects" data-review-name="03 What to test">
+  <div class="wrap" style="gap:var(--s3)">
+    <div class="chhead">
+      <div class="eyebrow"><span class="num">03</span><span class="lab">Planning the prototypes · Oct</span></div>
+      <h3>Brain-dump to four aspects</h3>
+      <p>After brain-dumping ideas on Miro, I refined them and identified spatial navigation, interactivity, conceptual engagement, and atmospheric immersion as crucial elements to test.</p>
+    </div>
+    <div style="display:grid;gap:10px">
+      <div class="board" id="board" aria-label="Miro brain-dump notes, recreated"></div>
+      <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap"><button class="tbtn" id="boardBtn" type="button" aria-pressed="false">Refine</button><span class="lab mute">Recreated from my Miro board</span></div>
+    </div>
+    <div class="aspects">
+      <a href="#p1"><span>Prototype 1</span><b>Spatial navigation</b></a>
+      <a href="#p2"><span>Prototype 2</span><b>Interactivity + conceptual engagement</b></a>
+      <a href="#p3"><span>Prototype 3</span><b>Atmospheric immersion</b></a>
+    </div>
+  </div>
+  <div class="rv-slot"></div>
+</section>
+
+<!-- ===== 04 PROTOTYPE 1 ===== -->
+<section class="ch paper" id="p1" data-chapter="04" data-name="Prototype 1" data-review="p1" data-review-name="04 Prototype 1 · build" style="padding-top:0">
+  <div class="wrap">
+    <div class="p1head">
+      <div class="chhead">
+        <div class="eyebrow"><span class="num">04</span><span class="lab">Prototype 1 · Spatial navigation · 10 Oct</span></div>
+        <h2>Paths at small scale</h2>
+        <p class="lede">A small-scale model to test the intuitiveness of navigating various pathways, and whether visitors felt encouraged to explore freely.</p>
+      </div>
+      <img class="cut float zoom arches" src="media/cut-eye-b.webp" width="1125" height="1500" alt="Gutter guard arches with the Blu Tack figure on its wire, cut out" loading="lazy">
+    </div>
+    <div style="display:grid;gap:16px">
+      <span class="lab">Material exploration</span>
+      <div class="mats anim" id="mats">
+        <article class="m"><div class="pic"><img class="cut" src="media/cut-paper.webp" width="1300" height="556" alt="Looped paper strips, cut out" loading="lazy"></div><div class="row"><h3>Paper</h3><span class="stamp">Dropped</span></div><dl><dt>Pros</dt><dd>Easy to manipulate, readily available.</dd><dt>Cons</dt><dd>Lacked structural integrity, tore easily, unsuitable for interaction.</dd></dl></article>
+        <article class="m"><div class="pic"><img class="cut" src="media/cut-fab-b.webp" width="1500" height="1006" alt="Sheer fabric model, cut out" loading="lazy"></div><div class="row"><h3>Fabric</h3><span class="stamp">Dropped</span></div><dl><dt>Pros</dt><dd>Semi-translucent, good light reflection resembling the intended final look.</dd><dt>Cons</dt><dd>Required excessive reinforcement, which obstructed pathways.</dd></dl></article>
+        <article class="m kept"><div class="pic"><img class="cut" src="media/cut-eye-a.webp" width="1070" height="1072" alt="Circular gutter guard model, cut out" loading="lazy"></div><div class="row"><h3>Gutter guard</h3><span class="stamp">Kept</span></div><dl><dt>Pros</dt><dd>Malleable, durable, easy to join securely without adhesives.</dd><dt>Cons</dt><dd>Sharp edges, so users moved a Blu Tack figurine on a flexible wire instead of touching the mesh.</dd></dl></article>
+      </div>
+    </div>
+    <div class="split even" style="align-items:center">
+      <figure class="spinfig"><img class="cut zoom" id="spinDisc" src="media/cut-top.webp" width="1300" height="1104" alt="The circular mesh model from above, cut out" loading="lazy"><figcaption>The model from above, floor circles at the centre</figcaption></figure>
+      <div class="aim">
+        <div><span class="lab mute">Original aim</span><p class="lede"><s>Assess purely navigational aspects.</s></p></div>
+        <div><span class="lab" style="opacity:.7">Revised aim</span><p class="lede">Observe user engagement with pathways, including entry and exit choices and recognition of the central area’s importance.</p></div>
+      </div>
+    </div>
+  </div>
+  <div class="rv-slot"></div>
+</section>
+<section class="ch ink" id="p1test" data-chapter="04" data-name="Prototype 1 · Testing" data-review="p1test" data-review-name="04 Prototype 1 · testing">
+  <div class="wrap" style="gap:var(--s3)">
+    <div class="talk">
+      <figure class="vidstick"><video class="lazyv" src="media/v-path.mp4" poster="media/v-path-poster.jpg" muted loop playsinline width="900" height="900" aria-label="Animated green line tracing user 1's route through the model"></video><figcaption>User 1’s route, drawn from the test video</figcaption></figure>
+      <div style="display:grid;gap:20px">
+        <div class="eyebrow"><span class="num">04</span><span class="lab mute">Talk-aloud · User 1</span></div>
+        <p class="mute" style="font-size:15px">I observed without interference and recorded the paths they took to the centre.</p>
+        <ol class="transcript" id="transcript">
+          <li>okay, walk through, look around.</li>
+          <li>whoahhh. see the whole thing, then i’m gonna go here.</li>
+          <li>And then i’m just gonna follow the curve ...whoahh.</li>
+          <li>i’m gonna go slowly... because i like going through this way.</li>
+          <li>should i go through here?</li>
+          <li>and then i’m gonna stand on this thing.</li>
+          <li>i’m gonna enter it from a different, from a different area this time.</li>
+          <li>I want to explore, like an explorer :)</li>
+          <li>and then i’m like, oooo! little gap, cool.</li>
+          <li>i’ve explored this part enough. i’m gonna leave now.</li>
+        </ol>
+      </div>
+    </div>
+    <div class="finds">
+      <button class="fd" type="button" aria-expanded="false" id="f-curves"><span class="t">Curves</span><span class="o">Users paused or slowed down at smaller angled curves.</span><span class="i"><span>Add points of interest at the curves.</span></span><span class="k">Insight</span></button>
+      <button class="fd" type="button" aria-expanded="false" id="f-circles"><span class="t">Floor circles</span><span class="o">All users placed their figure on the circles at the centre, without instruction.</span><span class="i"><span>The circles work as an intuitive cue for interaction.</span></span><span class="k">Insight</span></button>
+      <button class="fd" type="button" aria-expanded="false" id="f-details"><span class="t">Details</span><span class="o">Small features, like gaps, made users lean in.</span><span class="i"><span>Intricate details add value to the exploration.</span></span><span class="k">Insight</span></button>
+      <button class="fd" type="button" aria-expanded="false" id="f-exits"><span class="t">Exits</span><span class="o">Many users left by a different path than they came in.</span><span class="i"><span>Diverse pathways stimulate curiosity and exploration.</span></span><span class="k">Insight</span></button>
+    </div>
+  </div>
+  <div class="rv-slot"></div>
+</section>
+
+<!-- ===== 05 PROTOTYPE 2 ===== -->
+<section class="ch ink2" id="p2" data-chapter="05" data-name="Prototype 2" data-review="p2" data-review-name="05 Prototype 2">
+  <div class="wrap">
+    <div class="chhead">
+      <div class="eyebrow"><span class="num">05</span><span class="lab mute">Prototype 2 · Interaction · 15 Oct</span></div>
+      <h2>Show, don’t tell</h2>
+      <p class="lede">Stepping on a floor symbol played the geometric construction of one of Dresser’s ornaments, with no instruction or prior knowledge.</p>
+    </div>
+    <div class="demo" id="demo">
+      <div class="floor">
+        <span class="lab mute">Try it · step on the symbol</span>
+        <button class="sym" id="sym" type="button" aria-pressed="false" aria-label="Floor symbol. Activate to play the construction animation">
+          <svg viewBox="-110 -110 220 220" aria-hidden="true">
+            <circle class="halo" r="104" fill="none" stroke="var(--blue-lt)" stroke-width="1.5" opacity=".7"/>
+            <g fill="none" stroke="var(--on-ink)" stroke-width="1.6"><circle r="78"/><circle r="40"/><g id="petals"></g>
+            <path d="M0-100V100M-100 0H100M-70.7-70.7L70.7 70.7M70.7-70.7L-70.7 70.7" stroke-width=".8" opacity=".55"/></g>
+          </svg>
+        </button>
+        <div class="state"><span id="sIdle" class="on">Idle · pulse or glow</span><span id="sAct">Active · line to projection</span></div>
+        <i class="line"></i>
+      </div>
+      <div class="proj"><video id="demoVid" src="media/v-construct.mp4" poster="media/v-construct-poster.jpg" muted playsinline preload="metadata" width="1280" height="720" aria-label="Construction lines of a Dresser ornament drawn over the Garden Chair"></video></div>
+    </div>
+    <div class="split rev" style="align-items:center">
+      <figure class="scene" id="scene">
+        <div class="stagebox">
+          <div class="traced">
+            <svg class="flr" viewBox="0 0 400 60" preserveAspectRatio="none" aria-hidden="true"><ellipse cx="200" cy="30" rx="70" ry="16" fill="none" stroke="var(--blue-lt)" stroke-width="2"/><ellipse cx="200" cy="30" rx="40" ry="9" fill="none" stroke="var(--blue-lt)" stroke-width="1.2" opacity=".6"/></svg>
+            <i class="sil s1" style="--m:url(media/cut-p2c.webp)"></i>
+            <i class="sil s2" style="--m:url(media/cut-p2b.webp)"></i>
+          </div>
+          <div class="photos"><img src="media/p2-a.webp" width="900" height="1600" alt="Tester standing in front of the projection, seen from behind" loading="lazy"><img src="media/p2-b.webp" width="900" height="1600" alt="Tester crouching at the floor symbol, seen from behind" loading="lazy"></div>
+        </div>
+        <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap"><button class="tbtn" type="button" id="sceneBtn" aria-pressed="false">Show photos</button><figcaption>Testers traced from the test photos</figcaption></div>
+      </figure>
+      <div style="display:grid;gap:2px;align-content:start">
+        <div class="tbox" style="max-width:none"><span class="lab mute">Observed</span><p>One user tried to sit on the symbol and two reached to touch it.</p></div>
+        <div class="tbox blue" style="max-width:none"><span class="lab" style="opacity:.8">Decided</span><p style="font-weight:600">Orientation is the only requirement: face the chair.</p></div>
+      </div>
+    </div>
+  </div>
+  <div class="rv-slot"></div>
+</section>
+
+<!-- ===== 06 PROTOTYPE 3 ===== -->
+<section class="ch ink" id="p3" data-chapter="06" data-name="Prototype 3" data-review="p3" data-review-name="06 Prototype 3">
+  <div class="wrap">
+    <div class="chhead">
+      <div class="eyebrow"><span class="num">06</span><span class="lab mute">Prototype 3 · Immersion · 24 Oct</span></div>
+      <h2>Wizard of Oz</h2>
+      <p class="lede">I manually adjusted the projector in relation to the users’ movements while remaining out of sight, with natural ambient sounds and no instructions.</p>
+    </div>
+    <div class="split rev" style="align-items:center">
+      <figure><video class="lazyv" src="media/v-sq.mp4" poster="media/v-sq-poster.jpg" muted loop playsinline width="900" height="900" aria-label="Two silhouettes walk past a projection that evolves as they move"></video><figcaption>The projection evolving with movement</figcaption></figure>
+      <div style="display:grid;gap:var(--s2)">
+        <p class="quote">“Made the space feel more alive.”</p>
+        <div class="obs">
+          <div><span class="lab mute">Movement</span><p>Users moved slowly along the curve of the wall, and when they paused, they recognised they had influence over the visuals.</p></div>
+          <div><span class="lab mute">Meaning</span><p>All users understood that by the end of the path, the visuals were communicating the geometry behind the final shape.</p></div>
+        </div>
+        <button class="more" type="button" aria-expanded="false" aria-controls="p3more">Feedback and limits</button>
+        <div class="reveal-body" id="p3more"><div>
+          <div class="xfade" id="xfade"><img class="on" src="media/p3-a.webp" width="1006" height="566" alt="Projection at the start of the path" loading="lazy"><img src="media/p3-b.webp" width="1006" height="566" alt="Projection midway" loading="lazy"><img src="media/p3-c.webp" width="1006" height="566" alt="Projection at the end of the path" loading="lazy"><div class="ticks"><i class="on"></i><i></i><i></i></div></div>
+          <p class="mute" style="font-size:15px">Testers asked for subtle ambient elements, like grass and plants flowing as they walk past. Manual tracking lagged at times, which automated motion tracking would resolve.</p>
+        </div></div>
+      </div>
+    </div>
+  </div>
+  <div class="rv-slot"></div>
+</section>
+
+<section class="ch blueg" id="link" data-chapter="06" data-name="Combined findings" data-review="link" data-review-name="06 Combined findings">
+  <div class="wrap" style="gap:var(--s2)">
+    <span class="lab" style="opacity:.8">Two prototypes, read together</span>
+    <div class="pivot">
+      <div><span class="lab" style="opacity:.8">Prototype 1</span><p class="lede">Curves slow people down.</p></div>
+      <div><span class="lab" style="opacity:.8">Prototype 3</span><p class="lede">Pausing is when people notice they move the projections.</p></div>
+      <div class="out"><span class="lab" style="color:var(--blue)">Decided</span><p class="lede" style="font-weight:600">More curved routes at the entry points, so visitors understand their role straight away.</p></div>
+    </div>
+  </div>
+  <div class="rv-slot"></div>
+</section>
+
+<!-- ===== 07 FINAL ===== -->
+<section class="ch ink" id="final" data-chapter="07" data-name="Final experience" data-review="final" data-review-name="07 Final walkthrough">
+  <div class="wrap">
+    <div class="chhead">
+      <div class="eyebrow"><span class="num">07</span><span class="lab mute">Final experience · 1 Nov</span></div>
+      <h2>Enter, path, centre, chair</h2>
+    </div>
+    <div class="walk">
+      <div style="display:grid;gap:12px">
+        <div class="wtabs" role="tablist" aria-label="Walkthrough steps" id="walkTabs"></div>
+        <div class="pinwrap" id="walkMap"><img src="media/p1-path.webp" width="1581" height="1600" alt="Prototype 1 model from above with user 1's route in green" loading="lazy"></div>
+        <span class="lab mute">Steps placed on prototype 1’s model</span>
+      </div>
+      <div class="view" id="walkView" aria-live="polite"></div>
+    </div>
+    <p class="quote" style="max-width:20em">The outcome is the realisation that this seemingly conventional object encompasses all of the concepts examined.</p>
+  </div>
+  <div class="rv-slot"></div>
+</section>
+
+<!-- ===== 08 REFLECTION ===== -->
+<section class="ch paper" id="reflection" data-chapter="08" data-name="Reflection" data-review="reflection" data-review-name="08 Reflection">
+  <div class="wrap">
+    <div class="split even">
+      <div style="display:grid;gap:var(--s2)">
+        <div class="eyebrow"><span class="num">08</span><span class="lab">Reflection</span></div>
+        <p class="quote">Basic findings from seemingly independent prototypes, when combined, result in a significantly more comprehensive and effective design solution.</p>
+      </div>
+      <p class="lede" style="align-self:end">Prototype 1 helped me appreciate the advantages of failure. The material complications redirected my focus towards analysing user interactions more attentively.</p>
+    </div>
+    <div class="credits">
+      <div><span class="lab mute">Project</span><b>Symbiosis, 2024</b></div>
+      <div><span class="lab mute">Context</span><span>University assignment, 87009 Visual Communication Design Studio: Visualising Experience, UTS</span></div>
+      <div><span class="lab mute">Team</span><span>Individual · Studio leader Monica Monin</span></div>
+      <div><span class="lab mute">Methods</span><span>Annotated mind mapping · Task flow · Visual narrative · Material tests · Talk-aloud · Wizard of Oz</span></div>
+      <div><span class="lab mute">Tools</span><span>Procreate · Illustrator · p5.js &amp; ml5 · Teachable Machine</span></div>
+    </div>
+    <a class="next" href="https://bryliejw.github.io/" target="_blank" rel="noopener"><span class="lab">Back to all work</span><span class="big">Work ↗</span></a>
+  </div>
+  <div class="rv-slot"></div>
+</section>
+
+<footer class="prov">
+  <div class="wrap">
+    <span class="lab">Sources &amp; caveats</span>
+    <ul>
+      <li>Copy is Brylie’s own wording from her Visualising Experience process, experiments and prototype folios and visual narrative (2024) and her RTD taster folio (2026), shortened in places. The brief prompt quotes the AT1 brief.</li>
+      <li>Drawings and models are cut out from her own files. Dates come from file and camera records. The Dresser quote is checked against The Art of Decorative Design (1862).</li>
+      <li>The bloom sketch reuses her p5.js frames and drawFlower logic, with a press standing in for the open hand (webcam access is not available on this page).</li>
+      <li>Unverified: “cast-iron” and “1870” for the Garden Chair. “Focus on experience, not technology” is on her concept goals page; the headset line is from folio copy.</li>
+      <li>Testers appear only from behind or as silhouettes. The hand-tracking clip shows Brylie. Proposed web layout, not decided.</li>
+    </ul>
+  </div>
+</footer>
+
+<div class="timer" id="timer" aria-live="off"><small>Pin-up · process story</small><span id="tval">2:30</span></div>
+<div class="keyhint">→ / Space next · ← back · Esc exit</div>
+<div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="Image viewer"><button class="tbtn x" id="lbx" type="button">Close</button><img id="lbimg" alt=""><p class="cap" id="lbcap"></p></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.4/p5.min.js"></script>
+<script>
+(()=>{
+const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>[...r.querySelectorAll(s)];
+const RM=matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+/* ---------- chapters + rail ---------- */
+const CH=[["00","brief","Brief",""],["01","research","Research","Aug"],["02","concept1","Concept 01","Sep"],["03","concept2","Concept 02","Sep"],["04","p1","Prototype 1","10 Oct"],["05","p2","Prototype 2","15 Oct"],["06","p3","Prototype 3","24 Oct"],["07","final","Final","1 Nov"],["08","reflection","Reflection",""]];
+const rail=$('#rail');
+rail.innerHTML=CH.map(([n,id,name,d])=>`<a href="#${id}" data-ch="${n}"><b>${n}</b>${d?`<i>${d}</i>`:''}<span class="tip">${name}</span></a>`).join('');
+const top=$('#top'), where=$('#where'), prog=$('#prog'); const secs=$$('[data-chapter]'); let current=null;
+function onScroll(){
+  const h=document.documentElement, max=h.scrollHeight-innerHeight; prog.style.width=(max>0?scrollY/max*100:0)+'%';
+  let cur=secs[0]; for(const s of secs){ if(s.getBoundingClientRect().top<=70) cur=s; }
+  if(cur!==current){ current=cur; const n=cur.dataset.chapter; where.innerHTML=`<b>${n}</b> ${cur.dataset.name}`;
+    $$('a',rail).forEach(a=>a.classList.toggle('on',a.dataset.ch===n)); const light=cur.classList.contains('paper'); top.classList.toggle('onpaper',light); rail.classList.toggle('onpaper',light); }
+  pan(); revealQ(); talk(); parallax(); spin();
+}
+addEventListener('scroll',onScroll,{passive:true}); addEventListener('resize',onScroll);
+
+/* ---------- passive: quote lights up, layers drift, disc turns ---------- */
+const rv=$('#reveal'); rv.innerHTML=rv.textContent.split(' ').map(w=>`<span>${w}</span>`).join(' '); const rvW=$$('span',rv);
+function revealQ(){ const r=rv.getBoundingClientRect(); const p=Math.min(1,Math.max(0,(innerHeight*.85-r.top)/(innerHeight*.45))); const k=Math.round(p*rvW.length); rvW.forEach((w,i)=>w.classList.toggle('lit',i<k)); }
+const pars=$$('[data-par]');
+function parallax(){ if(RM||innerWidth<900) return; pars.forEach(el=>{ const r=el.getBoundingClientRect(); if(r.bottom<-200||r.top>innerHeight+200) return; const c=(r.top+r.height/2-innerHeight/2); el.style.transform=`translateY(${c*parseFloat(el.dataset.par)}px)`; }); }
+const disc=$('#spinDisc');
+function spin(){ if(RM) return; const r=disc.getBoundingClientRect(); if(r.bottom<0||r.top>innerHeight) return; disc.style.transform=`rotate(${(r.top/innerHeight)*-70}deg)`; }
+
+/* ---------- expanders + pins ---------- */
+$$('.more').forEach(b=>b.addEventListener('click',()=>{ const on=b.getAttribute('aria-expanded')!=='true'; b.setAttribute('aria-expanded',on); const body=document.getElementById(b.getAttribute('aria-controls')); body.classList.toggle('open',on); $$('video',body).forEach(v=>on?v.play().catch(()=>{}):v.pause()); }));
+$$('.pinwrap').forEach(w=>{ const pins=$$('.pin[data-pop]',w); if(!pins.length) return;
+  const close=()=>pins.forEach(q=>{ q.setAttribute('aria-expanded','false'); document.getElementById(q.dataset.pop).classList.remove('on'); });
+  pins.forEach(p=>p.addEventListener('click',e=>{ e.stopPropagation(); const on=p.getAttribute('aria-expanded')!=='true'; close(); if(on){ p.setAttribute('aria-expanded','true'); document.getElementById(p.dataset.pop).classList.add('on'); } }));
+  const io=new IntersectionObserver(es=>es.forEach(en=>{ if(en.isIntersecting){ setTimeout(()=>{ if(!pins.some(q=>q.getAttribute('aria-expanded')==='true')) pins[0].click(); },700); io.disconnect(); } }),{threshold:.55}); if(!RM) io.observe(w);
+});
+document.addEventListener('click',e=>{ if(!e.target.closest('.pin,.pop')) $$('.pop.on').forEach(p=>{ p.classList.remove('on'); $(`.pin[data-pop="${p.id}"]`)?.setAttribute('aria-expanded','false'); }); });
+
+/* ---------- arm-on-view ---------- */
+const armIO=new IntersectionObserver(es=>es.forEach(e=>{ if(e.isIntersecting){ setTimeout(()=>e.target.classList.remove('armed'),120); armIO.unobserve(e.target);} }),{threshold:.3});
+$$('.anim').forEach(el=>{ if(RM) return; if(el.getBoundingClientRect().top>innerHeight){ el.classList.add('armed'); armIO.observe(el);} });
+$$('#flow .fr').forEach((r,i)=>{ r.style.setProperty('--d',(i*.22)+'s'); $$('.fn',r).forEach(n=>n.style.setProperty('--d',(i*.22+.12)+'s')); });
+$$('#mats .stamp').forEach((st,i)=>st.style.setProperty('--d',(.3+i*.25)+'s'));
+
+/* ---------- p5 bloom: her frames and drawFlower logic, press = open hand ---------- */
+const box=$('#p5box'); let pressed=false, lastTouch=0;
+const setHand=o=>{ $('#hOpen').classList.toggle('on',o); $('#hClosed').classList.toggle('on',!o); };
+const down=()=>{pressed=true; lastTouch=Date.now(); setHand(true);}, up=()=>{pressed=false; lastTouch=Date.now(); setHand(false);};
+box.addEventListener('pointerdown',e=>{e.preventDefault();down();}); addEventListener('pointerup',()=>{ if(pressed) up(); }); box.addEventListener('pointerleave',()=>{ if(pressed) up(); });
+box.addEventListener('keydown',e=>{ if((e.key===' '||e.key==='Enter')&&!e.repeat){e.preventDefault();e.stopPropagation();down();} }); box.addEventListener('keyup',e=>{ if(e.key===' '||e.key==='Enter') up(); });
+if(window.p5){
+  try{ new p5(p=>{
+    const N=18, imgs=[]; let sf=.55, cur=0, idleOpen=false, idleT=0;
+    p.preload=()=>{ for(let i=0;i<N;i++) imgs[i]=p.loadImage(`media/bloomA/a${String(i).padStart(2,'0')}.webp`); };
+    p.setup=()=>{ const c=p.createCanvas(600,600); c.parent(box); p.pixelDensity(Math.min(2,devicePixelRatio||1)); $('.fallback',box)?.remove(); p.imageMode(p.CENTER);
+      new IntersectionObserver(es=>{ es[0].isIntersecting?p.loop():p.noLoop(); }).observe(box); };
+    p.draw=()=>{
+      p.clear();
+      let open=pressed;
+      if(!pressed && Date.now()-lastTouch>2500 && !RM){ idleT+=p.deltaTime; if(idleT>2600){ idleT=0; idleOpen=!idleOpen; setHand(idleOpen);} open=idleOpen; }
+      sf = open? Math.min(sf+0.012,1.0) : Math.max(sf-0.012,0.5);
+      cur += ((open?N-1:0)-cur)*0.08;
+      const img=imgs[Math.round(cur)]; if(!img||!img.width) return;
+      const glow=1-(sf-0.5)/0.5;
+      p.drawingContext.shadowColor='rgba(255,170,40,'+(0.25+glow*0.6)+')'; p.drawingContext.shadowBlur=20+glow*50;
+      const w=520*sf; p.image(img,300,300,w,w*img.height/img.width);
+    };
+  }); }catch(e){}
+}
+
+/* ---------- code tabs (auto-advance until touched) ---------- */
+const BEATS=[
+ "I coded this gesture in p5.js, aiming to combine the ml5 hand tracking model with my own Teachable Machine image classifier so the flower would bloom when an open hand was detected and close when the hand was closed.",
+ "My initial dataset of images lacked contextual variety: it was essentially a “control group.” I diversified it with a wide range of hand positions, angles, and backgrounds.",
+ "When one model functioned correctly, the other would fail. The classifier required a static image input, while the animation operated on a continuous video feed.",
+ "I used the ml5 hand tracking model alone, with the wrist and fingertip key points for gestural control."];
+const tabs=$$('#codeTabs button'), panel=$('#codePanel'); let ti=0, auto=!RM, tT=null, inView=false;
+function showTab(i,manual){ ti=i; tabs.forEach((b,j)=>{ b.setAttribute('aria-selected',j===i); const bar=$('.bar',b); bar.classList.remove('run'); void bar.offsetWidth; if(j===i&&auto&&inView&&!manual) bar.classList.add('run'); });
+  panel.innerHTML=`${i===3?'<span class="chip" style="justify-self:start">Decided</span>':''}<p class="lede">${BEATS[i]}</p>`;
+  clearTimeout(tT); if(auto&&inView&&!manual) tT=setTimeout(()=>showTab((ti+1)%4),6000); }
+tabs.forEach(b=>b.addEventListener('click',()=>{ auto=false; showTab(+b.dataset.i,true); }));
+new IntersectionObserver(es=>es.forEach(e=>{ inView=e.isIntersecting; if(inView&&auto) showTab(ti); else clearTimeout(tT); }),{threshold:.4}).observe($('#codeTabs'));
+showTab(0,true);
+
+/* ---------- narrative pan ---------- */
+const panEl=$('#narrative'), panImg=$('#panImg'), panLines=$$('#panLines p');
+function pan(){ if(innerWidth<900){panImg.style.transform='';return;} const r=panEl.getBoundingClientRect(); const len=r.height-innerHeight; if(len<=0) return; const p=Math.min(1,Math.max(0,-r.top/len)); const travel=Math.max(0,panImg.offsetHeight-panImg.parentElement.offsetHeight); panImg.style.transform=`translateY(${-p*travel}px)`; const k=Math.min(panLines.length-1,Math.floor(p*panLines.length)); panLines.forEach((l,i)=>l.classList.toggle('on',i<=k)); }
+
+/* ---------- transcript ---------- */
+const tl=$$('#transcript li'); function talk(){ const mid=innerHeight*.5; tl.forEach(li=>{const r=li.getBoundingClientRect(); li.classList.toggle('hi',r.top<mid&&r.bottom>mid-60);}); }
+
+/* ---------- findings expand ---------- */
+$$('.fd').forEach(f=>f.addEventListener('click',()=>f.setAttribute('aria-expanded',f.getAttribute('aria-expanded')!=='true')));
+
+/* ---------- brain-dump board ---------- */
+const NOTES=[[0,1,'Multiple entry and exit pathways to the centre'],[0,1,'Light projections on walls'],[0,1,'Light projections on floor'],[0,1,'sound'],[0,0,'different user paths'],[0,0,'base state'],[0,0,'motion activated'],[0,0,'quotes'],[0,0,'footstep illustrations'],[0,0,'ambient sounds'],[1,0,'interactive floor projections'],[1,0,'projected images and animations'],[1,0,'quotes / text-based info'],[1,0,'visual transitions from simple to complex patterns'],[1,0,'Layout and flow of the exhibition space'],[1,0,'Visibility and accessibility of the central “Garden Chair”'],[1,0,'motion-activated projections'],[1,0,'floor symbols for chair projections'],[1,0,'motion sensors detecting visitor movements'],[1,0,'projection mapping on fabric surfaces'],[1,0,'Engagement level throughout the exhibition journey'],[1,0,'Comprehension of Dresser’s theoretical research'],[2,1,'interactive symbols around the chair'],[2,1,'flooring projections intensifying'],[2,1,'quote, theme, imagery projections'],[2,1,'chair & covering'],[3,1,'each concept explored'],[3,1,'interconnection of science, nature, art'],[3,1,'appreciation for Dresser’s theoretical and physical work'],[3,1,'relations between theory and design']];
+const board=$('#board'); board.innerHTML=NOTES.map(([g,big,t])=>`<div class="note ${big?'big':''}" data-g="${g}">${t}</div>`).join(''); const notes=$$('.note',board);
+let seed=7; const rnd=()=>{seed=(seed*16807)%2147483647; return seed/2147483647;}; const scatter=notes.map(()=>({x:3+rnd()*78,y:3+rnd()*80,r:-14+rnd()*28}));
+function layoutRefined(){ const rows={0:[],1:[],2:[],3:[]}; notes.forEach((n,i)=>rows[n.dataset.g].push(i)); const pos={}; const g0=rows[0], bigs=g0.filter(i=>notes[i].classList.contains('big')), sm=g0.filter(i=>!notes[i].classList.contains('big'));
+  bigs.forEach((i,k)=>pos[i]={x:3+k*24.5,y:4,w:23}); sm.forEach((i,k)=>pos[i]={x:3+k*16.3,y:20,w:15.3}); rows[1].forEach((i,k)=>pos[i]={x:3+(k%6)*16.3,y:36+Math.floor(k/6)*13,w:15.3}); rows[2].forEach((i,k)=>pos[i]={x:3+k*24.5,y:66,w:23}); rows[3].forEach((i,k)=>pos[i]={x:3+k*24.5,y:83,w:23}); return pos; }
+let refined=false;
+function placeNotes(){ const P=layoutRefined(); notes.forEach((n,i)=>{ if(refined){ Object.assign(n.style,{left:P[i].x+'%',top:P[i].y+'%',width:P[i].w+'%',transform:'rotate(0deg)'}); } else { const s=scatter[i]; Object.assign(n.style,{left:s.x+'%',top:s.y+'%',width:'',transform:`rotate(${s.r}deg)`}); } }); $('#boardBtn').setAttribute('aria-pressed',refined); $('#boardBtn').textContent=refined?'Brain-dump':'Refine'; }
+$('#boardBtn').addEventListener('click',()=>{ refined=!refined; placeNotes(); }); placeNotes();
+const bIO=new IntersectionObserver(es=>es.forEach(e=>{ if(e.isIntersecting&&!refined){ setTimeout(()=>{refined=true;placeNotes();},1100); bIO.disconnect(); } }),{threshold:.5}); if(!RM) bIO.observe(board);
+
+/* ---------- symbol demo + traced testers ---------- */
+$('#petals').innerHTML=Array.from({length:8},(_,i)=>`<ellipse rx="16" ry="38" transform="rotate(${i*45}) translate(0,-40)"/>`).join('');
+const demo=$('#demo'), sym=$('#sym'), dv=$('#demoVid');
+const setDemo=on=>{ demo.classList.toggle('active',on); sym.setAttribute('aria-pressed',on); $('#sIdle').classList.toggle('on',!on); $('#sAct').classList.toggle('on',on); if(on){ dv.currentTime=0; dv.play().catch(()=>{}); } else dv.pause(); };
+sym.addEventListener('click',()=>setDemo(!demo.classList.contains('active'))); dv.addEventListener('ended',()=>setDemo(false));
+$('#sceneBtn').addEventListener('click',e=>{ const on=!$('#scene').classList.contains('ph'); $('#scene').classList.toggle('ph',on); e.currentTarget.setAttribute('aria-pressed',on); e.currentTarget.textContent=on?'Show traced':'Show photos'; });
+
+/* ---------- P3 crossfade (passive) ---------- */
+const xf=$$('#xfade img'), xt=$$('#xfade .ticks i'); let xi=0; if(!RM) setInterval(()=>{ xi=(xi+1)%xf.length; xf.forEach((im,j)=>im.classList.toggle('on',j===xi)); xt.forEach((t,j)=>t.classList.toggle('on',j===xi)); },2600);
+
+/* ---------- final walkthrough ---------- */
+const WALK=[
+ {k:"Enter",x:37,y:5,img:"final-1",t:"Visitors can enter the installation from multiple pathways, with light projections on the walls and floor.",f:"Exits · Prototype 1",to:"#f-exits"},
+ {k:"Path",x:22,y:57,img:"final-rep",t:"The illustrations evolve as viewers move through, and a botanical form generates under each footstep.",f:"Curves and pausing · Prototypes 1 and 3",to:"#link"},
+ {k:"Centre",x:39,y:41,img:"final-3",t:"The size and illumination of the projections intensify upon approaching the chair.",f:"Floor circles · Prototype 1",to:"#f-circles"},
+ {k:"Chair",x:52,y:47,img:"final-chair",t:"Interactive symbols that encircle the seat illuminate a specific aspect of the design.",f:"Idle and active symbols · Prototype 2",to:"#p2"}];
+const wt=$('#walkTabs'), wm=$('#walkMap'), wv=$('#walkView');
+wt.innerHTML=WALK.map((w,i)=>`<button role="tab" type="button" aria-selected="false" aria-controls="walkView"><b>0${i+1}</b>${w.k}</button>`).join('');
+wm.insertAdjacentHTML('beforeend',WALK.map((w,i)=>`<button class="pin" type="button" style="left:${w.x}%;top:${w.y}%" data-i="${i}" aria-label="Step ${i+1}, ${w.k}">${i+1}</button>`).join(''));
+let wi=0, wAuto=!RM, wT=null, wIn=false;
+function walk(i,manual){ wi=i; const w=WALK[i]; $$('button',wt).forEach((b,j)=>b.setAttribute('aria-selected',j===i)); $$('.pin',wm).forEach((p,j)=>p.setAttribute('aria-expanded',j===i));
+  wv.innerHTML=`<img class="zoom" src="media/${w.img}.webp" width="1080" height="1080" alt="Final render, ${w.k.toLowerCase()} step"><p class="lede">${w.t}</p><a class="chip lt" href="${w.to}" style="justify-self:start">From ${w.f} ↑</a>`;
+  clearTimeout(wT); if(wAuto&&wIn&&!manual) wT=setTimeout(()=>walk((wi+1)%4),5000); }
+$$('button',wt).forEach((b,i)=>b.addEventListener('click',()=>{wAuto=false;walk(i,true);})); $$('.pin',wm).forEach(p=>p.addEventListener('click',()=>{wAuto=false;walk(+p.dataset.i,true);}));
+walk(0,true); new IntersectionObserver(es=>es.forEach(e=>{ wIn=e.isIntersecting; if(wIn&&wAuto) walk(wi); else clearTimeout(wT); }),{threshold:.4}).observe(wm);
+document.addEventListener('click',e=>{ const a=e.target.closest('a[href^="#f-"]'); if(a){ const f=$(a.getAttribute('href')); if(f) setTimeout(()=>f.setAttribute('aria-expanded','true'),500); } });
+
+/* ---------- videos in view ---------- */
+const vio=new IntersectionObserver(es=>es.forEach(e=>{ const v=e.target; if(e.isIntersecting&&!RM){v.play().catch(()=>{})} else v.pause(); }),{threshold:.25});
+$$('video.lazyv, .hero video').forEach(v=>vio.observe(v));
+if(RM) $$('video[autoplay]').forEach(v=>{v.removeAttribute('autoplay');v.pause();});
+
+/* ---------- lightbox ---------- */
+const lb=$('#lb'), lbimg=$('#lbimg'), lbcap=$('#lbcap'); let lastFocus=null;
+document.addEventListener('click',e=>{ const im=e.target.closest('img.zoom'); if(!im) return; lastFocus=im; lbimg.src=im.currentSrc||im.src; lbimg.alt=im.alt; const fc=im.closest('figure')?.querySelector('figcaption'); lbcap.textContent=fc?fc.textContent:im.alt; lb.hidden=false; $('#lbx').focus(); });
+function closeLb(){ lb.hidden=true; lbimg.src=''; lastFocus?.focus?.(); }
+$('#lbx').addEventListener('click',closeLb); lb.addEventListener('click',e=>{ if(e.target===lb) closeLb(); });
+$$('img.zoom').forEach(i=>i.tabIndex=0); document.addEventListener('keydown',e=>{ if(e.key==='Enter'&&e.target.matches?.('img.zoom')) e.target.click(); });
+
+/* ---------- present mode ---------- */
+const pb=$('#presentBtn'), timer=$('#timer'), tval=$('#tval'); let tStart=0, tInt=null;
+const stops=['intro','brief','research','concept1','code','concept2','narrative','aspects','p1','p1test','p2','p3','link','final','reflection'].map(id=>document.getElementById(id));
+function present(on){ document.body.classList.toggle('presenting',on); pb.setAttribute('aria-pressed',on); clearInterval(tInt); timer.classList.remove('over'); tval.textContent='2:30'; tStart=0; }
+pb.addEventListener('click',()=>present(!document.body.classList.contains('presenting')));
+function tick(){ const left=150-Math.floor((Date.now()-tStart)/1000), s=Math.abs(left); tval.textContent=(left<0?'+':'')+Math.floor(s/60)+':'+String(s%60).padStart(2,'0'); timer.classList.toggle('over',left<0); }
+function go(d){ if(!tStart){ tStart=Date.now(); tick(); tInt=setInterval(tick,500); } const y=scrollY+80;
+  let n=d>0? stops.findIndex(s=>s.offsetTop>y+10) : (()=>{let k=-1; stops.forEach((s,j)=>{ if(s.offsetTop<y-40) k=j; }); return k;})(); if(n<0) n=d>0?stops.length-1:0;
+  const el=stops[n]; window.scrollTo({top:el.offsetTop-(el.classList.contains('hero')?0:60),behavior:RM?'auto':'smooth'}); }
+document.addEventListener('keydown',e=>{ if(e.target.closest('textarea,input,#p5box')) return; if(!lb.hidden&&e.key==='Escape'){ closeLb(); return; } if(!document.body.classList.contains('presenting')) return;
+  if(['ArrowRight','ArrowDown','PageDown',' '].includes(e.key)){ e.preventDefault(); go(1); } else if(['ArrowLeft','ArrowUp','PageUp'].includes(e.key)){ e.preventDefault(); go(-1); } else if(e.key==='Escape') present(false); });
+
+/* ---------- review layer (db) ---------- */
+const ASPECTS=['layout','imagery','typography','copy','colour','hierarchy','spacing','motion','interaction','overall style'];
+const rvBtn=$('#reviewBtn'); const state={}; let db=null; const targets=$$('[data-review]');
+function slotFor(sec){ let s=$(':scope > .rv-slot',sec); if(!s){ s=document.createElement('div'); s.className='rv-slot'; sec.appendChild(s);} return s; }
+function buildPanels(){ targets.forEach(sec=>{ const id=sec.dataset.review, slot=slotFor(sec); if(slot.querySelector('.rv')) return; const d=document.createElement('div'); d.className='rv'; d.dataset.id=id;
+  d.innerHTML=`<div class="hd"><span class="nm">${sec.dataset.reviewName}</span><div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap"><div class="seg"><button type="button" class="k" data-v="keep">Keep</button><button type="button" class="r" data-v="replace">Replace</button></div><div class="stars">${[1,2,3].map(n=>`<button type="button" data-s="${n}" aria-label="${n} star${n>1?'s':''}">★</button>`).join('')}</div></div></div><div class="asps">${ASPECTS.map(a=>`<button type="button" data-a="${a}">${a}</button>`).join('')}</div><input type="text" id="asp-${id}" class="aspnote" hidden><textarea id="note-${id}" rows="2" placeholder="Note for the next pass"></textarea><span class="st"></span>`;
+  slot.appendChild(d); }); targets.forEach(t=>paint(t.dataset.review)); }
+const S=id=>state[id]||(state[id]={verdict:null,stars:0,note:'',aspects:{}});
+function paint(id){ const d=$(`.rv[data-id="${id}"]`); if(!d) return; const s=S(id); $$('.seg button',d).forEach(b=>b.classList.toggle('on',b.dataset.v===s.verdict)); $$('.stars button',d).forEach(b=>b.classList.toggle('on',+b.dataset.s<=s.stars)); $$('.asps button',d).forEach(b=>{const v=s.aspects[b.dataset.a]?.v; b.classList.toggle('like',v==='like'); b.classList.toggle('dislike',v==='dislike');}); const ta=$('textarea',d); if(document.activeElement!==ta) ta.value=s.note||''; }
+const timers={}; let lastAsp={};
+function save(id){ if(!db) return; const st=$(`.rv[data-id="${id}"] .st`); clearTimeout(timers[id]); timers[id]=setTimeout(async()=>{ try{ await db.doc('reviews/'+id).set({...S(id),section:id,updated:Date.now()}); if(st) st.textContent='Saved'; }catch(e){ if(st) st.textContent='Could not save, try again'; } },450); }
+document.addEventListener('click',e=>{ const d=e.target.closest('.rv'); if(!d) return; const id=d.dataset.id, s=S(id), b=e.target.closest('button'); if(!b) return;
+  if(b.dataset.v) s.verdict=s.verdict===b.dataset.v?null:b.dataset.v; else if(b.dataset.s){ const n=+b.dataset.s; s.stars=s.stars===n?0:n; }
+  else if(b.dataset.a){ const a=b.dataset.a, cur=s.aspects[a]?.v, nx=cur==null?'like':cur==='like'?'dislike':null; if(nx) s.aspects[a]={v:nx,c:s.aspects[a]?.c||''}; else delete s.aspects[a]; lastAsp[id]=nx?a:null; const inp=$('.aspnote',d); inp.hidden=!nx; inp.value=nx?s.aspects[a].c:''; inp.placeholder=nx?`Why ${nx} the ${a}? (optional)`:''; } else return; paint(id); save(id); });
+document.addEventListener('input',e=>{ const d=e.target.closest('.rv'); if(!d) return; const id=d.dataset.id, s=S(id); if(e.target.tagName==='TEXTAREA'){ s.note=e.target.value; save(id); } else if(e.target.classList.contains('aspnote')&&lastAsp[id]&&s.aspects[lastAsp[id]]){ s.aspects[lastAsp[id]].c=e.target.value; save(id); } });
+rvBtn.addEventListener('click',()=>{ const on=!document.body.classList.contains('reviewing'); document.body.classList.toggle('reviewing',on); rvBtn.setAttribute('aria-pressed',on); if(on) buildPanels(); });
+(async()=>{ try{ const c=window.claude; if(!c?.use) return; db=await c.use('db'); if(!db) return; const user=await c.use('user'); const can=user?(await user.can?.('data.write')):null; if(can===false) return; rvBtn.hidden=false;
+  db.collection('reviews').onSnapshot(snap=>{ snap.docs.forEach(doc=>{ const v=doc.data(); if(v) state[doc.id]={verdict:v.verdict??null,stars:v.stars||0,note:v.note||'',aspects:v.aspects||{}}; }); targets.forEach(t=>paint(t.dataset.review)); },()=>{}); }catch(e){} })();
+
+onScroll();
+const h1=$('.hero h1'); function fit(){ h1.style.fontSize=''; const cw=h1.parentElement.clientWidth, fs=parseFloat(getComputedStyle(h1).fontSize), w=h1.scrollWidth; if(w>cw) h1.style.fontSize=(fs*cw/w*.98)+'px'; }
+(document.fonts?.ready||Promise.resolve()).then(()=>setTimeout(fit,2500)); addEventListener('resize',()=>{clearTimeout(fit.t);fit.t=setTimeout(fit,150)});
+})();
+</script>
