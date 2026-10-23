@@ -67,10 +67,63 @@ export function metaHTML(w) {
   return [first, esc(w.context)].filter(Boolean).join("<br>");
 }
 
+// Level of a work: L hero project, M extra, S smaller work.
+export const level = (w) => w.size;
+
+// Tool names link to their keyword node when one exists (tools used by two or more works).
+function toolLinks(w, ix) {
+  const byLabel = new Map([...ix.kw.values()].filter((k) => k.type === "tool").map((k) => [k.label.toLowerCase(), k]));
+  return (w.tools ?? []).map((t) => {
+    const k = byLabel.get(t.toLowerCase());
+    return k ? kwLink(k) : `<span class="lk-tool lk-plain">${esc(t)}</span>`;
+  });
+}
+
+// Facts: context, team, tools and materials. compact drops the rows the header already shows.
+export function factsHTML(w, ix, { compact = false, year = false } = {}) {
+  const r = (label, html) => (html ? `<div class="fact"><dt class="mono-label">${label}</dt><dd>${html}</dd></div>` : "");
+  const tools = toolLinks(w, ix);
+  const mats = (w.materials ?? []).map(esc);
+  const part = w.partOf && ix.works.get(w.partOf);
+  const out = [
+    year && w.year != null ? r("Year", `<b>${w.year}</b>`) : "",
+    compact ? "" : r("Context", esc(w.context)),
+    compact ? "" : r("Team", esc(w.team)),
+    r("Tools", tools.join('<span class="sep"> · </span>')),
+    r("Materials", mats.join('<span class="sep"> · </span>')),
+    part ? r("Part of", workLink(part)) : "",
+  ].join("");
+  return out ? `<dl class="facts">${out}</dl>` : "";
+}
+
+// Tags as plain words: disciplines, deliverables, topics and values (tools sit in facts).
+export function tagsHTML(w, ix, { links = true } = {}) {
+  const kws = w.keywords.map((id) => ix.kw.get(id)).filter((k) => k && k.type !== "tool");
+  const order = ["discipline", "deliverable", "topic", "value"];
+  kws.sort((a, b) => order.indexOf(a.type) - order.indexOf(b.type));
+  if (!kws.length) return "";
+  return `<p class="tags">${kws.map((k) => (links ? kwLink(k) : `<span class="lk lk-${k.type}">${esc(k.label)}</span>`)).join('<span class="sep"> · </span>')}</p>`;
+}
+
+// A strip of small images (S cards and previews). n: how many.
+export function stripHTML(w, n = 4, cls = "strip") {
+  const ims = w.images.slice(0, n);
+  if (!ims.length) return "";
+  return `<div class="${cls} n${ims.length}">${ims.map((im) => `<figure class="${im.white ? "is-white" : ""}"><img src="${esc(src(im.thumb ?? im.src))}" width="${im.w}" height="${im.h}" alt="${esc(im.alt)}" loading="lazy"></figure>`).join("")}</div>`;
+}
+
 // The card's one paragraph: the first copy field the work has.
 export function oneParagraph(w) {
   const c = w.copy;
-  return c.oneLine || c.brief || c.response || c.role || "";
+  return c.oneLine || c.pull || c.brief || c.response || c.role || "";
+}
+
+// Details for S works: brief, insight, response, role and credit as a disclosure.
+export function detailsHTML(w) {
+  const c = w.copy;
+  const b = (label, t) => (t ? `<div class="cp cp-s"><p class="cp-label">${label}</p><p>${esc(t)}</p></div>` : "");
+  const inner = [b("Brief", c.brief), b("Insight", c.insight), b("Response", c.response), b("Role", c.role), c.credit ? `<p class="cp-credit">${esc(c.credit)}</p>` : ""].join("");
+  return inner ? `<details class="more"><summary class="mono-label">${icon("arrow-right", "ic more-ic")}About this piece</summary>${inner}</details>` : "";
 }
 
 // Brief, Insight, the pull line, Response and Role, each only when the data has it.
@@ -167,6 +220,7 @@ export function pageHTML(w, ix) {
     <div class="wp-body">
       ${hero ? imgHTML(hero, { cls: "wp-hero", sizes: "(max-width: 719px) 100vw, 55vw", lazy: false }) : ""}
       ${copyHTML(w, { h: 2 })}
+      ${factsHTML(w, ix)}
     </div>
   </div>
   ${w.images.length > 1 ? `<section class="wp-sec" aria-labelledby="wp-images"><h2 class="wp-h mono-label" id="wp-images">${icon("image")}Images</h2>${imagesHTML({ ...w, images: w.images.slice(1) }, { sizes: "(max-width: 719px) 100vw, 50vw" })}</section>` : ""}

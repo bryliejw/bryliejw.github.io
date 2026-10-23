@@ -1,10 +1,10 @@
 // Preview: on hover or keyboard focus, a tooltip beside the node with a meta line (kind or
 // type icon), the first image, the title and the subtitle. Not shown for the node whose
 // card or panel is open, nor while nodes move between views or are dragged.
-import { esc, icon, src, kindLabel, KIND_ICON, typeName, typeIcon } from "./content.js";
+import { esc, icon, src, kindLabel, KIND_ICON, typeName, typeIcon, factsHTML, tagsHTML, stripHTML, oneParagraph } from "./content.js";
 import { follow } from "./follow.js";
 
-export function createPreview({ graph, views, isOpen, edge }) {
+export function createPreview({ graph, views, isOpen, edge, ix }) {
   const box = document.createElement("div");
   box.className = "preview";
   box.setAttribute("aria-hidden", "true"); // the node's aria-label already names it
@@ -14,6 +14,7 @@ export function createPreview({ graph, views, isOpen, edge }) {
   let timer = 0;
 
   function content(n) {
+    delete box.dataset.level;
     if (n.role === "me") return `<p class="pv-meta mono-label">${icon("user")}About</p><p class="pv-title">${esc(n.data.name)}</p>`;
     if (n.role === "kw") {
       const works = n.edges.filter((e) => e.type === "kw").length;
@@ -21,11 +22,24 @@ export function createPreview({ graph, views, isOpen, edge }) {
     }
     const w = n.data;
     const img = w.images[0];
+    const meta = `<p class="pv-meta mono-label">${icon(KIND_ICON[w.kind])}${w.size !== "S" ? `<span class="pv-n">${esc(w.n)}</span>` : ""}${[kindLabel(w), w.year].filter(Boolean).join(" · ")}</p>`;
+    box.dataset.level = w.size;
+    if (w.size === "S") {
+      // Smaller works: the words are the information. Thumb, title, then facts and tags.
+      return [
+        `<div class="pv-s-head">${img ? `<img class="pv-thumb${img.white ? " is-white" : ""}" src="${esc(src(img.thumb ?? img.src))}" alt="" width="56" height="56">` : ""}<div>${meta}<p class="pv-title">${esc(w.title)}</p>${w.sub ? `<p class="pv-sub">${esc(w.sub)}</p>` : ""}</div></div>`,
+        factsHTML(w, ix),
+        tagsHTML(w, ix, { links: false }),
+      ].join("");
+    }
+    const line = oneParagraph(w);
     return [
-      `<p class="pv-meta mono-label">${icon(KIND_ICON[w.kind])}<span class="pv-n">${esc(w.n)}</span>${[kindLabel(w), w.year].filter(Boolean).join(" · ")}</p>`,
+      meta,
       img ? `<img class="pv-img${img.white ? " is-white" : ""}" src="${esc(src(img.thumb ?? img.src))}" alt="" width="${img.w}" height="${img.h}">` : "",
       `<p class="pv-title">${esc(w.title)}</p>`,
       w.sub ? `<p class="pv-sub">${esc(w.sub)}</p>` : "",
+      line ? `<p class="pv-line">${esc(line)}</p>` : "",
+      w.size === "L" ? stripHTML({ ...w, images: w.images.slice(1) }, 3, "pv-strip") : "",
     ].join("");
   }
 

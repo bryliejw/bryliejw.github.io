@@ -1,9 +1,9 @@
 // Rings layout, computed at load and deterministic. Name at the centre, PDF projects on
-// r 240, smaller works on r 370, keywords on r 495 in typed arcs with rotated labels.
+// r 180, Extras on r 320, smaller works on r 430, keywords on r 545 in typed arcs with rotated labels.
 // Group labels sit in the gap before their arc, set along the circle.
 import { separate } from "./layout-force.js";
 
-export const R = { L: 240, S: 370, K: 495 };
+export const R = { L: 180, M: 320, S: 430, K: 545 };
 const GAP = 5; // empty keyword slots before each arc, for its group label
 const ITER = 4;
 const TAU = Math.PI * 2;
@@ -64,11 +64,13 @@ export function layoutRings(graph) {
 
   graph.me.pos.rings = [0, 0];
   const items = [{ n: graph.me, x: 0, y: 0, fp: graph.me.fp.rings, fixed: true, r: 0 }];
-  for (const size of ["L", "S"]) {
-    const ws = graph.works.filter((w) => (size === "L" ? w.size === "L" : w.size !== "L"));
+  for (const size of ["L", "M", "S"]) {
+    const ws = graph.works.filter((w) => w.size === size);
+    if (!ws.length) continue;
     const r = R[size];
     const target = ws.map((w) => [w, workAngle(w)]).sort((a, b) => a[1] - b[1] || 0);
-    const spread = spreadAngles(target.map((t) => t[1]), size === "L" ? Math.PI / 4 : (TAU / ws.length) * 0.85);
+    const gap = { L: Math.PI / 4, M: Math.PI / 4, S: (TAU / ws.length) * 0.9 }[size];
+    const spread = spreadAngles(target.map((t) => t[1]), gap);
     target.forEach(([w, _], i) => {
       const a = spread[i];
       // Label on the side facing the centre, so it stays clear of the keyword ring.
@@ -84,7 +86,7 @@ export function layoutRings(graph) {
     for (const d of items) {
       if (d.fixed) continue;
       const a = Math.atan2(d.y, d.x);
-      const band = d.r === R.L ? 20 : 40;
+      const band = d.r === R.L ? 20 : d.r === R.M ? 26 : 44;
       const rr = Math.max(d.r - band, Math.min(d.r + band, Math.hypot(d.x, d.y)));
       d.x = rr * Math.cos(a);
       d.y = rr * Math.sin(a);

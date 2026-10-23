@@ -6,7 +6,7 @@ import { closeLayer } from "./rail.js";
 
 export function bindIndex({ filter, select }) {
   const count = document.getElementById("index-count");
-  const rows = [...document.querySelectorAll("#pop-index tbody tr")];
+  const rows = [...document.querySelectorAll("#pop-index tbody tr[data-id]")];
   for (const tr of rows) {
     const cell = tr.querySelector(".ix-t");
     let btn = cell.querySelector(".ix-open");

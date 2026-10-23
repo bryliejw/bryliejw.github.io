@@ -6,11 +6,10 @@ import { h, icon, svg } from "./dom.js";
 const mark = (w, hgt, ...shapes) => svg({ class: "key-mark", viewBox: `0 0 ${w} ${hgt}`, width: w, height: hgt, "aria-hidden": "true" }, ...shapes);
 
 const SHAPES = [
-  ["Project", mark(28, 28, '<rect class="tile-l" x="0.5" y="0.5" width="27" height="27"/><rect class="chip" x="0.5" y="0.5" width="11" height="7"/>')],
-  ["Extra", mark(28, 28, '<rect class="tile-m" x="4.5" y="4.5" width="19" height="19"/><text class="tile-n key-n" x="14" y="17.5" text-anchor="middle">E</text>')],
-  ["Work", mark(28, 28, '<rect class="sq sq-work" x="9" y="9" width="10" height="10"/>')],
-  ["Experiment", mark(28, 28, '<rect class="sq sq-experiment" x="9" y="9" width="10" height="10"/>')],
-  ["Client", mark(28, 28, '<rect class="sq sq-client" x="9" y="9" width="10" height="10"/><rect class="sq-dot" x="12" y="12" width="4" height="4"/>')],
+  ["Project", mark(28, 28, '<rect class="tile key-tile" x="0.5" y="0.5" width="27" height="27"/><rect class="chip" x="0.5" y="0.5" width="11" height="7"/>')],
+  ["Extra", mark(28, 28, '<rect class="tile key-tile" x="5.5" y="5.5" width="17" height="17"/><rect class="chip" x="5.5" y="5.5" width="8" height="5"/>')],
+  ["Work", mark(28, 28, '<rect class="tile key-tile" x="9.5" y="9.5" width="10" height="10"/><rect class="sq sq-work" x="15" y="15" width="4.5" height="4.5"/>')],
+  ["Experiment", mark(28, 28, '<rect class="tile key-tile" x="9.5" y="9.5" width="10" height="10"/><rect class="sq sq-experiment" x="15" y="15" width="4.5" height="4.5"/>')],
 ];
 
 const LINES = [

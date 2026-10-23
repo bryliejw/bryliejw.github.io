@@ -5,7 +5,7 @@
 // node keeps the tab when that node has it.
 import {
   esc, icon, numBlock, metaHTML, copyHTML, imagesHTML, stepsHTML, workConnections, keywordOverview, keywordConnections,
-  meOverview, meExperience, meWorks, workRows, rows, section, kindLabel, typeName, typeIcon, hasPage,
+  meOverview, meExperience, meWorks, workRows, rows, section, kindLabel, typeName, typeIcon, hasPage, factsHTML,
 } from "./content.js";
 
 export const PANEL_W = 420;
@@ -41,7 +41,7 @@ export function createPanel({ ix, on }) {
           w.link ? `<a class="tbtn" href="${esc(w.link)}" target="_blank" rel="noopener">${icon("arrow-up-right")}Live site</a>` : "",
         ].join(""),
         tabs: {
-          overview: copyHTML(w),
+          overview: copyHTML(w) + factsHTML(w, ix, { compact: true }),
           images: imagesHTML(w),
           process: stepsHTML(w),
           connections: workConnections(w, ix),

@@ -20,7 +20,7 @@ export const GROUPS = [
 export const VIEWS = ["edge", "force", "rings"];
 
 // Text wrap widths for "year · subtitle".
-const META_W = { L: 176, M: 168 };
+const META_W = { L: 190, M: 168 };
 
 export function el(tag, attrs = {}, parent) {
   const e = document.createElementNS(NS, tag);
@@ -81,7 +81,7 @@ export function render(svg, graph) {
   const linesG = el("g", { class: "m-lines", "aria-hidden": "true" }, zoomG);
   const nodesG = el("g", { class: "m-nodes" }, zoomG);
 
-  graph.rings = [240, 370, 495].map((r) => el("circle", { r, class: "m-ring" }, deco));
+  graph.rings = [180, 320, 430, 545].map((r) => el("circle", { r, class: "m-ring" }, deco));
 
   for (const g of graph.groups) {
     g.el = el("g", { class: `m-group grp-${g.type}` }, deco);
@@ -131,32 +131,42 @@ function drawMe(n) {
   n.tag3 = text(n.body, d.tagline2, { class: "me-tag me-marked", y: 34 });
 }
 
+// Tile sizes by level: L hero project, M extra, S smaller work.
+export const TILE = { L: 112, M: 64, S: 30 };
+
+// An image tile centred on the node. The 600px thumb fills it (cover crop on the map only);
+// white-ground images keep the 1px keyline.
+function imageTile(b, w, s) {
+  const h = s / 2;
+  const img = w.images[0];
+  el("rect", { class: `tile tile-${w.size.toLowerCase()}${img ? " has-img" : ""}`, x: -h, y: -h, width: s, height: s }, b);
+  if (!img) return;
+  const clip = `clip-${w.id}`;
+  el("rect", { x: -h, y: -h, width: s, height: s }, el("clipPath", { id: clip }, b));
+  el("image", { href: `/${img.thumb ?? img.src}`.replace(/^\/+/, "/"), x: -h, y: -h, width: s, height: s, preserveAspectRatio: "xMidYMid slice", "clip-path": `url(#${clip})`, class: "tile-img" }, b);
+  el("rect", { class: `tile-key${img.white ? " is-white" : ""}`, x: -h, y: -h, width: s, height: s }, b);
+}
+
 function drawWork(n) {
   const w = n.data;
   const b = n.body;
+  const s = TILE[w.size];
+  const h = s / 2;
+  imageTile(b, w, s);
   if (w.size === "L") {
-    const img = w.images[0];
-    el("rect", { class: `tile tile-l${img ? " has-img" : ""}`, x: -48, y: -48, width: 96, height: 96 }, b);
-    if (img) {
-      // The 600px thumb fills the tile; white-ground images keep the 1px keyline.
-      const clip = `clip-${w.id}`;
-      el("rect", { x: -48, y: -48, width: 96, height: 96 }, el("clipPath", { id: clip }, b));
-      el("image", { href: `/${img.thumb ?? img.src}`.replace(/^\/+/, "/"), x: -48, y: -48, width: 96, height: 96, preserveAspectRatio: "xMidYMid slice", "clip-path": `url(#${clip})` }, b);
-      if (img.white) el("rect", { class: "tile-key", x: -48, y: -48, width: 96, height: 96 }, b);
-    }
-    el("rect", { class: "chip", x: -48, y: -48, width: 26, height: 17 }, b);
-    text(b, w.n, { class: "chip-n", x: -35, y: -36.2, "text-anchor": "middle" });
-    n.title = text(b, w.title, { class: "w-title-l halo", x: -48, y: 67 });
-    n.meta = text(b, metaLine(w), { class: "w-meta halo", x: -48, y: 82 });
+    el("rect", { class: "chip", x: -h, y: -h, width: 28, height: 18 }, b);
+    text(b, w.n, { class: "chip-n", x: -h + 14, y: -h + 12.6, "text-anchor": "middle" });
+    n.title = text(b, w.title, { class: "w-title-l halo", x: -h, y: h + 19 });
+    n.meta = text(b, metaLine(w), { class: "w-meta halo", x: -h, y: h + 34 });
   } else if (w.size === "M") {
-    el("rect", { class: "tile tile-m", x: -24, y: -24, width: 48, height: 48 }, b);
-    text(b, w.n, { class: "tile-n", x: 0, y: 4.5, "text-anchor": "middle" });
-    n.title = text(b, w.title, { class: "w-title-m halo", x: 32, y: -3 });
-    n.meta = text(b, metaLine(w), { class: "w-meta halo", x: 32, y: 12 });
+    el("rect", { class: "chip chip-m", x: -h, y: -h, width: 24, height: 15 }, b);
+    text(b, w.n, { class: "chip-n chip-n-m", x: -h + 12, y: -h + 10.8, "text-anchor": "middle" });
+    n.title = text(b, w.title, { class: "w-title-m halo", x: h + 9, y: -4 });
+    n.meta = text(b, metaLine(w), { class: "w-meta halo", x: h + 9, y: 11 });
   } else {
-    el("rect", { class: `sq sq-${w.kind}`, x: -5, y: -5, width: 10, height: 10 }, b);
-    if (w.kind === "client") el("rect", { class: "sq-dot", x: -2, y: -2, width: 4, height: 4 }, b);
-    n.title = text(b, w.title, { class: "w-title-s halo", x: 11, y: 3.8 });
+    // Kind mark in the corner: filled for work, outlined for experiment, dotted for client.
+    el("rect", { class: `sq sq-${w.kind}`, x: h - 7, y: h - 7, width: 7, height: 7 }, b);
+    n.title = text(b, w.title, { class: "w-title-s halo", x: h + 7, y: 3.8 });
   }
 }
 
@@ -202,7 +212,7 @@ export function orientKeyword(n, spec) {
 // Label side for M and S works: 1 to the right of the mark (default), -1 to the left.
 export function orientWork(n, side = 1) {
   if (n.size === "L" || n.side === side) return;
-  const s = n.size === "M" ? 32 : 11;
+  const s = TILE[n.size] / 2 + (n.size === "M" ? 9 : 7);
   for (const t of [n.title, n.meta].filter(Boolean)) {
     t.setAttribute("text-anchor", side < 0 ? "end" : "start");
     t.setAttribute("x", side * s);

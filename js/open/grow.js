@@ -2,7 +2,7 @@
 // changes. Header block with the number (works) or the type icon (keywords, the name);
 // title; labels in rows, each led by its type icon and set as plain text links; one
 // paragraph; Expand, Full page (PDF projects only), Live site when the work links one.
-import { esc, icon, numBlock, rows, keywordRows, workRows, oneParagraph, kindLabel, typeName, typeIcon, hasPage, meWorks } from "./content.js";
+import { esc, icon, src, numBlock, rows, keywordRows, workRows, oneParagraph, kindLabel, typeName, typeIcon, hasPage, meWorks, KIND_ICON, factsHTML, tagsHTML, stripHTML, detailsHTML, imgHTML } from "./content.js";
 import { follow } from "./follow.js";
 
 export function createCard({ graph, ix, edge, on }) {
@@ -28,19 +28,31 @@ export function createCard({ graph, ix, edge, on }) {
     let acts = btn("expand", "panel-right-open", "Expand");
     if (n.role === "work") {
       const w = n.data;
-      head = `${numBlock(w, "card-num")}<p class="card-meta mono-label">${[kindLabel(w), w.year].filter(Boolean).join(" · ")}</p>`;
+      box.dataset.level = w.size;
+      const metaTxt = [kindLabel(w), w.year].filter(Boolean).join(" · ");
       title = esc(w.title);
       if (w.sub) sub = `<p class="card-sub">${esc(w.sub)}</p>`;
-      body = rows(keywordRows(w.keywords, ix));
-      para = oneParagraph(w);
-      if (hasPage(w)) acts += btn("page", "maximize-2", "Full page");
+      if (w.size === "S") {
+        // Smaller works: images, one line, facts and tags. No panel.
+        head = `<span class="card-ic">${icon(KIND_ICON[w.kind])}</span><p class="card-meta mono-label">${esc(metaTxt)}</p>`;
+        body = [stripHTML(w, 4, "strip card-strip"), w.copy.oneLine ? `<p class="card-text">${esc(w.copy.oneLine)}</p>` : "", factsHTML(w, ix, { year: false }), tagsHTML(w, ix), detailsHTML(w)].join("");
+        acts = "";
+      } else {
+        head = `${numBlock(w, "card-num")}<p class="card-meta mono-label">${esc(metaTxt)}</p>`;
+        const img = w.images[0];
+        const line = oneParagraph(w);
+        body = (img ? imgHTML(img, { cls: "card-img", sizes: "340px", lazy: false }) : "") + (line ? `<p class="card-text">${esc(line)}</p>` : "") + rows(keywordRows(w.keywords, ix));
+        if (hasPage(w)) acts += btn("page", "maximize-2", "Full page");
+      }
       if (w.link) acts += `<a class="tbtn" href="${esc(w.link)}" target="_blank" rel="noopener">${icon("arrow-up-right")}Live site</a>`;
     } else if (n.role === "kw") {
+      delete box.dataset.level;
       const works = ix.usedBy.get(n.id);
       head = `<span class="card-ic">${icon(typeIcon(n.type))}</span><p class="card-meta mono-label">${esc(typeName(n.type))}${works.length ? ` · ${works.length} work${works.length === 1 ? "" : "s"}` : ""}</p>`;
       title = `<span class="t-${n.type}">${esc(n.data.label)}</span>`;
       body = rows(workRows(works));
     } else {
+      delete box.dataset.level;
       const me = n.data;
       const cut = me.tagline1.lastIndexOf(" and ") + 5;
       head = `<span class="card-ic">${icon("user")}</span><p class="card-meta mono-label">About</p>`;
@@ -51,7 +63,7 @@ export function createCard({ graph, ix, edge, on }) {
     }
     return `<header class="card-head">${head}<button type="button" class="cbtn card-x" data-act="close" aria-label="Close" data-tip="Close" data-key="Esc">${icon("x")}</button></header>
 <h2 class="card-title" id="card-title">${title}</h2>${sub}${body}${para ? `<p class="card-text">${esc(para)}</p>` : ""}
-<footer class="card-acts">${acts}</footer>`;
+${acts ? `<footer class="card-acts">${acts}</footer>` : ""}`;
   }
 
   box.addEventListener("click", (e) => {

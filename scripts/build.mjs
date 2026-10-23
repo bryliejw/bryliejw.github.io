@@ -26,11 +26,15 @@ function put(file, text) {
 // Index table
 const file = join(root, "index.html");
 const html = readFileSync(file, "utf8");
-const rows = data.works.map((w) => {
+const LEVELS = [["L", "Projects"], ["M", "Extras"], ["S", "More work"]];
+const ordered = LEVELS.flatMap(([size]) => data.works.filter((w) => w.size === size).sort((a, b) => (size === "S" ? (b.year ?? 0) - (a.year ?? 0) || a.title.localeCompare(b.title) : 0)));
+const rows = ordered.map((w, i) => {
+  const head = i === 0 || ordered[i - 1].size !== w.size ? `        <tr class="ix-grp"><th scope="rowgroup" colspan="4" class="mono-label">${LEVELS.find((l) => l[0] === w.size)[1]}</th></tr>\n` : "";
   const sub = w.sub ? `<span class="ix-sub">${esc(w.sub)}</span>` : "";
   const title = `<span class="ix-title">${esc(w.title)}</span>${sub}`;
   return (
-    `        <tr data-id="${esc(w.id)}" data-kind="${w.kind}">` +
+    head +
+    `        <tr data-id="${esc(w.id)}" data-kind="${w.kind}" data-level="${w.size}">` +
     `<td class="ix-n">${esc(w.n)}</td>` +
     `<td class="ix-t">${hasPage(w) ? `<a class="ix-open" href="${pageHref(w)}">${title}</a>` : title}</td>` +
     `<td class="ix-y">${w.year ?? ""}</td>` +

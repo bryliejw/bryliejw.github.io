@@ -308,21 +308,24 @@ html:not(.js) .pop-index[hidden] { display: block; position: static; width: auto
 .me-marked { fill: var(--paper); }
 
 /* Works */
-.tile-l { fill: var(--tint); stroke: var(--keyline); stroke-width: 1; vector-effect: non-scaling-stroke; }
-.tile-key { fill: none; stroke: var(--keyline); stroke-width: 1; vector-effect: non-scaling-stroke; }
-.tile-l.has-img { stroke: none; }
+.key-tile { fill: var(--tint); stroke: var(--ink-3); }
+.tile { fill: var(--tint); stroke: var(--keyline); stroke-width: 1; vector-effect: non-scaling-stroke; }
+.tile.has-img { stroke: none; }
+.tile-key { fill: none; stroke: none; stroke-width: 1; vector-effect: non-scaling-stroke; pointer-events: none; }
+.tile-key.is-white, .r-work .tile-s ~ .tile-key { stroke: var(--keyline); }
 .chip { fill: var(--ultramarine); }
-.chip-n { font-family: var(--font-mono); font-size: 10px; font-weight: 600; fill: var(--paper); letter-spacing: var(--mono-tracking); }
-.tile-m { fill: var(--paper); stroke: var(--ink); stroke-width: 1; vector-effect: non-scaling-stroke; }
-.tile-n { font-family: var(--font-mono); font-size: 13px; font-weight: 600; fill: var(--ultramarine); }
+.chip-n { font-family: var(--font-mono); font-size: 10.5px; font-weight: 600; fill: var(--paper); letter-spacing: var(--mono-tracking); }
+.chip-n-m { font-size: 9.5px; }
 .w-title-l { font-size: 15px; font-weight: var(--title-weight); letter-spacing: var(--title-tracking); }
 .w-title-m { font-size: 13px; font-weight: var(--title-weight); letter-spacing: -0.01em; }
 .w-title-s { font-size: var(--map-label-size); font-weight: 600; }
 .w-meta { font-size: var(--map-label-size); fill: var(--ink-2); }
-.sq { stroke: var(--ink); stroke-width: 1; vector-effect: non-scaling-stroke; }
+.sq { stroke: var(--paper); stroke-width: 1; vector-effect: non-scaling-stroke; }
 .sq-work { fill: var(--ink); }
-.sq-experiment, .sq-client { fill: var(--paper); }
-.sq-dot { fill: var(--ink); }
+.sq-experiment { fill: var(--paper); stroke: var(--ink); }
+.sq-client { fill: var(--paper); stroke: var(--ink); stroke-dasharray: 1.5 1; }
+.r-work .tile-img { transition: opacity 160ms; }
+.node.r-work:hover .tile-key, .node.r-work.is-focus .tile-key { stroke: var(--ultramarine); stroke-width: 2; }
 .node .body text { transition: opacity 200ms; }
 .node.is-turning .body text { opacity: 0; transition: none; }
 
@@ -342,7 +345,7 @@ html:not(.js) .pop-index[hidden] { display: block; position: static; width: auto
 .is-moving .lab { transition-duration: 150ms; }
 
 /* Hover and focus */
-.node.is-focus .tile-m, .node.is-focus .sq, .node.is-focus .tick { stroke: var(--ultramarine); }
+.node.is-focus .tick { stroke: var(--ultramarine); }
 .node.is-focus text:not(.chip-n):not(.tile-n):not(.me-marked) { fill: var(--ultramarine); }
 
 @media (prefers-reduced-motion: reduce) {
@@ -557,3 +560,51 @@ a.tbtn { color: var(--ink); text-decoration: none; }
   .wp-title { margin-top: 28px; }
   .wp-nav .navlink { width: 40px; padding: 0; justify-content: center; }
 }
+
+/* Levels: previews and cards carry more for hero projects, less for smaller works. */
+.preview[data-level="L"] { max-width: 300px; width: 300px; }
+.preview[data-level="M"] { max-width: 260px; width: 260px; }
+.preview[data-level="S"] { max-width: 300px; width: 300px; }
+.pv-line { font-size: 12.5px; line-height: 1.42; margin-top: 6px !important; }
+.pv-strip { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4px; margin-top: 8px; }
+.pv-strip figure, .strip figure { margin: 0; aspect-ratio: 1; overflow: hidden; background: var(--tint); }
+.pv-strip img, .strip img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.pv-strip figure.is-white, .strip figure.is-white { outline: 1px solid var(--keyline); outline-offset: -1px; }
+.pv-s-head { display: grid; grid-template-columns: 56px 1fr; gap: 10px; align-items: start; margin-bottom: 8px; }
+.pv-thumb { width: 56px; height: 56px; object-fit: cover; display: block; background: var(--tint); }
+.pv-thumb.is-white { outline: 1px solid var(--keyline); outline-offset: -1px; }
+.preview .facts { margin: 0; }
+.preview .tags { margin: 6px 0 0; font-size: 12px; line-height: 1.45; }
+.facts { display: grid; gap: 4px; margin: 0 0 12px; padding: 8px 0; border-top: var(--rule-width) solid var(--rule); border-bottom: var(--rule-width) solid var(--rule); }
+.fact { display: grid; grid-template-columns: 74px 1fr; gap: 8px; align-items: baseline; }
+.fact dt { color: var(--ink-2); font-size: var(--mono-size-sm); }
+.fact dd { margin: 0; font-size: 12.5px; line-height: 1.4; }
+.preview .fact { grid-template-columns: 64px 1fr; }
+.sep { color: var(--ink-3); }
+.lk-plain { text-decoration: none; }
+.tags { margin: 0 0 12px; font-size: 13px; line-height: 1.5; }
+.card-img { margin: 0 0 10px; }
+.card-img img { display: block; width: 100%; height: auto; }
+.card-img.is-white img { outline: 1px solid var(--keyline); outline-offset: -1px; }
+.card[data-level="L"] { width: 360px; }
+.card[data-level="M"] { width: 330px; }
+.card[data-level="S"] { width: 300px; }
+.card[data-level="S"] .card-title { font-size: 19px; }
+.strip { display: grid; gap: 4px; margin: 0 0 10px; }
+.strip.n1 { grid-template-columns: 1fr; }
+.strip.n1 figure { aspect-ratio: auto; }
+.strip.n1 img { height: auto; }
+.strip.n2 { grid-template-columns: 1fr 1fr; }
+.strip.n3 { grid-template-columns: 2fr 1fr; grid-template-rows: 1fr 1fr; }
+.strip.n3 figure:first-child { grid-row: span 2; aspect-ratio: auto; }
+.strip.n4 { grid-template-columns: 1fr 1fr; }
+.more { margin: 0 0 4px; }
+.more summary { cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 6px; color: var(--ink-2); padding: 4px 0 8px; }
+.more summary::-webkit-details-marker { display: none; }
+.more .more-ic { width: 12px; height: 12px; transition: transform 160ms; }
+.more[open] .more-ic { transform: rotate(90deg); }
+.cp-s p { font-size: 13px; line-height: 1.45; margin: 0 0 6px; }
+.cp-s .cp-label { margin: 0 0 2px; }
+.wp-body .facts { max-width: var(--measure); margin-top: 18px; }
+.ix .ix-grp th { padding: 16px 0 6px; text-align: left; color: var(--ink); border-bottom: var(--rule-width) solid var(--ink); }
+.ix tbody .ix-grp:first-child th { padding-top: 6px; }

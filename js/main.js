@@ -139,7 +139,7 @@ function createFlow({ graph, data, views, zoom, filter }) {
     next: (id) => go("page", id, "replace"),
     link: (id) => open(id),
   };
-  const preview = createPreview({ graph, views, isOpen: (id) => !!cur.layer && cur.id === id, edge: () => (cur.layer === "panel" ? panelW() : 0) });
+  const preview = createPreview({ graph, views, ix, isOpen: (id) => !!cur.layer && cur.id === id, edge: () => (cur.layer === "panel" ? panelW() : 0) });
   const card = createCard({ graph, ix, edge: () => 0, on });
   const panel = createPanel({ ix, on });
   const pageLayer = createPage({ ix, on });
@@ -179,7 +179,11 @@ function createFlow({ graph, data, views, zoom, filter }) {
   }
   function record(layer, id, mode) {
     const depth = (history.state?.depth ?? 0) + (mode === "push" ? 1 : 0);
-    history[mode === "push" ? "pushState" : "replaceState"]({ layer, id: layer ? id : null, depth }, "", url(layer, id));
+    try {
+      history[mode === "push" ? "pushState" : "replaceState"]({ layer, id: layer ? id : null, depth }, "", url(layer, id));
+    } catch {
+      // Sandboxed previews refuse URL changes; the layers still work.
+    }
   }
 
   // Shows a layer for a node. Lower layers under it are hidden, except the panel, which

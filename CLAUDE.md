@@ -1,6 +1,13 @@
 # CLAUDE.md · bryliejw.github.io
 
-Brylie Wilson's portfolio site. The whole site is one systems map with her name at the centre. Projects from her PDF taster folio are large nodes; smaller works sit around them; disciplines, deliverables, tools, topics and values are keyword nodes that connect them. Read this file before every task.
+Brylie Wilson's portfolio site. The whole site is one systems map with her name at the centre. Works sit at three levels that show different amounts: hero projects from her PDF taster folio (L), Extras (M) and smaller works (S). Disciplines, deliverables, tools, topics and values are keyword nodes that connect them. Read this file before every task.
+
+## Content status (23 Oct 2026)
+
+- The direction is this systems map. The `design-handoff` and `site-v1` branches (the HANDOFF rebuild) are superseded; do not build from them.
+- `data/nodes.json` on branch `map-final` holds a full-fidelity content pass: names, ordered images with alt text, facts, tools, materials, tags and copy for every work. **Build it as final.** Brylie reviews afterwards and deletes what she does not want; never stop to ask her to pick projects, images or copy.
+- `copyStatus` per copy field: `pdf` = verbatim from the submitted folio (never edit); `draft` = written from her own project files. Both render. `reviewFlags` are her open questions: never render them; list any you touch in your summary.
+- The hard rule "never write new descriptive copy" still applies to you: use the data as it is, and leave empty fields empty.
 
 ## Hard rules
 
@@ -51,7 +58,8 @@ scripts/              validate.mjs, layout-edge.mjs, icons.mjs, images.mjs, buil
 ## Data model (data/nodes.json)
 
 - `me`: name, tagline1 "Designer, strategist and chronic over-thinker", tagline2 "systems thinker", bio paragraphs, education, certification (IBM Enterprise Design Thinking Practitioner, Credly https://www.credly.com/badges/d8601100-d8ed-445e-9cbc-0cb08019e05d), experience, standpoint, contact.
-- `works[]`: id, slug, n, title, sub, year|null, size L|M|S, kind project|experiment|work|client, context, team, partOf, link, keywords[], images[{src,thumb,w,h,alt,white}] (written by images.mjs; white = white ground, gets the 1px keyline; alt is hers, never generated), copy{brief,insight,pull,response,role,credit,oneLine}, steps[[label,text]], pos{edge:[x,y]}.
+- `works[]`: id, slug, n, title, sub, year|null, size L|M|S, kind project|experiment|work|client, context, team, partOf, link, keywords[], tools[] (names, shown in facts; a tool used by two or more works is also a tool keyword), materials[] (materials, formats, techniques), images[{src,thumb,w,h,alt,white}] (written by images.mjs from `data/selects.json` and the `_src/<slug>/images.json` alt sidecars; white = white ground, gets the 1px keyline; alt was drafted in the content pass and is Brylie's to edit, never generate new alt), copy{brief,insight,pull,response,role,credit,oneLine}, copyStatus, reviewFlags, steps[[label,text]], pos{edge:[x,y]}.
+- Only published works are in `nodes.json`. Client work and anything held back stays out of the repo (it is public).
 - `keywords[]`: id, label, type discipline|deliverable|tool|topic|value, proposed (values stay proposed until she confirms).
 - Ids are unique across works AND keywords. `validate.mjs` fails the build on a duplicate (photo, td and zine have collided before).
 - Edges are derived, never stored: work to keyword, work to partOf (dashed), size L works and Terms of Practice to `me`.
@@ -99,17 +107,19 @@ scripts/              validate.mjs, layout-edge.mjs, icons.mjs, images.mjs, buil
 ## Map
 
 - One centred coordinate space (1200 × 780 viewBox), one d3-zoom (0.4 to 4), name fixed at the centre in every view.
-- Views: Edge map (default; keywords on the four edges in PDF edge-strip positions; ticks on the inner side of labels; works at the mean of their keywords pushed 45% outward, snapped to a free 20px cell; precomputed into pos.edge), Force (precomputed 360 ticks plus 240 rectangle overlap passes using each node's full footprint; drag only in this view), Rings (name centre, PDF work r 240, smaller works r 370, keywords r 495 in typed arcs with rotated labels).
+- Views: Edge map (default; keywords on the four edges in PDF edge-strip positions; ticks on the inner side of labels; works at the mean of their keywords pushed 45% outward, snapped to a free 20px cell; precomputed into pos.edge), Force (precomputed 360 ticks plus 240 rectangle overlap passes using each node's full footprint; drag only in this view), Rings (name centre, L r 180, M r 320, S r 430, keywords r 545 in typed arcs with rotated labels).
 - Switching views animates nodes 750ms cubic in-out; keyword labels fade and reappear in their new orientation.
 - Group labels on the map carry their keyword icon, name and live count.
-- Marks: L 96px image tile with 26 × 17 ultramarine number chip, 15px title, "year · subtitle"; M 48px white tile with ink keyline and blue number; S square by kind (filled work, outlined experiment, outlined with centre client) with 11px 600 label; keywords 6px tick by type (ink discipline, outlined deliverable, ink-3 tool in mono caps, ultramarine topic, dashed value in italics).
+- Marks by level (`TILE` in render.js): L 112px image tile with 28 × 18 ultramarine number chip, 15px title, "year · subtitle" below; M 64px image tile with 24 × 15 E-number chip, 13px title and meta to the side; S 30px image thumbnail with a 7px kind mark in the corner (filled work, outlined experiment) and an 11px 600 label; keywords 6px tick by type (ink discipline, outlined deliverable, ink-3 tool in mono caps, ultramarine topic, dashed value in italics). Image tiles crop to fill on the map only; everywhere else images keep their ratio.
 - Every SVG label has a 4px paper halo (paint-order: stroke). Lines 1px line colour at rest, 1.25px ink-3 for the hovered node, 1.5px ultramarine for the focused node.
 - Labels Auto: all keyword labels in Edge map; Force shows them at zoom 1.25 or on hover; Rings at zoom 0.95 or on hover.
 
 ## Open flow
 
-1. Hover or focus: preview tooltip (meta line with kind icon, image, title, subtitle).
-2. Click: grow card beside the node, follows it through pan, zoom and view changes. Header block with number or type icon; title; labels grouped in rows, each row led by its type icon and set as plain text links (no boxed chips); one paragraph; Expand, Full page (L only), Live site when linked.
+Each level shows a different amount. The words carry S works; L works get the most images and a full page.
+
+1. Hover or focus: preview. L 300px: meta, image, title, subtitle, one line, three more thumbnails. M 260px: meta, image, title, subtitle, one line. S 300px info card: 56px thumb with meta, title and subtitle, then facts (context, team, tools, materials, part of) and tags as plain words.
+2. Click: grow card beside the node, follows it through pan, zoom and view changes. L and M: number block, title, subtitle, lead image, one paragraph, keyword rows led by type icons as plain text links; Expand, Full page (L only), Live site when linked. S: kind icon, title, subtitle, a strip of up to 4 images, one line, facts, tags, and an "About this piece" disclosure with brief, insight, response, role and credit when the data has them; no Expand.
 3. Expand: 420px side panel; map pans so the selected node stays visible with its lines in ultramarine; tab strip (Overview, Images, Process, Connections) scrolls within the panel; clicking any node or label while open updates the panel.
 4. Full page (CYPHER, 16 Days of Real Talk, Symbiosis): clip-path circle reveal from the node to /work/<slug>/ in the PDF opener layout; Back returns to the panel.
 
