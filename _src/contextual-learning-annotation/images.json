@@ -1,8 +1,10 @@
 {
  "f01-02_Process__Indiv__AT3_PARTA_VisualAid_b2eb.jpg": {
-  "alt": "Systems map in red, blue and green panels titled Creative Commons, moving from isolated platforms to core features to impact"
+  "alt": "Systems map in red, blue and green panels titled Creative Commons, moving from isolated platforms to core features to impact",
+  "use": "tile"
  },
  "f02-04_Final__Indiv__95004_Tut06_AT3_PARTA-BRYLIE-WILSON_5b04__p001.jpg": {
-  "alt": "Earlier submitted systems map with problem, solution and outcome columns linking platform issues to career, organisation and community"
+  "alt": "Earlier submitted systems map with problem, solution and outcome columns linking platform issues to career, organisation and community",
+  "use": "process"
  }
 }

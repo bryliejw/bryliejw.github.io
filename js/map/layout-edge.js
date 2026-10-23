@@ -7,17 +7,17 @@
 import { W, H, KW_SPEC } from "./render.js";
 
 const M = 16; // margin from the viewBox edge
-const GRID = 20;
+const GRID = 10;
 const PUSH = 1.45;
-const PAD = 8; // clear space between footprints
+const PAD = 6; // clear space between footprints
 const ITER = 4; // ordering passes
 
 const SIDES = { left: ["discipline"], right: ["topic", "deliverable"], top: ["value"], bottom: ["tool"] };
 
-export function layoutEdge(graph, { recompute = false } = {}) {
+export function layoutEdge(graph, { recompute = false, w = W, h = H } = {}) {
   const groups = new Map(graph.groups.map((g) => [g.type, g]));
   for (const g of graph.groups) g.order = [...g.kws];
-  const geo = geometry(graph, groups);
+  const geo = geometry(graph, groups, w, h);
 
   // Order each strip so keywords sit near the works they join (barycentric passes).
   for (let i = 0; i < ITER; i++) {
@@ -44,14 +44,14 @@ export function layoutEdge(graph, { recompute = false } = {}) {
     const p = !recompute && stored ? stored : snap(w, target(w, geo.inner, placed), geo.inner, [...reserved, ...placed]);
     w.pos.edge = p;
     w.lab.edge = 1;
-    placed.push(inflate(at(w.fpSide[1], p[0], p[1]), PAD / 2));
+    placed.push(inflate(at((w.fpPack ?? w.fpSide[1]), p[0], p[1]), PAD / 2));
   }
   graph.me.pos.edge = [0, 0];
   graph.edgeGeo = geo;
   return geo;
 }
 
-function geometry(graph, groups) {
+function geometry(graph, groups, W, H) {
   const maxW = (types) => Math.max(...types.flatMap((t) => groups.get(t).kws.map((k) => k.labelW)));
   // When the bottom strip's labels would not fit in one row, alternate them over two rows.
   const tools = groups.get(SIDES.bottom[0]);
@@ -61,6 +61,8 @@ function geometry(graph, groups) {
   const leftTick = -W / 2 + M + maxW(SIDES.left) + 9;
   const rightTick = W / 2 - M - maxW(SIDES.right) - 9;
   return {
+    w: W,
+    h: H,
     stagger,
     topTick,
     bottomTick,
@@ -73,6 +75,7 @@ function geometry(graph, groups) {
 }
 
 function placeStrips(geo, groups) {
+  const W = geo.w;
   // Columns: a group label slot, then its keywords; groups separated by one empty slot.
   for (const side of ["left", "right"]) {
     const types = SIDES[side];
@@ -144,7 +147,7 @@ function target(w, inner) {
 
 // Nearest free grid cell to the target where the full footprint fits inside the inner area.
 function snap(w, [tx, ty], inner, taken) {
-  const fp = w.fpSide[1];
+  const fp = (w.fpPack ?? w.fpSide[1]);
   const cells = [];
   for (let x = Math.ceil(inner.x0 / GRID) * GRID; x <= inner.x1; x += GRID) {
     for (let y = Math.ceil(inner.y0 / GRID) * GRID; y <= inner.y1; y += GRID) {

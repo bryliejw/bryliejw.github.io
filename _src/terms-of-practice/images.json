@@ -1,26 +1,34 @@
 {
  "f01-cx-web__web__Sites__terms-of-practice-manifesto__index__desktop_956c.jpg": {
-  "alt": "Terms of Practice landing page: a white card with a serif title and question on a bright ultramarine background."
+  "alt": "Terms of Practice landing page: a white card with a serif title and question on a bright ultramarine background.",
+  "use": "tile"
  },
  "f02-cx-web__web__Sites__terms-of-practice-manifesto__manifesto__desktop_143e.jpg": {
-  "alt": "Manifesto page with a large serif Terms of Practice title, a question about language and a yellow footer bar."
+  "alt": "Manifesto page with a large serif Terms of Practice title, a question about language and a yellow footer bar.",
+  "use": "hero"
  },
  "f03-cx-web__web__Sites__terms-of-practice-manifesto__manifesto__scroll1_08fd.jpg": {
-  "alt": "Yellow section of the manifesto site with industry phrases highlighted in blue on cards above body text."
+  "alt": "Yellow section of the manifesto site with industry phrases highlighted in blue on cards above body text.",
+  "use": "gallery"
  },
  "f04-cx-web__web__Sites__terms-of-practice-manifesto__manifesto__scroll3_0914.jpg": {
-  "alt": "Black closing section reading The vocabulary was inherited. The next one does not have to be, above yellow bars."
+  "alt": "Black closing section reading The vocabulary was inherited. The next one does not have to be, above yellow bars.",
+  "use": "gallery"
  },
  "f05-cx-web__web__Sites__terms-of-practice-manifesto__manifesto__mobile_bf08.jpg": {
-  "alt": "Mobile view of the Terms of Practice manifesto page with stacked title, question and summary in black on white."
+  "alt": "Mobile view of the Terms of Practice manifesto page with stacked title, question and summary in black on white.",
+  "use": "gallery"
  },
  "f06-04_Final__Submitted__Wilson_Brylie_87012_Task1_Portfolio_7bc9__p007.jpg": {
-  "alt": "Ultramarine process folio page titled Lightbulb moment, with a yellow circle diagram and the line Make the words carry their weight again."
+  "alt": "Ultramarine process folio page titled Lightbulb moment, with a yellow circle diagram and the line Make the words carry their weight again.",
+  "use": "process"
  },
  "f07-cx-photos__IMG_7660_c429.jpg": {
-  "alt": "Four printed manifestos laid side by side, covered in handwritten notes, underlining and coloured highlighter."
+  "alt": "Four printed manifestos laid side by side, covered in handwritten notes, underlining and coloured highlighter.",
+  "use": "process"
  },
  "f08-cx-photos__IMG_5586_4d06.jpg": {
-  "alt": "Hand on a laptop trackpad during peer testing, the screen showing the Terms of Practice landing page."
+  "alt": "Hand on a laptop trackpad during peer testing, the screen showing the Terms of Practice landing page.",
+  "use": "process"
  }
 }

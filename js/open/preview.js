@@ -39,7 +39,7 @@ export function createPreview({ graph, views, isOpen, edge, ix }) {
       `<p class="pv-title">${esc(w.title)}</p>`,
       w.sub ? `<p class="pv-sub">${esc(w.sub)}</p>` : "",
       line ? `<p class="pv-line">${esc(line)}</p>` : "",
-      w.size === "L" ? stripHTML({ ...w, images: w.images.slice(1) }, 3, "pv-strip") : "",
+      w.images.length > 1 ? stripHTML({ ...w, images: w.images.slice(1) }, w.size === "L" ? 4 : 3, "pv-strip") : "",
     ].join("");
   }
 

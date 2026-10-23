@@ -1,14 +1,18 @@
 {
  "f01-02_Process__Logo__Asset-43x_1b44.jpg": {
-  "alt": "SparkChange logo mark, a yellow lightning bolt cutting through a white letter C on a black square"
+  "alt": "SparkChange logo mark, a yellow lightning bolt cutting through a white letter C on a black square",
+  "use": "tile"
  },
  "f02-02_Process__Workmark__Asset-33x_dcc3.jpg": {
-  "alt": "Black SparkChange wordmark with a lightning bolt forming the S, set on a white background"
+  "alt": "Black SparkChange wordmark with a lightning bolt forming the S, set on a white background",
+  "use": "gallery"
  },
  "f03-cx-adobe__Logos_aic__thumb_f507.jpg": {
-  "alt": "Sheet of logo explorations showing bolt and C marks in black, white, yellow and navy with wordmark lockups"
+  "alt": "Sheet of logo explorations showing bolt and C marks in black, white, yellow and navy with wordmark lockups",
+  "use": "process"
  },
  "f04-04_Final__Task-2__prototype-UX_4e4c__p001.jpg": {
-  "alt": "Handwritten test plan table with columns for aspect, description, how to test, priority and outcome"
+  "alt": "Handwritten test plan table with columns for aspect, description, how to test, priority and outcome",
+  "use": "process"
  }
 }

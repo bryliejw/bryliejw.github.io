@@ -1,9 +1,13 @@
 // Grow card: opens beside the clicked node and follows it through pan, zoom and view
-// changes. Header block with the number (works) or the type icon (keywords, the name);
-// title; labels in rows, each led by its type icon and set as plain text links; one
-// paragraph; Expand, Full page (PDF projects only), Live site when the work links one.
-import { esc, icon, src, numBlock, rows, keywordRows, workRows, oneParagraph, kindLabel, typeName, typeIcon, hasPage, meWorks, KIND_ICON, factsHTML, tagsHTML, stripHTML, detailsHTML, imgHTML } from "./content.js";
+// changes. Drag it by its header and it stays where it is dropped (for every node it
+// shows) until docked again; resize it from the corner and its content reflows.
+// Works: number or kind block, title, subtitle, images (a lead image with thumbnails to
+// swap it for projects and Extras; a strip for smaller works), one paragraph, facts for
+// smaller works, keyword rows; Expand, Full page (projects), Live site when linked.
+import { esc, icon, src, numBlock, rows, keywordRows, workRows, oneParagraph, kindLabel, typeName, typeIcon, hasPage, meWorks, KIND_ICON, factsHTML, tagsHTML, stripHTML, imgHTML } from "./content.js";
 import { follow } from "./follow.js";
+
+const clamp = (v, lo, hi) => Math.max(lo, Math.min(v, hi));
 
 export function createCard({ graph, ix, edge, on }) {
   const box = document.createElement("section");
@@ -14,17 +18,28 @@ export function createCard({ graph, ix, edge, on }) {
   box.setAttribute("aria-labelledby", "card-title");
   document.querySelector(".frame").append(box);
   let node = null;
+  let pinned = null; // { x, y } once the card has been dragged
 
-  const track = follow(box, () => (node && !node.hidden ? node : null), { gap: 14, prefer: "right", edge });
+  const track = follow(box, () => (node && !node.hidden && !pinned ? node : null), { gap: 14, prefer: "right", edge });
 
   const btn = (act, ic, text, extra = "") => `<button type="button" class="tbtn" data-act="${act}"${extra}>${icon(ic)}${text}</button>`;
+
+  // Lead image with a scrolling row of every image; a thumbnail swaps into the lead.
+  function gallery(w) {
+    const ims = w.images;
+    if (!ims.length) return "";
+    const thumbs = ims.length > 1
+      ? `<div class="card-thumbs" role="group" aria-label="${ims.length} images">${ims.map((im, i) => `<button type="button" class="card-thumb${i ? "" : " is-on"}${im.white ? " is-white" : ""}" data-img="${i}" aria-label="Image ${i + 1} of ${ims.length}" aria-pressed="${!i}"><img src="${esc(src(im.thumb ?? im.src))}" alt="" loading="lazy"></button>`).join("")}</div><p class="card-count mono-label"><span data-count>1</span> / ${ims.length}</p>`
+      : "";
+    return `<div class="card-media">${imgHTML(ims[0], { cls: "card-img", sizes: "(max-width: 719px) 100vw, 420px", lazy: false })}${thumbs}</div>`;
+  }
 
   function content(n) {
     let head;
     let title;
     let sub = "";
-    let body;
-    let para = "";
+    let media = "";
+    let info = "";
     let acts = btn("expand", "panel-right-open", "Expand");
     if (n.role === "work") {
       const w = n.data;
@@ -33,15 +48,14 @@ export function createCard({ graph, ix, edge, on }) {
       title = esc(w.title);
       if (w.sub) sub = `<p class="card-sub">${esc(w.sub)}</p>`;
       if (w.size === "S") {
-        // Smaller works: images, one line, facts and tags. No panel.
         head = `<span class="card-ic">${icon(KIND_ICON[w.kind])}</span><p class="card-meta mono-label">${esc(metaTxt)}</p>`;
-        body = [stripHTML(w, 4, "strip card-strip"), w.copy.oneLine ? `<p class="card-text">${esc(w.copy.oneLine)}</p>` : "", factsHTML(w, ix, { year: false }), tagsHTML(w, ix), detailsHTML(w)].join("");
-        acts = "";
+        media = stripHTML(w, 4, "strip card-strip");
+        info = [w.copy.oneLine ? `<p class="card-text">${esc(w.copy.oneLine)}</p>` : "", factsHTML(w, ix), tagsHTML(w, ix)].join("");
       } else {
         head = `${numBlock(w, "card-num")}<p class="card-meta mono-label">${esc(metaTxt)}</p>`;
-        const img = w.images[0];
+        media = gallery(w);
         const line = oneParagraph(w);
-        body = (img ? imgHTML(img, { cls: "card-img", sizes: "340px", lazy: false }) : "") + (line ? `<p class="card-text">${esc(line)}</p>` : "") + rows(keywordRows(w.keywords, ix));
+        info = (line ? `<p class="card-text">${esc(line)}</p>` : "") + rows(keywordRows(w.keywords, ix));
         if (hasPage(w)) acts += btn("page", "maximize-2", "Full page");
       }
       if (w.link) acts += `<a class="tbtn" href="${esc(w.link)}" target="_blank" rel="noopener">${icon("arrow-up-right")}Live site</a>`;
@@ -50,7 +64,7 @@ export function createCard({ graph, ix, edge, on }) {
       const works = ix.usedBy.get(n.id);
       head = `<span class="card-ic">${icon(typeIcon(n.type))}</span><p class="card-meta mono-label">${esc(typeName(n.type))}${works.length ? ` · ${works.length} work${works.length === 1 ? "" : "s"}` : ""}</p>`;
       title = `<span class="t-${n.type}">${esc(n.data.label)}</span>`;
-      body = rows(workRows(works));
+      info = rows(workRows(works));
     } else {
       delete box.dataset.level;
       const me = n.data;
@@ -58,11 +72,11 @@ export function createCard({ graph, ix, edge, on }) {
       head = `<span class="card-ic">${icon("user")}</span><p class="card-meta mono-label">About</p>`;
       title = esc(me.name);
       sub = `<p class="card-sub">${esc(me.tagline1.slice(0, cut))}<s>${esc(me.tagline1.slice(cut))}</s> <mark>${esc(me.tagline2)}</mark></p>`;
-      body = rows(workRows(meWorks(ix)));
-      para = me.bio[0];
+      info = `<p class="card-text">${esc(me.bio[0])}</p>` + rows(workRows(meWorks(ix)));
     }
-    return `<header class="card-head">${head}<button type="button" class="cbtn card-x" data-act="close" aria-label="Close" data-tip="Close" data-key="Esc">${icon("x")}</button></header>
-<h2 class="card-title" id="card-title">${title}</h2>${sub}${body}${para ? `<p class="card-text">${esc(para)}</p>` : ""}
+    const dock = `<button type="button" class="cbtn card-dock" data-act="dock" aria-label="Dock to the node" data-tip="Dock" data-key=""${pinned ? "" : " hidden"}>${icon("pin-off")}</button>`;
+    return `<header class="card-head" data-drag title="Drag to move">${head}<span class="card-grip" aria-hidden="true">${icon("grip-horizontal")}</span>${dock}<button type="button" class="cbtn card-x" data-act="close" aria-label="Close" data-tip="Close" data-key="Esc">${icon("x")}</button></header>
+<div class="card-body">${media}<div class="card-info"><h2 class="card-title" id="card-title">${title}</h2>${sub}${info}</div></div>
 ${acts ? `<footer class="card-acts">${acts}</footer>` : ""}`;
   }
 
@@ -72,9 +86,62 @@ ${acts ? `<footer class="card-acts">${acts}</footer>` : ""}`;
       e.preventDefault();
       return on.link(link.dataset.node);
     }
+    const t = e.target.closest("[data-img]");
+    if (t && node?.role === "work") {
+      const im = node.data.images[+t.dataset.img];
+      const fig = box.querySelector(".card-img");
+      fig.outerHTML = imgHTML(im, { cls: "card-img", sizes: "(max-width: 719px) 100vw, 420px", lazy: false });
+      for (const b of box.querySelectorAll("[data-img]")) {
+        b.classList.toggle("is-on", b === t);
+        b.setAttribute("aria-pressed", b === t);
+      }
+      const c = box.querySelector("[data-count]");
+      if (c) c.textContent = +t.dataset.img + 1;
+      t.scrollIntoView({ block: "nearest", inline: "nearest" });
+      return;
+    }
     const act = e.target.closest("[data-act]")?.dataset.act;
+    if (act === "dock") return dockCard();
     if (act) on[act]();
   });
+
+  // Drag by the header. Once moved, the card stays put for every node until docked.
+  box.addEventListener("pointerdown", (e) => {
+    const handle = e.target.closest("[data-drag]");
+    if (!handle || e.target.closest("button, a") || e.button) return;
+    if (window.matchMedia("(max-width: 719px)").matches) return;
+    e.preventDefault();
+    const frame = box.offsetParent.getBoundingClientRect();
+    const start = { x: e.clientX, y: e.clientY, left: box.offsetLeft, top: box.offsetTop };
+    box.setPointerCapture(e.pointerId);
+    box.classList.add("is-dragging");
+    track.stop();
+    const move = (ev) => {
+      const x = clamp(start.left + ev.clientX - start.x, 0, frame.width - 80);
+      const y = clamp(start.top + ev.clientY - start.y, 0, frame.height - 48);
+      box.style.left = `${x}px`;
+      box.style.top = `${y}px`;
+      pinned = { x, y };
+    };
+    const up = () => {
+      box.classList.remove("is-dragging");
+      box.removeEventListener("pointermove", move);
+      box.removeEventListener("pointerup", up);
+      box.removeEventListener("pointercancel", up);
+      box.querySelector(".card-dock")?.removeAttribute("hidden");
+      box.dataset.pinned = pinned ? "true" : "";
+    };
+    box.addEventListener("pointermove", move);
+    box.addEventListener("pointerup", up);
+    box.addEventListener("pointercancel", up);
+  });
+
+  function dockCard() {
+    pinned = null;
+    box.dataset.pinned = "";
+    box.querySelector(".card-dock")?.setAttribute("hidden", "");
+    track.start();
+  }
 
   return {
     get id() {
@@ -90,7 +157,11 @@ ${acts ? `<footer class="card-acts">${acts}</footer>` : ""}`;
         box.classList.add("is-growing");
       }
       box.hidden = false;
-      track.start();
+      if (pinned) {
+        box.style.left = `${pinned.x}px`;
+        box.style.top = `${pinned.y}px`;
+        track.stop();
+      } else track.start();
       if (focus) box.focus({ preventScroll: true });
     },
     hide() {

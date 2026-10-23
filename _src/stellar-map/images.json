@@ -1,11 +1,14 @@
 {
  "f01-05_Portfolio__stellar1_640d.jpg": {
-  "alt": "Dark web app with thousands of coloured dots arranged in a ring of glowing clusters joined by faint lines"
+  "alt": "Dark web app with thousands of coloured dots arranged in a ring of glowing clusters joined by faint lines",
+  "use": "tile"
  },
  "f02-cx-web__web__Stellar-Network__genres__desktop_f3ad.jpg": {
-  "alt": "Genre view of the map with dots gathered into a loop of circular clusters on a near-black background"
+  "alt": "Genre view of the map with dots gathered into a loop of circular clusters on a near-black background",
+  "use": "gallery"
  },
  "f03-cx-web__web__Stellar-Network__colour-energy__desktop_adee.jpg": {
-  "alt": "Scatter plot view filling the screen with thousands of orange and purple dots coloured by energy"
+  "alt": "Scatter plot view filling the screen with thousands of orange and purple dots coloured by energy",
+  "use": "gallery"
  }
 }

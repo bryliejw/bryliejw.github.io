@@ -1,8 +1,7 @@
-// View cursor and image viewer. A blue "View" disc follows the pointer over work tiles on
-// the map and over images in cards, the panel and full pages (pointer devices only).
+// View cursor and image viewer. A blue "View" disc follows the pointer over work
+// images in cards, the panel and full pages (pointer devices only).
 // Clicking one of those images opens it full size; a click or Esc closes it.
-const IMAGES = ".card figure img, .strip img, .panel .img img, .page-layer .img img, .page-layer .wp-hero img";
-const TILES = ".node.r-work";
+const IMAGES = ".card figure img, .strip img, .panel .img img, .panel .panel-hero img, .page-layer .img img, .page-layer .wp-hero img";
 const coarse = window.matchMedia("(hover: none), (pointer: coarse)");
 
 export function bindCursor() {
@@ -25,7 +24,7 @@ export function bindCursor() {
 
   document.addEventListener("pointermove", (e) => {
     if (coarse.matches || !viewer.hidden) return disc.classList.remove("on");
-    const on = !!e.target.closest?.(`${IMAGES}, ${TILES}`);
+    const on = !!e.target.closest?.(IMAGES);
     disc.style.left = `${e.clientX}px`;
     disc.style.top = `${e.clientY}px`;
     disc.classList.toggle("on", on);
@@ -34,7 +33,7 @@ export function bindCursor() {
 
   function open(img) {
     back = document.activeElement;
-    const full = img.currentSrc && img.srcset ? img.srcset.split(",").pop().trim().split(" ")[0] : img.src;
+    const full = img.dataset.full || (img.srcset ? img.srcset.split(",").pop().trim().split(" ")[0] : img.src);
     viewer.querySelector("img").src = full || img.src;
     viewer.querySelector("img").alt = img.alt;
     viewer.querySelector(".viewer-alt").textContent = img.alt;

@@ -1,14 +1,18 @@
 {
  "f01-04_Final__AE-Vids__-Anemone_7fcd__t01.jpg": {
-  "alt": "Condensed white type reading MYSTICAL CREATURES over purple and teal coral in an aquarium tank"
+  "alt": "Condensed white type reading MYSTICAL CREATURES over purple and teal coral in an aquarium tank",
+  "use": "tile"
  },
  "f02-04_Final__Final-01.PRV__Rendered---dccbef23-d41d-4226-ad71-7d9f014cb83e---01_bce0__t03.jpg": {
-  "alt": "Blue condensed type and orange script reading I think they are fascinating over a water-filled glass with a blue stem"
+  "alt": "Blue condensed type and orange script reading I think they are fascinating over a water-filled glass with a blue stem",
+  "use": "hero"
  },
  "f03-02_Process__Photoshop__negative-impact---BW_e232.jpg": {
-  "alt": "Black and white frame with the words negative impact in tall white type over a bed of jellyfish"
+  "alt": "Black and white frame with the words negative impact in tall white type over a bed of jellyfish",
+  "use": "gallery"
  },
  "f04-02_Process__Photoshop__invisible-invaders_9681.jpg": {
-  "alt": "Muted street scene of parked cars with the words invisible invaders in tall white letters behind them"
+  "alt": "Muted street scene of parked cars with the words invisible invaders in tall white letters behind them",
+  "use": "gallery"
  }
 }

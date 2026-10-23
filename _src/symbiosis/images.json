@@ -1,41 +1,54 @@
 {
  "f01-04_Final__Final-Files__FrameFrame-3_b9fa.jpg": {
-  "alt": "Render of the Garden Chair on a lit circular platform at the centre of curving green mesh walls"
+  "alt": "Render of the Garden Chair on a lit circular platform at the centre of curving green mesh walls",
+  "use": "tile"
  },
  "f02-04_Final__Final-Files__FrameFrame-1_0086.jpg": {
-  "alt": "Render of an arched entrance glowing white, with SYMBIOSIS written across green light and botanical line drawings"
+  "alt": "Render of an arched entrance glowing white, with SYMBIOSIS written across green light and botanical line drawings",
+  "use": "hero"
  },
  "f03-04_Final__Final-Files__FrameFrame-5_f17f.jpg": {
-  "alt": "Render of a green room titled REPETITION with a glowing geometric ornament and a Dresser quote on the wall"
+  "alt": "Render of a green room titled REPETITION with a glowing geometric ornament and a Dresser quote on the wall",
+  "use": "hero"
  },
  "f04-02_Process__Squares__Artboard-4_89b2.jpg": {
-  "alt": "Render of the chair under a cone of green light, a radiating ornament above it and a quote curving across the floor"
+  "alt": "Render of the chair under a cone of green light, a radiating ornament above it and a quote curving across the floor",
+  "use": "hero"
  },
  "f05-04_Final__VisExp__symbiosis-narra_ebae.jpg": {
-  "alt": "Tall visual narrative strip moving from the Symbiosis entrance through the Repetition room to the lit chair"
+  "alt": "Tall visual narrative strip moving from the Symbiosis entrance through the Repetition room to the lit chair",
+  "use": "gallery"
  },
  "f06-02_Process__anim__Comp-3-V2_bf41__t01.jpg": {
-  "alt": "Animation frame of the chair in grey with white geometric line work radiating out from its back panel"
+  "alt": "Animation frame of the chair in grey with white geometric line work radiating out from its back panel",
+  "use": "gallery"
  },
  "f07-cx-canva__Symbiosis_mesh_model_photo_-perspective-_DAGWOlPRVFI_d1b4.jpg": {
-  "alt": "Photo of the small-scale mesh model, curved gutter guard walls rising from a black base with white paths"
+  "alt": "Photo of the small-scale mesh model, curved gutter guard walls rising from a black base with white paths",
+  "use": "process"
  },
  "f08-02_Process__Results__Proto-1-Path-1_ca4f.jpg": {
-  "alt": "Top view of Prototype 1 with one user's route through the mesh pathways traced in bright green"
+  "alt": "Top view of Prototype 1 with one user's route through the mesh pathways traced in bright green",
+  "use": "process"
  },
  "f09-02_Process__Photos__IMG_4204-1_eb9e.jpg": {
-  "alt": "Close photo inside the mesh model, a small figurine on a wire standing between curved mesh walls"
+  "alt": "Close photo inside the mesh model, a small figurine on a wire standing between curved mesh walls",
+  "use": "process"
  },
  "f10-02_Process__Doc__SCR-20241112-titg_c5d9.jpg": {
-  "alt": "Process diagram comparing paper, fabric and thin metal mesh, with pros, cons and the coverings tried"
+  "alt": "Process diagram comparing paper, fabric and thin metal mesh, with pros, cons and the coverings tried",
+  "use": "process"
  },
  "f11-cx-figma__bryliewilson_instagrampost_VE_AT3__tile4_Proto-2-interaction_6515.jpg": {
-  "alt": "Instagram tile titled Interaction & Conceptual Engagement over a green render of the chair and floor symbol"
+  "alt": "Instagram tile titled Interaction & Conceptual Engagement over a green render of the chair and floor symbol",
+  "use": "process"
  },
  "f12-02_Process__Landscape-Edited__V1.1_37e5__t01.jpg": {
-  "alt": "Silhouette of a visitor facing a pale geometric ornament projected onto a green-lit wall in Prototype 3"
+  "alt": "Silhouette of a visitor facing a pale geometric ornament projected onto a green-lit wall in Prototype 3",
+  "use": "process"
  },
  "f13-02_Process__Geometry__Geometry-copy_6eab__p001.jpg": {
-  "alt": "Three projected symbol stages on black, from a simple green rosette to a flower and a purple star"
+  "alt": "Three projected symbol stages on black, from a simple green rosette to a flower and a purple star",
+  "use": "process"
  }
 }

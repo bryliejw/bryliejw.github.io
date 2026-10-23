@@ -10,7 +10,7 @@
 //   page         /work/<slug>/     (the generated page, readable with JS off)
 // Each entry's state is { layer, id, depth }; depth counts entries pushed above the one
 // the visit started on, so closing from the interface can step back through history.
-import { buildGraph, render, fit, measureKeyword, sizeHit, KW_SPEC, VIEWS } from "./map/render.js";
+import { buildGraph, render, fit, measureKeyword, sizeHit, KW_SPEC, VIEWS, DEFAULT_VIEW, TILE } from "./map/render.js";
 import { layoutEdge } from "./map/layout-edge.js";
 import { layoutForce } from "./map/layout-force.js";
 import { layoutRings } from "./map/layout-rings.js";
@@ -30,7 +30,7 @@ import { bindCursor } from "./ui/cursor.js";
 import { indexData, hasPage, pageHref, PDF } from "./open/content.js";
 import { createPreview } from "./open/preview.js";
 import { createCard } from "./open/grow.js";
-import { createPanel, PANEL_W } from "./open/panel.js";
+import { createPanel } from "./open/panel.js";
 import { createPage } from "./open/page.js";
 
 const reduced = window.matchMedia("(prefers-reduced-motion: reduce)");
@@ -59,23 +59,51 @@ async function boot() {
   await document.fonts.ready;
   fit(graph);
 
-  layoutEdge(graph, { recompute: params.has("relayout") });
-  for (const n of graph.kws) {
-    n.lab.force = KW_SPEC.right;
-    n.fp.edge = measureKeyword(n, n.lab.edge);
-    n.fp.force = measureKeyword(n, n.lab.force);
-  }
-  for (const n of graph.works) n.fp.force = n.fpSide[1];
-  layoutForce(graph);
-  layoutRings(graph);
-  for (const n of graph.kws) n.fp.rings = measureKeyword(n, n.lab.rings);
   sizeHit(graph.me);
+  // Force and Edge pack by image: Extras and smaller works keep their labels for hover and zoom,
+  // so their footprint is the tile with a margin; projects keep their title.
+  for (const n of graph.works) {
+    const h = TILE[n.size] / 2 + (n.size === "S" ? 10 : 14);
+    n.fp.force = n.size === "L" ? n.fpSide[1] : { x: -h, y: -h, w: 2 * h, h: 2 * h };
+    n.fpPack = n.fp.force; // Edge packs the same way
+
+  }
 
   let views;
   const zoom = setupZoom(graph, () => views?.paint());
+
+  // Layouts for the map area's shape: Edge gets a canvas of that aspect, Force is stretched
+  // to it, Rings stays round. Rerun when the area changes shape (window resize, panel).
+  let aspect = 0;
+  function layouts(a) {
+    aspect = a;
+    const w = 1200;
+    const h = Math.round(Math.max(560, Math.min(1500, w / Math.max(0.6, a))));
+    layoutEdge(graph, { recompute: true, w, h });
+    for (const n of graph.kws) {
+      n.lab.force = KW_SPEC.right;
+      n.fp.edge = measureKeyword(n, n.lab.edge);
+      n.fp.force = measureKeyword(n, n.lab.force);
+    }
+    layoutForce(graph, { aspect: a });
+    layoutRings(graph);
+    for (const n of graph.kws) n.fp.rings = measureKeyword(n, n.lab.rings);
+  }
+  layouts(zoom.aspect());
+
   views = createViews(graph, zoom);
   const filter = createFilter(graph, views);
-  const flow = createFlow({ graph, data, views, zoom, filter });
+  // Refit after the map area changes: relayout when its shape changed, else just refit.
+  const refit = ({ animate = true } = {}) => {
+    const a = zoom.aspect();
+    if (Math.abs(a - aspect) / aspect > 0.04) {
+      layouts(a);
+      return views.settle({ animate }).then(() => true);
+    }
+    zoom.to(views.home(), animate && !reduced.matches ? 450 : 0);
+    return Promise.resolve(false);
+  };
+  const flow = createFlow({ graph, data, views, zoom, filter, refit });
   bindNodes(graph, views, flow);
 
   const actions = {
@@ -103,13 +131,13 @@ async function boot() {
     clearTimeout(resizeTimer);
     resizeTimer = setTimeout(() => {
       flow.inset();
-      zoom.to(views.home());
-    }, 120);
+      refit();
+    }, 180);
   });
 
   // #force and #rings were the view links before ?view=.
   const legacy = VIEWS.includes(hash) && !graph.byId.has(hash) ? hash : null;
-  const start = VIEWS.includes(params.get("view")) ? params.get("view") : legacy ?? "edge";
+  const start = VIEWS.includes(params.get("view")) ? params.get("view") : legacy ?? DEFAULT_VIEW;
   await views.setView(start, { animate: false });
   document.documentElement.classList.add("map-ready");
   flow.start(legacy ? null : hash);
@@ -129,7 +157,7 @@ async function boot() {
 const LAYERS = [null, "card", "panel", "page"];
 const rank = (layer) => LAYERS.indexOf(layer);
 
-function createFlow({ graph, data, views, zoom, filter }) {
+function createFlow({ graph, data, views, zoom, filter, refit }) {
   const ix = indexData(data);
   let cur = { layer: null, id: null };
   let unwinding = false;
@@ -144,10 +172,19 @@ function createFlow({ graph, data, views, zoom, filter }) {
   };
   const preview = createPreview({ graph, views, ix, isOpen: (id) => !!cur.layer && cur.id === id, edge: () => (cur.layer === "panel" ? panelW() : 0) });
   const card = createCard({ graph, ix, edge: () => 0, on });
-  const panel = createPanel({ ix, on });
+  const panel = createPanel({
+    ix,
+    graph,
+    on,
+    onResize: () => {
+      if (cur.layer !== "panel" || narrow.matches) return;
+      zoom.setRight(panel.width);
+      refit();
+    },
+  });
   const pageLayer = createPage({ ix, on });
 
-  const panelW = () => (narrow.matches ? 0 : PANEL_W);
+  const panelW = () => (narrow.matches ? 0 : panel.width);
   const centre = (n) => {
     const r = n.hit.getBoundingClientRect();
     return [(r.left + r.right) / 2, (r.top + r.bottom) / 2];
@@ -170,14 +207,17 @@ function createFlow({ graph, data, views, zoom, filter }) {
     if (dx || dy) zoom.pan([dx, dy], reduced.matches ? 0 : ms);
   }
 
-  // The view's home leaves room for the panel while it shows.
+  // The view's home leaves room for the panel while it shows; the map refits to the rest.
   function inset() {
-    zoom.setRight(cur.layer === "panel" || cur.layer === "page" ? panelW() : 0);
+    const r = cur.layer === "panel" || cur.layer === "page" ? panelW() : 0;
+    if (r === zoom.right) return false;
+    zoom.setRight(r);
+    return true;
   }
 
   function url(layer, id) {
     if (layer === "page") return pageHref(ix.works.get(id));
-    const view = views.state.view === "edge" ? "" : `?view=${views.state.view}`;
+    const view = views.state.view === DEFAULT_VIEW ? "" : `?view=${views.state.view}`;
     return `/${view}${layer === "panel" ? `#${encodeURIComponent(id)}` : ""}`;
   }
   function record(layer, id, mode) {
@@ -216,8 +256,8 @@ function createFlow({ graph, data, views, zoom, filter }) {
       const back = prev.id && graph.byId.get(prev.id);
       if (focus && back && !back.hidden && prev.layer) back.el.focus({ preventScroll: true });
     }
-    inset();
-    if (layer === "panel" && (rank(prev.layer) < rank("panel") || prev.id !== id)) reveal(n);
+    if (inset() && layer !== "page") refit().then(() => layer === "panel" && cur.id === id && reveal(n));
+    else if (layer === "panel" && (rank(prev.layer) < rank("panel") || prev.id !== id)) reveal(n);
     if (layer === "page") pageLayer.show(n.data, { origin: centre(n) });
   }
 

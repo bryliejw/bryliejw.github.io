@@ -85,7 +85,7 @@ try {
   await page.waitForTimeout(120);
   expect((await openLayers()).length === 0, "map click: filter drawer still open");
   await press("Escape");
-  for (const [k, view] of [["2", "force"], ["3", "rings"], ["1", "edge"]]) {
+  for (const [k, view] of [["2", "rings"], ["3", "edge"], ["1", "force"]]) {
     await press(k, 50);
     await page.waitForFunction(() => !window.__map.views.state.moving);
     const v = await page.evaluate(() => window.__map.views.state.view);

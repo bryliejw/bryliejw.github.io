@@ -57,6 +57,16 @@ export function setupZoom(graph, onZoom) {
       return run((s) => zoom.translateBy(s, dx / f, dy / f), ms);
     },
     setRight: (px) => (right = px),
+    get right() {
+      return right;
+    },
+    // Width over height of the area the map can use, clear of the controls and the panel.
+    aspect() {
+      const rect = graph.svg.getBoundingClientRect();
+      const w = Math.max(200, rect.width - 2 * INSET.x - right);
+      const h = Math.max(200, rect.height - INSET.top - INSET.bottom);
+      return w / h;
+    },
     current: () => d3.zoomTransform(graph.svg),
   };
 }

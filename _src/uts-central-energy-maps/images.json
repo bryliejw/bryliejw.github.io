@@ -1,14 +1,18 @@
 {
  "f01-04_Final__Final-Images__IMG_2144_bbc3.jpg": {
-  "alt": "Black-and-white line drawing of the site in 1802, a bold black curve marking Parramatta Road through bush and marsh"
+  "alt": "Black-and-white line drawing of the site in 1802, a bold black curve marking Parramatta Road through bush and marsh",
+  "use": "tile"
  },
  "f02-04_Final__Final-Images__IMG_2148_003e.jpg": {
-  "alt": "Line drawing of the same area in 1854, Parramatta Road's bold curve now lined with streets and buildings"
+  "alt": "Line drawing of the same area in 1854, Parramatta Road's bold curve now lined with streets and buildings",
+  "use": "gallery"
  },
  "f03-04_Final__Past-map__IMG_2149_ea8f.jpg": {
-  "alt": "Tracing in progress on an iPad, the bold road line drawn over a scanned 1854 map of Sydney"
+  "alt": "Tracing in progress on an iPad, the bold road line drawn over a scanned 1854 map of Sydney",
+  "use": "process"
  },
  "f04-02_Process__Assessment-1__HigginsAlex_Group3_TTD_Task1_Presentation_34e1__p002.jpg": {
-  "alt": "Green presentation slide titled Past Map, framing the 1802 drawing with the year set large in the corner"
+  "alt": "Green presentation slide titled Past Map, framing the 1802 drawing with the year set large in the corner",
+  "use": "gallery"
  }
 }

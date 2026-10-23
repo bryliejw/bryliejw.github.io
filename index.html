@@ -20,9 +20,9 @@
 
   <nav class="rail" aria-label="Map controls">
     <div class="rail-set" role="group" aria-label="View">
-      <button class="cbtn" type="button" data-view="edge" aria-label="Edge map" aria-pressed="true" data-tip="Edge map" data-key="1"><svg class="ic" aria-hidden="true"><use href="/assets/icons.svg#frame"/></svg></button>
-      <button class="cbtn" type="button" data-view="force" aria-label="Force" aria-pressed="false" data-tip="Force" data-key="2"><svg class="ic" aria-hidden="true"><use href="/assets/icons.svg#share-2"/></svg></button>
-      <button class="cbtn" type="button" data-view="rings" aria-label="Rings" aria-pressed="false" data-tip="Rings" data-key="3"><svg class="ic" aria-hidden="true"><use href="/assets/icons.svg#target"/></svg></button>
+      <button class="cbtn" type="button" data-view="force" aria-label="Force" aria-pressed="true" data-tip="Force" data-key="1"><svg class="ic" aria-hidden="true"><use href="/assets/icons.svg#share-2"/></svg></button>
+      <button class="cbtn" type="button" data-view="rings" aria-label="Rings" aria-pressed="false" data-tip="Rings" data-key="2"><svg class="ic" aria-hidden="true"><use href="/assets/icons.svg#target"/></svg></button>
+      <button class="cbtn" type="button" data-view="edge" aria-label="Edge map" aria-pressed="false" data-tip="Edge map" data-key="3"><svg class="ic" aria-hidden="true"><use href="/assets/icons.svg#frame"/></svg></button>
     </div>
     <div class="rail-set">
       <button class="cbtn" type="button" id="btn-search" aria-label="Search" aria-haspopup="dialog" aria-expanded="false" aria-controls="palette" data-tip="Search" data-key="/  ⌘K"><svg class="ic" aria-hidden="true"><use href="/assets/icons.svg#search"/></svg></button>
@@ -57,13 +57,14 @@
 
   <div class="pop" id="pop-layers" role="dialog" aria-label="Labels &amp; lines" hidden>
     <fieldset class="seg">
-      <legend class="mono-label">Keyword labels</legend>
+      <legend class="mono-label">Labels</legend>
       <label><input type="radio" name="labels" value="auto"><span>Auto</span></label>
       <label><input type="radio" name="labels" value="all"><span>All</span></label>
       <label><input type="radio" name="labels" value="off"><span>Off</span></label>
     </fieldset>
     <fieldset class="seg">
       <legend class="mono-label">Lines</legend>
+      <label><input type="radio" name="lines" value="auto"><span>Auto</span></label>
       <label><input type="radio" name="lines" value="all"><span>All</span></label>
       <label><input type="radio" name="lines" value="projects"><span>Projects</span></label>
       <label><input type="radio" name="lines" value="hover"><span>On hover</span></label>

@@ -24,10 +24,10 @@ function simulation(graph, items) {
       "link",
       d3
         .forceLink(links)
-        .distance((l) => (l.type === "me" ? 190 : l.type === "rel" ? 70 : 90))
+        .distance((l) => (l.type === "me" ? 170 : l.type === "rel" ? 64 : 82))
         .strength((l) => 0.9 / Math.min(degree.get(l.source), degree.get(l.target)))
     )
-    .force("charge", d3.forceManyBody().strength(-260).distanceMax(520))
+    .force("charge", d3.forceManyBody().strength(-220).distanceMax(480))
     .force("x", d3.forceX(0).strength(0.03))
     .force("y", d3.forceY(0).strength(0.075))
     .force("collide", d3.forceCollide(radius).strength(0.8))
@@ -71,7 +71,8 @@ export function separate(items, passes, pad = PAD) {
   return left;
 }
 
-export function layoutForce(graph) {
+// aspect: width over height of the map area; the settled layout is stretched to fill it.
+export function layoutForce(graph, { aspect = 1.6 } = {}) {
   const items = graph.nodes.map((n) => ({
     n,
     x: n.pos.edge[0] * 0.8,
@@ -82,6 +83,15 @@ export function layoutForce(graph) {
   for (const d of items) if (d.fixed) Object.assign(d, { x: 0, y: 0, fx: 0, fy: 0 });
   const sim = simulation(graph, items);
   for (let i = 0; i < TICKS; i++) sim.tick();
+  // Stretch to the map area's shape (area kept), then settle the footprints again.
+  const xs = items.map((d) => d.x);
+  const ys = items.map((d) => d.y);
+  const a0 = (Math.max(...xs) - Math.min(...xs)) / Math.max(1, Math.max(...ys) - Math.min(...ys));
+  const f = Math.sqrt(Math.max(0.5, Math.min(3, aspect)) / Math.max(0.3, a0));
+  for (const d of items) if (!d.fixed) {
+    d.x *= f;
+    d.y /= f;
+  }
   separate(items, PASSES);
   for (const d of items) {
     d.n.pos.force = [Math.round(d.x * 10) / 10, Math.round(d.y * 10) / 10];

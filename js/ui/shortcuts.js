@@ -1,3 +1,4 @@
+import { VIEWS } from "../map/render.js";
 // Keyboard shortcuts (CLAUDE.md, Shortcuts). Keys are ignored while typing in an input,
 // except Esc and Cmd+K. Esc closes the top layer: the palette or a popover, then the page,
 // panel or card, then focus. While the full page covers the map, only Esc works.
@@ -17,7 +18,7 @@ export function bindShortcuts({ views, zoom, palette, select, graph, flow }) {
     const t = e.target;
     if (t.closest?.("input:not([type='checkbox']):not([type='radio']), textarea, select, [contenteditable='true']") && k !== "Escape") return;
     if (e.metaKey || e.ctrlKey || e.altKey) return;
-    if (k === "1" || k === "2" || k === "3") views.setView(["edge", "force", "rings"][+k - 1]);
+    if (k === "1" || k === "2" || k === "3") views.setView(VIEWS[+k - 1]);
     else if (k === "/") palette.open();
     else if (k === "f" || k === "F") pop("btn-filter");
     else if (k === "l" || k === "L") pop("btn-layers");

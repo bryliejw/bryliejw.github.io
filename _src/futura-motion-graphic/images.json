@@ -1,14 +1,18 @@
 {
  "f01-04_Final__Futura-Animation__Futura-Motion-Graphics_96e7__t02.jpg": {
-  "alt": "Bold white geometric sans serif letters spelling GEOMETRIC centred on a black frame"
+  "alt": "Bold white geometric sans serif letters spelling GEOMETRIC centred on a black frame",
+  "use": "tile"
  },
  "f02-04_Final__Futura-Animation__Futura-Motion-Graphics_96e7__t04.jpg": {
-  "alt": "Black lowercase futura on white with the final a tipped on its side and a dot beside it"
+  "alt": "Black lowercase futura on white with the final a tipped on its side and a dot beside it",
+  "use": "hero"
  },
  "f03-04_Final__Futura-Animation__Futura-Storyboards_80d4__p002.jpg": {
-  "alt": "Storyboard page of six black and white frames showing NO, the letter i and j, with timings and motion notes"
+  "alt": "Storyboard page of six black and white frames showing NO, the letter i and j, with timings and motion notes",
+  "use": "process"
  },
  "f04-cx-photos__IMG_2857_2c40.jpg": {
-  "alt": "Photo of storyboard thumbnails annotated in blue pen, showing letterforms, circles and the word futura"
+  "alt": "Photo of storyboard thumbnails annotated in blue pen, showing letterforms, circles and the word futura",
+  "use": "process"
  }
 }

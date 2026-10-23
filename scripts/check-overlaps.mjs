@@ -1,6 +1,6 @@
 // Playwright at 1440 x 900. Loads the map, switches views in all six directions with the
 // keyboard shortcuts, and checks each view at its home zoom with default settings
-// (labels Auto, lines Projects): label or tile overlaps (0 in Edge map, at most 3 in Force
+// (labels Auto, lines Auto): label or tile overlaps (0 in Edge map, at most 3 in Force
 // and Rings) and console errors. Exits 1 on any failure.
 // Options: --shots <dir> saves a screenshot of each view.
 import { mkdirSync } from "node:fs";
@@ -9,9 +9,9 @@ import { chromium } from "playwright";
 import { serve } from "./serve.mjs";
 
 const LIMIT = { edge: 0, force: 3, rings: 3 };
-const KEY = { edge: "1", force: "2", rings: "3" };
+const KEY = { force: "1", rings: "2", edge: "3" };
 // Six directions, each view visited from both others.
-const ROUTE = ["force", "rings", "edge", "rings", "force", "edge"];
+const ROUTE = ["rings", "edge", "rings", "force", "edge", "force"];
 
 const shotsAt = process.argv.indexOf("--shots");
 const shots = shotsAt > 0 ? resolve(process.argv[shotsAt + 1]) : null;
@@ -32,9 +32,9 @@ try {
   await settle();
 
   const seen = new Set();
-  await checkView("edge");
-  seen.add("edge");
-  let from = "edge";
+  await checkView("force");
+  seen.add("force");
+  let from = "force";
   for (const to of ROUTE) {
     await switchTo(from, to);
     if (!seen.has(to)) {

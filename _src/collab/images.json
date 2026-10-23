@@ -1,26 +1,34 @@
 {
  "f01-04_Final__Renders__FrontV1_7d7c.jpg": {
-  "alt": "3D render of a stage with stacked multicoloured blocks either side of a white screen and floating COLLAB letters."
+  "alt": "3D render of a stage with stacked multicoloured blocks either side of a white screen and floating COLLAB letters.",
+  "use": "tile"
  },
  "f02-04_Final__FINAL-Identity__Collab-Falling-1-2304x1271_736f.jpg": {
-  "alt": "COLLAB wordmark in chunky 3D letters in lilac, orange, blue, red, green and pink on white."
+  "alt": "COLLAB wordmark in chunky 3D letters in lilac, orange, blue, red, green and pink on white.",
+  "use": "hero"
  },
  "f03-04_Final__Folio__Collab_Primary_Branding---FINAL-3-2304x1271_7e8a.jpg": {
-  "alt": "Primary COLLAB lockup with the Figma logo and the line Better Together. Make time for fun with Figma AI."
+  "alt": "Primary COLLAB lockup with the Figma logo and the line Better Together. Make time for fun with Figma AI.",
+  "use": "gallery"
  },
  "f04-04_Final__FINAL-Identity__pattern-c_c4de.jpg": {
-  "alt": "Pattern of scattered 3D COLLAB letterforms and flower shapes in bright colours across a white background."
+  "alt": "Pattern of scattered 3D COLLAB letterforms and flower shapes in bright colours across a white background.",
+  "use": "gallery"
  },
  "f05-04_Final__Stage__Collab-Falling---Copy---Copy---Copy-3-1440x875_0c03.jpg": {
-  "alt": "Stage render set in a sandstone hall, with block towers, a purple stage wall and a white screen."
+  "alt": "Stage render set in a sandstone hall, with block towers, a purple stage wall and a white screen.",
+  "use": "gallery"
  },
  "f06-04_Final__Activation__Figma_COLLAB_Activation-3-1440x875_0b81.jpg": {
-  "alt": "Activation render of a tall white board studded with blue pegs under COLLAB letters, on a pink background."
+  "alt": "Activation render of a tall white board studded with blue pegs under COLLAB letters, on a pink background.",
+  "use": "gallery"
  },
  "f07-04_Final__Jenga__Jenga_Front_4760.jpg": {
-  "alt": "Render of a tall Jenga-style tower of coloured blocks topped with the letters PLAY on a pink background."
+  "alt": "Render of a tall Jenga-style tower of coloured blocks topped with the letters PLAY on a pink background.",
+  "use": "gallery"
  },
  "f08-02_Process__Renders__Colours-4_fe67.jpg": {
-  "alt": "Material study render of the COLLAB wordmark in glossy multicoloured plastic blocks on a pale grey floor."
+  "alt": "Material study render of the COLLAB wordmark in glossy multicoloured plastic blocks on a pale grey floor.",
+  "use": "process"
  }
 }

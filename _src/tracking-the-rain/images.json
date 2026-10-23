@@ -1,14 +1,18 @@
 {
  "f01-04_Final__w-o-grids__1_7edc.jpg": {
-  "alt": "Instagram story with the word tracking in bright green letters over a warped grey radar grid on black"
+  "alt": "Instagram story with the word tracking in bright green letters over a warped grey radar grid on black",
+  "use": "tile"
  },
  "f02-cx-canva__Kinetic_type_Instagram_story_sequence_DAFg0moPdQs_p01_cb66.jpg": {
-  "alt": "Nine Instagram story frames in black, white and green, each setting a line of the poem in expressive type"
+  "alt": "Nine Instagram story frames in black, white and green, each setting a line of the poem in expressive type",
+  "use": "hero"
  },
  "f03-04_Final__w-o-grids__5_d606.jpg": {
-  "alt": "White Instagram story with the word vanishing broken into staggered black letters above the words before they hit"
+  "alt": "White Instagram story with the word vanishing broken into staggered black letters above the words before they hit",
+  "use": "gallery"
  },
  "f04-04_Final__Gradmap__Artboard-9_fd8e.jpg": {
-  "alt": "Dark green story with inflated green 3D letters spelling down falling over repeated lines of let it come down"
+  "alt": "Dark green story with inflated green 3D letters spelling down falling over repeated lines of let it come down",
+  "use": "gallery"
  }
 }

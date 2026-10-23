@@ -18,6 +18,7 @@ export const ICONS = [
   "panel-right-open", "maximize-2", "x", "arrow-left", "arrow-up-right", "arrow-right",
   "file-text", "image", "workflow", "waypoints",
   "rotate-ccw",
+  "grip-horizontal", "pin-off", "chevron-down", "chevrons-left", "chevrons-right", "minimize-2", "images",
 ];
 
 const version = JSON.parse(readFileSync(join(pkg, "package.json"), "utf8")).version;

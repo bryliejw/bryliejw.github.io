@@ -19,9 +19,8 @@ const shotsAt = process.argv.indexOf("--shots");
 const shots = shotsAt > 0 ? resolve(process.argv[shotsAt + 1]) : null;
 if (shots) mkdirSync(shots, { recursive: true });
 
-const VIEWS = ["edge", "force", "rings"];
-const KEY = { edge: "1", force: "2", rings: "3" };
-const PANEL_W = 420;
+const VIEWS = ["force", "rings", "edge"];
+const KEY = { force: "1", rings: "2", edge: "3" };
 
 const server = await serve();
 const browser = await chromium.launch();
@@ -68,12 +67,13 @@ const nodeBox = (page, id) =>
   page.evaluate(
     ([id, pw]) => {
       const r = window.__map.graph.byId.get(id).hit.getBoundingClientRect();
-      const right = window.innerWidth - (document.querySelector(".panel").hidden ? 0 : pw);
+      const p = document.querySelector(".panel");
+      const right = window.innerWidth - (p.hidden ? 0 : p.getBoundingClientRect().width);
       const cx = r.left + r.width / 2;
       const cy = r.top + r.height / 2;
       return { l: r.left, r: r.right, t: r.top, b: r.bottom, visible: cx > 0 && cx < right && cy > 0 && cy < window.innerHeight };
     },
-    [id, PANEL_W],
+    [id, 0],
   );
 
 async function besideNode(page, id, tag) {
@@ -96,7 +96,7 @@ try {
     const page = await newPage();
     const other = VIEWS[(VIEWS.indexOf(view) + 1) % 3];
     step(`${view}: preview, card, label, panel, page, Back`);
-    await load(page, view === "edge" ? "/" : `/?view=${view}`);
+    await load(page, view === "force" ? "/" : `/?view=${view}`);
     let s = await state(page);
     expect(s.view === view, `${view}: ?view= started in ${s.view}`);
 
@@ -152,8 +152,7 @@ try {
     expect(s.layer === "panel" && s.id === "symbiosis" && s.url.endsWith("#symbiosis") && s.depth === 2, `${view}: node click with panel: ${JSON.stringify(s)}`);
     expect((await nodeBox(page, "symbiosis")).visible, `${view}: symbiosis hidden behind the panel`);
     const tabs = await page.evaluate(() => [...document.querySelectorAll(".panel [role='tab']")].map((t) => `${t.textContent}${t.disabled ? "-" : ""}`).join(","));
-    const imgs = await page.evaluate(() => window.__map.graph.byId.get("symbiosis").data.images.length);
-    expect(tabs === `Overview,Images${imgs ? "" : "-"},Process,Connections`, `${view}: tabs ${tabs} with ${imgs} images`);
+    expect(tabs === "Overview,Process,Connections", `${view}: tabs ${tabs}`);
     await page.click(".panel [data-tab='process']");
     const steps = await page.evaluate(() => document.querySelectorAll(".panel .steps li").length);
     expect(steps === 18, `${view}: Process tab shows ${steps} steps`);
@@ -166,7 +165,7 @@ try {
     await page.keyboard.press(KEY[other]);
     await settle(page, 300);
     s = await state(page);
-    expect(s.view === other && s.url.includes(other === "edge" ? "/#symbiosis" : `?view=${other}#symbiosis`), `${view}: view switch with panel: ${JSON.stringify(s)}`);
+    expect(s.view === other && s.url.includes(other === "force" ? "/#symbiosis" : `?view=${other}#symbiosis`), `${view}: view switch with panel: ${JSON.stringify(s)}`);
     expect((await nodeBox(page, "symbiosis")).visible, `${view}: symbiosis hidden after switching to ${other}`);
     await shot(page, `${view}-4-panel-${other}`);
 
@@ -252,10 +251,10 @@ try {
     const cases = [
       ["/?view=rings#symbiosis", { view: "rings", layer: "panel", id: "symbiosis" }],
       ["/?view=force#visual-culture", { view: "force", layer: "panel", id: "visual-culture" }],
-      ["/#me", { view: "edge", layer: "panel", id: "me" }],
-      ["/#ibm-qt-hotels", { view: "edge", layer: "panel", id: "ibm-qt-hotels" }],
-      ["/?view=force", { view: "force", layer: null, id: null }],
-      ["/?view=nope#nope", { view: "edge", layer: null, id: null }],
+      ["/#me", { view: "force", layer: "panel", id: "me" }],
+      ["/#ibm-qt-hotels", { view: "force", layer: "panel", id: "ibm-qt-hotels" }],
+      ["/?view=edge", { view: "edge", layer: null, id: null }],
+      ["/?view=nope#nope", { view: "force", layer: null, id: null }],
       ["/#rings", { view: "rings", layer: null, id: null }],
     ];
     for (const [path, want] of cases) {

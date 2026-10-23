@@ -1,14 +1,18 @@
 {
  "f01-04_Final__V1__05_39b7.jpg": {
-  "alt": "Grey 3D render of a clear glass dome distorting dark swirls, surrounded by smaller water drops on a white surface"
+  "alt": "Grey 3D render of a clear glass dome distorting dark swirls, surrounded by smaller water drops on a white surface",
+  "use": "tile"
  },
  "f02-04_Final__FINAL-IMGS__FINAL-FINAL-1_0b25.jpg": {
-  "alt": "Pale 3D frame where the words my life is very sit over clear liquid letters spelling slow, with floating drops"
+  "alt": "Pale 3D frame where the words my life is very sit over clear liquid letters spelling slow, with floating drops",
+  "use": "hero"
  },
  "f03-04_Final__NFAT-Motion-Sprint-3__gc_md_24794808_Wilson_Brylie_Sprint3_cdeb__t02.jpg": {
-  "alt": "Close 3D view along a glossy water surface with dozens of small drops rising from a dark ripple"
+  "alt": "Close 3D view along a glossy water surface with dozens of small drops rising from a dark ripple",
+  "use": "gallery"
  },
  "f04-cx-canva__SLOW_liquid_3D_type_DAGD3pHEsqk_520d.jpg": {
-  "alt": "Cyan 3D test render of the word SLOW formed from liquid, sitting in a pool of water"
+  "alt": "Cyan 3D test render of the word SLOW formed from liquid, sitting in a pool of water",
+  "use": "process"
  }
 }

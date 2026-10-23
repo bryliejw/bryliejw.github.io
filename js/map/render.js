@@ -17,7 +17,8 @@ export const GROUPS = [
   { type: "value", name: "Values I design by", icon: "heart" },
 ];
 
-export const VIEWS = ["edge", "force", "rings"];
+export const VIEWS = ["force", "rings", "edge"];
+export const DEFAULT_VIEW = "force";
 
 // Text wrap widths for "year · subtitle".
 const META_W = { L: 190, M: 168 };
@@ -80,6 +81,9 @@ export function render(svg, graph) {
   const deco = el("g", { class: "m-deco", "aria-hidden": "true" }, zoomG);
   const linesG = el("g", { class: "m-lines", "aria-hidden": "true" }, zoomG);
   const nodesG = el("g", { class: "m-nodes" }, zoomG);
+  // A copy of the hovered or focused node drawn above the rest, so the DOM (and tab) order
+  // never changes. See paint() in views.js.
+  const topG = el("g", { class: "m-top", "aria-hidden": "true" }, zoomG);
 
   graph.rings = [215, 335, 450, 565].map((r) => el("circle", { r, class: "m-ring" }, deco));
 
@@ -97,7 +101,7 @@ export function render(svg, graph) {
 
   for (const n of graph.nodes) {
     const label = ariaLabel(n);
-    n.el = el("g", { class: `node r-${n.role}`, tabindex: 0, role: "button", "aria-label": label, "data-id": n.id }, nodesG);
+    n.el = el("g", { id: `nd-${n.id}`, class: `node r-${n.role}`, tabindex: 0, role: "button", "aria-label": label, "data-id": n.id }, nodesG);
     n.hit = el("rect", { class: "hit" }, n.el);
     n.ring = el("rect", { class: "ring" }, n.el);
     n.body = el("g", { class: "body" }, n.el);
@@ -106,7 +110,7 @@ export function render(svg, graph) {
     else drawKeyword(n);
   }
 
-  Object.assign(graph, { svg, zoomG, deco, linesG, nodesG });
+  Object.assign(graph, { svg, zoomG, deco, linesG, nodesG, topG });
 }
 
 function ariaLabel(n) {
@@ -132,7 +136,7 @@ function drawMe(n) {
 }
 
 // Tile sizes by level: L hero project, M extra, S smaller work.
-export const TILE = { L: 112, M: 64, S: 30 };
+export const TILE = { L: 124, M: 72, S: 42 };
 
 // An image tile centred on the node. The 600px thumb fills it (cover crop on the map only);
 // white-ground images keep the 1px keyline.
@@ -156,17 +160,20 @@ function drawWork(n) {
   if (w.size === "L") {
     el("rect", { class: "chip", x: -h, y: -h, width: 28, height: 18 }, b);
     text(b, w.n, { class: "chip-n", x: -h + 14, y: -h + 12.6, "text-anchor": "middle" });
-    n.title = text(b, w.title, { class: "w-title-l halo", x: -h, y: h + 19 });
-    n.meta = text(b, metaLine(w), { class: "w-meta halo", x: -h, y: h + 34 });
+    n.wl = el("g", { class: "wl wl-l" }, b);
+    n.title = text(n.wl, w.title, { class: "w-title-l halo", x: -h, y: h + 19 });
+    n.meta = text(n.wl, metaLine(w), { class: "w-meta halo", x: -h, y: h + 34 });
   } else if (w.size === "M") {
     el("rect", { class: "chip chip-m", x: -h, y: -h, width: 24, height: 15 }, b);
     text(b, w.n, { class: "chip-n chip-n-m", x: -h + 12, y: -h + 10.8, "text-anchor": "middle" });
-    n.title = text(b, w.title, { class: "w-title-m halo", x: h + 9, y: -4 });
-    n.meta = text(b, metaLine(w), { class: "w-meta halo", x: h + 9, y: 11 });
+    n.wl = el("g", { class: "wl" }, b);
+    n.title = text(n.wl, w.title, { class: "w-title-m halo", x: h + 9, y: -4 });
+    n.meta = text(n.wl, metaLine(w), { class: "w-meta halo", x: h + 9, y: 11 });
   } else {
     // Kind mark in the corner: filled for work, outlined for experiment, dotted for client.
     el("rect", { class: `sq sq-${w.kind}`, x: h - 7, y: h - 7, width: 7, height: 7 }, b);
-    n.title = text(b, w.title, { class: "w-title-s halo", x: h + 7, y: 3.8 });
+    n.wl = el("g", { class: "wl" }, b);
+    n.title = text(n.wl, w.title, { class: "w-title-s halo", x: h + 7, y: 3.8 });
   }
 }
 
@@ -206,6 +213,9 @@ export function orientKeyword(n, spec) {
   n.label.setAttribute("x", spec.x);
   n.label.setAttribute("y", spec.y + (spec.baseline ? (mono ? 3.3 : 3.8) : 0));
   n.labG.setAttribute("transform", spec.rot ? `rotate(${spec.rot})` : "");
+  // Counter-scaling origin for the label (see .kw-label in site.css).
+  n.label.dataset.o = spec.anchor === "end" ? "e" : spec.anchor === "middle" ? (spec.y < 0 ? "t" : "b") : "s";
+  n.labBox = spec.rot ? null : box(n.label.getBBox());
   n.orient = spec;
 }
 
@@ -218,6 +228,7 @@ export function orientWork(n, side = 1) {
     t.setAttribute("x", side * s);
     for (const sp of t.querySelectorAll("tspan")) sp.setAttribute("x", side * s);
   }
+  n.wl.classList.toggle("wl-left", side < 0);
   n.side = side;
 }
 
@@ -248,15 +259,22 @@ export function fit(graph) {
   for (const n of graph.works) {
     if (n.meta && n.meta.textContent) wrap(n.meta, META_W[n.size], 13);
     n.side = 1;
+    // Label boxes (title with meta, title alone) per side, for label culling in views.js.
+    const lbl = () => ({ full: box(n.wl.getBBox()), title: box(n.title.getBBox()) });
     if (n.size === "L") {
       const f = box(n.body.getBBox());
       n.fpSide = { 1: f, [-1]: f };
+      const l = lbl();
+      n.lbSide = { 1: l, [-1]: l };
     } else {
       const right = box(n.body.getBBox());
+      const rl = lbl();
       orientWork(n, -1);
       const left = box(n.body.getBBox());
+      const ll = lbl();
       orientWork(n, 1);
       n.fpSide = { 1: right, [-1]: left };
+      n.lbSide = { 1: rl, [-1]: ll };
     }
   }
 
@@ -270,10 +288,15 @@ export function measureKeyword(n, spec) {
   return box(n.body.getBBox());
 }
 
-// Hit area and focus ring from the node's current bounding box.
-export function sizeHit(n) {
-  const b = n.body.getBBox();
+// Hit area and focus ring from the node's current bounding box. tileOnly: works whose
+// labels are hidden take hits on their image tile alone.
+export function sizeHit(n, tileOnly = false) {
+  const b = tileOnly && n.role === "work" ? tileBox(n) : n.body.getBBox();
   const set = (r, pad) => Object.entries({ x: b.x - pad, y: b.y - pad, width: b.width + 2 * pad, height: b.height + 2 * pad }).forEach(([k, v]) => r.setAttribute(k, v));
   set(n.hit, 2);
   set(n.ring, 4);
 }
+const tileBox = (n) => {
+  const h = TILE[n.size] / 2;
+  return { x: -h, y: -h, width: 2 * h, height: 2 * h };
+};

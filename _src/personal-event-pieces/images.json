@@ -1,8 +1,10 @@
 {
  "f01-02_Process__mums-60th__Back-in-1964-Poster-V2_d89e__p001.jpg": {
-  "alt": "Black poster titled Back in 1964 under silver glitter, with boxed lists of slang, toys, songs, movies, prices and baby names"
+  "alt": "Black poster titled Back in 1964 under silver glitter, with boxed lists of slang, toys, songs, movies, prices and baby names",
+  "use": "tile"
  },
  "f02-cx-canva__Back_in_1964_Poster_V1_DAGaeG6picA_p01_97a4.jpg": {
-  "alt": "Earlier version of the Back in 1964 poster with plain columns of 1964 facts under a glitter header"
+  "alt": "Earlier version of the Back in 1964 poster with plain columns of 1964 facts under a glitter header",
+  "use": "process"
  }
 }

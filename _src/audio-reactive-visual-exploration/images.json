@@ -1,5 +1,6 @@
 {
  "f01-05_Portfolio__Deftones-Noise_network_capture_d546.jpg": {
-  "alt": "TouchDesigner network where an audio file feeds audio analysis into noise, edge and blur operators, making black and white texture."
+  "alt": "TouchDesigner network where an audio file feeds audio analysis into noise, edge and blur operators, making black and white texture.",
+  "use": "tile"
  }
 }

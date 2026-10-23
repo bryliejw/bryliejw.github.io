@@ -1,8 +1,10 @@
 {
  "f01-04_Final__Final-Portrait_2d05.jpg": {
-  "alt": "Figure in black clothes and headphones standing against an orange wall, untangling a cable in front of a warm light"
+  "alt": "Figure in black clothes and headphones standing against an orange wall, untangling a cable in front of a warm light",
+  "use": "tile"
  },
  "f02-04_Final__IMG_2236-Enhanced-NR_ce57.jpg": {
-  "alt": "Over-ear headphones on a stand beside a small black retro radio, lit warm against a pale peach backdrop"
+  "alt": "Over-ear headphones on a stand beside a small black retro radio, lit warm against a pale peach backdrop",
+  "use": "gallery"
  }
 }

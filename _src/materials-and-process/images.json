@@ -1,14 +1,18 @@
 {
  "f01-04_Final__Final__IMG_2289_5818.jpg": {
-  "alt": "Black and white collage of a dancing couple torn into fragments and stitched back together with white twine"
+  "alt": "Black and white collage of a dancing couple torn into fragments and stitched back together with white twine",
+  "use": "tile"
  },
  "f02-04_Final__Final__IMG_2319_2f62.jpg": {
-  "alt": "Black and white collage of Madonna with torn paper fragments and twine threaded across her face and hands"
+  "alt": "Black and white collage of Madonna with torn paper fragments and twine threaded across her face and hands",
+  "use": "hero"
  },
  "f03-cx-photos__IMG_2290_1599.jpg": {
-  "alt": "Black and white collage of Audrey Hepburn over sheet music, with twine looped through her ear and torn paper strips"
+  "alt": "Black and white collage of Audrey Hepburn over sheet music, with twine looped through her ear and torn paper strips",
+  "use": "gallery"
  },
  "f04-04_Final__Final__IMG_2294_27e2.jpg": {
-  "alt": "Black and white collage of a smiling woman playing guitar, with twine threaded around her head and arms"
+  "alt": "Black and white collage of a smiling woman playing guitar, with twine threaded around her head and arms",
+  "use": "gallery"
  }
 }

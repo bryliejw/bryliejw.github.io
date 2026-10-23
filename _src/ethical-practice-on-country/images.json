@@ -1,8 +1,10 @@
 {
  "f01-04_Final__EOIT-1-doc_b192__p030.jpg": {
-  "alt": "Black page titled Ethical Practice on Country with the question in a white bar, 4 goal boxes and 5 concept cards"
+  "alt": "Black page titled Ethical Practice on Country with the question in a white bar, 4 goal boxes and 5 concept cards",
+  "use": "tile"
  },
  "f02-cx-adobe__Poster_aic__thumb_8dea.jpg": {
-  "alt": "Illustrator artboard with a green gradient poster reading Gadigal Country beside layout grids and a list of 5 concepts"
+  "alt": "Illustrator artboard with a green gradient poster reading Gadigal Country beside layout grids and a list of 5 concepts",
+  "use": "gallery"
  }
 }

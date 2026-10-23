@@ -1,14 +1,18 @@
 {
  "f01-04_Final__RDH__Cymatics-Presentation_adef__t02.jpg": {
-  "alt": "Presentation slide titled Baoding Balls over a large grey CYMATICS headline, with enamel meditation balls and annotated notes on a grid"
+  "alt": "Presentation slide titled Baoding Balls over a large grey CYMATICS headline, with enamel meditation balls and annotated notes on a grid",
+  "use": "tile"
  },
  "f02-04_Final__RDH__Cymatics-Presentation_adef__t01.jpg": {
-  "alt": "Dark slide titled Ondulation, Thomas McIntosh's, with arrows linking notes on perception, water, sound and light"
+  "alt": "Dark slide titled Ondulation, Thomas McIntosh's, with arrows linking notes on perception, water, sound and light",
+  "use": "hero"
  },
  "f03-04_Final__RDH__Cymatics-Presentation_adef__t03.jpg": {
-  "alt": "Slide titled Om / Aum with a bronze Siva Nataraja figure, a tonoscope image of the sound Om and notes on vibration"
+  "alt": "Slide titled Om / Aum with a bronze Siva Nataraja figure, a tonoscope image of the sound Om and notes on vibration",
+  "use": "gallery"
  },
  "f04-04_Final__RDH__Cymatics-Concept-map-full_2394.jpg": {
-  "alt": "Concept map linking Cymatics to Ondulation, Baoding Balls and Siva Nataraja through energy, frequency and vibration"
+  "alt": "Concept map linking Cymatics to Ondulation, Baoding Balls and Siva Nataraja through energy, frequency and vibration",
+  "use": "process"
  }
 }

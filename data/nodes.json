@@ -133,7 +133,8 @@
           "w": 1600,
           "h": 1600,
           "alt": "CYPHER Issue 5 front cover in a clear plastic sleeve on black, a blue and orange street scene under the tag masthead",
-          "white": false
+          "white": false,
+          "use": "tile"
         },
         {
           "src": "assets/img/cypher/f02-04-final-finals-back-plastic-96c3.webp",
@@ -141,7 +142,8 @@
           "w": 1600,
           "h": 1600,
           "alt": "Issue 5 back cover in a plastic sleeve, an orange-graded wall of graffiti with the CYPHER tag repeated above the blurb",
-          "white": false
+          "white": false,
+          "use": "hero"
         },
         {
           "src": "assets/img/cypher/f03-04-final-finals-covers-1f3e.webp",
@@ -149,7 +151,8 @@
           "w": 1600,
           "h": 1097,
           "alt": "Flat front and back covers side by side, one street scene in blue and orange running across both",
-          "white": false
+          "white": false,
+          "use": "hero"
         },
         {
           "src": "assets/img/cypher/f04-04-final-all-1-2-aae2.webp",
@@ -157,7 +160,8 @@
           "w": 1600,
           "h": 1076,
           "alt": "Spread with a collage of graffiti photos in orange and navy, justified body text and TEXT drawn as a blue tag",
-          "white": false
+          "white": false,
+          "use": "gallery"
         },
         {
           "src": "assets/img/cypher/f05-04-final-all-17-in2-18-3d93.webp",
@@ -165,7 +169,8 @@
           "w": 1600,
           "h": 1075,
           "alt": "Spread of a graffiti-covered wall sprayed with orange, with an insert page carrying CITY IDENTITY in blue tag lettering",
-          "white": false
+          "white": false,
+          "use": "gallery"
         },
         {
           "src": "assets/img/cypher/f06-04-final-all-9-10-mid-feb2.webp",
@@ -173,7 +178,8 @@
           "w": 1600,
           "h": 1076,
           "alt": "Spread headed CREATING THE SENSE OF PLACE in orange tag lettering beside a blue and orange collage of street signs",
-          "white": false
+          "white": false,
+          "use": "gallery"
         },
         {
           "src": "assets/img/cypher/f07-04-final-all-19-20-f727.webp",
@@ -181,7 +187,8 @@
           "w": 1600,
           "h": 1076,
           "alt": "Spread headed INTERPRETATION in blue tag lettering with cut-out blue cloud graffiti and a laneway photograph",
-          "white": false
+          "white": false,
+          "use": "gallery"
         },
         {
           "src": "assets/img/cypher/f08-04-final-spread-mocks-all-together-fc5c-p004.webp",
@@ -189,7 +196,8 @@
           "w": 1600,
           "h": 1075,
           "alt": "Dark blue spread with EGD painted large in pale blue and a handwritten pull quote about environmental graphic design",
-          "white": false
+          "white": false,
+          "use": "gallery"
         },
         {
           "src": "assets/img/cypher/f09-04-final-style-guide-mocks-sg-mock-0001-0-1-d877-p001.webp",
@@ -197,7 +205,8 @@
           "w": 1600,
           "h": 1147,
           "alt": "Style guide opening spread with a contents list, introduction and foreword beside the black CYPHER masthead",
-          "white": true
+          "white": true,
+          "use": "gallery"
         },
         {
           "src": "assets/img/cypher/f10-04-final-style-guide-mocks-sg-mock-0003-4-5-6696-p001.webp",
@@ -205,7 +214,8 @@
           "w": 1600,
           "h": 1147,
           "alt": "Style guide spread 1.1 Masthead showing the CYPHER tag, its hand-drawn alphabet and the adapted Issue 5 version",
-          "white": true
+          "white": true,
+          "use": "gallery"
         },
         {
           "src": "assets/img/cypher/f11-04-final-style-guide-mocks-sg-mock-0009-16-17-94bc-p001.webp",
@@ -213,7 +223,8 @@
           "w": 1600,
           "h": 1147,
           "alt": "Style guide spread 3.2 showing the grid and inset page layout, with the Interpretation spread as the example",
-          "white": true
+          "white": true,
+          "use": "gallery"
         },
         {
           "src": "assets/img/cypher/f12-cx-photos-urban-object-photodocumentation-2-8c2c.webp",
@@ -221,7 +232,8 @@
           "w": 1600,
           "h": 1600,
           "alt": "Styleboard collage of Sydney street photos with an orange and grey graffiti piece, bollards and an LED parking sign",
-          "white": false
+          "white": false,
+          "use": "process"
         },
         {
           "src": "assets/img/cypher/f13-02-process-font-refined-font-1-3bf1.webp",
@@ -229,7 +241,8 @@
           "w": 1093,
           "h": 1600,
           "alt": "Hand-drawn CYPHER alphabet in black marker set in a grid, with the full masthead written underneath",
-          "white": true
+          "white": true,
+          "use": "process"
         },
         {
           "src": "assets/img/cypher/f14-cx-photos-group-pdf-export-page-8-985d.webp",
@@ -237,7 +250,8 @@
           "w": 1600,
           "h": 918,
           "alt": "Rows of CYPHER masthead sketches moving from bubble letters to sharp chisel-marker tags, some in orange and blue",
-          "white": true
+          "white": true,
+          "use": "process"
         }
       ],
       "copy": {
@@ -347,7 +361,8 @@
           "w": 1500,
           "h": 1125,
           "alt": "We Need To Talk cards scattered in teal, red, yellow and purple, each question set inside a cream speech bubble",
-          "white": false
+          "white": false,
+          "use": "tile"
         },
         {
           "src": "assets/img/16-days-of-real-talk/f02-cx-figma-social-media-frame-12-square-c5f8.webp",
@@ -355,7 +370,8 @@
           "w": 879,
           "h": 874,
           "alt": "Photo of printed conversation cards in a loose pile in purple, teal and red, questions set in speech bubbles",
-          "white": false
+          "white": false,
+          "use": "hero"
         },
         {
           "src": "assets/img/16-days-of-real-talk/f03-cx-figma-social-media-frame-11-square-e4bb.webp",
@@ -363,7 +379,8 @@
           "w": 879,
           "h": 874,
           "alt": "Photo of a printed card stack topped by a red card asking about a major relationship red flag",
-          "white": false
+          "white": false,
+          "use": "hero"
         },
         {
           "src": "assets/img/16-days-of-real-talk/f04-cx-figma-final-presentation-slide22-fd7c.webp",
@@ -371,7 +388,8 @@
           "w": 1456,
           "h": 819,
           "alt": "All 30 card fronts laid out in a grid on black, colour-coded teal, red, yellow and purple",
-          "white": false
+          "white": false,
+          "use": "gallery"
         },
         {
           "src": "assets/img/16-days-of-real-talk/f05-04-final-jpg-wntt-16-6454.webp",
@@ -379,7 +397,8 @@
           "w": 1200,
           "h": 900,
           "alt": "Red card with a spiky cream speech bubble asking whether going through a partner's phone is comforting or controlling",
-          "white": false
+          "white": false,
+          "use": "gallery"
         },
         {
           "src": "assets/img/16-days-of-real-talk/f06-cx-figma-social-media-frame-21-square-85ed.webp",
@@ -387,7 +406,8 @@
           "w": 879,
           "h": 874,
           "alt": "A hand holding a yellow card with three speech bubbles about the challenges facing young men and women",
-          "white": false
+          "white": false,
+          "use": "gallery"
         },
         {
           "src": "assets/img/16-days-of-real-talk/f07-cx-figma-final-presentation-slide27-posters-3f32.webp",
@@ -395,7 +415,8 @@
           "w": 1456,
           "h": 819,
           "alt": "Eight campus posters in yellow, teal, red and purple, each with speech-bubble lettering and a QR code",
-          "white": false
+          "white": false,
+          "use": "gallery"
         },
         {
           "src": "assets/img/16-days-of-real-talk/f08-04-final-posters-still-sharehouse-poster-1-cymk-d6ba.webp",
@@ -403,7 +424,8 @@
           "w": 1131,
           "h": 1600,
           "alt": "Yellow poster reading In this space, there is no room for disrespect, set inside a large cream speech bubble",
-          "white": false
+          "white": false,
+          "use": "gallery"
         },
         {
           "src": "assets/img/16-days-of-real-talk/f09-02-process-wntt-website-wntt-website-0c3a-t01.webp",
@@ -411,7 +433,8 @@
           "w": 1600,
           "h": 1214,
           "alt": "Landing page hero reading 30 cards. Zero lectures. with coloured card fronts overlapping the headline",
-          "white": false
+          "white": false,
+          "use": "gallery"
         },
         {
           "src": "assets/img/16-days-of-real-talk/f10-04-final-have-you-ever-felt-unsafe-on-campus-have-you-ever-felt-unsafe-on-campus-what-ma-6020.webp",
@@ -419,7 +442,8 @@
           "w": 900,
           "h": 1600,
           "alt": "Purple reel cover showing a single card that asks Have you ever felt unsafe on campus",
-          "white": false
+          "white": false,
+          "use": "gallery"
         },
         {
           "src": "assets/img/16-days-of-real-talk/f11-04-final-livia-wagec-assessable-copy-livia-wagec-handoverdoc-0b30-p005.webp",
@@ -427,7 +451,8 @@
           "w": 1600,
           "h": 1152,
           "alt": "Handover document page setting out the typography, Apercu Condensed and Work Sans with their weights",
-          "white": true
+          "white": true,
+          "use": "process"
         },
         {
           "src": "assets/img/16-days-of-real-talk/f12-04-final-livia-wagec-assessable-copy-livia-wagec-handoverdoc-0b30-p006.webp",
@@ -435,7 +460,8 @@
           "w": 1600,
           "h": 1152,
           "alt": "Handover document page of black speech-bubble shapes in rounded, spiky, cloud and thought-bubble styles",
-          "white": true
+          "white": true,
+          "use": "process"
         },
         {
           "src": "assets/img/16-days-of-real-talk/f13-02-process-d2-desktop-1141-bcf6.webp",
@@ -443,7 +469,8 @@
           "w": 1472,
           "h": 990,
           "alt": "Landing page draft with 30 cards and zero lectures either side of a red card above a purple Get the cards button",
-          "white": false
+          "white": false,
+          "use": "process"
         },
         {
           "src": "assets/img/16-days-of-real-talk/f14-02-process-jpeg-conv-img-1358-1fbd.webp",
@@ -451,7 +478,8 @@
           "w": 1200,
           "h": 1600,
           "alt": "A hand fanning out a pastel deck of the original conversation cards over a grey rug during deck testing",
-          "white": false
+          "white": false,
+          "use": "process"
         }
       ],
       "copy": {
@@ -574,7 +602,8 @@
           "w": 1080,
           "h": 1080,
           "alt": "Render of the Garden Chair on a lit circular platform at the centre of curving green mesh walls",
-          "white": false
+          "white": false,
+          "use": "tile"
         },
         {
           "src": "assets/img/symbiosis/f02-04-final-final-files-frameframe-1-0086.webp",
@@ -582,7 +611,8 @@
           "w": 1080,
           "h": 1080,
           "alt": "Render of an arched entrance glowing white, with SYMBIOSIS written across green light and botanical line drawings",
-          "white": false
+          "white": false,
+          "use": "hero"
         },
         {
           "src": "assets/img/symbiosis/f03-04-final-final-files-frameframe-5-f17f.webp",
@@ -590,7 +620,8 @@
           "w": 1080,
           "h": 1080,
           "alt": "Render of a green room titled REPETITION with a glowing geometric ornament and a Dresser quote on the wall",
-          "white": false
+          "white": false,
+          "use": "hero"
         },
         {
           "src": "assets/img/symbiosis/f04-02-process-squares-artboard-4-89b2.webp",
@@ -598,7 +629,8 @@
           "w": 1080,
           "h": 1080,
           "alt": "Render of the chair under a cone of green light, a radiating ornament above it and a quote curving across the floor",
-          "white": false
+          "white": false,
+          "use": "hero"
         },
         {
           "src": "assets/img/symbiosis/f05-04-final-visexp-symbiosis-narra-ebae.webp",
@@ -606,7 +638,8 @@
           "w": 505,
           "h": 1600,
           "alt": "Tall visual narrative strip moving from the Symbiosis entrance through the Repetition room to the lit chair",
-          "white": false
+          "white": false,
+          "use": "gallery"
         },
         {
           "src": "assets/img/symbiosis/f06-02-process-anim-comp-3-v2-bf41-t01.webp",
@@ -614,7 +647,8 @@
           "w": 1600,
           "h": 900,
           "alt": "Animation frame of the chair in grey with white geometric line work radiating out from its back panel",
-          "white": false
+          "white": false,
+          "use": "gallery"
         },
         {
           "src": "assets/img/symbiosis/f07-cx-canva-symbiosis-mesh-model-photo-perspective-dagwolprvfi-d1b4.webp",
@@ -622,7 +656,8 @@
           "w": 1400,
           "h": 1080,
           "alt": "Photo of the small-scale mesh model, curved gutter guard walls rising from a black base with white paths",
-          "white": true
+          "white": true,
+          "use": "process"
         },
         {
           "src": "assets/img/symbiosis/f08-02-process-results-proto-1-path-1-ca4f.webp",
@@ -630,7 +665,8 @@
           "w": 1581,
           "h": 1600,
           "alt": "Top view of Prototype 1 with one user's route through the mesh pathways traced in bright green",
-          "white": false
+          "white": false,
+          "use": "process"
         },
         {
           "src": "assets/img/symbiosis/f09-02-process-photos-img-4204-1-eb9e.webp",
@@ -638,7 +674,8 @@
           "w": 1200,
           "h": 1600,
           "alt": "Close photo inside the mesh model, a small figurine on a wire standing between curved mesh walls",
-          "white": false
+          "white": false,
+          "use": "process"
         },
         {
           "src": "assets/img/symbiosis/f10-02-process-doc-scr-20241112-titg-c5d9.webp",
@@ -646,7 +683,8 @@
           "w": 1600,
           "h": 1313,
           "alt": "Process diagram comparing paper, fabric and thin metal mesh, with pros, cons and the coverings tried",
-          "white": false
+          "white": false,
+          "use": "process"
         },
         {
           "src": "assets/img/symbiosis/f11-cx-figma-bryliewilson-instagrampost-ve-at3-tile4-proto-2-interaction-6515.webp",
@@ -654,7 +692,8 @@
           "w": 896,
           "h": 855,
           "alt": "Instagram tile titled Interaction & Conceptual Engagement over a green render of the chair and floor symbol",
-          "white": false
+          "white": false,
+          "use": "process"
         },
         {
           "src": "assets/img/symbiosis/f12-02-process-landscape-edited-v1-1-37e5-t01.webp",
@@ -662,7 +701,8 @@
           "w": 1006,
           "h": 566,
           "alt": "Silhouette of a visitor facing a pale geometric ornament projected onto a green-lit wall in Prototype 3",
-          "white": false
+          "white": false,
+          "use": "process"
         },
         {
           "src": "assets/img/symbiosis/f13-02-process-geometry-geometry-copy-6eab-p001.webp",
@@ -670,7 +710,8 @@
           "w": 1600,
           "h": 900,
           "alt": "Three projected symbol stages on black, from a simple green rosette to a flower and a purple star",
-          "white": false
+          "white": false,
+          "use": "process"
         }
       ],
       "copy": {
@@ -836,7 +877,8 @@
           "w": 1600,
           "h": 900,
           "alt": "Black title slide reading QT x IBM with both logos above the line QT Hotel: Problem Defining Workshop.",
-          "white": false
+          "white": false,
+          "use": "tile"
         },
         {
           "src": "assets/img/ibm-x-qt-hotels/f02-cx-photos-scr-20250515-maqw-070d.webp",
@@ -844,7 +886,8 @@
           "w": 1600,
           "h": 1250,
           "alt": "As-is scenario Miro board for QT check-in, with pink and green sticky notes across phases, data, rules and experience lanes.",
-          "white": false
+          "white": false,
+          "use": "hero"
         },
         {
           "src": "assets/img/ibm-x-qt-hotels/f03-04-final-indiv-activities-3-prioritisation-grid-843f.webp",
@@ -852,7 +895,8 @@
           "w": 1600,
           "h": 709,
           "alt": "Prioritisation grid board plotting four green sticky notes on impact and feasibility axes, flanked by activity steps and definitions.",
-          "white": false
+          "white": false,
+          "use": "gallery"
         },
         {
           "src": "assets/img/ibm-x-qt-hotels/f04-04-final-indiv-activities-4-wrap-up-next-steps-8d8b.webp",
@@ -860,7 +904,8 @@
           "w": 1600,
           "h": 702,
           "alt": "Wrap-up board grouping sticky notes into three key themes beside a workshop summary and three reframed problem statements.",
-          "white": false
+          "white": false,
+          "use": "gallery"
         },
         {
           "src": "assets/img/ibm-x-qt-hotels/f05-04-final-final-elisa-wilson-brylie-ibm-final-presentation-e68d-p002.webp",
@@ -868,7 +913,8 @@
           "w": 1600,
           "h": 900,
           "alt": "Playback slide in white monospace type on black asking how QT can leverage AI to enhance business traveller check-in.",
-          "white": false
+          "white": false,
+          "use": "gallery"
         },
         {
           "src": "assets/img/ibm-x-qt-hotels/f06-04-final-final-elisa-wilson-brylie-ibm-final-presentation-e68d-p013.webp",
@@ -876,7 +922,8 @@
           "w": 1600,
           "h": 900,
           "alt": "Playback prioritisation slide placing three opportunity areas on an impact and feasibility chart in black and white.",
-          "white": true
+          "white": true,
+          "use": "gallery"
         },
         {
           "src": "assets/img/ibm-x-qt-hotels/f07-04-final-final-elisa-wilson-brylie-ibm-final-presentation-e68d-p019.webp",
@@ -884,7 +931,8 @@
           "w": 1600,
           "h": 900,
           "alt": "Next steps slide with a black funnel diagram listing research, finance, stakeholder and validation steps for QT.",
-          "white": false
+          "white": false,
+          "use": "gallery"
         },
         {
           "src": "assets/img/ibm-x-qt-hotels/f08-cx-figma-qt-research-presentation-slide06-opportunities-booking-1f1d.webp",
@@ -892,7 +940,8 @@
           "w": 1456,
           "h": 819,
           "alt": "Research slide with three ultramarine icons over black cards naming booking pain points: policy restrictions, budget estimation and suitable hotels.",
-          "white": true
+          "white": true,
+          "use": "process"
         }
       ],
       "copy": {
@@ -990,7 +1039,8 @@
           "w": 1600,
           "h": 1199,
           "alt": "3D render of a stage with stacked multicoloured blocks either side of a white screen and floating COLLAB letters.",
-          "white": false
+          "white": false,
+          "use": "tile"
         },
         {
           "src": "assets/img/collab/f02-04-final-final-identity-collab-falling-1-2304x1271-736f.webp",
@@ -998,7 +1048,8 @@
           "w": 1600,
           "h": 854,
           "alt": "COLLAB wordmark in chunky 3D letters in lilac, orange, blue, red, green and pink on white.",
-          "white": true
+          "white": true,
+          "use": "hero"
         },
         {
           "src": "assets/img/collab/f03-04-final-folio-collab-primary-branding-final-3-2304x1271-7e8a.webp",
@@ -1006,7 +1057,8 @@
           "w": 1600,
           "h": 854,
           "alt": "Primary COLLAB lockup with the Figma logo and the line Better Together. Make time for fun with Figma AI.",
-          "white": true
+          "white": true,
+          "use": "gallery"
         },
         {
           "src": "assets/img/collab/f04-04-final-final-identity-pattern-c-c4de.webp",
@@ -1014,7 +1066,8 @@
           "w": 1600,
           "h": 709,
           "alt": "Pattern of scattered 3D COLLAB letterforms and flower shapes in bright colours across a white background.",
-          "white": false
+          "white": false,
+          "use": "gallery"
         },
         {
           "src": "assets/img/collab/f05-04-final-stage-collab-falling-copy-copy-copy-3-1440x875-0c03.webp",
@@ -1022,7 +1075,8 @@
           "w": 1600,
           "h": 926,
           "alt": "Stage render set in a sandstone hall, with block towers, a purple stage wall and a white screen.",
-          "white": false
+          "white": false,
+          "use": "gallery"
         },
         {
           "src": "assets/img/collab/f06-04-final-activation-figma-collab-activation-3-1440x875-0b81.webp",
@@ -1030,7 +1084,8 @@
           "w": 1600,
           "h": 926,
           "alt": "Activation render of a tall white board studded with blue pegs under COLLAB letters, on a pink background.",
-          "white": false
+          "white": false,
+          "use": "gallery"
         },
         {
           "src": "assets/img/collab/f07-04-final-jenga-jenga-front-4760.webp",
@@ -1038,7 +1093,8 @@
           "w": 1440,
           "h": 834,
           "alt": "Render of a tall Jenga-style tower of coloured blocks topped with the letters PLAY on a pink background.",
-          "white": false
+          "white": false,
+          "use": "gallery"
         },
         {
           "src": "assets/img/collab/f08-02-process-renders-colours-4-fe67.webp",
@@ -1046,7 +1102,8 @@
           "w": 1600,
           "h": 900,
           "alt": "Material study render of the COLLAB wordmark in glossy multicoloured plastic blocks on a pale grey floor.",
-          "white": false
+          "white": false,
+          "use": "process"
         }
       ],
       "copy": {
@@ -1139,7 +1196,8 @@
           "w": 1600,
           "h": 900,
           "alt": "Collage frame with cut-out letters A, D, H, D above a timeline marked 1980, 1990 and 2000 on grid paper.",
-          "white": true
+          "white": true,
+          "use": "tile"
         },
         {
           "src": "assets/img/adhd-in-the-media/f02-04-final-task-3-slides-final-v1-46f5-p014.webp",
@@ -1147,7 +1205,8 @@
           "w": 1600,
           "h": 900,
           "alt": "Blue data frame with ring charts showing 52%, 27% and 21% beside a quote about misleading TikTok videos.",
-          "white": false
+          "white": false,
+          "use": "hero"
         },
         {
           "src": "assets/img/adhd-in-the-media/f03-04-final-task-3-slides-final-v1-46f5-p007.webp",
@@ -1155,7 +1214,8 @@
           "w": 1600,
           "h": 900,
           "alt": "Comorbidities frame with a ransom-note style title surrounded by blue and white circles of cited ADHD statistics.",
-          "white": false
+          "white": false,
+          "use": "gallery"
         },
         {
           "src": "assets/img/adhd-in-the-media/f04-04-final-task-3-slides-final-v1-46f5-p010.webp",
@@ -1163,7 +1223,8 @@
           "w": 1600,
           "h": 900,
           "alt": "Blue frame stating that 52% of the most popular TikTok videos about ADHD were found to be misleading.",
-          "white": false
+          "white": false,
+          "use": "gallery"
         },
         {
           "src": "assets/img/adhd-in-the-media/f05-04-final-task-3-wilson-brylie-storyboard-jacquie-78c8-p001.webp",
@@ -1171,7 +1232,8 @@
           "w": 1600,
           "h": 1132,
           "alt": "Storyboard page titled ADHD & The Media, Feminist Lens, with three collage frames and notes on transitions and timing.",
-          "white": true
+          "white": true,
+          "use": "gallery"
         },
         {
           "src": "assets/img/adhd-in-the-media/f06-04-final-task-3-wilson-brylie-storyboard-jacquie-78c8-p002.webp",
@@ -1179,7 +1241,8 @@
           "w": 1600,
           "h": 1132,
           "alt": "Storyboard page with six frames covering the DSM timeline and comorbidity statistics, each with motion notes below.",
-          "white": true
+          "white": true,
+          "use": "gallery"
         },
         {
           "src": "assets/img/adhd-in-the-media/f07-cx-canva-adhd-explainer-video-frames-daggwskaamo-p01-6177.webp",
@@ -1187,7 +1250,8 @@
           "w": 1600,
           "h": 900,
           "alt": "Hand-drawn black ink frame of stacked newspapers with headlines about TikTok, the pandemic and the rise in ADHD.",
-          "white": false
+          "white": false,
+          "use": "process"
         },
         {
           "src": "assets/img/adhd-in-the-media/f08-02-process-ps-exp-artboard-1-60e7-p007.webp",
@@ -1195,7 +1259,8 @@
           "w": 1600,
           "h": 901,
           "alt": "Style frame in hand-lettered white type on blue showing historical gender bias in ADHD research as a 75/25 pie chart.",
-          "white": false
+          "white": false,
+          "use": "process"
         }
       ],
       "copy": {
@@ -1285,7 +1350,8 @@
           "w": 1600,
           "h": 1000,
           "alt": "Terms of Practice landing page: a white card with a serif title and question on a bright ultramarine background.",
-          "white": false
+          "white": false,
+          "use": "tile"
         },
         {
           "src": "assets/img/terms-of-practice/f02-cx-web-web-sites-terms-of-practice-manifesto-manifesto-desktop-143e.webp",
@@ -1293,7 +1359,8 @@
           "w": 1600,
           "h": 1000,
           "alt": "Manifesto page with a large serif Terms of Practice title, a question about language and a yellow footer bar.",
-          "white": false
+          "white": false,
+          "use": "hero"
         },
         {
           "src": "assets/img/terms-of-practice/f03-cx-web-web-sites-terms-of-practice-manifesto-manifesto-scroll1-08fd.webp",
@@ -1301,7 +1368,8 @@
           "w": 1600,
           "h": 1000,
           "alt": "Yellow section of the manifesto site with industry phrases highlighted in blue on cards above body text.",
-          "white": false
+          "white": false,
+          "use": "gallery"
         },
         {
           "src": "assets/img/terms-of-practice/f04-cx-web-web-sites-terms-of-practice-manifesto-manifesto-scroll3-0914.webp",
@@ -1309,7 +1377,8 @@
           "w": 1600,
           "h": 1000,
           "alt": "Black closing section reading The vocabulary was inherited. The next one does not have to be, above yellow bars.",
-          "white": false
+          "white": false,
+          "use": "gallery"
         },
         {
           "src": "assets/img/terms-of-practice/f05-cx-web-web-sites-terms-of-practice-manifesto-manifesto-mobile-bf08.webp",
@@ -1317,7 +1386,8 @@
           "w": 739,
           "h": 1600,
           "alt": "Mobile view of the Terms of Practice manifesto page with stacked title, question and summary in black on white.",
-          "white": false
+          "white": false,
+          "use": "gallery"
         },
         {
           "src": "assets/img/terms-of-practice/f06-04-final-submitted-wilson-brylie-87012-task1-portfolio-7bc9-p007.webp",
@@ -1325,7 +1395,8 @@
           "w": 1600,
           "h": 1132,
           "alt": "Ultramarine process folio page titled Lightbulb moment, with a yellow circle diagram and the line Make the words carry their weight again.",
-          "white": false
+          "white": false,
+          "use": "process"
         },
         {
           "src": "assets/img/terms-of-practice/f07-cx-photos-img-7660-c429.webp",
@@ -1333,7 +1404,8 @@
           "w": 1600,
           "h": 591,
           "alt": "Four printed manifestos laid side by side, covered in handwritten notes, underlining and coloured highlighter.",
-          "white": false
+          "white": false,
+          "use": "process"
         },
         {
           "src": "assets/img/terms-of-practice/f08-cx-photos-img-5586-4d06.webp",
@@ -1341,7 +1413,8 @@
           "w": 1600,
           "h": 1132,
           "alt": "Hand on a laptop trackpad during peer testing, the screen showing the Terms of Practice landing page.",
-          "white": false
+          "white": false,
+          "use": "process"
         }
       ],
       "copy": {
@@ -1424,7 +1497,8 @@
           "w": 1429,
           "h": 679,
           "alt": "TouchDesigner network where an audio file feeds audio analysis into noise, edge and blur operators, making black and white texture.",
-          "white": false
+          "white": false,
+          "use": "tile"
         }
       ],
       "copy": {
@@ -1508,7 +1582,8 @@
           "w": 1169,
           "h": 1559,
           "alt": "Red-graded poster of two Ford Falcons in a car park, reflected in a puddle, under huge red FALCON lettering",
-          "white": false
+          "white": false,
+          "use": "tile"
         },
         {
           "src": "assets/img/falcon-composite/f02-02-process-car-img-3570-c95f.webp",
@@ -1516,7 +1591,8 @@
           "w": 1170,
           "h": 1560,
           "alt": "Original photo of two Ford Falcon sedans in a pink-lit car park, reflected in a puddle on the concrete",
-          "white": false
+          "white": false,
+          "use": "process"
         },
         {
           "src": "assets/img/falcon-composite/f03-02-process-car-img-3564-adf3.webp",
@@ -1524,7 +1600,8 @@
           "w": 1248,
           "h": 1560,
           "alt": "Red Ford Falcon seen from the rear under pink fluorescent lights in an empty multi-level car park",
-          "white": false
+          "white": false,
+          "use": "process"
         },
         {
           "src": "assets/img/falcon-composite/f04-cx-canva-falcon-composite-banner-dag-nm3jc68-d38a.webp",
@@ -1532,7 +1609,8 @@
           "w": 1056,
           "h": 288,
           "alt": "Wide banner crop of the Falcon composite showing the two cars, the Ford logo and red light streaks",
-          "white": false
+          "white": false,
+          "use": "gallery"
         }
       ],
       "copy": {
@@ -1608,7 +1686,8 @@
           "w": 1600,
           "h": 1000,
           "alt": "Dark web app with thousands of coloured dots arranged in a ring of glowing clusters joined by faint lines",
-          "white": false
+          "white": false,
+          "use": "tile"
         },
         {
           "src": "assets/img/stellar-map/f02-cx-web-web-stellar-network-genres-desktop-f3ad.webp",
@@ -1616,7 +1695,8 @@
           "w": 1600,
           "h": 1000,
           "alt": "Genre view of the map with dots gathered into a loop of circular clusters on a near-black background",
-          "white": false
+          "white": false,
+          "use": "gallery"
         },
         {
           "src": "assets/img/stellar-map/f03-cx-web-web-stellar-network-colour-energy-desktop-adee.webp",
@@ -1624,7 +1704,8 @@
           "w": 1600,
           "h": 1000,
           "alt": "Scatter plot view filling the screen with thousands of orange and purple dots coloured by energy",
-          "white": false
+          "white": false,
+          "use": "gallery"
         }
       ],
       "copy": {
@@ -1713,7 +1794,8 @@
           "w": 1200,
           "h": 1600,
           "alt": "Collage of sticker-covered street poles and signs layered over deep blue panels with a vertical orange stripe",
-          "white": false
+          "white": false,
+          "use": "tile"
         },
         {
           "src": "assets/img/urban-narratives/f02-02-process-journal-entries-w2-p1-photo-diagram-ef98.webp",
@@ -1721,7 +1803,8 @@
           "w": 1600,
           "h": 1131,
           "alt": "Journal spread titled Recipe for a Photo Diagram, photos of stickers, murals, moss and weeds linked by handwritten blue notes",
-          "white": true
+          "white": true,
+          "use": "gallery"
         },
         {
           "src": "assets/img/urban-narratives/f03-03-source-goodsline-wall-fec2.webp",
@@ -1729,7 +1812,8 @@
           "w": 1600,
           "h": 674,
           "alt": "Panoramic composite of a graffiti wall with large black and white pieces, blue shapes and an orange circle",
-          "white": false
+          "white": false,
+          "use": "gallery"
         },
         {
           "src": "assets/img/urban-narratives/f04-02-process-goodsline-edited-43-fb65.webp",
@@ -1737,7 +1821,8 @@
           "w": 1600,
           "h": 1556,
           "alt": "Red utility box in a black frame covered in stickers and tags, with Rugby 2023 written along the bottom",
-          "white": false
+          "white": false,
+          "use": "gallery"
         }
       ],
       "copy": {
@@ -1815,7 +1900,8 @@
           "w": 1600,
           "h": 900,
           "alt": "Systems map in red, blue and green panels titled Creative Commons, moving from isolated platforms to core features to impact",
-          "white": true
+          "white": true,
+          "use": "tile"
         },
         {
           "src": "assets/img/contextual-learning-annotation/f02-04-final-indiv-95004-tut06-at3-parta-brylie-wilson-5b04-p001.webp",
@@ -1823,7 +1909,8 @@
           "w": 1600,
           "h": 900,
           "alt": "Earlier submitted systems map with problem, solution and outcome columns linking platform issues to career, organisation and community",
-          "white": false
+          "white": false,
+          "use": "process"
         }
       ],
       "copy": {
@@ -1902,7 +1989,8 @@
           "w": 1600,
           "h": 1600,
           "alt": "SparkChange logo mark, a yellow lightning bolt cutting through a white letter C on a black square",
-          "white": false
+          "white": false,
+          "use": "tile"
         },
         {
           "src": "assets/img/sparkchange/f02-02-process-workmark-asset-33x-dcc3.webp",
@@ -1910,7 +1998,8 @@
           "w": 1600,
           "h": 372,
           "alt": "Black SparkChange wordmark with a lightning bolt forming the S, set on a white background",
-          "white": true
+          "white": true,
+          "use": "gallery"
         },
         {
           "src": "assets/img/sparkchange/f03-cx-adobe-logos-aic-thumb-f507.webp",
@@ -1918,7 +2007,8 @@
           "w": 512,
           "h": 229,
           "alt": "Sheet of logo explorations showing bolt and C marks in black, white, yellow and navy with wordmark lockups",
-          "white": false
+          "white": false,
+          "use": "process"
         },
         {
           "src": "assets/img/sparkchange/f04-04-final-task-2-prototype-ux-4e4c-p001.webp",
@@ -1926,7 +2016,8 @@
           "w": 1167,
           "h": 1600,
           "alt": "Handwritten test plan table with columns for aspect, description, how to test, priority and outcome",
-          "white": true
+          "white": true,
+          "use": "process"
         }
       ],
       "copy": {
@@ -2006,7 +2097,8 @@
           "w": 1600,
           "h": 824,
           "alt": "Green stakeholder map with a central node, Stakeholders in the Energy Transition, branching to eight labelled groups",
-          "white": true
+          "white": true,
+          "use": "tile"
         },
         {
           "src": "assets/img/trust-in-transition/f02-04-final-04-flow-chart-final-flow-99a9.webp",
@@ -2014,7 +2106,8 @@
           "w": 1600,
           "h": 1406,
           "alt": "Green flow chart tracing animosity between the energy sector and aware individuals back through layers of causes",
-          "white": false
+          "white": false,
+          "use": "gallery"
         },
         {
           "src": "assets/img/trust-in-transition/f03-04-final-06-personas-final-persona-8c93.webp",
@@ -2022,7 +2115,8 @@
           "w": 1027,
           "h": 1600,
           "alt": "Two semicircular persona wheels labelled P1 and P2 in shades of green with annotated segments",
-          "white": true
+          "white": true,
+          "use": "gallery"
         },
         {
           "src": "assets/img/trust-in-transition/f04-04-final-task-1-87749-wilson-brylie-task1-researchfolio-79eb-p004.webp",
@@ -2030,7 +2124,8 @@
           "w": 1600,
           "h": 1132,
           "alt": "Folio spread for the literature review with a hand-annotated mind map and columns of method notes",
-          "white": true
+          "white": true,
+          "use": "process"
         }
       ],
       "copy": {
@@ -2109,7 +2204,8 @@
           "w": 1600,
           "h": 900,
           "alt": "Black cover slide reading WAGEC Re-brief & Strategy beside a large cream asterisk inside a number six",
-          "white": false
+          "white": false,
+          "use": "tile"
         },
         {
           "src": "assets/img/wagec-reverse-brief/f02-04-final-finals-wagec-strategy-presentation-2162-p047.webp",
@@ -2117,7 +2213,8 @@
           "w": 1600,
           "h": 900,
           "alt": "Proof-of-concept slide for Wanna Talk with three bright card sketches in yellow, pink and purple carrying gender questions",
-          "white": true
+          "white": true,
+          "use": "gallery"
         },
         {
           "src": "assets/img/wagec-reverse-brief/f03-04-final-finals-wagec-strategy-presentation-2162-p036.webp",
@@ -2125,7 +2222,8 @@
           "w": 1600,
           "h": 900,
           "alt": "Proof-of-concept slide for Anyone, Anytime, Anywhere with two speech-bubble cards on yellow and pink backgrounds",
-          "white": true
+          "white": true,
+          "use": "gallery"
         },
         {
           "src": "assets/img/wagec-reverse-brief/f04-04-final-finals-livia-wagec-strategy-e189-p042.webp",
@@ -2133,7 +2231,8 @@
           "w": 1600,
           "h": 900,
           "alt": "Strategy slide of yellow and pink sticky notes clustered around a central How Might We question",
-          "white": true
+          "white": true,
+          "use": "process"
         }
       ],
       "copy": {
@@ -2219,7 +2318,8 @@
           "w": 1336,
           "h": 1600,
           "alt": "Single cartoon tree with a round green canopy and brown branching trunk on a dark grey Aero canvas",
-          "white": false
+          "white": false,
+          "use": "tile"
         },
         {
           "src": "assets/img/ar-vr-experiments/f02-02-process-aero-aero-recording-2-cac3-t01.webp",
@@ -2227,7 +2327,8 @@
           "w": 1600,
           "h": 1198,
           "alt": "Two virtual green trees and small sprouts placed in augmented reality on a real desk against a grey wall",
-          "white": false
+          "white": false,
+          "use": "gallery"
         },
         {
           "src": "assets/img/ar-vr-experiments/f03-02-process-a-frame-screen-recording-2024-09-23-at-2-19-25-am-a119-t01.webp",
@@ -2235,7 +2336,8 @@
           "w": 1600,
           "h": 900,
           "alt": "Dark green virtual space with the ornate cast-iron back of a garden chair in the foreground",
-          "white": false
+          "white": false,
+          "use": "gallery"
         }
       ],
       "copy": {
@@ -2310,7 +2412,8 @@
           "w": 1145,
           "h": 1600,
           "alt": "Black poster titled Back in 1964 under silver glitter, with boxed lists of slang, toys, songs, movies, prices and baby names",
-          "white": false
+          "white": false,
+          "use": "tile"
         },
         {
           "src": "assets/img/personal-event-pieces/f02-cx-canva-back-in-1964-poster-v1-dagaeg6pica-p01-97a4.webp",
@@ -2318,7 +2421,8 @@
           "w": 1132,
           "h": 1600,
           "alt": "Earlier version of the Back in 1964 poster with plain columns of 1964 facts under a glitter header",
-          "white": false
+          "white": false,
+          "use": "process"
         }
       ],
       "copy": {
@@ -2394,7 +2498,8 @@
           "w": 1600,
           "h": 894,
           "alt": "Condensed white type reading MYSTICAL CREATURES over purple and teal coral in an aquarium tank",
-          "white": false
+          "white": false,
+          "use": "tile"
         },
         {
           "src": "assets/img/ecosystem-engineers/f02-04-final-final-01-prv-rendered-dccbef23-d41d-4226-ad71-7d9f014cb83e-01-bce0-t03.webp",
@@ -2402,7 +2507,8 @@
           "w": 1600,
           "h": 900,
           "alt": "Blue condensed type and orange script reading I think they are fascinating over a water-filled glass with a blue stem",
-          "white": false
+          "white": false,
+          "use": "hero"
         },
         {
           "src": "assets/img/ecosystem-engineers/f03-02-process-photoshop-negative-impact-bw-e232.webp",
@@ -2410,7 +2516,8 @@
           "w": 1180,
           "h": 666,
           "alt": "Black and white frame with the words negative impact in tall white type over a bed of jellyfish",
-          "white": false
+          "white": false,
+          "use": "gallery"
         },
         {
           "src": "assets/img/ecosystem-engineers/f04-02-process-photoshop-invisible-invaders-9681.webp",
@@ -2418,7 +2525,8 @@
           "w": 1180,
           "h": 666,
           "alt": "Muted street scene of parked cars with the words invisible invaders in tall white letters behind them",
-          "white": false
+          "white": false,
+          "use": "gallery"
         }
       ],
       "copy": {
@@ -2505,7 +2613,8 @@
           "w": 1132,
           "h": 1600,
           "alt": "CYPHER cover with a weathered white bollard on dark paving and the white tag masthead wrapped around it",
-          "white": false
+          "white": false,
+          "use": "tile"
         },
         {
           "src": "assets/img/cypher-masthead-covers/f02-04-final-final-docs-wilsonbrylie-task2-le-process-9e07-p008.webp",
@@ -2513,7 +2622,8 @@
           "w": 1600,
           "h": 1132,
           "alt": "Process page of twelve cover experiments, tags drawn onto walls and buildings and one chevron cover in six colours",
-          "white": true
+          "white": true,
+          "use": "gallery"
         },
         {
           "src": "assets/img/cypher-masthead-covers/f03-04-final-final-docs-wilsonbrylie-task2-le-process-9e07-p009.webp",
@@ -2521,7 +2631,8 @@
           "w": 1600,
           "h": 1132,
           "alt": "Refined cover iterations with grids overlaid, including the bollard cover and a blue tiled wall carrying the masthead",
-          "white": true
+          "white": true,
+          "use": "gallery"
         },
         {
           "src": "assets/img/cypher-masthead-covers/f04-04-final-final-docs-wilsonbrylie-task2-le-process-9e07-p006.webp",
@@ -2529,7 +2640,8 @@
           "w": 1600,
           "h": 1132,
           "alt": "Letterform exploration page pairing photos of tags with redrawn versions and notes on four lettering styles",
-          "white": true
+          "white": true,
+          "use": "process"
         }
       ],
       "copy": {
@@ -2609,7 +2721,8 @@
           "w": 1600,
           "h": 1131,
           "alt": "Line tracing of Dresser's cast-iron Garden Chair from the front and side, with a detail of its back panel",
-          "white": true
+          "white": true,
+          "use": "tile"
         },
         {
           "src": "assets/img/dresser-research-folio/f02-04-final-at1-24794808-proces-folio-5751-p006.webp",
@@ -2617,7 +2730,8 @@
           "w": 1600,
           "h": 1080,
           "alt": "Handwritten concept map in green and black on the Garden Chair, Dresser's six principles and a how might we question",
-          "white": true
+          "white": true,
+          "use": "gallery"
         },
         {
           "src": "assets/img/dresser-research-folio/f03-02-process-iteration-concept-development-refinement-4621-p011.webp",
@@ -2625,7 +2739,8 @@
           "w": 1600,
           "h": 1600,
           "alt": "Sketch of Design Concept 02, curved translucent fabric paths around the chair with notes on light projections",
-          "white": true
+          "white": true,
+          "use": "gallery"
         },
         {
           "src": "assets/img/dresser-research-folio/f04-02-process-prototype-img-3904-adec.webp",
@@ -2633,7 +2748,8 @@
           "w": 1600,
           "h": 1200,
           "alt": "Small model of iridescent fabric draped into peaks over a table, with plastic plants pinned through it",
-          "white": false
+          "white": false,
+          "use": "process"
         }
       ],
       "copy": {
@@ -2710,7 +2826,8 @@
           "w": 1600,
           "h": 900,
           "alt": "Navy title card reading Formal Qualities in tall condensed capitals, with the 2 campaign names set small between",
-          "white": false
+          "white": false,
+          "use": "tile"
         },
         {
           "src": "assets/img/formal-qualities-semiotics/f02-04-final-0328-wilson-brylie-jacquie-10-30-part-2-beff-t02.webp",
@@ -2718,7 +2835,8 @@
           "w": 1600,
           "h": 900,
           "alt": "Semiotics title card with the black and blue dress campaign and the Stop the Violence punch ad, key details circled in navy",
-          "white": false
+          "white": false,
+          "use": "gallery"
         }
       ],
       "copy": {
@@ -2793,7 +2911,8 @@
           "w": 1600,
           "h": 1132,
           "alt": "Two blue monochrome comic pages: research papers falling from a bed, and an upside-down jellyfish labelled with oral arms and stinging cells",
-          "white": true
+          "white": true,
+          "use": "tile"
         },
         {
           "src": "assets/img/cas-a-graphic-narrative/f02-04-final-tc-gn-24794808-wilson-brylie-srint2-tc-gn-24794808-wilson-brylie-sprint2-proces-9200-p016.webp",
@@ -2801,7 +2920,8 @@
           "w": 1600,
           "h": 1132,
           "alt": "Two dark blue comic pages with handwritten lines about the Cassiopeia constellation, an exploding star and cosmic rain falling into the ocean",
-          "white": true
+          "white": true,
+          "use": "hero"
         },
         {
           "src": "assets/img/cas-a-graphic-narrative/f03-04-final-sprint-2-final-75ed-p001.webp",
@@ -2809,7 +2929,8 @@
           "w": 106,
           "h": 1600,
           "alt": "Full vertical scroll of the graphic narrative, moving from a bedroom desk scene through jellyfish anatomy to a starry sky and seabed",
-          "white": false
+          "white": false,
+          "use": "gallery"
         },
         {
           "src": "assets/img/cas-a-graphic-narrative/f04-02-process-exp-perspective-grid-7b76.webp",
@@ -2817,7 +2938,8 @@
           "w": 1600,
           "h": 1372,
           "alt": "Black and white perspective drawing of a figure working at a desk beside empty shelves in a timber-floored room",
-          "white": false
+          "white": false,
+          "use": "process"
         }
       ],
       "copy": {
@@ -2900,7 +3022,8 @@
           "w": 1600,
           "h": 1453,
           "alt": "Fully opened orange flower with pointed glowing petals radiating from a bright yellow centre on a white background",
-          "white": true
+          "white": true,
+          "use": "tile"
         },
         {
           "src": "assets/img/hand-tracking-bloom/f02-02-process-anim-frames-pt-anim0009-3ec7.webp",
@@ -2908,7 +3031,8 @@
           "w": 1600,
           "h": 1453,
           "alt": "Half-open orange line-drawn flower frame from the bloom animation, centred on a white background",
-          "white": true
+          "white": true,
+          "use": "gallery"
         },
         {
           "src": "assets/img/hand-tracking-bloom/f03-cx-canva-folio-miro-exp-42-x-29-7-cm-dagrsamx-zs-p06-9878.webp",
@@ -2916,7 +3040,8 @@
           "w": 1600,
           "h": 1132,
           "alt": "Folio page titled Integration & Interactions with notes on the model conflict, a webcam still and p5.js code screenshots",
-          "white": true
+          "white": true,
+          "use": "process"
         }
       ],
       "copy": {
@@ -2999,7 +3124,8 @@
           "w": 1600,
           "h": 897,
           "alt": "Grey 3D render of a clear glass dome distorting dark swirls, surrounded by smaller water drops on a white surface",
-          "white": false
+          "white": false,
+          "use": "tile"
         },
         {
           "src": "assets/img/sprint-3-motion/f02-04-final-final-imgs-final-final-1-0b25.webp",
@@ -3007,7 +3133,8 @@
           "w": 1600,
           "h": 900,
           "alt": "Pale 3D frame where the words my life is very sit over clear liquid letters spelling slow, with floating drops",
-          "white": false
+          "white": false,
+          "use": "hero"
         },
         {
           "src": "assets/img/sprint-3-motion/f03-04-final-nfat-motion-sprint-3-gc-md-24794808-wilson-brylie-sprint3-cdeb-t02.webp",
@@ -3015,7 +3142,8 @@
           "w": 1600,
           "h": 900,
           "alt": "Close 3D view along a glossy water surface with dozens of small drops rising from a dark ripple",
-          "white": false
+          "white": false,
+          "use": "gallery"
         },
         {
           "src": "assets/img/sprint-3-motion/f04-cx-canva-slow-liquid-3d-type-dagd3phesqk-520d.webp",
@@ -3023,7 +3151,8 @@
           "w": 1600,
           "h": 900,
           "alt": "Cyan 3D test render of the word SLOW formed from liquid, sitting in a pool of water",
-          "white": false
+          "white": false,
+          "use": "process"
         }
       ],
       "copy": {
@@ -3107,7 +3236,8 @@
           "w": 1600,
           "h": 900,
           "alt": "Digital painting of a mobile home with curved glass ends, timber cladding and glowing planter boxes, on a dark green slide",
-          "white": false
+          "white": false,
+          "use": "tile"
         },
         {
           "src": "assets/img/nomad-homes/f02-04-final-canva-exports-dfut-t2-nomad-homes-df-presentation-02fe-p007.webp",
@@ -3115,7 +3245,8 @@
           "w": 1600,
           "h": 900,
           "alt": "Annotated diagram of hydrogen solar paint absorbing water vapour and splitting it with sunlight, beside the mobile home painting",
-          "white": true
+          "white": true,
+          "use": "hero"
         }
       ],
       "copy": {
@@ -3196,7 +3327,8 @@
           "w": 1600,
           "h": 1063,
           "alt": "Orange hand-drawn sketches of a silicone blister pack being pushed, rolled up and marked with weekdays, beside a material moodboard",
-          "white": false
+          "white": false,
+          "use": "tile"
         },
         {
           "src": "assets/img/silent-blister-pack/f02-04-final-at1-wilson-brylie-task1-studio1-2904-p005.webp",
@@ -3204,7 +3336,8 @@
           "w": 1600,
           "h": 1063,
           "alt": "Illustrations of foil blister packs and a hand popping a pill with a loud SNAP, beside a written sensory narrative",
-          "white": false
+          "white": false,
+          "use": "gallery"
         },
         {
           "src": "assets/img/silent-blister-pack/f03-04-final-at1-wilson-brylie-task1-studio1-2904-p003.webp",
@@ -3212,7 +3345,8 @@
           "w": 1600,
           "h": 1063,
           "alt": "Persona map for Sophie, an illustrated marketing analyst at her desk, surrounded by notes on e-waste habits, barriers and goals",
-          "white": false
+          "white": false,
+          "use": "gallery"
         },
         {
           "src": "assets/img/silent-blister-pack/f04-04-final-canva-exports-dfut-t1-key-findings-diagrams-d81d-p001.webp",
@@ -3220,7 +3354,8 @@
           "w": 1600,
           "h": 1132,
           "alt": "Hand-drawn key findings map in blue and green pen, linking waste, time, money, e-waste disposal and recycling",
-          "white": false
+          "white": false,
+          "use": "process"
         }
       ],
       "copy": {
@@ -3296,7 +3431,8 @@
           "w": 1600,
           "h": 1000,
           "alt": "Black web page headed Nebula with a glowing pink and purple nebula above three magenta orbs",
-          "white": false
+          "white": false,
+          "use": "tile"
         },
         {
           "src": "assets/img/stellar-evolution/f02-cx-web-web-a2-lindadement-bryliewilson-24794808-stellar-evolution-index-desktop-34b3.webp",
@@ -3304,7 +3440,8 @@
           "w": 1600,
           "h": 1000,
           "alt": "Launch page with Stellar Evolution set in white spaced capitals over a starfield and a small Launch button",
-          "white": false
+          "white": false,
+          "use": "gallery"
         },
         {
           "src": "assets/img/stellar-evolution/f03-cx-web-web-a2-lindadement-bryliewilson-24794808-stellar-evolution-stellar-evolution-mobile-48a4.webp",
@@ -3312,7 +3449,8 @@
           "w": 739,
           "h": 1600,
           "alt": "Mobile layout of the Nebula section with the nebula image and orbs stacked down a narrow black screen",
-          "white": false
+          "white": false,
+          "use": "gallery"
         },
         {
           "src": "assets/img/stellar-evolution/f04-04-final-task-1-final-proposal-934a-p008.webp",
@@ -3320,7 +3458,8 @@
           "w": 1600,
           "h": 1132,
           "alt": "Blueprint page of a user flow diagram linking coloured star-stage circles from Molecular Cloud to remnants",
-          "white": true
+          "white": true,
+          "use": "process"
         }
       ],
       "copy": {
@@ -3396,7 +3535,8 @@
           "w": 1066,
           "h": 1600,
           "alt": "Figure in black clothes and headphones standing against an orange wall, untangling a cable in front of a warm light",
-          "white": false
+          "white": false,
+          "use": "tile"
         },
         {
           "src": "assets/img/allegorical-portrait/f02-04-final-img-2236-enhanced-nr-ce57.webp",
@@ -3404,7 +3544,8 @@
           "w": 1600,
           "h": 1558,
           "alt": "Over-ear headphones on a stand beside a small black retro radio, lit warm against a pale peach backdrop",
-          "white": false
+          "white": false,
+          "use": "gallery"
         }
       ],
       "copy": {
@@ -3474,7 +3615,8 @@
           "w": 1600,
           "h": 1132,
           "alt": "Condoman comic-style poster at centre, surrounded by colour-coded handwritten notes on its palette, body language, text and audience",
-          "white": true
+          "white": true,
+          "use": "tile"
         },
         {
           "src": "assets/img/annotated-poster-analysis/f02-04-final-task-1-mikaellindebergh-wilson-brylie-poit-task1-9d5a-p004.webp",
@@ -3482,7 +3624,8 @@
           "w": 1600,
           "h": 1132,
           "alt": "Matrix teaser poster of green digital rain at centre, with handwritten notes on holographic foil, lenticular printing and typeface",
-          "white": true
+          "white": true,
+          "use": "gallery"
         },
         {
           "src": "assets/img/annotated-poster-analysis/f03-04-final-task-1-mikaellindebergh-wilson-brylie-poit-task1-9d5a-p002.webp",
@@ -3490,7 +3633,8 @@
           "w": 1600,
           "h": 1132,
           "alt": "Graffiti-tagged breakdance film poster at centre, ringed by handwritten notes on the tags, materials, colour and hip-hop culture",
-          "white": true
+          "white": true,
+          "use": "gallery"
         }
       ],
       "copy": {
@@ -3563,7 +3707,8 @@
           "w": 1600,
           "h": 900,
           "alt": "Presentation slide titled Baoding Balls over a large grey CYMATICS headline, with enamel meditation balls and annotated notes on a grid",
-          "white": false
+          "white": false,
+          "use": "tile"
         },
         {
           "src": "assets/img/cymatics/f02-04-final-rdh-cymatics-presentation-adef-t01.webp",
@@ -3571,7 +3716,8 @@
           "w": 1600,
           "h": 900,
           "alt": "Dark slide titled Ondulation, Thomas McIntosh's, with arrows linking notes on perception, water, sound and light",
-          "white": false
+          "white": false,
+          "use": "hero"
         },
         {
           "src": "assets/img/cymatics/f03-04-final-rdh-cymatics-presentation-adef-t03.webp",
@@ -3579,7 +3725,8 @@
           "w": 1600,
           "h": 900,
           "alt": "Slide titled Om / Aum with a bronze Siva Nataraja figure, a tonoscope image of the sound Om and notes on vibration",
-          "white": false
+          "white": false,
+          "use": "gallery"
         },
         {
           "src": "assets/img/cymatics/f04-04-final-rdh-cymatics-concept-map-full-2394.webp",
@@ -3587,7 +3734,8 @@
           "w": 1600,
           "h": 912,
           "alt": "Concept map linking Cymatics to Ondulation, Baoding Balls and Siva Nataraja through energy, frequency and vibration",
-          "white": true
+          "white": true,
+          "use": "process"
         }
       ],
       "copy": {
@@ -3660,7 +3808,8 @@
           "w": 1600,
           "h": 1132,
           "alt": "Black page titled Ethical Practice on Country with the question in a white bar, 4 goal boxes and 5 concept cards",
-          "white": false
+          "white": false,
+          "use": "tile"
         },
         {
           "src": "assets/img/ethical-practice-on-country/f02-cx-adobe-poster-aic-thumb-8dea.webp",
@@ -3668,7 +3817,8 @@
           "w": 512,
           "h": 363,
           "alt": "Illustrator artboard with a green gradient poster reading Gadigal Country beside layout grids and a list of 5 concepts",
-          "white": false
+          "white": false,
+          "use": "gallery"
         }
       ],
       "copy": {
@@ -3742,7 +3892,8 @@
           "w": 1024,
           "h": 576,
           "alt": "Bold white geometric sans serif letters spelling GEOMETRIC centred on a black frame",
-          "white": false
+          "white": false,
+          "use": "tile"
         },
         {
           "src": "assets/img/futura-motion-graphic/f02-04-final-futura-animation-futura-motion-graphics-96e7-t04.webp",
@@ -3750,7 +3901,8 @@
           "w": 1024,
           "h": 576,
           "alt": "Black lowercase futura on white with the final a tipped on its side and a dot beside it",
-          "white": true
+          "white": true,
+          "use": "hero"
         },
         {
           "src": "assets/img/futura-motion-graphic/f03-04-final-futura-animation-futura-storyboards-80d4-p002.webp",
@@ -3758,7 +3910,8 @@
           "w": 1600,
           "h": 1132,
           "alt": "Storyboard page of six black and white frames showing NO, the letter i and j, with timings and motion notes",
-          "white": true
+          "white": true,
+          "use": "process"
         },
         {
           "src": "assets/img/futura-motion-graphic/f04-cx-photos-img-2857-2c40.webp",
@@ -3766,7 +3919,8 @@
           "w": 1600,
           "h": 1131,
           "alt": "Photo of storyboard thumbnails annotated in blue pen, showing letterforms, circles and the word futura",
-          "white": false
+          "white": false,
+          "use": "process"
         }
       ],
       "copy": {
@@ -3838,7 +3992,8 @@
           "w": 900,
           "h": 1600,
           "alt": "Instagram story with the word tracking in bright green letters over a warped grey radar grid on black",
-          "white": false
+          "white": false,
+          "use": "tile"
         },
         {
           "src": "assets/img/tracking-the-rain/f02-cx-canva-kinetic-type-instagram-story-sequence-dafg0mopdqs-p01-cb66.webp",
@@ -3846,7 +4001,8 @@
           "w": 998,
           "h": 869,
           "alt": "Nine Instagram story frames in black, white and green, each setting a line of the poem in expressive type",
-          "white": true
+          "white": true,
+          "use": "hero"
         },
         {
           "src": "assets/img/tracking-the-rain/f03-04-final-w-o-grids-5-d606.webp",
@@ -3854,7 +4010,8 @@
           "w": 900,
           "h": 1600,
           "alt": "White Instagram story with the word vanishing broken into staggered black letters above the words before they hit",
-          "white": true
+          "white": true,
+          "use": "gallery"
         },
         {
           "src": "assets/img/tracking-the-rain/f04-04-final-gradmap-artboard-9-fd8e.webp",
@@ -3862,7 +4019,8 @@
           "w": 900,
           "h": 1600,
           "alt": "Dark green story with inflated green 3D letters spelling down falling over repeated lines of let it come down",
-          "white": false
+          "white": false,
+          "use": "gallery"
         }
       ],
       "copy": {
@@ -3940,7 +4098,8 @@
           "w": 1200,
           "h": 1600,
           "alt": "High-contrast black and white photo of sunlight falling across a floor, casting the shadow of an empty chair and table",
-          "white": false
+          "white": false,
+          "use": "tile"
         },
         {
           "src": "assets/img/trent-parke-restaging/f02-04-final-2-img-8939-ue-4a0c.webp",
@@ -3948,7 +4107,8 @@
           "w": 1200,
           "h": 1600,
           "alt": "Black and white photo of an open hand reaching into a beam of light above a bright strip on the floor",
-          "white": false
+          "white": false,
+          "use": "process"
         },
         {
           "src": "assets/img/trent-parke-restaging/f03-04-final-3-img-8892-7e19.webp",
@@ -3956,7 +4116,8 @@
           "w": 1200,
           "h": 1600,
           "alt": "Black and white photo looking up between tall buildings at the sun flaring through the gap",
-          "white": false
+          "white": false,
+          "use": "process"
         },
         {
           "src": "assets/img/trent-parke-restaging/f04-04-final-4-img-8957-0bc1.webp",
@@ -3964,7 +4125,8 @@
           "w": 1200,
           "h": 1600,
           "alt": "Black and white photo looking up at a long fluorescent ceiling light glowing in a dark space",
-          "white": false
+          "white": false,
+          "use": "process"
         }
       ],
       "copy": {
@@ -4041,7 +4203,8 @@
           "w": 1600,
           "h": 1600,
           "alt": "Black and white square cover with dripping grey type reading this is a happy house, a vertical TRILOGY title and balloon shapes",
-          "white": false
+          "white": false,
+          "use": "tile"
         }
       ],
       "copy": {
@@ -4112,7 +4275,8 @@
           "w": 1600,
           "h": 1600,
           "alt": "Black and white collage of a dancing couple torn into fragments and stitched back together with white twine",
-          "white": false
+          "white": false,
+          "use": "tile"
         },
         {
           "src": "assets/img/materials-and-process/f02-04-final-final-img-2319-2f62.webp",
@@ -4120,7 +4284,8 @@
           "w": 1600,
           "h": 1600,
           "alt": "Black and white collage of Madonna with torn paper fragments and twine threaded across her face and hands",
-          "white": false
+          "white": false,
+          "use": "hero"
         },
         {
           "src": "assets/img/materials-and-process/f03-cx-photos-img-2290-1599.webp",
@@ -4128,7 +4293,8 @@
           "w": 1600,
           "h": 1600,
           "alt": "Black and white collage of Audrey Hepburn over sheet music, with twine looped through her ear and torn paper strips",
-          "white": false
+          "white": false,
+          "use": "gallery"
         },
         {
           "src": "assets/img/materials-and-process/f04-04-final-final-img-2294-27e2.webp",
@@ -4136,7 +4302,8 @@
           "w": 1600,
           "h": 1600,
           "alt": "Black and white collage of a smiling woman playing guitar, with twine threaded around her head and arms",
-          "white": false
+          "white": false,
+          "use": "gallery"
         }
       ],
       "copy": {
@@ -4218,7 +4385,8 @@
           "w": 1600,
           "h": 1162,
           "alt": "Black-and-white line drawing of the site in 1802, a bold black curve marking Parramatta Road through bush and marsh",
-          "white": false
+          "white": false,
+          "use": "tile"
         },
         {
           "src": "assets/img/uts-central-energy-maps/f02-04-final-final-images-img-2148-003e.webp",
@@ -4226,7 +4394,8 @@
           "w": 1600,
           "h": 1163,
           "alt": "Line drawing of the same area in 1854, Parramatta Road's bold curve now lined with streets and buildings",
-          "white": false
+          "white": false,
+          "use": "gallery"
         },
         {
           "src": "assets/img/uts-central-energy-maps/f03-04-final-past-map-img-2149-ea8f.webp",
@@ -4234,7 +4403,8 @@
           "w": 1600,
           "h": 1199,
           "alt": "Tracing in progress on an iPad, the bold road line drawn over a scanned 1854 map of Sydney",
-          "white": false
+          "white": false,
+          "use": "process"
         },
         {
           "src": "assets/img/uts-central-energy-maps/f04-02-process-assessment-1-higginsalex-group3-ttd-task1-presentation-34e1-p002.webp",
@@ -4242,7 +4412,8 @@
           "w": 1600,
           "h": 900,
           "alt": "Green presentation slide titled Past Map, framing the 1802 drawing with the year set large in the corner",
-          "white": false
+          "white": false,
+          "use": "gallery"
         }
       ],
       "copy": {
@@ -4317,7 +4488,8 @@
           "w": 1600,
           "h": 1600,
           "alt": "Cover slide reading UXplore gUIde in white and outlined letters inside a black browser window frame",
-          "white": false
+          "white": false,
+          "use": "tile"
         },
         {
           "src": "assets/img/ux-ui-visual-guide/f02-04-final-ttd-ux-ui-guide-bb5e-p009.webp",
@@ -4325,7 +4497,8 @@
           "w": 1600,
           "h": 1132,
           "alt": "Spread titled Designed Affordances in Context, with chalk-style drawings of a car, engine, wheels and pedal along a winding road",
-          "white": false
+          "white": false,
+          "use": "hero"
         },
         {
           "src": "assets/img/ux-ui-visual-guide/f03-04-final-ttd-ux-ui-guide-bb5e-p007.webp",
@@ -4333,7 +4506,8 @@
           "w": 1600,
           "h": 1132,
           "alt": "Spread titled Problem-Solution Co-Evolution, with a looping diagram of empathise, define, ideate, prototype and test",
-          "white": false
+          "white": false,
+          "use": "gallery"
         },
         {
           "src": "assets/img/ux-ui-visual-guide/f04-04-final-ttd-ui-ux-guide-carousel-04-4be8.webp",
@@ -4341,7 +4515,8 @@
           "w": 1600,
           "h": 1600,
           "alt": "Carousel slide headed Visual Design with large metallic letters and a column listing UX and UI team tasks",
-          "white": false
+          "white": false,
+          "use": "gallery"
         }
       ],
       "copy": {
@@ -4411,7 +4586,8 @@
           "w": 1600,
           "h": 1132,
           "alt": "Three dark book covers, The History of Mathematics, Physics and Time, each with a textured mark in teal, green or blue",
-          "white": true
+          "white": true,
+          "use": "tile"
         },
         {
           "src": "assets/img/book-cover-series/f02-04-final-wilson-brylie-booksw12-e683-p003.webp",
@@ -4419,7 +4595,8 @@
           "w": 1600,
           "h": 1132,
           "alt": "Full cover wrap for The History of Mathematics with back blurb, spine and a bright green textured circle on the front",
-          "white": true
+          "white": true,
+          "use": "hero"
         },
         {
           "src": "assets/img/book-cover-series/f03-cx-photos-development-05-480e.webp",
@@ -4427,7 +4604,8 @@
           "w": 1600,
           "h": 1131,
           "alt": "Process journal page of nine pencil concept sketches for the Mathematics, Physics and Time covers",
-          "white": true
+          "white": true,
+          "use": "process"
         },
         {
           "src": "assets/img/book-cover-series/f04-cx-photos-development-10-d4b7.webp",
@@ -4435,7 +4613,8 @@
           "w": 1600,
           "h": 1131,
           "alt": "Process journal page of black ink circle experiments, swirled and stippled, with the word DOT made from circles",
-          "white": true
+          "white": true,
+          "use": "process"
         }
       ],
       "copy": {
@@ -4510,7 +4689,8 @@
           "w": 1078,
           "h": 1600,
           "alt": "Zine cover reading What’s your EXCUSE? ACT NOW in burnt black type over orange-tinted bushfire trees",
-          "white": false
+          "white": false,
+          "use": "tile"
         },
         {
           "src": "assets/img/whats-your-excuse/f02-04-final-flame-poster-and-zine-poster-4bc1.webp",
@@ -4518,7 +4698,8 @@
           "w": 1131,
           "h": 1600,
           "alt": "Dark orange street poster asking Are you ready to take the flame? in torn burnt lettering over charred branches",
-          "white": false
+          "white": false,
+          "use": "gallery"
         },
         {
           "src": "assets/img/whats-your-excuse/f03-04-final-flame-poster-and-zine-final-zine-287f.webp",
@@ -4526,7 +4707,8 @@
           "w": 1600,
           "h": 1159,
           "alt": "Flat layout of every zine page in black and orange, with burnt words, statistics and a temperature bar chart",
-          "white": false
+          "white": false,
+          "use": "gallery"
         },
         {
           "src": "assets/img/whats-your-excuse/f04-cx-photos-img-2794-42cd.webp",
@@ -4534,7 +4716,8 @@
           "w": 1600,
           "h": 810,
           "alt": "Strip of paper printed with the word EXCUSE, its edges burnt brown and holes charred through the letters",
-          "white": true
+          "white": true,
+          "use": "process"
         }
       ],
       "copy": {

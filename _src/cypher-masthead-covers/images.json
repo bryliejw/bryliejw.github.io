@@ -1,14 +1,18 @@
 {
  "f01-04_Final__Refined-Covers__Pole-RGB-FINAL_0825__p001.jpg": {
-  "alt": "CYPHER cover with a weathered white bollard on dark paving and the white tag masthead wrapped around it"
+  "alt": "CYPHER cover with a weathered white bollard on dark paving and the white tag masthead wrapped around it",
+  "use": "tile"
  },
  "f02-04_Final__Final-Docs__WilsonBrylie_Task2_Le_Process_9e07__p008.jpg": {
-  "alt": "Process page of twelve cover experiments, tags drawn onto walls and buildings and one chevron cover in six colours"
+  "alt": "Process page of twelve cover experiments, tags drawn onto walls and buildings and one chevron cover in six colours",
+  "use": "gallery"
  },
  "f03-04_Final__Final-Docs__WilsonBrylie_Task2_Le_Process_9e07__p009.jpg": {
-  "alt": "Refined cover iterations with grids overlaid, including the bollard cover and a blue tiled wall carrying the masthead"
+  "alt": "Refined cover iterations with grids overlaid, including the bollard cover and a blue tiled wall carrying the masthead",
+  "use": "gallery"
  },
  "f04-04_Final__Final-Docs__WilsonBrylie_Task2_Le_Process_9e07__p006.jpg": {
-  "alt": "Letterform exploration page pairing photos of tags with redrawn versions and notes on four lettering styles"
+  "alt": "Letterform exploration page pairing photos of tags with redrawn versions and notes on four lettering styles",
+  "use": "process"
  }
 }

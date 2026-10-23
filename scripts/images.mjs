@@ -10,7 +10,7 @@
 // _src is read only: nothing in it is written, moved or deleted. Alt text is never
 // generated: it is kept from nodes.json for an image already listed, or read from an
 // optional _src/<slug>/images.json ({ "<file name>": { "alt": "...", "white": true } },
-// where white overrides the detection). Images without alt are listed at the end.
+// where white overrides the detection; "use": tile | hero | gallery | process places it in the panel). Images without alt are listed at the end.
 // Works without a _src folder keep their images[] as it is. Generated files in
 // assets/img/<slug>/ that no longer have an original are removed.
 // data/selects.json, when it lists a work, picks and orders its images instead of the
@@ -108,7 +108,8 @@ for (const w of data.works) {
     const s = side[f] ?? {};
     const alt = s.alt ?? old?.alt ?? "";
     const white = typeof s.white === "boolean" ? s.white : await isWhiteGround(src);
-    images.push({ src: webp, thumb: `assets/img/${w.slug}/${base}-${THUMB}.webp`, w: meta.width, h: meta.height, alt, white });
+    const use = s.use ?? old?.use;
+    images.push({ src: webp, thumb: `assets/img/${w.slug}/${base}-${THUMB}.webp`, w: meta.width, h: meta.height, alt, white, ...(use ? { use } : {}) });
     if (!alt) missingAlt.push(`${w.n} ${w.title}: _src/${rel}`);
   }
 

@@ -1,11 +1,14 @@
 {
  "f01-02_Process__Aero__Screen-Recording-2024-08-08-at-6.24.19-PM_bee5__t01.jpg": {
-  "alt": "Single cartoon tree with a round green canopy and brown branching trunk on a dark grey Aero canvas"
+  "alt": "Single cartoon tree with a round green canopy and brown branching trunk on a dark grey Aero canvas",
+  "use": "tile"
  },
  "f02-02_Process__Aero__aero_recording-2_cac3__t01.jpg": {
-  "alt": "Two virtual green trees and small sprouts placed in augmented reality on a real desk against a grey wall"
+  "alt": "Two virtual green trees and small sprouts placed in augmented reality on a real desk against a grey wall",
+  "use": "gallery"
  },
  "f03-02_Process__A-frame__Screen-Recording-2024-09-23-at-2.19.25-am_a119__t01.jpg": {
-  "alt": "Dark green virtual space with the ornate cast-iron back of a garden chair in the foreground"
+  "alt": "Dark green virtual space with the ornate cast-iron back of a garden chair in the foreground",
+  "use": "gallery"
  }
 }

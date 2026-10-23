@@ -82,4 +82,11 @@ SOFTWARE.
 <symbol id="workflow" viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect width="8" height="8" x="3" y="3" rx="2" /><path d="M7 11v4a2 2 0 0 0 2 2h4" /><rect width="8" height="8" x="13" y="13" rx="2" /></symbol>
 <symbol id="waypoints" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="m10.586 5.414-5.172 5.172" /><path d="m18.586 13.414-5.172 5.172" /><path d="M6 12h12" /><circle cx="12" cy="20" r="2" /><circle cx="12" cy="4" r="2" /><circle cx="20" cy="12" r="2" /><circle cx="4" cy="12" r="2" /></symbol>
 <symbol id="rotate-ccw" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8" /><path d="M3 3v5h5" /></symbol>
+<symbol id="grip-horizontal" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="9" r="1" /><circle cx="19" cy="9" r="1" /><circle cx="5" cy="9" r="1" /><circle cx="12" cy="15" r="1" /><circle cx="19" cy="15" r="1" /><circle cx="5" cy="15" r="1" /></symbol>
+<symbol id="pin-off" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 17v5" /><path d="M15 9.34V7a1 1 0 0 1 1-1 2 2 0 0 0 0-4H7.89" /><path d="m2 2 20 20" /><path d="M9 9v1.76a2 2 0 0 1-1.11 1.79l-1.78.9A2 2 0 0 0 5 15.24V16a1 1 0 0 0 1 1h11" /></symbol>
+<symbol id="chevron-down" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="m6 9 6 6 6-6" /></symbol>
+<symbol id="chevrons-left" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="m11 17-5-5 5-5" /><path d="m18 17-5-5 5-5" /></symbol>
+<symbol id="chevrons-right" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="m6 17 5-5-5-5" /><path d="m13 17 5-5-5-5" /></symbol>
+<symbol id="minimize-2" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="m14 10 7-7" /><path d="M20 10h-6V4" /><path d="m3 21 7-7" /><path d="M4 14h6v6" /></symbol>
+<symbol id="images" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="m22 11-1.296-1.296a2.4 2.4 0 0 0-3.408 0L11 16" /><path d="M4 8a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2" /><circle cx="13" cy="7" r="1" fill="currentColor" /><rect x="8" y="2" width="14" height="14" rx="2" /></symbol>
 </svg>

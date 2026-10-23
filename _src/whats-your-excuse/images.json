@@ -1,14 +1,18 @@
 {
  "f01-04_Final__Flame-Poster-and-Zine__Artboard-1_f9d2.jpg": {
-  "alt": "Zine cover reading What’s your EXCUSE? ACT NOW in burnt black type over orange-tinted bushfire trees"
+  "alt": "Zine cover reading What’s your EXCUSE? ACT NOW in burnt black type over orange-tinted bushfire trees",
+  "use": "tile"
  },
  "f02-04_Final__Flame-Poster-and-Zine__Poster_4bc1.jpg": {
-  "alt": "Dark orange street poster asking Are you ready to take the flame? in torn burnt lettering over charred branches"
+  "alt": "Dark orange street poster asking Are you ready to take the flame? in torn burnt lettering over charred branches",
+  "use": "gallery"
  },
  "f03-04_Final__Flame-Poster-and-Zine__final-zine_287f.jpg": {
-  "alt": "Flat layout of every zine page in black and orange, with burnt words, statistics and a temperature bar chart"
+  "alt": "Flat layout of every zine page in black and orange, with burnt words, statistics and a temperature bar chart",
+  "use": "gallery"
  },
  "f04-cx-photos__IMG_2794_42cd.jpg": {
-  "alt": "Strip of paper printed with the word EXCUSE, its edges burnt brown and holes charred through the letters"
+  "alt": "Strip of paper printed with the word EXCUSE, its edges burnt brown and holes charred through the letters",
+  "use": "process"
  }
 }
