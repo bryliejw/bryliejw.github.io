@@ -29,12 +29,13 @@ const html = readFileSync(file, "utf8");
 const LEVELS = [["L", "Projects"], ["M", "Extras"], ["S", "More work"]];
 const ordered = LEVELS.flatMap(([size]) => data.works.filter((w) => w.size === size).sort((a, b) => (size === "S" ? (b.year ?? 0) - (a.year ?? 0) || a.title.localeCompare(b.title) : 0)));
 const rows = ordered.map((w, i) => {
-  const head = i === 0 || ordered[i - 1].size !== w.size ? `        <tr class="ix-grp"><th scope="rowgroup" colspan="4" class="mono-label">${LEVELS.find((l) => l[0] === w.size)[1]}</th></tr>\n` : "";
+  const head = i === 0 || ordered[i - 1].size !== w.size ? `        <tr class="ix-grp"><th scope="rowgroup" colspan="5" class="mono-label">${LEVELS.find((l) => l[0] === w.size)[1]}</th></tr>\n` : "";
   const sub = w.sub ? `<span class="ix-sub">${esc(w.sub)}</span>` : "";
   const title = `<span class="ix-title">${esc(w.title)}</span>${sub}`;
   return (
     head +
     `        <tr data-id="${esc(w.id)}" data-kind="${w.kind}" data-level="${w.size}">` +
+    `<td class="ix-i">${w.images[0] ? `<img src="/${esc(w.images[0].thumb ?? w.images[0].src)}" alt="" width="56" height="42" loading="lazy">` : ""}</td>` +
     `<td class="ix-n">${esc(w.n)}</td>` +
     `<td class="ix-t">${hasPage(w) ? `<a class="ix-open" href="${pageHref(w)}">${title}</a>` : title}</td>` +
     `<td class="ix-y">${w.year ?? ""}</td>` +
@@ -43,7 +44,7 @@ const rows = ordered.map((w, i) => {
 });
 const table = [
   `    <table class="ix">`,
-  `      <thead><tr><th scope="col">No.</th><th scope="col">Title</th><th scope="col">Year</th><th scope="col">Type</th></tr></thead>`,
+  `      <thead><tr><th scope="col"><span class="sr-only">Image</span></th><th scope="col">No.</th><th scope="col">Title</th><th scope="col">Year</th><th scope="col">Type</th></tr></thead>`,
   `      <tbody>`,
   ...rows,
   `      </tbody>`,
@@ -64,7 +65,7 @@ const head = (w) => `<!doctype html>
 ${w.sub ? `<meta name="description" content="${esc(w.sub)}">\n` : ""}<link rel="canonical" href="${SITE}${pageHref(w)}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,400..800;1,62..125,400..800&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anybody:wdth,wght@50..150,300..900&family=Geist+Mono:wght@400..600&family=Instrument+Sans:ital,wdth,wght@0,75..100,400..700;1,75..100,400..700&display=swap">
 <link rel="stylesheet" href="/css/tokens.css">
 <link rel="stylesheet" href="/css/site.css">
 </head>`;

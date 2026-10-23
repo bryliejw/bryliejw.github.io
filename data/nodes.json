@@ -906,7 +906,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": [-320, 280]
+        "edge": [-280, 280]
       },
       "copyStatus": {
         "oneLine": "pdf",
@@ -1355,7 +1355,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": [160, -180]
+        "edge": [180, -100]
       },
       "copyStatus": {
         "oneLine": "pdf",
@@ -1438,7 +1438,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": [-400, 20]
+        "edge": [-400, -100]
       },
       "copyStatus": {
         "oneLine": "pdf",
@@ -1546,7 +1546,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": [-380, 220]
+        "edge": [-380, 300]
       },
       "todo": "TODO(brylie): year unknown.",
       "copyStatus": {
@@ -1638,7 +1638,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": [-420, -80]
+        "edge": [-400, 140]
       },
       "todo": "TODO(brylie): Perplexity Computer credit line",
       "copyStatus": {
@@ -1837,7 +1837,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": [-80, -160]
+        "edge": [-140, -160]
       },
       "copyStatus": {
         "oneLine": "draft",
@@ -2044,7 +2044,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": [160, -100]
+        "edge": [80, -160]
       },
       "copyStatus": {
         "oneLine": "draft",
@@ -2147,7 +2147,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": [140, -240]
+        "edge": [140, -200]
       },
       "todo": "TODO(brylie): group work, name your role and the team size.",
       "copyStatus": {
@@ -2249,7 +2249,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": [-200, -200]
+        "edge": [-120, -240]
       },
       "copyStatus": {
         "oneLine": "draft",
@@ -2332,7 +2332,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": [-400, 180]
+        "edge": [40, 80]
       },
       "copyStatus": {
         "oneLine": "draft",
@@ -2432,7 +2432,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": [-220, -80]
+        "edge": [220, -160]
       },
       "copyStatus": {
         "oneLine": "draft",
@@ -2732,7 +2732,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": [220, -280]
+        "edge": [200, -280]
       },
       "copyStatus": {
         "oneLine": "draft",
@@ -2831,7 +2831,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": [-120, -240]
+        "edge": [-180, -280]
       },
       "copyStatus": {
         "oneLine": "draft",
@@ -2930,7 +2930,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": [-420, -40]
+        "edge": [-420, 0]
       },
       "copyStatus": {
         "oneLine": "draft",
@@ -3334,7 +3334,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": [-420, 80]
+        "edge": [-360, 40]
       },
       "todo": "TODO(brylie): seed note says the site uses stock imagery; screenshots only.",
       "copyStatus": {
@@ -3418,7 +3418,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": [20, -280]
+        "edge": [40, -320]
       },
       "copyStatus": {
         "oneLine": "draft",
@@ -3504,7 +3504,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": [-340, -120]
+        "edge": [-420, -40]
       },
       "copyStatus": {
         "oneLine": "draft",
@@ -3601,7 +3601,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": [-160, -120]
+        "edge": [-220, -40]
       },
       "copyStatus": {
         "oneLine": "draft",
@@ -3780,7 +3780,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": [-420, 260]
+        "edge": [-360, 180]
       },
       "copyStatus": {
         "oneLine": "draft",
@@ -3876,7 +3876,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": [-120, -280]
+        "edge": [-420, 100]
       },
       "copyStatus": {
         "oneLine": "draft",
@@ -3978,7 +3978,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": [-280, -280]
+        "edge": [-140, -320]
       },
       "copyStatus": {
         "oneLine": "draft",
@@ -4055,7 +4055,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": [-420, 300]
+        "edge": [-420, 260]
       },
       "copyStatus": {
         "oneLine": "draft",
@@ -4150,7 +4150,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": [40, 80]
+        "edge": [-200, 40]
       },
       "copyStatus": {
         "oneLine": "draft",
@@ -4256,7 +4256,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": [-260, -160]
+        "edge": [-180, -200]
       },
       "copyStatus": {
         "oneLine": "draft",
@@ -4355,7 +4355,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": [-400, 140]
+        "edge": [-420, 220]
       },
       "copyStatus": {
         "oneLine": "draft",
@@ -4449,7 +4449,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": [-260, -320]
+        "edge": [-360, -280]
       },
       "todo": "TODO(brylie): subject to confirm.",
       "copyStatus": {
@@ -4548,7 +4548,7 @@
       },
       "steps": [],
       "pos": {
-        "edge": [-20, -200]
+        "edge": [120, -240]
       },
       "copyStatus": {
         "oneLine": "draft",

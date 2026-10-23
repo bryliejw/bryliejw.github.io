@@ -64,13 +64,15 @@ scripts/              validate.mjs, layout-edge.mjs, icons.mjs, images.mjs, buil
 - Ids are unique across works AND keywords. `validate.mjs` fails the build on a duplicate (photo, td and zine have collided before).
 - Edges are derived, never stored: work to keyword, work to partOf (dashed), size L works and Terms of Practice to `me`.
 
-## Design tokens (match the PDF)
+## Design tokens (web folio system, from the Web Folio Draft)
 
-- Fonts: Archivo (Google Fonts, variable wdth 62..125, wght 400..800) for everything; IBM Plex Mono 400/500/600 only for numbers and caps labels.
-- Colours: paper #FFFFFF, ink #141414, ink-2 #5E5E5E, ink-3 #8A8A86, line #E4E4E0, rule #D9D9D6, tint #F2F2EF, ultramarine #2A2DF5, blue-soft #E9EAFE, keyline #CFCFCB. White ground only.
-- Type: name 800 30px −0.035em; display 800 −0.03em lh .92; title 700 −0.025em; body 16/1.5 at 50 to 60 characters; map labels 11px; mono 9.5 to 11px caps tracked .05em.
-- Shape: sharp corners, 1px rules, no shadows, no gradients. Floating controls are paper boxes with a 1px ink outline.
-- Ultramarine only for: numbers, the active view, selection, focus lines, topics, links, badges.
+- Fonts (Google Fonts): Anybody (display: name, titles, numbers; variable width 50..150, weights to 900), Instrument Sans (text and map labels), Geist Mono (caps labels, numbers). Families live in `css/tokens.css` only (`--font-display`, `--font-sans`, `--font-mono`).
+- Colours: paper #FFFFFF, ink #0B0C10, ink-deep #16181F, ink-2 #5C606B, ink-3 #9DA1AC, line and rule #DADCE2, tint #EEEFF2, ultramarine #2A2DF5, blue-light #AAACFF (on ink and blue), blue-soft #E4E5FF. White ground; dark elements are ink.
+- Type: name Anybody 900 34px, width 82; display Anybody 900, line-height .82 to .86, tracking −.03em, width 86 at rest and stretched (130 to 135) on hover for page titles, panel titles and the next band; titles Anybody 800 width 88; body Instrument Sans 16/1.5 at 50 to 60 characters; map labels 11px; mono Geist Mono 10 to 11.5px caps tracked .06em.
+- Shape: sharp corners, 1 to 2px rules, no shadows, no gradients, no card outlines on pages. Floating controls (rail, zoom, site nav) are ink blocks with white icons and mono caps labels; active and hover states in ultramarine.
+- Ultramarine for numbers, the active view, selection, focus lines, topics, links, chips, the next-project band and the view cursor.
+- Full page: back link, "Case 0n / 03" counter, very large title, subtitle, one ruled row (Year, Context, Team, Field, Tools), lead image on tint, pull line with a 4px ultramarine rule, Brief / Insight / Response columns, role, credit and materials, images, process, connections, a two-band fields marquee (ink and ultramarine), then the blue next band. Motion respects prefers-reduced-motion.
+- View cursor: a 72px ultramarine "View" disc over work tiles and images (pointer devices only); clicking an image opens it full size on ink.
 
 ## Icons
 
@@ -95,7 +97,7 @@ scripts/              validate.mjs, layout-edge.mjs, icons.mjs, images.mjs, buil
 ## Page layout (map frame, full viewport)
 
 - Left rail, top-left: three view buttons (active = ultramarine fill), divider, Search, Filter (badge with number of hidden groups), Labels & lines, Index, divider, Surprise me.
-- Top-right site nav: About, Folio PDF, Contact (icon + text; icons only under 760px).
+- Top-right site nav: About, Folio PDF, Contact (icon + mono caps text on ink; icons only under 760px).
 - Top-left beside the rail: active filter chips (focused node in ultramarine, hidden groups in ink, each with ×, plus Clear all).
 - Bottom-left: readout in mono caps. Bottom-right: zoom in, zoom out, Fit, Key.
 - Popovers are anchored to their control; only one open at a time; Esc or a map click closes.

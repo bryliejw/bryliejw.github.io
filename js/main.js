@@ -26,6 +26,7 @@ import { bindIndex } from "./ui/index.js";
 import { bindKey } from "./ui/key.js";
 import { bindNav } from "./ui/nav.js";
 import { bindPalette } from "./ui/palette.js";
+import { bindCursor } from "./ui/cursor.js";
 import { indexData, hasPage, pageHref, PDF } from "./open/content.js";
 import { createPreview } from "./open/preview.js";
 import { createCard } from "./open/grow.js";
@@ -36,13 +37,14 @@ const reduced = window.matchMedia("(prefers-reduced-motion: reduce)");
 const narrow = window.matchMedia("(max-width: 719px)"); // card and panel are full-screen sheets
 
 const FONTS = [
-  "800 30px Archivo",
-  "700 15px Archivo",
-  "600 11px Archivo",
-  "400 11px Archivo",
-  "italic 400 11px Archivo",
-  '500 10px "IBM Plex Mono"',
-  '600 10px "IBM Plex Mono"',
+  "900 34px Anybody",
+  "800 17px Anybody",
+  "800 14px Anybody",
+  '600 11px "Instrument Sans"',
+  '500 11px "Instrument Sans"',
+  'italic 500 11px "Instrument Sans"',
+  '600 10px "Geist Mono"',
+  '500 10px "Geist Mono"',
 ];
 
 async function boot() {
@@ -86,6 +88,7 @@ async function boot() {
   bindReadout({ graph, views, filter });
   bindIndex({ filter, select: flow.select });
   bindKey();
+  bindCursor();
   const nav = bindNav({ data, actions });
   const palette = bindPalette({ graph, data, filter, select: flow.select, actions });
   bindRail({ views, select: flow.select, graph });

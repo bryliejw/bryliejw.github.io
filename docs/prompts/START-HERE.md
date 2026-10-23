@@ -10,12 +10,12 @@ The site is the **systems map** (branch `map-final` on `bryliejw/bryliejw.github
 
 ## Order of work
 
-| Step | Where | What |
-|---|---|---|
-| 1 | Claude Code, branch `map-final` | Paste `05_content-and-levels.md`. It builds, relays out, checks and polishes the levels. It must not ask you to pick anything. |
-| 2 | You, whenever | Review in the artifact. Ask the RTD project chat to "apply my map review" to turn ratings into data edits on `map-final`. |
-| 3 | Claude Code | `06_phone-access-speed.md`. |
-| 4 | Claude Code | `07_polish-and-launch.md`, only after you say "approved for launch". |
+| Step | Where                           | What                                                                                                                           |
+| ---- | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| 1    | Claude Code, branch `map-final` | Paste `05_content-and-levels.md`. It builds, relays out, checks and polishes the levels. It must not ask you to pick anything. |
+| 2    | You, whenever                   | Review in the artifact. Ask the RTD project chat to "apply my map review" to turn ratings into data edits on `map-final`.      |
+| 3    | Claude Code                     | `06_phone-access-speed.md`.                                                                                                    |
+| 4    | Claude Code                     | `07_polish-and-launch.md`, only after you say "approved for launch".                                                           |
 
 Steps 1 and 2 can run in either order; data edits from your review never block the build.
 

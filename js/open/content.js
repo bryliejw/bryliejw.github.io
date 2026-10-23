@@ -190,44 +190,49 @@ export const section = (title, body) => (body ? `<section class="sec">${title ? 
 export const numBlock = (w, cls = "num") => `<span class="${cls}" aria-hidden="true">${esc(w.n)}</span>`;
 
 // The full page for a PDF project, shared by the overlay and /work/<slug>/.
+// Case opener: back link and case counter, very large title, subtitle, one ruled row of
+// Year / Context / Team / Field / Tools, then the lead image, the pull line, Brief /
+// Insight / Response, role and credit, images, process and connections; a fields
+// marquee; and the blue next-project band.
 export function pageHTML(w, ix) {
-  const topics = w.keywords.map((id) => ix.kw.get(id)).filter((k) => k?.type === "topic");
-  const disciplines = w.keywords.map((id) => ix.kw.get(id)).filter((k) => k?.type === "discipline");
-  const tools = w.keywords.map((id) => ix.kw.get(id)).filter((k) => k?.type === "tool");
+  const kws = (type) => w.keywords.map((id) => ix.kw.get(id)).filter((k) => k?.type === type);
   const hero = w.images[0];
   const at = ix.projects.indexOf(w);
   const next = [...ix.projects.slice(at + 1), ...ix.projects.slice(0, at)];
+  const c = w.copy;
+  const md = (label, html) => (html ? `<div><dt class="mono-label">${label}</dt><dd>${html}</dd></div>` : "");
+  const field = kws("discipline").map(kwLink).join('<span class="sep"> · </span>');
+  const tools = (w.tools ?? []).map(esc).join('<span class="sep"> · </span>');
+  const block = (label, text) => (text ? `<div class="cp"><h2 class="cp-label">${label}</h2><p>${esc(text)}</p></div>` : "");
+  const fields = [...kws("topic"), ...kws("discipline"), ...kws("deliverable"), ...kws("value")].map((k) => k.label);
+  const band = (cls) => `<div class="wp-mq ${cls}"><div class="wp-mq-t">${[0, 1].map(() => `<span>${fields.map(esc).join("</span><span>")}</span>`).join("")}</div></div>`;
+  const [n1, ...rest] = next;
   return `<article class="wp" aria-labelledby="wp-title">
   <header class="wp-bar">
-    <a class="wp-back tbtn" href="/#${esc(w.id)}" data-back>${icon("arrow-left")}Back</a>
+    <a class="wp-back" href="/#${esc(w.id)}" data-back>${icon("arrow-left")}<span>Back to the map</span></a>
     <a class="wp-name" href="/">Brylie Wilson</a>
+    <p class="wp-count mono-label">Case ${esc(w.n)} / ${String(ix.projects.length).padStart(2, "0")}</p>
     <nav class="wp-nav" aria-label="Site">
       <a class="navlink" href="${PDF}" target="_blank" rel="noopener">${icon("file-down")}<span class="navtext">Folio PDF</span></a>
       <a class="navlink" href="mailto:${esc(ix.data.me.contact.email)}">${icon("mail")}<span class="navtext">Contact</span></a>
     </nav>
   </header>
   <div class="wp-open">
-    <div class="wp-lead">
-      <div class="wp-top">${numBlock(w, "wp-num")}<p class="wp-meta"><span class="sr-only">${esc(w.n)} · </span>${metaHTML(w)}</p></div>
-      <h1 class="wp-title" id="wp-title">${esc(w.title)}</h1>
-      ${w.sub ? `<p class="wp-sub">${esc(w.sub)}</p>` : ""}
-      ${topics.length ? `<ul class="wp-topics">${topics.map((k) => `<li>${kwLink(k)}</li>`).join("")}</ul>` : ""}
-      <div class="wp-tags">
-        ${disciplines.length ? `<ul class="wp-disc">${disciplines.map((k) => `<li>${kwLink(k)}</li>`).join("")}</ul>` : ""}
-        ${tools.length ? `<ul class="wp-tools">${tools.map((k) => `<li>${kwLink(k)}</li>`).join("")}</ul>` : ""}
-      </div>
-    </div>
-    <div class="wp-body">
-      ${hero ? imgHTML(hero, { cls: "wp-hero", sizes: "(max-width: 719px) 100vw, 55vw", lazy: false }) : ""}
-      ${copyHTML(w, { h: 2 })}
-      ${factsHTML(w, ix)}
-    </div>
+    <h1 class="wp-title" id="wp-title">${esc(w.title)}</h1>
+    ${w.sub ? `<p class="wp-sub">${esc(w.sub)}</p>` : ""}
+    <dl class="wp-md">${md("Year", w.year != null ? `<b>${w.year}</b>` : "")}${md("Context", esc(w.context))}${md("Team", esc(w.team))}${md("Field", field)}${md("Tools", tools)}</dl>
   </div>
+  ${hero ? imgHTML(hero, { cls: "wp-hero", sizes: "100vw", lazy: false }) : ""}
+  ${c.pull ? `<p class="wp-pull">${esc(c.pull)}</p>` : c.oneLine ? `<p class="wp-pull">${esc(c.oneLine)}</p>` : ""}
+  <div class="wp-bir">${block("Brief", c.brief)}${block("Insight", c.insight)}${block("Response", c.response)}</div>
+  ${c.role || c.credit || (w.materials ?? []).length ? `<div class="wp-credit">${block("Role", c.role)}${c.credit ? `<p class="cp-credit">${esc(c.credit)}</p>` : ""}${(w.materials ?? []).length ? `<p class="wp-mats"><span class="mono-label">Materials</span> ${w.materials.map(esc).join('<span class="sep"> · </span>')}</p>` : ""}</div>` : ""}
   ${w.images.length > 1 ? `<section class="wp-sec" aria-labelledby="wp-images"><h2 class="wp-h mono-label" id="wp-images">${icon("image")}Images</h2>${imagesHTML({ ...w, images: w.images.slice(1) }, { sizes: "(max-width: 719px) 100vw, 50vw" })}</section>` : ""}
   ${w.steps.length ? `<section class="wp-sec" aria-labelledby="wp-process"><h2 class="wp-h mono-label" id="wp-process">${icon("workflow")}Process</h2>${stepsHTML(w)}</section>` : ""}
   <section class="wp-sec" aria-labelledby="wp-conn"><h2 class="wp-h mono-label" id="wp-conn">${icon("waypoints")}Connections</h2>${workConnections(w, ix)}</section>
+  ${fields.length ? `<div class="wp-mqs" aria-hidden="true">${band("a")}${band("b")}</div>` : ""}
   <nav class="wp-next" aria-label="Next">
-    ${next.map((p) => `<a class="wp-nextlink" href="${pageHref(p)}" data-page="${esc(p.id)}"><span class="mono-label">Next</span><span class="wp-nextn">${esc(p.n)}</span><span class="wp-nextt">${esc(p.title)}</span>${icon("arrow-right")}</a>`).join("")}
+    ${n1 ? `<a class="wp-nextlink wp-nextband" href="${pageHref(n1)}" data-page="${esc(n1.id)}"><span class="mono-label">Next case · ${esc(n1.n)}</span><b>${esc(n1.title)}</b>${n1.sub ? `<span class="wp-nexts">${esc(n1.sub)}</span>` : ""}</a>` : ""}
+    ${rest.map((p) => `<a class="wp-nextlink wp-nextsmall" href="${pageHref(p)}" data-page="${esc(p.id)}"><span class="mono-label">Then</span><span class="wp-nextn">${esc(p.n)}</span><span class="wp-nextt">${esc(p.title)}</span>${icon("arrow-right")}</a>`).join("")}
   </nav>
 </article>`;
 }

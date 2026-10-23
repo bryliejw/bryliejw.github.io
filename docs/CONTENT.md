@@ -4,11 +4,11 @@
 
 ## Levels
 
-| Level | What it gets | Works |
-|---|---|---|
-| L · Project | 112px tile, rich preview, card, panel, full page, 13 to 14 images | 3 |
-| M · Extra | 64px tile, preview with one line, card, panel with Brief / Insight / Response, about 8 images | 5 |
-| S · More work | 30px thumbnail, hover info card (facts, tags), click card (up to 4 images, one line, facts, details) | 32 |
+| Level         | What it gets                                                                                         | Works |
+| ------------- | ---------------------------------------------------------------------------------------------------- | ----- |
+| L · Project   | 112px tile, rich preview, card, panel, full page, 13 to 14 images                                    | 3     |
+| M · Extra     | 64px tile, preview with one line, card, panel with Brief / Insight / Response, about 8 images        | 5     |
+| S · More work | 30px thumbnail, hover info card (facts, tags), click card (up to 4 images, one line, facts, details) | 32    |
 
 Keywords: 89 (discipline 25, deliverable 17, tool 21, topic 18, value 8). Tools used by two or more works became tool keywords (proposed).
 
@@ -31,7 +31,7 @@ Magazine & typographic style guide · 2024 · Typography in Context, UTS · Indi
 - To confirm:
   - oneLine is new, built from folio p03 and p04 wording. Confirm.
   - Illustrator added to tools from her Creative Cloud files (CYPHER_aic, Cypher-Font_aic, Distorted-Type_aic). The folio tools line does not list it. Drop if she prefers the folio line.
-  - Tile and back cover are the plastic-sleeve renders used in the submitted folio and promo captions ('front cover, packaged'). If these come from a third-party mockup template, swap the tile for the flat cover (U24-TIC-T3 i1, 04_Final__All__0-COVER_8803.jpg) and credit the template.
+  - Tile and back cover are the plastic-sleeve renders used in the submitted folio and promo captions ('front cover, packaged'). If these come from a third-party mockup template, swap the tile for the flat cover (U24-TIC-T3 i1, 04_Final**All**0-COVER_8803.jpg) and credit the template.
   - Placemaking spread (issue pages 12-15) contains a third-party Oscar the Grouch image (her style guide notes: 'the image of Oscar the grouch has to remain green'). All Placemaking and Oscar spreads are excluded. The style-guide overview mock (U24-TIC-T3 i20) also shows that spread as a thumbnail, so it was left out.
   - Graffiti in every photograph belongs to its writers. Keep the folio credit with the gallery.
   - TIC-T1 (Slanted magazine research presentation) was not made into a work: it is a group analysis (Brylie, Allaine & Amelia) of another publication's pages. Only her styleboard (TIC-T1 i6) is used, as CYPHER process.
@@ -237,7 +237,7 @@ Car photo composite poster · 2026 · Personal · Individual
 - **Response** [draft]: I composited the car photos and their reflection in Photoshop, graded the scene red and set the FALCON title behind the cars, then made square, banner and T-shirt versions in Canva.
 - **Credit** [draft]: Ford logo and Falcon XR6 Turbo name are Ford trademarks.
 - To confirm:
-  - Renamed from "Photo composites": The only publishable piece in this folder is the Falcon car composite. FALCON is the poster's own headline and the name already used in nodes.json and _src (falcon-composite).
+  - Renamed from "Photo composites": The only publishable piece in this folder is the Falcon car composite. FALCON is the poster's own headline and the name already used in nodes.json and \_src (falcon-composite).
   - Number plates are readable on both cars (XBY 849, INX 8IL) in the poster and raw photos. Blur them or confirm the owners are fine with it.
   - Raw car photos (IMG_3564 to IMG_3576) are assumed to be yours. Confirm you took them.
   - The small spec text on the poster contradicts itself (body text says 4.8 seconds, the callout says 0 to 100 km in 2.5 sec). Fix before showing it large.
@@ -918,8 +918,8 @@ Book cover series · 2023 · Symbols, Systems & Visual Play, UTS · Individual
 - To confirm:
   - Renamed from "Book cover series": The archive name is generic. The covers are for 3 titles in the Very Short Introductions series, which names the piece plainly for an industry reader.
   - Subject name read off the journal page footer (SYMBOLS SYSTEMS & VISUAL PLAY 2023). Confirm the exact subject title and punctuation.
-  - Remove the current image 01-SSVP__Final-imgs9 (Gorillaz Demon Days redesign) from this work. The SSVP 'Final imgs' set is album-cover redesigns (blond, Demon Days and others) that look like Task 1 (Less is More), not the book covers.
-  - The A6 green creature illustrations and the green '?' quote cover in _src (05, 06) have no clear link to the final series. Left out.
+  - Remove the current image 01-SSVP\_\_Final-imgs9 (Gorillaz Demon Days redesign) from this work. The SSVP 'Final imgs' set is album-cover redesigns (blond, Demon Days and others) that look like Task 1 (Less is More), not the book covers.
+  - The A6 green creature illustrations and the green '?' quote cover in \_src (05, 06) have no clear link to the final series. Left out.
   - Insight left empty: the only concept text is lecture notes (COURSE). Add your own line about the textured marks if you have one.
   - Whether the cover textures were made from the ink circle experiments is inferred from the process pages. Confirm before saying so.
 
@@ -960,7 +960,7 @@ Climate poster & zine · 2023 · Politics of Image & Text, UTS · Individual
 - **Card stack prototype**: Renamed from "X-card-stack-make": Card Stack is the Figma Make file name, with 'prototype' added to say what it is.
 - **Semiotic photo analysis**: Suggest unpublished: every slide is built on Pieter Hugo's photograph of an identifiable man, and the analysis lives mostly in the spoken transcript. Annotated poster analysis (U23-POIT-T1) is the same kind of piece and stronger visually.
 - **Breaking the Chains of Illusion**: Suggest unpublished as it stands. The concept is strong, but every printed sheet is found third-party imagery (including Nazi propaganda), and the only photos of the mirror box are embedded in the essay PDF (p3) beside text. If you have the mirror box photos as separate files, or crop them from p3, this could go live with one of them as the tile.
-- **Less is More**: Unpublished: no images anywhere. The archive folder has no files, and _PAST-FOLIOS has no pages for this piece (checked the contact sheet). Only your Notion concept table (artist and candy puns) and material notes survive.
+- **Less is More**: Unpublished: no images anywhere. The archive folder has no files, and \_PAST-FOLIOS has no pages for this piece (checked the contact sheet). Only your Notion concept table (artist and candy puns) and material notes survive.
 - **Decolonising design bibliography**: Unpublished: text only. The images are document pages and other authors' highlighted readings and book covers.
 - **Digital entertainment disconnection**: Suggest unpublished: the only visual is the group map, and the sources do not say who drew it. If you laid out the map, publish and add that to the role.
 - Client work: held until client permission (listed in the RTD Project doc, not here, because this repo is public).
